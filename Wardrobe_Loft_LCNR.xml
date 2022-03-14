@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+
+
+	<ARTICLE>
+		<ART_NAME>Wardrobe_Loft_LCNR</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Loft L-cornrer Wardrobe</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" Valuetype="MULTIROW"	label="Carcass Dimensions">
+				
+				<TEXT name="Cabinet_Sizes" label="Carcass Dimensions:" 	width="25%"	visible="" format="bold" />
+
+				<EDITBOX name="ART_SIZEXWDL" label="Width (900 to 1200mm) :" active="TRUE" width="25%"	visible="TRUE" locked="FALSE" valuetype="NUM" default="900" min="900" max="1200" geoInfluencing="TRUE" />
+			   	
+                <EDITBOX name="Wrd_unit_Depth" label="Depth (400mm to 580mm) :" active="TRUE"  width="25%"	visible="TRUE" locked="FALSE" valuetype="NUM" default="560" min="400" max="580" geoInfluencing="TRUE" />
+				
+				<EDITBOX name="ART_SIZEZWDL" label="Height (300mm to 1200mm) :" active="TRUE"	width="25%" visible="TRUE" locked="FALSE" valuetype="NUM" default="450" min="300" max="1200" geoInfluencing="TRUE" />
+
+            </GROUP>
+
+			<EDITBOX name="ART_SIZEYWDL" label="Depth (900 to 1200mm) :" active="TRUE" width="25%"	visible="FALSE" locked="TRUE" valuetype="NUM" default="900" min="900" max="1200" geoInfluencing="TRUE" />
+            
+			<COMMAND type="INSERT" file="Include_Wardrobe_Carcass.xml" part="PART_WARDROBE_CARCASS_CONSTRUCTION" />     
+           
+            
+		</PARAFOLDER>
+
+		
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="Hinge_Open" label="Opening Direction" valuetype="IMAGE" default="Left_Hinge" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="Left_Hinge"  value="Left_Hinge" label="Wooden"	  	info1="Wooden"	image1="img/catalog/.PNG" 		image2="img/catalog/.PNG" />
+				<ITEM name="No_Door" 	 value="No_Door" 	label="No_Door"  	info1="No_Door" image1="img/hardware/No_Door.jpg" image2="img/catalog/.PNG" />
+			</COMBOBOX>
+
+		<PARAFOLDER name="Shutter_Details" label="Shutter Finish Details" active="TRUE" visible="TRUE">
+
+
+			<CHECKBOX name="WRD_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+			<GROUP name="Left_Shutter_Details" label="Left Shutter Details">
+				<COMBOBOX name="WRD_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="WRD_Front1" label="Shutter Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+	
+
+			</GROUP>
+
+			<GROUP name="Right_Shutter_Details" label="Right Shutter Details">
+
+				<COMBOBOX name="WRD_Shutter_Core_Material_3" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Shutter_Finish_3" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Texture_3" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="WRD_Front3" label="Shutter Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+		</PARAFOLDER>		
+
+			<!-- Variable Values -->
+			<EDITBOX name="Mat_Front_1" label="Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Prf_Front_1" label="Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		
+			<EDITBOX name="Mat_Front_3" label="Front3_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Prf_Front_3" label="Front3_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+		</PARAFOLDER>		
+        
+		<EDITBOX name="Striplight_Distance" 		label="Strip Light Distance" active="TRUE" nosave="FALSE"		Width="50%"		visible="FALSE" locked="FALSE" valuetype="NUM" default="150" min="" max="" geoInfluencing="TRUE" />
+        <EDITBOX name="Wrd_Striplight_Lens_Left" 	label="Strip Light Lense Left" active="TRUE" nosave="FALSE"		Width="50%"		visible="FALSE" locked="FALSE" valuetype="TEXT" default="NULL" min="" max="" geoInfluencing="TRUE" />
+        <EDITBOX name="Wrd_Striplight_Lens_Right" 	label="Strip Light Lense Right" active="TRUE" nosave="FALSE"		Width="50%"		visible="FALSE" locked="FALSE" valuetype="TEXT" default="NULL" min="" max="" geoInfluencing="TRUE" />
+        <EDITBOX name="Wrd_Striplight_Prf_Left" 	label="Strip Light Lense Left" active="TRUE" nosave="FALSE"		Width="50%"			visible="FALSE" locked="FALSE" valuetype="TEXT" default="NULL" min="" max="" geoInfluencing="TRUE" />
+        <EDITBOX name="Wrd_Striplight_Prf_Right" 	label="Strip Light Lense Right" active="TRUE" nosave="FALSE"		Width="50%"	visible="FALSE" locked="FALSE" valuetype="TEXT" default="NULL" min="" max="" geoInfluencing="TRUE" />
+
+
+    
+
+		
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_HINGE_SELECTION_WIDEANGLE" />	
+		
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Handle_Details" label="Handle Details" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+			<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_WALL_UNIT_HANDLES" />	
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+
+			<EDITBOX name="SW_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="SW_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="SW_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXWDL</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYWDL</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZWDL</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+		
+			<VAR name="Adjustable_Legs" value="Adjustable_Legs" />
+			<VAR name="KI_Adjuster_Height" value="Leg_Height" />
+			<VAR name="Skirting_Height" value="Skirting_Height" />
+			<VAR name="Wrd_unit_Depth" value="Wrd_unit_Depth" />
+			<VAR name="Hinge_Open_Wardrobe" value="Hinge_Open" />
+
+			<VAR name="Mat_Carcass" value="Mat_Carcass" />
+			<VAR name="Prf_Carcass" value="Prf_Carcass" />
+			<VAR name="Hinge_Type" value="Hinge_Type_WideAngle" />
+			<VAR name="Mat_Front_1" value="Mat_Front_1" />
+			<VAR name="Prf_Front_1" value="Prf_Front_1" />
+			<VAR name="Mat_Front_3" value="Mat_Front_3" />
+			<VAR name="Prf_Front_3" value="Prf_Front_3" />
+			<VAR name="Wardrobe_Drawer_Selection" value="Wardrobe_Drawer_Selection" />
+			<!-- <VAR name="BU_Le_Carcass_Mat" value="TU_Le_Carcass_Mat" />
+			<VAR name="BU_Le_Carcass_Prf" value="TU_Le_Carcass_Prf" />
+			<VAR name="BU_Ri_Carcass_Mat" value="TU_Ri_Carcass_Mat" />
+			<VAR name="BU_Ri_Carcass_Prf" value="TU_Ri_Carcass_Prf" />
+			<VAR name="BU_Left_Side_Panel" value="TU_Left_Side_Panel" />
+			<VAR name="BU_Right_Side_Panel" value="TU_Right_Side_Panel" /> -->
+			<VAR name="Handle_Selection" value="Handle_Selection" />
+			<VAR name="Internal_Module_1" value="Internal_Module_1" />	
+			
+<!-- Strip light variables  -->
+
+<VAR name="Striplight_Distance" 	value="Striplight_Distance" />
+<VAR name="Wrd_Striplight_Lens_Left" value="Wrd_Striplight_Lens_Left" />
+<VAR name="Wrd_Striplight_Lens_Right" value="Wrd_Striplight_Lens_Right" />
+<VAR name="Wrd_Striplight_Prf_Left" value="Wrd_Striplight_Prf_Left" />
+<VAR name="Wrd_Striplight_Prf_Right" value="Wrd_Striplight_Prf_Right" />
+
+<VAR name="Calculation_Factors" value="SW_Calculation_Factors" />
+<VAR name="Prf_Prices" 			value="SW_Prf_Prices" />
+<VAR name="Mat_Prices" 			value="SW_Mat_Prices" />
+			
+		</VARIABLES>
+
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WRD_SHUTTER_1_FINISH_Logic" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WRD_SHUTTER_3_FINISH_Logic" />
+
+        <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WRD_DIFFERENT_SHUTTER_COLOR_DD" />
+
+		<!-- <COMMAND>"FIELD(Internal_Module_1).value=FIELD(M1_Internal_Type).value"</COMMAND>					 -->
+		<COMMAND>"FIELD(ART_SIZEYWDL).value=FIELD(ART_SIZEXWDL).value"</COMMAND>					
+		<COMMAND type="INSERT" file="Include_Wardrobe_Carcass.xml" part="PART_WARDROBE_CARCASS_CONSTRUCTION_LOGIC" />
+   
+
+		<IF>
+			<EQ expr1="FIELD(Hinge_Open).info1" expr2="Wooden" />
+			<THEN>
+				<COMMAND>"FIELD(Shutter_Details).Visible=TRUE"</COMMAND> 
+				<COMMAND>"FIELD(Hinge_Type_WideAngle).active=TRUE"</COMMAND> 
+				<COMMAND>"FIELD(Hinge_Type_WideAngle).visible=TRUE"</COMMAND> 
+				<COMMAND>"FIELD(Handle_Selection).active=TRUE"</COMMAND> 
+				<COMMAND>"FIELD(Handle_Details).visible=TRUE"</COMMAND> 
+				<COMMAND>"FIELD(Hardware_Details).visible=TRUE"</COMMAND> 
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Shutter_Details).Visible=FALSE"</COMMAND> 
+				<COMMAND>"FIELD(Hinge_Type_WideAngle).active=FALSE"</COMMAND> 
+				<COMMAND>"FIELD(Hinge_Type_WideAngle).visible=FALSE"</COMMAND> 
+				<COMMAND>"FIELD(Handle_Selection).active=FALSE"</COMMAND> 
+				<COMMAND>"FIELD(Handle_Details).visible=FALSE"</COMMAND> 
+				<COMMAND>"FIELD(Hardware_Details).visible=FALSE"</COMMAND> 
+			</ELSE>
+		</IF>	
+
+
+		<!--Handle Filer Logic Start-->
+
+		<IF>
+			<EQ expr1="FIELD(Handle_Type).value" expr2="Surface_Handle"/>
+				<THEN>
+					<COMMAND>"FIELD(Handle_Selection).Info1List(Surface_Handle)"</COMMAND>
+				</THEN>
+		</IF>
+		
+		<IF>
+			<EQ expr1="FIELD(Handle_Type).value" expr2="Edge_Handle"/>
+				<THEN>
+					<COMMAND>"FIELD(Handle_Selection).Info1List(Edge_Handle)"</COMMAND>
+				</THEN>
+		</IF>
+		
+		<IF>
+			<EQ expr1="FIELD(Handle_Type).value" expr2="Surface_Handle_V"/>
+				<THEN>
+					<COMMAND>"FIELD(Handle_Selection).Info1List(Surface_Handle_V)"</COMMAND>
+				</THEN>
+		</IF>
+
+		<!--Handle Filer Logic End-->
+
+
+	</LOGIC_DEFINITION>
+</XML>

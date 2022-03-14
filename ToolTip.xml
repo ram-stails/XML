@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="tooltip">
+
+	<TOOLTIP name="TT_name" headline=" Headline " image1="img/SYK_LTD.jpg">
+		<TEXT format="normal" label="lorem ipsum" />
+		<TEXT format="bold" label="bold Text" />
+		<TEXT format="normal" address="https://www.youtube.com/watch?v=UujNQi8EC10" label="Atria" />
+	</TOOLTIP>
+	
+	<TOOLTIP name="TT2" headline=" Headline2" image1="img/SYK_LTD.jpg">
+		<TEXT format="normal" label="" />
+	</TOOLTIP>
+
+	<TOOLTIP name="TT_OneSkin_HG" headline="OneSkin HighGloss" image1="img/SYK_LTD.jpg">
+		<TEXT format="normal" label="Base Material in MDF" />
+		<TEXT format="bold" label="Finish in Poly High Gloss" />
+	</TOOLTIP>
+
+	<TOOLTIP name="OneSkin_Mt" headline="OneSkin Matt" image1="img/SYK_LTD.jpg">
+		<TEXT format="normal" label="Base Material in MDF" />
+		<TEXT format="bold" label="Finish in Super Matt" />
+	</TOOLTIP>
+
+	<TOOLTIP name="Rehau_Hg_Crystal_HDF" headline="Rehau" image1="img/SYK_LTD.jpg">
+		<TEXT format="normal" label="Base Material in HDHMR" />
+		<TEXT format="bold" label="Finish in 2mm Crystal Glass" />
+	</TOOLTIP>
+
+	<TOOLTIP name="Rehau_Hg_Acrylic_MDF" headline="Rehau" image1="img/SYK_LTD.jpg">
+		<TEXT format="normal" label="Base Material in MDF" />
+		<TEXT format="bold" label="Finish in Acrylic HighGloss" />
+	</TOOLTIP>
+
+	<TOOLTIP name="Rehau_Hg_Crystal_BPLY" headline="Rehau" image1="img/SYK_LTD.jpg">
+		<TEXT format="normal" label="Base Material in Birch Ply" />
+		<TEXT format="bold" label="Finish in 2mm Crystal Glass" />
+	</TOOLTIP>
+
+	<TOOLTIP name="Rehau_Hg_Acrylic_BPLY" headline="Rehau" image1="img/SYK_LTD.jpg">
+		<TEXT format="normal" label="Base Material in Birch Ply" />
+		<TEXT format="bold" label="Finish in Acrylic HighGloss" />
+	</TOOLTIP>
+
+	<TOOLTIP name="Fenix_BPLY" headline="Fenix" image1="img/SYK_LTD.jpg">
+		<TEXT format="normal" label="Base Material in Birch Ply" />
+		<TEXT format="bold" label="Finish in Nano Super Matt" />
+	</TOOLTIP>
+
+	<TOOLTIP name="Ceramic" headline="Ceramic" image1="img/SYK_LTD.jpg">
+		<TEXT format="normal" label="Base Material in Birch Ply" />
+		<TEXT format="bold" label="Finish in 3mm Anti Scratch Ceramic" />
+	</TOOLTIP>
+
+
+	<!-- ROLLER SHUTTER TOOLTIP -->
+	
+	<TOOLTIP name="Easy_Line" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.rehau.com/sg-en/rauvolet-easy-line" label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="Verito_Line" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.rehau.com/in-en/tambour-door-range-rauvolet-vetro-line-tambour-doors"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="OCSM8478G" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/microwave-oven/ocsm8478g"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="OCM8478G" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/microwave-oven/ocm8478g"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="HM676G0S1I" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="httpsCS656GBS2://www.siemens-home.bsh-group.in/products-list/cooking-baking/ovens/ovens-with-microwave/HM676G0S1I"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="OCS8678G" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/microwave-oven/ocs8678g"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="OCS8687B" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/microwave-oven/ocs8687b"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="OCS8693S" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/microwave-oven/ocs8693s"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="CS656GBS2" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.siemens-home.bsh-group.in/products-list/cooking-baking/steam-cooking/steam-ovens/CS656GBS2#/Togglebox=-836809633/Tabs=tab-5276994/"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="HS636GDS1I" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.siemens-home.bsh-group.in/products-list/cooking-baking/steam-cooking/steam-ovens/HS636GDS1I"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="HS858GXB6B" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.siemens-home.bsh-group.in/products-list/cooking-baking/ovens/ovens-with-sous-vide-functionality/HS858GXB6B"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="OM8487B" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/microwave-oven/om8487b"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="OCM8493S" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/microwave-oven/ocm8493s"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="OM8334S" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/microwave-oven/om8334s"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="BE634LGS1I" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.siemens-home.bsh-group.in/products-list/cooking-baking/microwaves/built-in-microwaves/BE634LGS1I"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="BF634LGS1I" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.siemens-home.bsh-group.in/products-list/cooking-baking/microwaves/built-in-microwaves/BF634LGS1I"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="BE550LMR0I" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.siemens-home.bsh-group.in/products-list/cooking-baking/microwaves/built-in-microwaves/BE550LMR0I"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="CM8478G" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/built-in-coffee-machine/cm8478g"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="CM8477B" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/built-in-coffee-machine/cm8477b"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="CM8456S" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/built-in-coffee-machine/cm8456s"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="CT636LES1" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.siemens-home.bsh-group.in/products-list/coffee-machines/built-in-coffee-machines/CT636LES1"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="HB878GBB6B" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.siemens-home.bsh-group.in/products-list/cooking-baking/ovens/built-in-ovens/HB878GBB6B"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="HB634GBS1I" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.siemens-home.bsh-group.in/products-list/cooking-baking/ovens/built-in-ovens/HB634GBS1I"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="HB237ABR0Z" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.siemens-home.bsh-group.in/products-list/cooking-baking/ovens/built-in-ovens/HB237ABR0Z"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="ODW8128G" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/specialty-appliances/warming-drawer-odw8128g"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="ODW8127B" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/specialty-appliances/warming-drawer-odw8127b"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="ODW8123S" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/specialty-appliances/warming-drawer-odw8123s"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="BI630CNS1" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.siemens-home.bsh-group.in/products-list/cooking-baking/drawers/warming-drawers/BI630CNS1"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="BI630DNS1" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://www.siemens-home.bsh-group.in/products-list/cooking-baking/drawers/warming-drawers/BI630DNS1"	 label=" More information" />
+	</TOOLTIP>
+
+	<TOOLTIP name="ODV8128G" headline="Information" image1="img/.jpg">		
+		<TEXT format="bold" address="https://hafeleappliances.com/luxury-appliances/cooking-and-baking/specialty-appliances/vacuum-drawer-odv8128g"	 label=" More information" />
+	</TOOLTIP>
+	<TOOLTIP name="VSTALGATE-N" headline="About VS TAL GATE N" image1="img/.jpg">		
+		<TEXT format="bold" address="https://sites.google.com/view/iristeam/kitchen-tall-units/vs-tal-gate-n"	 label="CLICK TO KNOW MORE" />
+	</TOOLTIP>
+	<TOOLTIP name="VSTALGATE" headline="About VS TAL GATE" image1="img/.jpg">		
+		<TEXT format="bold" address="https://sites.google.com/view/iristeam/kitchen-tall-units/vs-tal-gate"	 label="CLICK TO KNOW MORE" />
+	</TOOLTIP>
+	<TOOLTIP name="VSTALGATEPRO" headline="About VS TAL PRO (DUSA)" image1="img/.jpg">		
+		<TEXT format="bold" address="https://sites.google.com/view/iristeam/kitchen-tall-units/vs-tal-gate-pro"	 label="CLICK TO KNOW MORE" />
+	</TOOLTIP>
+	<TOOLTIP name="VSCORWHEELPRO" headline="About VS COR WHEEL PRO (RE CORNER MAXX)" image1="img/.jpg">		
+		<TEXT format="bold" address="https://sites.google.com/view/iristeam/kitchen-corner-accessories/vs-cor-wheel-pro"	 label="CLICK TO KNOW MORE" />
+	</TOOLTIP>
+	
+
+
+</XML>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_ARTICLE">
+	<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>TU_Visible_Side</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Tall Visible Side</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" />
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<CHECKBOX name="Customized_Height_Check" label="Customized Height" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+			
+				<COMBOBOX name="Standard_Height" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE">
+					<ITEM value="1936" label="1936 mm" info1="700" info2="600"/>
+					<ITEM value="1956" label="1956 mm" info1="720" info2="600"/>
+					<ITEM value="1996" label="1996 mm" info1="760" info2="600"/>
+					<ITEM value="2086" label="2086 mm" info1="700" info2="750"/>
+					<ITEM value="2106" label="2106 mm" info1="720" info2="750"/>
+					<ITEM value="2146" label="2146 mm" info1="760" info2="750"/>
+					<ITEM value="2236" label="2236 mm" info1="700" info2="900"/>
+					<ITEM value="2256" label="2256 mm" info1="720" info2="900"/>
+					<ITEM value="2296" label="2296 mm" info1="760" info2="900"/>
+				</COMBOBOX>
+
+				<EDITBOX name="Customized_Height" label="Height (1200mm t0 2400mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE" min="1200" max="2400" />
+
+				<EDITBOX name="ART_SIZEZT" label="Height" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="1956" geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEXT" label="Width" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="18"  geoInfluencing="TRUE" />
+
+				<!-- <EDITBOX name="ART_SIZEYT" label="Width" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="18"  geoInfluencing="TRUE" /> -->
+
+				<EDITBOX name="ART_SIZEYTV" label="Depth" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="560"  geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEYT" label="Depth" info="Enter only carcass depth (200mm t0 620mm)"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" min="200" max="620" geoInfluencing="TRUE" />
+
+				<!-- <COMBOBOX name="ART_SIZEYT" label="Depth" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="560" geoInfluencing="TRUE">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+				</COMBOBOX> -->
+
+			<GROUP name="Visible_Side" label="Visible Side">
+
+				<COMBOBOX name="TU_Shutter_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="TU_Shutter_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="TU_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="TU_Front1" label="Visibe Shade" valuetype="IMAGE" Search="TRUE"	default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+				<!-- Variable Values -->
+				<EDITBOX name="TU_Front1_Mat" label="TU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="TU_Front1_Prf" label="TU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+			</GROUP>
+
+
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_ADDERPANEL_MARKUP" />
+
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXT</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYTV</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZT</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<!-- <VAR name="BU_Front1" value="TU_Front1" /> -->
+			<VAR name="BU_Front1_Mat" 		value="TU_Front1_Mat" />
+			<VAR name="BU_Front1_Prf" 		value="TU_Front1_Prf" />
+			<VAR name="Calculation_Factors" value="KAP_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KAP_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KAP_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_TU_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="TALL_UNIT_HEIGHT_CUSTOMIZED" />
+
+		<COMMAND> "FIELD(ART_SIZEYTV).value = CALC(FIELD(ART_SIZEYT).value+20)" </COMMAND>
+
+	</LOGIC_DEFINITION>
+</XML>

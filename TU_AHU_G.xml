@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>TU_AHU_G</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Tall Unit Appliance Housing</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" />
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+				
+				<CHECKBOX name="Customized_Height_Check" label="Customized Height" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+			
+				<COMBOBOX name="Standard_Height" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE">
+					<ITEM value="1936" label="1936 mm" info1="700" info2="600"/>
+					<ITEM value="1956" label="1956 mm" info1="720" info2="600"/>
+					<ITEM value="1996" label="1996 mm" info1="760" info2="600"/>
+					<ITEM value="2086" label="2086 mm" info1="700" info2="750"/>
+					<ITEM value="2106" label="2106 mm" info1="720" info2="750"/>
+					<ITEM value="2146" label="2146 mm" info1="760" info2="750"/>
+					<ITEM value="2236" label="2236 mm" info1="700" info2="900"/>
+					<ITEM value="2256" label="2256 mm" info1="720" info2="900"/>
+					<ITEM value="2296" label="2296 mm" info1="760" info2="900"/>
+				</COMBOBOX>
+
+				<EDITBOX name="Customized_Height" label="Height (1956mm t0 2400mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE" min="1956" max="2400" />
+
+				<EDITBOX name="ART_SIZEZT" label="Height" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="1956" geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEXT" label="Width (600mm)" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="600"  geoInfluencing="TRUE" />
+
+				<COMBOBOX name="ART_SIZEYT" label="Depth (560mm , 580mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_TU_Carcass_CONSTRUCTION" />
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Appliance_Details" label="Appliance Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="Appliance_Selection" label="Appliance Selection" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="1" geoInfluencing="TRUE">
+				<ITEM value="1" 		label="One Appliance" 	/>
+				<ITEM value="2" 		label="Two Appliances" 	/>
+				<ITEM value="3" 		label="Three Appliances" />
+			</COMBOBOX>
+
+			<EDITBOX name="TU_Appliance_Selection" label="Appliance 1" 	active="TRUE" visible="FALSE" locked="TRUE" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="TU_Appliance_Selection_1" label="Appliance 1" 	active="TRUE" visible="FALSE" locked="TRUE" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="TU_Appliance_Selection_2" label="Appliance 2" 	active="TRUE" visible="FALSE" locked="TRUE" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="TU_Appliance_Selection_3" label="Appliance 3" 	active="TRUE" visible="FALSE" locked="TRUE" default="" geoInfluencing="TRUE" />
+	
+			<EDITBOX name="Appliance_Height" 	label="Total Appliances Height"	active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Appliance_Height_1" 	label="Total Appliances Height 1"	active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Appliance_Height_2" 	label="Total Appliances Height 2"	active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Appliance_Height_3" 	label="Total Appliances Height 3"	active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+		
+			<GROUP name="Combination_Type_1" label="Appliances Selection"	Valuetype="ACCORDION"	opened="FALSE">
+
+				<COMBOBOX name="Combination_1_Type" label="Appliance Type" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Combi_Steam_Oven" geoInfluencing="TRUE">
+					<ITEM value="Combi_Steam_Oven" 		label="Combi_Steam_Oven" 	/>
+					<ITEM value="Microwave_Oven" 		label="Microwave_Oven" 	/>
+					<ITEM value="Builtin_Oven" 			label="Builtin_Oven" 	/>
+					<ITEM value="Coffee_Machine" 		label="Coffee_Machine" />
+					<ITEM value="Warming_Drawers" 		label="Warming_Drawers" />
+					<ITEM value="Vacuum_Drawer" 		label="Vacuum_Drawer" />
+				</COMBOBOX>
+
+				<COMBOBOX name="Combination_1" label="Appliances Selection" active="TRUE" width="100%" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="OCSM8478G" geoInfluencing="TRUE">
+					<ITEM value="OCSM8478G" 		label="OCSM8478G" 		info1="450"		info2="Combi_Steam_Oven"	tooltipid="OCSM8478G"	image1="ANGOLO/OCSM8478G.jpg"/>
+					<ITEM value="OCM8478G" 			label="OCM8478G" 		info1="450"		info2="Combi_Steam_Oven"	tooltipid="OCM8478G"	image1="ANGOLO/OCM8478G.jpg"/>
+					<ITEM value="HM676G0S1I" 		label="HM676G0S1I" 		info1="600"		info2="Microwave_Oven"		tooltipid="HM676G0S1I"	image1="ANGOLO/HM676G0S1I.jpg"/>
+		
+					<ITEM value="OM8487B" 			label="OM8487B" 		info1="450"		info2="Microwave_Oven"	tooltipid="OM8487B"		image1="ANGOLO/OM8487B.jpg"/>
+					<ITEM value="OCM8493S" 			label="OCM8493S" 		info1="450"		info2="Microwave_Oven"	tooltipid="OCM8493S"	image1="ANGOLO/OCM8493S.jpg"/>
+					<ITEM value="OM8334S" 			label="OM8334S" 		info1="380"		info2="Microwave_Oven"	tooltipid="OM8334S"		image1="ANGOLO/OM8334S.jpg"/>
+					<ITEM value="BE634LGS1I" 		label="BE634LGS1I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BE634LGS1I"	image1="ANGOLO/BE634LGS1I.jpg"/>
+					<ITEM value="BF634LGS1I" 		label="BF634LGS1I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BF634LGS1I"	image1="ANGOLO/BF634LGS1I.jpg"/>
+					<ITEM value="BE550LMR0I" 		label="BE550LMR0I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BE550LMR0I"	image1="ANGOLO/BE550LMR0I.jpg"/>
+		
+					<ITEM value="CM8478G" 			label="CM8478G" 		info1="450"		info2="Coffee_Machine"	stooltipid="CM8478G"	image1="ANGOLO/CM8478G.jpg"/>
+					<ITEM value="CM8477B" 			label="CM8477B" 		info1="450"		info2="Coffee_Machine"	tooltipid="CM8477B"		image1="ANGOLO/CM8477B.jpg"/>
+					<ITEM value="CM8456S" 			label="CM8456S" 		info1="450"		info2="Coffee_Machine"	tooltipid="CM8456S"		image1="ANGOLO/CM8456S.jpg"/>
+					<ITEM value="CT636LES1" 		label="CT636LES1" 		info1="455"		info2="Coffee_Machine"	tooltipid="CT636LES1"	image1="ANGOLO/CT636LES1.jpg"/>
+	
+					<ITEM value="OCS8678G" 			label="OCS8678G" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8678G"	image1="ANGOLO/OCS8678G.jpg"/>
+					<ITEM value="OCS8687B" 			label="OCS8687B" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8687B"	image1="ANGOLO/OCS8687B.jpg"/>
+					<ITEM value="OCS8693S" 			label="OCS8693S" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8693S"	image1="ANGOLO/OCS8693S.jpg"/>		
+					<ITEM value="HS636GDS1I" 		label="HS636GDS1I" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="HS636GDS1I"	image1="ANGOLO/HS636GDS1I.jpg"/>
+					<ITEM value="HS858GXB6B" 		label="HS858GXB6B" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="HS858GXB6B"	image1="ANGOLO/HS858GXB6B.jpg"/>
+					<ITEM value="CS656GBS2" 		label="CS656GBS2" 		info1="450"		info2="Combo_Steam_Oven"	tooltipid="CS656GBS2"	image1="ANGOLO/CS656GBS2.jpg"/>	
+	
+	
+					<ITEM value="HB878GBB6B" 		label="HB878GBB6B" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB878GBB6B"	image1="ANGOLO/HB878GBB6B.jpg"/>	
+					<ITEM value="HB634GBS1I" 		label="HB634GBS1I" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB634GBS1I"	image1="ANGOLO/HB634GBS1I.jpg"/>	
+					<ITEM value="HB237ABR0Z" 		label="HB237ABR0Z" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB237ABR0Z"	image1="ANGOLO/HB237ABR0Z.jpg"/>
+					
+					<ITEM value="ODW8128G" 			label="ODW8128G" 		info1="140"		info2="Warming_Drawers"	tooltipid="ODW8128G"	image1="ANGOLO/ODW8128G.jpg"/>	
+					<ITEM value="ODW8127B" 			label="ODW8127B" 		info1="140"		info2="Warming_Drawers"	tooltipid="ODW8127B"	image1="ANGOLO/ODW8127B.jpg"/>	
+					<ITEM value="ODW8123S" 			label="ODW8123S" 		info1="140"		info2="Warming_Drawers"	tooltipid="ODW8123S"	image1="ANGOLO/ODW8123S.jpg"/>	
+					<ITEM value="BI630CNS1" 		label="BI630CNS1" 		info1="140"		info2="Warming_Drawers"	tooltipid="BI630CNS1"	image1="ANGOLO/BI630CNS1.jpg"/>	
+					<ITEM value="BI630DNS1" 		label="BI630DNS1" 		info1="290"		info2="Warming_Drawers"	tooltipid="BI630DNS1"	image1="ANGOLO/BI630DNS1.jpg"/>	
+					<ITEM value="ODV8128G" 			label="ODV8128G" 		info1="140"		info2="Vacuum_Drawer"	tooltipid="ODV8128G"	image1="ANGOLO/ODV8128G.jpg"/>	
+				</COMBOBOX>	
+
+			</GROUP>
+
+			<GROUP name="Combination_Type_2_1" label="Top Appliances"	Valuetype="ACCORDION"	opened="FALSE">
+
+				<COMBOBOX name="Combination_2_1_Type" label="Appliance Type" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Combi_Steam_Oven" geoInfluencing="TRUE">
+					<ITEM value="Combi_Steam_Oven" 		label="Combi_Steam_Oven" 	/>
+					<ITEM value="Microwave_Oven" 		label="Microwave_Oven" 	/>
+					<ITEM value="Builtin_Oven" 			label="Builtin_Oven" 	/>
+					<ITEM value="Coffee_Machine" 		label="Coffee_Machine" />
+				</COMBOBOX>
+
+				<COMBOBOX name="Combination_2_1" label="Appliances Selection 1" active="TRUE" width="100%" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="OCSM8478G" geoInfluencing="TRUE">
+					<ITEM value="OCSM8478G" 		label="OCSM8478G" 		info1="450"		info2="Combi_Steam_Oven"	tooltipid="OCSM8478G"	image1="ANGOLO/OCSM8478G.jpg"/>
+					<ITEM value="OCM8478G" 			label="OCM8478G" 		info1="450"		info2="Combi_Steam_Oven"	tooltipid="OCM8478G"	image1="ANGOLO/OCM8478G.jpg"/>
+					<ITEM value="HM676G0S1I" 		label="HM676G0S1I" 		info1="600"		info2="Microwave_Oven"		tooltipid="HM676G0S1I"	image1="ANGOLO/HM676G0S1I.jpg"/>
+		
+					<ITEM value="OM8487B" 			label="OM8487B" 		info1="450"		info2="Microwave_Oven"	tooltipid="OM8487B"		image1="ANGOLO/OM8487B.jpg"/>
+					<ITEM value="OCM8493S" 			label="OCM8493S" 		info1="450"		info2="Microwave_Oven"	tooltipid="OCM8493S"	image1="ANGOLO/OCM8493S.jpg"/>
+					<ITEM value="OM8334S" 			label="OM8334S" 		info1="380"		info2="Microwave_Oven"	tooltipid="OM8334S"		image1="ANGOLO/OM8334S.jpg"/>
+					<ITEM value="BE634LGS1I" 		label="BE634LGS1I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BE634LGS1I"	image1="ANGOLO/BE634LGS1I.jpg"/>
+					<ITEM value="BF634LGS1I" 		label="BF634LGS1I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BF634LGS1I"	image1="ANGOLO/BF634LGS1I.jpg"/>
+					<ITEM value="BE550LMR0I" 		label="BE550LMR0I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BE550LMR0I"	image1="ANGOLO/BE550LMR0I.jpg"/>
+		
+					<ITEM value="CM8478G" 			label="CM8478G" 		info1="450"		info2="Coffee_Machine"	stooltipid="CM8478G"	image1="ANGOLO/CM8478G.jpg"/>
+					<ITEM value="CM8477B" 			label="CM8477B" 		info1="450"		info2="Coffee_Machine"	tooltipid="CM8477B"		image1="ANGOLO/CM8477B.jpg"/>
+					<ITEM value="CM8456S" 			label="CM8456S" 		info1="450"		info2="Coffee_Machine"	tooltipid="CM8456S"		image1="ANGOLO/CM8456S.jpg"/>
+					<ITEM value="CT636LES1" 		label="CT636LES1" 		info1="455"		info2="Coffee_Machine"	tooltipid="CT636LES1"	image1="ANGOLO/CT636LES1.jpg"/>
+	
+					<ITEM value="OCS8678G" 			label="OCS8678G" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8678G"	image1="ANGOLO/OCS8678G.jpg"/>
+					<ITEM value="OCS8687B" 			label="OCS8687B" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8687B"	image1="ANGOLO/OCS8687B.jpg"/>
+					<ITEM value="OCS8693S" 			label="OCS8693S" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8693S"	image1="ANGOLO/OCS8693S.jpg"/>		
+					<ITEM value="HS636GDS1I" 		label="HS636GDS1I" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="HS636GDS1I"	image1="ANGOLO/HS636GDS1I.jpg"/>
+					<ITEM value="HS858GXB6B" 		label="HS858GXB6B" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="HS858GXB6B"	image1="ANGOLO/HS858GXB6B.jpg"/>
+					<ITEM value="CS656GBS2" 		label="CS656GBS2" 		info1="450"		info2="Combo_Steam_Oven"	tooltipid="CS656GBS2"	image1="ANGOLO/CS656GBS2.jpg"/>	
+	
+	
+					<ITEM value="HB878GBB6B" 		label="HB878GBB6B" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB878GBB6B"	image1="ANGOLO/HB878GBB6B.jpg"/>	
+					<ITEM value="HB634GBS1I" 		label="HB634GBS1I" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB634GBS1I"	image1="ANGOLO/HB634GBS1I.jpg"/>	
+					<ITEM value="HB237ABR0Z" 		label="HB237ABR0Z" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB237ABR0Z"	image1="ANGOLO/HB237ABR0Z.jpg"/>				
+				</COMBOBOX>	
+
+			</GROUP>
+
+			<GROUP name="Combination_Type_2_2" label="Bottom Appliances"	Valuetype="ACCORDION"	opened="FALSE">
+
+				<COMBOBOX name="Combination_2_2_Type" label="Appliance Type" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Combi_Steam_Oven" geoInfluencing="TRUE">
+					<ITEM value="Combi_Steam_Oven" 		label="Combi_Steam_Oven" 	/>
+					<ITEM value="Microwave_Oven" 		label="Microwave_Oven" 	/>
+					<ITEM value="Builtin_Oven" 			label="Builtin_Oven" 	/>
+					<ITEM value="Warming_Drawers" 		label="Warming_Drawers" />
+					<ITEM value="Vacuum_Drawer" 		label="Vacuum_Drawer" />
+				</COMBOBOX>
+
+				<COMBOBOX name="Combination_2_2" label="Appliances Selection" active="TRUE" width="100%" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="OCSM8478G" geoInfluencing="TRUE">
+					<ITEM value="OCSM8478G" 		label="OCSM8478G" 		info1="450"		info2="Combi_Steam_Oven"	tooltipid="OCSM8478G"	image1="ANGOLO/OCSM8478G.jpg"/>
+					<ITEM value="OCM8478G" 			label="OCM8478G" 		info1="450"		info2="Combi_Steam_Oven"	tooltipid="OCM8478G"	image1="ANGOLO/OCM8478G.jpg"/>
+					<ITEM value="HM676G0S1I" 		label="HM676G0S1I" 		info1="600"		info2="Microwave_Oven"		tooltipid="HM676G0S1I"	image1="ANGOLO/HM676G0S1I.jpg"/>
+		
+					<ITEM value="OM8487B" 			label="OM8487B" 		info1="450"		info2="Microwave_Oven"	tooltipid="OM8487B"		image1="ANGOLO/OM8487B.jpg"/>
+					<ITEM value="OCM8493S" 			label="OCM8493S" 		info1="450"		info2="Microwave_Oven"	tooltipid="OCM8493S"	image1="ANGOLO/OCM8493S.jpg"/>
+					<ITEM value="OM8334S" 			label="OM8334S" 		info1="380"		info2="Microwave_Oven"	tooltipid="OM8334S"		image1="ANGOLO/OM8334S.jpg"/>
+					<ITEM value="BE634LGS1I" 		label="BE634LGS1I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BE634LGS1I"	image1="ANGOLO/BE634LGS1I.jpg"/>
+					<ITEM value="BF634LGS1I" 		label="BF634LGS1I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BF634LGS1I"	image1="ANGOLO/BF634LGS1I.jpg"/>
+					<ITEM value="BE550LMR0I" 		label="BE550LMR0I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BE550LMR0I"	image1="ANGOLO/BE550LMR0I.jpg"/>
+		
+					<ITEM value="OCS8678G" 			label="OCS8678G" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8678G"	image1="ANGOLO/OCS8678G.jpg"/>
+					<ITEM value="OCS8687B" 			label="OCS8687B" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8687B"	image1="ANGOLO/OCS8687B.jpg"/>
+					<ITEM value="OCS8693S" 			label="OCS8693S" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8693S"	image1="ANGOLO/OCS8693S.jpg"/>		
+					<ITEM value="HS636GDS1I" 		label="HS636GDS1I" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="HS636GDS1I"	image1="ANGOLO/HS636GDS1I.jpg"/>
+					<ITEM value="HS858GXB6B" 		label="HS858GXB6B" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="HS858GXB6B"	image1="ANGOLO/HS858GXB6B.jpg"/>
+					<ITEM value="CS656GBS2" 		label="CS656GBS2" 		info1="450"		info2="Combo_Steam_Oven"	tooltipid="CS656GBS2"	image1="ANGOLO/CS656GBS2.jpg"/>	
+	
+	
+					<ITEM value="HB878GBB6B" 		label="HB878GBB6B" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB878GBB6B"	image1="ANGOLO/HB878GBB6B.jpg"/>	
+					<ITEM value="HB634GBS1I" 		label="HB634GBS1I" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB634GBS1I"	image1="ANGOLO/HB634GBS1I.jpg"/>	
+					<ITEM value="HB237ABR0Z" 		label="HB237ABR0Z" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB237ABR0Z"	image1="ANGOLO/HB237ABR0Z.jpg"/>
+					
+					<ITEM value="ODW8128G" 			label="ODW8128G" 		info1="140"		info2="Warming_Drawers"	tooltipid="ODW8128G"	image1="ANGOLO/ODW8128G.jpg"/>	
+					<ITEM value="ODW8127B" 			label="ODW8127B" 		info1="140"		info2="Warming_Drawers"	tooltipid="ODW8127B"	image1="ANGOLO/ODW8127B.jpg"/>	
+					<ITEM value="ODW8123S" 			label="ODW8123S" 		info1="140"		info2="Warming_Drawers"	tooltipid="ODW8123S"	image1="ANGOLO/ODW8123S.jpg"/>	
+					<ITEM value="BI630CNS1" 		label="BI630CNS1" 		info1="140"		info2="Warming_Drawers"	tooltipid="BI630CNS1"	image1="ANGOLO/BI630CNS1.jpg"/>	
+					<ITEM value="BI630DNS1" 		label="BI630DNS1" 		info1="290"		info2="Warming_Drawers"	tooltipid="BI630DNS1"	image1="ANGOLO/BI630DNS1.jpg"/>	
+					<ITEM value="ODV8128G" 			label="ODV8128G" 		info1="140"		info2="Vacuum_Drawer"	tooltipid="ODV8128G"	image1="ANGOLO/ODV8128G.jpg"/>	
+				</COMBOBOX>	
+
+			</GROUP>
+
+			<GROUP name="Combination_Type_3_1" label="Top Appliances"	Valuetype="ACCORDION"	opened="FALSE">
+
+				<COMBOBOX name="Combination_3_1_Type" label="Appliance Type" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Combi_Steam_Oven" geoInfluencing="TRUE">
+					<ITEM value="Combi_Steam_Oven" 		label="Combi_Steam_Oven" 	/>
+					<ITEM value="Microwave_Oven" 		label="Microwave_Oven" 	/>
+					<ITEM value="Builtin_Oven" 			label="Builtin_Oven" 	/>
+					<ITEM value="Coffee_Machine" 		label="Coffee_Machine" />
+				</COMBOBOX>
+
+				<COMBOBOX name="Combination_3_1" label="Appliances Selection 1" active="TRUE" width="100%" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="OCSM8478G" geoInfluencing="TRUE">
+					<ITEM value="OCSM8478G" 		label="OCSM8478G" 		info1="450"		info2="Combi_Steam_Oven"	tooltipid="OCSM8478G"	image1="ANGOLO/OCSM8478G.jpg"/>
+					<ITEM value="OCM8478G" 			label="OCM8478G" 		info1="450"		info2="Combi_Steam_Oven"	tooltipid="OCM8478G"	image1="ANGOLO/OCM8478G.jpg"/>
+					<ITEM value="HM676G0S1I" 		label="HM676G0S1I" 		info1="600"		info2="Microwave_Oven"		tooltipid="HM676G0S1I"	image1="ANGOLO/HM676G0S1I.jpg"/>
+		
+					<ITEM value="OM8487B" 			label="OM8487B" 		info1="450"		info2="Microwave_Oven"	tooltipid="OM8487B"		image1="ANGOLO/OM8487B.jpg"/>
+					<ITEM value="OCM8493S" 			label="OCM8493S" 		info1="450"		info2="Microwave_Oven"	tooltipid="OCM8493S"	image1="ANGOLO/OCM8493S.jpg"/>
+					<ITEM value="OM8334S" 			label="OM8334S" 		info1="380"		info2="Microwave_Oven"	tooltipid="OM8334S"		image1="ANGOLO/OM8334S.jpg"/>
+					<ITEM value="BE634LGS1I" 		label="BE634LGS1I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BE634LGS1I"	image1="ANGOLO/BE634LGS1I.jpg"/>
+					<ITEM value="BF634LGS1I" 		label="BF634LGS1I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BF634LGS1I"	image1="ANGOLO/BF634LGS1I.jpg"/>
+					<ITEM value="BE550LMR0I" 		label="BE550LMR0I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BE550LMR0I"	image1="ANGOLO/BE550LMR0I.jpg"/>
+		
+					<ITEM value="CM8478G" 			label="CM8478G" 		info1="450"		info2="Coffee_Machine"	stooltipid="CM8478G"	image1="ANGOLO/CM8478G.jpg"/>
+					<ITEM value="CM8477B" 			label="CM8477B" 		info1="450"		info2="Coffee_Machine"	tooltipid="CM8477B"		image1="ANGOLO/CM8477B.jpg"/>
+					<ITEM value="CM8456S" 			label="CM8456S" 		info1="450"		info2="Coffee_Machine"	tooltipid="CM8456S"		image1="ANGOLO/CM8456S.jpg"/>
+					<ITEM value="CT636LES1" 		label="CT636LES1" 		info1="455"		info2="Coffee_Machine"	tooltipid="CT636LES1"	image1="ANGOLO/CT636LES1.jpg"/>
+	
+					<ITEM value="OCS8678G" 			label="OCS8678G" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8678G"	image1="ANGOLO/OCS8678G.jpg"/>
+					<ITEM value="OCS8687B" 			label="OCS8687B" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8687B"	image1="ANGOLO/OCS8687B.jpg"/>
+					<ITEM value="OCS8693S" 			label="OCS8693S" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8693S"	image1="ANGOLO/OCS8693S.jpg"/>		
+					<ITEM value="HS636GDS1I" 		label="HS636GDS1I" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="HS636GDS1I"	image1="ANGOLO/HS636GDS1I.jpg"/>
+					<ITEM value="HS858GXB6B" 		label="HS858GXB6B" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="HS858GXB6B"	image1="ANGOLO/HS858GXB6B.jpg"/>
+					<ITEM value="CS656GBS2" 		label="CS656GBS2" 		info1="450"		info2="Combo_Steam_Oven"	tooltipid="CS656GBS2"	image1="ANGOLO/CS656GBS2.jpg"/>	
+	
+	
+					<ITEM value="HB878GBB6B" 		label="HB878GBB6B" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB878GBB6B"	image1="ANGOLO/HB878GBB6B.jpg"/>	
+					<ITEM value="HB634GBS1I" 		label="HB634GBS1I" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB634GBS1I"	image1="ANGOLO/HB634GBS1I.jpg"/>	
+					<ITEM value="HB237ABR0Z" 		label="HB237ABR0Z" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB237ABR0Z"	image1="ANGOLO/HB237ABR0Z.jpg"/>				
+				</COMBOBOX>	
+
+			</GROUP>
+
+			<GROUP name="Combination_Type_3_2" label="Middle Appliances"	Valuetype="ACCORDION"	opened="FALSE">
+
+				<COMBOBOX name="Combination_3_2_Type" label="Appliance Type" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Combi_Steam_Oven" geoInfluencing="TRUE">
+					<ITEM value="Combi_Steam_Oven" 		label="Combi_Steam_Oven" 	/>
+					<ITEM value="Microwave_Oven" 		label="Microwave_Oven" 	/>
+					<ITEM value="Builtin_Oven" 			label="Builtin_Oven" 	/>
+				</COMBOBOX>
+
+				<COMBOBOX name="Combination_3_2" label="Appliances Selection 2" active="TRUE" width="100%" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="OCSM8478G" geoInfluencing="TRUE">
+					<ITEM value="OCSM8478G" 		label="OCSM8478G" 		info1="450"		info2="Combi_Steam_Oven"	tooltipid="OCSM8478G"	image1="ANGOLO/OCSM8478G.jpg"/>
+					<ITEM value="OCM8478G" 			label="OCM8478G" 		info1="450"		info2="Combi_Steam_Oven"	tooltipid="OCM8478G"	image1="ANGOLO/OCM8478G.jpg"/>
+					<ITEM value="HM676G0S1I" 		label="HM676G0S1I" 		info1="600"		info2="Microwave_Oven"		tooltipid="HM676G0S1I"	image1="ANGOLO/HM676G0S1I.jpg"/>
+		
+					<ITEM value="OM8487B" 			label="OM8487B" 		info1="450"		info2="Microwave_Oven"	tooltipid="OM8487B"		image1="ANGOLO/OM8487B.jpg"/>
+					<ITEM value="OCM8493S" 			label="OCM8493S" 		info1="450"		info2="Microwave_Oven"	tooltipid="OCM8493S"	image1="ANGOLO/OCM8493S.jpg"/>
+					<ITEM value="OM8334S" 			label="OM8334S" 		info1="380"		info2="Microwave_Oven"	tooltipid="OM8334S"		image1="ANGOLO/OM8334S.jpg"/>
+					<ITEM value="BE634LGS1I" 		label="BE634LGS1I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BE634LGS1I"	image1="ANGOLO/BE634LGS1I.jpg"/>
+					<ITEM value="BF634LGS1I" 		label="BF634LGS1I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BF634LGS1I"	image1="ANGOLO/BF634LGS1I.jpg"/>
+					<ITEM value="BE550LMR0I" 		label="BE550LMR0I" 		info1="380"		info2="Microwave_Oven"	tooltipid="BE550LMR0I"	image1="ANGOLO/BE550LMR0I.jpg"/>
+		
+					<ITEM value="OCS8678G" 			label="OCS8678G" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8678G"	image1="ANGOLO/OCS8678G.jpg"/>
+					<ITEM value="OCS8687B" 			label="OCS8687B" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8687B"	image1="ANGOLO/OCS8687B.jpg"/>
+					<ITEM value="OCS8693S" 			label="OCS8693S" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="OCS8693S"	image1="ANGOLO/OCS8693S.jpg"/>		
+					<ITEM value="HS636GDS1I" 		label="HS636GDS1I" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="HS636GDS1I"	image1="ANGOLO/HS636GDS1I.jpg"/>
+					<ITEM value="HS858GXB6B" 		label="HS858GXB6B" 		info1="600"		info2="Combo_Steam_Oven"	tooltipid="HS858GXB6B"	image1="ANGOLO/HS858GXB6B.jpg"/>
+					<ITEM value="CS656GBS2" 		label="CS656GBS2" 		info1="450"		info2="Combo_Steam_Oven"	tooltipid="CS656GBS2"	image1="ANGOLO/CS656GBS2.jpg"/>	
+	
+	
+					<ITEM value="HB878GBB6B" 		label="HB878GBB6B" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB878GBB6B"	image1="ANGOLO/HB878GBB6B.jpg"/>	
+					<ITEM value="HB634GBS1I" 		label="HB634GBS1I" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB634GBS1I"	image1="ANGOLO/HB634GBS1I.jpg"/>	
+					<ITEM value="HB237ABR0Z" 		label="HB237ABR0Z" 		info1="600"		info2="Builtin_Oven"	tooltipid="HB237ABR0Z"	image1="ANGOLO/HB237ABR0Z.jpg"/>
+				</COMBOBOX>
+
+			</GROUP>
+
+			<GROUP name="Combination_Type_3_3" label="Bottom Appliances"	Valuetype="ACCORDION"	opened="FALSE">
+
+				<COMBOBOX name="Combination_3_3_Type" label="Appliance Type" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Warming_Drawers" geoInfluencing="TRUE">
+					<ITEM value="Warming_Drawers" 		label="Warming_Drawers" />
+					<ITEM value="Vacuum_Drawer" 		label="Vacuum_Drawer" />
+				</COMBOBOX>
+
+				<COMBOBOX name="Combination_3_3" label="Appliances Selection 3" active="TRUE" width="100%" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="ODW8128G" geoInfluencing="TRUE">
+					<ITEM value="ODW8128G" 			label="ODW8128G" 		info1="140"		info2="Warming_Drawers"	tooltipid="ODW8128G"	image1="ANGOLO/ODW8128G.jpg"/>	
+					<ITEM value="ODW8127B" 			label="ODW8127B" 		info1="140"		info2="Warming_Drawers"	tooltipid="ODW8127B"	image1="ANGOLO/ODW8127B.jpg"/>	
+					<ITEM value="ODW8123S" 			label="ODW8123S" 		info1="140"		info2="Warming_Drawers"	tooltipid="ODW8123S"	image1="ANGOLO/ODW8123S.jpg"/>	
+					<ITEM value="BI630CNS1" 		label="BI630CNS1" 		info1="140"		info2="Warming_Drawers"	tooltipid="BI630CNS1"	image1="ANGOLO/BI630CNS1.jpg"/>	
+					<ITEM value="BI630DNS1" 		label="BI630DNS1" 		info1="290"		info2="Warming_Drawers"	tooltipid="BI630DNS1"	image1="ANGOLO/BI630DNS1.jpg"/>	
+					<ITEM value="ODV8128G" 			label="ODV8128G" 		info1="140"		info2="Vacuum_Drawer"	tooltipid="ODV8128G"	image1="ANGOLO/ODV8128G.jpg"/>	
+				</COMBOBOX>	
+
+			</GROUP>
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Internal_Selection" label="Internal Selection" active="TRUE" visible="TRUE">
+
+			<EDITBOX name="Base_Unit_Height" label="Bottom Zone Height"	active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="720" geoInfluencing="TRUE" />
+			
+			<COMBOBOX name="TU_BottomZone_Article_Insert" label="Bottom Zone Selection" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="1Door_1AdjShelf" geoInfluencing="TRUE">
+				<ITEM value="1Door_1AdjShelf_G" 			label="1Door With Adj Shelf" 	image1="img/catalog/1Door_1AdjShelf.PNG"/>
+				<ITEM value="1Big_Drawers_G" 				label="1 External Drawer" 		image1="img/catalog/1Big_Drawers.jpg"/>
+				<ITEM value="2Big_Drawers_G" 				label="2 External Drawers" 		image1="img/catalog/2Big_Drawers.jpg"/>
+				<ITEM value="3_Drawers(2Reg_1Big)_G" 		label="3 External Drawers" 		image1="img/catalog/3_Drawers(2Reg_1Big).jpg"/>
+			</COMBOBOX>
+
+			<EDITBOX name="Top_Zone_Height" label="Top Zone Height"	active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+
+			<COMBOBOX name="TU_TopZone_Article_Insert" label="Top Zone Selection" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="1Door_1AdjShelf_WU" geoInfluencing="TRUE">
+				<ITEM value="1Door_1AdjShelf_WU" 		label="1Door With AdjShelf" 	image1="img/catalog/1Door_1AdjShelf.PNG"/>
+				<ITEM value="LU_HK_WU" 					label="Lift Up HK" 				image1="img/catalog/LU_HK_WU.jpg"/>
+				<ITEM value="BF_LU_HF_WU" 				label="Lift UP Bi-Fold" 		image1="img/catalog/BF_LU_HF_WU.jpg"/>
+			</COMBOBOX>
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_HINGE_SELECTION" />
+
+			<COMBOBOX name="Hinge_Open" label="Opening Direction" valuetype="IMAGE" default="Left_Hinge" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="Left_Hinge" value="Left_Hinge" label="LHS" image1="img/catalog/LHS.PNG" image2="img/catalog/.PNG" />
+				<ITEM name="Right_Hinge" value="Right_Hinge" label="RHS" image1="img/catalog/RHS.PNG" image2="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_BIG_SMALL_DRAWERS_SELECTION" />
+
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<CHECKBOX name="TU_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+			<GROUP name="Bottom_Shutter_Details" label="Bottom Shutter Details">
+
+				<COMBOBOX name="TU_Shutter_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="TU_Shutter_Finish" label="Finish" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="TU_Texture" label="Texture" valuetype="TEXT" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="TU_Front1" label="Shutter Shade" valuetype="IMAGE"	Search="TRUE" default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<GROUP name="Top_Shutter_Details" label="Top Shutter Details">
+
+				<COMBOBOX name="TU_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="TU_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="TU_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="TU_Front2" label="Shutter Shade" valuetype="IMAGE"	Search="TRUE" default="" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<!-- Variable Values -->
+			<EDITBOX name="TU_Front1_Mat" label="TU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="TU_Front1_Prf" label="TU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+			<EDITBOX name="TU_Front2_Mat" label="TU_Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="TU_Front2_Prf" label="TU_Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Handle_Details" label="Gola Profile" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+			<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_GOLA_PROFILES" />
+
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_TALL_MARKUP" />
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXT</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYT</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZT</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="___BASE" 					value="___BASE" />
+			<VAR name="Adjustable_Legs" 			value="Adjustable_Legs" />
+			<VAR name="KI_Adjuster_Height" 			value="Leg_Height" />
+			<VAR name="Skirting_Height" 			value="Skirting_Height" />
+			<VAR name="BU_Carcass" 					value="TU_Carcass" />
+			<VAR name="BU_Carcass_Prf_Type" 		value="TU_Carcass_Prf_Type" />
+
+			<VAR name="WU_Carcass" 					value="TU_Carcass" />
+			<VAR name="WU_Carcass_Prf_Type" 		value="TU_Carcass_Prf_Type" />
+
+			<VAR name="wU_Front1_Mat" 				value="TU_Front1_Mat" />
+			<VAR name="WU_Front1_Prf" 				value="TU_Front1_Prf" />
+			<VAR name="WU_Front2_Mat" 				value="TU_Front2_Mat" />
+			<VAR name="WU_Front2_Prf" 				value="TU_Front2_Prf" />
+
+			<VAR name="BU_Front1_Mat" 				value="TU_Front1_Mat" />
+			<VAR name="BU_Front1_Prf" 				value="TU_Front1_Prf" />
+			<VAR name="BU_Front2_Mat" 				value="TU_Front2_Mat" />
+			<VAR name="BU_Front2_Prf" 				value="TU_Front2_Prf" />
+			
+			<VAR name="Base_Unit_Height" 				value="Base_Unit_Height" />
+			<VAR name="Appliance_Height" 				value="Appliance_Height" />
+			<VAR name="Appliance_Height_1" 				value="Appliance_Height_1" />
+			<VAR name="Appliance_Height_2" 				value="Appliance_Height_2" />
+			<VAR name="Appliance_Height_3" 				value="Appliance_Height_3" />
+			<VAR name="TU_Appliance_Selection" 			value="TU_Appliance_Selection" />
+			<VAR name="TU_Appliance_Selection_1" 		value="TU_Appliance_Selection_1" />
+			<VAR name="TU_Appliance_Selection_2" 		value="TU_Appliance_Selection_2" />
+			<VAR name="TU_Appliance_Selection_3" 		value="TU_Appliance_Selection_3" />
+			<VAR name="Drawer_Type" 					value="Drawer_Type" />
+			<VAR name="Drawer_Colour" 					value="Drawer_Colour" />
+			<VAR name="Drawer_Model_ExtDr" 				value="Drawer_Model_ExtDr" />
+			<VAR name="Regular_Drawer_Type" 			value="Regular_Drawer_Type" />
+			<VAR name="TU_BottomZone_Article_Insert" 	value="TU_BottomZone_Article_Insert" />
+			<VAR name="TU_TopZone_Article_Insert" 		value="TU_TopZone_Article_Insert" />
+			<VAR name="Gola_Profile_Selection" 			value="Gola_Profile_Selection" />
+
+			<VAR name="Calculation_Factors" value="KT_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KT_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KT_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<IF>
+			<EQ expr1="FIELD(Appliance_Selection).value" expr2="1" />
+			<THEN>
+				<COMMAND>"FIELD(Base_Unit_Height).value=720"</COMMAND>
+				<COMMAND>"FIELD(TU_Appliance_Selection).value=FIELD(Combination_1).value"</COMMAND>
+				<COMMAND>"FIELD(Combination_Type_1).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(Combination_Type_2_1).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Combination_Type_2_2).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Combination_Type_3_1).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Combination_Type_3_2).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Combination_Type_3_3).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Appliance_Height).value=FIELD(Combination_1).info1"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Appliance_Selection).value" expr2="2" />
+					<THEN>
+						<COMMAND>"FIELD(Base_Unit_Height).value=360"</COMMAND>
+						<COMMAND>"FIELD(TU_Appliance_Selection).value=TU_HosingUnit_2Appliances"</COMMAND>
+						<COMMAND>"FIELD(Combination_Type_1).visible=FALSE"</COMMAND>
+						<COMMAND>"FIELD(Combination_Type_2_1).visible=TRUE"</COMMAND>
+						<COMMAND>"FIELD(Combination_Type_2_2).visible=TRUE"</COMMAND>
+						<COMMAND>"FIELD(Combination_Type_3_1).visible=FALSE"</COMMAND>
+						<COMMAND>"FIELD(Combination_Type_3_2).visible=FALSE"</COMMAND>
+						<COMMAND>"FIELD(Combination_Type_3_3).visible=FALSE"</COMMAND>						
+						<COMMAND>"FIELD(TU_Appliance_Selection_1).value=FIELD(Combination_2_1).value"</COMMAND>
+						<COMMAND>"FIELD(TU_Appliance_Selection_2).value=FIELD(Combination_2_2).value"</COMMAND>
+						<COMMAND>"FIELD(Appliance_Height_1).value=FIELD(Combination_2_1).info1"</COMMAND>
+						<COMMAND>"FIELD(Appliance_Height_2).value=FIELD(Combination_2_2).info1"</COMMAND>
+						<COMMAND>"FIELD(Appliance_Height).value=CALC(FIELD(Appliance_Height_1).value+FIELD(Appliance_Height_2).value)"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Appliance_Selection).value" expr2="3" />
+							<THEN>
+								<COMMAND>"FIELD(Base_Unit_Height).value=360"</COMMAND>
+								<COMMAND>"FIELD(TU_Appliance_Selection).value=TU_HosingUnit_3Appliances"</COMMAND>
+								<COMMAND>"FIELD(Combination_Type_1).visible=FALSE"</COMMAND>
+								<COMMAND>"FIELD(Combination_Type_2_1).visible=FALSE"</COMMAND>
+								<COMMAND>"FIELD(Combination_Type_2_2).visible=FALSE"</COMMAND>
+								<COMMAND>"FIELD(Combination_Type_3_1).visible=TRUE"</COMMAND>
+								<COMMAND>"FIELD(Combination_Type_3_2).visible=TRUE"</COMMAND>
+								<COMMAND>"FIELD(Combination_Type_3_3).visible=TRUE"</COMMAND>						
+								<COMMAND>"FIELD(TU_Appliance_Selection_1).value=FIELD(Combination_3_1).value"</COMMAND>
+								<COMMAND>"FIELD(TU_Appliance_Selection_2).value=FIELD(Combination_3_2).value"</COMMAND>
+								<COMMAND>"FIELD(TU_Appliance_Selection_3).value=FIELD(Combination_3_3).value"</COMMAND>
+								<COMMAND>"FIELD(Appliance_Height_1).value=FIELD(Combination_3_1).info1"</COMMAND>
+								<COMMAND>"FIELD(Appliance_Height_2).value=FIELD(Combination_3_2).info1"</COMMAND>
+								<COMMAND>"FIELD(Appliance_Height_3).value=FIELD(Combination_3_3).info1"</COMMAND>
+								<COMMAND>"FIELD(Appliance_Height).value=CALC(FIELD(Appliance_Height_1).value+FIELD(Appliance_Height_2).value+FIELD(Appliance_Height_3).value)"</COMMAND>
+							</THEN>
+						</IF>						
+					</ELSE>
+				</IF>
+			</ELSE>
+		</IF>	
+							
+		
+		
+		<COMMAND>"FIELD(Combination_1).Info2List(FIELD(Combination_1_Type).value)"</COMMAND>
+		<COMMAND>"FIELD(Combination_2_1).Info2List(FIELD(Combination_2_1_Type).value)"</COMMAND>
+		<COMMAND>"FIELD(Combination_2_2).Info2List(FIELD(Combination_2_2_Type).value)"</COMMAND>
+		<COMMAND>"FIELD(Combination_3_1).Info2List(FIELD(Combination_3_1_Type).value)"</COMMAND>
+		<COMMAND>"FIELD(Combination_3_2).Info2List(FIELD(Combination_3_2_Type).value)"</COMMAND>
+		<COMMAND>"FIELD(Combination_3_3).Info2List(FIELD(Combination_3_3_Type).value)"</COMMAND>
+		
+		<COMMAND>"FIELD(Top_Zone_Height).value=CALC(FIELD(ART_SIZEZT).value-(FIELD(Appliance_Height).value+FIELD(Base_Unit_Height).value))"</COMMAND>			
+
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="TALL_UNIT_HEIGHT_CUSTOMIZED" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_TU_Carcass_CONSTRUCTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_BIG_SMALL_DRAWERS_SELECTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_TU_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_TU_SHUTTER_FINISH_LOGIC_1" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_TU_TB_DIFFERENT_SHUTTER_COLOR" />
+
+		<IF>
+			<AND>
+				<GTEQ expr1="FIELD(Base_Unit_Height).value" expr2="300" />
+				<LTEQ expr1="FIELD(Base_Unit_Height).value" expr2="370" />
+			</AND>
+			<THEN>
+				<COMMAND>"FIELD(TU_BottomZone_Article_Insert).Itemlist(1Door_1AdjShelf_G,1Big_Drawers_G)" </COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<AND>
+						<GTEQ expr1="FIELD(Base_Unit_Height).value" expr2="700" />
+						<LTEQ expr1="FIELD(Base_Unit_Height).value" expr2="760" />
+					</AND>
+					<THEN>
+						<COMMAND>"FIELD(TU_BottomZone_Article_Insert).Itemlist(1Door_1AdjShelf_G,2Big_Drawers_G,3_Drawers(2Reg_1Big)_G)" </COMMAND>
+					</THEN>
+					<ELSE>
+							<COMMAND>"FIELD(TU_BottomZone_Article_Insert).Itemlist(1Door_1AdjShelf_G)" </COMMAND>
+					</ELSE>					
+				</IF>
+			</ELSE>
+		</IF> 
+
+		<IF>
+			<EQ expr1="FIELD(TU_BottomZone_Article_Insert).value" expr2="1Door_1AdjShelf_G" />
+			<THEN>
+				<COMMAND>"FIELD(Drawer_Type).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Drawer_Colour).visible=FALSE"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<NEQ expr1="FIELD(TU_BottomZone_Article_Insert).value" expr2="1Door_1AdjShelf_G" />
+					<THEN>
+						<COMMAND>"FIELD(Drawer_Type).visible=TRUE"</COMMAND>
+						<COMMAND>"FIELD(Drawer_Colour).visible=TRUE"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<AND>
+				<GTEQ expr1="FIELD(Top_Zone_Height).value" expr2="300" />
+				<LT expr1="FIELD(Top_Zone_Height).value" expr2="600" />
+			</AND>
+			<THEN>
+				<COMMAND>"FIELD(TU_TopZone_Article_Insert).Itemlist(1Door_1AdjShelf_WU,LU_HK_WU)" </COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<AND>
+						<GTEQ expr1="FIELD(Top_Zone_Height).value" expr2="600" />
+						<LTEQ expr1="FIELD(Top_Zone_Height).value" expr2="900" />
+					</AND>
+					<THEN>
+						<COMMAND>"FIELD(TU_TopZone_Article_Insert).Itemlist(1Door_1AdjShelf_WU,BF_LU_HF_WU)" </COMMAND>
+					</THEN>
+					<ELSE>
+						<COMMAND>"FIELD(TU_TopZone_Article_Insert).Itemlist(1Door_1AdjShelf_WU)" </COMMAND>
+					</ELSE>					
+				</IF>
+			</ELSE>
+		</IF>
+
+
+	</LOGIC_DEFINITION>
+</XML>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>WU_LC_GL</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Wall Unit L-Corner Pofile Shutter</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<CHECKBOX name="WU_Customized_Height_Check" label="Customized Height" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+				<COMBOBOX name="WU_Standard_Height" label="Height (300, 450mm, 600mm, 650mm, 700mm, 750mm, 800mm and 900mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" geoInfluencing="TRUE">
+					<ITEM value="300" label="300 mm" />
+					<ITEM value="450" label="450 mm" />
+					<ITEM value="600" label="600 mm" />
+					<ITEM value="650" label="650 mm" />
+					<ITEM value="700" label="700 mm" />
+					<ITEM value="750" label="750 mm" />
+					<ITEM value="800" label="800 mm" />
+					<ITEM value="900" label="900 mm" />
+				</COMBOBOX>
+
+				<EDITBOX name="WU_Customized_Height" label="Height (600mm t0 900mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" geoInfluencing="TRUE" min="600" max="900" />
+
+				<EDITBOX name="ART_SIZEZW" label="Height" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+
+				
+				<EDITBOX name="ART_SIZEXW" label="Width" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="650" geoInfluencing="TRUE" />
+				<EDITBOX name="ART_SIZEYW" label="Depth" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="650" geoInfluencing="TRUE" />
+
+			</GROUP>
+
+			<GROUP name="OpenBox Finsh" label="Carcass Finsh">				
+
+				<COMBOBOX name="OB_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="OB_Shade" label="Carcass Shade" valuetype="IMAGE" default="" Search="TRUE"	visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+	
+				<!-- Variable Values -->
+				<EDITBOX name="Wu_Shelf_Selection" label="Wu_Shelf_Selection" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="Wooden_Shelf" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_Prf" label="OB_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_BP_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+				
+			</GROUP>
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="Profile_Type" label="Profile Type" valuetype="IMAGE" default="Rail_Door" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="Rail_Door" value="Rail_Door" label="Rail Door Profile" image1="img/catalog/Rail_Door.PNG"/>
+				<ITEM name="Alu_Door" value="Alu_Door" label="Alu Door Profile" image1="img/catalog/Alu_Door.PNG"  />
+			</COMBOBOX>
+
+			<!-- <COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_WALLUNIT_SHELF_SELECTION" /> -->
+          
+
+			<COMBOBOX name="Hinge_Type_1" label="Hinge Selection" valuetype="IMAGE" default="Hettich_SoftClose_165D" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="Hettich_SoftClose_165D"         value="Hettich_SoftClose_165D" label="Hettich SoftClose" image1="img/hardware/165_Degree.jpg" />
+				<ITEM name="BLUM_SoftClose_155D" 			value="BLUM_SoftClose_155D" 	label="Blum 155D" 		 image1="img/hardware/165_Degree.jpg" />
+			</COMBOBOX>
+
+			<EDITBOX name="LC_Prf_Door_Selection_Left" label="WU_Profile_Shutter_Selection" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="LC_Prf_Door_Selection_Right" label="WU_Profile_Shutter_Selection" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="" geoInfluencing="TRUE" />
+				
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Glass_Selection" label="Glass Selection">
+
+			<COMBOBOX name="GLASS_THK" label="Glass Thickness" valuetype="" default="6mm" visible="FALSE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_GLASS_TYPE" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="GLASS_Finish" label="Finish Type" valuetype="" default="Tinted_Glass" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_GLASS_FINISHES" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="GLASS_Texture" label="Glass Texture" valuetype="" default="GLASS" visible="FALSE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+			</COMBOBOX>
+
+			<COMBOBOX name="Glass_Front_1" label="" valuetype="IMAGE" default="" Search="TRUE"	visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+			</COMBOBOX>
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Lighting_Details" label="Lights Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="Include_Lights.xml" part="PART_KITCHEN_LIGHTS" />
+
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_ADDERPANEL_MARKUP" />
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXW</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYW</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZW</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="OB_Carcass_Mat" 					value="OB_Carcass_Mat" />
+			<VAR name="OB_Carcass_Prf" 					value="OB_Carcass_Prf" />
+			<VAR name="Lighting_Type" 					value="Lighting_Type" />
+			<VAR name="OpenBox" 						value="OpenBox" />
+			<VAR name="OB_Carcass_Mat"	 				value="OB_Carcass_Mat" />
+			<VAR name="OB_Carcass_BP_Mat" 	value="OB_Carcass_BP_Mat" />
+			<VAR name="OB_Carcass_Prf" 		value="OB_Carcass_Prf" />
+			<VAR name="Hinge_Type" 			            value="Hinge_Type_1" />
+			<VAR name="LC_Prf_Door_Selection_Left" 	    value="LC_Prf_Door_Selection_Left" />
+			<VAR name="LC_Prf_Door_Selection_Right" 	value="LC_Prf_Door_Selection_Right" />
+			<VAR name="Glass_Front_1" 					value="Glass_Front_1" />
+			<VAR name="Wu_Shelf_Selection" 				value="Wu_Shelf_Selection" />
+			<VAR name="Calculation_Factors" value="KAP_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KAP_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KAP_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="WALL_UNIT_HEIGHT_CUSTOMIZED" />
+
+
+
+		<COMMAND>"FIELD(ART_SIZEYW).value=FIELD(ART_SIZEXW).value"</COMMAND>
+
+		<COMMAND>"FIELD(LC_Prf_Door_Selection_Left).value='CP_KWU_SD_'+FIELD(Profile_Type).value+'_L'"</COMMAND>
+		<COMMAND>"FIELD(LC_Prf_Door_Selection_Right).value='CP_KWU_SD_'+FIELD(Profile_Type).value+'_R'"</COMMAND>
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OPEN_BOX_FINISHES" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_GLASS_FINISH_SELECTION_LOGIC" />
+
+
+		
+	</LOGIC_DEFINITION>
+</XML>

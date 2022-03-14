@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>BU_CYU_RH_STCU_H</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Base Unit Right straight Corner with Cylinder Provision</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="___WORKSURFACE" default="Work_Surface_Fr40mm" visible="FALSE" setAsGlobal="TRUE" />
+		<EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" />
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<COMBOBOX name="ART_SIZEZB" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="720" geoInfluencing="TRUE">
+					<ITEM value="700" label="700 mm" />
+					<ITEM value="720" label="720 mm" />
+					<ITEM value="760" label="760 mm" />
+				</COMBOBOX>
+
+				<COMBOBOX name="ART_SIZEXB" label="Width" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1100">
+					<ITEM value="1050" label="1050  mm" info1="560" info2="580"/>
+					<ITEM value="1100" label="1100  mm" info1="560" info2="580"/>
+					<ITEM value="1150" label="1150  mm" info1="560" info2="580"/>
+					<ITEM value="1200" label="1200  mm" info1="560" info2="580"/>
+					<ITEM value="1250" label="1250  mm" info1="NA" info2="580"/>
+				</COMBOBOX>
+
+				<EDITBOX name="ART_SIZEYB" label="Artical_Depth" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="660" />
+
+				<EDITBOX name="Base_Unit_Width" label="Shutter_Width" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="400" />
+
+				<COMBOBOX name="Base_Unit_Depth" label="Depth" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+				</COMBOBOX>
+				
+				<EDITBOX name="Filler_Width" label="Filler Width (Min=50mm Max=100mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="75" min="50" max="100"/>
+
+			</GROUP>
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION_1" />
+
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_HINGE_SELECTION" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="BU_Shutter_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="BU_Shutter_Finish" label="Finish" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="BU_Texture" label="Texture" valuetype="TEXT" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Front1" label="Shutter Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+			</COMBOBOX>
+
+			<!-- Variable Values -->
+			<EDITBOX name="BU_Front1_Mat" label="BU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="BU_Front1_Prf" label="BU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Handle_Details" label="Handle Details" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+			<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES" />
+			
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_BASE_MARKUP" />	
+
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXB</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYB</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZB</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="___WORKSURFACE" value="___WORKSURFACE" />
+			<VAR name="___BASE" value="___BASE" />
+			<VAR name="Adjustable_Legs" value="Adjustable_Legs" />
+			<VAR name="KI_Adjuster_Height" value="Leg_Height" />
+			<VAR name="KI_Base_Unit_Height" value="KI_Base_Unit_Height" />
+			<VAR name="Skirting_Height" value="Skirting_Height" />
+			<VAR name="BU_Carcass" value="BU_Carcass" />
+			<VAR name="BU_Carcass_Prf_Type" value="BU_Carcass_Prf_Type" />
+			<VAR name="Hinge_Type" value="Hinge_Type" />
+			<!-- <VAR name="BU_Front1" value="BU_Front1" /> -->
+
+			<VAR name="BU_Front1_Mat" 		value="BU_Front1_Mat" />
+			<VAR name="BU_Front1_Prf" 		value="BU_Front1_Prf" />
+			
+			<VAR name="Base_Unit_Depth" value="Base_Unit_Depth" />
+			<VAR name="Base_Unit_Width" value="Base_Unit_Width" />
+			<VAR name="C_ConnSituation_Acc" value="C_ConnSituation_Acc" />
+			<VAR name="Corner_Shelf_LIND" 	value="Corner_Shelf_LIND" />
+			<VAR name="SC_Accessory" 		value="SC_Accessory" />
+			<VAR name="Handle_Selection" value="Handle_Selection" />
+			<VAR name="Calculation_Factors" value="KB_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KB_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KB_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES_LOGIC" />
+
+		<COMMAND> "FIELD(ART_SIZEYB).value = CALC(FIELD(Base_Unit_Depth).value+ FIELD(Filler_Width).value)" </COMMAND>
+
+		<IF>
+			<EQ expr1="FIELD(Base_Unit_Depth).value" expr2="560" />
+			<THEN>
+				<COMMAND> "FIELD(Base_Unit_Width).value = CALC(FIELD(ART_SIZEXB).value-600)"</COMMAND>
+				<COMMAND> "FIELD(ART_SIZEXB).Info1List(560)"</COMMAND>
+
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Base_Unit_Depth).value" expr2="580" />
+					<THEN>
+						<COMMAND> "FIELD(Base_Unit_Width).value = CALC(FIELD(ART_SIZEXB).value-650)"</COMMAND>
+						<COMMAND> "FIELD(ART_SIZEXB).Info2List(580)"</COMMAND>
+
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<!-- <IF>
+			<EQ expr1="FIELD(ART_SIZEXB).value" expr2="1050" />
+			<THEN>
+				<COMMAND> "FIELD(Selection).ItemList(Shelve)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND> "FIELD(Selection).ItemList(Shelve,Accessiores)"</COMMAND>
+			</ELSE>
+		</IF>	
+		
+
+		<IF>
+			<EQ expr1="FIELD(Selection).value" expr2="Shelve" />
+			<THEN>
+				<COMMAND>"FIELD(Corner_Shelf_LIND).value = LIN_DIV(1:1)" </COMMAND>	
+				<COMMAND>"FIELD(C_ConnSituation_Acc).value =Nill" </COMMAND>				
+				<COMMAND>"FIELD(Accessory).visible =FALSE" </COMMAND>				
+				<COMMAND>"FIELD(SC_Accessory).active =FALSE" </COMMAND>				
+				<COMMAND>"FIELD(Accessory_Selection).Itemlist(Nill)" </COMMAND>				
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Corner_Shelf_LIND).value = LIN_DIV(0)" </COMMAND>	
+				<COMMAND>"FIELD(C_ConnSituation_Acc).value =Kitchen_Straight_Cnr_Acc_RHS" </COMMAND>
+				<COMMAND>"FIELD(Accessory).visible =TRUE" </COMMAND>
+				<COMMAND>"FIELD(SC_Accessory).active =TRUE" </COMMAND>	
+				<COMMAND>"FIELD(Accessory_Selection).Itemlist(WARI_CORNER,CORNERSTONE,CORNERSTONE_MAXX,FLEX_CORNER,ECO_PROARC)" </COMMAND>									
+			</ELSE>
+		</IF>	
+
+		<IF>
+			<EQ expr1="FIELD(Accessory_Selection).value" expr2="WARI_CORNER" />
+			<THEN>
+				<COMMAND>"FIELD(Hinge_Type).visible=FALSE" </COMMAND>
+				<COMMAND>"FIELD(Hinge_Type).value=No_Hinge" </COMMAND>			
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Hinge_Type).visible=TRUE" </COMMAND>				
+			</ELSE>
+		</IF>
+		
+		
+		<IF>
+			<EQ expr1="FIELD(Accessory_Selection).value" expr2="WARI_CORNER" />
+			<THEN>
+				<COMMAND>"FIELD(SC_Accessory).Info1List(WARI_CORNER)" </COMMAND>									
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Accessory_Selection).value" expr2="CORNERSTONE" />
+					<THEN>
+						<COMMAND>"FIELD(SC_Accessory).Info1List(CORNERSTONE)" </COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Accessory_Selection).value" expr2="CORNERSTONE_MAXX" />
+							<THEN>
+								<COMMAND>"FIELD(SC_Accessory).Info1List(CORNERSTONE_MAXX)" </COMMAND>
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(Accessory_Selection).value" expr2="FLEX_CORNER" />
+									<THEN>
+										<COMMAND>"FIELD(SC_Accessory).Info1List(FLEX_CORNER)" </COMMAND>
+									</THEN>
+									<ELSE>
+										<IF>
+											<EQ expr1="FIELD(Accessory_Selection).value" expr2="ECO_PROARC" />
+											<THEN>
+												<COMMAND>"FIELD(SC_Accessory).Info1List(ECO_PROARC)" </COMMAND>
+											</THEN>
+										</IF>
+									</ELSE>									
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>
+			</ELSE>			
+		</IF>
+		
+
+		<IF>
+			<GTEQ expr1="FIELD(ART_SIZEXB).value" expr2="1100"/>
+			<LTEQ expr1="FIELD(ART_SIZEXB).value" expr2="1200"/>
+			<THEN>
+				<COMMAND>"FIELD(SC_Accessory).filterInfo2List(1100)" </COMMAND>
+			</THEN>
+			<ELSE>				
+				<COMMAND>"FIELD(SC_Accessory).filterInfo2List(1250)" </COMMAND>
+			</ELSE>
+		</IF>
+ -->
+
+	</LOGIC_DEFINITION>
+</XML>

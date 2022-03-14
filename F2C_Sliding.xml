@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<ARTICLE>
+		<ART_NAME>F2C_Sliding</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG></ART_INFO_LONG>
+		<ART_INFO_SHORT>Floor To Celing Siliding Wardrobe Shutters </ART_INFO_SHORT>
+	</ARTICLE>
+    <br></br>
+	<DEFINITION>
+		<!-- <EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" /> -->
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+		<GROUP name="Custom_Type"  Valuetype="MULTIROW"	label="">
+            
+            <COMBOBOX name="Wrd_Top_Panel" default="CP_WRD_TSI_DC" label="Shutter Without top panel?"  width="33%"	info="Select YES for full ceiling height"	image1="img/catalog/.PNG"    image2="img/article/"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="TEXT"	geoInfluencing="TRUE">
+              
+                <ITEM name="CP_WRD_NCP_TSI"   	label="YES"		  info1="YES"      image1="img/catalog/.jpg"			visible="TRUE"/>
+                <ITEM name="CP_WRD_TSI_DC"   	label="NO"		  info1="NO"       image1="img/catalog/.jpg"			visible="TRUE"/>
+							
+            </COMBOBOX>
+
+            <COMBOBOX name="Wrd_Sidepanel_Left" default="CP_Wardrobe_LSP" label="Corner in Left side"   width="33%"		image1="img/catalog/.PNG"    image2="img/article/"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="TEXT"	geoInfluencing="TRUE">
+              
+                <ITEM name="CP_NC_Wardrobe"   	label="YES"		  info1="YES"        image1="img/catalog/.jpg"			visible="TRUE"/>
+                <ITEM name="CP_Wardrobe_LSP"   	label="NO"		  info1="NO"     image1="img/catalog/.jpg"			visible="TRUE"/>
+							
+            </COMBOBOX>
+
+            <COMBOBOX name="Wrd_Sidepanel_Right" default="CP_Wardrobe_RSP" label="Corner in Right side"	width="33%"	    image1="img/catalog/.PNG"    image2="img/article/"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="TEXT"	geoInfluencing="TRUE">
+              
+                <ITEM name="CP_NC_Wardrobe"   	label="YES"		     info1="YES"     image1="img/catalog/.jpg"			visible="TRUE"/>
+                <ITEM name="CP_Wardrobe_RSP"   	label="NO"		     info1="NO"   image1="img/catalog/.jpg"			visible="TRUE"/>
+							
+            </COMBOBOX>
+
+        </GROUP>
+		<GROUP name="Custom_CNR_Depth"  Valuetype="MULTIROW"	label="">
+
+             <EDITBOX name="No_Value"  label="No value" active="TRUE"  width="33%"	visible="FALSE" locked="FALSE" valuetype="NUM" default="560" min="450" max="680" geoInfluencing="TRUE" />
+             <EDITBOX name="ART_LEFT_CNR_DEPTH"  label="Left Corner Depth :" active="TRUE"  width="33%"	visible="TRUE" locked="FALSE" valuetype="NUM" default="560" min="450" max="680" geoInfluencing="TRUE" />
+             <EDITBOX name="ART_RIGHT_CNR_DEPTH" label="Right Corner Depth :" active="TRUE"  width="33%"	visible="TRUE" locked="FALSE" valuetype="NUM" default="560" min="450" max="680" geoInfluencing="TRUE" />
+         </GROUP>
+
+         <!-- <EDITBOX name="LSP_Back_Rev" label="Depth (300mm to 680mm) :" active="TRUE"  width="25%"	visible="FALSE" locked="FALSE" valuetype="NUM" default="0" min="300" max="680" geoInfluencing="TRUE" />
+         <EDITBOX name="RSP_Back_Rev" label="Depth (300mm to 680mm) :" active="TRUE"  width="25%"	visible="FALSE" locked="FALSE" valuetype="NUM" default="0" min="300" max="680" geoInfluencing="TRUE" /> -->
+
+		   
+			<GROUP name="Carcass Dimensions"  Valuetype="MULTIROW"	label="Carcass Dimensions">
+
+				<TEXT name="Cabinet_Sizes" label="Enter Carcass Dimensions:" 	width="25%"	visible="" format="bold" />
+
+                <EDITBOX name="ART_SIZEXWD" label="Clear Width (2100mm to 3600mm) :" active="TRUE"  width="25%"	visible="TRUE" info="Upto 2400mm for 2 Door Slding, 3600mm for 3 Door Sliding" locked="FALSE" valuetype="NUM" default="2100" min="2100" max="3600" geoInfluencing="TRUE" />
+
+                <EDITBOX name="ART_SIZEYWD" label="Depth (300mm to 680mm) :" active="TRUE"  width="25%"	visible="TRUE" info="If any of the side panels are visible, input 680 mm" locked="FALSE" valuetype="NUM" default="400" min="300" max="680" geoInfluencing="TRUE" />
+			   
+				<EDITBOX name="ART_SIZEZWD" label="Clear Height" active="TRUE"  width="25%"	visible="TRUE" info="Enter between 1800 to 2700mm" locked="FALSE" valuetype="NUM" default="2100" min="1800" max="2700" geoInfluencing="TRUE" />
+			
+            </GROUP>
+
+
+            <EDITBOX name="ART_SIZEXCWD" label="Width :" active="TRUE" width="25%"	visible="FALSE" locked="FALSE" valuetype="NUM" default="600" min="" max="" geoInfluencing="TRUE" />
+			
+            <EDITBOX name="ART_SIZEYCWD" label="Depth :" active="TRUE" width="25%"	visible="FALSE" locked="FALSE" valuetype="NUM" default="560" min="" max="" geoInfluencing="TRUE" />
+           
+            <EDITBOX name="ART_SIZEZCWD" label="Height" active="TRUE" width="25%"	visible="FALSE" locked="FALSE" valuetype="NUM" default="2100" min="" max="" geoInfluencing="TRUE" />
+
+            <GROUP name="Hardware_Selection" label="Hardware Selection" active="TRUE" visible="TRUE">
+
+                <COMBOBOX name="Sliding_Mechanism_side" default="Left" label="Sliding Mechanism side Selection"	image1="img/catalog/.PNG"    image2="img/article/"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="TEXT"	geoInfluencing="TRUE">
+					
+                    <ITEM name="Left"   	label="2 Door Left Sliding"		        image1="img/catalog/.jpg"			visible="TRUE"/>
+                    <ITEM name="Right"  	label="2 Door Right Sliding"		        image1="img/catalog/.jpg"		    visible="TRUE"/>
+                    <ITEM name="3_Door"  	label="3 Door Sliding"		        image1="img/catalog/.jpg"		    visible="TRUE"/>
+                    
+                </COMBOBOX>
+
+                <COMBOBOX name="Sliding_Door"   label="Sliding Mechanism"     default="Rp_S1200_2D_Left" image1="img/catalog/.PNG"    image2="img/article/"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">	
+                  
+                    <ITEM name="Rp_S1200_2D_Left"    	value="Rp_S1200_2D_Left"    label="S1200"		    info1="Left"        info2="S1200"	info3=""	image1="img/hardware/He_TopLine22.jpg"		visible="TRUE"/>				
+				    <ITEM name="Rp_S1200_2D_Right"   	value="Rp_S1200_2D_Right"   label="S1200"		    info1="Right"       info2="S1200"	info3=""	image1="img/hardware/He_TopLine22.jpg"		visible="TRUE"/>			
+                    <ITEM name="Rp_S720_2D_Left"    	value="Rp_S720_2D_Left"     label="S720"		    info1="Left"        info2="S720"	info3=""	image1="img/hardware/RP_S720_LightBronze.png"		visible="TRUE"/>				
+                    <ITEM name="Rp_S720_2D_Right"   	value="Rp_S720_2D_Right"    label="S720"		    info1="Right"       info2="S720"	info3=""	image1="img/hardware/He_TopLine22.jpg"		visible="TRUE"/>			
+                    <ITEM name="Rp_S1200_3D"   	        value="Rp_S1200_3D"         label="S1200"		    info1="3_Door"      info2="S1200"	info3=""	image1="img/hardware/He_TopLine22.jpg"		visible="TRUE"/>			
+                    <ITEM name="Rp_S720_3D"          	value="Rp_S720_3D"          label="S720"		    info1="3_Door"      info2="S720"	info3=""	image1="img/hardware/He_TopLine22.jpg"		visible="TRUE"/>				
+                   
+                </COMBOBOX>
+
+            </GROUP> 
+
+            <PARAFOLDER name="Profile_Type" label="Shutter Profile Colour">
+
+                <COMBOBOX name="Wrd_Profile_Finish" label="Outer Frame Finish" valuetype="IMAGE" default="S1200_Black" visible="TRUE" Width="100%"	active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				
+					<ITEM name="Black"   		    value="S1200_Black"	    	            label="Black"		     info1="S1200"  	 info2=""		image1="img/hardware/G_Graphite.jpg" 	    visible="TRUE"/>
+					<ITEM name="Dark_Bronze"    	value="S1200_Dark_Bronze"			    label="Dark Bronze"	     info1="S1200"    	 info2=""	 	image1="img/hardware/G_Dark_Bronze.jpg" 	visible="TRUE"/>
+                    <ITEM name="Black"   		    value="S720_Black"	    	            label="Black"		     info1="S720"  		 info2=""		image1="img/hardware/G_Graphite.jpg" 	    visible="TRUE"/>
+					<ITEM name="Dark_Bronze"    	value="S720_Dark_Bronze"			    label="Dark Bronze"		 info1="S720"    	 info2=""	 	image1="img/hardware/G_Dark_Bronze.jpg" 	visible="TRUE"/>					             
+                    <ITEM name="Light_Bronze"       value="S720_Light_Bronze"		    	label="Light Bronze"     info1="S720"   	 info2=""		image1="img/hardware/Light_Bronze.jpg" 	visible="TRUE"/>
+					
+			    </COMBOBOX> 
+
+            </PARAFOLDER>
+  
+            <PARAFOLDER name="Wardrobe_Carcass" label="Carcass Material">
+
+				<COMBOBOX name="Carcass_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+
+					<ITEM name="PlyWood"            value="PlyWood"         label="PlyWood" image1="img/catalog/.PNG" />
+				    <ITEM name="Engineered_wood"    value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+					
+				</COMBOBOX>
+
+                <COMBOBOX name="Material_Type" label="Material Type" valuetype="" Width="50%" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <ITEM value="BWP" 			label="BWP" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+                    <ITEM value="BWP_Green" 	label="BWP GreenPly" 		info1="PlyWood"			image1="img/catalog/.PNG" />
+                    <ITEM value="Marine_Green" 	label="Marine GreenPly"		info1="PlyWood" 		image1="img/catalog/.PNG" />
+                    <ITEM value="BirchPly" 		label="Birch PlyWood" 		info1="PlyWood" 		image1="img/catalog/.PNG" />
+                    <ITEM value="PLPB" 			label="PLPB" 				info1="Engineered_wood"	image1="img/catalog/.PNG" />
+                </COMBOBOX>
+
+                <COMBOBOX name="Mat_Carcass" label="Carcass Material" valuetype="IMAGE" default="FW_BWP" Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE"  image1="img/catalog/.PNG">
+                    
+                   <ITEM value="FW_BWP" 	        label="Frosty White + BWP Ply" 		        info1="PlyWood" 	            info2="BWP"	            info3="Frosty_White" 		image1="img/material/Half_White.jpg" />
+                    <ITEM value="FW_BWP_Green" 	 	label="Frosty White + Green BWP Ply" 		info1="PlyWood" 	            info2="BWP_Green"		info3="Frosty_White" 		image1="img/material/Half_White.jpg" />
+                    <ITEM value="FW_Marine_Green" 	label="Frosty White + Green Marine Ply" 	info1="PlyWood" 	            info2="Marine_Green"	info3="Frosty_White" 		image1="img/material/Half_White.jpg" />
+                    <ITEM value="FW_Birch_PLY" 	 	label="Frosty White + Birch Ply" 		    info1="PlyWood" 	            info2="BirchPly"		info3="Frosty_White" 		image1="img/material/Half_White.jpg" />
+                    <ITEM value="FW_PLPB" 	 		label="Frosty White + Eco Green" 		    info1="Engineered_wood" 	    info2="PLPB"	        info3="Frosty_White" 		image1="img/material/Half_White.jpg" />
+
+                    <ITEM value="LC_BWP" 	        label="Linen Cream + BWP Ply" 		        info1="PlyWood" 	            info2="BWP"	            info3="Linen_Cream" 		image1="img/material/Micro_Linen.jpg" />
+                    <ITEM value="LC_BWP_Green" 	 	label="Linen Cream + Green BWP Ply" 		info1="PlyWood" 	            info2="BWP_Green"		info3="Linen_Cream" 		image1="img/material/Micro_Linen.jpg" />
+                    <ITEM value="LC_Marine_Green" 	label="Linen Cream + Green Marine Ply" 	    info1="PlyWood" 	            info2="Marine_Green"	info3="Linen_Cream" 		image1="img/material/Micro_Linen.jpg" />
+                    <ITEM value="LC_Birch_PLY" 	 	label="Linen Cream + Birch Ply" 		    info1="PlyWood" 	            info2="BirchPly"		info3="Linen_Cream" 		image1="img/material/Micro_Linen.jpg" />
+                    <ITEM value="LC_PLPB" 	 		label="Linen Cream + Eco Green" 		    info1="Engineered_wood" 	    info2="PLPB"	        info3="Linen_Cream" 		image1="img/material/Micro_Linen.jpg" />
+
+                    <ITEM value="LG_BWP" 	        label="Linen Grey + BWP Ply" 		        info1="PlyWood" 	            info2="BWP"	            info3="Linen_Grey" 		image1="img/material/Grey_Linen.jpg" />
+                    <ITEM value="LG_BWP_Green" 	 	label="Linen Grey + Green BWP Ply" 		    info1="PlyWood" 	            info2="BWP_Green"		info3="Linen_Grey" 		image1="img/material/Grey_Linen.jpg" />
+                    <ITEM value="LG_Marine_Green" 	label="Linen Grey + Green Marine Ply" 	    info1="PlyWood" 	            info2="Marine_Green"	info3="Linen_Grey" 		image1="img/material/Grey_Linen.jpg" />
+                    <ITEM value="LG_Birch_PLY" 	 	label="Linen Grey + Birch Ply" 		        info1="PlyWood" 	            info2="BirchPly"		info3="Linen_Grey" 		image1="img/material/Grey_Linen.jpg" />
+                    <ITEM value="LG_PLPB" 	 		label="Linen Grey + Eco Green" 		        info1="Engineered_wood" 	    info2="PLPB"	        info3="Linen_Grey" 		image1="img/material/Grey_Linen.jpg" />
+
+                    <ITEM value="LM_BWP" 	        label="Linen Metalic + BWP Ply" 		    info1="PlyWood" 	            info2="BWP"	            info3="Linen_Metalic" 		image1="img/material/Macro_Linen.jpg" />
+                    <ITEM value="LM_BWP_Green" 	 	label="Linen Metalic + Green BWP Ply" 		info1="PlyWood" 	            info2="BWP_Green"		info3="Linen_Metalic" 		image1="img/material/Macro_Linen.jpg" />
+                    <ITEM value="LM_Marine_Green" 	label="Linen Metalic + Green Marine Ply" 	info1="PlyWood" 	            info2="Marine_Green"	info3="Linen_Metalic" 		image1="img/material/Macro_Linen.jpg" />
+                    <ITEM value="LM_Birch_PLY" 	 	label="Linen Metalic + Birch Ply" 		    info1="PlyWood" 	            info2="BirchPly"		info3="Linen_Metalic" 		image1="img/material/Macro_Linen.jpg" />
+                    <ITEM value="LM_PLPB" 	 		label="Linen Metalic + Eco Green" 		    info1="Engineered_wood" 	    info2="PLPB"	        info3="Linen_Metalic" 		image1="img/material/Macro_Linen.jpg" />
+
+                    <ITEM value="CW_BWP" 	        label="Classic Walnut + BWP Ply" 		    info1="PlyWood" 	            info2="BWP"	            info3="Classic_Walnut" 		image1="img/material/7529_Walnut_Desire.jpg" />
+                    <ITEM value="CW_BWP_Green" 	 	label="Classic Walnut + Green BWP Ply" 		info1="PlyWood" 	            info2="BWP_Green"		info3="Classic_Walnut" 		image1="img/material/7529_Walnut_Desire.jpg" />
+                    <ITEM value="CW_Marine_Green" 	label="Classic Walnut + Green Marine Ply" 	info1="PlyWood" 	            info2="Marine_Green"	info3="Classic_Walnut" 		image1="img/material/7529_Walnut_Desire.jpg" />
+                    <ITEM value="CW_Birch_PLY" 	 	label="Classic Walnut + Birch Ply" 		    info1="PlyWood" 	            info2="BirchPly"		info3="Classic_Walnut" 		image1="img/material/7529_Walnut_Desire.jpg" />
+                    <ITEM value="CW_PLPB" 	 		label="Classic Walnut + Eco Green" 		    info1="Engineered_wood" 	    info2="PLPB"	        info3="Classic_Walnut" 		image1="img/material/7529_Walnut_Desire.jpg" />
+                 
+				</COMBOBOX>				
+				
+				<EDITBOX name="Prf_Carcass" label="Edge Band Selection" valuetype=""    active="TRUE" visible="FALSE" locked="FALSE"  default="" geoInfluencing="TRUE" />		
+
+            </PARAFOLDER>
+            
+		</PARAFOLDER>
+		
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+            
+        <GROUP name="Group_Type_Of_Shutter_Left" Valuetype="ACCORDION"		opened="FALSE"   label="Left Shutter">
+
+
+            <COMBOBOX name="Type_Of_Shutter_Left" label="" valuetype="IMAGE"  Width="50%"	default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+			
+				<ITEM name="PD_S1200_Front_Left"   					label="Profile Shutter"		   info1="S1200"  			 info2="Profile_Shutter" info3="2100"		image1="img/hardware/Door_pattern_Full.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S1200_Front_1P_Left"   				label="Prf Layout 1"		   info1="S1200"    		 info2="Prf_Layout_1"  	 info3="2100"		image1="img/hardware/Door_pattern_1P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S1200_Front_2P_Left"   				label="Prf Layout 2"		   info1="S1200"   	         info2="Prf_Layout_2"	 info3=""		image1="img/hardware/Door_pattern_2P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S1200_Front_3P_Left"   				label="Prf Layout 3"		   info1="S1200" 	         info2="Prf_Layout_3"    info3=""		image1="img/hardware/Door_pattern_3P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S1200_Front_4P_Left"   			    label="Prf Layout 4"		   info1="S1200"   		 	 info2="Prf_Layout_4"	 info3=""		image1="img/hardware/Door_pattern_4P.jpg"	visible="TRUE"/>				
+				<ITEM name="PD_S720_Front_Left"   			    	label="Profile Shutter"		   info1="S720"  			 info2="Profile_Shutter" info3=""		image1="img/hardware/Door_pattern_Full.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S720_Front_1P_Left"   		     	label="Prf Layout 1"		   info1="S720"  			 info2="Prf_Layout_1"	 info3=""		image1="img/hardware/Door_pattern_1P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S720_Front_2P_Left"   		    	label="Prf Layout 2"		   info1="S720"  			 info2="Prf_Layout_2"	 info3=""		image1="img/hardware/Door_pattern_2P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S720_Front_3P_Left"   			    label="Prf Layout 3"		   info1="S720"  			 info2="Prf_Layout_3"	 info3=""		image1="img/hardware/Door_pattern_3P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S720_Front_4P_Left"   			    label="Prf Layout 4"		   info1="S720"  			 info2="Prf_Layout_4"	 info3=""		image1="img/hardware/Door_pattern_4P.jpg"	visible="TRUE"/>
+	
+			</COMBOBOX>
+
+            <EDITBOX name="Front1_Div_Lindiv" label="Front1_Div_Lindiv" active="TRUE" visible="FALSE" locked="FALSE" valuetype="LINDIV" default="" geoInfluencing="TRUE" />
+            <EDITBOX name="F1_1P_DIVIDER" label="Divider 1 Space"	Info="if you want the Excat space then enter value with mm, Else enter only 1 or 2 to get equal zones"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="1" geoInfluencing="TRUE" />
+            <EDITBOX name="F1_2P_DIVIDER" label="Divider 2 Space" 	Info="if you want the Excat space then enter value with mm, Else enter only 1 or 2 to get equal zones"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="1" geoInfluencing="TRUE" />
+            <EDITBOX name="F1_3P_DIVIDER" label="Divider 3 Space" 	Info="if you want the Excat space then enter value with mm, Else enter only 1 or 2 to get equal zones"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="1" geoInfluencing="TRUE" />
+            <EDITBOX name="F1_4P_DIVIDER" label="Divider 4 Space" 	Info="if you want the Excat space then enter value with mm, Else enter only 1 or 2 to get equal zones"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="1" geoInfluencing="TRUE" />
+        </GROUP>
+
+        <GROUP name="Group_Type_Of_Shutter_Middle" Valuetype="ACCORDION"		opened="FALSE"   label="Middle Shutter">
+
+            <COMBOBOX name="Type_Of_Shutter_Middle" label="" valuetype="IMAGE"  Width="50%"	default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+			
+				<ITEM name="PD_S1200_Front_Middle"   					label="Profile Shutter"		   info1="S1200"  			 info2="Profile_Shutter" info3=""		image1="img/hardware/Door_pattern_Full.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S1200_Front_1P_Middle"   				label="Prf Layout 1"		   info1="S1200"    		 info2="Prf_Layout_1"  	 info3=""		image1="img/hardware/Door_pattern_1P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S1200_Front_2P_Middle"   				label="Prf Layout 2"		   info1="S1200"   	         info2="Prf_Layout_2"	 info3=""		image1="img/hardware/Door_pattern_2P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S1200_Front_3P_Middle"   				label="Prf Layout 3"		   info1="S1200" 	         info2="Prf_Layout_3"    info3=""		image1="img/hardware/Door_pattern_3P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S1200_Front_4P_Middle"   			    label="Prf Layout 4"		   info1="S1200"   		 	 info2="Prf_Layout_4"	 info3=""		image1="img/hardware/Door_pattern_4P.jpg"	visible="TRUE"/>				
+				<ITEM name="PD_S720_Front_Middle"   			    	label="Profile Shutter"		   info1="S720"  			 info2="Profile_Shutter" info3=""		image1="img/hardware/Door_pattern_Full.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S720_Front_1P_Middle"   		     	    label="Prf Layout 1"		   info1="S720"  			 info2="Prf_Layout_1"	 info3=""		image1="img/hardware/Door_pattern_1P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S720_Front_2P_Middle"   		    	    label="Prf Layout 2"		   info1="S720"  			 info2="Prf_Layout_2"	 info3=""		image1="img/hardware/Door_pattern_2P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S720_Front_3P_Middle"   			        label="Prf Layout 3"		   info1="S720"  			 info2="Prf_Layout_3"	 info3=""		image1="img/hardware/Door_pattern_3P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S720_Front_4P_Middle"   			        label="Prf Layout 4"		   info1="S720"  			 info2="Prf_Layout_4"	 info3=""		image1="img/hardware/Door_pattern_4P.jpg"	visible="TRUE"/>
+	
+			</COMBOBOX>
+
+            <EDITBOX name="Front2_Div_Lindiv" label="Front2_Div_Lindiv" active="TRUE" visible="FALSE" locked="FALSE" valuetype="LINDIV" default="" geoInfluencing="TRUE" />
+            <EDITBOX name="F2_1P_DIVIDER" label="Divider 1 Space"	Info="if you want the Excat space then enter value with mm, Else enter only 1 or 2 to get equal zones"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="1" geoInfluencing="TRUE" />
+            <EDITBOX name="F2_2P_DIVIDER" label="Divider 2 Space" 	Info="if you want the Excat space then enter value with mm, Else enter only 1 or 2 to get equal zones"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="1" geoInfluencing="TRUE" />
+            <EDITBOX name="F2_3P_DIVIDER" label="Divider 3 Space" 	Info="if you want the Excat space then enter value with mm, Else enter only 1 or 2 to get equal zones"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="1" geoInfluencing="TRUE" />
+            <EDITBOX name="F2_4P_DIVIDER" label="Divider 4 Space" 	Info="if you want the Excat space then enter value with mm, Else enter only 1 or 2 to get equal zones"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="1" geoInfluencing="TRUE" />
+        
+        </GROUP>
+
+        <GROUP name="Group_Type_Of_Shutter_Right" Valuetype="ACCORDION"		opened="FALSE"   label="Right Shutter">
+
+            <COMBOBOX name="Type_Of_Shutter_Right" label="Right Shutter Type" valuetype="IMAGE"  Width="50%"	default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+			
+                <ITEM name="PD_S1200_Front_Right"   				label="Profile Shutter"		   info1="S1200"  			 info2="Profile_Shutter" info3=""		image1="img/hardware/Door_pattern_Full.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S1200_Front_1P_Right"   				label="Prf Layout 1"		   info1="S1200"    		 info2="Prf_Layout_1"  	 info3=""		image1="img/hardware/Door_pattern_1P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S1200_Front_2P_Right"   				label="Prf Layout 2"		   info1="S1200"   	         info2="Prf_Layout_2"	 info3=""		image1="img/hardware/Door_pattern_2P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S1200_Front_3P_Right"   				label="Prf Layout 3"		   info1="S1200" 	         info2="Prf_Layout_3"    info3=""		image1="img/hardware/Door_pattern_3P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S1200_Front_4P_Right"   			    label="Prf Layout 4"		   info1="S1200"   		 	 info2="Prf_Layout_4"	 info3=""		image1="img/hardware/Door_pattern_4P.jpg"	visible="TRUE"/>				
+				<ITEM name="PD_S720_Front_Right"   			    	label="Profile Shutter"		   info1="S720"  			 info2="Profile_Shutter" info3=""		image1="img/hardware/Door_pattern_Full.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S720_Front_1P_Right"   		     	label="Prf Layout 1"		   info1="S720"  			 info2="Prf_Layout_1"	 info3=""		image1="img/hardware/Door_pattern_1P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S720_Front_2P_Right"   		    	label="Prf Layout 2"		   info1="S720"  			 info2="Prf_Layout_2"	 info3=""		image1="img/hardware/Door_pattern_2P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S720_Front_3P_Right"   			    label="Prf Layout 3"		   info1="S720"  			 info2="Prf_Layout_3"	 info3=""		image1="img/hardware/Door_pattern_3P.jpg"	visible="TRUE"/>
+				<ITEM name="PD_S720_Front_4P_Right"   			    label="Prf Layout 4"		   info1="S720"  			 info2="Prf_Layout_4"	 info3=""		image1="img/hardware/Door_pattern_4P.jpg"	visible="TRUE"/>
+	
+			</COMBOBOX>	
+
+            <EDITBOX name="Front3_Div_Lindiv" label="Front3_Div_Lindiv" active="TRUE" visible="FALSE" locked="FALSE" valuetype="LINDIV" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="F3_1P_DIVIDER" label="Divider 1 Space"	Info="if you want the Excat space then enter value with mm, Else enter only 1 or 2 to get equal zones"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="1" geoInfluencing="TRUE" />
+			<EDITBOX name="F3_2P_DIVIDER" label="Divider 2 Space" 	Info="if you want the Excat space then enter value with mm, Else enter only 1 or 2 to get equal zones"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="1" geoInfluencing="TRUE" />
+			<EDITBOX name="F3_3P_DIVIDER" label="Divider 3 Space" 	Info="if you want the Excat space then enter value with mm, Else enter only 1 or 2 to get equal zones"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="1" geoInfluencing="TRUE" />
+			<EDITBOX name="F3_4P_DIVIDER" label="Divider 4 Space" 	Info="if you want the Excat space then enter value with mm, Else enter only 1 or 2 to get equal zones"	active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="1" geoInfluencing="TRUE" />
+        </GROUP>
+         <PARAFOLDER name="Left_Shutter_Details" label="Left Shutter Details" active="TRUE" visible="TRUE">
+
+
+			<GROUP name="Group_Left_Shutter_Detail" Valuetype=""	label="">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front1" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze" Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Left_Shutter_1_1_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="1st partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_1_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_1_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_1_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front1_1" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"    visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Left_Shutter_1_2_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="2nd partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_1_2" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_1_2" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_1_2" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front1_2" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"   visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Left_Shutter_1_3_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="3rd partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_1_3" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_1_3" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_1_3" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front1_3" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"   visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Left_Shutter_1_4_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="4th partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_1_4" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_1_4" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_1_4" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front1_4" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"   visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Left_Shutter_1_5_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="5th partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_1_5" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_1_5" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_1_5" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front1_5" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"   visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+		
+        </PARAFOLDER>
+
+        <PARAFOLDER name="Middle_Shutter_Details" label="Middle Shutter Details" active="TRUE" visible="TRUE">
+
+
+			<GROUP name="Group_Middle_Shutter_Detail" Valuetype=""	label="">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_2" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_2" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_2" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front2" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze" Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Middle_Shutter_2_1_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="1st Partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_2_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_2_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_2_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front2_1" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"    visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Middle_Shutter_2_2_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="2nd Partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_2_2" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_2_2" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_2_2" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front2_2" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"   visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Middle_Shutter_2_3_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="3rd Partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_2_3" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_2_3" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_2_3" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front2_3" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"   visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Middle_Shutter_2_4_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="4th Partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_2_4" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_2_4" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_2_4" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front2_4" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"   visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Middle_Shutter_2_5_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="5th Partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_2_5" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_2_5" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_2_5" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front2_5" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"   visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+		
+        </PARAFOLDER>
+
+        <PARAFOLDER name="Right_Shutter_Details" label="Right Shutter Details" active="TRUE" visible="TRUE">
+
+
+			<GROUP name="Group_Right_Shutter_Detail" Valuetype=""	label="">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_3" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_3" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_3" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front3" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze" Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Right_Shutter_3_1_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="1st partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_3_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_3_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_3_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front3_1" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"    visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Right_Shutter_3_2_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="2nd partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_3_2" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_3_2" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_3_2" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front3_2" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"   visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Right_Shutter_3_3_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="3rd partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_3_3" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_3_3" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_3_3" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front3_3" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"   visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Right_Shutter_3_4_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="4th partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_3_4" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_3_4" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_3_4" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front3_4" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"   visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+
+            <GROUP name="Group_Right_Shutter_3_5_Detail" Valuetype="ACCORDION"		opened="FALSE"   label="5th partition">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_3_5" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_3_5" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES_ALL" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_3_5" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front3_5" label="Shutter Shade" valuetype="IMAGE" default="TG_Bronze"   Search="TRUE"   visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+            </GROUP>
+		
+        </PARAFOLDER>
+
+        
+			<!-- Variable Values -->
+			<EDITBOX name="Mat_Front_1" label="Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_1_1" label="Front1_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_1_2" label="Front1_2Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_1_3" label="Front1_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_1_4" label="Front1_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_1_5" label="Front1_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+		
+            <EDITBOX name="Mat_Front_2" label="Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_2_1" label="Front2_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_2_2" label="Front2_2Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_2_3" label="Front2_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_2_4" label="Front2_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_2_5" label="Front2_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+		
+            <EDITBOX name="Mat_Front_3" label="Front3_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_3_1" label="Front1_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_3_2" label="Front1_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_3_3" label="Front1_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_3_4" label="Front1_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Front_3_5" label="Front1_1Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+		
+		</PARAFOLDER>
+
+        
+        <EDITBOX name="Striplight_Distance" 		label="Strip Light Distance" active="TRUE" nosave="FALSE"		Width="50%"		visible="FALSE" locked="FALSE" valuetype="NUM" default="150" min="" max="" geoInfluencing="TRUE" />
+        <EDITBOX name="Wrd_Striplight_Lens_Left" 	label="Strip Light Lense Left" active="TRUE" nosave="FALSE"		Width="50%"		visible="FALSE" locked="FALSE" valuetype="TEXT" default="NULL" min="" max="" geoInfluencing="TRUE" />
+        <EDITBOX name="Wrd_Striplight_Lens_Right" 	label="Strip Light Lense Right" active="TRUE" nosave="FALSE"		Width="50%"		visible="FALSE" locked="FALSE" valuetype="TEXT" default="NULL" min="" max="" geoInfluencing="TRUE" />
+        <EDITBOX name="Wrd_Striplight_Prf_Left" 	label="Strip Light Lense Left" active="TRUE" nosave="FALSE"		Width="50%"			visible="FALSE" locked="FALSE" valuetype="TEXT" default="NULL" min="" max="" geoInfluencing="TRUE" />
+        <EDITBOX name="Wrd_Striplight_Prf_Right" 	label="Strip Light Lense Right" active="TRUE" nosave="FALSE"		Width="50%"	visible="FALSE" locked="FALSE" valuetype="TEXT" default="NULL" min="" max="" geoInfluencing="TRUE" />
+
+		<PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+
+			<EDITBOX name="Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXCWD</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYCWD</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZCWD</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			
+			<VAR name="Adjustable_Legs" value="Adjustable_Legs" />
+			<VAR name="KI_Adjuster_Height" value="Leg_Height" />
+			<VAR name="Skirting_Height" value="Skirting_Height" />
+			<VAR name="Wrd_Skirting" value="Wrd_Skirting" />
+			<VAR name="Mat_Carcass" value="Mat_Carcass" />
+			<VAR name="Prf_Carcass" value="Prf_Carcass" />
+			<VAR name="Hinge_Type" value="Hinge_Type" />
+			<VAR name="Hinge_Open_Wardrobe" value="Hinge_Open" />						
+			<VAR name="Sliding_Door" value="Sliding_Door" />
+
+            <VAR name="Wardrobe_Front_1" value="Type_Of_Shutter_Left" />
+            <VAR name="Wardrobe_Front_2" value="Type_Of_Shutter_Middle" />
+			<VAR name="Wardrobe_Front_3" value="Type_Of_Shutter_Right" />
+			<VAR name="Wrd_Sidepanel_Left" value="Wrd_Sidepanel_Left" />
+			<VAR name="Wrd_Sidepanel_Right" value="Wrd_Sidepanel_Right" />
+			<VAR name="Wrd_Top_Panel" value="Wrd_Top_Panel" />
+			<VAR name="LSP_Back_Rev" value="LSP_Back_Rev" />
+			<VAR name="RSP_Back_Rev" value="RSP_Back_Rev" />
+
+            	<!-- Strip light variables  -->
+			<VAR name="Striplight_Distance" 	value="Striplight_Distance" />
+			<VAR name="Wrd_Striplight_Lens_Left" value="Wrd_Striplight_Lens_Left" />
+			<VAR name="Wrd_Striplight_Lens_Right" value="Wrd_Striplight_Lens_Right" />
+			<VAR name="Wrd_Striplight_Prf_Left" value="Wrd_Striplight_Prf_Left" />
+			<VAR name="Wrd_Striplight_Prf_Right" value="Wrd_Striplight_Prf_Right" />
+
+
+			<VAR name="Mat_Front_1" value="Mat_Front_1" />
+            <VAR name="Mat_Front_1_1" value="Mat_Front_1_1" />
+			<VAR name="Mat_Front_1_2" value="Mat_Front_1_2" />
+			<VAR name="Mat_Front_1_3" value="Mat_Front_1_3" />
+			<VAR name="Mat_Front_1_4" value="Mat_Front_1_4" />
+			<VAR name="Mat_Front_1_5" value="Mat_Front_1_5" />
+            <VAR name="Mat_Front_2" value="Mat_Front_2" />
+            <VAR name="Mat_Front_2_1" value="Mat_Front_2_1" />
+			<VAR name="Mat_Front_2_2" value="Mat_Front_2_2" />
+			<VAR name="Mat_Front_2_3" value="Mat_Front_2_3" />
+			<VAR name="Mat_Front_2_4" value="Mat_Front_2_4" />
+			<VAR name="Mat_Front_2_5" value="Mat_Front_2_5" />
+			<VAR name="Mat_Front_3" value="Mat_Front_3" />
+			<VAR name="Mat_Front_3_1" value="Mat_Front_3_1" />
+			<VAR name="Mat_Front_3_2" value="Mat_Front_3_2" />
+			<VAR name="Mat_Front_3_3" value="Mat_Front_3_3" />
+			<VAR name="Mat_Front_3_4" value="Mat_Front_3_4" />
+			<VAR name="Mat_Front_3_5" value="Mat_Front_3_5" />
+            <VAR name="Front1_Div_Lindiv" value="Front1_Div_Lindiv" />
+            <VAR name="Front2_Div_Lindiv" value="Front2_Div_Lindiv" />
+			<VAR name="Front3_Div_Lindiv" value="Front3_Div_Lindiv" />			
+			<VAR name="Wrd_Profile_Finish" value="Wrd_Profile_Finish" />			
+			<VAR name="Wadrobe_Handle_Selection" value="Wadrobe_Handle_Selection" />
+			<VAR name="Calculation_Factors" value="Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="Mat_Prices" />
+			
+			
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+
+		<!-- <COMMAND>"FIELD(ART_SIZEXCWD).value=CALC(FIELD(ART_SIZEXWD).value+72)"</COMMAND>	 -->
+		<COMMAND>"FIELD(ART_SIZEYCWD).value=FIELD(ART_SIZEYWD).value"</COMMAND>	
+
+		<COMMAND>"FIELD(Sliding_Door).info1List(FIELD(Sliding_Mechanism_side).value)"</COMMAND>	
+		<COMMAND>"FIELD(Wrd_Profile_Finish).Info1List(FIELD(Sliding_Door).info2)"</COMMAND>		
+		<COMMAND>"FIELD(Type_Of_Shutter_Left).Info1List(FIELD(Sliding_Door).info2)"</COMMAND>		
+		<COMMAND>"FIELD(Type_Of_Shutter_Middle).Info1List(FIELD(Sliding_Door).info2)"</COMMAND>		
+		<COMMAND>"FIELD(Type_Of_Shutter_Right).Info1List(FIELD(Sliding_Door).info2)"</COMMAND>		
+
+
+		<!-- <COMMAND>"FIELD(Mat_Carcass).Info2List(FIELD(Carcass_Core_Material).value)"</COMMAND>		
+		<COMMAND>"FIELD(Prf_Carcass).Info1List(FIELD(Mat_Carcass).info3)"</COMMAND>		 -->
+
+        <COMMAND>"FIELD(Material_Type).Info1List(FIELD(Carcass_Core_Material).value)"</COMMAND>		
+        <COMMAND>"FIELD(Mat_Carcass).Info2List(FIELD(Material_Type).value)"</COMMAND>		
+		<COMMAND>"FIELD(Prf_Carcass).value=FIELD(Mat_Carcass).value"</COMMAND>
+
+        <IF>
+            <EQ expr1="FIELD(Wrd_Top_Panel).Info1" expr2="YES"/>
+            <THEN>
+		        <COMMAND>"FIELD(ART_SIZEZCWD).value=FIELD(ART_SIZEZWD).value"</COMMAND>	
+            </THEN>
+            <ELSE>
+                <COMMAND>"FIELD(ART_SIZEZCWD).value=CALC(FIELD(ART_SIZEZWD).value+36)"</COMMAND>	
+            </ELSE>
+        </IF>
+       
+
+                
+
+        <IF>
+            <EQ expr1="FIELD(Sliding_Door).Info1" expr2="3_Door"/>
+            <THEN>
+                <COMMAND>"FIELD(Group_Type_Of_Shutter_Middle).visible=TRUE"</COMMAND>
+                <COMMAND>"FIELD(Middle_Shutter_Details).visible=TRUE"</COMMAND>
+            </THEN>
+            <ELSE>
+                <COMMAND>"FIELD(Group_Type_Of_Shutter_Middle).visible=FALSE"</COMMAND>
+                <COMMAND>"FIELD(Middle_Shutter_Details).visible=FALSE"</COMMAND>
+            </ELSE>
+        </IF>
+        
+                <IF>
+                    <EQ expr1="FIELD(Type_Of_Shutter_Left).Info2" expr2="Prf_Layout_1"/>
+                    <THEN>
+                        <COMMAND>"FIELD(F1_1P_DIVIDER).visible=TRUE"</COMMAND>
+                        <COMMAND>"FIELD(F1_2P_DIVIDER).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(F1_3P_DIVIDER).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(F1_4P_DIVIDER).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Left_Shutter_Detail).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Left_Shutter_1_1_Detail).visible=TRUE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Left_Shutter_1_2_Detail).visible=TRUE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Left_Shutter_1_3_Detail).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Left_Shutter_1_4_Detail).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Left_Shutter_1_5_Detail).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Front1_Div_Lindiv).Value=LIN_DIV(0:1:($F1_1P_DIVIDER):0)"</COMMAND>
+                    </THEN>
+                    <ELSE>
+                        <IF>
+                            <EQ expr1="FIELD(Type_Of_Shutter_Left).Info2" expr2="Prf_Layout_2"/>
+                            <THEN>
+                                <COMMAND>"FIELD(F1_1P_DIVIDER).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(F1_2P_DIVIDER).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(F1_3P_DIVIDER).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(F1_4P_DIVIDER).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Left_Shutter_Detail).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Left_Shutter_1_1_Detail).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Left_Shutter_1_2_Detail).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Left_Shutter_1_3_Detail).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Left_Shutter_1_4_Detail).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Left_Shutter_1_5_Detail).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(Front1_Div_Lindiv).Value=LIN_DIV(0:($F1_2P_DIVIDER):1:($F1_1P_DIVIDER):0)"</COMMAND>
+                            </THEN>
+                            <ELSE>
+                                <IF>
+                                    <EQ expr1="FIELD(Type_Of_Shutter_Left).Info2" expr2="Prf_Layout_3"/>
+                                    <THEN>
+                                        <COMMAND>"FIELD(F1_1P_DIVIDER).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(F1_2P_DIVIDER).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(F1_3P_DIVIDER).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(F1_4P_DIVIDER).visible=FALSE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Left_Shutter_Detail).visible=FALSE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Left_Shutter_1_1_Detail).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Left_Shutter_1_2_Detail).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Left_Shutter_1_3_Detail).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Left_Shutter_1_4_Detail).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Left_Shutter_1_5_Detail).visible=FALSE"</COMMAND>
+                                        <COMMAND>"FIELD(Front1_Div_Lindiv).Value=LIN_DIV(0:1:($F1_3P_DIVIDER):($F1_2P_DIVIDER):($F1_1P_DIVIDER):0)"</COMMAND>
+                                    </THEN>
+                                    <ELSE>
+                                        <IF>
+                                            <EQ expr1="FIELD(Type_Of_Shutter_Left).Info2" expr2="Prf_Layout_4"/>
+                                            <THEN>
+                                                <COMMAND>"FIELD(F1_1P_DIVIDER).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(F1_2P_DIVIDER).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(F1_3P_DIVIDER).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(F1_4P_DIVIDER).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Left_Shutter_Detail).visible=FALSE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Left_Shutter_1_1_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Left_Shutter_1_2_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Left_Shutter_1_3_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Left_Shutter_1_4_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Left_Shutter_1_5_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Front1_Div_Lindiv).Value=LIN_DIV(0:1:($F1_4P_DIVIDER):($F1_3P_DIVIDER):($F1_2P_DIVIDER):($F1_1P_DIVIDER):0)"</COMMAND>
+                                            </THEN>
+                                            <ELSE>
+                                                <IF>
+                                                    <EQ expr1="FIELD(Type_Of_Shutter_Left).Info2" expr2="Profile_Shutter"/>
+                                                    <THEN>
+                                                        <COMMAND>"FIELD(F1_1P_DIVIDER).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(F1_2P_DIVIDER).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(F1_3P_DIVIDER).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(F1_4P_DIVIDER).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Left_Shutter_Detail).visible=TRUE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Left_Shutter_1_1_Detail).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Left_Shutter_1_2_Detail).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Left_Shutter_1_3_Detail).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Left_Shutter_1_4_Detail).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Left_Shutter_1_5_Detail).visible=FALSE"</COMMAND>
+                                                    </THEN>
+                                                </IF>
+                                            </ELSE>
+                                        </IF>
+                                    </ELSE>
+                                </IF>
+                            </ELSE>
+                        </IF>
+                    </ELSE>
+                </IF>
+           
+                <IF>
+                    <EQ expr1="FIELD(Type_Of_Shutter_Middle).Info2" expr2="Prf_Layout_1"/>
+                    <THEN>
+                        <COMMAND>"FIELD(F2_1P_DIVIDER).visible=TRUE"</COMMAND>
+                        <COMMAND>"FIELD(F2_2P_DIVIDER).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(F2_3P_DIVIDER).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(F2_4P_DIVIDER).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Middle_Shutter_Detail).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Middle_Shutter_2_1_Detail).visible=TRUE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Middle_Shutter_2_2_Detail).visible=TRUE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Middle_Shutter_2_3_Detail).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Middle_Shutter_2_4_Detail).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Middle_Shutter_2_5_Detail).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Front2_Div_Lindiv).Value=LIN_DIV(0:1:($F2_1P_DIVIDER):0)"</COMMAND>
+                    </THEN>
+                    <ELSE>
+                        <IF>
+                            <EQ expr1="FIELD(Type_Of_Shutter_Middle).Info2" expr2="Prf_Layout_2"/>
+                            <THEN>
+                                <COMMAND>"FIELD(F2_1P_DIVIDER).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(F2_2P_DIVIDER).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(F2_3P_DIVIDER).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(F2_4P_DIVIDER).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Middle_Shutter_Detail).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Middle_Shutter_2_1_Detail).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Middle_Shutter_2_2_Detail).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Middle_Shutter_2_3_Detail).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Middle_Shutter_2_4_Detail).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Middle_Shutter_2_5_Detail).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(Front2_Div_Lindiv).Value=LIN_DIV(0:($F2_2P_DIVIDER):1:($F2_1P_DIVIDER):0)"</COMMAND>
+                            </THEN>
+                            <ELSE>
+                                <IF>
+                                    <EQ expr1="FIELD(Type_Of_Shutter_Middle).Info2" expr2="Prf_Layout_3"/>
+                                    <THEN>
+                                        <COMMAND>"FIELD(F2_1P_DIVIDER).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(F2_2P_DIVIDER).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(F2_3P_DIVIDER).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(F2_4P_DIVIDER).visible=FALSE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Middle_Shutter_Detail).visible=FALSE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Middle_Shutter_2_1_Detail).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Middle_Shutter_2_2_Detail).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Middle_Shutter_2_3_Detail).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Middle_Shutter_2_4_Detail).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Middle_Shutter_2_5_Detail).visible=FALSE"</COMMAND>
+                                        <COMMAND>"FIELD(Front2_Div_Lindiv).Value=LIN_DIV(0:1:($F2_3P_DIVIDER):($F2_2P_DIVIDER):($F2_1P_DIVIDER):0)"</COMMAND>
+                                    </THEN>
+                                    <ELSE>
+                                        <IF>
+                                            <EQ expr1="FIELD(Type_Of_Shutter_Middle).Info2" expr2="Prf_Layout_4"/>
+                                            <THEN>
+                                                <COMMAND>"FIELD(F2_1P_DIVIDER).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(F2_2P_DIVIDER).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(F2_3P_DIVIDER).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(F2_4P_DIVIDER).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Middle_Shutter_Detail).visible=FALSE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Middle_Shutter_2_1_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Middle_Shutter_2_2_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Middle_Shutter_2_3_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Middle_Shutter_2_4_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Middle_Shutter_2_5_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Front2_Div_Lindiv).Value=LIN_DIV(0:1:($F2_4P_DIVIDER):($F2_3P_DIVIDER):($F2_2P_DIVIDER):($F2_1P_DIVIDER):0)"</COMMAND>
+                                            </THEN>
+                                            <ELSE>
+                                                <IF>
+                                                    <EQ expr1="FIELD(Type_Of_Shutter_Middle).Info2" expr2="Profile_Shutter"/>
+                                                    <THEN>
+                                                        <COMMAND>"FIELD(F2_1P_DIVIDER).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(F2_2P_DIVIDER).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(F2_3P_DIVIDER).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(F2_4P_DIVIDER).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Middle_Shutter_Detail).visible=TRUE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Middle_Shutter_2_1_Detail).visible=FALSE"</COMMAND>
+                                                         <COMMAND>"FIELD(Group_Middle_Shutter_2_2_Detail).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Middle_Shutter_2_3_Detail).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Middle_Shutter_2_4_Detail).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Middle_Shutter_2_5_Detail).visible=FALSE"</COMMAND>
+                                                    </THEN>
+                                                </IF>
+                                            </ELSE>
+                                        </IF>
+                                    </ELSE>
+                                </IF>
+                            </ELSE>
+                        </IF>
+                    </ELSE>
+                </IF>
+           
+       
+                <IF>
+                    <EQ expr1="FIELD(Type_Of_Shutter_Right).Info2" expr2="Prf_Layout_1"/>
+                    <THEN>
+                        <COMMAND>"FIELD(F3_1P_DIVIDER).visible=TRUE"</COMMAND>
+                        <COMMAND>"FIELD(F3_2P_DIVIDER).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(F3_3P_DIVIDER).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(F3_4P_DIVIDER).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Right_Shutter_Detail).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Right_Shutter_3_1_Detail).visible=TRUE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Right_Shutter_3_2_Detail).visible=TRUE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Right_Shutter_3_3_Detail).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Right_Shutter_3_4_Detail).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Group_Right_Shutter_3_5_Detail).visible=FALSE"</COMMAND>
+                        <COMMAND>"FIELD(Front3_Div_Lindiv).Value=LIN_DIV(0:1:($F3_1P_DIVIDER):0)"</COMMAND>
+                    </THEN>
+                    <ELSE>
+                        <IF>
+                            <EQ expr1="FIELD(Type_Of_Shutter_Right).Info2" expr2="Prf_Layout_2"/>
+                            <THEN>
+                                <COMMAND>"FIELD(F3_1P_DIVIDER).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(F3_2P_DIVIDER).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(F3_3P_DIVIDER).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(F3_4P_DIVIDER).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Right_Shutter_Detail).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Right_Shutter_3_1_Detail).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Right_Shutter_3_2_Detail).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Right_Shutter_3_3_Detail).visible=TRUE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Right_Shutter_3_4_Detail).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(Group_Right_Shutter_3_5_Detail).visible=FALSE"</COMMAND>
+                                <COMMAND>"FIELD(Front3_Div_Lindiv).Value=LIN_DIV(0:($F3_2P_DIVIDER):1:($F3_1P_DIVIDER):0)"</COMMAND>
+    
+                            </THEN>
+                            <ELSE>
+                                <IF>
+                                    <EQ expr1="FIELD(Type_Of_Shutter_Right).Info2" expr2="Prf_Layout_3"/>
+                                    <THEN>
+                                        <COMMAND>"FIELD(F3_1P_DIVIDER).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(F3_2P_DIVIDER).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(F3_3P_DIVIDER).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(F3_4P_DIVIDER).visible=FALSE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Right_Shutter_Detail).visible=FALSE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Right_Shutter_3_1_Detail).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Right_Shutter_3_2_Detail).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Right_Shutter_3_3_Detail).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Right_Shutter_3_4_Detail).visible=TRUE"</COMMAND>
+                                        <COMMAND>"FIELD(Group_Right_Shutter_3_5_Detail).visible=FALSE"</COMMAND>
+                                        <COMMAND>"FIELD(Front3_Div_Lindiv).Value=LIN_DIV(0:1:($F3_3P_DIVIDER):($F3_2P_DIVIDER):($F3_1P_DIVIDER):0)"</COMMAND>
+    
+                                    </THEN>
+                                    <ELSE>
+                                        <IF>
+                                            <EQ expr1="FIELD(Type_Of_Shutter_Right).Info2" expr2="Prf_Layout_4"/>
+                                            <THEN>
+                                                <COMMAND>"FIELD(F3_1P_DIVIDER).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(F3_2P_DIVIDER).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(F3_3P_DIVIDER).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(F3_4P_DIVIDER).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Right_Shutter_Detail).visible=FALSE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Right_Shutter_3_1_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Right_Shutter_3_2_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Right_Shutter_3_3_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Right_Shutter_3_4_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Group_Right_Shutter_3_5_Detail).visible=TRUE"</COMMAND>
+                                                <COMMAND>"FIELD(Front3_Div_Lindiv).Value=LIN_DIV(0:1:($F3_4P_DIVIDER):($F3_3P_DIVIDER):($F3_2P_DIVIDER):($F3_1P_DIVIDER):0)"</COMMAND>
+                                            </THEN>
+                                            <ELSE>
+                                                <IF>
+                                                    <EQ expr1="FIELD(Type_Of_Shutter_Right).Info2" expr2="Profile_Shutter"/>
+                                                    <THEN>
+                                                        <COMMAND>"FIELD(F3_1P_DIVIDER).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(F3_2P_DIVIDER).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(F3_3P_DIVIDER).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(F3_4P_DIVIDER).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Right_Shutter_Detail).visible=TRUE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Right_Shutter_3_1_Detail).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Right_Shutter_3_2_Detail).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Right_Shutter_3_3_Detail).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Right_Shutter_3_4_Detail).visible=FALSE"</COMMAND>
+                                                        <COMMAND>"FIELD(Group_Right_Shutter_3_5_Detail).visible=FALSE"</COMMAND>
+                                                    </THEN>
+                                                </IF>
+                                            </ELSE>
+                                        </IF>
+                                    </ELSE>
+                                </IF>
+                            </ELSE>
+                        </IF>
+                    </ELSE>
+                </IF>
+          
+        
+ <!-- Wardrobe left shutter Filter -->
+        <!-- single -->
+        <COMMAND>"FIELD(WRD_Shutter_Finish_1).info1List(FIELD(WRD_Shutter_Core_Material_1).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_1).info1List(FIELD(WRD_Shutter_Finish_1).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(WRD_Front1).Info1List(FIELD(WRD_Shutter_Finish_1).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1).filterInfo2List(FIELD(WRD_Shutter_Core_Material_1).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1).filterInfo3List(FIELD(WRD_Texture_1).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(Mat_Front_1).value=FIELD(WRD_Front1).value+'_'+FIELD(WRD_Shutter_Core_Material_1).value"</COMMAND>        
+
+        <!-- partition 1 -->
+
+        <COMMAND>"FIELD(WRD_Shutter_Finish_1_1).info1List(FIELD(WRD_Shutter_Core_Material_1_1).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_1_1).info1List(FIELD(WRD_Shutter_Finish_1_1).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(WRD_Front1_1).Info1List(FIELD(WRD_Shutter_Finish_1_1).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1_1).filterInfo2List(FIELD(WRD_Shutter_Core_Material_1_1).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1_1).filterInfo3List(FIELD(WRD_Texture_1_1).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(Mat_Front_1_1).value=FIELD(WRD_Front1_1).value+'_'+FIELD(WRD_Shutter_Core_Material_1_1).value"</COMMAND>
+
+        <!-- partition 2 -->
+
+        <COMMAND>"FIELD(WRD_Shutter_Finish_1_2).info1List(FIELD(WRD_Shutter_Core_Material_1_2).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_1_2).info1List(FIELD(WRD_Shutter_Finish_1_2).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(WRD_Front1_2).Info1List(FIELD(WRD_Shutter_Finish_1_2).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1_2).filterInfo2List(FIELD(WRD_Shutter_Core_Material_1_2).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1_2).filterInfo3List(FIELD(WRD_Texture_1_2).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(Mat_Front_1_2).value=FIELD(WRD_Front1_2).value+'_'+FIELD(WRD_Shutter_Core_Material_1_2).value"</COMMAND>
+
+        <!-- partition 3 -->
+
+        <COMMAND>"FIELD(WRD_Shutter_Finish_1_3).info1List(FIELD(WRD_Shutter_Core_Material_1_3).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_1_3).info1List(FIELD(WRD_Shutter_Finish_1_3).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(WRD_Front1_3).Info1List(FIELD(WRD_Shutter_Finish_1_3).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1_3).filterInfo2List(FIELD(WRD_Shutter_Core_Material_1_3).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1_3).filterInfo3List(FIELD(WRD_Texture_1_3).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(Mat_Front_1_3).value=FIELD(WRD_Front1_3).value+'_'+FIELD(WRD_Shutter_Core_Material_1_3).value"</COMMAND>
+
+        <!-- partition 4 -->
+        <COMMAND>"FIELD(WRD_Shutter_Finish_1_4).info1List(FIELD(WRD_Shutter_Core_Material_1_4).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_1_4).info1List(FIELD(WRD_Shutter_Finish_1_4).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(WRD_Front1_4).Info1List(FIELD(WRD_Shutter_Finish_1_4).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1_4).filterInfo2List(FIELD(WRD_Shutter_Core_Material_1_4).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1_4).filterInfo3List(FIELD(WRD_Texture_1_4).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(Mat_Front_1_4).value=FIELD(WRD_Front1_4).value+'_'+FIELD(WRD_Shutter_Core_Material_1_4).value"</COMMAND>
+
+        <!-- partition 5 -->
+
+        <COMMAND>"FIELD(WRD_Shutter_Finish_1_5).info1List(FIELD(WRD_Shutter_Core_Material_1_5).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_1_5).info1List(FIELD(WRD_Shutter_Finish_1_5).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(WRD_Front1_5).Info1List(FIELD(WRD_Shutter_Finish_1_5).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1_5).filterInfo2List(FIELD(WRD_Shutter_Core_Material_1_5).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1_5).filterInfo3List(FIELD(WRD_Texture_1_5).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(Mat_Front_1_5).value=FIELD(WRD_Front1_5).value+'_'+FIELD(WRD_Shutter_Core_Material_1_5).value"</COMMAND>
+        <!-- End of Wardrobe left shutter Filter -->
+
+         <!-- Wardrobe Middle shutter Filter -->
+
+        <!-- single -->
+        <COMMAND>"FIELD(WRD_Shutter_Finish_2).info1List(FIELD(WRD_Shutter_Core_Material_2).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_2).info1List(FIELD(WRD_Shutter_Finish_2).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(WRD_Front2).Info1List(FIELD(WRD_Shutter_Finish_2).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front2).filterInfo2List(FIELD(WRD_Shutter_Core_Material_2).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front2).filterInfo3List(FIELD(WRD_Texture_2).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(Mat_Front_2).value=FIELD(WRD_Front2).value+'_'+FIELD(WRD_Shutter_Core_Material_2).value"</COMMAND> 
+
+         <!-- partition 1 -->
+
+         <COMMAND>"FIELD(WRD_Shutter_Finish_2_1).info1List(FIELD(WRD_Shutter_Core_Material_2_1).info1)"</COMMAND>
+         <COMMAND>"FIELD(WRD_Texture_2_1).info1List(FIELD(WRD_Shutter_Finish_2_1).info2)"</COMMAND> 
+ 
+         <COMMAND>"FIELD(WRD_Front2_1).Info1List(FIELD(WRD_Shutter_Finish_2_1).value)"</COMMAND>
+         <COMMAND>"FIELD(WRD_Front2_1).filterInfo2List(FIELD(WRD_Shutter_Core_Material_2_1).value)"</COMMAND>
+         <COMMAND>"FIELD(WRD_Front2_1).filterInfo3List(FIELD(WRD_Texture_2_1).info2)"</COMMAND>
+ 
+         <COMMAND>"FIELD(Mat_Front_2_1).value=FIELD(WRD_Front2_1).value+'_'+FIELD(WRD_Shutter_Core_Material_2_1).value"</COMMAND>
+
+          <!-- partition 2 -->
+
+        <COMMAND>"FIELD(WRD_Shutter_Finish_2_2).info1List(FIELD(WRD_Shutter_Core_Material_2_2).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_2_2).info1List(FIELD(WRD_Shutter_Finish_2_2).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(WRD_Front2_2).Info1List(FIELD(WRD_Shutter_Finish_2_2).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front2_2).filterInfo2List(FIELD(WRD_Shutter_Core_Material_2_2).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front2_2).filterInfo3List(FIELD(WRD_Texture_2_2).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(Mat_Front_2_2).value=FIELD(WRD_Front2_2).value+'_'+FIELD(WRD_Shutter_Core_Material_2_2).value"</COMMAND>
+
+        <!-- partition 3 -->
+
+        <COMMAND>"FIELD(WRD_Shutter_Finish_2_3).info1List(FIELD(WRD_Shutter_Core_Material_2_3).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_2_3).info1List(FIELD(WRD_Shutter_Finish_2_3).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(WRD_Front2_3).Info1List(FIELD(WRD_Shutter_Finish_2_3).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front2_3).filterInfo2List(FIELD(WRD_Shutter_Core_Material_2_3).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front2_3).filterInfo3List(FIELD(WRD_Texture_2_3).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(Mat_Front_2_3).value=FIELD(WRD_Front2_3).value+'_'+FIELD(WRD_Shutter_Core_Material_2_3).value"</COMMAND>
+
+         <!-- partition 4 -->
+
+         <COMMAND>"FIELD(WRD_Shutter_Finish_2_4).info1List(FIELD(WRD_Shutter_Core_Material_2_4).info1)"</COMMAND>
+         <COMMAND>"FIELD(WRD_Texture_2_4).info1List(FIELD(WRD_Shutter_Finish_2_4).info2)"</COMMAND> 
+ 
+         <COMMAND>"FIELD(WRD_Front2_4).Info1List(FIELD(WRD_Shutter_Finish_2_4).value)"</COMMAND>
+         <COMMAND>"FIELD(WRD_Front2_4).filterInfo2List(FIELD(WRD_Shutter_Core_Material_2_4).value)"</COMMAND>
+         <COMMAND>"FIELD(WRD_Front2_4).filterInfo3List(FIELD(WRD_Texture_2_4).info2)"</COMMAND>
+ 
+         <COMMAND>"FIELD(Mat_Front_2_4).value=FIELD(WRD_Front2_4).value+'_'+FIELD(WRD_Shutter_Core_Material_2_4).value"</COMMAND>
+
+          <!-- partition 5 -->
+
+        <COMMAND>"FIELD(WRD_Shutter_Finish_2_5).info1List(FIELD(WRD_Shutter_Core_Material_2_5).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_2_5).info1List(FIELD(WRD_Shutter_Finish_2_5).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(WRD_Front2_5).Info1List(FIELD(WRD_Shutter_Finish_2_5).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front2_5).filterInfo2List(FIELD(WRD_Shutter_Core_Material_2_5).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front2_5).filterInfo3List(FIELD(WRD_Texture_2_5).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(Mat_Front_2_5).value=FIELD(WRD_Front2_5).value+'_'+FIELD(WRD_Shutter_Core_Material_2_5).value"</COMMAND>
+
+        <!-- End of Wardrobe Middle shutter Filter -->
+
+          <!-- Wardrobe Right shutter Filter -->
+
+        <!-- single -->
+        <COMMAND>"FIELD(WRD_Shutter_Finish_3).info1List(FIELD(WRD_Shutter_Core_Material_3).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_3).info1List(FIELD(WRD_Shutter_Finish_3).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(WRD_Front3).Info1List(FIELD(WRD_Shutter_Finish_3).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front3).filterInfo2List(FIELD(WRD_Shutter_Core_Material_3).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front3).filterInfo3List(FIELD(WRD_Texture_3).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(Mat_Front_3).value=FIELD(WRD_Front3).value+'_'+FIELD(WRD_Shutter_Core_Material_3).value"</COMMAND> 
+
+        <!-- partition 1 -->
+
+        <COMMAND>"FIELD(WRD_Shutter_Finish_3_1).info1List(FIELD(WRD_Shutter_Core_Material_3_1).info1)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Texture_3_1).info1List(FIELD(WRD_Shutter_Finish_3_1).info2)"</COMMAND> 
+
+        <COMMAND>"FIELD(WRD_Front3_1).Info1List(FIELD(WRD_Shutter_Finish_3_1).value)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Front3_1).filterInfo2List(FIELD(WRD_Shutter_Core_Material_3_1).value)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Front3_1).filterInfo3List(FIELD(WRD_Texture_3_1).info2)"</COMMAND>
+
+        <COMMAND>"FIELD(Mat_Front_3_1).value=FIELD(WRD_Front3_1).value+'_'+FIELD(WRD_Shutter_Core_Material_3_1).value"</COMMAND>
+
+        <!-- partition 2 -->
+
+        <COMMAND>"FIELD(WRD_Shutter_Finish_3_2).info1List(FIELD(WRD_Shutter_Core_Material_3_2).info1)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Texture_3_2).info1List(FIELD(WRD_Shutter_Finish_3_2).info2)"</COMMAND> 
+
+        <COMMAND>"FIELD(WRD_Front3_2).Info1List(FIELD(WRD_Shutter_Finish_3_2).value)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Front3_2).filterInfo2List(FIELD(WRD_Shutter_Core_Material_3_2).value)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Front3_2).filterInfo3List(FIELD(WRD_Texture_3_2).info2)"</COMMAND>
+
+        <COMMAND>"FIELD(Mat_Front_3_2).value=FIELD(WRD_Front3_2).value+'_'+FIELD(WRD_Shutter_Core_Material_3_2).value"</COMMAND>
+
+        <!-- partition 3 -->
+
+        <COMMAND>"FIELD(WRD_Shutter_Finish_3_3).info1List(FIELD(WRD_Shutter_Core_Material_3_3).info1)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Texture_3_3).info1List(FIELD(WRD_Shutter_Finish_3_3).info2)"</COMMAND> 
+
+        <COMMAND>"FIELD(WRD_Front3_3).Info1List(FIELD(WRD_Shutter_Finish_3_3).value)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Front3_3).filterInfo2List(FIELD(WRD_Shutter_Core_Material_3_3).value)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Front3_3).filterInfo3List(FIELD(WRD_Texture_3_3).info2)"</COMMAND>
+
+        <COMMAND>"FIELD(Mat_Front_3_3).value=FIELD(WRD_Front3_3).value+'_'+FIELD(WRD_Shutter_Core_Material_3_3).value"</COMMAND>
+
+        <!-- partition 4 -->
+
+        <COMMAND>"FIELD(WRD_Shutter_Finish_3_4).info1List(FIELD(WRD_Shutter_Core_Material_3_4).info1)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Texture_3_4).info1List(FIELD(WRD_Shutter_Finish_3_4).info2)"</COMMAND> 
+
+        <COMMAND>"FIELD(WRD_Front3_4).Info1List(FIELD(WRD_Shutter_Finish_3_4).value)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Front3_4).filterInfo2List(FIELD(WRD_Shutter_Core_Material_3_4).value)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Front3_4).filterInfo3List(FIELD(WRD_Texture_3_4).info2)"</COMMAND>
+
+        <COMMAND>"FIELD(Mat_Front_3_4).value=FIELD(WRD_Front3_4).value+'_'+FIELD(WRD_Shutter_Core_Material_3_4).value"</COMMAND>
+
+        <!-- partition 5 -->
+
+        <COMMAND>"FIELD(WRD_Shutter_Finish_3_5).info1List(FIELD(WRD_Shutter_Core_Material_3_5).info1)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Texture_3_5).info1List(FIELD(WRD_Shutter_Finish_3_5).info2)"</COMMAND> 
+
+        <COMMAND>"FIELD(WRD_Front3_5).Info1List(FIELD(WRD_Shutter_Finish_3_5).value)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Front3_5).filterInfo2List(FIELD(WRD_Shutter_Core_Material_3_5).value)"</COMMAND>
+        <COMMAND>"FIELD(WRD_Front3_5).filterInfo3List(FIELD(WRD_Texture_3_5).info2)"</COMMAND>
+
+        <COMMAND>"FIELD(Mat_Front_3_5).value=FIELD(WRD_Front3_5).value+'_'+FIELD(WRD_Shutter_Core_Material_3_5).value"</COMMAND>
+        <!-- End of Wardrobe Right shutter Filter -->
+
+
+        <IF>
+            <EQ expr1="FIELD(Wrd_Sidepanel_Right).Info1" expr2="YES"/>
+            <THEN>
+                <COMMAND>"FIELD(ART_SIZEXCWD).value=CALC(FIELD(ART_SIZEXWD).value-FIELD(ART_RIGHT_CNR_DEPTH).value-136)"</COMMAND>	
+                <COMMAND>"FIELD(ART_RIGHT_CNR_DEPTH).visible=TRUE"</COMMAND> 
+                <IF>
+                    <EQ expr1="FIELD(Wrd_Sidepanel_Left).Info1" expr2="YES"/>	
+                    <THEN>
+                        <COMMAND>"FIELD(ART_SIZEXCWD).value=CALC(FIELD(ART_SIZEXWD).value-FIELD(ART_LEFT_CNR_DEPTH).value-FIELD(ART_RIGHT_CNR_DEPTH).value-272)"</COMMAND>
+                        <COMMAND>"FIELD(ART_LEFT_CNR_DEPTH).visible=TRUE"</COMMAND>  
+                     </THEN>
+                </IF>
+            </THEN>          
+            <ELSE>
+                <COMMAND>"FIELD(ART_SIZEXCWD).value=CALC(FIELD(ART_SIZEXWD).value)"</COMMAND>
+                <COMMAND>"FIELD(ART_LEFT_CNR_DEPTH).visible=FALSE"</COMMAND>   
+                <COMMAND>"FIELD(ART_RIGHT_CNR_DEPTH).visible=FALSE"</COMMAND>      
+            </ELSE>
+        </IF>
+       
+
+      
+        <IF>
+            <EQ expr1="FIELD(Wrd_Sidepanel_Left).Info1" expr2="YES"/>
+            <THEN>
+                <COMMAND>"FIELD(ART_SIZEXCWD).value=CALC(FIELD(ART_SIZEXWD).value-FIELD(ART_LEFT_CNR_DEPTH).value-136)"</COMMAND>
+                <COMMAND>"FIELD(ART_LEFT_CNR_DEPTH).visible=TRUE"</COMMAND> 
+                <IF>
+                    <EQ expr1="FIELD(Wrd_Sidepanel_Right).Info1" expr2="YES"/>	
+                    <THEN>
+                        <COMMAND>"FIELD(ART_SIZEXCWD).value=CALC(FIELD(ART_SIZEXWD).value-FIELD(ART_LEFT_CNR_DEPTH).value-FIELD(ART_RIGHT_CNR_DEPTH).value-272)"</COMMAND>
+                        <COMMAND>"FIELD(ART_RIGHT_CNR_DEPTH).visible=TRUE"</COMMAND>    
+                    </THEN>
+                </IF>
+            </THEN>
+            <ELSE>
+                <COMMAND>"FIELD(ART_SIZEXCWD).value=CALC(FIELD(ART_SIZEXWD).value)"</COMMAND>
+                <COMMAND>"FIELD(ART_LEFT_CNR_DEPTH).visible=FALSE"</COMMAND>
+                <COMMAND>"FIELD(ART_RIGHT_CNR_DEPTH).visible=FALSE"</COMMAND>
+            </ELSE>
+        </IF>
+              
+	</LOGIC_DEFINITION>
+</XML>

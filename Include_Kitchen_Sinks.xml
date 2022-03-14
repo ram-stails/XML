@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+	<PART name="PART_KITCHEN_SINK_MODELS">
+
+		<GROUP name="Sink_Details" valuetype="FRAME" label="Sink Details" visible="TRUE">
+
+			<COMBOBOX name="Bowl_Side"	label="Bowl side" 	valuetype="TEXT"	default="Singl_Drainer_Left"	visible="TRUE"	active="TRUE">
+				<!-- <ITEM value="Single_Bowl"				label="Single Bowl"	/> -->
+				<ITEM value="Singl_Drainer_Left"		label="Single Bowl With Drainer Left"	/>
+				<ITEM value="Singl_Drainer_Right"		label="Single Bowl With Drainer Right"	/>
+			</COMBOBOX>					
+
+			<COMBOBOX name="Sink_Unit"	label="Sink Model" 	valuetype="IMAGE"	default=""	visible="TRUE"	active="TRUE">	
+				
+				<!-- <ITEM value="sink_1B_single_bowl" 		label="Single Bowl"				info1="Single_Bowl" 				info2="SS"  	image1="Angolo/sink_1B_single_bowl.jpg" /> -->
+				<ITEM value="Sink_1B_R_steel_P" 		label="Sink 1 Basin Right"		info1="Singl_Drainer_Right" 		info2="SS"  	image1="Angolo/SINK_1B_R_STEEL_P.png" />
+				<ITEM value="Sink_1B_R_greyD_M" 		label="Sink 2 Basin Right"		info1="Singl_Drainer_Right" 		info2="SS"  	image1="Angolo/SINK_1B_R_GREYD_M.png" />
+				<ITEM value="Sink_1B_R_black_M" 		label="Sink 3 Basin Right"		info1="Singl_Drainer_Right" 		info2="SS"  	image1="Angolo/SINK_1B_R_BLACK_M.PNG" />
+				<ITEM value="Sink_1B_R_White_H" 		label="Sink 4 Basin Right"		info1="Singl_Drainer_Right" 		info2="SS"  	image1="Angolo/Sink_1B_R_White_H.png" />
+				<ITEM value="Sink_1B_R_steel_M" 		label="Sink 5 Basin Right"		info1="Singl_Drainer_Right" 		info2="SS"  	image1="Angolo/Sink_1B_R_steel_M.jpg" />
+				<ITEM value="Sink_1B_R_steel_P_Left" 		label="Sink 1 Basin Left"		info1="Singl_Drainer_Left" 		info2="SS"  	image1="Angolo/SINK_1B_R_STEEL_P.png" />
+				<ITEM value="Sink_1B_R_greyD_M" 		label="Sink 2 Basin Right"		info1="Singl_Drainer_Left" 		info2="SS"  	image1="Angolo/SINK_1B_R_GREYD_M.png" />
+				<ITEM value="Sink_1B_R_black_M" 		label="Sink 3 Basin Right"		info1="Singl_Drainer_Left" 		info2="SS"  	image1="Angolo/SINK_1B_R_BLACK_M.PNG" />
+				<ITEM value="Sink_1B_R_White_H" 		label="Sink 4 Basin Right"		info1="Singl_Drainer_Left" 		info2="SS"  	image1="Angolo/Sink_1B_R_White_H.png" />
+				<ITEM value="Sink_1B_R_steel_M" 		label="Sink 5 Basin Right"		info1="Singl_Drainer_Left" 		info2="SS"  	image1="Angolo/Sink_1B_R_steel_M.jpg" />
+				
+
+				<!-- <ITEM value="Sink_1B_R_Keradomo_Mera_70" 		label="Single Bowl"				info1="Single_Bowl" 				info2="SS"  	image1="Angolo/sink_1B_single_bowl.jpg" />
+				<ITEM value="Sink_1B_R_steel_P" 		label="Sink 1 Basin Right"		info1="Singl_Drainer_Right" 		info2="SS"  	image1="Angolo/Sink_1B_R_steel_P.png" />
+				<ITEM value="Sink_1B_R_greyD_M" 		label="Sink 1 Basin Right"		info1="Singl_Drainer_Right" 		info2="SS"  	image1="Angolo/Sink_1B_R_greyD_M.png" />
+				<ITEM value="Sink_1B_R_black_M" 		label="Sink 1 Basin Right"		info1="Singl_Drainer_Right" 		info2="SS"  	image1="Angolo/Sink_1B_R_black_M.png" />
+				<ITEM value="Sink_1B_R_white_H" 		label="Sink 1 Basin Right"		info1="Singl_Drainer_Right" 		info2="SS"  	image1="Angolo/Sink_1B_R_black_M.png" /> -->
+
+			</COMBOBOX>
+	
+	</GROUP>
+
+	</PART>
+
+	<PART name="PART_KITCHEN_SINK_MODELS_LOGIC">
+
+	<COMMAND>"FIELD(Sink_Unit).Info1List(FIELD(Bowl_Side).value)"</COMMAND>
+
+	</PART>
+</XML>

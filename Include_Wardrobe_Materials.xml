@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+	<PART name="PART_KITCHEN_Carcass_SKIRTING">
+		<GROUP name="Skirting_Details" valuetype="FRAME" label="Skirting" visible="FALSE">
+
+			<COMBOBOX name="Skirting_Color" label="Skirting Color" valuetype="IMAGE" default="Silver" visible="TRUE" active="TRUE" image1="img/hardware/PVC_Leg.jpg">
+				<ITEM name="Silver" value="Silver" label="Silver" image1="img/catalog/Silver_Skirting.jpg" image2="img/hardware/Skirting_100mm.jpg" />
+				<ITEM name="Grey" value="Grey" label="Grey" image1="img/catalog/Grey_Skirting.jpg" image2="img/hardware/Skirting_100mm.jpg" />
+				<ITEM name="No_Skirting" value="No_Skirting" label="No Skirting" image1="img/catalog/Skirting_Floating.PNG" image2="img/hardware/Skirting_100mm.jpg" />
+			</COMBOBOX>
+
+			<COMBOBOX name="Adjustable_Legs" label="Skirting Height" valuetype="" default="Adjustable_leg_H100_" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/Skirting_100mm.PNG">
+				<ITEM name="Adjustable_leg_H100_" value="Adjustable_leg_H100_" info1="100" label="100mm" />
+				<ITEM name="Adjustable_leg_H150" value="Adjustable_leg_H150" info1="150" label="150mm" />
+				<ITEM name="NO_BOM" value="NO_BOM" info1="150" label="150mm" />
+			</COMBOBOX>
+
+			<EDITBOX name="Leg_Height" label="Leg Height" default="100" active="TRUE" visible="TRUE" />
+
+			<EDITBOX name="Skirting_Height" label="Skirting Height" default="Silver_100mm" active="TRUE" visible="TRUE" />
+
+		</GROUP>
+	</PART>
+
+	<PART name="PART_KITCHEN_Carcass_SKIRTING_LOGIC">
+		<COMMAND>"FIELD(Leg_Height).value=FIELD(Adjustable_Legs).info1"</COMMAND>
+		<IF>
+			<EQ expr1="FIELD(Skirting_Color).value" expr2="No_Skirting" />
+			<THEN>
+				<COMMAND>"FIELD(Skirting_Height).value=Floating_Type"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Skirting_Height).value=FIELD(Skirting_Color).value+'_'+FIELD(Leg_Height).value+'mm'</COMMAND>
+			</ELSE>
+		</IF>
+	</PART>
+
+
+	<PART name="PART_KITCHEN_Carcass_CONSTRUCTION">
+
+		<GROUP name="BU_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="BU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+				<ITEM name="SolidWood" value="SolidWood" label="Solid Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Material_Grade" label="Material Grade" valuetype="" default="BWP_Ply" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="BWP_Ply" value="BWP_Ply" label="BWP PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="BWR_Ply" value="BWR_Ply" label="BWR PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="BirchPly" value="BirchPly" label="Birch PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="PLPB" value="PLPB" label="PLPB" info1="Engineered_wood" image1="img/catalog/.PNG" />
+				<ITEM name="MDF" value="MDF" label="MDF" info1="Engineered_wood" image1="img/catalog/.PNG" />
+				<ITEM name="TeakWood" value="TeakWood" info1="SolidWood" label="Teak Wood" image1="img/catalog/.PNG" />
+				<ITEM name="PineWood" value="PineWood" info1="SolidWood" label="Pine Wood" image1="img/catalog/.PNG" />
+				<ITEM name="RubberWood" value="RubberWood" info1="SolidWood" label="Rubber Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="HW_BWP_GR" label="HalfWhite BWP GreenLam" info1="PlyWood" info2="BWP_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_BWP_GR" label="Grey BWP GreenLam" info1="PlyWood" info2="BWP_Ply" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_BWP" label="HalfWhite BWP" info1="PlyWood" info2="BWP_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="HW_BWR_GR" label="HalfWhite BWR GreenLam" info1="PlyWood" info2="BWR_Ply" info3="HalfWhite" image1="img/material/EUHG030.jpg" />
+				<ITEM value="GREY_BWR_GR" label="Grey BWR GreenLam" info1="PlyWood" info2="BWR_Ply" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_BWR_PLY" label="HalfWhite PL Ply" info1="PlyWood" info2="BWR_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="HW_PLPB" label="HalfWhite PLPB" info1="Engineered_wood" info2="PLPB" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_PLPB" label="Grey PLPB" info1="Engineered_wood" info2="PLPB" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_MDF" label="HalfWhite PL MDF" info1="Engineered_wood" info2="MDF" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_MDF" label="Grey PL MDF" info1="Engineered_wood" info2="MDF" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_Birch_PLY" label="HalfWhite Brich Ply" info1="PlyWood" info2="BirchPly" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_Birch_PLY" label="Grey Brich Ply" info1="PlyWood" info2="BirchPly" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="Birch_PLY_Polished" label="Brich Ply Polished" info1="PlyWood" info2="BirchPly" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Teak_Wood" label="Teak Wood Polished" info1="SolidWood" info2="TeakWood" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Pine_Wood" label="Pine Wood Polished" info1="SolidWood" info2="PineWood" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Rubber_Wood" label="Rubber Wood Polished" info1="SolidWood" info2="RubberWood" info3="Polished" image1="img/material/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Carcass_Prf_Type" label="Edge Band Selection" valuetype="TEXT" default="Grey_Front08mm_AllSide_08mm" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="All_Sides_NoPrf" label="All Sides No Edge Band" info1="Polished" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front08mm_AllSide_08mm" label="All Sides 0.8mm Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front08mm_Le_Ri_NoPrf" label="All Sides 0.8mm and Le Ri No Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front2mm_AllSide_08mm" label="Front 2mm and 0.8mm All Sides" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front2mm_Le_Ri_NoPrf" label="Front 2mm and Le Ri No Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front08mm_AllSide_08mm" label="All Sides 0.8mm Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front08mm_Le_Ri_NoPrf" label="All Sides 0.8mm and Le Ri No Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front2mm_AllSide_08mm" label="Front 2mm and 0.8mm All Sides" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front2mm_Le_Ri_NoPrf" label="Front 2mm and Le Ri No Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+		</GROUP>
+
+		<GROUP name="Carcass_Construction" label="Carcass Construction">
+
+			<COMBOBOX name="BU_Top_Panel" label="Top Panel" valuetype="IMAGE" default="Top_Rails" visible="TRUE" active="TRUE" image1="img/catalog/Top_Rails.PNG">
+				<ITEM name="Top_Rails" value="Top_Rails" label="Rails" image1="img/catalog/Top_Rails.PNG" image2="img/catalog/.PNG" />
+				<ITEM name="Full_Top" value="Full_Top" label="Full Top" image1="img/catalog/Full_Top.PNG" image2="img/catalog/.PNG" />
+			</COMBOBOX>
+		</GROUP>
+
+	</PART>
+
+
+	<PART name="PART_KITCHEN_Carcass_CONSTRUCTION_1">
+
+		<GROUP name="BU1_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="BU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+				<ITEM name="SolidWood" value="SolidWood" label="Solid Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Material_Grade" label="Material Grade" valuetype="" default="BWP_Ply" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="BWP_Ply" value="BWP_Ply" label="BWP PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="BWR_Ply" value="BWR_Ply" label="BWR PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="BirchPly" value="BirchPly" label="Birch PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="PLPB" value="PLPB" label="PLPB" info1="Engineered_wood" image1="img/catalog/.PNG" />
+				<ITEM name="MDF" value="MDF" label="MDF" info1="Engineered_wood" image1="img/catalog/.PNG" />
+				<ITEM name="TeakWood" value="TeakWood" info1="SolidWood" label="Teak Wood" image1="img/catalog/.PNG" />
+				<ITEM name="PineWood" value="PineWood" info1="SolidWood" label="Pine Wood" image1="img/catalog/.PNG" />
+				<ITEM name="RubberWood" value="RubberWood" info1="SolidWood" label="Rubber Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="HW_BWP_GR" label="HalfWhite BWP GreenLam" info1="PlyWood" info2="BWP_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_BWP_GR" label="Grey BWP GreenLam" info1="PlyWood" info2="BWP_Ply" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_BWP" label="HalfWhite BWP" info1="PlyWood" info2="BWP_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="HW_BWR_GR" label="HalfWhite BWR GreenLam" info1="PlyWood" info2="BWR_Ply" info3="HalfWhite" image1="img/material/EUHG030.jpg" />
+				<ITEM value="GREY_BWR_GR" label="Grey BWR GreenLam" info1="PlyWood" info2="BWR_Ply" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_BWR_PLY" label="HalfWhite PL Ply" info1="PlyWood" info2="BWR_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="HW_PLPB" label="HalfWhite PLPB" info1="Engineered_wood" info2="PLPB" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_PLPB" label="Grey PLPB" info1="Engineered_wood" info2="PLPB" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_MDF" label="HalfWhite PL MDF" info1="Engineered_wood" info2="MDF" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_MDF" label="Grey PL MDF" info1="Engineered_wood" info2="MDF" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_Birch_PLY" label="HalfWhite Brich Ply" info1="PlyWood" info2="BirchPly" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_Birch_PLY" label="Grey Brich Ply" info1="PlyWood" info2="BirchPly" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="Birch_PLY_Polished" label="Brich Ply Polished" info1="PlyWood" info2="BirchPly" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Teak_Wood" label="Teak Wood Polished" info1="SolidWood" info2="TeakWood" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Pine_Wood" label="Pine Wood Polished" info1="SolidWood" info2="PineWood" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Rubber_Wood" label="Rubber Wood Polished" info1="SolidWood" info2="RubberWood" info3="Polished" image1="img/material/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Carcass_Prf_Type" label="Edge Band Selection" valuetype="TEXT" default="Grey_Front08mm_AllSide_08mm" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="All_Sides_NoPrf" label="All Sides No Edge Band" info1="Polished" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front08mm_AllSide_08mm" label="All Sides 0.8mm Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front08mm_Le_Ri_NoPrf" label="All Sides 0.8mm and Le Ri No Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front2mm_AllSide_08mm" label="Front 2mm and 0.8mm All Sides" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front2mm_Le_Ri_NoPrf" label="Front 2mm and Le Ri No Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front08mm_AllSide_08mm" label="All Sides 0.8mm Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front08mm_Le_Ri_NoPrf" label="All Sides 0.8mm and Le Ri No Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front2mm_AllSide_08mm" label="Front 2mm and 0.8mm All Sides" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front2mm_Le_Ri_NoPrf" label="Front 2mm and Le Ri No Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+		</GROUP>
+
+	</PART>
+
+	<PART name="PART_KITCHEN_Carcass_CONSTRUCTION_2">
+
+		<GROUP name="BU2_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="BU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+				<ITEM name="SolidWood" value="SolidWood" label="Solid Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Material_Grade" label="Material Grade" valuetype="" default="BWP_Ply" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="BWP_Ply" value="BWP_Ply" label="BWP PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="BWR_Ply" value="BWR_Ply" label="BWR PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="BirchPly" value="BirchPly" label="Birch PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="PLPB" value="PLPB" label="PLPB" info1="Engineered_wood" image1="img/catalog/.PNG" />
+				<ITEM name="MDF" value="MDF" label="MDF" info1="Engineered_wood" image1="img/catalog/.PNG" />
+				<ITEM name="TeakWood" value="TeakWood" info1="SolidWood" label="Teak Wood" image1="img/catalog/.PNG" />
+				<ITEM name="PineWood" value="PineWood" info1="SolidWood" label="Pine Wood" image1="img/catalog/.PNG" />
+				<ITEM name="RubberWood" value="RubberWood" info1="SolidWood" label="Rubber Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="HW_BWP_GR" label="HalfWhite BWP GreenLam" info1="PlyWood" info2="BWP_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_BWP_GR" label="Grey BWP GreenLam" info1="PlyWood" info2="BWP_Ply" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_BWP" label="HalfWhite BWP" info1="PlyWood" info2="BWP_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="HW_BWR_GR" label="HalfWhite BWR GreenLam" info1="PlyWood" info2="BWR_Ply" info3="HalfWhite" image1="img/material/EUHG030.jpg" />
+				<ITEM value="GREY_BWR_GR" label="Grey BWR GreenLam" info1="PlyWood" info2="BWR_Ply" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_BWR_PLY" label="HalfWhite PL Ply" info1="PlyWood" info2="BWR_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="HW_PLPB" label="HalfWhite PLPB" info1="Engineered_wood" info2="PLPB" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_PLPB" label="Grey PLPB" info1="Engineered_wood" info2="PLPB" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_MDF" label="HalfWhite PL MDF" info1="Engineered_wood" info2="MDF" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_MDF" label="Grey PL MDF" info1="Engineered_wood" info2="MDF" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_Birch_PLY" label="HalfWhite Brich Ply" info1="PlyWood" info2="BirchPly" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_Birch_PLY" label="Grey Brich Ply" info1="PlyWood" info2="BirchPly" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="Birch_PLY_Polished" label="Brich Ply Polished" info1="PlyWood" info2="BirchPly" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Teak_Wood" label="Teak Wood Polished" info1="SolidWood" info2="TeakWood" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Pine_Wood" label="Pine Wood Polished" info1="SolidWood" info2="PineWood" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Rubber_Wood" label="Rubber Wood Polished" info1="SolidWood" info2="RubberWood" info3="Polished" image1="img/material/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Carcass_Prf_Type" label="Edge Band Selection" valuetype="TEXT" default="Grey_Front08mm_AllSide_08mm" visible="FALSE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="All_Sides_NoPrf" label="All Sides No Edge Band" info1="Polished" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front08mm_AllSide_08mm" label="All Sides 0.8mm Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front08mm_Le_Ri_NoPrf" label="All Sides 0.8mm and Le Ri No Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front2mm_AllSide_08mm" label="Front 2mm and 0.8mm All Sides" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front2mm_Le_Ri_NoPrf" label="Front 2mm and Le Ri No Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front08mm_AllSide_08mm" label="All Sides 0.8mm Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front08mm_Le_Ri_NoPrf" label="All Sides 0.8mm and Le Ri No Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front2mm_AllSide_08mm" label="Front 2mm and 0.8mm All Sides" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front2mm_Le_Ri_NoPrf" label="Front 2mm and Le Ri No Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+		</GROUP>
+
+	</PART>
+
+
+	<PART name="PART_KITCHEN_Carcass_CONSTRUCTION_LOGIC">
+
+		<COMMAND>"FIELD(BU_Carcass).Info1List(FIELD(BU_Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(BU_Material_Grade).Info1List(FIELD(BU_Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(BU_Carcass).filterInfo2List(FIELD(BU_Material_Grade).value)"</COMMAND>
+		<COMMAND>"FIELD(BU_Carcass_Prf_Type).Info1List(FIELD(BU_Carcass).Info3List)"</COMMAND>
+		
+	</PART>
+
+	<PART name="PART_KITCHEN_WU_Carcass_CONSTRUCTION">
+
+		<GROUP name="WU_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="WU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+				<ITEM name="SolidWood" value="SolidWood" label="Solid Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="WU_Material_Grade" label="Material Grade" valuetype="" default="BWP_Ply" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="BWP_Ply" value="BWP_Ply" label="BWP PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="BWR_Ply" value="BWR_Ply" label="BWR PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="BirchPly" value="BirchPly" label="Birch PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="PLPB" value="PLPB" label="PLPB" info1="Engineered_wood" image1="img/catalog/.PNG" />
+				<ITEM name="MDF" value="MDF" label="MDF" info1="Engineered_wood" image1="img/catalog/.PNG" />
+				<ITEM name="TeakWood" value="TeakWood" info1="SolidWood" label="Teak Wood" image1="img/catalog/.PNG" />
+				<ITEM name="PineWood" value="PineWood" info1="SolidWood" label="Pine Wood" image1="img/catalog/.PNG" />
+				<ITEM name="RubberWood" value="RubberWood" info1="SolidWood" label="Rubber Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="WU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="HW_BWP_GR" label="HalfWhite BWP GreenLam" info1="PlyWood" info2="BWP_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_BWP_GR" label="Grey BWP GreenLam" info1="PlyWood" info2="BWP_Ply" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_BWP" label="HalfWhite BWP" info1="PlyWood" info2="BWP_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="HW_BWR_GR" label="HalfWhite BWR GreenLam" info1="PlyWood" info2="BWR_Ply" info3="HalfWhite" image1="img/material/EUHG030.jpg" />
+				<ITEM value="GREY_BWR_GR" label="Grey BWR GreenLam" info1="PlyWood" info2="BWR_Ply" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_BWR_PLY" label="HalfWhite PL Ply" info1="PlyWood" info2="BWR_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="HW_PLPB" label="HalfWhite PLPB" info1="Engineered_wood" info2="PLPB" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_PLPB" label="Grey PLPB" info1="Engineered_wood" info2="PLPB" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_MDF" label="HalfWhite PL MDF" info1="Engineered_wood" info2="MDF" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_MDF" label="Grey PL MDF" info1="Engineered_wood" info2="MDF" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_Birch_PLY" label="HalfWhite Brich Ply" info1="PlyWood" info2="BirchPly" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_Birch_PLY" label="Grey Brich Ply" info1="PlyWood" info2="BirchPly" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="Birch_PLY_Polished" label="Brich Ply Polished" info1="PlyWood" info2="BirchPly" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Teak_Wood" label="Teak Wood Polished" info1="SolidWood" info2="TeakWood" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Pine_Wood" label="Pine Wood Polished" info1="SolidWood" info2="PineWood" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Rubber_Wood" label="Rubber Wood Polished" info1="SolidWood" info2="RubberWood" info3="Polished" image1="img/material/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="WU_Carcass_Prf_Type" label="Edge Band Selection" valuetype="TEXT" default="Grey_Front08mm_AllSide_08mm" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="All_Sides_NoPrf" label="All Sides No Edge Band" info1="Polished" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front08mm_AllSide_08mm" label="All Sides 0.8mm Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front08mm_Le_Ri_NoPrf" label="All Sides 0.8mm and Le Ri No Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front2mm_AllSide_08mm" label="Front 2mm and 0.8mm All Sides" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front2mm_Le_Ri_NoPrf" label="Front 2mm and Le Ri No Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front08mm_AllSide_08mm" label="All Sides 0.8mm Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front08mm_Le_Ri_NoPrf" label="All Sides 0.8mm and Le Ri No Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front2mm_AllSide_08mm" label="Front 2mm and 0.8mm All Sides" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front2mm_Le_Ri_NoPrf" label="Front 2mm and Le Ri No Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+		</GROUP>
+
+	</PART>
+
+	<PART name="PART_KITCHEN_WU_Carcass_CONSTRUCTION_LOGIC">
+		<COMMAND>"FIELD(WU_Carcass).Info1List(FIELD(WU_Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(WU_Material_Grade).Info1List(FIELD(WU_Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(WU_Carcass).filterInfo2List(FIELD(WU_Material_Grade).value)"</COMMAND>
+		<COMMAND>"FIELD(WU_Carcass_Prf_Type).Info1List(FIELD(WU_Carcass).Info3List)"</COMMAND>
+	</PART>
+
+	<PART name="PART_KITCHEN_TU_Carcass_CONSTRUCTION">
+
+		<GROUP name="TU_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="TU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+				<ITEM name="SolidWood" value="SolidWood" label="Solid Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="TU_Material_Grade" label="Material Grade" valuetype="" default="BWP_Ply" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="BWP_Ply" value="BWP_Ply" label="BWP PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="BWR_Ply" value="BWR_Ply" label="BWR PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="BirchPly" value="BirchPly" label="Birch PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="PLPB" value="PLPB" label="PLPB" info1="Engineered_wood" image1="img/catalog/.PNG" />
+				<ITEM name="MDF" value="MDF" label="MDF" info1="Engineered_wood" image1="img/catalog/.PNG" />
+				<ITEM name="TeakWood" value="TeakWood" info1="SolidWood" label="Teak Wood" image1="img/catalog/.PNG" />
+				<ITEM name="PineWood" value="PineWood" info1="SolidWood" label="Pine Wood" image1="img/catalog/.PNG" />
+				<ITEM name="RubberWood" value="RubberWood" info1="SolidWood" label="Rubber Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="TU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="HW_BWP_GR" label="HalfWhite BWP GreenLam" info1="PlyWood" info2="BWP_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_BWP_GR" label="Grey BWP GreenLam" info1="PlyWood" info2="BWP_Ply" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_BWP" label="HalfWhite BWP" info1="PlyWood" info2="BWP_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="HW_BWR_GR" label="HalfWhite BWR GreenLam" info1="PlyWood" info2="BWR_Ply" info3="HalfWhite" image1="img/material/EUHG030.jpg" />
+				<ITEM value="GREY_BWR_GR" label="Grey BWR GreenLam" info1="PlyWood" info2="BWR_Ply" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_BWR_PLY" label="HalfWhite PL Ply" info1="PlyWood" info2="BWR_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="HW_PLPB" label="HalfWhite PLPB" info1="Engineered_wood" info2="PLPB" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_PLPB" label="Grey PLPB" info1="Engineered_wood" info2="PLPB" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_MDF" label="HalfWhite PL MDF" info1="Engineered_wood" info2="MDF" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_MDF" label="Grey PL MDF" info1="Engineered_wood" info2="MDF" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_Birch_PLY" label="HalfWhite Brich Ply" info1="PlyWood" info2="BirchPly" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_Birch_PLY" label="Grey Brich Ply" info1="PlyWood" info2="BirchPly" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="Birch_PLY_Polished" label="Brich Ply Polished" info1="PlyWood" info2="BirchPly" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Teak_Wood" label="Teak Wood Polished" info1="SolidWood" info2="TeakWood" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Pine_Wood" label="Pine Wood Polished" info1="SolidWood" info2="PineWood" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Rubber_Wood" label="Rubber Wood Polished" info1="SolidWood" info2="RubberWood" info3="Polished" image1="img/material/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="TU_Carcass_Prf_Type" label="Edge Band Selection" valuetype="TEXT" default="Grey_Front08mm_AllSide_08mm" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="All_Sides_NoPrf" label="All Sides No Edge Band" info1="Polished" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front08mm_AllSide_08mm" label="All Sides 0.8mm Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front08mm_Le_Ri_NoPrf" label="All Sides 0.8mm and Le Ri No Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front2mm_AllSide_08mm" label="Front 2mm and 0.8mm All Sides" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front2mm_Le_Ri_NoPrf" label="Front 2mm and Le Ri No Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front08mm_AllSide_08mm" label="All Sides 0.8mm Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front08mm_Le_Ri_NoPrf" label="All Sides 0.8mm and Le Ri No Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front2mm_AllSide_08mm" label="Front 2mm and 0.8mm All Sides" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front2mm_Le_Ri_NoPrf" label="Front 2mm and Le Ri No Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+		</GROUP>
+
+	</PART>
+
+	<PART name="PART_KITCHEN_TU_Carcass_CONSTRUCTION_1">
+
+		<GROUP name="TU1_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="TU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+				<ITEM name="SolidWood" value="SolidWood" label="Solid Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="TU_Material_Grade" label="Material Grade" valuetype="" default="BWP_Ply" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="BWP_Ply" value="BWP_Ply" label="BWP PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="BWR_Ply" value="BWR_Ply" label="BWR PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="BirchPly" value="BirchPly" label="Birch PlyWood" info1="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="PLPB" value="PLPB" label="PLPB" info1="Engineered_wood" image1="img/catalog/.PNG" />
+				<ITEM name="MDF" value="MDF" label="MDF" info1="Engineered_wood" image1="img/catalog/.PNG" />
+				<ITEM name="TeakWood" value="TeakWood" info1="SolidWood" label="Teak Wood" image1="img/catalog/.PNG" />
+				<ITEM name="PineWood" value="PineWood" info1="SolidWood" label="Pine Wood" image1="img/catalog/.PNG" />
+				<ITEM name="RubberWood" value="RubberWood" info1="SolidWood" label="Rubber Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="TU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="HW_BWP_GR" label="HalfWhite BWP GreenLam" info1="PlyWood" info2="BWP_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_BWP_GR" label="Grey BWP GreenLam" info1="PlyWood" info2="BWP_Ply" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_BWP" label="HalfWhite BWP" info1="PlyWood" info2="BWP_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="HW_BWR_GR" label="HalfWhite BWR GreenLam" info1="PlyWood" info2="BWR_Ply" info3="HalfWhite" image1="img/material/EUHG030.jpg" />
+				<ITEM value="GREY_BWR_GR" label="Grey BWR GreenLam" info1="PlyWood" info2="BWR_Ply" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_BWR_PLY" label="HalfWhite PL Ply" info1="PlyWood" info2="BWR_Ply" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="HW_PLPB" label="HalfWhite PLPB" info1="Engineered_wood" info2="PLPB" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_PLPB" label="Grey PLPB" info1="Engineered_wood" info2="PLPB" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_MDF" label="HalfWhite PL MDF" info1="Engineered_wood" info2="MDF" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_MDF" label="Grey PL MDF" info1="Engineered_wood" info2="MDF" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="HW_Birch_PLY" label="HalfWhite Brich Ply" info1="PlyWood" info2="BirchPly" info3="HalfWhite" image1="img/material/EUSM001.jpg" />
+				<ITEM value="GREY_Birch_PLY" label="Grey Brich Ply" info1="PlyWood" info2="BirchPly" info3="Grey" image1="img/material/EUHG030.jpg" />
+				<ITEM value="Birch_PLY_Polished" label="Brich Ply Polished" info1="PlyWood" info2="BirchPly" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Teak_Wood" label="Teak Wood Polished" info1="SolidWood" info2="TeakWood" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Pine_Wood" label="Pine Wood Polished" info1="SolidWood" info2="PineWood" info3="Polished" image1="img/material/.PNG" />
+				<ITEM value="Rubber_Wood" label="Rubber Wood Polished" info1="SolidWood" info2="RubberWood" info3="Polished" image1="img/material/.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="TU_Carcass_Prf_Type" label="Edge Band Selection" valuetype="TEXT" default="Grey_Front08mm_AllSide_08mm" visible="FALSE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="All_Sides_NoPrf" label="All Sides No Edge Band" info1="Polished" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front08mm_AllSide_08mm" label="All Sides 0.8mm Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front08mm_Le_Ri_NoPrf" label="All Sides 0.8mm and Le Ri No Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front2mm_AllSide_08mm" label="Front 2mm and 0.8mm All Sides" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="Grey_Front2mm_Le_Ri_NoPrf" label="Front 2mm and Le Ri No Edge Band" info1="Grey" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front08mm_AllSide_08mm" label="All Sides 0.8mm Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front08mm_Le_Ri_NoPrf" label="All Sides 0.8mm and Le Ri No Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front2mm_AllSide_08mm" label="Front 2mm and 0.8mm All Sides" info1="HalfWhite" image1="img/catalog/.PNG" />
+				<ITEM value="HW_Front2mm_Le_Ri_NoPrf" label="Front 2mm and Le Ri No Edge Band" info1="HalfWhite" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+		</GROUP>
+
+	</PART>
+
+
+	<PART name="PART_KITCHEN_TU_Carcass_CONSTRUCTION_LOGIC">
+		<COMMAND>"FIELD(TU_Carcass).Info1List(FIELD(TU_Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(TU_Material_Grade).Info1List(FIELD(TU_Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(TU_Carcass).filterInfo2List(FIELD(TU_Material_Grade).value)"</COMMAND>
+		<COMMAND>"FIELD(TU_Carcass_Prf_Type).Info1List(FIELD(TU_Carcass).Info3List)"</COMMAND>
+
+	</PART>
+
+	<PART name="TALL_UNIT_HEIGHT_CUSTOMIZED_GLOBAL">
+
+		<COMMAND>"FIELD(Standard_Height).Info1List(FIELD(ART_SIZEZB).value)"</COMMAND>
+
+		<COMMAND>"FIELD(Standard_Height).filterInfo2List(FIELD(ART_SIZEZW).value)"</COMMAND>
+
+		<IF>
+			<EQ expr1="FIELD(Customized_Height_Check).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(Standard_Height).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(Customized_Height).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZT).value=FIELD(Standard_Height).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Standard_Height).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Customized_Height).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZT).value=FIELD(Customized_Height).value"</COMMAND>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+	<PART name="TALL_UNIT_HEIGHT_CUSTOMIZED">
+
+		<IF>
+			<EQ expr1="FIELD(Customized_Height_Check).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(Standard_Height).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(Customized_Height).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZT).value=FIELD(Standard_Height).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Standard_Height).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Customized_Height).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZT).value=FIELD(Customized_Height).value"</COMMAND>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+</XML>

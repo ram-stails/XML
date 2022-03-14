@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>TU_CU_LH_STCU_G</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Base Unit Straight Left straight Corner</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" />
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<CHECKBOX name="Customized_Height_Check" label="Customized Height" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+			
+				<COMBOBOX name="Standard_Height" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE">
+					<ITEM value="1936" label="1936 mm" info1="700" info2="600"/>
+					<ITEM value="1956" label="1956 mm" info1="720" info2="600"/>
+					<ITEM value="1996" label="1996 mm" info1="760" info2="600"/>
+					<ITEM value="2086" label="2086 mm" info1="700" info2="750"/>
+					<ITEM value="2106" label="2106 mm" info1="720" info2="750"/>
+					<ITEM value="2146" label="2146 mm" info1="760" info2="750"/>
+					<ITEM value="2236" label="2236 mm" info1="700" info2="900"/>
+					<ITEM value="2256" label="2256 mm" info1="720" info2="900"/>
+					<ITEM value="2296" label="2296 mm" info1="760" info2="900"/>
+				</COMBOBOX>
+
+				<EDITBOX name="Customized_Height" label="Height (1956mm t0 2400mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE" min="1956" max="2400" />
+
+				<EDITBOX name="ART_SIZEZT" label="Height" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="1956" geoInfluencing="TRUE" />
+
+
+				<!-- <COMBOBOX name="ART_SIZEZT" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="720" geoInfluencing="TRUE">
+					<ITEM value="700" label="700 mm" />
+					<ITEM value="720" label="720 mm" />
+					<ITEM value="760" label="760 mm" />
+				</COMBOBOX> -->
+
+				<COMBOBOX name="ART_SIZEXT" label="Width" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1100">
+					<ITEM value="1050" label="1050  mm" info1="560" info2="580"/>
+					<ITEM value="1100" label="1100  mm" info1="560" info2="580"/>
+					<ITEM value="1150" label="1150  mm" info1="560" info2="580"/>
+					<ITEM value="1200" label="1200  mm" info1="560" info2="580"/>
+					<ITEM value="1250" label="1250  mm" info1="NA" info2="580"/>
+				</COMBOBOX>
+
+				<EDITBOX name="ART_SIZEYT" label="Artical_Depth" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="660" />
+
+				<EDITBOX name="Base_Unit_Width" label="Shutter_Width" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="400" />
+
+				<COMBOBOX name="Base_Unit_Depth" label="Depth" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+				</COMBOBOX>
+
+				
+				<EDITBOX name="Filler_Width" label="Filler Width (Min=50mm Max=100mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="75" min="50" max="100"/>
+
+			</GROUP>
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION_1" />
+
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="">			
+		
+			<COMBOBOX name="Selection" label="Selection"	default="Shelve"		valuetype="image"	visible=""	active="TRUE">
+
+				<ITEM value="Shelve" 		label="Shelve" 		info1="" info2=""	image1=""/>
+				<ITEM value="Accessiores" 	label="Accessiores" info1="" info2=""	image1=""/>
+			
+			</COMBOBOX>
+
+			<EDITBOX name="C_ConnSituation_Acc"	label="connections"	default=""		active="TRUE"	valuetype="TEXT"	visible="FALSE"	/>
+			<EDITBOX name="Corner_Shelf_LIND"	label="shelves"		default="1:1"	active="TRUE"	valuetype="LINDIV"	visible="FALSE"	/>
+
+			<GROUP name="Accessory" valuetype="FRAME" label="Accessory" visible="">
+
+				<COMBOBOX name="Accessory_Selection" label="Accessory Selection" default="CORNERSTONE" valuetype="FRAME" visible="FALSE" active="TRUE">
+					<ITEM value="Nill" 		label="" info1="" info2="" visible="FALSE"	image1="" />
+					<ITEM value="CORNERSTONE" label="CORNERSTONE" info1="" info2="" image1="" />
+					<ITEM value="CORNERSTONE_MAXX" label="CORNERSTONE MAXX" info1="" info2="" image1="" />
+					<ITEM value="ECO_PROARC" label="ECO PROARC" info1="" info2="" image1="" />
+
+				</COMBOBOX>
+
+				<COMBOBOX name="SC_Accessory" label="Accessiores Finish" default="" valuetype="image" visible="FALSE" active="">
+
+					<ITEM value="CnrStnMaxx_RHS_Planero_LG_1200" 	label="Planero Lava Grey"	 info1="CORNERSTONE_MAXX" info2="1250" image1="" />
+					<ITEM value="CnrStnMaxx_RHS_Planero_LG_900" 	label="Planero Lava Grey" 	info1="CORNERSTONE_MAXX" info2="1100" image1="" />
+					<ITEM value="CnrStone_RHS_Preme_Chrome_900"		 label="Premea Chrome" 		info1="CORNERSTONE" 	info2="1100" image1="" />
+					<ITEM value="CnrStone_RHS_Preme_Grey_900" 		label="Premea Grey" 		info1="CORNERSTONE" 	info2="1100" image1="" />
+					<ITEM value="CnrStone_RHS_Smart_Chrome_900"		 label="Smart Chrome" 		info1="CORNERSTONE" 	info2="1100" image1="" />
+					<ITEM value="EcoPro_RHS_AluGrey_900" 			label="Alu Grey"			 info1="ECO_PROARC" 	info2="1100" image1="" />
+
+				</COMBOBOX>
+
+			</GROUP>
+		<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_HINGE_SELECTION" />
+
+		<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_TALL_BRACKETS_SELECTION" />
+
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="TU_Shutter_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="TU_Shutter_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="TU_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+			</COMBOBOX>
+
+			<COMBOBOX name="TU_Front1" label="Shutter Shade" valuetype="IMAGE" default="" Search="TRUE"	visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+			</COMBOBOX>
+
+			<!-- Variable Values -->
+			<EDITBOX name="TU_Front1_Mat" label="TU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="TU_Front1_Prf" label="TU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_TALL_MARKUP" />
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXT</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYT</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZT</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="___BASE" value="___BASE" />
+			<VAR name="Adjustable_Legs" value="Adjustable_Legs" />
+			<VAR name="KI_Adjuster_Height" value="Leg_Height" />
+			<VAR name="Skirting_Height" value="Skirting_Height" />
+			<VAR name="BU_Carcass" value="BU_Carcass" />
+			<VAR name="BU_Carcass_Prf_Type" value="BU_Carcass_Prf_Type" />
+			<VAR name="Hinge_Type" value="Hinge_Type" />
+			<VAR name="Wall_Bracket_Type" 	value="Tall_Bracket_Type" />
+
+			<!-- <VAR name="BU_Front1" value="TU_Front1" /> -->
+
+			<VAR name="BU_Front1_Mat" 		value="TU_Front1_Mat" />
+			<VAR name="BU_Front1_Prf" 		value="TU_Front1_Prf" />
+
+			<VAR name="Base_Unit_Depth" value="Base_Unit_Depth" />
+			<VAR name="Base_Unit_Width" value="Base_Unit_Width" />
+			<VAR name="C_ConnSituation_Acc" value="C_ConnSituation_Acc" />
+			<VAR name="Corner_Shelf_LIND" 	value="Corner_Shelf_LIND" />
+			<VAR name="SC_Accessory" 		value="SC_Accessory" />
+			<VAR name="Calculation_Factors" value="KT_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KT_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KT_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_TU_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="TALL_UNIT_HEIGHT_CUSTOMIZED" />
+
+		<COMMAND> "FIELD(ART_SIZEYT).value = CALC(FIELD(Base_Unit_Depth).value+ FIELD(Filler_Width).value)" </COMMAND>
+
+		<IF>
+			<EQ expr1="FIELD(Base_Unit_Depth).value" expr2="560" />
+			<THEN>
+				<COMMAND> "FIELD(Base_Unit_Width).value = CALC(FIELD(ART_SIZEXT).value-600)"</COMMAND>
+				<COMMAND> "FIELD(ART_SIZEXT).Info1List(560)"</COMMAND>
+
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Base_Unit_Depth).value" expr2="580" />
+					<THEN>
+						<COMMAND> "FIELD(Base_Unit_Width).value = CALC(FIELD(ART_SIZEXT).value-650)"</COMMAND>
+						<COMMAND> "FIELD(ART_SIZEXT).Info2List(580)"</COMMAND>
+
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+		<IF>
+			<EQ expr1="FIELD(ART_SIZEXT).value" expr2="1050" />
+			<THEN>
+				<COMMAND> "FIELD(Selection).ItemList(Shelve)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND> "FIELD(Selection).ItemList(Shelve,Accessiores)"</COMMAND>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(Selection).value" expr2="Shelve" />
+			<THEN>
+				<COMMAND>"FIELD(Corner_Shelf_LIND).value = LIN_DIV(1:1)" </COMMAND>	
+				<COMMAND>"FIELD(C_ConnSituation_Acc).value =Nill" </COMMAND>				
+				<COMMAND>"FIELD(Accessory).visible =FALSE" </COMMAND>				
+				<COMMAND>"FIELD(SC_Accessory).active =FALSE" </COMMAND>		
+				<COMMAND>"FIELD(Accessory_Selection).Itemlist(Nill)" </COMMAND>			
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Corner_Shelf_LIND).value = LIN_DIV(0)" </COMMAND>	
+				<COMMAND>"FIELD(C_ConnSituation_Acc).value =Kitchen_Straight_Cnr_Acc_LHS" </COMMAND>
+				<COMMAND>"FIELD(Accessory).visible =TRUE" </COMMAND>
+				<COMMAND>"FIELD(SC_Accessory).active =TRUE" </COMMAND>	
+				<COMMAND>"FIELD(Accessory_Selection).Itemlist(WARI_CORNER,CORNERSTONE,CORNERSTONE_MAXX,FLEX_CORNER,ECO_PROARC)" </COMMAND>							
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(Accessory_Selection).value" expr2="WARI_CORNER" />
+			<THEN>
+				<COMMAND>"FIELD(Hinge_Type).visible=FALSE" </COMMAND>
+				<COMMAND>"FIELD(Hinge_Type).value=No_Hinge" </COMMAND>				
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Hinge_Type).visible=TRUE" </COMMAND>				
+			</ELSE>
+		</IF>
+		
+		<IF>
+			<EQ expr1="FIELD(Accessory_Selection).value" expr2="WARI_CORNER" />
+			<THEN>
+				<COMMAND>"FIELD(SC_Accessory).Info1List(WARI_CORNER)" </COMMAND>									
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Accessory_Selection).value" expr2="CORNERSTONE" />
+					<THEN>
+						<COMMAND>"FIELD(SC_Accessory).Info1List(CORNERSTONE)" </COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Accessory_Selection).value" expr2="CORNERSTONE_MAXX" />
+							<THEN>
+								<COMMAND>"FIELD(SC_Accessory).Info1List(CORNERSTONE_MAXX)" </COMMAND>
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(Accessory_Selection).value" expr2="FLEX_CORNER" />
+									<THEN>
+										<COMMAND>"FIELD(SC_Accessory).Info1List(FLEX_CORNER)" </COMMAND>
+									</THEN>
+									<ELSE>
+										<IF>
+											<EQ expr1="FIELD(Accessory_Selection).value" expr2="ECO_PROARC" />
+											<THEN>
+												<COMMAND>"FIELD(SC_Accessory).Info1List(ECO_PROARC)" </COMMAND>
+											</THEN>
+										</IF>
+									</ELSE>									
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>
+			</ELSE>			
+		</IF>
+
+		<IF>
+			<GTEQ expr1="FIELD(ART_SIZEXT).value" expr2="1100"/>
+			<LTEQ expr1="FIELD(ART_SIZEXT).value" expr2="1200"/>
+			<THEN>
+				<COMMAND>"FIELD(SC_Accessory).filterInfo2List(1100)" </COMMAND>
+			</THEN>
+			<ELSE>				
+				<COMMAND>"FIELD(SC_Accessory).filterInfo2List(1250)" </COMMAND>
+			</ELSE>
+		</IF>
+
+	
+
+	</LOGIC_DEFINITION>
+
+</XML>

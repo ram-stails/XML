@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<global_properties>
+<global_property name="asd">
+|Base_height_adjusters:=100mm|C1_Left_Base:=CAM|C1_Right_Base:=CAM|C1_Left_Tall:=Confirmat|C1_Right_Tall:=Confirmat|C1_Left_Wall:=Dowel_CAM|C1_Right_Wall:=Dowel_CAM|C2_Left_Wall:=Dowel_CAM|C2_Right_Wall:=Dowel_CAM
+</global_property>
+</global_properties>
+

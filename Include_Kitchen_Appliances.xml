@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+
+
+	
+<PART name="PART_KITCHEN_HOB">
+
+	<COMBOBOX name="Hob" label="Hob" valuetype="IMAGE" default="IMOSSYS_Cooktop_6_Miele" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+
+		<ITEM name="IMOSSYS_Cooktop_6_Miele"  label="Hob 1"  image1="img/catalog/Cooktop_6_Miele.jpg" />
+		<ITEM name="IMOSSYS_Cooktop_Gorenje"  label="Hob 2"  image1="img/catalog/Gorenje_ECK63CLI.jpg" />
+		<ITEM name="IMOSSYS_Cooktop_Miele"  label="Hob 3"  image1="img/catalog/Cooktop_Miele.jpg" />
+		<ITEM name="IMOSSYS_Cooktop_Smeg"  label="Hob 4"  image1="img/catalog/Cooktop_Smeg.jpg" />
+		<ITEM name="IMOSSYS_Cooktop_1_Miele"  label="Hob 5"  image1="img/catalog/Cooktop_1_Miele.jpg" />
+		<ITEM name="IMOSSYS_Cooktop_2_Miele"  label="Hob 6"  image1="img/catalog/Cooktop_2_Miele.jpg" />
+		<!-- <ITEM name="IMOSSYS_Cooktop_Bora_83"  label="Hob 7"  image1="img/catalog/Cooktop_Bora_83.jpg" /> -->
+		<ITEM name="IMOSSYS_Cooktop_Gaggenau"  label="Hob 7"  image1="img/catalog/Cooktop_Gaggenau.jpg" />
+		<ITEM name="IMOSSYS_Cooktop_Jenn_Air"  label="Hob 8"  image1="img/catalog/Cooktop_Jenn_Air.jpg" />
+		<!-- <ITEM name="IMOSSYS_Cooktop_Smeg_90"  label="Hob 10"  image1="img/catalog/Cooktop_Smeg_90.jpg" /> -->
+		
+	</COMBOBOX>
+
+</PART>
+
+<PART name="PART_KITCHEN_CHIMNEY">
+
+	<COMBOBOX name="Chimney" label="Chimney" valuetype="IMAGE" default="Null" visible="TRUE" active="TRUE" image1="img/catalog/.jpg">
+		<ITEM name="Null"  label="No applicance"  image1="img/catalog/.jpg" />
+		<ITEM name="IMOSSYS_Hood_1_Miele"  label="Hood 1"  image1="img/catalog/Hood_1_Miele.jpg" />
+		<ITEM name="IMOSSYS_Hood_2_Gaggenau"  label="Hood 2"  image1="img/catalog/Hood_2_Gaggenau.jpg" />
+		<ITEM name="IMOSSYS_Hood_Gorenje_DK63CLI"  label="Hood 3"  image1="img/catalog/Hood_Gorenje_DK63CLI.jpg" />
+		<ITEM name="IMOSSYS_Hood_4_Miele"  label="Hood 4"  image1="img/catalog/Hood_4_Miele.jpg" />
+		<ITEM name="IMOSSYS_Hood_Miele"  label="Hood 5"  image1="img/catalog/Hood_Miele.jpg" />
+		<ITEM name="IMOSSYS_Hood_Smeg"  label="Hood 6"  image1="img/catalog/Hood_Smeg.jpg" />
+		
+	</COMBOBOX>
+
+</PART>
+
+</XML>

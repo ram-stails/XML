@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<ARTICLE>
+		<ART_NAME>WU_CU_LCU_G</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Wall unit L-Corner unit</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<COMBOBOX name="ART_SIZEZW" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600">
+					<ITEM value="600" label="600 mm" />
+					<ITEM value="650" label="650 mm" />
+					<ITEM value="750" label="750 mm" />
+					<ITEM value="800" label="800 mm" />
+					<ITEM value="900" label="900 mm" />
+				</COMBOBOX>
+				
+				<EDITBOX name="ART_SIZEXW" label="Width" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="650" geoInfluencing="TRUE" />
+				<EDITBOX name="ART_SIZEYW" label="Depth" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="650" geoInfluencing="TRUE" />
+
+			</GROUP>
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_WU_Carcass_CONSTRUCTION" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="Hinge_Type_1" label="Hinge Selection" valuetype="IMAGE" default="Hettich_SoftClose_165D" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="Hettich_SoftClose_165D" value="Hettich_SoftClose_165D" label="Hettich SoftClose" image1="img/hardware/165_Degree.jpg" />
+			</COMBOBOX>
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<CHECKBOX name="WU_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+			<GROUP name="Left_Shutter_Details" label="Left Shutter Details">
+
+				<COMBOBOX name="WU_Shutter_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WU_Shutter_Finish" label="Finish" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WU_Texture" label="Texture" valuetype="TEXT" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="WU_Front1" label="Shutter Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<GROUP name="Right_Shutter_Details" label="Right Shutter Details">
+
+				<COMBOBOX name="WU_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WU_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WU_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="WU_Front2" label="Shutter Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<!-- Variable Values -->
+			<EDITBOX name="WU_Front1_Mat" label="WU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="WU_Front1_Prf" label="WU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="WU_Front2_Mat" label="WU_Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="WU_Front2_Prf" label="WU_Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Handle_Details" label="Handle Details" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+
+		<GROUP name="Handle Side" label="Handle Side">
+
+			<COMBOBOX name="Handle_Option" label="Handle Option" active="TRUE" visible="TRUE" locked="FALSE"  default="Left_Handle">
+				<ITEM value="Left_Handle" label="Left Side Handle" />
+				<ITEM value="Right_Handle" label="Right Side Handle" />
+			</COMBOBOX>
+		</GROUP>
+			<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_WALL_UNIT_HANDLES" />	
+
+		</PARAFOLDER>
+		
+		<PARAFOLDER name="Visible_Sides" label="Visible Sides" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="Include_Visible_Sides.xml" part="PART_WU_VISIBLE_SIDES" />
+
+        </PARAFOLDER>
+        
+        <PARAFOLDER name="Lighting_Details" label="Lights Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="Include_Lights.xml" part="PART_KITCHEN_LIGHTS" />
+
+		</PARAFOLDER>
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXW</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYW</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZW</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="WU_Carcass" value="WU_Carcass" />
+			<VAR name="WU_Carcass_Prf_Type" value="WU_Carcass_Prf_Type" />
+			<VAR name="Hinge_Type" value="Hinge_Type_1" />
+			<!-- <VAR name="WU_Front1" value="WU_Front1" />
+			<VAR name="WU_Front2" value="WU_Front2" /> -->
+
+			<VAR name="wU_Front1_Mat" 		value="WU_Front1_Mat" />
+			<VAR name="WU_Front1_Prf" 		value="WU_Front1_Prf" />
+			<VAR name="WU_Front2_Mat" 		value="WU_Front2_Mat" />
+			<VAR name="WU_Front2_Prf" 		value="WU_Front2_Prf" />
+			<VAR name="WU_Le_Carcass_Mat" 	value="WU_Le_Carcass_Mat" />
+			<VAR name="WU_Le_Carcass_Prf" 	value="WU_Le_Carcass_Prf" />
+			<VAR name="WU_Ri_Carcass_Mat" 	value="WU_Ri_Carcass_Mat" />
+			<VAR name="WU_Ri_Carcass_Prf" 	value="WU_Ri_Carcass_Prf" />
+
+			<VAR name="WU_Left_Side_Panel" value="WU_Left_Side_Panel" />
+			<VAR name="WU_Right_Side_Panel" value="WU_Right_Side_Panel" />
+			<!-- <VAR name="WU_Le_Side_Panel" value="WU_Le_Side_Panel" />
+			<VAR name="WU_Ri_Side_Panel" value="WU_Ri_Side_Panel" /> -->
+			<VAR name="Handle_Selection" value="Handle_Selection" />
+			<!-- <VAR name="Handle_Option" value="Handle_Option" /> -->
+		</VARIABLES>
+
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND>"FIELD(ART_SIZEYW).value=FIELD(ART_SIZEXW).value"</COMMAND>
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_WU_Carcass_CONSTRUCTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WU_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WU_SHUTTER_FINISH_LOGIC_1" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WU_DIFFERENT_SHUTTER_COLOR" />
+
+		<COMMAND type="INSERT" file="Include_Visible_Sides.xml" part="PART_WU_VISIBLE_SIDES_LOGIC_2DOOR" />
+
+		<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_WALL_UNIT_HANDLES_LOGIC" />
+
+
+	</LOGIC_DEFINITION>
+</XML>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>TU_2DR_ST_G</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Tall Unit Double Door Space Tower</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" />
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<CHECKBOX name="Customized_Height_Check" label="Customized Height" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+			
+				<COMBOBOX name="Standard_Height" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE">
+					<ITEM value="1936" label="1936 mm" info1="700" info2="600"/>
+					<ITEM value="1956" label="1956 mm" info1="720" info2="600"/>
+					<ITEM value="1996" label="1996 mm" info1="760" info2="600"/>
+					<ITEM value="2086" label="2086 mm" info1="700" info2="750"/>
+					<ITEM value="2106" label="2106 mm" info1="720" info2="750"/>
+					<ITEM value="2146" label="2146 mm" info1="760" info2="750"/>
+					<ITEM value="2236" label="2236 mm" info1="700" info2="900"/>
+					<ITEM value="2256" label="2256 mm" info1="720" info2="900"/>
+					<ITEM value="2296" label="2296 mm" info1="760" info2="900"/>
+				</COMBOBOX>
+
+				<EDITBOX name="Customized_Height" label="Height (1956mm t0 2400mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE" min="1956" max="2400" />
+
+				<EDITBOX name="ART_SIZEZT" label="Height" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="1956" geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEXT" label="Width (900mm to 1200)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="900" geoInfluencing="TRUE" />
+
+				<COMBOBOX name="ART_SIZEYT" label="Depth" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_TU_Carcass_CONSTRUCTION" />
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING" />
+
+			<GROUP name="Base_Unit_Height" label="Base Unit Height Dimensions" visible="FALSE">
+
+				<EDITBOX name="ART_SIZEZB" label="Base Unit Height" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="720" geoInfluencing="TRUE" />			
+				<EDITBOX name="Tall_Shutter_Split_Height" label="Split Door Height" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="" geoInfluencing="TRUE" />			
+
+			</GROUP>
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_HINGE_SELECTION_WIDEANGLE" />
+
+			<!-- <COMBOBOX name="Hinge_Open" label="Opening Direction" valuetype="IMAGE" default="Left_Hinge" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="Left_Hinge" value="Left_Hinge" label="LHS" image1="img/catalog/LHS.PNG" image2="img/catalog/.PNG" />
+				<ITEM name="Right_Hinge" value="Right_Hinge" label="RHS" image1="img/catalog/RHS.PNG" image2="img/catalog/.PNG" />
+			</COMBOBOX> -->
+
+			<COMBOBOX name="Drawer_Type" label="Drawer Type" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="LegraBox_Free" >
+				<ITEM value="Atira" label="Innotech Atira" image1="img/hardware/Atira.jpg"  />
+				<ITEM value="LegraBox_Free" label="LegraBox Free" image1="img/hardware/LegraBox_Free.jpg" />
+				<ITEM value="LegraBox_Pure" label="LegraBox Pure" image1="img/hardware/LegraBox_Pure.jpg" />
+				<ITEM value="TandemBox_Antaro" label="TandemBox Antaro" image1="img/hardware/TandemBox_Antaro.jpg" />
+				<ITEM value="TandemBox_Intivo" label="TandemBox Intivo" image1="img/hardware/TandemBox_Intivo.jpg" />
+			</COMBOBOX>
+
+			<EDITBOX name="Regular_Drawer_Type" label="Regular_Drawer_Type" default="" locked="FALSE" active="TRUE" visible="FALSE" />
+	
+			<COMBOBOX name="Drawer_Model" label="Inner Drawer Model" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="" >
+				<ITEM value="Gallery" label="Gallery" info1="Atira" image1="img/hardware/Atira_InnerDrawer_G.jpg" />
+				<ITEM value="Gallery" label="Gallery" info1="LegraBox_Free" image1="img/hardware/LegraBox_Free_Inner_G.jpg" />
+				<ITEM value="Design_Side" label="Design Side" info1="LegraBox_Free" image1="img/hardware/LegraBox_Free_Inner_D.jpg" />
+				<ITEM value="Gallery" label="Gallery" info1="LegraBox_Pure" image1="img/hardware/LegraBox_Pure_Inner_G.jpg" />
+				<ITEM value="Design_Side" label="Design Side" info1="LegraBox_Pure" image1="img/hardware/LegraBox_Pure_Inner_D.jpg" />
+				<ITEM value="Gallery" label="Gallery" info1="TandemBox_Antaro" image1="img/hardware/TandemBox_Antaro_Inner.jpg" />
+				<ITEM value="Design_Side" label="Design Side" info1="TandemBox_Intivo" image1="img/hardware/TandemBox_Intivo_Inner.jpg" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="Inner_Dr_High_Front" label="Inner_Dr_High_Front" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" >
+				<ITEM value="IA_FP_144_600_a_9194792" label="IA_FP_144_600_a_9194792" info1="Atira" info2="600"	info3="Antracite"/>
+				<ITEM value="IA_FP_144_900_a_9194794" label="IA_FP_144_900_a_9194794" info1="Atira" info2="900"	info3="Antracite"/>
+				<ITEM value="IA_FP_144_1200_a_9194796" label="IA_FP_144_1200_a_9194796" info1="Atira" info2="1200" info3="Antracite"/>
+				<ITEM value="IA_FP_144_600_grey_s_9194774" label="IA_FP_144_600_grey_s_9194774" info1="Atira" info2="600"	info3="Silver"/>
+				<ITEM value="IA_FP_144_900_grey_s_9194776" label="IA_FP_144_900_grey_s_9194776" info1="Atira" info2="900"	info3="Silver"/>
+				<ITEM value="IA_FP_144_1200_grey_s_9194778" label="IA_FP_144_1200_grey_s_9194778" info1="Atira" info2="1200" info3="Silver"/>
+				<ITEM value="BL_LBX_DSE_138_600" label="BL_LBX_DSE_138_600" info1="LegraBox_Free" info2="600"/>
+				<ITEM value="BL_LBX_DSE_138_900" label="BL_LBX_DSE_138_900" info1="LegraBox_Free" info2="900"	/>
+				<ITEM value="BL_LBX_DSE_138_1200" label="BL_LBX_DSE_138_1200" info1="LegraBox_Free" info2="1200" />
+				<ITEM value="BL_LBX_DSE_138_600" label="BL_LBX_DSE_138_600" info1="LegraBox_Pure" info2="600"/>
+				<ITEM value="BL_LBX_DSE_138_900" label="BL_LBX_DSE_138_900" info1="LegraBox_Pure" info2="900"	/>
+				<ITEM value="BL_LBX_DSE_138_1200" label="BL_LBX_DSE_138_1200" info1="LegraBox_Pure" info2="1200" />
+				<ITEM value="BL_SlideI_F_GL_CW600" label="BL_SlideI_F_GL_CW600" info1="TandemBox_Intivo" info2="600"/>
+				<ITEM value="BL_SlideI_F_GL_CW900" label="BL_SlideI_F_GL_CW900" info1="TandemBox_Intivo" info2="900"	/>
+				<ITEM value="BL_SlideI_F_GL_CW1200" label="BL_SlideI_F_GL_CW1200" info1="TandemBox_Intivo" info2="1200" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="Drawer_Colour" label="Drawer Colour" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="OrionGrey">
+				<ITEM value="Antracite" label="Antracite" info1="Atira" image1="img/hardware/Antracite.jpg" />
+				<ITEM value="Silver" label="Silver" info1="Atira" image1="img/hardware/Silver.jpg" />
+				<ITEM value="OrionGrey" label="Orion Grey" info1="LegraBox_Free" image1="img/hardware/OrionGrey.jpg" />
+				<ITEM value="Stainless_Steel" label="Stainless Steel" info1="LegraBox_Free" image1="img/hardware/Stainless_Steel.jpg" />
+				<ITEM value="Silk_White" label="Silk White Matt" info1="LegraBox_Free" image1="img/hardware/Silk_White.jpg" />
+				<ITEM value="Terra_Black" label="Terra Black Matt" info1="LegraBox_Free" image1="img/hardware/Terra_Black.jpg" />
+				<ITEM value="OrionGrey" label="Orion Grey" info1="LegraBox_Pure" image1="img/hardware/OrionGrey.jpg" />
+				<ITEM value="Stainless_Steel" label="Stainless Steel" info1="LegraBox_Pure" image1="img/hardware/Stainless_Steel.jpg" />
+				<ITEM value="Silk_White" label="Silk White Matt" info1="LegraBox_Pure" image1="img/hardware/Silk_White.jpg" />
+				<ITEM value="Terra_Black" label="Terra Black Matt" info1="LegraBox_Pure" image1="img/hardware/Terra_Black.jpg" />
+				<ITEM value="Grey" label="Grey" info1="TandemBox_Antaro" image1="img/hardware/Grey.jpg" />
+				<ITEM value="Stainless_Steel" label="Stainless Steel" info1="TandemBox_Antaro" image1="img/hardware/Stainless_Steel.jpg" />
+				<ITEM value="Silk_White" label="Silk White" info1="TandemBox_Antaro" image1="img/hardware/Silk_White.jpg" />
+				<ITEM value="Stainless_Steel" label="Stainless Steel" info1="TandemBox_Intivo" image1="img/hardware/Stainless_Steel.jpg" />
+				<ITEM value="Silk_White" label="Silk White" info1="TandemBox_Intivo" image1="img/hardware/Silk_White.jpg" />
+			</COMBOBOX>
+
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_TALL_BRACKETS_SELECTION" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			
+			<CHECKBOX name="TU_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+			<GROUP name="Left_Shutter_Details" label="Left Shutter Details">
+
+				<COMBOBOX name="TU_Shutter_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="TU_Shutter_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="TU_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="TU_Front1" label="Shutter Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<GROUP name="Right_Shutter_Details" label="Right Shutter Details">
+
+				<COMBOBOX name="TU_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="TU_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="TU_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="TU_Front2" label="Shutter Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<!-- Variable Values -->
+			<EDITBOX name="TU_Front1_Mat" label="TU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="TU_Front1_Prf" label="TU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+			<EDITBOX name="TU_Front2_Mat" label="TU_Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="TU_Front2_Prf" label="TU_Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Handle_Details" label="Gola Profile" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+			<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_GOLA_PROFILES" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Visible_Sides" label="Visible Sides" active="TRUE" visible="FALSE">
+
+			<COMMAND type="INSERT" file="Include_Visible_Sides.xml" part="PART_TU_VISIBLE_SIDES" />
+
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_TALL_MARKUP" />
+
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXT</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYT</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZT</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="___BASE" value="___BASE" />
+			<VAR name="Adjustable_Legs" value="Adjustable_Legs" />
+			<VAR name="KI_Adjuster_Height" value="Leg_Height" />
+			<VAR name="Skirting_Height" value="Skirting_Height" />
+			<VAR name="BU_Carcass" value="TU_Carcass" />
+			<VAR name="BU_Carcass_Prf_Type" value="TU_Carcass_Prf_Type" />
+			<VAR name="Hinge_Type" value="Hinge_Type_WideAngle" />
+			<VAR name="Wall_Bracket_Type" 	value="Tall_Bracket_Type" />
+
+			<!-- <VAR name="BU_Front1" value="TU_Front1" />
+			<VAR name="BU_Front2" value="TU_Front2" /> -->
+
+			<VAR name="BU_Front1_Mat" 		value="TU_Front1_Mat" />
+			<VAR name="BU_Front1_Prf" 		value="TU_Front1_Prf" />
+			<VAR name="BU_Front2_Mat" 		value="TU_Front2_Mat" />
+			<VAR name="BU_Front2_Prf" 		value="TU_Front2_Prf" />
+			<VAR name="WU_Front1_Mat" 		value="TU_Front1_Mat" />
+			<VAR name="WU_Front1_Prf" 		value="TU_Front1_Prf" />
+			<VAR name="WU_Front2_Mat" 		value="TU_Front2_Mat" />
+			<VAR name="WU_Front2_Prf" 		value="TU_Front2_Prf" />
+			<VAR name="BU_Le_Carcass_Mat" 	value="TU_Le_Carcass_Mat" />
+			<VAR name="BU_Le_Carcass_Prf" 	value="TU_Le_Carcass_Prf" />
+			<VAR name="BU_Ri_Carcass_Mat" 	value="TU_Ri_Carcass_Mat" />
+			<VAR name="BU_Ri_Carcass_Prf" 	value="TU_Ri_Carcass_Prf" />
+
+			<VAR name="BU_Left_Side_Panel" value="TU_Left_Side_Panel" />
+			<VAR name="BU_Right_Side_Panel" value="TU_Right_Side_Panel" />
+			<!-- <VAR name="BU_Le_Side_Panel" value="TU_Le_Side_Panel" />
+			<VAR name="BU_Ri_Side_Panel" value="TU_Ri_Side_Panel" /> -->
+			<VAR name="Handle_Selection" 			value="Handle_Selection_1" />
+			<VAR name="Drawer_Type" 				value="Drawer_Type" />
+			<VAR name="Drawer_Colour" 				value="Drawer_Colour" />
+			<VAR name="Drawer_Model" 				value="Drawer_Model" />
+			<VAR name="Inner_Dr_High_Front" 		value="Inner_Dr_High_Front" />
+			<VAR name="Regular_Drawer_Type" 		value="Regular_Drawer_Type" />
+			<VAR name="Tall_Shutter_Split_Height" 	value="Tall_Shutter_Split_Height" />
+			<VAR name="Calculation_Factors" value="KT_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KT_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KT_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND>"FIELD(Tall_Shutter_Split_Height).value=CALC(FIELD(ART_SIZEZB).value-25)"</COMMAND>	
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_TU_Carcass_CONSTRUCTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_TU_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_TU_SHUTTER_FINISH_LOGIC_1" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_TU_DIFFERENT_SHUTTER_COLOR" />
+
+		<COMMAND type="INSERT" file="Include_Visible_Sides.xml" part="PART_TU_VISIBLE_SIDES_LOGIC_2DOOR" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="TALL_UNIT_HEIGHT_CUSTOMIZED" />
+
+		<IF>
+			<EQ expr1="FIELD(Drawer_Type).value" expr2="Atira" />
+			<THEN>
+				<COMMAND>"FIELD(Drawer_Colour).Info1List(Atira)"</COMMAND>
+				<COMMAND>"FIELD(Drawer_Model).Info1List(Atira)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Free" />
+					<THEN>
+						<COMMAND>"FIELD(Drawer_Colour).Info1List(LegraBox_Free)"</COMMAND>
+						<COMMAND>"FIELD(Drawer_Model).Info1List(LegraBox_Free)"</COMMAND>
+
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Pure" />
+							<THEN>
+								<COMMAND>"FIELD(Drawer_Colour).Info1List(LegraBox_Pure)"</COMMAND>
+								<COMMAND>"FIELD(Drawer_Model).Info1List(LegraBox_Pure)"</COMMAND>
+
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Antaro" />
+									<THEN>
+										<COMMAND>"FIELD(Drawer_Colour).Info1List(TandemBox_Antaro)"</COMMAND>
+										<COMMAND>"FIELD(Drawer_Model).Info1List(TandemBox_Antaro)"</COMMAND>
+
+									</THEN>
+									<ELSE>
+										<IF>
+											<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Intivo" />
+											<THEN>
+												<COMMAND>"FIELD(Drawer_Colour).Info1List(TandemBox_Intivo)"</COMMAND>
+												<COMMAND>"FIELD(Drawer_Model).Info1List(TandemBox_Intivo)"</COMMAND>
+											</THEN>
+										</IF>
+									</ELSE>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Free" />
+			<THEN>
+				<COMMAND>"FIELD(Regular_Drawer_Type).value=LegraBox"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Drawer_Type).value" expr2="Atira" />
+					<THEN>
+						<COMMAND>"FIELD(Regular_Drawer_Type).value=Atira"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Pure" />
+							<THEN>
+								<COMMAND>"FIELD(Regular_Drawer_Type).value=LegraBox"</COMMAND>
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Antaro" />
+									<THEN>
+										<COMMAND>"FIELD(Regular_Drawer_Type).value=TandemBox_Antaro"</COMMAND>
+									</THEN>
+									<ELSE>
+										<IF>
+											<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Intivo" />
+											<THEN>
+												<COMMAND>"FIELD(Regular_Drawer_Type).value=TandemBox_Intivo"</COMMAND>
+											</THEN>
+										</IF>
+									</ELSE>
+								</IF>
+							</ELSE>
+						</IF>	
+					</ELSE>
+				</IF>
+			</ELSE>
+		</IF>
+
+		
+	</LOGIC_DEFINITION>
+</XML>

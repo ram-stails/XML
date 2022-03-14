@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<translate file="2017_1.xlf" />
+	<ARTICLE>
+		<ART_NAME />
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Storage Global settings</ART_INFO_SHORT>
+	</ARTICLE>
+
+	<DEFINITION>
+        
+        <!-- <PARAFOLDER name="User_Login" label="User" active="TRUE" visible="TRUE">
+
+		    <EDITBOX name="Customer_Name" label="User Id :" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="" geoInfluencing="TRUE" />
+	    	<EDITBOX name="Password" label="Password :" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="" geoInfluencing="TRUE" />
+
+        </PARAFOLDER> -->
+
+        <PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" Valuetype="MULTIROW"	label="Carcass Dimensions">
+				
+				<TEXT name="Cabinet_Sizes" label="Carcass Dimensions:" 	width="25%"	visible="" format="bold" />
+				
+                <EDITBOX name="ART_SIZEYWDD" label="Depth (400mm to 700mm) :" active="TRUE" width="37%"	visible="TRUE" locked="FALSE" valuetype="NUM" default="560" min="400" max="700" geoInfluencing="TRUE" />
+			   
+				<!-- <EDITBOX name="ART_SIZEZWD" label="Height (2100mm to 2400mm) :" active="TRUE"	width="37%" visible="TRUE" locked="FALSE" valuetype="NUM" default="2100" min="2100" max="2400" geoInfluencing="TRUE" /> -->
+
+            </GROUP>
+            
+            <GROUP name="Wardrobe_Carcass" label="Carcass Material">
+
+				<COMBOBOX name="Carcass_Core_Material" label="Core Material" valuetype="" default="Brich_Ply" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+
+					<ITEM value="Brich_Ply" label="PlyWood" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+					<ITEM value="PLPB" label="Engineered" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+					
+				</COMBOBOX>
+
+                <COMBOBOX name="Mat_Carcass" label="Carcass Material" valuetype="IMAGE" default="Half_White_PLY" Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE"  image1="img/catalog/.PNG">
+                    
+                    <ITEM value="Half_White_PLY" label="Half White" info1="PlyWood" info2="Brich_Ply" info3="Half_White" image1="img/material/Half_White.jpg" />
+                    <ITEM value="Deep_Grey_PLY" label="Deep Grey" info1="PlyWood" info2="Brich_Ply" info3="Deep_Grey" image1="img/material/Deep_Grey.jpg" />
+                    <ITEM value="Macro_Linen_PLY" label="Macro Linen" info1="PlyWood" info2="Brich_Ply" info3="Macro_Linen" image1="img/material/Macro_Linen.jpg" />
+                    <ITEM value="Micro_Linen_PLY" label="Micro Linen" info1="PlyWood" info2="Brich_Ply" info3="Micro_Linen" image1="img/material/Micro_Linen.jpg" />
+                    <ITEM value="Walnut_Desire_PLY" label="Walnut Desire" info1="PlyWood" info2="Brich_Ply" info3="Walnut_Desire" image1="img/material/Walnut_Desire.jpg" />
+                    <ITEM value="White_Pine_PLY" label="White Pine" info1="PlyWood" info2="Brich_Ply" info3="White_Pine" image1="img/material/White_Pine.jpg" />
+                    <ITEM value="Magma_PLY" label="Magma" info1="PlyWood" info2="Brich_Ply" info3="Magma" image1="img/material/Magma.jpg" />
+					<ITEM value="Grey_Linen_PLY" label="Grey Linen" info1="PlyWood" info2="Brich_Ply" info3="Grey_Linen" image1="img/material/Grey_Linen.jpg" /> 
+					
+					<ITEM value="Frosty_White_PLPB" label="Frosty White" info1="PLPB" info2="PLPB" info3="Frosty_White" image1="img/material/Frosty_White.jpg" />
+					<ITEM value="Gothic_Grey_PLPB" label="Gothic Grey" info1="PLPB" info2="PLPB" info3="Gothic_Grey" image1="img/material/Gothic_Grey.jpg" />
+					<ITEM value="Fab_Chocos_PLPB" label="Fab Chocos" info1="PLPB" info2="PLPB" info3="Fab_Chocos" image1="img/material/Fab_Chocos.jpg" />                    
+                    <ITEM value="Fab_Cream_PLPB" label="Fab Cream" info1="PLPB" info2="PLPB" info3="Fab_Cream" image1="img/material/Fab_Cream.jpg" />
+                  	<ITEM value="CPW_PLPB" label="Classic Planked Walnut" info1="PLPB" info2="PLPB" info3="CPW" image1="img/material/CPW.jpg" />
+                    <ITEM value="Highland_Pine_PLPB" label="Highland Pine" info1="PLPB" info2="PLPB" info3="Highland_Pine" image1="img/material/Highland_Pine.jpg" />
+                    <ITEM value="Slate_Grey_PLPB" label="Slate Grey" info1="PLPB" info2="PLPB" info3="Slate_Grey" image1="img/material/Slate_Grey.jpg" />
+                    <ITEM value="Fab_Grey_PLPB" label="Fab Grey" info1="PLPB" info2="PLPB" info3="Fab_Grey" image1="img/material/Fab_Grey.jpg" /> 
+                 
+				</COMBOBOX>			
+				
+				<COMBOBOX name="Prf_Carcass" label="Edge Band Selection" valuetype="TEXT" default="Half_White_08mm" visible="FALSE" geoInfluencing="TRUE"	active="TRUE" image1="img/catalog/.PNG">
+					                   
+                    <ITEM value="Half_White_08mm" label="Half white" info1="Half_White" image1="img/catalog/Half_White.jpg" />
+                    <ITEM value="Deep_Grey_08mm" label="Deep Grey" info1="Deep_Grey" image1="img/catalog/Deep_Grey.jpg" />
+                    <ITEM value="Macro_Linen_08mm" label="Macro Linen" info1="Macro_Linen" image1="img/catalog/Macro_Linen.jpg" />
+                    <ITEM value="Micro_Linen_08mm" label="Micro Linen" info1="Micro_Linen" image1="img/catalog/Micro_Linen.jpg" />
+                    <ITEM value="Walnut_Desire_08mm" label="Walnut Desire" info1="Walnut_Desire" image1="img/catalog/Walnut_Desire.jpg" />
+                    <ITEM value="White_Pine_08mm" label="White Pine" info1="White_Pine" image1="img/catalog/White_Pine.jpg" />
+                    <ITEM value="Magma_08mm" label="Magma" info1="Magma" image1="img/catalog/Magma.jpg" />
+					<ITEM value="Grey_Linen_08mm" label="Grey Linen" info1="Grey_Linen" image1="img/catalog/Grey_Linen.jpg" />
+					
+					<ITEM value="Frosty_White_08mm" label="Frosty White" info1="Frosty_White" image1="img/catalog/Frosty_White.jpg" />
+                    <ITEM value="Gothic_Grey_08mm" label="Gothic Grey" info1="Gothic_Grey" image1="img/catalog/Gothic_Grey.jpg" />
+                    <ITEM value="Fab_Chocos_08mm" label="Fab Chocos" info1="Fab_Chocos" image1="img/catalog/Fab_Chocos.jpg" />
+                    <ITEM value="Fab_Cream_08mm" label="Fab Cream" info1="Fab_Cream" image1="img/catalog/Fab_Cream.jpg" />
+                    <ITEM value="CPW_08mm" label="Classic Planked " info1="CPW" image1="img/catalog/CPW.jpg" />
+                    <ITEM value="Highland_Pine_08mm" label="Highland Pine" info1="Highland_Pine" image1="img/catalog/Highland_Pine.jpg" />
+                    <ITEM value="Slate_Grey_08mm" label="Slate Grey" info1="Slate_Grey" image1="img/catalog/Slate_Grey.jpg" />
+                    <ITEM value="Fab_Grey_08mm" label="Fab Grey" info1="Fab_Grey" image1="img/catalog/Fab_Grey.jpg" />
+                   
+                </COMBOBOX>
+
+            </GROUP>
+            
+		</PARAFOLDER>
+
+        <PARAFOLDER name="Front_Details" label="Fascia/Shutter Details" active="TRUE" visible="TRUE">
+		
+				<COMBOBOX name="WRD_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="WRD_Front1" label="Shutter Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+		
+
+
+			<!-- Variable Values -->
+			<EDITBOX name="Mat_Front_1" label="Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Prf_Front_1" label="Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />		
+		
+			
+		</PARAFOLDER>	       
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+
+			<!-- <COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_HINGE_SELECTION" /> -->
+
+			<!-- Changing default drawer to Quadro Channel -->
+
+            <COMBOBOX name="Wardrobe_Drawer_Selection"   label="Drawer Type"     default="Ext_Telescopic_SoftClose" 	image1="img/catalog/.PNG"    image2="img/article/"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+				
+				<ITEM name="Ext_Telescopic_SoftClose"   	label="Telescopic"		   			 info1="No_Lock"   info2="Handle"  info3="Telescopic_Softclose"      image1="img/hardware/Telescopic.jpg"			visible="TRUE"/>
+				<ITEM name="Ext_Quadro_SoftClose"       	label="Quadro"		       			 info1="No_Lock"   info2="Handle"  info3="Quadro" 					 image1="img/hardware/Quadro.jpg"		visible="TRUE"/>
+				<ITEM name="Ext_Movento_BlumMotion"       	label="Movento Blumotion"		     info1="No_Lock"   info2="Handle"  info3="Movento_Blumotion" 		 image1="img/hardware/Quadro.jpg"		visible="TRUE"/>				
+                <ITEM name="Ext_Movento_Tipon_Blummotion"   label="Movento Tip-On Blumotion"     info1="No_Lock"   info2="Tip_On"  info3="Movento_Tipon_Blummotion"	 image1="img/hardware/Quadro.jpg"		visible="TRUE"/>
+				<ITEM name="Ext_Movento_Tipon"       	    label="Movento Tip-On"		         info1="No_Lock"   info2="Tip_On"  info3="Movento_Tipon"			 image1="img/hardware/Quadro.jpg"		visible="TRUE"/>
+			
+				
+            </COMBOBOX>
+		
+		</PARAFOLDER>
+
+        <PARAFOLDER name="Handle_Details" label="Handle Details" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+            <COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES" />	
+
+			
+		</PARAFOLDER>
+
+		
+
+	</DEFINITION>
+
+	<CONSTRUCTION>
+		<VARIABLES>
+			
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND>"FIELD(Mat_Carcass).Info2List(FIELD(Carcass_Core_Material).value)"</COMMAND>	
+        <COMMAND>"FIELD(Prf_Carcass).Info1List(FIELD(Mat_Carcass).info3)"</COMMAND>	
+
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WRD_SHUTTER_1_FINISH_Logic" />
+
+
+
+
+		<!-- <IF>
+			<OR>
+				<AND>
+					<EQ expr1="FIELD(Customer_Name).value" expr2="Krishna" />
+					<EQ expr1="FIELD(Password).value" expr2="115518svK@" />
+				</AND>
+				<AND>
+					<EQ expr1="FIELD(Customer_Name).value" expr2="Ram" />
+					<EQ expr1="FIELD(Password).value" expr2="Ram@100991" />
+				</AND>
+				<AND>
+					<EQ expr1="FIELD(Customer_Name).value" expr2="Manisha" />
+					<EQ expr1="FIELD(Password).value" expr2="Manisha@123" />
+				</AND>
+				<AND>
+					<EQ expr1="FIELD(Customer_Name).value" expr2="Nandakishore" />
+					<EQ expr1="FIELD(Password).value" expr2="Sr$pace@2021" />
+				</AND>
+				<AND>
+					<EQ expr1="FIELD(Customer_Name).value" expr2="Nikita" />
+					<EQ expr1="FIELD(Password).value" expr2="Sr$pace@2021" />
+				</AND>
+				<AND>
+					<EQ expr1="FIELD(Customer_Name).value" expr2="Saikanthreddy" />
+					<EQ expr1="FIELD(Password).value" expr2="Sr$pace@2021" />
+				</AND>
+				<AND>
+					<EQ expr1="FIELD(Customer_Name).value" expr2="vishnuvardhan" />
+					<EQ expr1="FIELD(Password).value" expr2="Sr$pace@2021" />
+				</AND>
+			</OR>	
+			<THEN>
+				<COMMAND>"FIELD(Password).highlight=success"</COMMAND>				
+			</THEN>	
+			<ELSE>
+				<COMMAND>"FIELD(Password).highlight=error"</COMMAND>
+			</ELSE>
+		</IF> -->
+	
+
+	</LOGIC_DEFINITION>
+</XML>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_ARTICLE">
+	<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>WU_Visible_Side</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Wall Visible Side</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<CHECKBOX name="WU_Customized_Height_Check" label="Customized Height" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+				<COMBOBOX name="WU_Standard_Height" label="Height (600mm, 650mm, 700mm, 750mm, 800mm and 900mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" geoInfluencing="TRUE">
+					<ITEM value="600" label="600 mm" />
+					<ITEM value="650" label="650 mm" />
+					<ITEM value="700" label="700 mm" />
+					<ITEM value="750" label="750 mm" />
+					<ITEM value="800" label="800 mm" />
+					<ITEM value="900" label="900 mm" />
+				</COMBOBOX>
+
+				<EDITBOX name="WU_Customized_Height" label="Height (600mm t0 1200mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" geoInfluencing="TRUE" min="600" max="1200" />
+
+				<EDITBOX name="ART_SIZEZW" label="Height" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+
+
+				<EDITBOX name="ART_SIZEXW" label="Width" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="18" geoInfluencing="TRUE" />
+			
+				<EDITBOX name="ART_SIZEYVW" label="Depth" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="350" geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEYW" label="Depth (200mm to 600mm)"	info="Enter only carcass depth" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="330" min="200" max="620" geoInfluencing="TRUE" />
+
+			</GROUP>
+
+			<GROUP name="Visible_Side" label="Visible Side">
+
+				<COMBOBOX name="WU_Shutter_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WU_Shutter_Finish" label="Finish" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WU_Texture" label="Texture" valuetype="TEXT" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="WU_Front1" label="Shutter Shade" valuetype="IMAGE"	Search="TRUE" default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+				<!-- Variable Values -->
+				<EDITBOX name="WU_Front1_Mat" label="WU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="WU_Front1_Prf" label="WU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+			</GROUP>
+
+
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_ADDERPANEL_MARKUP" />
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXW</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYVW</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZW</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<!-- <VAR name="WU_Front1" value="WU_Front1" /> -->
+
+			<VAR name="WU_Front1_Mat" 		value="WU_Front1_Mat" />
+			<VAR name="WU_Front1_Prf" 		value="WU_Front1_Prf" />
+			<VAR name="Calculation_Factors" value="KAP_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KAP_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KAP_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="WALL_UNIT_HEIGHT_CUSTOMIZED" />
+
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WU_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND> "FIELD(ART_SIZEYVW).value = CALC(FIELD(ART_SIZEYW).value+ 20)" </COMMAND>
+
+	</LOGIC_DEFINITION>
+</XML>

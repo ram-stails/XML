@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<translate file="2017_1.xlf"/>
+
+	<ARTICLE>
+		<ART_NAME>Work_Surface_Fr40mm</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN/>
+		<ART_INFO_LONG/>
+		<ART_INFO_SHORT>Worksurface front over size 40mm</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+		<PARAFOLDER name="Work surface" label="Work surface" visible="TRUE">
+			<EDITBOX name="___CP_TYPE" default="2" visible="FALSE"/>
+
+			<EDITBOX name="Worktop_Ext_Front" label="Worktop Ext Front" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="40" min="20" max="600" geoInfluencing="TRUE" />
+			<EDITBOX name="Worktop_Ext_Left" label="Worktop Ext Left" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="0" min="0" max="2400" geoInfluencing="TRUE" />
+			<EDITBOX name="Worktop_Ext_Right" label="Worktop Ext Right" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="0" min="0" max="2400" geoInfluencing="TRUE" />
+			<EDITBOX name="Worktop_Ext_Back" label="Worktop Ext Back" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="0" min="0" max="600" geoInfluencing="TRUE" />
+
+			
+			<COMBOBOX name="Mat_WorkSurface" label="Work surface material 36mm" active="TRUE" visible="TRUE" nosave="TRUE" search="TRUE" locked="FALSE" default="iX_PB38_Cement" valuetype="IMAGE"  geoInfluencing="TRUE">		
+				<ITEM name="iX_PB38_Cement"					value="iX_PB38_Cement"			label="PB38 Cement"			image1="img/material/iX_Cement_M.jpg"/>
+				<ITEM name="EG_F147_Granite"				value="EG_F147_Granite"			label="F147 Granite"		image1="img/material/EG_F147.jpg"/>
+				<ITEM name="EG_F148_Granite"				value="EG_F148_Granite"			label="F148 Granite"		image1="img/material/EG_F148.jpg"/>
+				<ITEM name="EG_F166_Granite"				value="EG_F166_Granite"			label="F166 Granite"		image1="img/material/EG_F166.jpg"/>
+				<ITEM name="EG_F238_Granite"				value="EG_F238_Granite"			label="F238 Granite"		image1="img/material/EG_F238.jpg"/>
+				<ITEM name="EG_F371_Granite"				value="EG_F371_Granite"			label="F371 Granite"		image1="img/material/EG_F371.jpg"/>
+				<ITEM name="EG_F385_Cement"					value="EG_F385_Cement"			label="F385 Cement"			image1="img/material/EG_F385.jpg"/>
+				<ITEM name="iX_PB25_Granite"				value="iX_PB25_Granite"			label="PB25 Granite"		image1="img/material/iX_Granite_GreyL_H.jpg"/>
+				<ITEM name="iX_PB38_Granite"				value="iX_PB38_Granite"			label="PB38 Granite"		image1="img/material/iX_Granite_GreyD_H.jpg"/>
+				<ITEM name="4046_Excava_full_Slab"			value="4046_Excava_full_Slab"	label="4046_Excava_full_Slab"		image1="img/material/4046_Excava_full_Slab.jpg"/>					
+				<ITEM name="5101_Empira_Black"				value="5101_Empira_Black"		label="5101_Empira_Black"			image1="img/material/5101_Empira_Black.jpg"/>					
+				<ITEM name="iX_PB38_Granite_GreyL"			value="iX_PB38_Granite_GreyL"	label="PB38 Granite Grey"			image1="img/material/iX_Granite_GreyL_H.jpg"/>
+				<ITEM name="Organic_White_4600"				value="Organic_White_4600"		label="Organic_White_4600"			image1="img/material/4600.jpg"/>
+				<ITEM name="White_shimmer_3142"				value="White_shimmer_3142"		label="White_shimmer_3142"			image1="img/material/3142.jpg"/>
+				<ITEM name="Buter_Milk_4220"				value="Buter_Milk_4220"			label="Buter_Milk_4220"				image1="img/material/4220.jpg"/>
+				<ITEM name="Snow_2141"						value="Snow_2141"				label="Snow_2141"					image1="img/material/2141.jpg"/>
+				<ITEM name="Misty_Carrera_4141"				value="Misty_Carrera_4141"		label="Misty_Carrera_4141"			image1="img/material/4141.jpg"/>
+				<ITEM name="Ice_Snow_9141"					value="Ice_Snow_9141"			label="Ice_Snow_9141"				image1="img/material/9141.jpg"/>
+				<ITEM name="Dreamy_Marfil_5220"				value="Dreamy_Marfil_5220"		label="Dreamy_Marfil_5220"			image1="img/material/5220.jpg"/>
+				<ITEM name="Cloud_Burst_Concrete_4011"		value="Cloud_Burst_Concrete_4011"		label="Cloud_Burst_Concrete_4011"	image1="img/material/4011.jpg"/>
+				<ITEM name="Mont_Blank_5043"				value="Mont_Blank_5043"			label="Mont_Blank_5043"				image1="img/material/5043.jpg"/>
+				<ITEM name="Airy_Concrete_4044"				value="Airy_Concrete_4044"		label="Airy_Concrete_4044"			image1="img/material/4044.jpg"/>
+				<ITEM name="Rugged_Concrete_4033"			value="Rugged_Concrete_4033"	label="Rugged_Concrete_4033"		image1="img/material/4033.jpg"/>
+				<ITEM name="London_Grey _5000"				value="London_Grey _5000"		label="London_Grey _5000"			image1="img/material/5000.jpg"/>
+				<ITEM name="Frosty_Carrina_5141"			value="Frosty_Carrina_5141"		label="Frosty_Carrina_5141"			image1="img/material/5141.jpg"/>
+				<ITEM name="White_Attica_5143"				value="White_Attica_5143"		label="White_Attica_5143"			image1="img/material/5143.jpg"/>
+				<ITEM name="Statuario_Maximus_5031"			value="Statuario_Maximus_5031"	label="Statuario_Maximus_5031"		image1="img/material/5031.jpg"/>
+				<ITEM name="Bianco_Drift_6131"				value="Bianco_Drift_6131"		label="Bianco_Drift_6131"			image1="img/material/6131.jpg"/>
+				<ITEM name="Noble_Grey_5211"				value="Noble_Grey_5211"			label="Noble_Grey_5211"				image1="img/material/5211.jpg"/>
+				<ITEM name="Gorgiean_Bluffs_6134"			value="Gorgiean_Bluffs_6134"	label="Gorgiean_Bluffs_6134"		image1="img/material/6134.jpg"/>
+				<ITEM name="Haze_2030"						value="Haze_2030"				label="Haze_2030"					image1="img/material/2030.jpg"/>
+				<ITEM name="Morrland_Fogg_6046"				value="Morrland_Fogg_6046"		label="Morrland_Fogg_6046"			image1="img/material/6046.jpg"/>
+				<ITEM name="Oester_4030"					value="Oester_4030"				label="Oester_4030"					image1="img/material/4030.jpg"/>
+				<ITEM name="Excava_4046"					value="Excava_4046"				label="Excava_4046"					image1="img/material/4046.jpg"/>
+				<ITEM name="Topus_Concrete_4023"			value="Topus_Concrete_4023"		label="Topus_Concrete_4023"			image1="img/material/4023.jpg"/>
+				<ITEM name="Tuscan_Dawm_5104"				value="Tuscan_Dawm_5104"		label="Tuscan_Dawm_5104"			image1="img/material/5104.jpg"/>
+				<ITEM name="Linen_2230"						value="Linen_2230"				label="Linen_2230"					image1="img/material/2230.jpg"/>
+				<ITEM name="Ginger_4330"					value="Ginger_4330"				label="Ginger_4330"					image1="img/material/4330.jpg"/>
+				<ITEM name="Walnut_3350"					value="Walnut_3350"				label="Walnut_3350"					image1="img/material/3350.jpg"/>
+				<ITEM name="Shitake_4230"					value="Shitake_4230"			label="Shitake_4230"				image1="img/material/4230.jpg"/>
+				<ITEM name="Wild_Rice_4360"					value="Wild_Rice_4360"			label="Wild_Rice_4360"				image1="img/material/4360.jpg"/>
+				<ITEM name="Mink_4350"						value="Mink_4350"				label="Mink_4350"					image1="img/material/4350.jpg"/>
+				<ITEM name="Turbine_Grey_6313"				value="Turbine_Grey_6313"		label="Turbine_Grey_6313"			image1="img/material/6313.jpg"/>
+				<ITEM name="Concrete_2003"					value="Concrete_2003"			label="Concrete_2003"				image1="img/material/2003.jpg"/>
+				<ITEM name="Emperadoro_5380"				value="Emperadoro_5380"			label="Emperadoro_5380"				image1="img/material/5380.jpg"/>
+				<ITEM name="Costal_Grey_6003"				value="Costal_Grey_6003"		label="Costal_Grey_6003"			image1="img/material/6003.jpg"/>
+				<ITEM name="Raven_4120"						value="Raven_4120"				label="Raven_4120"					image1="img/material/4120.jpg"/>
+				<ITEM name="Piatra_Grey_5003"				value="Piatra_Grey_5003"		label="Piatra_Grey_5003"			image1="img/material/5003.jpg"/>
+				<ITEM name="Vanilla_Noir_5100"				value="Vanilla_Noir_5100"		label="Vanilla_Noir_5100"			image1="img/material/5100.jpg"/>
+			</COMBOBOX>
+
+			<EDITBOX name="Prf_WorkSurface" label="Prf_WorkSurface" active="TRUE" visible="FALSE" locked="FALSE" geoInfluencing="TRUE" />
+
+			<GROUP name="Skirting_Lights" valuetype="FRAME" label="Worktop StripLight" visible="TRUE">
+				<COMBOBOX name="Worktop_Strip_Light" label="Worktop Strip Light"	default="No_Connection"		valuetype="text"	visible="TRUE"	active="TRUE">
+					<ITEM value="No_Connection" 		label="No Strip Light" 		info1="" info2=""	image1=""/>
+					<ITEM value="Strip_Light" 			label="Strip Light" info1="" info2=""	image1=""/>			
+				</COMBOBOX>
+			</GROUP>
+
+			
+		</PARAFOLDER>
+		
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEX</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEY</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZ</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="Mat_WorkSurface"         value="Mat_WorkSurface"   />
+			<VAR name="Worktop_Ext_Front"       value="Worktop_Ext_Front"   />
+			<VAR name="Worktop_Ext_Left"        value="Worktop_Ext_Left"   />
+			<VAR name="Worktop_Ext_Right"       value="Worktop_Ext_Right"   />
+			<VAR name="Worktop_Ext_Back"        value="Worktop_Ext_Back"   />
+			<VAR name="Prf_WorkSurface"        	value="Prf_WorkSurface"   />
+			<VAR name="Worktop_Strip_Light"      value="Worktop_Strip_Light"   />
+
+
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND>"FIELD(Prf_WorkSurface).value=FIELD(Mat_WorkSurface).value"</COMMAND>
+		
+	</LOGIC_DEFINITION>
+</XML>

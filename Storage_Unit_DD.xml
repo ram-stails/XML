@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>Storage_Unit_DD</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Storage Unit 2Door</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+		
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions"	Valuetype="MULTIROW"	 label="Carcass Dimensions">
+
+				<COMBOBOX name="ART_SIZEZW" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" width="33%"	geoInfluencing="TRUE">
+					<ITEM value="300" label="300 mm" info1="330mm" />
+					<ITEM value="375" label="375 mm" info1="330mm" />
+					<ITEM value="400" label="400 mm" info1="330mm" />
+					<ITEM value="450" label="450 mm" info1="330mm" />
+					<ITEM value="500" label="500 mm" info1="330mm" />					
+					<ITEM value="600" label="600 mm" info1="350mm" />
+					<ITEM value="650" label="650 mm" info1="350mm" />
+					<ITEM value="700" label="700 mm" info1="350mm" />
+					<ITEM value="750" label="750 mm" info1="350mm" />
+					<ITEM value="800" label="800 mm" info1="350mm" />
+					<ITEM value="900" label="900 mm" info1="350mm" />
+					<ITEM value="1000" label="1000 mm" info1="350mm" />
+					<ITEM value="1200" label="1200 mm" info1="350mm" />
+				</COMBOBOX>
+
+				<EDITBOX name="ART_SIZEXW" label="Width (600mm to 1200mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="900" min="600" max="1200"  width="33%"	geoInfluencing="TRUE" />
+						
+				<EDITBOX name="ART_SIZEYW" label="Depth (150mm to 580mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="450" min="150" max="580"	width="33%"	geoInfluencing="TRUE" />
+
+			</GROUP>
+
+			<GROUP name="OpenBox Finsh"	 Valuetype="MULTIROW"	 label="OpenBox Finsh">				
+
+				<COMBOBOX name="OB_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" width="33%"	image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" width="33%"	image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" width="33%"	image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+			</GROUP>
+
+			<COMBOBOX name="OB_Shade" label="Openbox Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+			</COMBOBOX>
+	
+			<!-- Variable Values -->
+			<EDITBOX name="OB_Carcass_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="OB_Carcass_Prf" label="OB_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="OB_Carcass_BP_Mat" label="OB_Carcass_BP_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<CHECKBOX name="WU_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+			<GROUP name="Left_Shutter_Details" label="Left Shutter Details" valuetype="MULTIROW">
+
+				<COMBOBOX name="WU_Shutter_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" width="33%"	image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WU_Shutter_Finish" label="Finish" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" width="33%"	image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WU_Texture" label="Texture" valuetype="TEXT" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" width="33%"	image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			
+				<COMBOBOX name="WU_Front1" label="Shutter Shade" valuetype="IMAGE"	Search="TRUE" default="" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+
+
+			<GROUP name="Right_Shutter_Details" label="Right Shutter Details">
+
+				<GROUP name="Shutter_Details_1" label="Shutter Details"	valuetype="MULTIROW">
+
+				<COMBOBOX name="WU_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" width="33%"	image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WU_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" width="33%"	image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WU_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" width="33%"	image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				</GROUP>
+
+				<COMBOBOX name="WU_Front2" label="Shutter Shade" valuetype="IMAGE"	Search="TRUE" default="" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+			
+
+			<!-- Variable Values -->
+			<EDITBOX name="WU_Front1_Mat" label="WU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="WU_Front1_Prf" label="WU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="WU_Front2_Mat" label="WU_Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="WU_Front2_Prf" label="WU_Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="Bracket_Type" label="Wall Bracket" valuetype="image" default="Libra_H1"	 visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<ITEM name="Hafele_Hanging_Bracket"		value="Hafele_Hanging_Bracket"		label="Grass Hanging Bracket"			image1="img/hardware/Hafele_Hanging Bracket.jpg"/>			
+					<ITEM name="SAH_130"					value="SAH_130"						label="Hettich SAH 130"					image1="img/hardware/SAH_130.jpg"/>
+					<ITEM name="SAH_216"					value="SAH_216"						label="Hettich SAH 216"					image1="img/hardware/SAH_216.jpg"/>
+					<ITEM name="Libra_H1"					value="Libra_H1"					label="Libra H1"			    		image1="img/hardware/Libra_H1.jpg"/>
+				</COMBOBOX>
+
+		</PARAFOLDER>
+		
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_FREE_CUBES_MARKUP" />
+
+	</DEFINITION>
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXW</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYW</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZW</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+		
+			<VAR name="OB_Carcass_Mat" 		value="OB_Carcass_Mat" />
+			<VAR name="OB_Carcass_Prf" 		value="OB_Carcass_Prf" />	
+			<VAR name="OB_Carcass_BP_Mat" 	value="OB_Carcass_BP_Mat" />
+			<VAR name="Bracket_Type" 		value="Bracket_Type" />
+			<VAR name="Hinge_Type" 			value="Hinge_Type" />
+			<VAR name="Hinge_Open" 			value="Hinge_Open" />
+			<VAR name="WU_Front1_Mat" 		value="WU_Front1_Mat" />
+			<VAR name="WU_Front1_Prf" 		value="WU_Front1_Prf" />
+			<VAR name="WU_Front2_Mat" 		value="WU_Front2_Mat" />
+			<VAR name="WU_Front2_Prf" 		value="WU_Front2_Prf" />
+			<VAR name="Calculation_Factors" value="FC_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="FC_Mat_Prices" />
+			<VAR name="Mat_Prices" 			value="FC_Prf_Prices" />
+			
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OPEN_BOX_FINISHES" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WU_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WU_SHUTTER_FINISH_LOGIC_1" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WU_DIFFERENT_SHUTTER_COLOR" />
+		
+		
+	</LOGIC_DEFINITION>
+</XML>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>BU_Filler</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Base Unit Filler</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="___WORKSURFACE" default="Work_Surface_Fr40mm" visible="FALSE" setAsGlobal="TRUE" />
+		<EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" />
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<COMBOBOX name="ART_SIZEZB" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="720" geoInfluencing="TRUE">
+					<ITEM value="700" label="700 mm" />
+					<ITEM value="720" label="720 mm" />
+					<ITEM value="760" label="760 mm" />
+				</COMBOBOX>
+
+				<EDITBOX name="ART_SIZEXB" label="Width 50mm t0 150mm" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="75" min="50" max="150" geoInfluencing="TRUE" />
+
+				
+
+				<CHECKBOX name="Customized_Depth_Check" label="Customized Depth" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+				<COMBOBOX name="ART_Depth1" label="Depth (560mm , 580mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+				</COMBOBOX>
+
+				<EDITBOX name="ART_Depth2" label="Depth (300mm to 580mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="560" min="300" max="580" geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEYB" label="Depth" active="TRUE" visible="FALSE" locked="FALSE" valuetype="NUM" default="" min="" max="" geoInfluencing="TRUE" />
+
+			</GROUP>
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION_2" />
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Front_Details" label="Filler Details" active="TRUE" visible="TRUE">
+		
+			<COMBOBOX name="BU_Shutter_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="BU_Shutter_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="BU_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Front1" label="Front Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+			</COMBOBOX>
+
+			<!-- Variable Values -->
+			<EDITBOX name="BU_Front1_Mat" label="BU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="BU_Front1_Prf" label="BU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_ADDERPANEL_MARKUP" />
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXB</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYB</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZB</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="___WORKSURFACE" value="___WORKSURFACE" />
+			<VAR name="___BASE" value="___BASE" />
+			<VAR name="Skirting_Height" value="Skirting_Height" />
+			<VAR name="BU_Carcass" value="BU_Carcass" />
+			<VAR name="BU_Carcass_Prf_Type" value="BU_Carcass_Prf_Type" />
+			<VAR name="BU_Front1_Mat" 		value="BU_Front1_Mat" />
+			<VAR name="BU_Front1_Prf" 		value="BU_Front1_Prf" />
+			<VAR name="Calculation_Factors" value="KAP_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KAP_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KAP_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<IF>
+			<EQ expr1="FIELD(Customized_Depth_Check).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(ART_Depth1).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_Depth2).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEYB).value=FIELD(ART_Depth1).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(ART_Depth1).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_Depth2).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEYB).value=FIELD(ART_Depth2).value"</COMMAND>
+			</ELSE>
+		</IF>
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISH_LOGIC" />
+
+	</LOGIC_DEFINITION>
+</XML>

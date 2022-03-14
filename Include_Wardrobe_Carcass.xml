@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+
+
+	<PART name="PART_WARDROBE_CARCASS_CONSTRUCTION">
+
+        <GROUP name="Wardrobe_Carcass" label="Carcass Material">        
+
+        <GROUP name="Wardrobe_Carcass_Selection" valuetype="ROW" label="Carcass Material">
+
+            <COMBOBOX name="Carcass_Core_Material" label="Core Material" Width="50%"   valuetype="" default="PlyWood" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                <ITEM name="PlyWood"            value="PlyWood"         label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood"    value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+            </COMBOBOX>
+
+            <COMBOBOX name="Material_Type" label="Material Type" valuetype="" Width="50%" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="BWR" 			label="BWR" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP" 			label="BWP" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP_Green" 	label="BWP GreenPly" 		info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="Marine_Green" 	label="Marine GreenPly"		info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="BirchPly" 		label="Birch PlyWood" 		info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="PLPB" 			label="PLPB" 				info1="Engineered_wood"	image1="img/catalog/.PNG" />
+            </COMBOBOX>
+
+        </GROUP>
+           
+
+            <COMBOBOX name="Mat_Carcass" label="Carcass Material" valuetype="IMAGE" Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE"  image1="img/catalog/.PNG">
+			    <ITEM value="FW_BWR" 	        label="Frosty White + BWR Ply" 		        info1="PlyWood" 	            info2="BWR"	            info3="Frosty_White" 		image1="img/material/Half_White.jpg" />
+			    <ITEM value="FW_BWP" 	        label="Frosty White + BWP Ply" 		        info1="PlyWood" 	            info2="BWP"	            info3="Frosty_White" 		image1="img/material/Half_White.jpg" />
+                <ITEM value="FW_BWP_Green" 	 	label="Frosty White + Green BWP Ply" 		info1="PlyWood" 	            info2="BWP_Green"		info3="Frosty_White" 		image1="img/material/Half_White.jpg" />
+                <ITEM value="FW_Marine_Green" 	label="Frosty White + Green Marine Ply" 	info1="PlyWood" 	            info2="Marine_Green"	info3="Frosty_White" 		image1="img/material/Half_White.jpg" />
+			    <ITEM value="FW_Birch_PLY" 	 	label="Frosty White + Birch Ply" 		    info1="PlyWood" 	            info2="BirchPly"		info3="Frosty_White" 		image1="img/material/Half_White.jpg" />
+			    <ITEM value="FW_PLPB" 	 		label="Frosty White + Eco Green" 		    info1="Engineered_wood" 	    info2="PLPB"	        info3="Frosty_White" 		image1="img/material/Half_White.jpg" />
+
+                <ITEM value="LC_BWR" 	        label="Linen Cream + BWR Ply" 		        info1="PlyWood" 	            info2="BWR"	            info3="Linen_Cream" 		image1="img/material/Micro_Linen.jpg" />
+                <ITEM value="LC_BWP" 	        label="Linen Cream + BWP Ply" 		        info1="PlyWood" 	            info2="BWP"	            info3="Linen_Cream" 		image1="img/material/Micro_Linen.jpg" />
+                <ITEM value="LC_BWP_Green" 	 	label="Linen Cream + Green BWP Ply" 		info1="PlyWood" 	            info2="BWP_Green"		info3="Linen_Cream" 		image1="img/material/Micro_Linen.jpg" />
+                <ITEM value="LC_Marine_Green" 	label="Linen Cream + Green Marine Ply" 	    info1="PlyWood" 	            info2="Marine_Green"	info3="Linen_Cream" 		image1="img/material/Micro_Linen.jpg" />
+			    <ITEM value="LC_Birch_PLY" 	 	label="Linen Cream + Birch Ply" 		    info1="PlyWood" 	            info2="BirchPly"		info3="Linen_Cream" 		image1="img/material/Micro_Linen.jpg" />
+			    <ITEM value="LC_PLPB" 	 		label="Linen Cream + Eco Green" 		    info1="Engineered_wood" 	    info2="PLPB"	        info3="Linen_Cream" 		image1="img/material/Micro_Linen.jpg" />
+
+                <ITEM value="LG_BWR" 	        label="Linen Grey + BWR Ply" 		        info1="PlyWood" 	            info2="BWR"	            info3="Linen_Grey" 		image1="img/material/Grey_Linen.jpg" />
+                <ITEM value="LG_BWP" 	        label="Linen Grey + BWP Ply" 		        info1="PlyWood" 	            info2="BWP"	            info3="Linen_Grey" 		image1="img/material/Grey_Linen.jpg" />
+                <ITEM value="LG_BWP_Green" 	 	label="Linen Grey + Green BWP Ply" 		    info1="PlyWood" 	            info2="BWP_Green"		info3="Linen_Grey" 		image1="img/material/Grey_Linen.jpg" />
+                <ITEM value="LG_Marine_Green" 	label="Linen Grey + Green Marine Ply" 	    info1="PlyWood" 	            info2="Marine_Green"	info3="Linen_Grey" 		image1="img/material/Grey_Linen.jpg" />
+			    <ITEM value="LG_Birch_PLY" 	 	label="Linen Grey + Birch Ply" 		        info1="PlyWood" 	            info2="BirchPly"		info3="Linen_Grey" 		image1="img/material/Grey_Linen.jpg" />
+			    <ITEM value="LG_PLPB" 	 		label="Linen Grey + Eco Green" 		        info1="Engineered_wood" 	    info2="PLPB"	        info3="Linen_Grey" 		image1="img/material/Grey_Linen.jpg" />
+
+                <ITEM value="LM_BWR" 	        label="Linen Metalic + BWR Ply" 		    info1="PlyWood" 	            info2="BWR"	            info3="Linen_Metalic" 		image1="img/material/Macro_Linen.jpg" />
+                <ITEM value="LM_BWP" 	        label="Linen Metalic + BWP Ply" 		    info1="PlyWood" 	            info2="BWP"	            info3="Linen_Metalic" 		image1="img/material/Macro_Linen.jpg" />
+                <ITEM value="LM_BWP_Green" 	 	label="Linen Metalic + Green BWP Ply" 		info1="PlyWood" 	            info2="BWP_Green"		info3="Linen_Metalic" 		image1="img/material/Macro_Linen.jpg" />
+                <ITEM value="LM_Marine_Green" 	label="Linen Metalic + Green Marine Ply" 	info1="PlyWood" 	            info2="Marine_Green"	info3="Linen_Metalic" 		image1="img/material/Macro_Linen.jpg" />
+			    <ITEM value="LM_Birch_PLY" 	 	label="Linen Metalic + Birch Ply" 		    info1="PlyWood" 	            info2="BirchPly"		info3="Linen_Metalic" 		image1="img/material/Macro_Linen.jpg" />
+			    <ITEM value="LM_PLPB" 	 		label="Linen Metalic + Eco Green" 		    info1="Engineered_wood" 	    info2="PLPB"	        info3="Linen_Metalic" 		image1="img/material/Macro_Linen.jpg" />
+
+                <ITEM value="CW_BWR" 	        label="Classic Walnut + BWR Ply" 		    info1="PlyWood" 	            info2="BWR"	            info3="Classic_Walnut" 		image1="img/material/7529_Walnut_Desire.jpg" />
+                <ITEM value="CW_BWP" 	        label="Classic Walnut + BWP Ply" 		    info1="PlyWood" 	            info2="BWP"	            info3="Classic_Walnut" 		image1="img/material/7529_Walnut_Desire.jpg" />
+                <ITEM value="CW_BWP_Green" 	 	label="Classic Walnut + Green BWP Ply" 		info1="PlyWood" 	            info2="BWP_Green"		info3="Classic_Walnut" 		image1="img/material/7529_Walnut_Desire.jpg" />
+                <ITEM value="CW_Marine_Green" 	label="Classic Walnut + Green Marine Ply" 	info1="PlyWood" 	            info2="Marine_Green"	info3="Classic_Walnut" 		image1="img/material/7529_Walnut_Desire.jpg" />
+			    <ITEM value="CW_Birch_PLY" 	 	label="Classic Walnut + Birch Ply" 		    info1="PlyWood" 	            info2="BirchPly"		info3="Classic_Walnut" 		image1="img/material/7529_Walnut_Desire.jpg" />
+			    <ITEM value="CW_PLPB" 	 		label="Classic Walnut + Eco Green" 		    info1="Engineered_wood" 	    info2="PLPB"	        info3="Classic_Walnut" 		image1="img/material/7529_Walnut_Desire.jpg" />
+			
+            </COMBOBOX>		
+
+            <EDITBOX name="Prf_Carcass" label="Edge Band Selection" valuetype=""    active="TRUE" visible="FALSE" locked="FALSE"  default="" geoInfluencing="TRUE" />		
+            
+        </GROUP>
+
+		 <TEXT name="Material_Disclimer" label="*Physical Sample color may vary from its digital interpretation" highlight="warning" visible="TRUE" format="" /> 
+
+	</PART>
+
+	<PART name="PART_WARDROBE_CARCASS_CONSTRUCTION_LOGIC">
+
+        <COMMAND>"FIELD(Material_Type).Info1List(FIELD(Carcass_Core_Material).value)"</COMMAND>		
+        <COMMAND>"FIELD(Mat_Carcass).Info2List(FIELD(Material_Type).value)"</COMMAND>		
+		<COMMAND>"FIELD(Prf_Carcass).value=FIELD(Mat_Carcass).value"</COMMAND>
+
+	</PART>
+	
+
+</XML>

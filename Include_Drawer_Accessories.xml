@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+	<!---	*************************** Pot and Pan Accessories Selection *****************************************************************************************	-->
+
+	<PART name="PART_PotAndPan_Drawer_Acc_1">
+
+		<COMBOBOX name="PotAndPan_Drawer_Acc_1" label="Pot and Pan Drawer1 Accessories" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="600">
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+			
+			<ITEM value="PLATES ORGANISATION 500_60_SIL" 	label="PLATES ORGANISATION 500_60_SIL"  info1="600"	info2="TandemBox_Intivo"		image1="img/hardware/PO_500_60_SIL.jpg"/>
+			<ITEM value="PLATES ORGANISATION 500_90_SIL" 	label="PLATES ORGANISATION 500_90_SIL"  info1="900"	info2="TandemBox_Intivo"		image1="img/hardware/PO_500_90_SIL.jpg"/>
+
+			<ITEM value="PLATES ORGANISATION 500_60_SIL" 	label="PLATES ORGANISATION 500_60_SIL"  info1="600"	info2="TandemBox_Antaro"		image1="img/hardware/PO_500_60_SIL.jpg"/>
+			<ITEM value="PLATES ORGANISATION 500_90_SIL" 	label="PLATES ORGANISATION 500_90_SIL"  info1="900"	info2="TandemBox_Antaro"		image1="img/hardware/PO_500_90_SIL.jpg"/>
+
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="Any"	info2="TandemBox_Antaro"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="Any"	info2="TandemBox_Intivo"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="Any"	info2="LegraBox_Pure"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="Any"	info2="LegraBox_Free"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="Any"	info2="Atira"				image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="450"	info2="TandemBox_Antaro"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="450"	info2="TandemBox_Intivo"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="450"	info2="LegraBox_Pure"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="450"	info2="LegraBox_Free"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="450"	info2="Atira"				image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="600"	info2="TandemBox_Antaro"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="600"	info2="TandemBox_Intivo"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="600"	info2="LegraBox_Pure"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="600"	info2="LegraBox_Free"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="600"	info2="Atira"				image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="900"	info2="TandemBox_Antaro"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="900"	info2="TandemBox_Intivo"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="900"	info2="LegraBox_Pure"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="900"	info2="LegraBox_Free"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="900"	info2="Atira"				image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="1200"	info2="TandemBox_Antaro"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="1200"	info2="TandemBox_Intivo"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="1200"	info2="LegraBox_Pure"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="1200"	info2="LegraBox_Free"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="1200"	info2="Atira"				image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+
+		</COMBOBOX>
+
+	</PART>
+
+	<PART name="PART_PotAndPan_Drawer_Acc_1_Logic">
+
+		<IF>
+			<EQ expr1="FIELD(ART_SIZEXB).value" expr2="450" />
+			<THEN>
+				<COMMAND>"FIELD(PotAndPan_Drawer_Acc_1).Info1List(450)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(ART_SIZEXB).value" expr2="600" />
+					<THEN>
+						<COMMAND>"FIELD(PotAndPan_Drawer_Acc_1).Info1List(600)"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(ART_SIZEXB).value" expr2="900" />
+							<THEN>
+								<COMMAND>"FIELD(PotAndPan_Drawer_Acc_1).Info1List(900)"</COMMAND>
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(ART_SIZEXB).value" expr2="1200" />
+									<THEN>
+										<COMMAND>"FIELD(PotAndPan_Drawer_Acc_1).Info1List(1200)"</COMMAND>
+									</THEN>
+									<ELSE>
+										<COMMAND>"FIELD(PotAndPan_Drawer_Acc_1).Info1List(Any)"</COMMAND>
+									</ELSE>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>				
+			</ELSE>			
+		</IF>
+
+		<COMMAND>"FIELD(PotAndPan_Drawer_Acc_1).filterInfo2List(FIELD(Drawer_Type).value)"</COMMAND>
+
+	</PART>
+<!-- ************************************************************************************************************************************************************************** -->
+	<PART name="PART_PotAndPan_Drawer_Acc_2">
+
+		<COMBOBOX name="PotAndPan_Drawer_Acc_2" label="Pot and Pan Drawer2 Accessories" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="600">
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+			
+			<ITEM value="PLATES ORGANISATION 500_60_SIL" 	label="PLATES ORGANISATION 500_60_SIL"  info1="600"	info2="TandemBox_Intivo"		image1="img/hardware/PO_500_60_SIL.jpg"/>
+			<ITEM value="PLATES ORGANISATION 500_90_SIL" 	label="PLATES ORGANISATION 500_90_SIL"  info1="900"	info2="TandemBox_Intivo"		image1="img/hardware/PO_500_90_SIL.jpg"/>
+
+			<ITEM value="PLATES ORGANISATION 500_60_SIL" 	label="PLATES ORGANISATION 500_60_SIL"  info1="600"	info2="TandemBox_Antaro"		image1="img/hardware/PO_500_60_SIL.jpg"/>
+			<ITEM value="PLATES ORGANISATION 500_90_SIL" 	label="PLATES ORGANISATION 500_90_SIL"  info1="900"	info2="TandemBox_Antaro"		image1="img/hardware/PO_500_90_SIL.jpg"/>
+
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="Any"	info2="TandemBox_Antaro"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="Any"	info2="TandemBox_Intivo"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="Any"	info2="LegraBox_Pure"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="Any"	info2="LegraBox_Free"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="Any"	info2="Atira"				image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="450"	info2="TandemBox_Antaro"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="450"	info2="TandemBox_Intivo"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="450"	info2="LegraBox_Pure"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="450"	info2="LegraBox_Free"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="450"	info2="Atira"				image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="600"	info2="TandemBox_Antaro"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="600"	info2="TandemBox_Intivo"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="600"	info2="LegraBox_Pure"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="600"	info2="LegraBox_Free"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="600"	info2="Atira"				image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="900"	info2="TandemBox_Antaro"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="900"	info2="TandemBox_Intivo"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="900"	info2="LegraBox_Pure"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="900"	info2="LegraBox_Free"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="900"	info2="Atira"				image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="1200"	info2="TandemBox_Antaro"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="1200"	info2="TandemBox_Intivo"	image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="1200"	info2="LegraBox_Pure"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="1200"	info2="LegraBox_Free"		image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+			<ITEM value="AMBIA_Line_spice_rack" label="Ambia Line Spice Rack"  info1="1200"	info2="Atira"				image1="img/hardware/AMBIA_Line_spice_rack.jpg"/>
+						
+		</COMBOBOX>
+
+	</PART>
+
+	<PART name="PART_PotAndPan_Drawer_Acc_2_Logic">
+
+		<IF>
+			<EQ expr1="FIELD(ART_SIZEXB).value" expr2="450" />
+			<THEN>
+				<COMMAND>"FIELD(PotAndPan_Drawer_Acc_2).Info1List(450)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(ART_SIZEXB).value" expr2="600" />
+					<THEN>
+						<COMMAND>"FIELD(PotAndPan_Drawer_Acc_2).Info1List(600)"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(ART_SIZEXB).value" expr2="900" />
+							<THEN>
+								<COMMAND>"FIELD(PotAndPan_Drawer_Acc_2).Info1List(900)"</COMMAND>
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(ART_SIZEXB).value" expr2="1200" />
+									<THEN>
+										<COMMAND>"FIELD(PotAndPan_Drawer_Acc_2).Info1List(1200)"</COMMAND>
+									</THEN>
+									<ELSE>
+										<COMMAND>"FIELD(PotAndPan_Drawer_Acc_2).Info1List(Any)"</COMMAND>
+									</ELSE>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>				
+			</ELSE>			
+		</IF>
+
+		<COMMAND>"FIELD(PotAndPan_Drawer_Acc_2).filterInfo2List(FIELD(Drawer_Type).value)"</COMMAND>
+
+	</PART>
+
+<!-- ************************************************************************************************************************************************************************** -->
+
+	<PART name="PART_Regular_Drawer_Acc_1">
+
+		<COMBOBOX name="Regular_Drawer_Acc_1" label="Regular Drawer1 Accessories" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="600">
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="Any"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="450"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="600"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="900"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+			<ITEM value="NO_BOM" label="No Selection"  info1="1200"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+
+			<ITEM value="OL_TB_Uten_div_500_03866940" 		label="Utensil Divider"  				info1="450"	info2="TandemBox_Intivo"		image1="img/hardware/ORGA_LINE_Dividers_450mm.jpg"/>
+			<ITEM value="OL_TB_Uten_div_500_06702440" 		label="Utensil Divider"  				info1="600"	info2="TandemBox_Intivo"		image1="img/hardware/ORGA_LINE_Dividers_600mm.jpg"/>
+			<ITEM value="OL_TB_Uten_div_500_CW_900mm" 		label="Utensil Divider"  				info1="900"	info2="TandemBox_Intivo"		image1="img/hardware/ORGA_LINE_Dividers_900mm.jpg"/>
+			<ITEM value="OL_TB_Uten_div_500_CW_1200mm" 		label="Utensil Divider"  				info1="1200" info2="TandemBox_Intivo"		image1="img/hardware/ORGA_LINE_Dividers_1200mm.jpg"/>
+			
+			<ITEM value="OL_TB_Uten_div_500_03866940" 		label="Utensil Divider"  				info1="450"	info2="TandemBox_Antaro"		image1="img/hardware/ORGA_LINE_Dividers_450mm.jpg"/>
+			<ITEM value="OL_TB_Uten_div_500_06702440" 		label="Utensil Divider"  				info1="600"	info2="TandemBox_Antaro"		image1="img/hardware/ORGA_LINE_Dividers_600mm.jpg"/>
+			<ITEM value="OL_TB_Uten_div_500_CW_900mm" 		label="Utensil Divider"  				info1="900"	info2="TandemBox_Antaro"		image1="img/hardware/ORGA_LINE_Dividers_900mm.jpg"/>
+			<ITEM value="OL_TB_Uten_div_500_CW_1200mm" 		label="Utensil Divider"  				info1="1200" info2="TandemBox_Antaro"		image1="img/hardware/ORGA_LINE_Dividers_1200mm.jpg"/>
+
+			<ITEM value="LBX_AMBIA_cutl_450_W300_OGM" 		label="Utensil Divider Orion Grey"  		info1="450"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_OGM.jpg"/>
+			<ITEM value="LBX_AMBIA_cutl_450_W300_SW" 		label="Utensil Divider Silk White"  		info1="450"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_SW.jpg"/>
+			<ITEM value="LBX_AMBIA_cutl_450_W300_TBM" 		label="Utensil Divider Terra Black Matt"  	info1="450"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_TBM.jpg"/>
+			
+			<ITEM value="LBX_AMBIA_cutl_450_W300_OGM" 		label="Utensil Divider Orion Grey"  		info1="600"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_OGM.jpg"/>
+			<ITEM value="LBX_AMBIA_cutl_450_W300_SW" 		label="Utensil Divider Silk White"  		info1="600"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_SW.jpg"/>
+			<ITEM value="LBX_AMBIA_cutl_450_W300_TBM" 		label="Utensil Divider Terra Black Matt"  	info1="600"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_TBM.jpg"/>
+			
+			<ITEM value="LBX_AMBIA_cutl_450_W300_OGM" 		label="Utensil Divider Orion Grey"  		info1="900"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_OGM.jpg"/>
+			<ITEM value="LBX_AMBIA_cutl_450_W300_SW" 		label="Utensil Divider Silk White"  		info1="900"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_SW.jpg"/>
+			<ITEM value="LBX_AMBIA_cutl_450_W300_TBM" 		label="Utensil Divider Terra Black Matt"  	info1="900"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_TBM.jpg"/>
+			
+			<ITEM value="LBX_AMBIA_cutl_450_W300_OGM" 		label="Utensil Divider Orion Grey"  		info1="1200"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_OGM.jpg"/>
+			<ITEM value="LBX_AMBIA_cutl_450_W300_SW" 		label="Utensil Divider Silk White"  		info1="1200"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_SW.jpg"/>
+			<ITEM value="LBX_AMBIA_cutl_450_W300_TBM" 		label="Utensil Divider Terra Black Matt"  	info1="1200"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_TBM.jpg"/>
+			
+			<ITEM value="Cusion_Cutlery_Graphite_450mm" 	label="Cusion_Cutlery_Graphite_450mm"  	info1="450"	info2="TandemBox_Intivo"		image1="img/hardware/Cusion_Cutlery_Graphite.jpg"/>
+			<ITEM value="Cusion_Cutlery_Graphite_600mm" 	label="Cusion_Cutlery_Graphite_600mm"  	info1="600"	info2="TandemBox_Intivo"		image1="img/hardware/Cusion_Cutlery_Graphite.jpg"/>
+			<ITEM value="Cusion_Cutlery_Graphite_900mm" 	label="Cusion_Cutlery_Graphite_900mm" 	info1="900"	info2="TandemBox_Intivo"		image1="img/hardware/Cusion_Cutlery_Graphite.jpg"/>
+
+			<ITEM value="Cusion_Cutlery_White_T_450mm" 		label="Cusion_Cutlery_White_T_450mm"  	info1="450"	info2="TandemBox_Intivo"		image1="img/hardware/Cusion_Cutlery_White.jpg"/>
+			<ITEM value="Cusion_Cutlery_White_T_600mm" 		label="Cusion_Cutlery_White_T_600mm"  	info1="600"	info2="TandemBox_Intivo"		image1="img/hardware/Cusion_Cutlery_White.jpg"/>
+			<ITEM value="Cusion_Cutlery_White_T_900mm" 		label="Cusion_Cutlery_White_T_900mm"  	info1="900"	info2="TandemBox_Intivo"		image1="img/hardware/Cusion_Cutlery_White.jpg"/>
+
+			<ITEM value="Cusion_Cutlery_Graphite_450mm" 	label="Cusion_Cutlery_Graphite_450mm"  	info1="450"	info2="TandemBox_Antaro"		image1="img/hardware/Cusion_Cutlery_Graphite.jpg"/>
+			<ITEM value="Cusion_Cutlery_Graphite_600mm" 	label="Cusion_Cutlery_Graphite_600mm"  	info1="600"	info2="TandemBox_Antaro"		image1="img/hardware/Cusion_Cutlery_Graphite.jpg"/>
+			<ITEM value="Cusion_Cutlery_Graphite_900mm" 	label="Cusion_Cutlery_Graphite_900mm" 	info1="900"	info2="TandemBox_Antaro"		image1="img/hardware/Cusion_Cutlery_Graphite.jpg"/>
+
+			<ITEM value="Cusion_Cutlery_White_T_450mm" 		label="Cusion_Cutlery_White_T_450mm"  	info1="450"	info2="TandemBox_Antaro"		image1="img/hardware/Cusion_Cutlery_White.jpg"/>
+			<ITEM value="Cusion_Cutlery_White_T_600mm" 		label="Cusion_Cutlery_White_T_600mm"  	info1="600"	info2="TandemBox_Antaro"		image1="img/hardware/Cusion_Cutlery_White.jpg"/>
+			<ITEM value="Cusion_Cutlery_White_T_900mm" 		label="Cusion_Cutlery_White_T_900mm"  	info1="900"	info2="TandemBox_Antaro"		image1="img/hardware/Cusion_Cutlery_White.jpg"/>
+
+		</COMBOBOX>
+
+	</PART>
+
+	<PART name="PART_Regular_Drawer_Acc_1_Logic">
+
+		<IF>
+			<EQ expr1="FIELD(ART_SIZEXB).value" expr2="450" />
+			<THEN>
+				<COMMAND>"FIELD(Regular_Drawer_Acc_1).Info1List(450)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(ART_SIZEXB).value" expr2="600" />
+					<THEN>
+						<COMMAND>"FIELD(Regular_Drawer_Acc_1).Info1List(600)"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(ART_SIZEXB).value" expr2="900" />
+							<THEN>
+								<COMMAND>"FIELD(Regular_Drawer_Acc_1).Info1List(900)"</COMMAND>
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(ART_SIZEXB).value" expr2="1200" />
+									<THEN>
+										<COMMAND>"FIELD(Regular_Drawer_Acc_1).Info1List(1200)"</COMMAND>
+									</THEN>
+									<ELSE>
+										<COMMAND>"FIELD(Regular_Drawer_Acc_1).Info1List(Any)"</COMMAND>
+									</ELSE>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>				
+			</ELSE>			
+		</IF>
+
+		<COMMAND>"FIELD(Regular_Drawer_Acc_1).filterInfo2List(FIELD(Drawer_Type).value)"</COMMAND>
+
+	</PART>
+
+<!-- ************************************************************************************************************************************************************************** -->
+
+<PART name="PART_Regular_Drawer_Acc_2">
+
+	<COMBOBOX name="Regular_Drawer_Acc_2" label="Regular Drawer2 Accessories" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="600">
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="Any"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="Any"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="Any"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="Any"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="Any"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="450"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="450"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="450"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="450"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="450"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="600"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="600"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="600"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="600"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="600"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="900"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="900"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="900"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="900"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="900"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="1200"	info2="TandemBox_Antaro"	image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="1200"	info2="TandemBox_Intivo"	image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="1200"	info2="LegraBox_Pure"		image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="1200"	info2="LegraBox_Free"		image1="img/hardware/Null.jpg"/>
+		<ITEM value="NO_BOM" label="NO_BOM"  info1="1200"	info2="Atira"				image1="img/hardware/Null.jpg"/>
+
+		<ITEM value="OL_TB_Uten_div_500_03866940" 		label="Utensil Divider"  				info1="450"	info2="TandemBox_Intivo"		image1="img/hardware/ORGA_LINE_Dividers_450mm.jpg"/>
+		<ITEM value="OL_TB_Uten_div_500_06702440" 		label="Utensil Divider"  				info1="600"	info2="TandemBox_Intivo"		image1="img/hardware/ORGA_LINE_Dividers_600mm.jpg"/>
+		<ITEM value="OL_TB_Uten_div_500_CW_900mm" 		label="Utensil Divider"  				info1="900"	info2="TandemBox_Intivo"		image1="img/hardware/ORGA_LINE_Dividers_900mm.jpg"/>
+		<ITEM value="OL_TB_Uten_div_500_CW_1200mm" 		label="Utensil Divider"  				info1="1200" info2="TandemBox_Intivo"		image1="img/hardware/ORGA_LINE_Dividers_1200mm.jpg"/>
+
+		<ITEM value="OL_TB_Uten_div_500_03866940" 		label="Utensil Divider"  				info1="450"	info2="TandemBox_Antaro"		image1="img/hardware/ORGA_LINE_Dividers_450mm.jpg"/>
+		<ITEM value="OL_TB_Uten_div_500_06702440" 		label="Utensil Divider"  				info1="600"	info2="TandemBox_Antaro"		image1="img/hardware/ORGA_LINE_Dividers_600mm.jpg"/>
+		<ITEM value="OL_TB_Uten_div_500_CW_900mm" 		label="Utensil Divider"  				info1="900"	info2="TandemBox_Antaro"		image1="img/hardware/ORGA_LINE_Dividers_900mm.jpg"/>
+		<ITEM value="OL_TB_Uten_div_500_CW_1200mm" 		label="Utensil Divider"  				info1="1200" info2="TandemBox_Antaro"		image1="img/hardware/ORGA_LINE_Dividers_1200mm.jpg"/>
+
+		<ITEM value="LBX_AMBIA_cutl_450_W300_OGM" 		label="Utensil Divider Orion Grey"  		info1="450"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_OGM.jpg"/>
+		<ITEM value="LBX_AMBIA_cutl_450_W300_SW" 		label="Utensil Divider Silk White"  		info1="450"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_SW.jpg"/>
+		<ITEM value="LBX_AMBIA_cutl_450_W300_TBM" 		label="Utensil Divider Terra Black Matt"  	info1="450"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_TBM.jpg"/>
+			
+		<ITEM value="LBX_AMBIA_cutl_450_W300_OGM" 		label="Utensil Divider Orion Grey"  		info1="600"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_OGM.jpg"/>
+		<ITEM value="LBX_AMBIA_cutl_450_W300_SW" 		label="Utensil Divider Silk White"  		info1="600"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_SW.jpg"/>
+		<ITEM value="LBX_AMBIA_cutl_450_W300_TBM" 		label="Utensil Divider Terra Black Matt"  	info1="600"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_TBM.jpg"/>
+			
+		<ITEM value="LBX_AMBIA_cutl_450_W300_OGM" 		label="Utensil Divider Orion Grey"  		info1="900"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_OGM.jpg"/>
+		<ITEM value="LBX_AMBIA_cutl_450_W300_SW" 		label="Utensil Divider Silk White"  		info1="900"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_SW.jpg"/>
+		<ITEM value="LBX_AMBIA_cutl_450_W300_TBM" 		label="Utensil Divider Terra Black Matt"  	info1="900"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_TBM.jpg"/>
+			
+		<ITEM value="LBX_AMBIA_cutl_450_W300_OGM" 		label="Utensil Divider Orion Grey"  		info1="1200"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_OGM.jpg"/>
+		<ITEM value="LBX_AMBIA_cutl_450_W300_SW" 		label="Utensil Divider Silk White"  		info1="1200"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_SW.jpg"/>
+		<ITEM value="LBX_AMBIA_cutl_450_W300_TBM" 		label="Utensil Divider Terra Black Matt"  	info1="1200"	info2="LegraBox_Pure"		image1="img/hardware/LBX_AMBIA_cutl_450_W300_TBM.jpg"/>
+		
+		<ITEM value="Cusion_Cutlery_Graphite_450mm" 	label="Cusion_Cutlery_Graphite_450mm"  	info1="450"	info2="TandemBox_Intivo"		image1="img/hardware/Cusion_Cutlery_Graphite.jpg"/>
+		<ITEM value="Cusion_Cutlery_Graphite_600mm" 	label="Cusion_Cutlery_Graphite_600mm"  	info1="600"	info2="TandemBox_Intivo"		image1="img/hardware/Cusion_Cutlery_Graphite.jpg"/>
+		<ITEM value="Cusion_Cutlery_Graphite_900mm" 	label="Cusion_Cutlery_Graphite_900mm" 	info1="900"	info2="TandemBox_Intivo"		image1="img/hardware/Cusion_Cutlery_Graphite.jpg"/>
+
+		<ITEM value="Cusion_Cutlery_White_T_450mm" 		label="Cusion_Cutlery_White_T_450mm"  	info1="450"	info2="TandemBox_Intivo"		image1="img/hardware/Cusion_Cutlery_White.jpg"/>
+		<ITEM value="Cusion_Cutlery_White_T_600mm" 		label="Cusion_Cutlery_White_T_600mm"  	info1="600"	info2="TandemBox_Intivo"		image1="img/hardware/Cusion_Cutlery_White.jpg"/>
+		<ITEM value="Cusion_Cutlery_White_T_900mm" 		label="Cusion_Cutlery_White_T_900mm"  	info1="900"	info2="TandemBox_Intivo"		image1="img/hardware/Cusion_Cutlery_White.jpg"/>
+
+		<ITEM value="Cusion_Cutlery_Graphite_450mm" 	label="Cusion_Cutlery_Graphite_450mm"  	info1="450"	info2="TandemBox_Antaro"		image1="img/hardware/Cusion_Cutlery_Graphite.jpg"/>
+		<ITEM value="Cusion_Cutlery_Graphite_600mm" 	label="Cusion_Cutlery_Graphite_600mm"  	info1="600"	info2="TandemBox_Antaro"		image1="img/hardware/Cusion_Cutlery_Graphite.jpg"/>
+		<ITEM value="Cusion_Cutlery_Graphite_900mm" 	label="Cusion_Cutlery_Graphite_900mm" 	info1="900"	info2="TandemBox_Antaro"		image1="img/hardware/Cusion_Cutlery_Graphite.jpg"/>
+
+		<ITEM value="Cusion_Cutlery_White_T_450mm" 		label="Cusion_Cutlery_White_T_450mm"  	info1="450"	info2="TandemBox_Antaro"		image1="img/hardware/Cusion_Cutlery_White.jpg"/>
+		<ITEM value="Cusion_Cutlery_White_T_600mm" 		label="Cusion_Cutlery_White_T_600mm"  	info1="600"	info2="TandemBox_Antaro"		image1="img/hardware/Cusion_Cutlery_White.jpg"/>
+		<ITEM value="Cusion_Cutlery_White_T_900mm" 		label="Cusion_Cutlery_White_T_900mm"  	info1="900"	info2="TandemBox_Antaro"		image1="img/hardware/Cusion_Cutlery_White.jpg"/>
+
+	</COMBOBOX>
+
+</PART>
+
+<PART name="PART_Regular_Drawer_Acc_2_Logic">
+
+	<IF>
+		<EQ expr1="FIELD(ART_SIZEXB).value" expr2="450" />
+		<THEN>
+			<COMMAND>"FIELD(Regular_Drawer_Acc_2).Info1List(450)"</COMMAND>
+		</THEN>
+		<ELSE>
+			<IF>
+				<EQ expr1="FIELD(ART_SIZEXB).value" expr2="600" />
+				<THEN>
+					<COMMAND>"FIELD(Regular_Drawer_Acc_2).Info1List(600)"</COMMAND>
+				</THEN>
+				<ELSE>
+					<IF>
+						<EQ expr1="FIELD(ART_SIZEXB).value" expr2="900" />
+						<THEN>
+							<COMMAND>"FIELD(Regular_Drawer_Acc_2).Info1List(900)"</COMMAND>
+						</THEN>
+						<ELSE>
+							<IF>
+								<EQ expr1="FIELD(ART_SIZEXB).value" expr2="1200" />
+								<THEN>
+									<COMMAND>"FIELD(Regular_Drawer_Acc_2).Info1List(1200)"</COMMAND>
+								</THEN>
+								<ELSE>
+									<COMMAND>"FIELD(Regular_Drawer_Acc_2).Info1List(Any)"</COMMAND>
+								</ELSE>
+							</IF>
+						</ELSE>
+					</IF>
+				</ELSE>
+			</IF>				
+		</ELSE>			
+	</IF>
+
+	<COMMAND>"FIELD(Regular_Drawer_Acc_2).filterInfo2List(FIELD(Drawer_Type).value)"</COMMAND>
+
+</PART>
+	
+</XML>

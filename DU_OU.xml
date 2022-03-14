@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>DU_OU</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Dado Open unit</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+			
+				<EDITBOX name="ART_SIZEZD" label="Height (150mm to 200mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="150" min="150" max="200"	geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEXD" label="Width (150mm to 1800mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="300" min="150" max="1800" geoInfluencing="TRUE" />
+					
+                <EDITBOX name="ART_SIZEYD" label="Depth (100mm to 330mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="100" min="100" max="330" geoInfluencing="TRUE" />
+
+			</GROUP>
+
+            <EDITBOX name="WU_PA_Qty" label="Number of Partition Required :" active="TRUE" nosave="FALSE"	Info="Enter the qty of Partition in the form of Ratio {Example: 1:1 means 1 shelf comes in middle,280mm:1 means shelf comes after 280mm from Left side}"	visible="TRUE" locked="FALSE" valuetype="LINDIV" default="1:1" min="" max="" geoInfluencing="TRUE" />
+
+
+			<GROUP name="OpenBox Finsh" label="Dado OpenBox Finish">		
+			
+
+				<COMBOBOX name="OB_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="OB_Shade" label="Openbox Shade" valuetype="IMAGE" Search="TRUE"	default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+	
+				<!-- Variable Values -->
+				<EDITBOX name="OB_Carcass_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_Prf" label="OB_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_BP_Mat" label="OB_Carcass_BP_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				
+			</GROUP>
+
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_ADDERPANEL_MARKUP" />
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXD</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYD</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZD</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+		
+			<VAR name="OB_Carcass_Mat" value="OB_Carcass_Mat" />
+			<VAR name="OB_Carcass_Prf" value="OB_Carcass_Prf" />
+			<VAR name="OB_Carcass_BP_Mat" 	value="OB_Carcass_BP_Mat" />
+
+			<VAR name="WU_PA_Qty" 			value="WU_PA_Qty" />
+
+			<VAR name="Calculation_Factors" value="KAP_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KAP_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KAP_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+	
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OPEN_BOX_FINISHES" />
+		
+	</LOGIC_DEFINITION>
+</XML>

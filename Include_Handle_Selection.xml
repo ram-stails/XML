@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+	<PART name="PART_KITCHEN_BASE_UNIT_HANDLES">
+
+		<GROUP name="Group_Kitchen_Handle" valuetype="FRAME" label="Handles" visible="TRUE">	
+		
+			<COMBOBOX name="Handle_Type"	label="Handle Type" 	valuetype="TEXT"	default="Surface_Handle"	visible="TRUE"	active="TRUE">
+				<ITEM name="Surface_Handle"		value="Surface_Handle"		label="Surface Handle Horizontal"/>
+				<ITEM name="Surface_Handle_V"	value="Surface_Handle_V"	label="Surface Handle Vertical"	/>
+				<ITEM name="Edge_Handle"		value="Edge_Handle"			label="Edge Handle"	/>
+				<ITEM name="No_Handle"			value="No_Handle"			label="No Handle"	/>
+			</COMBOBOX>
+			
+			<COMBOBOX name="Handle_Selection"	label="Handle Selection" 	valuetype="IMAGE"  Search="TRUE" 	default="DI_156_BLM"	visible="TRUE"	active="TRUE"	geoInfluencing="TRUE">
+				<!-- <ITEM name="BR_140_ATB"			value="BR_140_ATB"			label="BR 140 ATB"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/BRIKK_0334.jpg"/>
+				<ITEM name="BR_290_ATB"			value="BR_290_ATB"			label="BR 290 ATB"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/BRIKK_0334.jpg"/>
+				<ITEM name="BR_490_ATB"			value="BR_490_ATB"			label="BR 490 ATB"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/BRIKK_0334.jpg"/> -->
+				<ITEM name="DI_156_BLM"			value="DI_156_BLM"			label="DI 156 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/DINO_0053.jpg"/>
+				<ITEM name="DI_221_BLM"			value="DI_221_BLM"			label="DI 221 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/DINO_0053.jpg"/>
+				<ITEM name="DI_349_BLM"			value="DI_349_BLM"			label="DI 349 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/DINO_0053.jpg"/>
+				<!-- <ITEM name="CU_200_BLM"			value="CU_200_BLM"			label="CU 200 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_MattBlack.jpg"/>
+				<ITEM name="CU_400_BLM"			value="CU_400_BLM"			label="CU 400 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_MattBlack.jpg"/>
+				<ITEM name="CU_600_BLM"			value="CU_600_BLM"			label="CU 600 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_MattBlack.jpg"/>
+				<ITEM name="CU_200_SST"			value="CU_200_SST"			label="CU 200 SST"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_Stain_Steel.jpg"/>
+				<ITEM name="CU_400_SST"			value="CU_400_SST"			label="CU 400 SST"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_Stain_Steel.jpg"/>
+				<ITEM name="CU_600_SST"			value="CU_600_SST"			label="CU 600 SST"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_Stain_Steel.jpg"/>
+				<ITEM name="VA_100_BLM"			value="VA_100_BLM"			label="VA 100 BLM"		info1="Edge_Handle"		info2="Horizontal"	image1="img/hardware/VANN_0375_Matt_Black.jpg"/>
+				<ITEM name="VA_200_BLM"			value="VA_200_BLM"			label="VA 200 BLM"		info1="Edge_Handle"		info2="Horizontal"	image1="img/hardware/VANN_0375_Matt_Black.jpg"/>
+				<ITEM name="VA_350_BLM"			value="VA_350_BLM"			label="VA 350 BLM"		info1="Edge_Handle"		info2="Horizontal"	image1="img/hardware/VANN_0375_Matt_Black.jpg"/>
+				<ITEM name="VA_100_SST"			value="VA_100_SST"			label="VA 100 SST"		info1="Edge_Handle"		info2="Horizontal"	image1="img/hardware/VANN_0375_Stain_Steel.jpg"/>
+				<ITEM name="VA_200_SST"			value="VA_200_SST"			label="VA 200 SST"		info1="Edge_Handle"		info2="Horizontal"	image1="img/hardware/VANN_0375_Stain_Steel.jpg"/>
+				<ITEM name="VA_350_SST"			value="VA_350_SST"			label="VA 350 SST"		info1="Edge_Handle"		info2="Horizontal"	image1="img/hardware/VANN_0375_Stain_Steel.jpg"/>
+				<ITEM name="DI_156_BLM_V"		value="DI_156_BLM_V"		label="DI 156 BLM"		info1="Surface_Handle_V"		info2="Vertical"	image1="img/hardware/DINO_0053.jpg"/>
+				<ITEM name="DI_221_BLM_V"		value="DI_221_BLM_V"		label="DI 221 BLM"		info1="Surface_Handle_V"		info2="Vertical"	image1="img/hardware/DINO_0053.jpg"/>
+				<ITEM name="DI_349_BLM_V"		value="DI_349_BLM_V"		label="DI 349 BLM"		info1="Surface_Handle_V"		info2="Vertical"	image1="img/hardware/DINO_0053.jpg"/> -->
+				<ITEM name="No_Handle"			value="No_Handle"			label="No Handle"		info1="No_Handle"				info2="No_Handle"	image1="img/hardware/No_Handle.jpg"/>
+			</COMBOBOX>
+				
+		</GROUP>	
+	
+
+	</PART>
+
+	<PART name="PART_KITCHEN_BASE_UNIT_HANDLES_LOGIC">
+
+		<COMMAND>"FIELD(Handle_Selection).Info1List(FIELD(Handle_Type).value)"</COMMAND>
+
+<!-- 
+		<IF>
+			<EQ expr1="FIELD(Handle_Type).value" expr2="Surface_Handle"/>
+				<THEN>
+					<COMMAND>"FIELD(Handle_Selection).Info1List(Surface_Handle)"</COMMAND>
+				</THEN>
+		</IF>
+		
+		<IF>
+			<EQ expr1="FIELD(Handle_Type).value" expr2="Edge_Handle"/>
+				<THEN>
+					<COMMAND>"FIELD(Handle_Selection).Info1List(Edge_Handle)"</COMMAND>
+				</THEN>
+		</IF>
+		
+		<IF>
+			<EQ expr1="FIELD(Handle_Type).value" expr2="Surface_Handle_V"/>
+				<THEN>
+					<COMMAND>"FIELD(Handle_Selection).Info1List(Surface_Handle_V)"</COMMAND>
+				</THEN>
+		</IF> -->
+	
+	</PART>
+
+
+	<PART name="PART_KITCHEN_WALL_UNIT_HANDLES">
+
+		<GROUP name="Group_Kitchen_Handle" valuetype="FRAME" label="Handles" visible="TRUE">	
+		
+			<COMBOBOX name="Handle_Type"	label="Handle Type" 	valuetype="TEXT"	default="Surface_Handle"	visible="TRUE"	active="TRUE">
+				<ITEM name="Surface_Handle"		value="Surface_Handle"		label="Surface Handle Horizontal"/>
+				<ITEM name="Surface_Handle_V"	value="Surface_Handle_V"	label="Surface Handle Vertical"	/>
+				<ITEM name="Edge_Handle"		value="Edge_Handle"			label="Edge Handle"	/>
+				<ITEM name="No_Handle"			value="No_Handle"			label="No Handle"	/>
+				
+			</COMBOBOX>
+			
+			<COMBOBOX name="Handle_Selection"	label="Handle Selection" 	valuetype="IMAGE"  Search="TRUE" 	default="DI_156_BLM"	visible="TRUE"	active="TRUE"	geoInfluencing="TRUE">
+				<!-- <ITEM name="BR_140_ATB"			value="BR_140_ATB"			label="BR 140 ATB"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/BRIKK_0334.jpg"/>
+				<ITEM name="BR_290_ATB"			value="BR_290_ATB"			label="BR 290 ATB"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/BRIKK_0334.jpg"/>
+				<ITEM name="BR_490_ATB"			value="BR_490_ATB"			label="BR 490 ATB"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/BRIKK_0334.jpg"/> -->
+				<ITEM name="DI_156_BLM"			value="DI_156_BLM"			label="DI 156 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/DINO_0053.jpg"/>
+				<ITEM name="DI_221_BLM"			value="DI_221_BLM"			label="DI 221 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/DINO_0053.jpg"/>
+				<ITEM name="DI_349_BLM"			value="DI_349_BLM"			label="DI 349 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/DINO_0053.jpg"/>
+				<!-- <ITEM name="CU_200_BLM"			value="CU_200_BLM"			label="CU 200 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_MattBlack.jpg"/>
+				<ITEM name="CU_400_BLM"			value="CU_400_BLM"			label="CU 400 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_MattBlack.jpg"/>
+				<ITEM name="CU_600_BLM"			value="CU_600_BLM"			label="CU 600 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_MattBlack.jpg"/>
+				<ITEM name="CU_200_SST"			value="CU_200_SST"			label="CU 200 SST"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_Stain_Steel.jpg"/>
+				<ITEM name="CU_400_SST"			value="CU_400_SST"			label="CU 400 SST"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_Stain_Steel.jpg"/>
+				<ITEM name="CU_600_SST"			value="CU_600_SST"			label="CU 600 SST"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_Stain_Steel.jpg"/>
+				<ITEM name="VA_100_BLM"			value="VA_100_BLM"			label="VA 100 BLM"		info1="Edge_Handle"		info2="Horizontal"	image1="img/hardware/VANN_0375_Matt_Black.jpg"/>
+				<ITEM name="VA_200_BLM"			value="VA_200_BLM"			label="VA 200 BLM"		info1="Edge_Handle"		info2="Horizontal"	image1="img/hardware/VANN_0375_Matt_Black.jpg"/>
+				<ITEM name="VA_350_BLM"			value="VA_350_BLM"			label="VA 350 BLM"		info1="Edge_Handle"		info2="Horizontal"	image1="img/hardware/VANN_0375_Matt_Black.jpg"/>
+				<ITEM name="VA_100_SST"			value="VA_100_SST"			label="VA 100 SST"		info1="Edge_Handle"		info2="Horizontal"	image1="img/hardware/VANN_0375_Stain_Steel.jpg"/>
+				<ITEM name="VA_200_SST"			value="VA_200_SST"			label="VA 200 SST"		info1="Edge_Handle"		info2="Horizontal"	image1="img/hardware/VANN_0375_Stain_Steel.jpg"/>
+				<ITEM name="VA_350_SST"			value="VA_350_SST"			label="VA 350 SST"		info1="Edge_Handle"		info2="Horizontal"	image1="img/hardware/VANN_0375_Stain_Steel.jpg"/>
+				<ITEM name="DI_156_BLM_V"		value="DI_156_BLM_V"		label="DI 156 BLM"		info1="Surface_Handle_V"		info2="Vertical"	image1="img/hardware/DINO_0053.jpg"/>
+				<ITEM name="DI_221_BLM_V"		value="DI_221_BLM_V"		label="DI 221 BLM"		info1="Surface_Handle_V"		info2="Vertical"	image1="img/hardware/DINO_0053.jpg"/>
+				<ITEM name="DI_349_BLM_V"		value="DI_349_BLM_V"		label="DI 349 BLM"		info1="Surface_Handle_V"		info2="Vertical"	image1="img/hardware/DINO_0053.jpg"/> -->
+				<ITEM name="No_Handle"			value="No_Handle"				label="No Handle"		info1="No_Handle"				info2="No_Handle"	image1="img/hardware/No_Handle.jpg"/>
+
+			</COMBOBOX>
+				
+		</GROUP>	
+
+	</PART>
+
+	<PART name="PART_KITCHEN_WALL_UNIT_HANDLES_LOGIC">
+
+		<COMMAND>"FIELD(Handle_Selection).Info1List(FIELD(Handle_Type).value)"</COMMAND>
+
+		<!-- <IF>
+			<EQ expr1="FIELD(Handle_Type).value" expr2="Surface_Handle"/>
+				<THEN>
+					<COMMAND>"FIELD(Handle_Selection).Info1List(Surface_Handle)"</COMMAND>
+				</THEN>
+		</IF>
+		
+		<IF>
+			<EQ expr1="FIELD(Handle_Type).value" expr2="Edge_Handle"/>
+				<THEN>
+					<COMMAND>"FIELD(Handle_Selection).Info1List(Edge_Handle)"</COMMAND>
+				</THEN>
+		</IF>
+		
+		<IF>
+			<EQ expr1="FIELD(Handle_Type).value" expr2="Surface_Handle_V"/>
+				<THEN>
+					<COMMAND>"FIELD(Handle_Selection).Info1List(Surface_Handle_V)"</COMMAND>
+				</THEN>
+		</IF> -->
+	
+	</PART>
+
+	<PART name="PART_KITCHEN_GOLA_PROFILES">
+
+		<EDITBOX name="Handle_Selection_1" label="Handle_Selection" active="TRUE" visible="FALSE" locked="FALSE"  default="NO_BOM" />
+		
+		<COMBOBOX name="Gola_Profile_Selection"	label="Gola Profile Color" 	valuetype="IMAGE"	default="Silver"	visible="TRUE"	active="TRUE">
+		
+			<ITEM value="Silver"			label="Silver"		image1="img/hardware/G_Silver.jpg"/>
+			<ITEM value="Graphite"			label="Graphite"	image1="img/hardware/G_Graphite.jpg"/>
+			<ITEM value="Rose_Gold"			label="Rose Gold"	image1="img/hardware/G_Rose_Gold.jpg"/>
+			<ITEM value="Gold"				label="Gold"		image1="img/hardware/G_Gold.jpg"/>
+			<ITEM value="Dark_Bronze"		label="Dark Bronze"	image1="img/hardware/G_Dark_Bronze.jpg"/>
+			<ITEM value="Black"				label="Black"		image1="img/hardware/G_Black.jpg"/>			
+
+		</COMBOBOX>
+		
+	</PART>
+
+
+
+	<PART name="PART_WARDROBE_HANDLES">
+
+		<GROUP name="Wardrobe_Handles" valuetype="FRAME" label="Handles" visible="TRUE">	
+			
+			<COMBOBOX name="Wadrobe_Handle_Selection"	label="Handle Selection" 	valuetype="IMAGE"  Search="TRUE" 	default="C4AH_1088_BA"	visible="TRUE"	active="TRUE"	geoInfluencing="TRUE">
+				<ITEM name="C4AH_1088_BA"			value="C4AH_1088_BA"			label="C4AH 1088 BA"		info1="" 	image1="img/hardware/C4AH_1088_BA.jpg"/>
+				<ITEM name="YAH_1088_AB"			value="YAH_1088_AB"				label="YAH_1088_AB"			info1="" 	image1="img/hardware/YAH_1088_AB.jpg"/>
+			</COMBOBOX>
+				
+		</GROUP>	
+
+	</PART>
+
+
+</XML>

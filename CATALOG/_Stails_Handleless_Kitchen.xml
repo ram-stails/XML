@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<catalog name="Handleless Kitchens">
+	<tooltip file="ToolTip" />
+	<global file="imos_GLOBAL" />
+	<global_change file="imos_GLOBAL_Changes" />
+	
+
+	<category name="Handleless Kitchen" image="img/catalog/.png">
+		
+		<category name="Base Units" image="img/catalog/.png">
+
+			<object model="BU_1DR_G" name="Base Unit 1Door" image="img/catalog/BU_1DR_G.jpg" />
+			<object model="BU_2DR_G" name="Base Unit 2Door" image="img/catalog/BU_2DR_G.jpg" />
+			<object model="BU_BPO_G" name="Bottle Pullout" image="img/catalog/BU_BPO_G.jpg" />
+			<object model="BU_BPO_ACC_G" name="Base Unit BPO Acc" image="img/catalog/BU_BPO_ACC_G.jpg" />
+			<object model="BU_2EDRW_G" name="Base Unit 2 Drawers" image="img/catalog/BU_2EDRW_G.jpg" />
+			<object model="BU_3EDRW_G" name="Base Unit 3 Drawers" image="img/catalog/BU_3EDRW_G.jpg" />
+			<object model="BU_2EDRW_1IDRW_G" name="Base Unit 2 Drawer with 1 Internal Drawer" image="img/catalog/BU_2EDRW_1IDRW_G.jpg" />
+			<object model="BU_1EDRW_2IDRW_G" name="Base Unit 1 Drawer with 2 Internal Drawer" image="img/catalog/BU_1EDRW_2IDRW_G.jpg" />
+			<object model="BU_1EDRW_1IDRW_G" name="Base Unit 1 Drawer with 1 Internal Drawer" image="img/catalog/BU_1EDRW_1IDRW_G.jpg" />
+			<object model="BU_1EDRW_1DR_G" name="Base Unit Single Drawer with 1 Door" image="img/catalog/BU_1EDRW_1DR_G.jpg" />
+			<object model="BU_2EDRW_2DR_G" name="Base Unit 2 Drawer with 2Door" image="img/catalog/BU_2EDRW_2DR_G.jpg" />
+			<object model="BU_HOB_2DR_G" name="Base unit Hob Unit with 2 Doors" image="img/catalog/BU_HOB_2DR_G.jpg" />
+			<object model="BU_HOB_2EDRW_G" name="Base Unit Hob unit with 2 Drawers" image="img/catalog/BU_HOB_2EDRW_G.jpg" />
+			<object model="BU_HOB_3EDRW_G" name="Base Unit Hob unit with 3 Drawers" image="img/catalog/BU_HOB_3EDRW_G.jpg" />
+			<object model="BU_HOB_3EDRW_TDUM_G" name="Base Hob unit with 2 Drawers with Top Dummy" image="img/catalog/BU_HOB_3EDRW_TDUM_G.jpg" />
+			<object model="BU_CU_LCU_G" 			name="Base Unit L Corner" 										image="img/catalog/BU_CU_LCU_G.jpg" />			
+			<object model="BU_CU_LH_STCU_G" 		name="Base Unit Left Straight Corner" 							image="img/catalog/BU_CU_LH_STCU_G.jpg" />
+			<object model="BU_CU_RH_STCU_G" 		name="Base Unit Right Straight Corner" 							image="img/catalog/BU_CU_RH_STCU_G.jpg" />
+			<object model="BU_CYU_LH_STCU_G" 		name="Base Unit Left Straight Corner with Cylinder Provision" 	image="img/catalog/BU_CU_LH_STCU_G.jpg" />
+			<object model="BU_CYU_RH_STCU_G" 		name="Base Unit Right Straight Corner with Cylinder Provision" 	image="img/catalog/BU_CU_RH_STCU_G.jpg" />  
+			<object model="BU_SU_LHCOR_G" 			name="Base Unit Left straight Corner with Sink" 				image="img/catalog/BU_SU_LHCOR_G.jpg" />
+			<object model="BU_SU_RHCOR_G" 			name="Base Unit Right straight Corner with Sink" 				image="img/catalog/BU_SU_RHCOR_G.jpg" />
+			<object model="BU_SU_1DR_G" name="Base unit Sink 1Door" image="img/catalog/BU_SU_1DR_G.jpg" />
+			<object model="BU_SU_2DR_G" name="Base unit Sink 2Door" image="img/catalog/BU_SU_2DR_G.jpg" />
+		
+			
+		</category>
+
+		<category name="Cantiliver Units" image="img/catalog/.png">
+
+			<object model="BU_1DR_CL_G" 		name="Base unit Cantilever 1 Door " 						image="img/catalog/BU_1DR_CL_G.jpg" />
+			<object model="BU_2DR_CL_G" 		name="Base unit Cantilever 2 Door" 						image="img/catalog/BU_2DR_CL_G.jpg" />
+			<object model="BU_1EDRW_CL_G" 		name="Base unit Cantilever 1 Drawer" 			image="img/catalog/BU_1EDRW_CL_G.jpg" />
+			<object model="BU_2EDRW_CL_G" 		name="Base unit Cantilever 2 Drawer" 			image="img/catalog/BU_2EDRW_CL_G.jpg" />
+		
+		</category>
+
+		<category name="Wall Units" image="img/catalog/.png">
+
+			<object model="WU_1DR_G" 				name="Wall Unit 1Door" 					image="img/catalog/WU_1DR_G.jpg" />
+			<object model="WU_2DR_G" 				name="Wall Unit 2Door" 					image="img/catalog/WU_2DR_G.jpg" />
+			<object model="WU_BFLU_G" 				name="Wall Unit Bi Fold" 				image="img/catalog/WU_BFLU_G.jpg" />
+			<object model="WU_LU_G" 				name="Wall Unit Lift Up" 				image="img/catalog/WU_LU_G.jpg" />
+			<!-- <object model="WU_HL_G" 				name="Wall Unit High Lift Up" 						image="img/catalog/WU_HL_G.jpg" /> -->
+			<object model="WU_CU_LCU_G" 			name="Wall unit L-Corner unit" 			image="img/catalog/WU_CU_LCU_G.jpg" />
+			<object model="WU_CU_LH_STCU_G" 		name="Wall Unit Left straight Corner" 	image="img/catalog/WU_CU_LH_STCU_G.jpg" />
+			<object model="WU_CU_RH_STCU_G" 		name="Wall Unit Right straight Corner" 	image="img/catalog/WU_CU_RH_STCU_G.jpg" />
+			<object model="WU_2DR_BH_G" 			name="Wall Unit 2Door Built-In Hood" 	image="img/catalog/WU_2DR_BH_G.jpg" />
+			<object model="WU_1DR_DishDrain_G" 		name="Wall Unit 1Door Dish Drain" 		image="img/catalog/WU_1DR_DishDrain_G.jpg" />
+			<object model="WU_2DR_DishDrain_G" 		name="Wall Unit 2Door Dish Drain" 		image="img/catalog/WU_2DR_DishDrain_G.jpg" />
+
+		</category>
+
+
+
+		<category name="Tall Units" image="img/catalog/.jpg">
+				<object model="TU_1DR_G" name="Tall Unit 1Door" image="img/catalog/TU_1DR_G.jpg" />
+				<object model="TU_1DR_HG" name="Tall Unit Single Door Horizontal Gola" image="img/catalog/TU_1DR_HG.jpg" />
+				<object model="TU_2DR_HG" name="Tall Unit Double Door Horizontal Gola" image="img/catalog/TU_2DR_HG.jpg" />
+				<object model="TU_1DR_Janitor_Closet_P2O" 	name="Tall Unit Janitor Closet P2O" 	image="img/catalog/TU_1DR_Janitor_Closet_P2O.jpg" />
+				<object model="TU_CU_RH_STCU_G" name="Tall Unit Straight Right Corner" image="img/catalog/TU_CU_RH_STCU_G.jpg" />
+				<object model="TU_CU_LH_STCU_G" name="Tall Unit Straight Left Corner" image="img/catalog/TU_CU_LH_STCU_G.jpg" />
+				<object model="TU_CU_RH_ST_G" 		name="Tall Unit Straight Right Corner Without Filler" 					image="img/catalog/TU_CU_RH_ST_G.jpg" />			
+				<object model="TU_CU_LH_ST_G" 		name="Tall Unit Straight Left Corner Without Filler" 					image="img/catalog/TU_CU_LH_ST_G.jpg" />
+				<object model="TU_1DR_ST_G" name="Tall Unit Single Door Space Tower" image="img/catalog/TU_1DR_ST_G.jpg" />
+				<object model="TU_2DR_ST_G" name="Tall Unit Double Door Space Tower" image="img/catalog/TU_2DR_ST_G.jpg" />		
+				<object model="TU_Pantry_G" name="Tall Unit Pantry" image="img/catalog/TU_Pantry_G.jpg" />
+				<object model="TU_APL_REF_G" name="Tall Built-In Refrigerator" image="img/catalog/TU_APL_REF_G.jpg" />
+				<object model="TU_1DR_MW_1DR_G" name="Tall 1Door Microwave 1 Door" image="img/catalog/TU_1DR_MW_1DR_G.jpg" />
+				<object model="TU_1DW_MWO_1DR_G" name="Tall 1 Drawer Microwave Oven 1 Door" image="img/catalog/TU_1DW_MWO_1DR_G.jpg" />
+				<object model="TU_1HU_Oven_1DR_G" name="Tall Housing Unit Oven 1 Door" image="img/catalog/TU_1HU_Oven_1DR_G.jpg" />
+				<object model="TU_AHU_G" 			name="Tall Unit Appliance Housing" 										image="img/catalog/TU_AHU_G.jpg" />	
+
+		</category>
+
+
+	</category>
+
+
+</catalog>

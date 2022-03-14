@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>WD3</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Wall unit Open unit</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<COMBOBOX name="ART_SIZEZW" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" geoInfluencing="TRUE">
+					<ITEM value="300" label="300 mm" info1="330mm" />
+					<ITEM value="375" label="375 mm" info1="330mm" />
+					<ITEM value="400" label="400 mm" info1="330mm" />
+					<ITEM value="450" label="450 mm" info1="330mm" />
+					<ITEM value="500" label="500 mm" info1="330mm" />
+					<ITEM value="600" label="600 mm" info1="350mm" />
+					<ITEM value="750" label="750 mm" info1="350mm" />
+					<ITEM value="800" label="800 mm" info1="350mm" />
+					<ITEM value="900" label="900 mm" info1="350mm" />
+					<ITEM value="1000" label="1000 mm" info1="350mm" />
+					<ITEM value="1200" label="1200 mm" info1="350mm" />
+				</COMBOBOX>
+
+				<EDITBOX name="ART_SIZEXW" label="Width (150mm to 600mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="300" min="150" max="600" geoInfluencing="TRUE" />
+				
+				<EDITBOX name="ART_SIZEYW" label="Depth" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="330" geoInfluencing="TRUE" />
+
+			</GROUP>
+
+			<GROUP name="OpenBox Finsh" label="OpenBox Finsh">
+
+			<COMBOBOX name="OpenBox" label="OpenBox Color" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="Grey_PLPB" geoInfluencing="TRUE">
+				<ITEM value="Grey_PLPB" label="Grey_PLPB"  info1="" info2="" info3="" image1="img/material/.jpg" />
+				<ITEM value="White_PLPB" label="White_PLPB" info1="" info2="" info3="" image1="img/material/.jpg" />
+			</COMBOBOX>
+
+			</GROUP>
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="TRUE">
+
+			<EDITBOX name="COST_Carcass" label="Carcass Price" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXW</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYW</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZW</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="OpenBox" value="OpenBox" />
+			<VAR name="COST_Carcass" value="COST_Carcass" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<IF>
+			<EQ expr1="FIELD(ART_SIZEZW).info1" expr2="330mm" />
+			<THEN>
+				<COMMAND>"FIELD(ART_SIZEYW).value=330"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(ART_SIZEZW).info1" expr2="350mm" />
+					<THEN>
+						<COMMAND>"FIELD(ART_SIZEYW).value=350"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<COMMAND> FIELD(COST_Carcass).value = (CALC((FIELD(ART_SIZEZW).value*FIELD(ART_SIZEXW).value)/92903)*450) </COMMAND>
+		
+	</LOGIC_DEFINITION>
+</XML>

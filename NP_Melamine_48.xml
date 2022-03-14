@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<translate file="2017_1.xlf"/>
+	<ARTICLE>
+		<ART_NAME>NP_Melamine_48</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN/>
+		<ART_INFO_LONG/>
+		<ART_INFO_SHORT>{translate:Niche Panel Melamine|Niche Panel Melamine}</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="Worksurface_Thickness_1" visible="FALSE" nosave="FALSE" locked="FALSE"  default="38" />
+		<EDITBOX name="Adjuster_Height" visible="FALSE" default="150"  geoInfluencing="TRUE" />
+		
+		<PARAFOLDER name="DIMENSION" label="{translate:Dimensions and Carcass option|Dimensions and Carcass option}" active="TRUE" visible="TRUE" image1="" nosave="FALSE">
+
+			<EDITBOX name="ART_SIZEZ" label="{translate:Height (mm):|Height (mm):}" active="TRUE" visible="TRUE" nosave="FALSE"  locked="FALSE" valuetype="NUM" default="481" min="" max=""/>
+			<EDITBOX name="ART_SIZEX" label="{translate:Width (mm):|Width (mm):}" active="TRUE" visible="TRUE" nosave="FALSE"  locked="FALSE" valuetype="NUM" default="2725" min="" max="" />
+			<EDITBOX name="ART_SIZEY" label="{translate:Depth (mm):|Depth (mm):}" active="TRUE" visible="TRUE" nosave="FALSE"  locked="TRUE" valuetype="NUM" default="16" />
+
+		</PARAFOLDER>   
+
+		<PARAFOLDER  name="Material_Option" label="{translate:Material|Material}" active="TRUE" visible="TRUE" image1="" nosave="FALSE" valuetype="IMAGE">
+
+			<COMBOBOX name="Material_Type_NP_Melamine" label="{translate:Material type|Material type}" active="TRUE" visible="TRUE" nosave="FALSE"  locked="FALSE" default="Colors"  geoInfluencing="TRUE">
+				<ITEM value="Metal" label="{translate:Metal colors|Metal colors}" />
+				<ITEM value="Colors" label="{translate:Uni colors|Uni colors}" />
+				<ITEM value="Wood" label="{translate:Wood grain|Wood grain}" />				
+			</COMBOBOX>
+			<COMBOBOX name="Material_Thickness_NP_Melamine" label="{translate:Material thickness|Material thickness}" active="TRUE" visible="TRUE" nosave="FALSE"  locked="FALSE" default="16" geoInfluencing="TRUE">
+				<ITEM value="16" label="{translate:16mm|16mm}" />
+			</COMBOBOX>
+
+			<COMBOBOX name="MAT_NP_Melamine" label="{translate:Select material |Select material}" default="iX_PB16_MEL_White_H" valuetype="IMAGE">
+				<ITEM value="iX_PB16_MEL_White_H" label="White" info1="UNI" image1="img/material/IX_UNI_WHITE_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Apricot_H" label="Apricot" info1="UNI" image1="img/material/iX_UNI_Apricot_H.jpg"/>
+				<ITEM value="X_PB16_MEL_Black_H" label="Black"  info1="UNI" image1="img/material/IX_UNI_BLACK_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Freesia_H" label="Freesia" info1="UNI" image1="img/material/IX_UNI_FREESIA_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Grey_Dark_H" label="Grey Dark" info1="UNI" image1="img/material/IX_UNI_GREYD_G.jpg"/>
+				<ITEM value="iX_PB16_MEL_Grey_Light_H" label="Grey Light" info1="UNI" image1="img/material/IX_UNI_GREYL_G.jpg"/>
+				<ITEM value="iX_PB16_MEL_iRed_H" label="Red" info1="UNI" image1="img/material/IX_UNI_IRED_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Lava_H" label="Lava" info1="UNI" image1="img/material/IX_UNI_LAVA_G.jpg"/>
+				<ITEM value="iX_PB16_MEL_Magnolia_H" label="Magnolia" info1="UNI" image1="img/material/IX_UNI_MAGNOLIA_G.jpg"/>
+				<ITEM value="iX_PB16_MEL_Petrol_H" label="Petrol" info1="UNI" image1="img/material/IX_UNI_PETROL_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Sand_H" label="Sand" info1="UNI" image1="img/material/IX_UNI_SAND_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Scarlet_H" label="Scarlet" info1="UNI" image1="img/material/IX_UNI_SCARLET_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Turquoise_H" label="Turquoise" info1="UNI" image1="img/material/IX_UNI_TURQUOISE_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Beech_H" label="Beech" info1="WOO" image1="img/material/IX_BEECH_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Cherry_H" label="Cherry" info1="WOO" image1="img/material/IX_CHERRY_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Mahogany_H" label="Mahogany" info1="WOO" image1="img/material/IX_MAHOGANY_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Oak_H" label="Oak" info1="WOO" image1="img/material/IX_OAK_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Walnut_H" label="Walnut" info1="WOO" image1="img/material/IX_WALNUT_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Wenge_H" label="Wenge" info1="WOO" image1="img/material/IX_WENGE_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Zebrano_H" label="Zebrano" info1="WOO" image1="img/material/IX_ZEBRANO_H.jpg"/>
+				<ITEM value="iX_PB16_MEL_Aluminium_Brushed" label="Aluminium Brushed" info1="MET" image1="img/material/iX_ALUMINIUM_BRUSHED.jpg"/>
+				<ITEM value="iX_PB16_MEL_Rusty_M" label="Rusty" info1="MET" image1="img/material/IX_RUSTY_M.jpg"/>
+			</COMBOBOX>
+		</PARAFOLDER>   
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEX</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEY</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZ</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="MAT_NP_Melamine"                    value="MAT_NP_Melamine"   />
+			<VAR name="Adjuster_Height"                    value="Adjuster_Height"   />
+			<VAR name="Worksurface_Thickness_1"                    value="Worksurface_Thickness_1"   />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+		<COMMAND>FIELD(Worksurface_Thickness_1).value=38</COMMAND>
+
+		<IF>
+			<EQ expr1="FIELD(Material_Type_NP_Melamine).value" expr2="Metal" />
+			<THEN>
+				<COMMAND>FIELD(MAT_NP_Melamine).Info1List(MET)</COMMAND>
+			</THEN>
+		</IF>
+		<IF>
+			<EQ expr1="FIELD(Material_Type_NP_Melamine).value" expr2="Colors" />
+			<THEN>
+				<COMMAND>FIELD(MAT_NP_Melamine).Info1List(UNI)</COMMAND>
+			</THEN>
+		</IF>
+		<IF>
+			<EQ expr1="FIELD(Material_Type_NP_Melamine).value" expr2="Wood" />
+			<THEN>
+				<COMMAND>FIELD(MAT_NP_Melamine).Info1List(WOO)</COMMAND>
+			</THEN>
+		</IF>
+	</LOGIC_DEFINITION>
+</XML>

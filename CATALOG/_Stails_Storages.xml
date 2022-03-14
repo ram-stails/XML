@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<catalog name="Storage Units">
+	<tooltip file="ToolTip" />
+	<global file="Storage_GLOBAL" />
+	<global_change file="Storage_GLOBAL_Changes" />	
+
+	<category name="Drawers"	show_info="TRUE" image="img/catalog/.png">
+	
+		<object model="Wardrobe_Bottom_Drawers" name="Drawers" image="img/catalog/.jpg" />
+		<!-- <object model="FC_Horizontal_Drawers" name="FC Drawers" image="img/catalog/.jpg" /> -->
+		
+	</category>
+	
+	<category name="Adder Panels" image="img/catalog/Adder_panels.png">
+
+		<object model="Wrd_Filler"		 	name="Side Filler" image="img/catalog/TU_Filler.jpg" />
+		<object model="Wrd_Visible_Side"     name="Visible Side" image="img/catalog/TU_Visible_Side.jpg" />
+		<object model="Wrd_Top_Adder_Panel"  name="Top Adder Panel" image="img/catalog/Wrd_Top_Adder_Panel.jpg" />
+
+	</category>
+
+
+</catalog>

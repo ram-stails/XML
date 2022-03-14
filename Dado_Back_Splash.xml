@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<translate file="2017_1.xlf"/>
+	<ARTICLE>
+		<ART_NAME>Dado_Back_Splash</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN/>
+		<ART_INFO_LONG/>
+		<ART_INFO_SHORT>{translate:Backsplash|Dado Backsplash}</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>		
+
+		<PARAFOLDER name="DIMENSION" label="{translate:Dimensions and Carcass option|Dimensions and Carcass option}" active="TRUE" visible="TRUE" image1="" nosave="FALSE">
+		<COMBOBOX name="Adjuster_Height" label="{translate:Base height adjusters (mm)|Base height adjusters (mm)}" active="TRUE" visible="FALSE"   nosave="FALSE"  locked="FALSE" default="150"  geoInfluencing="TRUE">
+			<ITEM value="50" label="50" />
+			<ITEM value="70" label="70" />
+			<ITEM value="80" label="80" />
+			<ITEM value="100" label="100" />
+			<ITEM value="150" label="150" />
+			<ITEM value="180" label="180" />
+		</COMBOBOX>		
+		
+			<EDITBOX name="ART_SIZEZ" label="{translate:Height (mm):|Height (mm):}" active="TRUE" visible="TRUE" nosave="FALSE"  locked="FALSE" valuetype="NUM" default="800" min="" max=""/>
+			<EDITBOX name="ART_SIZEX" label="{translate:Width ( 426mm - 675mm ):|Width ( 426mm - 675mm ):}" active="TRUE" visible="TRUE" nosave="FALSE"  locked="FALSE" valuetype="NUM" default="3000" min="" max="" />
+			<EDITBOX name="ART_SIZEY" label="{translate:Depth (mm):|Depth (mm):}" active="TRUE" visible="FALSE" nosave="FALSE"  locked="TRUE" valuetype="NUM" default="0.1" />
+
+
+			<COMBOBOX name="Dado_Color" label="Select backsplash material" default="Airy_Concrete_4044" valuetype="IMAGE" Search="true">
+				<ITEM value="Airy_Concrete_4044" label="Airy_Concrete_4044" info1="Caesarstone Material "	image1="img/material/4044.jpg"/>
+				<ITEM value="Alpine_Mist_5110" label="Alpine_Mist_5110" info1="Caesarstone Material "	image1="img/material/5110.jpg"/>
+				<ITEM value="Bianco_Drift_6131" label="Bianco_Drift_6131" info1="Caesarstone Material "	image1="img/material/6131.jpg"/>
+				<ITEM value="Cloud_Burst_Concrete_4011" label="Cloud_Burst_Concrete_4011" info1="Caesarstone Material "	image1="img/material/4011.jpg"/>
+				<ITEM value="Concrete_2003" label="Concrete_2003" info1="Caesarstone Material "	image1="img/material/2003.jpg"/>
+				<ITEM value="Costal_Grey_6003" label="Costal_Grey_6003" info1="Caesarstone Material "	image1="img/material/6003.jpg"/>
+				<ITEM value="Dreamy_Marfil_5220" label="Dreamy_Marfil_5220" info1="Caesarstone Material "	image1="img/material/5220.jpg"/>
+				<ITEM value="Emperadoro_5380" label="Emperadoro_5380" info1="Caesarstone Material "	image1="img/material/5380.jpg"/>
+				<ITEM value="Excava_4046" label="Excava_4046" info1="Caesarstone Material "	image1="img/material/4046.jpg"/>
+				<ITEM value="Frosty_Carrina_5141" label="Frosty_Carrina_5141" info1="Caesarstone Material "	image1="img/material/5141.jpg"/>
+				<ITEM value="Ginger_4330" label="Ginger_4330" info1="Caesarstone Material "	image1="img/material/4330.jpg"/>
+				<ITEM value="Gorgiean_Bluffs_6134" label="Gorgiean_Bluffs_6134" info1="Caesarstone Material "	image1="img/material/6134.jpg"/>
+				<ITEM value="Haze_2030" label="Haze_2030" info1="Caesarstone Material "	image1="img/material/2030.jpg"/>
+				<ITEM value="Ice_Snow_9141" label="Ice_Snow_9141" info1="Caesarstone Material "	image1="img/material/9141.jpg"/>
+				<ITEM value="Linen_2230" label="Linen_2230" info1="Caesarstone Material "	image1="img/material/2230.jpg"/>
+				<ITEM value="London_Grey _5000" label="London_Grey _5000" info1="Caesarstone Material "	image1="img/material/5000.jpg"/>
+				<ITEM value="Mink_4350" label="Mink_4350" info1="Caesarstone Material "	image1="img/material/4350.jpg"/>
+				<ITEM value="Misty_Carrera_4141" label="Misty_Carrera_4141" info1="Caesarstone Material "	image1="img/material/4141.jpg"/>
+				<ITEM value="Mont_Blank_5043" label="Mont_Blank_5043" info1="Caesarstone Material "	image1="img/material/5043.jpg"/>
+				<ITEM value="Morrland_Fogg_6046" label="Morrland_Fogg_6046" info1="Caesarstone Material "	image1="img/material/6046.jpg"/>
+				<ITEM value="Noble_Grey_5211" label="Noble_Grey_5211" info1="Caesarstone Material "	image1="img/material/5211.jpg"/>
+				<ITEM value="Oester_4030" label="Oester_4030" info1="Caesarstone Material "	image1="img/material/4030.jpg"/>
+				<ITEM value="Organic_White_4600" label="Organic_White_4600" info1="Caesarstone Material "	image1="img/material/4600.jpg"/>
+				<ITEM value="Piatra_Grey_5003" label="Piatra_Grey_5003" info1="Caesarstone Material "	image1="img/material/5003.jpg"/>
+				<ITEM value="Raven_4120" label="Raven_4120" info1="Caesarstone Material "	image1="img/material/4120.jpg"/>
+				<ITEM value="Rugged_Concrete_4033" label="Rugged_Concrete_4033" info1="Caesarstone Material "	image1="img/material/4033.jpg"/>
+				<ITEM value="Shitake_4230" label="Shitake_4230" info1="Caesarstone Material "	image1="img/material/4230.jpg"/>
+				<ITEM value="Snow_2141" label="Snow_2141" info1="Caesarstone Material "	image1="img/material/2141.jpg"/>
+				<ITEM value="Statuario_Maximus_5031" label="Statuario_Maximus_5031" info1="Caesarstone Material "	image1="img/material/5031.jpg"/>
+				<ITEM value="Topus_Concrete_4023" label="Topus_Concrete_4023" info1="Caesarstone Material "	image1="img/material/4023.jpg"/>
+				<ITEM value="Turbine_Grey_6313" label="Turbine_Grey_6313" info1="Caesarstone Material "	image1="img/material/6313.jpg"/>
+				<ITEM value="Tuscan_Dawm_5104" label="Tuscan_Dawm_5104" info1="Caesarstone Material "	image1="img/material/5104.jpg"/>
+				<ITEM value="Vanilla_Noir_5100" label="Vanilla_Noir_5100" info1="Caesarstone Material "	image1="img/material/5100.jpg"/>
+				<ITEM value="Walnut_3350" label="Walnut_3350" info1="Caesarstone Material "	image1="img/material/3350.jpg"/>
+				<ITEM value="White_Attica_5143" label="White_Attica_5143" info1="Caesarstone Material "	image1="img/material/5143.jpg"/>
+				<ITEM value="White_shimmer_3142" label="White_shimmer_3142" info1="Caesarstone Material "	image1="img/material/3142.jpg"/>
+				<ITEM value="Wild_Rice_4360" label="Wild_Rice_4360" info1="Caesarstone Material "	image1="img/material/4360.jpg"/>
+			</COMBOBOX>
+		</PARAFOLDER>   
+
+	</DEFINITION>
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEX</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEY</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZ</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="Dado_Color"                    value="Dado_Color"   />
+			<VAR name="Adjuster_Height"               value="Adjuster_Height"   />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+	</LOGIC_DEFINITION>
+</XML>

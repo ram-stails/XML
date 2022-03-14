@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>Mirror_With_BackPanel</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Mirror With Board Back</ART_INFO_SHORT>
+	</ARTICLE>
+
+	<DEFINITION>
+		
+		<PARAFOLDER name="Carcass_Details" label="Mirror Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Mirror Dimensions" label="Mirror Dimensions">
+				<EDITBOX name="ART_SIZEZ" label="Height (300mm t0 2400mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1200" min="300" max="2400"	geoInfluencing="TRUE" />
+				<EDITBOX name="ART_SIZEX" label="Width (300mm t0 1200mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" min="300" max="1200"	geoInfluencing="TRUE" />
+				<EDITBOX name="ART_SIZEY" label="Depth" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="18" />
+			</GROUP>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_FREE_CUBES_MARKUP" />
+		
+		</PARAFOLDER>
+
+	</DEFINITION>
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEX</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEY</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZ</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+		
+			<VAR name="Calculation_Factors" value="FC_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="FC_Mat_Prices" />
+			<VAR name="Mat_Prices" 			value="FC_Prf_Prices" />
+			
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		
+	</LOGIC_DEFINITION>
+</XML>

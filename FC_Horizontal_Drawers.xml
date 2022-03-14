@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<ARTICLE>
+		<ART_NAME>FC_Horizontal_Drawers</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT> Horizonatal Drawers</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<!-- <EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" /> -->
+
+		<PARAFOLDER name="Carcass_Details" label="Cabinet Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions"  Valuetype="MULTIROW"	label="Cabinet Dimensions">
+
+				<TEXT name="Cabinet_Sizes" label="Carcass Dimensions:" 	width="25%"	visible="" format="bold" />
+				
+				<EDITBOX name="ART_SIZEXWDD" label="Width (900mm to 1800mm) :" active="TRUE" width="25%"	visible="TRUE" locked="FALSE" valuetype="NUM" default="600" min="300" max="1200" geoInfluencing="TRUE" />
+
+				<!-- <EDITBOX name="IND_Module_Width" label="Induvidual Wardrobe Width :" active="TRUE" width="0%"	visible="FALSE" locked="FALSE" valuetype="NUM" default="" min="" max="" geoInfluencing="TRUE" />	 -->
+
+                <EDITBOX name="ART_SIZEYWDD" label="Depth (350mm to 580mm) :" active="TRUE" width="25%"	visible="TRUE" locked="FALSE" valuetype="NUM" default="560" min="400" max="700" geoInfluencing="TRUE" />
+			   
+				<EDITBOX name="ART_SIZEZWDD" label="Height (150mm to 300mm) :" active="TRUE" width="25%"	visible="TRUE" locked="FALSE" valuetype="NUM" default="600" min="300" max="600" geoInfluencing="TRUE" />
+	
+            </GROUP>
+
+            
+           
+		</PARAFOLDER>
+		
+
+		<PARAFOLDER name="Front_Details" label="Drawer Fascia Details" active="TRUE" visible="TRUE">
+
+			
+			<GROUP name="Shutter_Details" label="Fascia Details"	visible="TRUE"	>
+
+				<COMBOBOX name="WRD_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="WRD_Front1" label="Front Shade" valuetype="IMAGE" default="" 	Search="TRUE"	visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+		
+
+			<!-- Variable Values -->
+			<EDITBOX name="Mat_Front_1" label="Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Prf_Front_1" label="Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+		
+		</PARAFOLDER>
+
+        <PARAFOLDER name="Internal_Drawer_Finish" label="Drawer Box Finish" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="Include_Wardrobe_Carcass.xml" part="PART_WARDROBE_CARCASS_CONSTRUCTION" />     
+		
+                
+        </PARAFOLDER>
+
+				
+        
+        <PARAFOLDER name="Drawer_QTY" label="Drawer Qty" active="TRUE" visible="TRUE">        
+
+            <COMBOBOX name="No_of_Drawers"   label="No of Drawer"     default="1:1" image1="img/catalog/.PNG"    image2="img/article/"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+				<ITEM name="1:1"   	                label="2 Drawer"		        info1="2_Drawer"      image1="img/hardware/.jpg"		visible="TRUE"/>
+				<ITEM name="1:1:1"   	            label="3 Drawer"		        info1="3_Drawer"      image1="img/hardware/.jpg"		visible="TRUE"/>
+				<ITEM name="1:1:1:1"   	            label="4 Drawer"		        info1="3_Drawer"      image1="img/hardware/.jpg"		visible="TRUE"/>
+			</COMBOBOX>
+				
+			<EDITBOX name="Drawer_Qty" label="Drawer LINDIV" active="TRUE" visible="FALSE" locked="FALSE" valuetype="LINDIV" default="" geoInfluencing="TRUE" />
+	
+	
+		</PARAFOLDER>
+		
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			
+            <COMBOBOX name="Wardrobe_Drawer_Selection"   label="Drawer Details"     default="Ext_Telescopic_SoftClose" image1="img/catalog/.PNG"    image2="img/article/"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+				<ITEM name="Ext_Telescopic_SoftClose"   	label="Telescopic"		   			 info1="No_Lock"   info2="Handle"  info3="Telescopic_Softclose"      image1="img/hardware/Telescopic.jpg"			visible="TRUE"/>
+				<ITEM name="Ext_Quadro_SoftClose"       	label="Quadro"		       			 info1="No_Lock"   info2="Handle"  info3="Quadro" 					 image1="img/hardware/Quadro.jpg"		visible="TRUE"/>
+				
+            </COMBOBOX>
+			
+            
+		</PARAFOLDER>
+
+
+		<PARAFOLDER name="Handle_Details" label="Handle Details" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+			<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES" />	
+			
+		</PARAFOLDER>	
+
+		<PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+
+			<EDITBOX name="Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXWDD</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYWDD</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZWDD</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+
+            <VAR name="DR_Carcass_Mat" value="DR_Carcass_Mat" />
+			<VAR name="DR_Prf_Carcass" value="DR_Prf_Carcass" />			
+			<VAR name="Carcass_Mat" value="Mat_Carcass" />
+			<VAR name="Prf_Carcass" value="Prf_Carcass" />
+			<VAR name="Mat_Front_1" value="Mat_Front_1" />
+			<VAR name="Prf_Front_1" value="Prf_Front_1" />
+			<VAR name="Drawer_Qty" value="Drawer_Qty" />      
+			<VAR name="Wall_Bracket_Type" value="Wall_Bracket_Type" />   
+			<VAR name="Wardrobe_Drawer_Selection" value="Wardrobe_Drawer_Selection" />		
+			<VAR name="Handle_Selection" value="Handle_Selection" />
+			<VAR name="TS_Overlay" value="TS_Overlay" />
+			
+			<!-- Custom module Variables  -->
+            	<VAR name="Calculation_Factors" value="Calculation_Factors" />
+				<VAR name="Prf_Prices" 			value="Prf_Prices" />
+				<VAR name="Mat_Prices" 			value="Mat_Prices" />
+			
+			
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WRD_SHUTTER_1_FINISH_Logic" />
+
+		<COMMAND>"FIELD(Drawer_Qty).Value=(FIELD(No_of_Drawers).value)"</COMMAND>					
+	<COMMAND type="INSERT" file="Include_Wardrobe_Carcass.xml" part="PART_WARDROBE_CARCASS_CONSTRUCTION_LOGIC" />
+
+
+        <IF>
+			<EQ expr1="FIELD(Wardrobe_Drawer_Selection).info2" expr2="Handle" />
+			<THEN>
+				<COMMAND>"FIELD(Handle_Details).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(Handle_Selection).active=TRUE"</COMMAND>				
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Handle_Details).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Handle_Selection).active=FALSE"</COMMAND>			
+			</ELSE>
+		</IF>
+
+		 
+		<!--Handle Filer Logic Start-->
+
+		<COMMAND>"FIELD(Handle_Selection).Info1List(FIELD(Handle_Type).value)"</COMMAND>		
+
+	
+
+		<!--Handle Filer Logic End-->
+
+
+	</LOGIC_DEFINITION>
+</XML>

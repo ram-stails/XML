@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<catalog name="Kitchens Units">
+	<tooltip file="ToolTip" />
+	<global file="imos_GLOBAL" />
+	<global_change file="imos_GLOBAL_Changes" />	
+
+
+	<category name="Loft Cabinets" image="img/catalog/Handle_Kitchen.jpg">
+		<category name="Loft Cabinets with P2O" image="img/catalog/Loft_Unit_P2O.jpg">
+			<object model="LOFT_1DR_P2O" name="Loft Unit 1Door P2O" image="img/catalog/LOFT_1DR_P2O.jpg" />
+			<object model="LOFT_2DR_P2O" name="Loft Unit 2Door P2O" image="img/catalog/LOFT_2DR_P2O.jpg" />
+			<object model="LOFT_CU_LCU_P2O" name="Loft L-Corner P2O unit" image="img/catalog/LOFT_CU_LCU_P2O.jpg" />
+		</category>
+		<category name="Loft Cabinets with Handle" image="img/catalog/Loft_Unit_P2O.jpg">
+			<object model="LOFT_1DR_H" name="Loft Unit 1Door Handle" image="img/catalog/LOFT_1DR_H.jpg" />
+			<object model="LOFT_2DR_H" name="Loft Unit 2Door Handle" image="img/catalog/LOFT_2DR_H.jpg" />
+			<object model="LOFT_CU_LCU_H" name="Loft Unit L-Corner Handle" image="img/catalog/LOFT_CU_LCU_H.jpg" />
+		</category>
+	</category>
+
+	<category name="Glass Cabinets" image="img/catalog/Profile_Glass_Kitchen.jpg">
+
+		<category name="Base Units" image="img/catalog/.jpg">
+			<object model="BU_1DR_GL" name="Base Unit 1Door Glass Shutter" image="img/catalog/BU_1DR_GL.jpg" />
+			<object model="BU_2DR_GL" name="Base Unit 2Door Glass Shutter" image="img/catalog/BU_2DR_GL.jpg" />
+		</category>
+		<category name="Wall Units" image="img/catalog/.jpg">
+			<object model="WU_1DR_GL" name="Wall Unit 1Door Glass Shutter" image="img/catalog/WU_1DR_GL.jpg" />
+			<object model="WU_2DR_GL" name="Wall Unit 2Door Glass Shutter" image="img/catalog/WU_2DR_GL.jpg" />
+			<object model="WU_LC_GL"	 name="Wall Unit L-Corner Glass Shutter" image="img/catalog/WU_LC_GL.jpg" />
+			<object model="WU_BFLU_GL" name="Wall Unit Bi Fold Glass Shutter" image="img/catalog/WU_BFLU_GL.jpg" />
+		</category>
+		<category name="Tall Units" image="img/catalog/.jpg">
+			<object model="TU_1DR_GL" name="Tall Unit 1Door Glass Shutter" image="img/catalog/TU_1DR_GL.jpg" />
+			<object model="TU_2DR_GL" name="Tall Unit 2Door Glass Shutter" image="img/catalog/TU_2DR_GL.jpg" />
+		</category>
+
+	</category>
+
+	<category name="Open Cabinets" image="img/catalog/Open_Units_Kitchen.jpg">
+
+		<category name="Base Units" image="img/catalog/.jpg">
+			<object model="BU_OU" 						name="Base Unit Open Box" 		image="img/catalog/BU_OU.jpg" />			
+			<object model="BU_OU_CL" 					name="Base Unit Cantilevern Open Box" 		image="img/catalog/BU_OU_CL.jpg" />			
+			<object model="BU_Wicker_Basket_Unit" 		name="Base Unit Wicker Basket" 	image="img/catalog/BU_Wicker_Basket_Unit.jpg" />			
+		</category>
+
+		<category name="Dado Units" image="img/catalog/.jpg">				
+			<object model="DU_OU" 		name="Dado Open unit" image="img/catalog/WU_OU_H.jpg" />
+			<object model="DU_OU_Type1" name="Dado Open unit Type 1" image="img/catalog/WU_OU_H.jpg" />
+		</category>
+		
+		<category name="Wall Units" image="img/catalog/.jpg">
+			<object model="WU_OU_H" name="Open Wall unit " image="img/catalog/WU_OU_H.jpg" />
+			<object model="WU_OU_LC" name="Wall L-Corner Open unit" image="img/catalog/WU_OU_LC.jpg" />
+			<object model="WU_OU_WINE_RACK" name="Wall unit Wine Rack" image="img/catalog/WU_OU_WINE_RACK.jpg" />
+			<object model="WU_OU_1D_P2O" name="Wall unit Open unit With P2O Shutter" image="img/catalog/WU_OU_1D_P2O.jpg" />
+		</category>
+
+		<category name="Tall Units" image="img/catalog/.jpg">
+			<object model="TU_OU" name="Open Tall unit" image="img/catalog/TU_OU.jpg" />
+		</category>
+
+		<category name="Cube System" image="img/catalog/.jpg">
+			<object model="BU_STK" name="Stack Modular Base" image="img/catalog/BU_STK.jpg" />
+			<object model="WU_STK" name="Stack Modular Wall" image="img/catalog/WU_STK.jpg" />
+		</category>
+		
+
+	</category>
+
+
+	<category name="Adder Panels" image="img/catalog/Adder_panels.png">
+		
+		<object model="Island_Back_Panel" name="Island Back Panel 18mm" image="img/catalog/Back_Panel_18mm.jpg" />
+		
+		<object model="BU_Filler" name="Base unit Filler" image="img/catalog/BU_Filler.jpg" />
+		<object model="WU_Filler" name="Wall unit Filler" image="img/catalog/WU_Filler.jpg" />
+		<object model="TU_Filler" name="Tall unit Filler" image="img/catalog/TU_Filler.jpg" />
+		<object model="Top_Filler" name="Top Filler" 	image="img/catalog/Top_Filler.jpg" />
+		<object model="BU_Visible_Side" name="Base Visible Side" image="img/catalog/BU_Visible_Side.jpg" />
+		<object model="WU_Visible_Side" name="Wall Visible Side" image="img/catalog/WU_Visible_Side.jpg" />
+		<object model="TU_Visible_Side" name="Tall Visible Side" image="img/catalog/TU_Visible_Side.jpg" />
+		<object model="Vertical_Gola_Double" name="Vertical Gola Double" image="img/catalog/Vertical_Gola_Double.jpg" />
+		<object model="Vertical_Gola_Single_Left" name="Vertical Gola Single Left" image="img/catalog/Vertical_Gola_Single_Left.jpg" />
+		<object model="Vertical_Gola_Single_Right" name="Vertical Gola Single Right" image="img/catalog/Vertical_Gola_Single_Right.jpg" />
+	</category>
+
+	<category name="{translate:Niche Panels and Backsplash|Niche Panels and Backsplash}" image="img/catalog/Backsplash_and_niche_.jpg"	>
+		<object model="Dado_Back_Splash"	name="{translate:Backsplash|Dado Backsplash}"	image="img/catalog/Backsplash.jpg"	/>
+		<object model="Backsplash"			name="{translate:Backsplash|Backsplash}"	image="img/catalog/Backsplash.jpg"	/>
+		<object model="NP_Glass_48"			name="{translate:Niche Panel Glass|Niche Panel Glass}"	image="img/catalog/NP_Glass_48.jpg"	/>
+		<object model="NP_Melamine_48"		name="{translate:Niche Panel Melamine|Niche Panel Melamine}"	image="img/catalog/NP_Melamine_48.jpg"	/>
+	</category>
+
+	<category name="Worktop" image="img/catalog/.jpg" >
+
+		<object model="WrtSurf_Vertical_left_Fr40mm"	name="Worktop Left "					image="img/catalog/.jpg"	/>				
+		<object model="WrtSurf_Vertical_Right_Fr40mm"	name="Worktop Right "					image="img/catalog/.jpg"	/>				
+		<object model="Work_Surface_Fr40mm"				name="Worktop Top"						image="img/catalog/.jpg"	/>
+		
+	</category>
+
+	<category name="Skirting" image="img/catalog/.jpg" >
+		<object model="Base_Skirting_Left"	name="Skirting Left "		image="img/catalog/.jpg"	/>				
+		<object model="Base_Skirting_Right"	name="Skirting Right "		image="img/catalog/.jpg"	/>				
+		<object model="Base_Skirting_Front"	name="Skirting Front"		image="img/catalog/.jpg"	/>
+		<object model="Base_Skirting_Back"	name="Skirting Back"		image="img/catalog/.jpg"	/>		
+	</category>
+
+</catalog>

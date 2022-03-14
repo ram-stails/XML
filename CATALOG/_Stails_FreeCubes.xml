@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<catalog name="Free Cubes">
+	<tooltip file="ToolTip" />
+	<global file="Free Cubes_GLOBAL" />
+	<global_change file="Free Cubes_GLOBAL_Changes" />		
+
+	<category name="Free Cubes" image="img/catalog/.jpg" >
+	
+		<object model="Back_Panel_18mm" 		name="Back Panel 18mm" 					image="img/catalog/Back_Panel_18mm.jpg" />
+		<object model="Open_Box" 				name="Open Box" 						image="img/catalog/Open_Box.jpg" />
+		<object model="Ledge_18mm" 				name="Ledge 18mm" 						image="img/catalog/Ledge_18mm.jpg" />
+		<object model="Ledge_36mm" 				name="Ledge 36mm" 						image="img/catalog/Ledge_36mm.jpg" />
+		<object model="Mirror_With_BackPanel" 	name="Mirror With Board Back" 			image="img/catalog/Mirror_With_BackPanel.jpg" />
+		<object model="WU_STK" 					name="Stack Modular Wall" 				image="img/catalog/WU_STK.jpg" />		
+		<object model="Vertical_Drawers" 		name="Vertical Drawers" 				image="img/catalog/Vertical_Drawers.jpg" />
+		<object model="Vertical_Drawers_Base" 	name="Vertical Drawers With Base" 		image="img/catalog/Vertical_Drawers_Base.jpg" />
+		<object model="Horizontal_Drawers" 		name="Horizontal Drawers" 				image="img/catalog/Horizontal_Drawers.jpg" />
+		<object model="Storage_Unit" 			name="Storage Unit 1Door" 				image="img/catalog/Storage_Unit.jpg" />
+		<object model="Storage_Unit_DD" 		name="Storage Unit 2Door" 				image="img/catalog/Storage_Unit_DD.jpg" />
+		<object model="Storage_Unit_SD_Base" 	name="Storage Unit 1Door With Base" 	image="img/catalog/Storage_Unit_SD_Base.jpg" />
+		<object model="Storage_Unit_DD_Base" 	name="Storage Unit 2Door With Base" 	image="img/catalog/Storage_Unit_DD_Base.jpg" />
+
+	</category>
+	
+
+</catalog>

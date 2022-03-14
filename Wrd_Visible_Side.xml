@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_ARTICLE">
+	<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>Wrd_Visible_Side</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Visible Side</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+				<EDITBOX name="ART_SIZEXWD" label="Width" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="18"  geoInfluencing="TRUE" />
+                
+                <EDITBOX name="ART_Depth_1" label="Depth (400mm to 620mm) :" active="TRUE"  width="25%"	visible="TRUE" locked="FALSE" valuetype="NUM" default="560" min="400" max="620" geoInfluencing="TRUE" />
+
+                <EDITBOX name="ART_SIZEYWD" label="Depth (400mm to 620mm) :" active="TRUE"  width="25%"	visible="FALSE" locked="FALSE" valuetype="NUM" default="560" min="400" max="620" geoInfluencing="TRUE" />
+			   
+			    <EDITBOX name="ART_SIZEZWD" label="Height (150mm to 2400mm) :" active="TRUE"  width="25%"	visible="TRUE" locked="FALSE" valuetype="NUM" default="2100" min="150" max="2400" geoInfluencing="TRUE" />
+
+
+			<GROUP name="Visible_Side" label="Visible Side">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front1" label="Visible Shade" valuetype="IMAGE" default="" Search="TRUE"	visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+    
+                <!-- Variable Values -->
+                <EDITBOX name="Mat_Front_1" label="Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+                <EDITBOX name="Prf_Front_1" label="Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+			</GROUP>
+
+
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_WARDROBE_ADDERPANEL_MARKUP" />	
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXWD</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYWD</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZWD</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="Mat_Front_1" value="Mat_Front_1" />
+			<VAR name="Prf_Front_1" value="Prf_Front_1" />
+			<VAR name="Calculation_Factors" 	value="WAP_Calculation_Factors" />
+			<VAR name="Prf_Prices" 				value="WAP_Prf_Prices" />
+			<VAR name="Mat_Prices" 				value="WAP_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+        <COMMAND>"FIELD(ART_SIZEYWD).value=CALC(FIELD(ART_Depth_1).value+20)"</COMMAND>
+		
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WRD_SHUTTER_1_FINISH_Logic" />
+
+
+
+
+	</LOGIC_DEFINITION>
+</XML>

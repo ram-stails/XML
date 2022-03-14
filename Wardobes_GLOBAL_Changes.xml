@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<ARTICLE>
+		<ART_NAME />
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Wardobes Global Changes</ART_INFO_SHORT>
+	</ARTICLE>
+
+	<DEFINITION>
+        
+        <!-- <PARAFOLDER name="User_Login" label="User" active="TRUE" visible="TRUE">
+
+		    <EDITBOX name="Customer_Name" label="User Id :" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="CFS001_SO" geoInfluencing="TRUE" />
+	    	<EDITBOX name="Password" label="Password :" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="CFS001_SO" geoInfluencing="TRUE" />
+
+        </PARAFOLDER> -->
+
+        <PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<!-- <CHECKBOX name="Wrd_Skirting" label="Skirting Required or Not" default="YES" checked="NO" unchecked="YES" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" /> -->
+
+			<GROUP name="Carcass Dimensions" Valuetype="MULTIROW"	label="Carcass Dimensions">
+				
+				<TEXT name="Cabinet_Sizes" label="Carcass Dimensions:" 	width="25%"	visible="" format="bold" />
+				
+                <EDITBOX name="ART_SIZEYWD" label="Depth (400mm to 580mm) :" active="TRUE" width="37%"	visible="TRUE" locked="FALSE" valuetype="NUM" default="560" min="400" max="580" geoInfluencing="TRUE" />
+			   
+				<!-- <EDITBOX name="ART_SIZEZWD" label="Height (2100mm to 2400mm) :" active="TRUE"	width="37%" visible="TRUE" locked="FALSE" valuetype="NUM" default="2100" min="2100" max="2400" geoInfluencing="TRUE" /> -->
+
+            </GROUP>
+            
+            <GROUP name="Wardrobe_Carcass" label="Carcass Material">
+
+				<COMBOBOX name="Carcass_Core_Material" label="Core Material" valuetype="" default="Brich_Ply" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+
+					<ITEM value="Brich_Ply" label="PlyWood" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+					<ITEM value="PLPB" label="Engineered" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+					
+				</COMBOBOX>
+
+                <COMBOBOX name="Mat_Carcass" label="Carcass Material" valuetype="IMAGE" default="Half_White_PLY" Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE"  image1="img/catalog/.PNG">
+                    
+                    <ITEM value="Half_White_PLY" label="Half White" info1="PlyWood" info2="Brich_Ply" info3="Half_White" image1="img/material/Half_White.jpg" />
+                    <ITEM value="Deep_Grey_PLY" label="Deep Grey" info1="PlyWood" info2="Brich_Ply" info3="Deep_Grey" image1="img/material/Deep_Grey.jpg" />
+                    <ITEM value="Macro_Linen_PLY" label="Macro Linen" info1="PlyWood" info2="Brich_Ply" info3="Macro_Linen" image1="img/material/Macro_Linen.jpg" />
+                    <ITEM value="Micro_Linen_PLY" label="Micro Linen" info1="PlyWood" info2="Brich_Ply" info3="Micro_Linen" image1="img/material/Micro_Linen.jpg" />
+                    <ITEM value="Walnut_Desire_PLY" label="Walnut Desire" info1="PlyWood" info2="Brich_Ply" info3="Walnut_Desire" image1="img/material/Walnut_Desire.jpg" />
+                    <ITEM value="White_Pine_PLY" label="White Pine" info1="PlyWood" info2="Brich_Ply" info3="White_Pine" image1="img/material/White_Pine.jpg" />
+                    <ITEM value="Magma_PLY" label="Magma" info1="PlyWood" info2="Brich_Ply" info3="Magma" image1="img/material/Magma.jpg" />
+					<ITEM value="Grey_Linen_PLY" label="Grey Linen" info1="PlyWood" info2="Brich_Ply" info3="Grey_Linen" image1="img/material/Grey_Linen.jpg" /> 
+					
+					<ITEM value="Frosty_White_PLPB" label="Frosty White" info1="PLPB" info2="PLPB" info3="Frosty_White" image1="img/material/Frosty_White.jpg" />
+					<ITEM value="Gothic_Grey_PLPB" label="Gothic Grey" info1="PLPB" info2="PLPB" info3="Gothic_Grey" image1="img/material/Gothic_Grey.jpg" />
+					<ITEM value="Fab_Chocos_PLPB" label="Fab Chocos" info1="PLPB" info2="PLPB" info3="Fab_Chocos" image1="img/material/Fab_Chocos.jpg" />                    
+                    <ITEM value="Fab_Cream_PLPB" label="Fab Cream" info1="PLPB" info2="PLPB" info3="Fab_Cream" image1="img/material/Fab_Cream.jpg" />
+                  	<ITEM value="CPW_PLPB" label="Classic Planked Walnut" info1="PLPB" info2="PLPB" info3="CPW" image1="img/material/CPW.jpg" />
+                    <ITEM value="Highland_Pine_PLPB" label="Highland Pine" info1="PLPB" info2="PLPB" info3="Highland_Pine" image1="img/material/Highland_Pine.jpg" />
+                    <ITEM value="Slate_Grey_PLPB" label="Slate Grey" info1="PLPB" info2="PLPB" info3="Slate_Grey" image1="img/material/Slate_Grey.jpg" />
+                    <ITEM value="Fab_Grey_PLPB" label="Fab Grey" info1="PLPB" info2="PLPB" info3="Fab_Grey" image1="img/material/Fab_Grey.jpg" /> 
+                 
+				</COMBOBOX>			
+				
+				<COMBOBOX name="Prf_Carcass" label="Edge Band Selection" valuetype="TEXT" default="Half_White_08mm" visible="FALSE" geoInfluencing="TRUE"	active="TRUE" image1="img/catalog/.PNG">
+					                   
+                    <ITEM value="Half_White_08mm" label="Half white" info1="Half_White" image1="img/catalog/Half_White.jpg" />
+                    <ITEM value="Deep_Grey_08mm" label="Deep Grey" info1="Deep_Grey" image1="img/catalog/Deep_Grey.jpg" />
+                    <ITEM value="Macro_Linen_08mm" label="Macro Linen" info1="Macro_Linen" image1="img/catalog/Macro_Linen.jpg" />
+                    <ITEM value="Micro_Linen_08mm" label="Micro Linen" info1="Micro_Linen" image1="img/catalog/Micro_Linen.jpg" />
+                    <ITEM value="Walnut_Desire_08mm" label="Walnut Desire" info1="Walnut_Desire" image1="img/catalog/Walnut_Desire.jpg" />
+                    <ITEM value="White_Pine_08mm" label="White Pine" info1="White_Pine" image1="img/catalog/White_Pine.jpg" />
+                    <ITEM value="Magma_08mm" label="Magma" info1="Magma" image1="img/catalog/Magma.jpg" />
+					<ITEM value="Grey_Linen_08mm" label="Grey Linen" info1="Grey_Linen" image1="img/catalog/Grey_Linen.jpg" />
+					
+					<ITEM value="Frosty_White_08mm" label="Frosty White" info1="Frosty_White" image1="img/catalog/Frosty_White.jpg" />
+                    <ITEM value="Gothic_Grey_08mm" label="Gothic Grey" info1="Gothic_Grey" image1="img/catalog/Gothic_Grey.jpg" />
+                    <ITEM value="Fab_Chocos_08mm" label="Fab Chocos" info1="Fab_Chocos" image1="img/catalog/Fab_Chocos.jpg" />
+                    <ITEM value="Fab_Cream_08mm" label="Fab Cream" info1="Fab_Cream" image1="img/catalog/Fab_Cream.jpg" />
+                    <ITEM value="CPW_08mm" label="Classic Planked " info1="CPW" image1="img/catalog/CPW.jpg" />
+                    <ITEM value="Highland_Pine_08mm" label="Highland Pine" info1="Highland_Pine" image1="img/catalog/Highland_Pine.jpg" />
+                    <ITEM value="Slate_Grey_08mm" label="Slate Grey" info1="Slate_Grey" image1="img/catalog/Slate_Grey.jpg" />
+                    <ITEM value="Fab_Grey_08mm" label="Fab Grey" info1="Fab_Grey" image1="img/catalog/Fab_Grey.jpg" />
+                   
+                </COMBOBOX>
+
+            </GROUP>
+            
+		</PARAFOLDER>
+
+        <PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<TEXT name="Front_Left" label="Left Shutter Details" 	width="25%"	visible="" format="bold" highlight="" />
+
+            <CHECKBOX name="WRD_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+		
+				<COMBOBOX name="WRD_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="WRD_Front1" label="Shutter Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+		
+
+			<PARAFOLDER name="Middle_Shutter_Details" label="Middle Shutter Details">
+
+				<TEXT name="Warning" label="Note:Only applicable for 3 Door Sliding Wardobe" 	width="25%"	visible="" format="bold" highlight="error" />
+
+				<COMBOBOX name="WRD_Shutter_Core_Material_2" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Shutter_Finish_2" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Texture_2" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="WRD_Front2" label="Shutter Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</PARAFOLDER>
+
+            <PARAFOLDER name="Right_Shutter_Details"  	Valuetype=""	label="Right Shutter Details">
+
+                <COMBOBOX name="WRD_Shutter_Core_Material_3" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Shutter_Finish_3" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+                </COMBOBOX>
+        
+                <COMBOBOX name="WRD_Texture_3" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+                </COMBOBOX>
+    
+                <COMBOBOX name="WRD_Front3" label="Shutter Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+                </COMBOBOX>
+            </PARAFOLDER>
+
+			<!-- Variable Values -->
+			<EDITBOX name="Mat_Front_1" label="Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Prf_Front_1" label="Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+			<EDITBOX name="Mat_Front_2" label="Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Prf_Front_2" label="Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+            <EDITBOX name="Mat_Front_3" label="Front3_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+	    	<EDITBOX name="Prf_Front_3" label="Front3_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>	
+
+        <PARAFOLDER name="Sliding_mechanism_Details" label="Sliding Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="Sld_Mechanism"   label="Sliding Mechanism"     default="Topline_22" image1="img/catalog/.PNG"    image2="img/article/"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+				<ITEM name="Slideline_56"   label="Slide Line 56"	   info1="Wide_Profile"     image1="img/hardware/He_Slide_Line56.jpg"	visible="TRUE"/>
+				<ITEM name="Topline_22"     label="Topline 22"		   info1="Wide_Profile"   		image1="img/hardware/He_TopLine22.jpg"		visible="TRUE"/>				
+				<ITEM name="Topline_XL"    	label="TopLine XL"		   info1="Wide_Profile"   		image1="img/hardware/He_TopLineXL.jpg"		visible="TRUE"/>				
+				<ITEM name="GLOW_Plus"      label="GlowPlus"		   info1="Clipper_Profile"  image1="img/hardware/Glowplus_2D.gif"			visible="TRUE"/>	
+				<ITEM name="No_Door"  	    label="No Door"			   info1="No_Door"	    	    image1="img/hardware/No_Door.jpg"			visible="TRUE"/>
+			
+			</COMBOBOX>	
+			
+		</PARAFOLDER>
+
+        <PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+          <!-- <COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_HINGE_SELECTION" /> -->
+
+			<!-- Changing default drawer to Quadro Channel -->
+
+            <COMBOBOX name="Wardrobe_Drawer_Selection"   label="Drawer Type"     default="Quadro_SoftClose" 	image1="img/catalog/.PNG"    image2="img/article/"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+			
+				<ITEM name="Telescopic_Regular"   		label="Telescopic Regular"		   	info1="No_Lock"      image1="img/hardware/Telescopic.jpg"	visible="TRUE"/>
+				<ITEM name="Telescopic_SoftClose"   	label="Telescopic Soft Close"		info1="No_Lock"      image1="img/hardware/Telescopic.jpg"	visible="TRUE"/>
+				<ITEM name="Quadro_SoftClose"       	label="Quadro Soft Close Full Extension"		    info1="No_Lock"      image1="img/hardware/Quadro.jpg"		visible="TRUE"/>
+				<ITEM name="Quadro_SoftClose_Partial"   label="Quadro Soft Close Partial Extension"		    info1="No_Lock"      image1="img/hardware/Quadro.jpg"		visible="TRUE"/>
+				<ITEM name="Movento_Blummotion"       	label="Movento Blummotion"		    info1="Lock"     	 image1="img/hardware/Movento_Blummoution.jpg"		visible="TRUE"/>
+				<ITEM name="Movento_Tipon"       		label="Movento Tipon"		  		info1="No_Lock"      image1="img/hardware/Movento_TipOn.jpg"		visible="TRUE"/>
+				<ITEM name="Movento_Tipon_Blummotion"   label="Movento Tipon Blummotion"	info1="No_Lock"      image1="img/hardware/Movento_TipOn_Blummotion.jpg"		visible="TRUE"/>
+				<!-- <ITEM name="Quadro_SoftClose_With_Lock"       	label="Quadro Soft Close"		      info1="Lock"    	    image1="img/hardware/Quadro.jpg"		visible="TRUE"/>
+				<ITEM name="Telescopic_SoftClose_With_Lock"   		label="Telescopic Soft Close"		  info1="Lock"     		image1="img/hardware/Telescopic.jpg"	visible="TRUE"/> -->
+				
+            </COMBOBOX>
+		
+		</PARAFOLDER>
+
+        <PARAFOLDER name="Handle_Details" label="Handle Details" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+			<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_WARDROBE_HANDLES" />	
+			
+		</PARAFOLDER>
+
+		<!-- <COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_GLOBAL_SLIDING_WARDROBE_MARKUP" />	 -->
+
+		
+
+	</DEFINITION>
+
+	<CONSTRUCTION>
+		<VARIABLES>
+			
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+        <COMMAND>"FIELD(Mat_Carcass).Info2List(FIELD(Carcass_Core_Material).value)"</COMMAND>	
+        <COMMAND>"FIELD(Prf_Carcass).Info1List(FIELD(Mat_Carcass).info3)"</COMMAND>	
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_GLOBAL_WRD_DIFFERENT_SHUTTER_FINISH_LOGIC" />
+
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WRD_SHUTTER_1_FINISH_Logic" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WRD_SHUTTER_2_FINISH_Logic" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WRD_SHUTTER_3_FINISH_Logic" />
+
+
+		<!-- <IF>
+			<OR>
+				<AND>
+					<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_SO" />
+					<EQ expr1="FIELD(Password).value" expr2="CFS001_SO" />
+				</AND>
+				<AND>
+					<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_SM" />
+					<EQ expr1="FIELD(Password).value" expr2="CFS001_SM" />
+				</AND>			
+				<AND>
+					<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_SR" />
+					<EQ expr1="FIELD(Password).value" expr2="CFS001_SR" />
+				</AND>
+				<AND>
+					<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_CC" />
+					<EQ expr1="FIELD(Password).value" expr2="CFS001_CC" />
+				</AND>				
+			</OR>	
+			<THEN>
+				<COMMAND>"FIELD(Password).highlight=success"</COMMAND>				
+			</THEN>	
+			<ELSE>
+				<COMMAND>"FIELD(Password).highlight=error"</COMMAND>
+			</ELSE>
+		</IF>
+
+
+		<IF>
+			<AND>
+				<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_SO" />
+				<EQ expr1="FIELD(Password).value" expr2="CFS001_SO" />
+			</AND>	
+			<AND>
+				<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_SM" />
+				<EQ expr1="FIELD(Password).value" expr2="CFS001_SM" />
+			</AND>
+			<AND>
+				<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_SR" />
+				<EQ expr1="FIELD(Password).value" expr2="CFS001_SR" />
+			</AND>	
+			<THEN>
+				<COMMAND>"FIELD(SL_Calculation_Factors).value=CFS001SL_SP"</COMMAND>				
+				<COMMAND>"FIELD(SW_Calculation_Factors).value=CFS001SW_SP"</COMMAND>				
+				<COMMAND>"FIELD(WAP_Calculation_Factors).value=CFS001WAP_SP"</COMMAND>				
+				<COMMAND>"FIELD(SL_Mat_Prices).value=CFS001SL_SP"</COMMAND>				
+				<COMMAND>"FIELD(SW_Mat_Prices).value=CFS001SW_SP"</COMMAND>				
+				<COMMAND>"FIELD(WAP_Mat_Prices).value=CFS001WAP_SP"</COMMAND>				
+				<COMMAND>"FIELD(SL_Prf_Prices).value=CFS001SL_SP"</COMMAND>
+				<COMMAND>"FIELD(SW_Prf_Prices).value=CFS001SW_SP"</COMMAND>
+				<COMMAND>"FIELD(WAP_Prf_Prices).value=CFS001WAP_SP"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<AND>
+						<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_CC" />
+						<EQ expr1="FIELD(Password).value" expr2="CFS001_CC" />
+					</AND>
+					<THEN>
+						<COMMAND>"FIELD(SL_Calculation_Factors).value=CFS001SL_CP"</COMMAND>				
+						<COMMAND>"FIELD(SW_Calculation_Factors).value=CFS001SW_CP"</COMMAND>				
+						<COMMAND>"FIELD(WAP_Calculation_Factors).value=CFS001WAP_CP"</COMMAND>				
+						<COMMAND>"FIELD(SL_Mat_Prices).value=CFS001SL_CP"</COMMAND>				
+						<COMMAND>"FIELD(SW_Mat_Prices).value=CFS001SW_CP"</COMMAND>				
+						<COMMAND>"FIELD(WAP_Mat_Prices).value=CFS001WAP_CP"</COMMAND>				
+						<COMMAND>"FIELD(SL_Prf_Prices).value=CFS001SL_CP"</COMMAND>
+						<COMMAND>"FIELD(SW_Prf_Prices).value=CFS001SW_CP"</COMMAND>
+						<COMMAND>"FIELD(WAP_Prf_Prices).value=CFS001WAP_CP"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF> -->
+
+	</LOGIC_DEFINITION>
+</XML>

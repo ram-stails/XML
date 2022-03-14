@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<catalog name="Sliding Wardrobes">
+	<tooltip file="ToolTip" />
+	<global file="Wardrobes_GLOBAL" />
+	<global_change file="Wardobes_GLOBAL_Changes" />
+	
+	<category name="Sliding Wardrobes"	show_info="TRUE" image="img/catalog/.png">
+		
+		<object model="Sliding_Wardrobe_2Door" name="Sliding Two Door Wardrobe" image="img/catalog/Sliding_Wardrobe_2Door.jpg" />
+		<object model="Sliding_Wardrobe_3Door" name="Sliding Three Door Wardrobe" image="img/catalog/Sliding_Wardrobe_3Door.jpg" />
+		
+	</category>
+
+	<category name="Floor to Celing Wardrobes"	show_info="TRUE" image="img/catalog/.png">
+
+		<object model="F2C_Sliding"		name="F to C Sliding  " image="img/catalog/.jpg" />									
+	
+	</category>
+
+	
+	<category name="Adder Panels" image="img/catalog/Adder_panels.png">
+
+		<object model="Wrd_Filler"		 	 name="Side Filler" image="img/catalog/Wrd_Filler.jpg" />
+		<object model="Wrd_Top_Filler"		 name="Top Filler" image="img/catalog/Wrd_Top_Filler.jpg" />
+		<object model="Wrd_Visible_Side"     name="Visible Side" image="img/catalog/Wrd_Visible_Side.jpg" />
+		<object model="Wrd_Top_Adder_Panel"  name="Top Adder Panel" image="img/catalog/Wrd_Top_Adder_Panel.jpg" />
+
+	</category>
+
+	<category name="Loft Cabinets" image="img/catalog/.png">
+
+		<object model="Wardrobe_Loft_1DR_H"		name="Loft Single Door" image="img/catalog/Wardrobe_Loft_1DR_H.jpg" />									
+		<object model="Wardrobe_Loft_2DR_H"		name="Loft Double Door" image="img/catalog/Wardrobe_Loft_2DR_H.jpg" />									
+		<object model="Wardrobe_Loft_LCNR"		name="Loft L corner" 	image="img/catalog/Wardrobe_Loft_LCNR.jpg" />									
+
+	</category>
+
+</catalog>
+
+
+
+
+
+
+
+

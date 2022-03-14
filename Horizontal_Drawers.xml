@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>Horizontal_Drawers</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Horizontal Drawers</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+		
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Depth Dimensions" label="Depth Dimensions"	valuetype="MULTIROW">
+
+				<COMBOBOX name="ART_SIZEZ" label="Height" active="TRUE" width="20%"	visible="TRUE" locked="FALSE" valuetype="NUM" default="150" geoInfluencing="TRUE">
+					<ITEM value="150" label="150 mm" />
+					<ITEM value="200" label="200 mm" />
+					<ITEM value="300" label="300 mm" />
+				</COMBOBOX>
+
+				<EDITBOX name="ART_SIZEX" label="Width (300mm to 2400mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1200" min="300" max="2400" geoInfluencing="TRUE" width="20%"/>
+			
+				<COMBOBOX name="ART_SIZEY" label="Depth (350mm , 450mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="350" geoInfluencing="TRUE"	width="20%">
+					<ITEM value="350" label="350 mm" />
+					<ITEM value="450" label="450 mm" />
+				</COMBOBOX>
+
+				<COMBOBOX name="Drawer_Qty" label="Drawer Qty" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1:1" geoInfluencing="TRUE"	width="20%">
+					<ITEM value="1:1" 		label="2 Drawers" />
+					<ITEM value="1:1:1" 	label="3 Drawers" />
+					<ITEM value="1:1:1:1" 	label="4 Drawers" />
+				</COMBOBOX>
+
+				<COMBOBOX name="TS_Overlay" label="Top Panel" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="2" geoInfluencing="TRUE"	width="20%">
+					<ITEM value="2" label="Onset" />
+					<ITEM value="1" label="Inset" />	
+				</COMBOBOX>
+
+			</GROUP>
+			
+		<GROUP name="Material_Group_1" Valuetype="Frame"	label="Carcass Color">	
+
+		<GROUP name="Carcass_Mat_Selction" Valuetype="MULTIROW"	label="">	
+
+				<COMBOBOX name="Core_Material" label="Core Material" Width="33%"	valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="Carcass_Finish" label="Finish" valuetype="" Width="33%"	default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+					
+				<COMBOBOX name="Texture" label="Texture" valuetype="" default="Solid"	Width="33%" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<COMBOBOX name="DR_Carcass" label="Drawer Carcass" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" search="TRUE"	active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+			</COMBOBOX>
+
+			 <TEXT name="Material_Disclimer" label="*Physical Sample color may vary from its digital interpretation" highlight="warning" visible="TRUE" format="" /> 
+			 
+			<EDITBOX name="DR_Carcass_Mat" label="DR_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="DR_Carcass_Prf" label="DR_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+		
+		</GROUP>
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Inner_Drawer_Color" label="Inner Drawer Color" active="TRUE" visible="TRUE">
+
+		<COMMAND type="INSERT" file="Include_Wardrobe_Carcass.xml" part="PART_WARDROBE_CARCASS_CONSTRUCTION" />    
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Fascia_Color" label="Fascia Color" active="TRUE" visible="TRUE">
+		
+			<GROUP name="Material_Group_2" Valuetype="Frame"	label="Fascia Color">	
+			
+			<GROUP name="Carcass_Mat_Selction_1" Valuetype="MULTIROW"	label="">	
+
+					<COMBOBOX name="Fascia_Core_Material" label="Core Material" Width="33%"	valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+					</COMBOBOX>
+			
+					<COMBOBOX name="Fascia_Finish" label="Finish" valuetype="" Width="33%"	default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+					</COMBOBOX>
+						
+					<COMBOBOX name="Fascia_Texture" label="Texture" valuetype="" default="Solid"	Width="33%" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+					</COMBOBOX>
+			</GROUP>
+					<COMBOBOX name="DR_Fascia" label="Drawer Fascia" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" search="TRUE"	active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+					</COMBOBOX>
+
+					<EDITBOX name="DR_Front_Mat" label="DR_Front_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+					<EDITBOX name="DR_Front_Prf" label="DR_Front_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+			</GROUP>
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+				<COMBOBOX name="Drawer_Selection" label="Drawer Selection" valuetype="image" default="Quadro_P2O_Ext"	 visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<ITEM value="Quadro_P2O_Ext" 		label="Quadro P2O"			image1="img/hardware/Quadro_P2O.jpg" />
+					<ITEM value="Quadro_SoftClose_Ext" 	label="Quadro SoftClose"	image1="img/hardware/Quadro.jpg" />
+				</COMBOBOX>
+
+					<COMBOBOX name="Bracket_Type" label="Wall Bracket" valuetype="image" default="Libra_H1"	 visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<ITEM name="Hafele_Hanging_Bracket"		value="Hafele_Hanging_Bracket"		label="Grass Hanging Bracket"			image1="img/hardware/Hafele_Hanging Bracket.jpg"/>			
+					<ITEM name="SAH_130"					value="SAH_130"						label="Hettich SAH 130"					image1="img/hardware/SAH_130.jpg"/>
+					<ITEM name="SAH_216"					value="SAH_216"						label="Hettich SAH 216"					image1="img/hardware/SAH_216.jpg"/>
+					<ITEM name="Libra_H1"					value="Libra_H1"					label="Libra H1"			    		image1="img/hardware/Libra_H1.jpg"/>
+				</COMBOBOX>
+
+		</PARAFOLDER>
+			
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_FREE_CUBES_MARKUP" />
+
+	</DEFINITION>
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEX</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEY</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZ</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+		
+			<VAR name="DR_Carcass_Mat" 		value="DR_Carcass_Mat" />
+			<VAR name="DR_Carcass_Prf" 		value="DR_Carcass_Prf" />
+			<VAR name="DR_Front_Mat" 		value="DR_Front_Mat" />
+			<VAR name="DR_Front_Prf" 		value="DR_Front_Prf" />
+			<VAR name="TS_Overlay" 			value="TS_Overlay" />
+			<VAR name="Mat_Carcass" 		value="Mat_Carcass" />
+			<VAR name="Drawer_Selection" 	value="Drawer_Selection" />
+			<VAR name="Bracket_Type" 		value="Bracket_Type" />
+			<VAR name="Drawer_Qty" 			value="Drawer_Qty" />
+			<VAR name="Calculation_Factors" value="KAP_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KAP_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KAP_Mat_Prices" />
+			<VAR name="Mat_Carcass" 		value="Mat_Carcass" />
+			<VAR name="Prf_Carcass" 		value="Prf_Carcass" />
+			<VAR name="Calculation_Factors" value="FC_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="FC_Mat_Prices" />
+			<VAR name="Mat_Prices" 			value="FC_Prf_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<!-- Carcass Finishes -->
+		<COMMAND>"FIELD(Carcass_Finish).info1List(FIELD(Core_Material).info1)"</COMMAND>
+		<COMMAND>"FIELD(Texture).info1List(FIELD(Carcass_Finish).info2)"</COMMAND> 
+
+		 <COMMAND>"FIELD(DR_Carcass).Info1List(FIELD(Carcass_Finish).value)"</COMMAND>
+		<COMMAND>"FIELD(DR_Carcass).filterInfo2List(FIELD(Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(DR_Carcass).filterInfo3List(FIELD(Texture).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(DR_Carcass_Mat).value=FIELD(DR_Carcass).value+'_'+FIELD(Core_Material).value"</COMMAND>
+		<COMMAND>"FIELD(DR_Carcass_Prf).value=FIELD(DR_Carcass).value+'('+FIELD(DR_Carcass).info5+')'"</COMMAND> 
+
+		<!-- Fascia Finishes Logic -->
+		<COMMAND>"FIELD(Fascia_Finish).info1List(FIELD(Fascia_Core_Material).info1)"</COMMAND>
+		<COMMAND>"FIELD(Fascia_Texture).info1List(FIELD(Fascia_Finish).info2)"</COMMAND> 
+
+		 <COMMAND>"FIELD(DR_Fascia).Info1List(FIELD(Fascia_Finish).value)"</COMMAND>
+		<COMMAND>"FIELD(DR_Fascia).filterInfo2List(FIELD(Fascia_Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(DR_Fascia).filterInfo3List(FIELD(Fascia_Texture).info2)"</COMMAND>
+
+		<COMMAND>"FIELD(DR_Front_Mat).value=FIELD(DR_Fascia).value+'_'+FIELD(Fascia_Core_Material).value"</COMMAND>
+		<COMMAND>"FIELD(DR_Front_Prf).value=FIELD(DR_Fascia).value+'('+FIELD(DR_Fascia).info5+')'"</COMMAND> 
+		
+		<COMMAND type="INSERT" file="Include_Wardrobe_Carcass.xml" part="PART_WARDROBE_CARCASS_CONSTRUCTION_LOGIC" />
+
+	</LOGIC_DEFINITION>
+</XML>

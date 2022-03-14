@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>Ledge_36mm</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Ledge 36mm</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<EDITBOX name="ART_Height" label="Height" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="36" geoInfluencing="TRUE" />
+				<EDITBOX name="ART_Width" label="Width" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1200" geoInfluencing="TRUE" />
+				<EDITBOX name="ART_Depth" label="Depth" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="300" geoInfluencing="TRUE" />
+
+			</GROUP>
+
+			<GROUP name="Ledge_36mm" label="Ledge 36mm">
+
+				<GROUP name="GP_Shutter_Mat_Selction" Valuetype="MULTIROW"	label="">	
+
+				<COMBOBOX name="Ledge_Core_Material" label="Core Material" valuetype="" default="HDHMR" Width="50%"	visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<ITEM value="HDHMR" label="HDHMR"		info1="HDHMR"	 image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+				</COMBOBOX>
+
+				<COMBOBOX name="Ledge_Finish" label="Ledge Finish" valuetype="" default="Matt_SF" Width="50%"	visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<ITEM value="Matt_SF" 				label="Matt SF" 				info1="HDHMR"	info2="Matt_SF"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+					<ITEM value="Synchro" 				label="Synchro" 				info1="HDHMR"	info2="Synchro"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+				</COMBOBOX>
+
+			</GROUP>
+
+				<COMBOBOX name="Ledge_Color" label="Ledge Color" valuetype="IMAGE" default="Ash_Grey" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					
+					<!-- Matt_SF HDHMR SF01-->
+					<ITEM value="SF01" label="SF01-Pumic Grey" 		info1="Matt_SF" info2="HDHMR" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF01.jpg" />
+					<ITEM value="SF02" label="SF02-Pebble Grey"		info1="Matt_SF" info2="HDHMR" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF02.jpg" />
+					<ITEM value="SF03" label="SF03-Misty Grey" 		info1="Matt_SF" info2="HDHMR" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF03.jpg" />
+					<ITEM value="SF04" label="SF04-Autumn Leaf" 	info1="Matt_SF" info2="HDHMR" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF04.jpg" />
+					<ITEM value="SF05" label="SF05-Peanut" 			info1="Matt_SF" info2="HDHMR" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF05.jpg" />
+					<ITEM value="SF06" label="SF06-Cappuccion" 		info1="Matt_SF" info2="HDHMR" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF06.jpg" />
+					<ITEM value="SF07" label="SF07-Brown" 			info1="Matt_SF" info2="HDHMR" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF07.jpg" />
+					<ITEM value="SF08" label="SF08-Chocolate" 		info1="Matt_SF" info2="HDHMR" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF08.jpg" />
+					<ITEM value="SF09" label="SF09-Blush" 			info1="Matt_SF" info2="HDHMR" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF09.jpg" />
+					<ITEM value="SF10" label="SF10-Dark Citrus" 	info1="Matt_SF" info2="HDHMR" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF10.jpg" />
+					<ITEM value="SF11" label="SF11-Shore" 			info1="Matt_SF" info2="HDHMR" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF11.jpg" />
+					<ITEM value="SF12" label="SF12-Midnight Blue" 	info1="Matt_SF" info2="HDHMR" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF12.jpg" />
+					<ITEM value="SF13" label="SF13-Smoothed Leaved ELM" info1="Matt_SF" info2="HDHMR" info3="Wood" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF13.jpg" />
+					<ITEM value="SF14" label="SF14-Natural Ashwood" info1="Matt_SF" info2="HDHMR" info3="Wood" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF14.jpg" />
+					<ITEM value="SF15" label="SF15-Classic Ashwood" info1="Matt_SF" info2="HDHMR" info3="Wood" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF15.jpg" />
+					<ITEM value="SF16" label="SF16-Urban Ashwood" 	info1="Matt_SF" info2="HDHMR" info3="Wood" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF16.jpg" />
+					<ITEM value="SF17" label="SF17-Montana Walnut" 	info1="Matt_SF" info2="HDHMR" info3="Wood" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF17.jpg" />
+					<ITEM value="SF18" label="SF18-Mellow Oak" 		info1="Matt_SF" info2="HDHMR" info3="Wood" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF18.jpg" />
+
+					<!-- Synchro HDHMR SY01-->
+					<ITEM value="SY01" label="SY01-Chamoias Tropical" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY01.jpg" />
+					<ITEM value="SY02" label="SY02-Canadian Walnut" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY02.jpg" />
+					<ITEM value="SY03" label="SY03-Peconic Chestnut" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY03.jpg" />
+					<ITEM value="SY04" label="SY04-Ebony Peat" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY04.jpg" />
+					<ITEM value="SY05" label="SY05-Saddle Brown linosa" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY05.jpg" />
+					<ITEM value="SY06" label="SY06-Cltic Ebony" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY06.jpg" />
+					<ITEM value="SY07" label="SY07-Weser Prado Acacia" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY07.jpg" />
+					<ITEM value="SY08" label="SY08-Fondle Samsara maple" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY08.jpg" />
+					<ITEM value="SY09" label="SY09-Cltic ebony" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY09.jpg" />
+					<ITEM value="SY10" label="SY10-Scandinavian Genesis Oak" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY10.jpg" />
+					<ITEM value="SY11" label="SY11-Crescent holzacacia" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY11.jpg" />
+					<ITEM value="SY12" label="SY12-Russet Tropical" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY12.jpg" />
+					<ITEM value="SY13" label="SY13-Penalas Cottage Pine" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY13.jpg" />
+					<ITEM value="SY14" label="SY14-Cezarous Oak" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY14.jpg" />
+					<ITEM value="SY15" label="SY15-Cleeve Bal Tic ELM" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY15.jpg" />
+					<ITEM value="SY16" label="SY16-Bran Krakato" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY16.jpg" />
+					<ITEM value="SY17" label="SY17-Lavid Krakato" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY17.jpg" />
+					
+				</COMBOBOX>
+
+			</GROUP>
+
+
+		</PARAFOLDER>
+
+			<!-- Variable Values -->
+			<EDITBOX name="ThickLedge_Mat" label="Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="ThickLedge_Prf" label="Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+			<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_FREE_CUBES_MARKUP" />
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_Width</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_Depth</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_Height</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<!-- <VAR name="Ledge_36mm" value="Ledge_36mm" /> -->
+			<VAR name="ThickLedge_Mat" value="ThickLedge_Mat" />
+			<VAR name="ThickLedge_Prf" value="ThickLedge_Prf" />
+			<VAR name="Calculation_Factors" value="FC_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="FC_Mat_Prices" />
+			<VAR name="Mat_Prices" 			value="FC_Prf_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND>"FIELD(Ledge_Color).info2List(FIELD(Ledge_Core_Material).info1)"</COMMAND>
+		<COMMAND>"FIELD(Ledge_Color).filterinfo1List(FIELD(Ledge_Finish).value)"</COMMAND>
+		<COMMAND>"FIELD(ThickLedge_Mat).value=FIELD(Ledge_Color).value+'_'+FIELD(Ledge_Core_Material).value+'_'+'36mm'"</COMMAND>
+		<COMMAND>"FIELD(ThickLedge_Prf).value=FIELD(Ledge_Color).value+'('+FIELD(Ledge_Color).info4+')'"</COMMAND>
+	</LOGIC_DEFINITION>
+</XML>

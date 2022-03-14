@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'imos_basketmng'</description>
+	</meta>
+	<data>
+		<languageKey index="default" type="array">			
+
+			<!-- Article Dimensions -->
+
+			<label index="ART_SIZEX">[b]%s[/b] mm[W] X</label>
+			<label index="ART_SIZEY">[b]%s[/b] mm[D] [br]</label>
+			<label index="ART_SIZEZ">[b]%s[/b] mm[H] X</label>
+
+			<label index="ART_SIZEXB">[b]%s[/b] mm[W] X</label>
+			<label index="ART_SIZEYB">[b]%s[/b] mm[D] [br]</label>
+			<label index="ART_SIZEZB">[b]%s[/b] mm[H] X</label>
+
+			<label index="ART_SIZEXW">[b]%s[/b] mm[W] X</label>
+			<label index="ART_SIZEYW">[b]%s[/b] mm[D] [br]</label>
+			<label index="ART_SIZEZW">[b]%s[/b] mm[H] X</label>
+
+			<label index="ART_SIZEXD">[b]%s[/b] mm[W] X</label>
+			<label index="ART_SIZEYD">[b]%s[/b] mm[D] [br]</label>
+			<label index="ART_SIZEZD">[b]%s[/b] mm[H] X</label>
+
+			<label index="ART_SIZEXT">[b]%s[/b] mm[W] X</label>
+			<label index="ART_SIZEYT">[b]%s[/b] mm[D] [br]</label>
+			<label index="ART_SIZEZT">[b]%s[/b] mm[H] X</label>
+
+			<label index="ART_SIZEXL">[b]%s[/b] mm[W] X</label>
+			<label index="ART_SIZEYL">[b]%s[/b] mm[D] [br]</label>
+			<label index="ART_SIZEZL">[b]%s[/b] mm[H] X</label>
+
+			<label index="ART_SIZEXWD">[b]%s[/b] mm[W] X</label>
+			<label index="ART_SIZEYWD">[b]%s[/b] mm[D] X</label>
+			<label index="ART_SIZEZWD">[b]%s[/b] mm[H] [br]</label>
+
+			<!--START OF HANDLE KITCHEN CABINETS -->
+
+			<!-- BASE CABINETS -->
+			
+			<label index="BU_1DR_H">Base Unit 1Door</label>
+			<label index="BU_2DR_H">Base Unit 2Door</label>
+			<label index="BU_HOB_2DR_H">Base unit Hob Unit with 2 Doors</label>
+			<label index="BU_BPO_H">Base Unit BPO</label>
+			<label index="BU_BPO_ACC_H">Base Unit BPO Acc</label>
+			<label index="BU_2EDRW_H">Base Unit 2 External Drawer</label>
+			<label index="BU_3EDRW_H">Base Unit 3 External Drawer</label>
+			<label index="BU_2EDRW_1IDRW_H">Base Unit 2 External Drawer with 1 Internal Drawer</label>
+			<label index="BU_1EDRW_2IDRW_H">Base Unit 1Drawer with 2Internal Drawer</label>
+			<label index="BU_1EDRW_1IDRW_H">Base Unit 1Drawer with 1Internal Drawer</label>
+			<label index="BU_HOB_2EDRW_H">Base Unit Hob unit with 2 external Draws</label>
+			<label index="BU_HOB_3EDRW_H">Base Unit Hob unit with 3 external Draws</label>
+			<label index="BU_HOB_3EDRW_TDUM_H">Base Hob unit with 2 Drawers with Top Dummy</label>
+			<label index="BU_1EDRW_1DR_H">Base Unit Single Drawer with 1Door</label>
+			<label index="BU_1EDRW_2DR_H">Base Unit Single Drawer with 2Door</label>
+			<label index="BU_2EDRW_2DR_H">Base Unit 2 external Drawer with 2Door</label>
+			<label index="BU_SU_1DR_H">Base unit Sink 1Door</label>
+			<label index="BU_SU_2DR_H">Base unit Sink 2Door</label>
+			<label index="BU_APL_INBLDISHW_H">Base Unit IN-Built Dish washer</label>
+			<label index="BU_APP_SINTDISHW_H">Base Unit Semi-Integrated Dish Washer</label>
+			<label index="BU_BIAPP_REF_H">Base Unit Built in under Counter REF</label>
+			<label index="BU_CU_LCU_H">Base Unit L Corner</label>
+			<label index="BU_SU_LHCOR_H">Base Unit Sink Left straight Corner</label>
+			<label index="BU_SU_RHCOR_H">Base Unit Sink Right straight Corner</label>
+			<label index="BU_CU_LH_STCU_H">Base Unit Straight Left straight Corner</label>
+			<label index="BU_CU_RH_STCU_H">Base Unit Straight Right straight Corner</label>
+			<label index="BU_CYU_LH_STCU_H">Base Unit Straight Left straight Corner with Cylinder Provision</label>
+			<label index="BU_CYU_RH_STCU_H">Base Unit Straight Right straight Corner with Cylinder Provision</label>
+			<label index="BU_OU">Base Unit Open Box</label>
+			<label index="BU_OU_CL">Base Unit Cantilevern Open Box</label>
+			<label index="BU_Wicker_Basket_Unit">Base Unit Wicker Basket</label>
+			<label index="BU_STK">Stack Modular Base</label>
+
+
+			<!-- WALL CABINETS -->
+
+			<label index="DU_OU">Dado Open unit</label>
+			<label index="DU_OU_Type1">Dado Open unit Type 1</label>
+			<label index="WU_OU_H">Wall unit Open unit</label>
+			<label index="WU_OU_LC">Wall L-Corner Open unit</label>
+			<label index="WU_RS">Roller Shutter Open unit</label>
+			<label index="WU_1DR_H">Wall Unit 1Door</label>
+			<label index="WU_2DR_H">Wall Unit 2Door</label>
+			<label index="WU_LU_H">Wall Unit Lift Up</label>
+			<label index="WU_HL_H">Wall Unit High Lift Up</label>
+			<label index="WU_BFLU_H">Wall Unit Bi Fold</label>
+			<label index="WU_CU_LCU_H">Wall unit L-Corner unit</label>
+			<label index="WU_CU_LH_STCU_H">Wall Unit Straight Left straight Corner</label>
+			<label index="WU_CU_RH_STCU_H">Wall Unit Straight Right straight Corner</label>
+			<label index="WU_STK">Stack Modular Wall</label>
+
+
+			<!-- TALL CABINETS -->
+
+			<label index="TU_1DR_H">Tall Unit 1Door</label>
+			<label index="TU_2DR_H">Tall Unit 2Door</label>
+			<label index="TU_1DR_ST_H">Tall Unit Single Door Space Tower</label>
+			<label index="TU_2DR_ST_H">Tall Unit Double Door Space Tower</label>
+			<label index="TU_1DR_MW_1DR_H">Tall 1Door MicroWave 1Door</label>
+			<label index="TU_1DW_MWO_1DR_H">Tall 1Drawer MicroWave Oven 1Door</label>
+			<label index="TU_1HU_Oven_1DR_H">Tall HousingUnit Oven 1Door</label>
+			<label index="TU_Pullout_H">Tall Unit Pullout</label>
+			<label index="TU_Pantry_H">Tall Unit Pantry</label>
+			<label index="TU_APL_REF_H">Tall Built-In Refrigerator</label>
+			<label index="TU_CU_RH_STCU_H">Tall Unit Straight Right Corner</label>
+			<label index="TU_CU_LH_STCU_H">Tall Unit Straight Left Corner</label>
+
+			<!-- END OF HANDLE KITCHEN -->
+
+			<!-- START OF GOLA KITCHEN CABINETS -->
+
+				<!-- BASE CABINETS -->
+
+			<label index="BU_1DR_G">Base Unit 1Door</label>	
+			<label index="BU_2DR_G">Base Unit 2Door</label>	
+			<label index="BU_HOB_2DR_G">Base unit Hob Unit with 2 Doors</label>	
+			<label index="BU_BPO_G">Base Unit BPO</label>	
+			<label index="BU_BPO_ACC_G">Base Unit BPO Acc</label>	
+			<label index="BU_2EDRW_G">Base Unit 2 External Drawer</label>	
+			<label index="BU_3EDRW_G">Base Unit 3 External Drawer</label>	
+			<label index="BU_2EDRW_1IDRW_G">Base Unit 2 External Drawer with 1 Internal Drawer</label>	
+			<label index="BU_1EDRW_2IDRW_G">Base Unit 1Drawer with 2Internal Drawer</label>	
+			<label index="BU_1EDRW_1IDRW_G">Base Unit 1Drawer with 1Internal Drawer</label>	
+			<label index="BU_HOB_2EDRW_G">Base Unit Hob unit with 2 external Draws</label>	
+			<label index="BU_HOB_3EDRW_G">Base Unit Hob unit with 3 external Draws</label>	
+			<label index="BU_HOB_3EDRW_TDUM_G">Base Hob unit with 2 Drawers with Top Dummy</label>	
+			<label index="BU_1EDRW_1DR_G">Base Unit Single Drawer with 1Door</label>	
+			<label index="BU_2EDRW_2DR_G">Base Unit 2 external Drawer with 2Door</label>	
+			<label index="BU_SU_1DR_G">Base unit Sink 1Door</label>	
+			<label index="BU_SU_2DR_G">Base unit Sink 2Door</label>	
+			<label index="BU_CU_LCU_G">Base Unit L Corner</label>	
+			<label index="BU_SU_LHCOR_G">Base Unit Sink Left straight Corner</label>	
+			<label index="BU_SU_RHCOR_G">Base Unit Sink Right straight Corner</label>	
+			<label index="BU_CU_LH_STCU_G">Base Unit Straight Left Corner</label>	
+			<label index="BU_CU_RH_STCU_G">Base Unit Straight Right Corner</label>	
+			<label index="BU_CYU_LH_STCU_G">Base Unit Straight Left Corner with Cylinder Provision</label>	
+			<label index="BU_CYU_RH_STCU_G">Base Unit Straight Right Corner with Cylinder Provision</label>
+
+			<!-- WALL UNIT -->
+
+			<label index="WU_1DR_G">Wall Unit 1Door</label>	
+			<label index="WU_2DR_G">Wall Unit 2Door</label>	
+			<label index="WU_BFLU_G">Wall Unit Bi Fold</label>
+			<label index="WU_LU_G">Wall Unit Lift Up</label>	
+			<label index="WU_HL_G">Wall Unit High Lift Up</label>	
+			<label index="WU_CU_LCU_G">Wall unit L-Corner unit</label>	
+
+			<!-- TALL CABINET -->
+
+			<label index="TU_1DR_G">Tall Unit 1Door</label>	
+			<label index="TU_1DR_HG">Tall Unit Single Door Horizontal Gola</label>	
+			<label index="TU_2DR_HG">Tall Unit Double Door Horizontal Gola</label>	
+			<label index="TU_1DR_Janitor_Closet_P2O">Tall Unit Janitor Closet P2O</label>	
+			<label index="TU_1DR_ST_G">Tall Unit Single Door Space Tower</label>	
+			<label index="TU_2DR_ST_G">Tall Unit Double Door Space Tower</label>	
+			<label index="TU_1DR_MW_1DR_G">Tall 1Door MicroWave 1 Door</label>	
+			<label index="TU_1DW_MWO_1DR_G">Tall 1Drawer MicroWave Oven 1 Door</label>	
+			<label index="TU_1HU_Oven_1DR_G">Tall HousingUnit Oven 1 Door</label>	
+			<label index="TU_Pantry_G">Tall Unit Pantry</label>	
+			<label index="TU_APL_REF_G">Tall Built-In Refrigerator</label>	
+			<label index="TU_CU_RH_STCU_G">Tall Unit Straight Right Corner</label>	
+			<label index="TU_CU_LH_STCU_G">Tall Unit Straight Left Corner</label>
+			
+			<!-- END OF GOLA KITCHEN CABINETS -->
+
+			<!-- LOFT CABINETS -->
+
+			<label index="LOFT_1DR_P2O">Loft Unit 1Door P2O</label>
+			<label index="LOFT_2DR_P2O">Loft Unit 2Door P2O</label>
+			<label index="LOFT_1DR_H">Loft Unit 1Door Handle</label>
+			<label index="LOFT_2DR_H">Loft Unit 2Door Handle</label>
+
+			<!-- START OF PROFILE GLASS KITCHEN -->
+
+			<!-- BASE UNIT -->
+
+			<label index="BU_1DR_GL">Base Unit 1Door Glass Shutter</label>
+			<label index="BU_2DR_GL">Base Unit 2Door Glass Shutter</label>
+
+			<!-- WALL UNITT -->
+			
+			<label index="WU_1DR_GL">Wall Unit 1Door Glass Shutter</label>
+			<label index="WU_2DR_GL">Wall Unit 2Door Glass Shutter</label>
+
+			<!-- TALL UNIT -->
+
+			<label index="TU_1DR_GL">Tall Unit 1Door Glass Shutter</label>
+			<label index="TU_2DR_GL">Tall Unit 2Door Glass Shutter</label>
+
+			<!-- END OF PROFILE GLASS KITCHEN -->
+
+			<!-- KITCHEN ADDER PANELS -->
+
+			<label index="Back_Panel_18mm">Back Panel 18mm</label>
+			<label index="Ledge_18mm">Ledge 18mm</label>
+			<label index="Ledge_36mm">Ledge 36mm</label>
+			<label index="BU_Filler">Base unit Filler</label>
+			<label index="WU_Filler">Wall unit Filler</label>
+			<label index="TU_Filler">Tall unit Filler</label>
+			<label index="BU_Visible_Side">Base Visible Side</label>
+			<label index="WU_Visible_Side">Wall Visible Side</label>
+			<label index="TU_Visible_Side">Tall Visible Side</label>
+			<label index="Vertical_Gola_Double">Vertical Gola Double</label>
+			<label index="Vertical_Gola_Single_Left">Vertical Gola Single Left</label>
+			<label index="Vertical_Gola_Single_Right">Vertical Gola Single Right</label>
+			
+			<!-- WARDROBES -->
+
+			<label index="Hinged_Wardrobe_SD">Single Door Swing Wardrobe</label>
+			<label index="Hinged_Wardrobe_DD">Double Door Swing Wardrobe</label>
+			<label index="Hinged_Wardrobe_LCorner">L Corner Swing Wardrobe</label>
+
+
+			<label index="Sliding_Wardrobe_2Door">2 Door Sliding Wardrobe</label>
+			<label index="Sliding_Wardrobe_3Door">3 Door Sliding Wardrobe</label>
+			<label index="F2C_Sliding">Floor to celing wardrobe</label>
+
+			<!-- ADDER PANELS -->
+			<label index="Wrd_Filler">Filler</label>
+			<label index="Wrd_Top_Filler">Top Filler</label>
+			<label index="Wrd_Visible_Side">Adder panel</label>
+			<label index="Wrd_Top_Adder_Panel">Top Adder panel</label>
+
+			<!-- LOFT -->
+			<label index="Wardrobe_Loft_1DR_H">Single Door Loft</label>
+			<label index="Wardrobe_Loft_2DR_H">Double Door Loft</label>
+			<label index="Wardrobe_Loft_LCNR">L Corner Loft</label>
+
+			<!-- HARDWARE -->
+
+			<!-- skirting details -->
+			<label index="Base_Skirting">Skirting</label>			
+			<label index="Leg_Height">Skirting Height:%s[br]</label>		
+			<label index="Skirting_Color">Skirting Finish:%s[br]</label>
+			<label index="Skirting_Color.Silver_Grey">Silver Grey</label>
+			<label index="Skirting_Color.Black">Black</label>
+			<label index="Skirting_Color.Dark_Bronze">Dark Bronze</label>
+			<label index="Skirting_Color.Gold">Gold</label>
+			<label index="Skirting_Color.Graphite">Graphite</label>
+			<label index="Skirting_Color.Rose_Gold">Rose Gold</label>
+			<label index="Skirting_Color.Silver">Silver</label>
+			<label index="Skirting_Color.Type">DO_NOT_DISPLAY</label>
+
+
+			<!-- HINGES	 -->
+			<label index="Hinge_Type">Hinge:%s[br]</label>
+			<label index="Hinge_Type.No_Hinge">DO_NOT_DISPLAY</label>
+			<label index="Hinge_Type.BLUM_SoftClose">BLUM SoftClose</label>
+			<label index="Hinge_Type.Hettich_SoftClose">Hettich Softclose</label>
+			<label index="Hinge_Type.Hettich_Regular">Hettich Regular</label>
+			<label index="Hinge_Type.Hettich_Regular_Damper">Hettich Regular with Damper</label>
+			<label index="Hinge_Type.Hettich_SoftClose_165D">Hettich 165D</label>
+			<label index="Hinge_Type.BLUM_SoftClose_155D">BLUM 155D</label>
+			<label index="Hinge_Type_WideAngle">Hinge:%s[br]</label>
+			<label index="Hinge_Type_WideAngle.Hettich_SoftClose_165D">Hettich 165D</label>
+
+			<!-- DRAWERS -->
+			<label index="Drawer_Type">Drawer:%s[br]</label>
+			<label index="Drawer_Type.Atira">Atira</label>
+			<label index="Drawer_Type.LegraBox_Free">LegraBox Free</label>
+			<label index="Drawer_Type.LegraBox_Pure">LegraBox Pure</label>
+			<label index="Drawer_Type.TandemBox_Antaro">TandemBox Antaro</label>
+			<label index="Drawer_Type.TandemBox_Intivo">TandemBox Intivo</label>
+
+			<!-- color -->
+			<label index="Drawer_Colour">Drawer color:%s[br]</label>
+			<label index="Drawer_Colour.Antracite">Antracite</label>
+			<label index="Drawer_Colour.Silver">Silver</label>
+			<label index="Drawer_Colour.OrionGrey">Orion Grey</label>
+			<label index="Drawer_Colour.Stainless_Steel">Stainless Steel</label>
+			<label index="Drawer_Colour.Silk_White">Silk White</label>
+			<label index="Drawer_Colour.Terra_Black">Terra Black</label>
+			<label index="Drawer_Colour.Grey">Grey</label>
+
+			<!-- Regular_Drawer_Acc_1 -->
+			<label index="Regular_Drawer_Acc_1">Regular Drawer 1 Acc:%s[br]</label>
+			<label index="Regular_Drawer_Acc_1.NO_BOM">No Accessory</label>
+			<label index="Regular_Drawer_Acc_1.OL_TB_Uten_div_500_03866940">Utensil Divider 450mm</label>
+			<label index="Regular_Drawer_Acc_1.OL_TB_Uten_div_500_06702440">Utensil Divider 600mm</label>
+			<label index="Regular_Drawer_Acc_1.OL_TB_Uten_div_500_CW_900mm">Utensil Divider 900mm</label>
+			<label index="Regular_Drawer_Acc_1.OL_TB_Uten_div_500_CW_1200mm">Utensil Divider 1200mm</label>
+
+			<label index="Regular_Drawer_Acc_1.LBX_AMBIA_cutl_450_W300_OGM">Utensil Divider Orion Grey</label>
+			<label index="Regular_Drawer_Acc_1.LBX_AMBIA_cutl_450_W300_SW">Utensil Divider Silk White</label>
+			<label index="Regular_Drawer_Acc_1.LBX_AMBIA_cutl_450_W300_TBM">Utensil Divider Terra Black Matt</label>
+
+			<label index="Regular_Drawer_Acc_1.Cusion_Cutlery_Graphite_450mm">Cusion Cutlery Graphite 450mm</label>
+			<label index="Regular_Drawer_Acc_1.Cusion_Cutlery_Graphite_600mm">Cusion Cutlery Graphite 600mm</label>
+			<label index="Regular_Drawer_Acc_1.Cusion_Cutlery_Graphite_900mm">Cusion Cutlery Graphite 900mm</label>
+			<label index="Regular_Drawer_Acc_1.Cusion_Cutlery_White_T_450mm">Cusion Cutlery White Translucent 450mm</label>
+			<label index="Regular_Drawer_Acc_1.Cusion_Cutlery_White_T_600mm">Cusion Cutlery White Translucent 600mm</label>
+			<label index="Regular_Drawer_Acc_1.Cusion_Cutlery_White_T_900mm">Cusion Cutlery White Translucent 900mm</label>
+
+			<!-- Regular_Drawer_Acc_2 -->
+			<label index="Regular_Drawer_Acc_2">Regular Drawer 2 Acc:%s[br]</label>
+			<label index="Regular_Drawer_Acc_2.NO_BOM">No Accessory</label>
+			<label index="Regular_Drawer_Acc_2.OL_TB_Uten_div_500_03866940">Utensil Divider 450mm</label>
+			<label index="Regular_Drawer_Acc_2.OL_TB_Uten_div_500_06702440">Utensil Divider 600mm</label>
+			<label index="Regular_Drawer_Acc_2.OL_TB_Uten_div_500_CW_900mm">Utensil Divider 900mm</label>
+			<label index="Regular_Drawer_Acc_2.OL_TB_Uten_div_500_CW_1200mm">Utensil Divider 1200mm</label>
+
+			<label index="Regular_Drawer_Acc_2.LBX_AMBIA_cutl_450_W300_OGM">Utensil Divider Orion Grey</label>
+			<label index="Regular_Drawer_Acc_2.LBX_AMBIA_cutl_450_W300_SW">Utensil Divider Silk White</label>
+			<label index="Regular_Drawer_Acc_2.LBX_AMBIA_cutl_450_W300_TBM">Utensil Divider Terra Black Matt</label>
+
+			<label index="Regular_Drawer_Acc_2.Cusion_Cutlery_Graphite_450mm">Cusion Cutlery Graphite 450mm</label>
+			<label index="Regular_Drawer_Acc_2.Cusion_Cutlery_Graphite_600mm">Cusion Cutlery Graphite 600mm</label>
+			<label index="Regular_Drawer_Acc_2.Cusion_Cutlery_Graphite_900mm">Cusion Cutlery Graphite 900mm</label>
+			<label index="Regular_Drawer_Acc_2.Cusion_Cutlery_White_T_450mm">Cusion Cutlery White Translucent 450mm</label>
+			<label index="Regular_Drawer_Acc_2.Cusion_Cutlery_White_T_600mm">Cusion Cutlery White Translucent 600mm</label>
+			<label index="Regular_Drawer_Acc_2.Cusion_Cutlery_White_T_900mm">Cusion Cutlery White Translucent 900mm</label>
+
+			<!-- Opening Direction -->
+			<label index="Hinge_Open">Opening Direction:%s[br]</label>
+			<label index="Hinge_Open.Left_Hinge">LHS</label>
+			<label index="Hinge_Open.Right_Hinge">RHS</label>
+
+			<!-- Drawer Qty-->
+			<label index="Drawer_Qty">Drawer Qty:%s[br]</label>
+			<label index="Drawer_Qty.1">1 No</label>
+			<label index="Drawer_Qty.1:2mm:1">2 No's</label>
+			<label index="Drawer_Qty.1:2mm:1:2mm:1">3 No's</label>
+			<label index="Drawer_Qty.1:2mm:1:2mm:1:2mm:1">4 No's</label>
+
+			<!-- Drawer Carcass Color-->
+			<label index="Core_Material">Carcass Core Material:%s[br]</label>
+			<label index="Core_Material.HDHMR">HDHMR</label>
+			<label index="Core_Material.MDF">MDF</label>
+
+			<!-- visible sides -->
+			<label index="LeftSide_Visible_Panel">visible side Left:%s[br]</label>
+			<label index="LeftSide_Visible_Panel.YES">Yes</label>
+			<label index="LeftSide_Visible_Panel.NO">DO_NOT_DISPLAY</label>
+
+			<label index="RightSide_Visible_Panel">visible side Right:%s[br]</label>
+			<label index="RightSide_Visible_Panel.YES">Yes</label>
+			<label index="RightSide_Visible_Panel.NO">DO_NOT_DISPLAY</label>
+
+			<!-- Wardrobe Carcass Material -->
+			<label index="Carcass_Core_Material">Core Material:%s[br]</label>
+			<label index="Carcass_Core_Material.PlyWood">PlyWood</label>
+			<label index="Carcass_Core_Material.Engineered_wood">Engineered Wood</label>
+
+			<label index="Material_Type">Material Grade:%s[br]</label>
+			<label index="Material_Type.BWR">BWR Ply</label>
+			<label index="Material_Type.BWP">BWP Ply</label>
+			<label index="Material_Type.BWP_Green">Green Ply</label>
+			<label index="Material_Type.BWP_Imported">BWP PlyWood</label>
+			<label index="Material_Type.BirchPly">Birch PlyWood</label>
+			<label index="Material_Type.PLPB">Eco Green Board</label>
+
+			<label index="Mat_Carcass">Carcass Colour:%s[br]</label>
+			<label index="Mat_Carcass.FW_BWR">Frosty White</label>
+			<label index="Mat_Carcass.FW_BWP">Frosty White</label>
+			<label index="Mat_Carcass.FW_BWP_Green">Frosty White</label>
+			<label index="Mat_Carcass.FW_BWR_Imported">Frosty White</label>
+			<label index="Mat_Carcass.FW_Birch_PLY">Frosty White</label>
+			<label index="Mat_Carcass.FW_PLPB">Frosty White</label>
+			<label index="Mat_Carcass.LC_BWR">Linen Cream</label>
+			<label index="Mat_Carcass.LC_BWP">Linen Cream</label>
+			<label index="Mat_Carcass.LC_BWP_Green">Linen Cream</label>
+			<label index="Mat_Carcass.LC_BWR_Imported">Linen Cream</label>
+			<label index="Mat_Carcass.LC_Birch_PLY">Linen Cream</label>
+			<label index="Mat_Carcass.LC_PLPB">Linen Cream</label>
+			<label index="Mat_Carcass.LG_BWR">Linen Grey</label>
+			<label index="Mat_Carcass.LG_BWP">Linen Grey</label>
+			<label index="Mat_Carcass.LG_BWP_Green">Linen Grey</label>
+			<label index="Mat_Carcass.LG_BWR_Imported">Linen Grey</label>
+			<label index="Mat_Carcass.LG_Birch_PLY">Linen Grey</label>
+			<label index="Mat_Carcass.LG_PLPB">Linen Grey</label>
+			<label index="Mat_Carcass.LM_BWR">Linen Metalic</label>
+			<label index="Mat_Carcass.LM_BWP">Linen Metalic</label>
+			<label index="Mat_Carcass.LM_BWP_Green">Linen Metalic</label>
+			<label index="Mat_Carcass.LM_BWR_Imported">Linen Metalic</label>
+			<label index="Mat_Carcass.LM_Birch_PLY">Linen Metalic</label>
+			<label index="Mat_Carcass.LM_PLPB">Linen Metalic</label>
+			<label index="Mat_Carcass.CW_BWR">Classic Walnut</label>
+			<label index="Mat_Carcass.CW_BWP">Classic Walnut</label>
+			<label index="Mat_Carcass.CW_BWP_Green">Classic Walnut</label>
+			<label index="Mat_Carcass.CW_BWR_Imported">Classic Walnut</label>
+			<label index="Mat_Carcass.CW_Birch_PLY">Classic Walnut</label>
+			<label index="Mat_Carcass.CW_PLPB">Classic Walnut</label>
+
+			<!--BASE UNIT Carcass FINISH -->
+
+			<label index="BU_Core_Material">Core Material:%s[br]</label>
+			<label index="BU_Core_Material.PlyWood">PlyWood</label>
+			<label index="BU_Core_Material.Engineered_wood">Engineered Wood</label>
+
+
+			<label index="BU_Material_Grade">Material Grade:%s[br]</label>
+			<label index="BU_Material_Grade.BWR">BWR Ply</label>
+			<label index="BU_Material_Grade.BWP">BWP Ply</label>
+			<label index="BU_Material_Grade.BWP_Green">BWP Green Ply</label>
+			<label index="BU_Material_Grade.Marine_Green">Marine Green Ply</label>
+			<label index="BU_Material_Grade.BirchPly">Birch PlyWood</label>
+			<label index="BU_Material_Grade.PLPB">Eco Green Board</label>
+
+			
+			<label index="BU_Carcass">Carcass Colour:%s[br]</label>
+			<label index="BU_Carcass.FW_BWR">Frosty White</label>
+			<label index="BU_Carcass.FW_BWP">Frosty White</label>
+			<label index="BU_Carcass.FW_BWP_Green">Frosty White</label>
+			<label index="BU_Carcass.FW_Marine_Green">Frosty White</label>
+			<label index="BU_Carcass.FW_Birch_PLY">Frosty White</label>
+			<label index="BU_Carcass.FW_PLPB">Frosty White</label>
+			<label index="BU_Carcass.Anthracite_BWR">Anthracite</label>
+			<label index="BU_Carcass.Anthracite_BWP">Anthracite</label>
+			<label index="BU_Carcass.Anthracite_BWP_Green">Anthracite</label>
+			<label index="BU_Carcass.Anthracite_Marine_Green">Anthracite</label>
+			<label index="BU_Carcass.Anthracite_Birch_PLY">Anthracite</label>
+			<label index="BU_Carcass.Anthracite_PLPB">Anthracite</label>
+			
+
+			
+			<!-- WALL UNIT Carcass FINISH -->
+
+
+			<label index="WU_Core_Material">Core Material:%s[br]</label>
+			<label index="WU_Core_Material.PlyWood">PlyWood</label>
+			<label index="WU_Core_Material.Engineered_wood">Engineered Wood</label>
+
+			<label index="WU_Material_Grade">Material Grade:%s[br]</label>
+			<label index="WU_Material_Grade.BWR">BWR Ply</label>
+			<label index="WU_Material_Grade.BWP">BWP Ply</label>
+			<label index="WU_Material_Grade.BWP_Green">BWP Green Ply</label>
+			<label index="WU_Material_Grade.Marine_Green">Marine Green Ply</label>
+			<label index="WU_Material_Grade.BirchPly">Birch PlyWood</label>
+			<label index="WU_Material_Grade.PLPB">Eco Green Board</label>
+
+			<label index="WU_Carcass">Carcass Colour:%s[br]</label>
+			<label index="WU_Carcass.FW_BWR">Frosty White</label>
+			<label index="WU_Carcass.FW_BWP">Frosty White</label>
+			<label index="WU_Carcass.FW_BWP_Green">Frosty White</label>
+			<label index="WU_Carcass.FW_Marine_Green">Frosty White</label>
+			<label index="WU_Carcass.FW_Birch_PLY">Frosty White</label>
+			<label index="WU_Carcass.FW_PLPB">Frosty White</label>
+			<label index="WU_Carcass.Anthracite_BWR">Anthracite</label>
+			<label index="WU_Carcass.Anthracite_BWP">Anthracite</label>
+			<label index="WU_Carcass.Anthracite_BWP_Green">Anthracite</label>
+			<label index="WU_Carcass.Anthracite_Marine_Green">Anthracite</label>
+			<label index="WU_Carcass.Anthracite_Birch_PLY">Anthracite</label>
+			<label index="WU_Carcass.Anthracite_PLPB">Anthracite</label>
+			<!-- TALL UNIT Carcass FINISH -->
+
+			<label index="TU_Core_Material">Core Material:%s[br]</label>
+			<label index="TU_Core_Material.PlyWood">PlyWood</label>
+			<label index="TU_Core_Material.Engineered_wood">Engineered Wood</label>
+
+			<label index="TU_Material_Grade">Material Grade:%s[br]</label>
+			<label index="TU_Material_Grade.BWR">BWR Ply</label>
+			<label index="TU_Material_Grade.BWP">BWP Ply</label>
+			<label index="TU_Material_Grade.BWP_Green">BWP Green Ply</label>
+			<label index="TU_Material_Grade.Marine_Green">Marine Green Ply</label>
+			<label index="TU_Material_Grade.BirchPly">Birch PlyWood</label>
+			<label index="TU_Material_Grade.PLPB">Eco Green Board</label>
+
+			<label index="TU_Carcass">Carcass Colour:%s[br]</label>
+			<label index="TU_Carcass.FW_BWR">Frosty White</label>
+			<label index="TU_Carcass.FW_BWP">Frosty White</label>
+			<label index="TU_Carcass.FW_BWP_Green">Frosty White</label>
+			<label index="TU_Carcass.FW_Marine_Green">Frosty White</label>
+			<label index="TU_Carcass.FW_Birch_PLY">Frosty White</label>
+			<label index="TU_Carcass.FW_PLPB">Frosty White</label>
+			<label index="TU_Carcass.Anthracite_BWP">Anthracite</label>
+			<label index="TU_Carcass.Anthracite_BWP_Green">Anthracite</label>
+			<label index="TU_Carcass.Anthracite_Marine_Green">Anthracite</label>
+			<label index="TU_Carcass.Anthracite_Birch_PLY">Anthracite</label>
+			<label index="TU_Carcass.Anthracite_PLPB">Anthracite</label>
+
+
+			<!-- BASE UNIT SHUTTER FINISH -->
+
+			<!-- <label index="BU_Shutter_Core_Material">Core Material:%s[br]</label>
+			<label index="BU_Shutter_Finish">Shutter Finish:%s[br]</label> -->
+			<label index="BU_Front1">Shutter Shade:%s[br]</label>
+			<label index="BU_Front2">Shutter Shade 1:%s[br]</label>
+
+			
+
+			<!-- WALL UNIT SHUTTER FINISH -->
+
+			<!-- <label index="WU_Shutter_Core_Material">Core Material:%s[br]</label>
+			<label index="WU_Shutter_Finish">Shutter Finish:%s[br]</label> -->
+			<label index="WU_Front1">Shutter Shade:%s[br]</label>
+			<label index="WU_Front2">Shutter Shade 1:%s[br]</label>
+
+			<!-- TALL UNIT SHUTTER FINISH -->
+
+			<!-- <label index="TU_Shutter_Core_Material">Core Material:%s[br]</label>
+			<label index="TU_Shutter_Finish">Shutter Finish:%s[br]</label> -->
+			<label index="TU_Front1">Shutter Shade:%s[br]</label>
+			<label index="TU_Front2">Shutter Shade 1:%s[br]</label>
+
+			<!-- OPEN BOX SHUTTER FINISH -->
+
+			<!-- <label index="OB_Core_Material">Open Box Core Material:%s[br]</label>
+			<label index="OB_Finish">Open Box Finish:%s[br]</label> -->
+			<label index="OB_Shade">Open Box Shade:%s[br]</label>
+
+			<!-- HANDLE SELECTION -->
+
+			<label index="Handle_Selection">Handle:%s[br]</label>
+			<label index="Handle_Selection.NO_BOM">DO_NOT_DISPLAY</label>
+
+			<!-- GOLA HANDLE SELCTION -->
+
+			<label index="Gola_Profile_Selection">Handless Finish:%s[br]</label>
+
+			<!-- PotAndPan_Drawer_Acc_1 -->
+			<label index="PotAndPan_Drawer_Acc_1">Pot and Pan Drawer 1 Acc:%s[br]</label>
+			<label index="PotAndPan_Drawer_Acc_1.NO_BOM">No Accessory</label>
+			<label index="PotAndPan_Drawer_Acc_1.PLATES ORGANISATION 500_60_SIL">PLATES ORGANISATION 600mm</label>
+			<label index="PotAndPan_Drawer_Acc_1.PLATES ORGANISATION 500_90_SIL">PLATES ORGANISATION 900mm</label>
+			<label index="PotAndPan_Drawer_Acc_1.AMBIA_Line_spice_rack">AMBIA Line spice rack</label>
+
+			<!-- PotAndPan_Drawer_Acc_2 -->
+			<label index="PotAndPan_Drawer_Acc_2">Pot and Pan Drawer 2 Acc:%s[br]</label>
+			<label index="PotAndPan_Drawer_Acc_2.NO_BOM">No Accessory</label>
+			<label index="PotAndPan_Drawer_Acc_2.PLATES ORGANISATION 500_60_SIL">PLATES ORGANISATION 600mm</label>
+			<label index="PotAndPan_Drawer_Acc_2.PLATES ORGANISATION 500_90_SIL">PLATES ORGANISATION 900mm</label>
+			<label index="PotAndPan_Drawer_Acc_2.AMBIA_Line_spice_rack">AMBIA Line spice rack</label>
+
+			<!-- BPO Accessories -->
+			<label index="BPO_Type">BPO Acc:%s[br]</label>
+			<label index="BPO_Type.Hettich_Bottle_Pull_Out_160mm">Cargo IQ Plus 150</label>
+			<label index="BPO_Type.Hettich_Bottle_Pull_Out_200mm">Cargo IQ Plus 200</label>
+			<label index="BPO_Type.Hafele_Baking_Tray_Pull_Out_160mm">Baking Tray Pullout</label>
+			<label index="BPO_Type.Hettich_Bottle_Pull_Out_300mm">Cargo IQ Plus 300</label>
+			<label index="BPO_Type.Hafele_VS_SUB_Side_300mm">VS Sub Side</label>
+
+			<!-- Base Corner Accessories -->
+			<label index="SC_Accessory">Base Corner Acc:%s[br]</label>
+			<label index="SC_Accessory.WCorner_LHS_Artline_Chrome">Wari Corner(Artline Chrome)</label>
+			<label index="SC_Accessory.WCorner_LHS_Premea_Chrome">Wari Corner(Premea Chrome)</label>
+			<label index="SC_Accessory.WCorner_LHS_Premea_Ral_9006">Wari Corner(Premea Grey)</label>
+			<label index="SC_Accessory.WCorner_LHS_Palnero_LavaGrey">Wari Corner(Planero LavaGrey)</label>
+			<label index="SC_Accessory.VSCorFlex_LHS_Planero_LG_900">Flex Corner(Planero LavaGrey)</label>
+			<label index="SC_Accessory.VSCorFlex_LHS_Premea_Grey_900">Flex Corner(Premea Grey)</label>
+			<label index="SC_Accessory.VSCorFlex_LHS_PremeaChrome_900">Flex Corner(Premea Chrome)</label>
+			<label index="SC_Accessory.CnrStnMaxx_LHS_Planero_LG_1200">Cornerstone Maxx(Planero Lava Grey)</label>
+			<label index="SC_Accessory.CnrStnMaxx_LHS_Planero_LG_900">Cornerstone Maxx(Planero Lava Grey)</label>
+			<label index="SC_Accessory.CnrStone_LHS_Preme_Chrome_900">Cornerstone (Premea Chrome)</label>
+			<label index="SC_Accessory.CnrStone_LHS_Preme_Grey_900">Cornerstone (Premea Grey)</label>
+			<label index="SC_Accessory.CnrStone_LHS_Smart_Chrome_900">Cornerstone (Smart Chrome)</label>
+			<label index="SC_Accessory.EcoPro_LHS_AluGrey_900">Eco Proarc (Alu Grey)</label>
+			<label index="SC_Accessory.WCorner_RHS_Artline_Chrome">Wari Corner(Artline Chrome)</label>
+			<label index="SC_Accessory.WCorner_RHS_Premea_Chrome">Wari Corner(Premea Chrome)</label>
+			<label index="SC_Accessory.WCorner_RHS_Premea_Ral_9006">Wari Corner(Premea Grey)</label>
+			<label index="SC_Accessory.WCorner_RHS_Palnero_LavaGrey">Wari Corner(Planero LavaGrey)</label>
+			<label index="SC_Accessory.VSCorFlex_RHS_Planero_LG_900">Flex Corner(Planero LavaGrey)</label>
+			<label index="SC_Accessory.VSCorFlex_RHS_Premea_Grey_900">Flex Corner(Premea Grey)</label>
+			<label index="SC_Accessory.VSCorFlex_RHS_PremeaChrome_900">Flex Corner(Premea Chrome)</label>
+			<label index="SC_Accessory.CnrStnMaxx_RHS_Planero_LG_1200">Cornerstone Maxx(Planero Lava Grey)</label>
+			<label index="SC_Accessory.CnrStnMaxx_RHS_Planero_LG_900">Cornerstone Maxx(Planero Lava Grey)</label>
+			<label index="SC_Accessory.CnrStone_RHS_Preme_Chrome_900">Cornerstone (Premea Chrome)</label>
+			<label index="SC_Accessory.CnrStone_RHS_Preme_Grey_900">Cornerstone (Premea Grey)</label>
+			<label index="SC_Accessory.CnrStone_RHS_Smart_Chrome_900">Cornerstone (Smart Chrome)</label>
+			<label index="SC_Accessory.EcoPro_RHS_AluGrey_900">Eco Proarc (Alu Grey)</label>
+
+
+			<!-- Tall Cabinet Accessories -->
+			<label index="TU_Accessories_Type">Tall Unit Acc:%s</label>
+			<label index="TU_Accessories_Type.VS_TAL_LARDER">VS Tal Larder,</label>
+			<label index="TU_Accessories_Type.VS_TAL_LARDER_SPIN">VS Tall Larder Spin,</label>
+			<label index="TU_Accessories_Type.VS_TAL_WINE_RACK">VS Tall Wine Rack</label>
+			<label index="TU_Accessories_Type.BROOM_PULLOUT">Broom Pullout,</label>
+			<label index="TU_Accessories_Type.VS_TAL_GATE_N">VS Tall Gate N-Larder,</label>
+			<label index="TU_Accessories_Type.VS_TAL_GATE">VS Tall Gate-Swing Out Larder,</label>
+			<label index="TU_Accessories_Type.VS_TAL_GATE_PRO">VS Tal Gate Pro-DUSA Pullout,</label>
+
+				<!-- Tall Cabinet Accessories -->
+			<label index="TU_Accessories_selection">Tall Unit Finish:%s[br]</label>
+			<label index="TU_Accessories_selection.HSA_PremeaGrey_300mm">Premea Grey</label>
+			<label index="TU_Accessories_selection.HSA_PremeaChrome_300mm">Premea Chrome</label>
+			<label index="TU_Accessories_selection.HSA_ArtlineChrome_300mm">Artline Chrome</label>
+			<label index="TU_Accessories_selection.HSA_Planero_LavaGrey_300mm">Planero Lava Grey</label>
+			<label index="TU_Accessories_selection.HSA_PremeaGrey_400mm">Premea Grey</label>
+			<label index="TU_Accessories_selection.HSA_PremeaChrome_400mm">Premea Chrome</label>
+			<label index="TU_Accessories_selection.HSA_ArtlineChrome_400mm">Artline Chrome</label>
+			<label index="TU_Accessories_selection.HSA_Planero_LavaGrey_400mm">Planero Lava Grey</label>
+			<label index="TU_Accessories_selection.HSAR_PremeaGrey_300mm">Premea Grey</label>
+			<label index="TU_Accessories_selection.HSAR_PremeaChrome_300mm">Premea Chrome</label>
+			<label index="TU_Accessories_selection.HSAR_ArtlineChrome_300mm">Artline Chrome</label>
+			<label index="TU_Accessories_selection.HSAR_PremeaGrey_400mm">Premea Grey</label>
+			<label index="TU_Accessories_selection.HSAR_PremeaChrome_400mm">Premea Chrome</label>
+			<label index="TU_Accessories_selection.HSAR_ArtlineChrome_400mm">Artline Chrome</label>
+			<label index="TU_Accessories_selection.WineRack_16B_Chrome_150mm">Chrome</label>
+			<label index="TU_Accessories_selection.WineRack_16B_Grey_150mm">Grey</label>
+			<label index="TU_Accessories_selection.Broom_Pullout_Grey_150mm">Grey</label>	
+			<label index="TU_Accessories_selection.VSA6_PremeaGrey_450mm">Premea Grey</label>	
+			<label index="TU_Accessories_selection.VSA6_PremeaChrome_450mm">Premea Chrome</label>	
+			<label index="TU_Accessories_selection.VSA6_ArtLineChrome_450mm">Artline Chrome</label>	
+			<label index="TU_Accessories_selection.VSA6_Planero_LavaGrey_450mm">Planero Lava Grey</label>	
+			<label index="TU_Accessories_selection.VSA6_PremeaGrey_600mm">Premea Grey</label>	
+			<label index="TU_Accessories_selection.VSA6_PremeaChrome_600mm">Premea Chrome</label>	
+			<label index="TU_Accessories_selection.VSA6_ArtLineChrome_600mm">Artline Chrome</label>	
+			<label index="TU_Accessories_selection.VSA6_Planero_LavaGrey_600mm">Planero Lava Grey</label>	
+			<label index="TU_Accessories_selection.VSA6_PremeaChrome_400mm">Premea Chrome</label>	
+			<label index="TU_Accessories_selection.VSA6_PlaneroLavaGrey_400mm">Planero Lava Grey</label>	
+			<label index="TU_Accessories_selection.DUSA6_PremeaGrey_450mm">Premea Grey</label>	
+			<label index="TU_Accessories_selection.DUSA6_PremeaChrome_450mm">Premea Chrome</label>	
+			<label index="TU_Accessories_selection.DUSA6_ArtLineChrome_450mm">Artline Chrome</label>	
+			<label index="TU_Accessories_selection.DUSA6_Planero_LavaGrey_450mm">Planero Lava Grey</label>	
+			<label index="TU_Accessories_selection.DUSA6_PremeaGrey_600mm">Premea Grey</label>	
+			<label index="TU_Accessories_selection.DUSA6_PremeaChrome_600mm">Premea Chrome</label>	
+			<label index="TU_Accessories_selection.DUSA6_ArtLineChrome_600mm">Artline Chrome</label>	
+			<label index="TU_Accessories_selection.DUSA6_Planero_LavaGrey_600mm">Planero Lava Grey</label>	
+			
+			<!-- Sink Accessories -->
+			<label index="Waste_Bin">Waste Bin:%s[br]</label>
+			<label index="Waste_Bin.Null">No Waste Bin</label>
+			<label index="Waste_Bin.Waste_Binit_Classic_9079970">Bin-It Classic</label>
+			<label index="Waste_Bin.WASTEBOY_DUSTBIN_400mm">Waste Boy DustBin</label>
+
+			<label index="Waste_Bin">Waste Bin:%s[br]</label>
+			<label index="Waste_Bin.Null">No Waste Bin</label>
+			<label index="Waste_Bin.Waste_Binit_Classic_9079970">Bin-It Classic</label>
+			<label index="Waste_Bin.WASTEBOY_DUSTBIN_400mm">Waste Boy DustBin</label>
+			
+			<!-- LIGHTS -->
+
+			<label index="Lighting_Type">Lights Type:%s[br]</label>
+			<label index="Lighting_Type.Strip_Light">Strip Lights</label>
+			<label index="Lighting_Type.Spot_Light">Spot Light</label>
+			<label index="Lighting_Type.Strip_Light_NC">DO_NOT_DISPLAY</label>
+			<label index="Lighting_Type.No_Light">DO_NOT_DISPLAY</label>
+
+			<!-- Roller Shutter -->
+			<label index="RS_selection">Roller Shutter:%s[br]</label>
+
+
+			<!-- Wardrobe Carcas-->
+			<label index="Carcass_Core_Material">Core Material:%s[br]</label>
+			<label index="Carcass_Core_Material.PlyWood">PlyWood</label>
+			<label index="Carcass_Core_Material.Engineered_wood">Engineered Wood</label>
+
+			<label index="Material_Type">Material Grade:%s[br]</label>
+			<label index="Material_Type.BWR">BWR Ply</label>
+			<label index="Material_Type.BWP">BWP Ply</label>
+			<label index="Material_Type.BWP_Green">BWP Green Ply</label>
+			<label index="Material_Type.Marine_Green">Marine Green Ply</label>
+			<label index="Material_Type.BirchPly">Birch PlyWood</label>
+			<label index="Material_Type.PLPB">Eco Green Board</label>
+
+			<label index="Mat_Carcass">Carcass Colour:%s[br]</label>
+			<label index="Mat_Carcass.FW_BWR">Frosty White</label>
+			<label index="Mat_Carcass.FW_BWP">Frosty White</label>
+			<label index="Mat_Carcass.FW_BWP_Green">Frosty White</label>
+			<label index="Mat_Carcass.FW_Marine_Green">Frosty White</label>
+			<label index="Mat_Carcass.FW_Birch_PLY">Frosty White</label>
+			<label index="Mat_Carcass.FW_PLPB">Frosty White</label>
+			<label index="Mat_Carcass.LC_BWR">Linen Cream</label>
+			<label index="Mat_Carcass.LC_BWP">Linen Cream</label>
+			<label index="Mat_Carcass.LC_BWP_Green">Linen Cream</label>
+			<label index="Mat_Carcass.LC_Marine_Green">Linen Cream</label>
+			<label index="Mat_Carcass.LC_Birch_PLY">Linen Cream</label>
+			<label index="Mat_Carcass.LC_PLPB">Linen Cream</label>
+			<label index="Mat_Carcass.LG_BWR">Linen Grey</label>
+			<label index="Mat_Carcass.LG_BWP">Linen Grey</label>
+			<label index="Mat_Carcass.LG_BWP_Green">Linen Grey</label>
+			<label index="Mat_Carcass.LG_Marine_Green">Linen Grey</label>
+			<label index="Mat_Carcass.LG_Birch_PLY">Linen Grey</label>
+			<label index="Mat_Carcass.LG_PLPB">Linen Grey</label>
+			<label index="Mat_Carcass.LM_BWR">Linen Metalic</label>
+			<label index="Mat_Carcass.LM_BWP">Linen Metalic</label>
+			<label index="Mat_Carcass.LM_BWP_Green">Linen Metalic</label>
+			<label index="Mat_Carcass.LM_Marine_Green">Linen Metalic</label>
+			<label index="Mat_Carcass.LM_Birch_PLY">Linen Metalic</label>
+			<label index="Mat_Carcass.LM_PLPB">Linen Metalic</label>
+			<label index="Mat_Carcass.CW_BWR">Classic Walnut</label>
+			<label index="Mat_Carcass.CW_BWP">Classic Walnut</label>
+			<label index="Mat_Carcass.CW_BWP_Green">Classic Walnut</label>
+			<label index="Mat_Carcass.CW_Marine_Green">Classic Walnut</label>
+			<label index="Mat_Carcass.CW_Birch_PLY">Classic Walnut</label>
+			<label index="Mat_Carcass.CW_PLPB">Classic Walnut</label>
+
+			<!-- wardrobe articles -->
+			<label index="M1_Internal_Type">Module1 Intenal Type:%s[br]</label>
+			<label index="M1_Internal_Type.M1_7ft_Layout_1">customisation</label>
+			<label index="M1_Internal_Type.M1_7ft_Layout_2">customisation</label>
+			<label index="M1_Internal_Type.M1_7ft_Layout_3">customisation</label>
+			<label index="M1_Internal_Type.M1_7ft_Layout_4">customisation</label>
+			<label index="M1_Internal_Type.M1_7ft_Layout_5">customisation</label>
+			<label index="M1_Internal_Type.M1_7ft_Layout_6">customisation</label>
+			<label index="M1_Internal_Type.M1_7ft_Layout_7">customisation</label>
+			<label index="M1_Internal_Type.M1_7ft_Layout_8">customisation</label>
+			<label index="M1_Internal_Type.M1_8ft_Layout_1">customisation</label>
+			<label index="M1_Internal_Type.M1_8ft_Layout_2">customisation</label>
+			<label index="M1_Internal_Type.M1_8ft_Layout_3">customisation</label>
+			<label index="M1_Internal_Type.M1_8ft_Layout_4">customisation</label>
+			<label index="M1_Internal_Type.M1_8ft_Layout_5">customisation</label>
+			<label index="M1_Internal_Type.M1_8ft_Layout_6">customisation</label>
+			<label index="M1_Internal_Type.M1_8ft_Layout_7">customisation</label>
+			<label index="M1_Internal_Type.M1_8ft_Layout_8">customisation</label>
+
+
+			<label index="M2_Internal_Type">Module2 Intenal Type:%s[br]</label>
+			<label index="M2_Internal_Type.M2_7ft_Layout_1">customisation</label>
+			<label index="M2_Internal_Type.M2_7ft_Layout_2">customisation</label>
+			<label index="M2_Internal_Type.M2_7ft_Layout_3">customisation</label>
+			<label index="M2_Internal_Type.M2_7ft_Layout_4">customisation</label>
+			<label index="M2_Internal_Type.M2_7ft_Layout_5">customisation</label>
+			<label index="M2_Internal_Type.M2_7ft_Layout_6">customisation</label>
+			<label index="M2_Internal_Type.M2_7ft_Layout_7">customisation</label>
+			<label index="M2_Internal_Type.M2_7ft_Layout_8">customisation</label>
+			<label index="M2_Internal_Type.M2_8ft_Layout_1">customisation</label>
+			<label index="M2_Internal_Type.M2_8ft_Layout_2">customisation</label>
+			<label index="M2_Internal_Type.M2_8ft_Layout_3">customisation</label>
+			<label index="M2_Internal_Type.M2_8ft_Layout_4">customisation</label>
+			<label index="M2_Internal_Type.M2_8ft_Layout_5">customisation</label>
+			<label index="M2_Internal_Type.M2_8ft_Layout_6">customisation</label>
+			<label index="M2_Internal_Type.M2_8ft_Layout_7">customisation</label>
+			<label index="M2_Internal_Type.M2_8ft_Layout_8">customisation</label>
+
+			<label index="M3_Internal_Type">Module3 Intenal Type:%s[br]</label>
+			<label index="M3_Internal_Type.M3_7ft_Layout_1">customisation</label>
+			<label index="M3_Internal_Type.M3_7ft_Layout_2">customisation</label>
+			<label index="M3_Internal_Type.M3_7ft_Layout_3">customisation</label>
+			<label index="M3_Internal_Type.M3_7ft_Layout_4">customisation</label>
+			<label index="M3_Internal_Type.M3_7ft_Layout_5">customisation</label>
+			<label index="M3_Internal_Type.M3_7ft_Layout_6">customisation</label>
+			<label index="M3_Internal_Type.M3_7ft_Layout_7">customisation</label>
+			<label index="M3_Internal_Type.M3_7ft_Layout_8">customisation</label>
+			<label index="M3_Internal_Type.M3_8ft_Layout_1">customisation</label>
+			<label index="M3_Internal_Type.M3_8ft_Layout_2">customisation</label>
+			<label index="M3_Internal_Type.M3_8ft_Layout_3">customisation</label>
+			<label index="M3_Internal_Type.M3_8ft_Layout_4">customisation</label>
+			<label index="M3_Internal_Type.M3_8ft_Layout_5">customisation</label>
+			<label index="M3_Internal_Type.M3_8ft_Layout_6">customisation</label>
+			<label index="M3_Internal_Type.M3_8ft_Layout_7">customisation</label>
+			<label index="M3_Internal_Type.M3_8ft_Layout_8">customisation</label>
+
+
+			<!-- Door Type -->
+
+			<label index="Shutter_Type_Selection">Shutter Type:%s[br]</label>
+			<label index="Shutter_Type_Selection.Wooden_Door">Wooden Door</label>
+			<label index="Shutter_Type_Selection.Profile_Door">Profile Door</label>
+
+			<!-- Wardrobe Shutter Finishes-->
+
+			<label index="WRD_Front1">Left Shutter Shade:%s[br]</label>
+			<label index="WRD_Front1_1">Left Shutter Shade 1:%s[br]</label>
+			<label index="WRD_Front1_2">Left Shutter Shade 2:%s[br]</label>
+			<label index="WRD_Front1_3">Left Shutter Shade 3:%s[br]</label>
+			<label index="WRD_Front1_4">Left Shutter Shade 4:%s[br]</label>
+			<label index="WRD_Front1_5">Left Shutter Shade 5:%s[br]</label>
+
+
+			<label index="WRD_Front2">Middle Shutter Shade:%s[br]</label>
+			<label index="WRD_Front2_1">Middle Shutter Shade 1:%s[br]</label>
+			<label index="WRD_Front2_2">Middle Shutter Shade 2:%s[br]</label>
+			<label index="WRD_Front2_3">Middle Shutter Shade 3:%s[br]</label>
+			<label index="WRD_Front2_4">Middle Shutter Shade 4:%s[br]</label>
+			<label index="WRD_Front2_5">Middle Shutter Shade 5:%s[br]</label>
+
+
+			<label index="WRD_Front3">Right Shutter Shade:%s[br]</label>
+			<label index="WRD_Front3_1">Right Shutter Shade 1:%s[br]</label>
+			<label index="WRD_Front3_2">Right Shutter Shade 2:%s[br]</label>
+			<label index="WRD_Front3_3">Right Shutter Shade 3:%s[br]</label>
+			<label index="WRD_Front3_4">Right Shutter Shade 4:%s[br]</label>
+			<label index="WRD_Front3_5">Right Shutter Shade 5:%s[br]</label>
+
+
+			<!-- Wardrobe Drawer Type-->
+
+			<label index="Wardrobe_Drawer_Selection">Drawer Type:%s[br]</label>
+			<label index="Shutter_Type_Selection.Telescopic_Regular">Telescopic Regular</label>
+			<label index="Shutter_Type_Selection.Telescopic_SoftClose">Telescopic SoftClose</label>
+			<label index="Shutter_Type_Selection.Quadro_SoftClose">Quadro SoftClose</label>
+			<label index="Shutter_Type_Selection.Quadro_SoftClose_Partial">Quadro Partial SoftClose</label>
+			<label index="Shutter_Type_Selection.Movento_Blummotion">Movento Blummotion</label>
+			<label index="Shutter_Type_Selection.Movento_Tipon">Movento Tipon</label>
+			<label index="Shutter_Type_Selection.Movento_Tipon_Blummotion">Movento Tipon Blummotion</label>
+
+
+			<!-- Wardrobe LIGHTS -->
+
+			<label index="Lightng_Selection">Strip Lights:%s[br]</label>
+			<label index="Lightng_Selection.No_Light">DO_NOT_DISPLAY</label>
+			<label index="Lightng_Selection.Left_Side">Only On Left Side</label>
+			<label index="Lightng_Selection.Right_Side">Only On Right Side</label>
+			<label index="Lightng_Selection.Both_Side">Both Side Strip Light</label>
+			
+
+			<!-- Wardrobe Profile Finish -->
+
+			<label index="Wrd_Profile_Finish">Profile Finish:%s[br]</label>
+			<label index="Wrd_Profile_Finish.Silver">Silver</label>
+			<label index="Wrd_Profile_Finish.Dark_Bronze">Dark Bronze</label>
+			<label index="Wrd_Profile_Finish.Gold">Gold</label>
+			<label index="Wrd_Profile_Finish.Rose_Gold">Rose Gold</label>
+			<label index="Wrd_Profile_Finish.Black">Black</label>
+			<label index="Wrd_Profile_Finish.Irish_Cream">Irish Cream</label>
+			<label index="Wrd_Profile_Finish.Grey">Grey</label>
+			
+			<!-- Glass Details -->
+
+			
+			<label index="Glass_Front_1">Left Profile Shutter Glass:%s[br]</label>
+			<label index="Glass_Front_1.Clear_Glass_5mm">Clear Glass</label>
+			<label index="Glass_Front_1.TG_Bronze">Bronze Tinted Glass</label>
+			<label index="Glass_Front_1.TG_Frosted_Glass">Frosted Glass</label>
+			<label index="Glass_Front_1.TG_Grey">Grey Tinted Glass</label>
+			<label index="Glass_Front_1.TG_Smoked">Smoked Tinted Glass</label>
+			<label index="Glass_Front_1.LG_Black">Black lacquered Glass</label>
+			<label index="Glass_Front_1.LG_Brown">Brown lacquered Glass</label>
+			<label index="Glass_Front_1.LG_Grey">Grey lacquered Glass</label>
+			<label index="Glass_Front_1.LG_Malibu_Blue">Malibu Blue lacquered Glass</label>
+			<label index="Glass_Front_1.LG_Maroon">Maroon lacquered Glass</label>
+			<label index="Glass_Front_1.LG_MarriGold_Yellow">Marrigold Yellow lacquered Glass</label>
+			<label index="Glass_Front_1.LG_Olive_Green">Olive Green lacquered Glass</label>
+			<label index="Glass_Front_1.LG_Oyster">Oyster lacquered Glass</label>
+			<label index="Glass_Front_1.LG_Purple">Purple lacquered Glass</label>
+			<label index="Glass_Front_1.LG_Sable">Sable lacquered Glass</label>
+			<label index="Glass_Front_1.LG_Super_White">Super white lacquered Glass</label>
+			<label index="Glass_Front_1.LG_White">White lacquered Glass</label>
+			<label index="Glass_Front_1.MR_Black">Black Mirror</label>
+			<label index="Glass_Front_1.MR_Copper">Copper Mirror</label>
+			<label index="Glass_Front_1.MR_Standard">Standard Mirror</label>
+
+			<label index="Glass_Front_2">Middle Profile Shutter Glass:%s[br]</label>
+			<label index="Glass_Front_2.Clear_Glass_5mm">Clear Glass</label>
+			<label index="Glass_Front_2.TG_Bronze">Bronze Tinted Glass</label>
+			<label index="Glass_Front_2.TG_Frosted_Glass">Frosted Glass</label>
+			<label index="Glass_Front_2.TG_Grey">Grey Tinted Glass</label>
+			<label index="Glass_Front_2.TG_Smoked">Smoked Tinted Glass</label>
+			<label index="Glass_Front_2.LG_Black">Black lacquered Glass</label>
+			<label index="Glass_Front_2.LG_Brown">Brown lacquered Glass</label>
+			<label index="Glass_Front_2.LG_Grey">Grey lacquered Glass</label>
+			<label index="Glass_Front_2.LG_Malibu_Blue">Malibu Blue lacquered Glass</label>
+			<label index="Glass_Front_2.LG_Maroon">Maroon lacquered Glass</label>
+			<label index="Glass_Front_2.LG_MarriGold_Yellow">Marrigold Yellow lacquered Glass</label>
+			<label index="Glass_Front_2.LG_Olive_Green">Olive Green lacquered Glass</label>
+			<label index="Glass_Front_2.LG_Oyster">Oyster lacquered Glass</label>
+			<label index="Glass_Front_2.LG_Purple">Purple lacquered Glass</label>
+			<label index="Glass_Front_2.LG_Sable">Sable lacquered Glass</label>
+			<label index="Glass_Front_2.LG_Super_White">Super white lacquered Glass</label>
+			<label index="Glass_Front_2.LG_White">White lacquered Glass</label>
+			<label index="Glass_Front_2.MR_Black">Black Mirror</label>
+			<label index="Glass_Front_2.MR_Copper">Copper Mirror</label>
+			<label index="Glass_Front_2.MR_Standard">Standard Mirror</label>
+
+			<label index="Glass_Front_3">Right Profile Shutter Glass:%s[br]</label>
+			<label index="Glass_Front_3.Clear_Glass_5mm">Clear Glass</label>
+			<label index="Glass_Front_3.TG_Bronze">Bronze Tinted Glass</label>
+			<label index="Glass_Front_3.TG_Frosted_Glass">Frosted Glass</label>
+			<label index="Glass_Front_3.TG_Grey">Grey Tinted Glass</label>
+			<label index="Glass_Front_3.TG_Smoked">Smoked Tinted Glass</label>
+			<label index="Glass_Front_3.LG_Black">Black lacquered Glass</label>
+			<label index="Glass_Front_3.LG_Brown">Brown lacquered Glass</label>
+			<label index="Glass_Front_3.LG_Grey">Grey lacquered Glass</label>
+			<label index="Glass_Front_3.LG_Malibu_Blue">Malibu Blue lacquered Glass</label>
+			<label index="Glass_Front_3.LG_Maroon">Maroon lacquered Glass</label>
+			<label index="Glass_Front_3.LG_MarriGold_Yellow">Marrigold Yellow lacquered Glass</label>
+			<label index="Glass_Front_3.LG_Olive_Green">Olive Green lacquered Glass</label>
+			<label index="Glass_Front_3.LG_Oyster">Oyster lacquered Glass</label>
+			<label index="Glass_Front_3.LG_Purple">Purple lacquered Glass</label>
+			<label index="Glass_Front_3.LG_Sable">Sable lacquered Glass</label>
+			<label index="Glass_Front_3.LG_Super_White">Super white lacquered Glass</label>
+			<label index="Glass_Front_3.LG_White">White lacquered Glass</label>
+			<label index="Glass_Front_3.MR_Black">Black Mirror</label>
+			<label index="Glass_Front_3.MR_Copper">Copper Mirror</label>
+			<label index="Glass_Front_3.MR_Standard">Standard Mirror</label>
+
+			<!-- Wardrobe handle Details -->
+
+			<label index="Wadrobe_Handle_Selection">Handle:%s[br]</label>
+			<label index="Wadrobe_Handle_Selection.C4AH_1088_BA">C4AH_1088_BA</label>
+			<label index="Wadrobe_Handle_Selection.YAH_1088_AB">YAH_1088_AB</label>
+
+			<!-- Wardrobe skirting -->
+
+			<label index="Wrd_Skirting">Skirting:%s[br]</label>
+			<label index="Wrd_Skirting.YES">Yes</label>
+			<label index="Wrd_Skirting.NO">Floating</label>
+
+			<!-- Wardrobe Sliding mechanism -->
+
+			<label index="Sld_Mechanism">Sliding Mechanism:%s[br]</label>
+			<label index="Sld_Mechanism.Slideline_56">Slideline 56</label>
+			<label index="Sld_Mechanism.Topline_22">Topline 22</label>
+			<label index="Sld_Mechanism.Topline_XL">Topline XL</label>
+			<label index="Sld_Mechanism.GLOW_Plus">Glow Plus</label>
+			<label index="Sld_Mechanism.No_Door">DO_NOT_DISPLAY</label>
+
+			<!-- Shutter type Details -->
+
+			<label index="Type_Of_Shutter_Left">Left Shutter Type:%s[br]</label>
+			<label index="Type_Of_Shutter_Left.PD_Wardrobe_Front1">Wooden Door</label>
+			<label index="Type_Of_Shutter_Left.Wooden_Shutter_metal">Wooden Door With Metal Edgeband</label>
+			<label index="Type_Of_Shutter_Left.PD_Wrd_Front1_Cap35">Wooden Door With Edge Profile Handle</label>
+			<label index="Type_Of_Shutter_Left.Edge_Handle_2">DO_NOT_DISPLAY</label>
+			<label index="Type_Of_Shutter_Left.Wrd_Alu_Door_Profile_Left">Alluminum Profile Shutter</label>
+			<label index="Type_Of_Shutter_Left.PD_CLP_PRF_Front_Left">Clipper Profile</label>
+			<label index="Type_Of_Shutter_Left.PD_CLP_PRF_1P_Front_Left">Clipper Profile With One Partition</label>
+			<label index="Type_Of_Shutter_Left.PD_CLP_PRF_2P_Front_Left">Clipper Profile With Two Partition</label>
+			<label index="Type_Of_Shutter_Left.PD_CLP_PRF_3P_Front_Left">Clipper Profile With Three Partition</label>
+			<label index="Type_Of_Shutter_Left.PD_CLP_PRF_4P_Front_Left">Clipper Profile With Four Partition</label>
+
+			<label index="Type_Of_Shutter_Middle">Middle Shutter Type:%s[br]</label>
+			<label index="Type_Of_Shutter_Middle.PD_Wardrobe_Front2">Wooden Door</label>
+			<label index="Type_Of_Shutter_Middle.Wooden_Shutter_metal">Wooden Door With Metal Edgeband</label>
+			<!-- <label index="Type_Of_Shutter_Middle.PD_Wrd_Front1_Cap35">Wooden Door With Edge Profile Handle</label> -->
+			<!-- <label index="Type_Of_Shutter_Middle.Edge_Handle_2">DO_NOT_DISPLAY</label> -->
+			<label index="Type_Of_Shutter_Middle.Wrd_Alu_Door_Profile_Middle">Alluminum Profile Shutter</label>
+			<label index="Type_Of_Shutter_Middle.PD_CLP_PRF_Front_Middle">Clipper Profile</label>
+			<label index="Type_Of_Shutter_Middle.PD_CLP_PRF_1P_Front_Middle">Clipper Profile With One Partition</label>
+			<label index="Type_Of_Shutter_Middle.PD_CLP_PRF_2P_Front_Middle">Clipper Profile With Two Partition</label>
+			<label index="Type_Of_Shutter_Middle.PD_CLP_PRF_3P_Front_Middle">Clipper Profile With Three Partition</label>
+			<label index="Type_Of_Shutter_Middle.PD_CLP_PRF_4P_Front_Middle">Clipper Profile With Four Partition</label>
+
+
+			<label index="Type_Of_Shutter_Right">Right Shutter Type:%s[br]</label>
+			<label index="Type_Of_Shutter_Right.PD_Wardrobe_Front3">Wooden Door</label>
+			<label index="Type_Of_Shutter_Right.Wooden_Shutter_metal">Wooden Door With Metal Edgeband</label>
+			<label index="Type_Of_Shutter_Right.PD_Wrd_Front3_Cap35">Wooden Door With Edge Profile Handle</label>
+			<label index="Type_Of_Shutter_Right.Edge_Handle_2">DO_NOT_DISPLAY</label>
+			<label index="Type_Of_Shutter_Right.Wrd_Alu_Door_Profile_Right">Alluminum Profile Shutter</label>
+			<label index="Type_Of_Shutter_Right.PD_CLP_PRF_Front_Right">Clipper Profile</label>
+			<label index="Type_Of_Shutter_Right.PD_CLP_PRF_1P_Front_Right">Clipper Profile With One Partition</label>
+			<label index="Type_Of_Shutter_Right.PD_CLP_PRF_2P_Front_Right">Clipper Profile With Two Partition</label>
+			<label index="Type_Of_Shutter_Right.PD_CLP_PRF_3P_Front_Right">Clipper Profile With Three Partition</label>
+			<label index="Type_Of_Shutter_Right.PD_CLP_PRF_4P_Front_Right">Clipper Profile With Four Partition</label>
+
+			<!-- M1 Wardrobe Accessory -->
+
+			<label index="M1_Z2_P0_Acc_Selection">Accessory Selection:%s[br]</label>
+			<label index="M1_Z2_P0_Acc_Selection.Storage_Box_600">Storage Box</label>
+			<label index="M1_Z2_P0_Acc_Selection.Storage_Box_900">Storage Box</label>
+			<label index="M1_Z2_P0_Acc_Selection.Leather_Storage_Box_600">Leather Storage Box</label>
+			<label index="M1_Z2_P0_Acc_Selection.Leather_Storage_Box_900">Leather Storage Box</label>
+			<label index="M1_Z2_P0_Acc_Selection.Rattan_Basket_600">Rattan Basket</label>
+			<label index="M1_Z2_P0_Acc_Selection.Rattan_Basket_900">Rattan Basket</label>
+			<label index="M1_Z2_P0_Acc_Selection.Metal_Basket_600">Metal Basket</label>
+			<label index="M1_Z2_P0_Acc_Selection.Metal_Basket_900">Metal Basket</label>
+			<label index="M1_Z2_P0_Acc_Selection.Trouser_Pullout_600">Trouser Rack</label>
+			<label index="M1_Z2_P0_Acc_Selection.Trouser_Pullout_900">Trouser Rack</label>
+
+			<label index="M1_Z2_P0_2nd_Acc_Selection">2nd Accessory Selection:%s[br]</label>
+			<label index="M1_Z2_P0_2nd_Acc_Selection.No_Accessory_600">DO_NOT_DISPLAY</label>
+			<label index="M1_Z2_P0_2nd_Acc_Selection.No_Accessory_900">DO_NOT_DISPLAY</label>
+			<label index="M1_Z2_P0_2nd_Acc_Selection.Storage_Box_600">Storage Box</label>
+			<label index="M1_Z2_P0_2nd_Acc_Selection.Storage_Box_900">Storage Box</label>
+			<label index="M1_Z2_P0_2nd_Acc_Selection.Leather_Storage_Box_600">Leather Storage Box</label>
+			<label index="M1_Z2_P0_2nd_Acc_Selection.Leather_Storage_Box_900">Leather Storage Box</label>
+			<label index="M1_Z2_P0_2nd_Acc_Selection.Rattan_Basket_600">Rattan Basket</label>
+			<label index="M1_Z2_P0_2nd_Acc_Selection.Rattan_Basket_900">Rattan Basket</label>
+			<label index="M1_Z2_P0_2nd_Acc_Selection.Metal_Basket_600">Metal Basket</label>
+			<label index="M1_Z2_P0_2nd_Acc_Selection.Metal_Basket_900">Metal Basket</label>
+
+			<label index="M1_Z2_P0_3rd_Acc_Selection">3rd Accessory Selection:%s[br]</label>
+			<label index="M1_Z2_P0_3rd_Acc_Selection.No_Accessory_600">DO_NOT_DISPLAY</label>
+			<label index="M1_Z2_P0_3rd_Acc_Selection.No_Accessory_900">DO_NOT_DISPLAY</label>
+			<label index="M1_Z2_P0_3rd_Acc_Selection.Rattan_Basket_600">Rattan Basket</label>
+			<label index="M1_Z2_P0_3rd_Acc_Selection.Rattan_Basket_900">Rattan Basket</label>
+			<label index="M1_Z2_P0_3rd_Acc_Selection.Metal_Basket_600">Metal Basket</label>
+			<label index="M1_Z2_P0_3rd_Acc_Selection.Metal_Basket_900">Metal Basket</label>
+
+			<label index="M1_Z2_P0_4th_Acc_Selection">4th Accessory Selection:%s[br]</label>
+			<label index="M1_Z2_P0_4th_Acc_Selection.No_Accessory_600">DO_NOT_DISPLAY</label>
+			<label index="M1_Z2_P0_4th_Acc_Selection.No_Accessory_900">DO_NOT_DISPLAY</label>
+			<label index="M1_Z2_P0_4th_Acc_Selection.Rattan_Basket_600">Rattan Basket</label>
+			<label index="M1_Z2_P0_4th_Acc_Selection.Rattan_Basket_900">Rattan Basket</label>
+			<label index="M1_Z2_P0_4th_Acc_Selection.Metal_Basket_600">Metal Basket</label>
+			<label index="M1_Z2_P0_4th_Acc_Selection.Metal_Basket_900">Metal Basket</label>
+
+			<!-- M2 Wardrobe Accessory -->
+
+			<label index="M2_Z2_P0_Acc_Selection">Accessory Selection:%s[br]</label>
+			<label index="M2_Z2_P0_Acc_Selection.Storage_Box_600">Storage Box</label>
+			<label index="M2_Z2_P0_Acc_Selection.Storage_Box_900">Storage Box</label>
+			<label index="M2_Z2_P0_Acc_Selection.Leather_Storage_Box_600">Leather Storage Box</label>
+			<label index="M2_Z2_P0_Acc_Selection.Leather_Storage_Box_900">Leather Storage Box</label>
+			<label index="M2_Z2_P0_Acc_Selection.Rattan_Basket_600">Rattan Basket</label>
+			<label index="M2_Z2_P0_Acc_Selection.Rattan_Basket_900">Rattan Basket</label>
+			<label index="M2_Z2_P0_Acc_Selection.Metal_Basket_600">Metal Basket</label>
+			<label index="M2_Z2_P0_Acc_Selection.Metal_Basket_900">Metal Basket</label>
+			<label index="M2_Z2_P0_Acc_Selection.Trouser_Pullout_600">Trouser Rack</label>
+			<label index="M2_Z2_P0_Acc_Selection.Trouser_Pullout_900">Trouser Rack</label>
+
+			<label index="M2_Z2_P0_2nd_Acc_Selection">2nd Accessory Selection:%s[br]</label>
+			<label index="M2_Z2_P0_2nd_Acc_Selection.No_Accessory_600">DO_NOT_DISPLAY</label>
+			<label index="M2_Z2_P0_2nd_Acc_Selection.No_Accessory_900">DO_NOT_DISPLAY</label>
+			<label index="M2_Z2_P0_2nd_Acc_Selection.Storage_Box_600">Storage Box</label>
+			<label index="M2_Z2_P0_2nd_Acc_Selection.Storage_Box_900">Storage Box</label>
+			<label index="M2_Z2_P0_2nd_Acc_Selection.Leather_Storage_Box_600">Leather Storage Box</label>
+			<label index="M2_Z2_P0_2nd_Acc_Selection.Leather_Storage_Box_900">Leather Storage Box</label>
+			<label index="M2_Z2_P0_2nd_Acc_Selection.Rattan_Basket_600">Rattan Basket</label>
+			<label index="M2_Z2_P0_2nd_Acc_Selection.Rattan_Basket_900">Rattan Basket</label>
+			<label index="M2_Z2_P0_2nd_Acc_Selection.Metal_Basket_600">Metal Basket</label>
+			<label index="M2_Z2_P0_2nd_Acc_Selection.Metal_Basket_900">Metal Basket</label>
+
+			<label index="M2_Z2_P0_3rd_Acc_Selection">3rd Accessory Selection:%s[br]</label>
+			<label index="M2_Z2_P0_3rd_Acc_Selection.No_Accessory_600">DO_NOT_DISPLAY</label>
+			<label index="M2_Z2_P0_3rd_Acc_Selection.No_Accessory_900">DO_NOT_DISPLAY</label>
+			<label index="M2_Z2_P0_3rd_Acc_Selection.Rattan_Basket_600">Rattan Basket</label>
+			<label index="M2_Z2_P0_3rd_Acc_Selection.Rattan_Basket_900">Rattan Basket</label>
+			<label index="M2_Z2_P0_3rd_Acc_Selection.Metal_Basket_600">Metal Basket</label>
+			<label index="M2_Z2_P0_3rd_Acc_Selection.Metal_Basket_900">Metal Basket</label>
+
+			<label index="M2_Z2_P0_4th_Acc_Selection">4th Accessory Selection:%s[br]</label>
+			<label index="M2_Z2_P0_4th_Acc_Selection.No_Accessory_600">DO_NOT_DISPLAY</label>
+			<label index="M2_Z2_P0_4th_Acc_Selection.No_Accessory_900">DO_NOT_DISPLAY</label>
+			<label index="M2_Z2_P0_4th_Acc_Selection.Rattan_Basket_600">Rattan Basket</label>
+			<label index="M2_Z2_P0_4th_Acc_Selection.Rattan_Basket_900">Rattan Basket</label>
+			<label index="M2_Z2_P0_4th_Acc_Selection.Metal_Basket_600">Metal Basket</label>
+			<label index="M2_Z2_P0_4th_Acc_Selection.Metal_Basket_900">Metal Basket</label>
+
+			<!-- M3 Wardrobe Accessory -->
+
+			<label index="M3_Z2_P0_Acc_Selection">Accessory Selection:%s[br]</label>
+			<label index="M3_Z2_P0_Acc_Selection.Storage_Box_600">Storage Box</label>
+			<label index="M3_Z2_P0_Acc_Selection.Storage_Box_900">Storage Box</label>
+			<label index="M3_Z2_P0_Acc_Selection.Leather_Storage_Box_600">Leather Storage Box</label>
+			<label index="M3_Z2_P0_Acc_Selection.Leather_Storage_Box_900">Leather Storage Box</label>
+			<label index="M3_Z2_P0_Acc_Selection.Rattan_Basket_600">Rattan Basket</label>
+			<label index="M3_Z2_P0_Acc_Selection.Rattan_Basket_900">Rattan Basket</label>
+			<label index="M3_Z2_P0_Acc_Selection.Metal_Basket_600">Metal Basket</label>
+			<label index="M3_Z2_P0_Acc_Selection.Metal_Basket_900">Metal Basket</label>
+			<label index="M3_Z2_P0_Acc_Selection.Trouser_Pullout_600">Trouser Rack</label>
+			<label index="M3_Z2_P0_Acc_Selection.Trouser_Pullout_900">Trouser Rack</label>
+
+			<label index="M3_Z2_P0_2nd_Acc_Selection">2nd Accessory Selection:%s[br]</label>
+			<label index="M3_Z2_P0_2nd_Acc_Selection.No_Accessory_600">DO_NOT_DISPLAY</label>
+			<label index="M3_Z2_P0_2nd_Acc_Selection.No_Accessory_900">DO_NOT_DISPLAY</label>
+			<label index="M3_Z2_P0_2nd_Acc_Selection.Storage_Box_600">Storage Box</label>
+			<label index="M3_Z2_P0_2nd_Acc_Selection.Storage_Box_900">Storage Box</label>
+			<label index="M3_Z2_P0_2nd_Acc_Selection.Leather_Storage_Box_600">Leather Storage Box</label>
+			<label index="M3_Z2_P0_2nd_Acc_Selection.Leather_Storage_Box_900">Leather Storage Box</label>
+			<label index="M3_Z2_P0_2nd_Acc_Selection.Rattan_Basket_600">Rattan Basket</label>
+			<label index="M3_Z2_P0_2nd_Acc_Selection.Rattan_Basket_900">Rattan Basket</label>
+			<label index="M3_Z2_P0_2nd_Acc_Selection.Metal_Basket_600">Metal Basket</label>
+			<label index="M3_Z2_P0_2nd_Acc_Selection.Metal_Basket_900">Metal Basket</label>
+
+			<label index="M3_Z2_P0_3rd_Acc_Selection">3rd Accessory Selection:%s[br]</label>
+			<label index="M3_Z2_P0_3rd_Acc_Selection.No_Accessory_600">DO_NOT_DISPLAY</label>
+			<label index="M3_Z2_P0_3rd_Acc_Selection.No_Accessory_900">DO_NOT_DISPLAY</label>
+			<label index="M3_Z2_P0_3rd_Acc_Selection.Rattan_Basket_600">Rattan Basket</label>
+			<label index="M3_Z2_P0_3rd_Acc_Selection.Rattan_Basket_900">Rattan Basket</label>
+			<label index="M3_Z2_P0_3rd_Acc_Selection.Metal_Basket_600">Metal Basket</label>
+			<label index="M3_Z2_P0_3rd_Acc_Selection.Metal_Basket_900">Metal Basket</label>
+
+			<label index="M3_Z2_P0_4th_Acc_Selection">4th Accessory Selection:%s[br]</label>
+			<label index="M3_Z2_P0_4th_Acc_Selection.No_Accessory_600">DO_NOT_DISPLAY</label>
+			<label index="M3_Z2_P0_4th_Acc_Selection.No_Accessory_900">DO_NOT_DISPLAY</label>
+			<label index="M3_Z2_P0_4th_Acc_Selection.Rattan_Basket_600">Rattan Basket</label>
+			<label index="M3_Z2_P0_4th_Acc_Selection.Rattan_Basket_900">Rattan Basket</label>
+			<label index="M3_Z2_P0_4th_Acc_Selection.Metal_Basket_600">Metal Basket</label>
+			<label index="M3_Z2_P0_4th_Acc_Selection.Metal_Basket_900">Metal Basket</label>  
+
+		</languageKey>
+	</data>
+
+</T3locallang>

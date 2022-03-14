@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>TU_Pullout_H</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Tall Unit 1Door Pantry Pullout</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" />
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<CHECKBOX name="Customized_Height_Check" label="Customized Height" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+			
+				<COMBOBOX name="Standard_Height" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE">
+					<ITEM value="1936" label="1936 mm" info1="700" info2="600"/>
+					<ITEM value="1956" label="1956 mm" info1="720" info2="600"/>
+					<ITEM value="1996" label="1996 mm" info1="760" info2="600"/>
+					<ITEM value="2086" label="2086 mm" info1="700" info2="750"/>
+					<ITEM value="2106" label="2106 mm" info1="720" info2="750"/>
+					<ITEM value="2146" label="2146 mm" info1="760" info2="750"/>
+					<ITEM value="2236" label="2236 mm" info1="700" info2="900"/>
+					<ITEM value="2256" label="2256 mm" info1="720" info2="900"/>
+					<ITEM value="2296" label="2296 mm" info1="760" info2="900"/>
+				</COMBOBOX>
+
+				<EDITBOX name="Customized_Height" label="Height (1956mm t0 2400mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE" min="1956" max="2400" />
+
+				<EDITBOX name="ART_SIZEZT" label="Height" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="1956" geoInfluencing="TRUE" />
+
+                <COMBOBOX name="ART_SIZEXT" label="Width" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="400" geoInfluencing="TRUE">
+					<ITEM value="150" label="150 mm" />
+					<ITEM value="300" label="300 mm" />
+					<ITEM value="400" label="400 mm" />
+                </COMBOBOX>
+                
+				<COMBOBOX name="ART_SIZEYT" label="Depth" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+				</COMBOBOX>
+			</GROUP>
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_TU_Carcass_CONSTRUCTION" />
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING" />
+
+		</PARAFOLDER>
+        
+        <PARAFOLDER name="Accessories" label="Accessories Details" active="TRUE" visible="TRUE">
+
+            <COMBOBOX name="TU_Accessories_Type" label="Accessories Type" valuetype="IMAGE" default="VS_TAL_LARDER" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+
+                <ITEM name="VS_TAL_LARDER" value="VS_TAL_LARDER" label="VS TAL LARDER" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="VS_TAL_LARDER_SPIN" value="VS_TAL_LARDER_SPIN" label="VS TAL LARDER SPIN" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="VS_TAL_WINE_RACK" value="VS_TAL_WINE_RACK" label="VS TAL WINE RACK" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="BROOM_PULLOUT" value="BROOM_PULLOUT" label="Broom Pullout" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+            
+            </COMBOBOX>
+
+            <COMBOBOX name="TU_Accessories_selection" label="Finish" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                
+                <ITEM name="HSA_PremeaGrey_300mm" value="HSA_PremeaGrey_300mm" label="Premea Grey" info1="VS_TAL_LARDER" info2="300" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                 <ITEM name="HSA_PremeaChrome_300mm" value="HSA_PremeaChrome_300mm" label="Premea Chrome" info1="VS_TAL_LARDER" info2="300" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="HSA_ArtlineChrome_300mm" value="HSA_ArtlineChrome_300mm" label="Artline Chrome" info1="VS_TAL_LARDER" info2="300" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="HSA_Planero_LavaGrey_300mm" value="HSA_Planero_LavaGrey_300mm" label="Planero Lava Grey" info1="VS_TAL_LARDER" info2="300" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="HSA_PremeaGrey_400mm" value="HSA_PremeaGrey_400mm" label="Premea Grey" info1="VS_TAL_LARDER" info2="400" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="HSA_PremeaChrome_400mm" value="HSA_PremeaChrome_400mm" label="Premea Chrome" info1="VS_TAL_LARDER" info2="400" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="HSA_ArtlineChrome_400mm" value="HSA_ArtlineChrome_400mm" label="Artline Chrome" info1="VS_TAL_LARDER" info2="400" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="HSA_Planero_LavaGrey_400mm" value="HSA_Planero_LavaGrey_400mm" label="Planero Lava Grey" info1="VS_TAL_LARDER" info2="400" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="HSAR_PremeaGrey_300mm" value="HSAR_PremeaGrey_300mm" label="Premea Grey" info1="VS_TAL_LARDER_SPIN" info2="300" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="HSAR_PremeaChrome_300mm" value="HSAR_PremeaChrome_300mm" label="Premea Chrome" info1="VS_TAL_LARDER_SPIN" info2="300" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="HSAR_ArtlineChrome_300mm" value="HSAR_ArtlineChrome_300mm" label="Artline Chrome" info1="VS_TAL_LARDER_SPIN" info2="300" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="HSAR_PremeaGrey_400mm" value="HSAR_PremeaGrey_400mm" label="Premea Grey" info1="VS_TAL_LARDER_SPIN" info2="400" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="HSAR_PremeaChrome_400mm" value="HSAR_PremeaChrome_400mm" label="Premea Chrome" info1="VS_TAL_LARDER_SPIN" info2="400" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="HSAR_ArtlineChrome_400mm" value="HSAR_ArtlineChrome_400mm" label="Artline Chrome" info1="VS_TAL_LARDER_SPIN" info2="400" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="WineRack_16B_Chrome_150mm" value="WineRack_16B_Chrome_150mm" label="Chrome" info1="VS_TAL_WINE_RACK" info2="150" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="WineRack_16B_Grey_150mm" value="WineRack_16B_Grey_150mm" label="Grey" info1="VS_TAL_WINE_RACK" info2="150" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+                <ITEM name="Broom_Pullout_Grey_150mm" value="Broom_Pullout_Grey_150mm" label="Grey" info1="BROOM_PULLOUT" info2="150" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+               
+            
+            </COMBOBOX>	
+			
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_TALL_BRACKETS_SELECTION" />
+			
+
+		</PARAFOLDER>
+		
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="TU_Shutter_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="TU_Shutter_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="TU_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+			</COMBOBOX>
+
+			<COMBOBOX name="TU_Front1" label="Shutter Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+			</COMBOBOX>
+
+			<!-- Variable Values -->
+			<EDITBOX name="TU_Front1_Mat" label="TU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="TU_Front1_Prf" label="TU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+        </PARAFOLDER>
+
+		<PARAFOLDER name="Handle_Details" label="Handle Details" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+			<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES" />
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Visible_Sides" label="Visible Sides" active="TRUE" visible="FALSE">
+
+			<COMMAND type="INSERT" file="Include_Visible_Sides.xml" part="PART_TU_VISIBLE_SIDES" />
+
+		</PARAFOLDER>
+
+		
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_TALL_MARKUP" />
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXT</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYT</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZT</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="___BASE" value="___BASE" />
+			<VAR name="Adjustable_Legs" value="Adjustable_Legs" />
+			<VAR name="KI_Adjuster_Height" value="Leg_Height" />
+			<VAR name="Skirting_Height" value="Skirting_Height" />
+			<VAR name="BU_Carcass" value="TU_Carcass" />
+            <VAR name="BU_Carcass_Prf_Type" value="TU_Carcass_Prf_Type" />
+            <VAR name="TU_Accessories_selection" value="TU_Accessories_selection" />
+			<VAR name="Wall_Bracket_Type" 	value="Tall_Bracket_Type" />
+
+			<!-- <VAR name="BU_Front1" value="TU_Front1" /> -->
+
+			<VAR name="BU_Front1_Mat" 		value="TU_Front1_Mat" />
+			<VAR name="BU_Front1_Prf" 		value="TU_Front1_Prf" />
+			<VAR name="BU_Le_Carcass_Mat" 	value="TU_Le_Carcass_Mat" />
+			<VAR name="BU_Le_Carcass_Prf" 	value="TU_Le_Carcass_Prf" />
+			<VAR name="BU_Ri_Carcass_Mat" 	value="TU_Ri_Carcass_Mat" />
+			<VAR name="BU_Ri_Carcass_Prf" 	value="TU_Ri_Carcass_Prf" />
+
+			<VAR name="BU_Left_Side_Panel" value="TU_Left_Side_Panel" />
+			<VAR name="BU_Right_Side_Panel" value="TU_Right_Side_Panel" />
+			<!-- <VAR name="BU_Le_Side_Panel" value="TU_Le_Side_Panel" />
+			<VAR name="BU_Ri_Side_Panel" value="TU_Ri_Side_Panel" /> -->
+			<VAR name="Handle_Selection" value="Handle_Selection" />
+			<VAR name="Calculation_Factors" value="KT_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KT_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KT_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>            
+    
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_TU_Carcass_CONSTRUCTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_TU_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Visible_Sides.xml" part="PART_TU_VISIBLE_SIDES_LOGIC_1DOOR" />	
+
+		<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES_LOGIC" />
+
+        <COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="TALL_UNIT_HEIGHT_CUSTOMIZED" />        
+        
+        <COMMAND>"FIELD(TU_Accessories_selection).Info1List(FIELD(TU_Accessories_Type).value)"</COMMAND> 
+        
+        <COMMAND>"FIELD(TU_Accessories_selection).filterInfo2List(FIELD(ART_SIZEXT).value)"</COMMAND> 
+      
+	</LOGIC_DEFINITION>
+</XML>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>BU_1DR_CL_H</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Base Unit Cantilever 1 Door</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="___WORKSURFACE" default="Work_Surface_Fr40mm" visible="FALSE" setAsGlobal="TRUE" />
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<EDITBOX name="ART_SIZEZB" label="Height (360mm to 720mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="360" min="360" max="720" geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEXB" label="Width (300mm to 600mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" min="300" max="600" geoInfluencing="TRUE" />
+
+				<CHECKBOX name="Customized_Depth_Check" label="Customized Depth" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+				<COMBOBOX name="ART_Depth1" label="Depth (560mm , 580mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+				</COMBOBOX>
+
+				<EDITBOX name="ART_Depth2" label="Depth (300mm to 580mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="560" min="300" max="580" geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEYB" label="Depth" active="TRUE" visible="FALSE" locked="FALSE" valuetype="NUM" default="" min="" max="" geoInfluencing="TRUE" />
+			
+			</GROUP>
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_HINGE_SELECTION" />
+
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_BASE_BRACKETS_SELECTION" />
+
+			<COMBOBOX name="Hinge_Open" label="Opening Direction" valuetype="IMAGE" default="Left_Hinge" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="Left_Hinge" value="Left_Hinge" label="LHS" image1="img/catalog/LHS.PNG" image2="img/catalog/.PNG" />
+				<ITEM name="Right_Hinge" value="Right_Hinge" label="RHS" image1="img/catalog/RHS.PNG" image2="img/catalog/.PNG" />
+			</COMBOBOX>
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="BU_Shutter_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="BU_Shutter_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="BU_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Front1" label="Shutter Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" search="TRUE"	active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+			</COMBOBOX>
+
+			<!-- Variable Values -->
+			<EDITBOX name="BU_Front1_Mat" label="BU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="BU_Front1_Prf" label="BU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Handle_Details" label="Handle Details" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+			<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES" />		
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Visible_Sides" label="Visible Sides" active="TRUE" visible="FALSE">
+			<COMMAND type="INSERT" file="Include_Visible_Sides.xml" part="PART_VISIBLE_SIDES" />
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_BASE_MARKUP" />	
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXB</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYB</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZB</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="___WORKSURFACE" 		value="___WORKSURFACE" />
+			<VAR name="BU_Top_Panel" 		value="BU_Top_Panel" />
+			<VAR name="BU_Carcass" 			value="BU_Carcass" />
+			<VAR name="BU_Carcass_Prf_Type" value="BU_Carcass_Prf_Type" />
+			<VAR name="Hinge_Type" 			value="Hinge_Type" />
+			<VAR name="Hinge_Open" 			value="Hinge_Open" />
+			<VAR name="Wall_Bracket_Type" 	value="Base_Bracket_Type" />
+
+			<!-- <VAR name="BU_Front1" 		value="BU_Front1" /> -->
+			<VAR name="BU_Front1_Mat" 		value="BU_Front1_Mat" />
+			<VAR name="BU_Front1_Prf" 		value="BU_Front1_Prf" />
+			<VAR name="BU_Le_Carcass_Mat" 	value="BU_Le_Carcass_Mat" />
+			<VAR name="BU_Le_Carcass_Prf" 	value="BU_Le_Carcass_Prf" />
+			<VAR name="BU_Ri_Carcass_Mat" 	value="BU_Ri_Carcass_Mat" />
+			<VAR name="BU_Ri_Carcass_Prf" 	value="BU_Ri_Carcass_Prf" />
+			
+			<VAR name="BU_Left_Side_Panel" 	value="BU_Left_Side_Panel" />
+			<VAR name="BU_Right_Side_Panel" value="BU_Right_Side_Panel" />
+			<!-- <VAR name="BU_Le_Side_Panel" 	value="BU_Le_Side_Panel" />
+			<VAR name="BU_Ri_Side_Panel" 	value="BU_Ri_Side_Panel" /> -->
+			<VAR name="Handle_Selection" 	value="Handle_Selection" />
+			<VAR name="Calculation_Factors" value="KB_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KB_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KB_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<IF>
+			<EQ expr1="FIELD(Customized_Depth_Check).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(ART_Depth1).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_Depth2).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEYB).value=FIELD(ART_Depth1).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(ART_Depth1).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_Depth2).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEYB).value=FIELD(ART_Depth2).value"</COMMAND>
+			</ELSE>
+		</IF>
+	
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Visible_Sides.xml" part="PART_VISIBLE_SIDES_LOGIC_1DOOR" />	
+
+		<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES_LOGIC" />	
+
+
+	</LOGIC_DEFINITION>
+</XML>

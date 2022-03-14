@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+	<PART name="PART_KITCHEN_LIGHTS">
+
+		<GROUP name="Lighting" label="Lights">
+			<COMBOBOX name="Lighting_Type" label="Lighting Type" active="TRUE" visible="TRUE" locked="FALSE" valuetype="" default="Strip_Light_NC" geoInfluencing="TRUE">
+				<ITEM value="Strip_Light_NC" 		label="Strip Light Decorative" />
+				<ITEM value="Strip_Light" 			label="Strip Light" />
+				<ITEM value="Strip_Light_V" 		label="Strip Light Vertical" />
+				<ITEM value="Spot_Light" 			label="Spot Light" />
+				<ITEM value="No_Light" 				label="No Lights" />
+			</COMBOBOX>
+		</GROUP>
+		
+	</PART>
+
+
+</XML>

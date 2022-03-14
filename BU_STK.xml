@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>BU_STK</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Stack Modular Base</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+            <GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<CHECKBOX name="Customized_Height_Check" label="Customized Depth" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+				<COMBOBOX name="ART_Height1" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="720" geoInfluencing="TRUE">
+					<ITEM value="700" label="700 mm" />
+					<ITEM value="720" label="720 mm" />
+					<ITEM value="760" label="760 mm" />
+				</COMBOBOX>
+
+				<EDITBOX name="ART_SIZEZB" label="Depth" active="TRUE" visible="FALSE" locked="FALSE" valuetype="NUM" default="" min="" max="" geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_Height2" label="Height (300mm to 760mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="720" min="300" max="760" geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEXB" label="Width (300mm to 600mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" min="300" max="600" geoInfluencing="TRUE" />
+
+				<CHECKBOX name="Customized_Depth_Check" label="Customized Depth" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+				<COMBOBOX name="ART_Depth1" label="Depth (560mm , 580mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+				</COMBOBOX>
+
+				<EDITBOX name="ART_Depth2" label="Depth (300mm to 600mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="560" min="300" max="600" geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEYB" label="Depth" active="TRUE" visible="FALSE" locked="FALSE" valuetype="NUM" default="" min="" max="" geoInfluencing="TRUE" />
+			
+			</GROUP>
+
+			<EDITBOX name="Cube_Shelf_Qty" label="Shelf Qty and Required Distance:" active="TRUE" nosave="FALSE"	Info="Enter the qty of Shelves in the form of Ratio {Example: 1:1 means 1 shelf comes in middle,280mm:1 means shelf comes after 280mm from bottom of that particular zone}"	visible="TRUE" locked="FALSE" valuetype="LINDIV" default="1:1" min="" max="" geoInfluencing="TRUE" />
+            
+            <COMBOBOX name="Cube_Shelf_Type" label="Horizontal Division Type" valuetype="IMAGE" default="CP_Cube_AS_Rev00mm" visible="TRUE" active="TRUE" image1="img/hardware/.jpg">
+				<ITEM name="CP_Cube_AS_Rev00mm" 	 value="CP_Cube_AS_Rev00mm" 	            label="Without Shelf"           Visible="TRUE"            	info1="Lateral"	info2="100"	image1="img/catalog/WithOutShelf.jpg" 			 />
+			    <ITEM name="CP_Cube_Uni_AS_Rev00mm"  value="CP_Cube_Uni_AS_Rev00mm" 			label="With Shelf" 			info1="Universal"			info2="100"	image1="img/catalog/WithShelf.jpg" 					/>
+			</COMBOBOX>
+
+            <COMBOBOX name="Cube_Profile_Finish" label="Profile Color" valuetype="IMAGE" default="HA_Silver" visible="TRUE" active="TRUE" image1="img/hardware/PVC_Leg.jpg">
+				<ITEM name="HA_Dark_Bronze" 	value="HA_Dark_Bronze" 	label="Dark Bronze"     	info1="HA"	info2="100"	image1="img/hardware/G_Dark_Bronze.jpg" 			 />
+				<ITEM name="HA_Gold" 			value="HA_Gold" 			label="Gold" 			info1="HA"	info2="100"	image1="img/hardware/G_Gold.jpg" 					 />
+				<ITEM name="HA_Graphite" 		value="HA_Graphite" 		label="Graphite" 		info1="HA"	info2="100"	image1="img/hardware/G_Graphite.jpg" 				/>
+				<ITEM name="HA_Rose_Gold" 		value="HA_Rose_Gold" 		label="Rose Gold" 		info1="HA"	info2="100"	image1="img/hardware/G_Rose_Gold.jpg" 				/>
+				<ITEM name="HA_Silver" 		    value="HA_Silver" 			label="Silver" 			info1="HA"	info2="100"	image1="img/hardware/G_Silver.jpg" 					/>
+				<ITEM name="HA_Black" 		    value="HA_Black" 			label="Black" 			info1="HA"	info2="100"	image1="img/hardware/G_BLACK.jpg" 					/>
+			</COMBOBOX>
+			
+
+		</PARAFOLDER>
+
+        <PARAFOLDER name="Stack_Shelf_Details" label="Stack Shelf Finish" active="TRUE" visible="">
+
+            <COMBOBOX name="Shelf_Required" label="Shelf Required" valuetype="IMAGE" default="Wooden_Shelf" visible="TRUE" active="TRUE" image1="img/hardware/.jpg">
+				<ITEM value="Glass_Shelf" label="Glass Shelfs"   info1="Glass_Shelf"     image1="img/hardware/Glass_Shelf.jpg"/>
+			    <ITEM value="Wooden_Shelf" label="Wooden Shelfs" info1="Wooden_Shelf"     image1="img/hardware/Wooden_Shelf.jpg"/>
+            </COMBOBOX>
+
+		<GROUP name="Stact_Shelf_materials" label="Stack Shelf Finish">				
+
+            <COMBOBOX name="OB_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+               <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_CORE_MAT" />
+            </COMBOBOX>
+    
+            <COMBOBOX name="OB_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+               <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_FINISHES" />
+            </COMBOBOX>
+    
+            <COMBOBOX name="OB_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+            </COMBOBOX>
+
+            <COMBOBOX name="OB_Shade" label="Openbox Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+                <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+            </COMBOBOX>
+         
+        </GROUP>
+
+        <GROUP name="Glass_Finish_Details" label="Glass Finish Details" active="TRUE" visible="">
+
+            <COMBOBOX name="Glass_Type_1" label="Glass Type" valuetype="TEXT" default="Tinted_Glass" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+        
+                <ITEM name="Clear_Glass"   					label="Clear Glass"			   		info1="Clear_Glass"  		 info2="Clear_Glass"	    image1="img/material/.jpg"	visible="TRUE"/>
+                <ITEM name="Lacquered_Glass"   				label="Lacquered Glass"			   	info1="Lacquer_Glass"  		 info2="Lacquer_Glass"	    image1="img/material/.jpg"	visible="TRUE"/>
+                <ITEM name="Tinted_Glass"   				label="Tinted Glass"			   	info1="Tinted_Glass"  		 info2="Tinted_Glass"	    image1="img/material/.jpg"	visible="TRUE"/>
+                <ITEM name="Mirror"   						label="Mirror"			  		 	info1="Mirror"  			 info2="Mirror"	    image1="img/material/.jpg"	visible="TRUE"/>
+                
+            </COMBOBOX>
+
+            <COMBOBOX name="Glass_Front_1" label="Glass Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+
+               		<ITEM name="Clear_Glass_5mm" label="Clear Glass" info1="Clear_Glass" info2="6mm" info3="GLASS" image1="img/material/Clear_Glass.jpg" visible="TRUE"/>
+
+					<!-- Tinted Glass-->
+
+					<ITEM name="TG01_Bronze" 	   		label="TG01" 			info1="Tinted_Glass" info2="6mm" info3="GLASS" image1="img/material/TG_Bronze.jpg" visible="TRUE" />
+					<ITEM name="TG02_Grey"  	   		label="TG02" 			info1="Tinted_Glass" info2="6mm" info3="GLASS" image1="img/material/TG_Grey.jpg" visible="TRUE" />
+					<ITEM name="TG03_Smoked"      		label="TG03" 			info1="Tinted_Glass" info2="6mm" info3="GLASS" image1="img/material/TG_Smoked.jpg" visible="TRUE" />
+					<ITEM name="TG04_Frosted_Glass" 	label="TG04" 			info1="Tinted_Glass" info2="6mm" info3="GLASS" image1="img/material/TG_Frosted_Glass.jpg" visible="TRUE" />
+
+					<!-- lacquered Glass-->
+					<ITEM name="LG01_Black" 			label="LG01 Black" 				info1="Lacquer_Glass" info2="6mm" info3="GLASS" image1="img/material/LG_Black.jpg" visible="TRUE" />
+					<ITEM name="LG02_Grey" 				label="LG02 Grey" 				info1="Lacquer_Glass" info2="6mm" info3="GLASS" image1="img/material/LG_Grey.jpg" visible="TRUE" />
+					<ITEM name="LG03_Malibu_Blue" 		label="LG03 Malibu Blue" 		info1="Lacquer_Glass" info2="6mm" info3="GLASS" image1="img/material/LG_Malibu_Blue.jpg" visible="TRUE" />
+					<ITEM name="LG04_Maroon" 			label="LG04_Maroon" 			info1="Lacquer_Glass" info2="6mm" info3="GLASS" image1="img/material/LG_Maroon.jpg" visible="TRUE" />
+					<ITEM name="LG05_MarriGold_Yellow" 	label="LG05 MarriGold Yellow" 	info1="Lacquer_Glass" info2="6mm" info3="GLASS" image1="img/material/LG_MarriGold_Yellow.jpg" visible="TRUE" />
+					<ITEM name="LG06_Olive_Green" 		label="LG06 Olive Green" 		info1="Lacquer_Glass" info2="6mm" info3="GLASS" image1="img/material/LG_Olive_Green.jpg" visible="TRUE" />
+					<ITEM name="LG07_Oyster" 			label="LG07 Oyster" 			info1="Lacquer_Glass" info2="6mm" info3="GLASS" image1="img/material/LG_Oyster.jpg" visible="TRUE" />
+					<ITEM name="LG08_Purple" 			label="LG08 Purple" 			info1="Lacquer_Glass" info2="6mm" info3="GLASS" image1="img/material/LG_Purple.jpg" visible="TRUE" />
+					<ITEM name="LG09_Sable" 			label="LG09 Sable" 				info1="Lacquer_Glass" info2="6mm" info3="GLASS" image1="img/material/LG_Sable.jpg" visible="TRUE" />
+					<ITEM name="LG10_Super_White" 		label="LG10 Super White" 		info1="Lacquer_Glass" info2="6mm" info3="GLASS" image1="img/material/LG_Super_White.jpg" visible="TRUE" />
+					<ITEM name="LG11_White" 			label="LG11 White" 				info1="Lacquer_Glass" info2="6mm" info3="GLASS" image1="img/material/LG_White.jpg" visible="TRUE" />
+
+
+					<!-- Mirror-->
+					<ITEM name="MR01_Black" 			label="MR1 Black" 			info1="Mirror" info2="6mm" info3="GLASS" image1="img/material/MR_Black.jpg" visible="TRUE" />
+					<ITEM name="MR02_Copper" 			label="MR2 Copper" 			info1="Mirror" info2="6mm" info3="GLASS" image1="img/material/MR_Copper.jpg" visible="TRUE" />
+					<ITEM name="MR03_Standard" 			label="MR Standard" 		info1="Mirror" info2="6mm" info3="GLASS" image1="img/material/MR_Standard.jpg" visible="TRUE" />
+
+            </COMBOBOX>
+
+        </GROUP>
+        
+    </PARAFOLDER>
+           <!-- Variable Values -->
+           <EDITBOX name="Cube_Shelf_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+           <EDITBOX name="OB_Carcass_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+		    <EDITBOX name="OB_Carcass_Prf" label="OB_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+            
+
+			<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_FREE_CUBES_MARKUP" />
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXB</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYB</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZB</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+		
+			<VAR name="Cube_Shelf_Mat" value="Cube_Shelf_Mat" />
+			<VAR name="Cube_Shelf_Qty" value="Cube_Shelf_Qty" />
+			<VAR name="Cube_Shelf_Type" value="Cube_Shelf_Type" />
+			<VAR name="Cube_Profile_Finish" value="Cube_Profile_Finish" />			
+			<VAR name="Calculation_Factors" value="FC_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="FC_Mat_Prices" />
+			<VAR name="Mat_Prices" 			value="FC_Prf_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>	
+
+        
+		<IF>
+			<EQ expr1="FIELD(Customized_Depth_Check).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(ART_Depth1).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_Depth2).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEYB).value=FIELD(ART_Depth1).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(ART_Depth1).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_Depth2).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEYB).value=FIELD(ART_Depth2).value"</COMMAND>
+			</ELSE>
+		</IF>
+
+        <IF>
+			<EQ expr1="FIELD(Customized_Height_Check).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(ART_Height1).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_Height2).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZB).value=FIELD(ART_Height1).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(ART_Height1).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_Height2).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZB).value=FIELD(ART_Height2).value"</COMMAND>
+			</ELSE>
+		</IF>
+
+		<COMMAND>"FIELD(OB_Finish).info1List(FIELD(OB_Core_Material).info1)"</COMMAND>
+		<COMMAND>"FIELD(OB_Texture).info1List(FIELD(OB_Finish).info2)"</COMMAND> 
+		<COMMAND>"FIELD(OB_Shade).info1List(FIELD(OB_Finish).value)"</COMMAND>
+		<COMMAND>"FIELD(OB_Shade).filterinfo2List(FIELD(OB_Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(OB_Shade).filterinfo3List(FIELD(OB_Texture).info2)"</COMMAND>
+	<!-- Variable Values Logic -->
+		<COMMAND>"FIELD(OB_Carcass_Mat).value=FIELD(OB_Shade).value+'_'+FIELD(OB_Core_Material).value"</COMMAND>
+		<COMMAND>"FIELD(OB_Carcass_Prf).value=FIELD(OB_Shade).value+'('+FIELD(OB_Shade).info4+')'"</COMMAND>
+
+
+		<COMMAND>"FIELD(Glass_Front_1).info1List(FIELD(Glass_Type_1).info1)"</COMMAND>	
+
+        <IF>
+			<EQ expr1="FIELD(Shelf_Required).info1" expr2="Glass_Shelf" />
+			<THEN>
+				<COMMAND>"FIELD(Glass_Finish_Details).visible=TRUE"</COMMAND>			
+				<COMMAND>"FIELD(Stact_Shelf_materials).visible=FALSE"</COMMAND>			
+				<COMMAND>"FIELD(Cube_Shelf_Mat).value=FIELD(Glass_Front_1).value"</COMMAND>			
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Glass_Finish_Details).visible=FALSE"</COMMAND>	
+				<COMMAND>"FIELD(Stact_Shelf_materials).visible=TRUE"</COMMAND>	
+                <COMMAND>"FIELD(Cube_Shelf_Mat).value=FIELD(OB_Carcass_Mat).value"</COMMAND>
+			</ELSE>			
+		</IF>
+		
+		
+	</LOGIC_DEFINITION>
+</XML>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>TU_1DR_GL</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Tall Unit 1Door Glass Shutter</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" />
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<CHECKBOX name="Customized_Height_Check" label="Customized Height" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+			
+				<COMBOBOX name="Standard_Height" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE">
+					<ITEM value="1936" label="1936 mm" info1="700" info2="600"/>
+					<ITEM value="1956" label="1956 mm" info1="720" info2="600"/>
+					<ITEM value="1996" label="1996 mm" info1="760" info2="600"/>
+					<ITEM value="2086" label="2086 mm" info1="700" info2="750"/>
+					<ITEM value="2106" label="2106 mm" info1="720" info2="750"/>
+					<ITEM value="2146" label="2146 mm" info1="760" info2="750"/>
+					<ITEM value="2236" label="2236 mm" info1="700" info2="900"/>
+					<ITEM value="2256" label="2256 mm" info1="720" info2="900"/>
+					<ITEM value="2296" label="2296 mm" info1="760" info2="900"/>
+				</COMBOBOX>
+
+				<EDITBOX name="Customized_Height" label="Height (1956mm t0 2400mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE" min="1956" max="2400" />
+
+				<EDITBOX name="ART_SIZEZT" label="Height" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="1956" geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEXT" label="Width (300mm to 600mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" min="300" max="600" geoInfluencing="TRUE" />
+
+				<COMBOBOX name="ART_SIZEYT" label="Depth" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+				</COMBOBOX>
+
+				<GROUP name="OpenBox Finsh" label="Carcass Finsh">				
+
+					<COMBOBOX name="OB_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_CORE_MAT" />
+					</COMBOBOX>
+			
+					<COMBOBOX name="OB_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_FINISHES" />
+					</COMBOBOX>
+			
+					<COMBOBOX name="OB_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+					</COMBOBOX>
+		
+					<COMBOBOX name="OB_Shade" label="Carcass Shade" valuetype="IMAGE" default="" Search="TRUE"	visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+					</COMBOBOX>
+		
+					<!-- Variable Values -->
+					<EDITBOX name="OB_Carcass_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+					<EDITBOX name="OB_Carcass_Prf" label="OB_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_BP_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+					
+				</GROUP>
+
+			</GROUP>
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="Profile_Type" label="Profile Type" valuetype="IMAGE" default="Rail_Door" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="Rail_Door" value="Rail_Door" label="Rail Door Profile" image1="img/catalog/Rail_Door.PNG"/>
+				<ITEM name="Alu_Door" value="Alu_Door" label="Alu Door Profile" image1="img/catalog/Alu_Door.PNG"  />
+			</COMBOBOX>
+
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_WALLUNIT_SHELF_SELECTION" />
+
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_HINGE_SELECTION" />
+
+			<COMBOBOX name="Hinge_Open" label="Opening Direction" valuetype="IMAGE" default="_L" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="_L" value="_L" label="LHS" image1="img/catalog/LHS.PNG" image2="img/catalog/.PNG" />
+				<ITEM name="_R" value="_R" label="RHS" image1="img/catalog/RHS.PNG" image2="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<EDITBOX name="SD_Profile_Shutter_Selection" label="SD_Profile_Shutter_Selection" active="TRUE" visible="FALSE" locked="FALSE" valuetype="TEXT" default="" geoInfluencing="TRUE" />
+				
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Glass_Selection" label="Glass Selection">
+
+			<COMBOBOX name="GLASS_THK" label="Glass Thickness" valuetype="" default="6mm" visible="FALSE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_GLASS_TYPE" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="GLASS_Finish" label="Finish Type" valuetype="" default="Tinted_Glass" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_GLASS_FINISHES" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="GLASS_Texture" label="Glass Texture" valuetype="" default="GLASS" visible="FALSE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+			</COMBOBOX>
+
+			<COMBOBOX name="Glass_Front_1" label="" valuetype="IMAGE" default="" Search="TRUE"	visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+			</COMBOBOX>
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Lighting_Details" label="Lights Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="Include_Lights.xml" part="PART_KITCHEN_LIGHTS" />
+
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_ADDERPANEL_MARKUP" />
+
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXT</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYT</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZT</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="___BASE" 						value="___BASE" />
+			<VAR name="Adjustable_Legs" 				value="Adjustable_Legs" />
+			<VAR name="OB_Carcass_Mat" 					value="OB_Carcass_Mat" />
+			<VAR name="OB_Carcass_BP_Mat" 				value="OB_Carcass_BP_Mat" />
+
+			<VAR name="OB_Carcass_Prf" 					value="OB_Carcass_Prf" />
+			<VAR name="KI_Adjuster_Height" 				value="Leg_Height" />
+			<VAR name="Skirting_Height" 				value="Skirting_Height" />
+			<VAR name="Lighting_Type" 					value="Lighting_Type" />
+			<VAR name="Wu_Shelf_Selection" 				value="Wu_Shelf_Selection" />
+			<VAR name="OpenBox" 						value="OpenBox" />
+			<VAR name="SD_Profile_Shutter_Selection" 	value="SD_Profile_Shutter_Selection" />
+			<VAR name="Glass_Front_1" 					value="Glass_Front_1" />
+			<VAR name="Calculation_Factors" value="KAP_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KAP_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KAP_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="TALL_UNIT_HEIGHT_CUSTOMIZED" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING_LOGIC" />
+
+		<COMMAND>"FIELD(SD_Profile_Shutter_Selection).value='CP_KTU_SD_'+FIELD(Profile_Type).value+FIELD(Hinge_Open).value"</COMMAND>
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OPEN_BOX_FINISHES" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_GLASS_FINISH_SELECTION_LOGIC" />
+
+
+	</LOGIC_DEFINITION>
+</XML>

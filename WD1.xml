@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>WD1</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Wall Unit 1Door</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<COMBOBOX name="ART_SIZEZW" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" geoInfluencing="TRUE">
+					<ITEM value="600" label="600 mm" />
+					<ITEM value="750" label="750 mm" />
+					<ITEM value="800" label="800 mm" />
+					<ITEM value="900" label="900 mm" />
+				</COMBOBOX>
+
+				<EDITBOX name="ART_SIZEXW" label="Width (300mm to 600mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" min="300" max="600" geoInfluencing="TRUE" />
+				<EDITBOX name="ART_SIZEYW" label="Depth" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="330" geoInfluencing="TRUE" />
+
+			</GROUP>
+
+			<COMMAND type="INSERT" file="MirraPanchajanya_Kitchen_Carcass.xml" part="PART_KITCHEN_WU_Carcass_CONSTRUCTION" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="MirraPanchajanya_Hardware_Selection.xml" part="PART_HINGE_SELECTION" />
+
+			<COMBOBOX name="Hinge_Open" label="Opening Direction" valuetype="IMAGE" default="Left_Hinge" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="Left_Hinge" value="Left_Hinge" label="LHS" image1="img/catalog/LHS.PNG" image2="img/catalog/.PNG" />
+				<ITEM name="Right_Hinge" value="Right_Hinge" label="RHS" image1="img/catalog/RHS.PNG" image2="img/catalog/.PNG" />
+			</COMBOBOX>
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="WU_Shutter_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="WU_Shutter_Finish" label="Finish" valuetype="TEXT" default="Suede_Finish" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="WU_Texture" label="Texture" valuetype="TEXT" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+			</COMBOBOX>
+
+			<COMBOBOX name="WU_Front1" label="Shutter Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+			</COMBOBOX>
+
+			<!-- Variable Values -->
+			<EDITBOX name="WU_Front1_Mat" label="WU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="WU_Front1_Prf" label="WU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Handle_Details" label="Handle Details" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+			<COMMAND type="INSERT" file="MirraPanchajanya_Handle_Selection.xml" part="PART_KITCHEN_WALL_UNIT_HANDLES" />		
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Visible_Sides" label="Visible Sides" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="MirraPanchajanya_Visible_Sides.xml" part="PART_WU_VISIBLE_SIDES" />
+
+		</PARAFOLDER>
+
+		<!-- <PARAFOLDER name="Lighting_Details" label="Lights Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="MirraPanchajanya_Lights.xml" part="PART_KITCHEN_LIGHTS" />
+
+		</PARAFOLDER> -->
+
+		<PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="TRUE">
+
+			<EDITBOX name="COST_Carcass" label="Carcass Price" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="COST_SHUTTER" label="Shutter Price" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="COST_HINGES" label="Hardware Price" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="COST_HANDLE" label="Handle Price" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+
+			<EDITBOX name="TOTAL_CABINET_PRICE" label="Total Price" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXW</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYW</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZW</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="WU_Carcass" value="WU_Carcass" />
+			<VAR name="WU_Carcass_Prf_Type" value="WU_Carcass_Prf_Type" />
+			<VAR name="Hinge_Type" value="Hinge_Type" />
+			<VAR name="Hinge_Open" value="Hinge_Open" />
+			<!-- <VAR name="WU_Front1" value="WU_Front1" /> -->
+
+			<VAR name="WU_Front1_Mat" value="WU_Front1_Mat" />
+			<VAR name="WU_Front1_Prf" value="WU_Front1_Prf" />
+			<VAR name="WU_Le_Carcass_Mat" value="WU_Le_Carcass_Mat" />
+			<VAR name="WU_Le_Carcass_Prf" value="WU_Le_Carcass_Prf" />
+			<VAR name="WU_Ri_Carcass_Mat" value="WU_Ri_Carcass_Mat" />
+			<VAR name="WU_Ri_Carcass_Prf" value="WU_Ri_Carcass_Prf" />
+
+			<VAR name="WU_Left_Side_Panel" value="WU_Left_Side_Panel" />
+			<VAR name="WU_Right_Side_Panel" value="WU_Right_Side_Panel" />
+			<!-- <VAR name="WU_Le_Side_Panel" value="WU_Le_Side_Panel" />
+			<VAR name="WU_Ri_Side_Panel" value="WU_Ri_Side_Panel" /> -->
+			<VAR name="Handle_Selection" value="Handle_Selection" />
+			<VAR name="Lighting_Type" value="Lighting_Type" />
+			<VAR name="COST_Carcass" 	value="COST_Carcass" />
+			<VAR name="COST_SHUTTER" 	value="COST_SHUTTER" />
+			<VAR name="COST_HINGES" 	value="COST_HINGES" />
+			<VAR name="COST_HANDLE" 	value="COST_HANDLE" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_WU_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="MirraPanchajanya_Visible_Sides.xml" part="PART_WU_VISIBLE_SIDES_LOGIC_1DOOR" />	
+
+		<COMMAND type="INSERT" file="MirraPanchajanya_Handle_Selection.xml" part="PART_KITCHEN_WALL_UNIT_HANDLES_LOGIC" />		
+
+		<COMMAND> FIELD(COST_Carcass).value = (CALC((FIELD(ART_SIZEZW).value*FIELD(ART_SIZEXW).value)/92903)*FIELD(BU_Carcass).info3) </COMMAND>
+
+		<COMMAND> FIELD(COST_SHUTTER).value = (CALC((FIELD(ART_SIZEZW).value*FIELD(ART_SIZEXW).value)/92903)*FIELD(WU_Shutter_Finish).info1) </COMMAND>
+
+		<COMMAND> FIELD(COST_HINGES).value = CALC(FIELD(Hinge_Type).info1*2) </COMMAND>
+
+		<COMMAND> FIELD(COST_HANDLE).value = CALC(FIELD(Handle_Selection).info3*1) </COMMAND>
+
+		<COMMAND>"FIELD(TOTAL_CABINET_PRICE).value=CALC(FIELD(COST_Carcass).value+FIELD(COST_SHUTTER).value+FIELD(COST_HINGES).value+FIELD(COST_HANDLE).value)"</COMMAND>		
+		
+
+
+	</LOGIC_DEFINITION>
+</XML>

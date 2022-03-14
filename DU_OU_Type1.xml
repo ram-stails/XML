@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>DU_OU_Type1</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Dado Open unit</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+			
+
+				<EDITBOX name="ART_SIZEZD" label="Height (150mm to 650mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="500" min="150" max="650" geoInfluencing="TRUE" />
+			
+               <EDITBOX name="ART_SIZEXD" label="Width (150mm to 1800mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1000" min="150" max="1800" geoInfluencing="TRUE" />
+				
+                
+                <EDITBOX name="ART_SIZEYD" label="Depth" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="100" geoInfluencing="TRUE" />
+
+			</GROUP>
+
+            <COMBOBOX name="WU_Shelf_Qty" default="1:1" label="No of Shelves:"	width="25%"	image1="img/catalog/.PNG"    image2="img/catalog/.jpg"  locked="FALSE" active="TRUE" visible="TRUE"  display="" valuetype="TEXT"	geoInfluencing="TRUE">
+				
+                <ITEM value="1:1" 				    label="1 Shelf" 		info1="1_Shelf" 		info2="" info3="" info4=""		image1="img/catalog/.jpg" />
+				<ITEM value="1:1:1" 				label="2 Shelves" 		info1="2_Shelf" 		info2="" info3="" info4=""		image1="img/catalog/.jpg" />
+
+			</COMBOBOX>
+
+            <GROUP name="GRP_1Shelf_Zone" label="">
+               
+                <EDITBOX name="1S_WU_PA_Qty_2" label="Partition Required in 1st zone :" active="TRUE" nosave="FALSE"	Info="Enter the qty of Partition in the form of Ratio {Example: 1:1 means 1 shelf comes in middle,280mm:1 means shelf comes after 280mm from Left side}"	visible="TRUE" locked="FALSE" valuetype="LINDIV" default="1:1:1" min="" max="" geoInfluencing="TRUE" />
+                <EDITBOX name="1S_WU_PA_Qty_3" label="Partition Required in 2nd zone :" active="TRUE" nosave="FALSE"	Info="Enter the qty of Partition in the form of Ratio {Example: 1:1 means 1 shelf comes in middle,280mm:1 means shelf comes after 280mm from Left side}"	visible="TRUE" locked="FALSE" valuetype="LINDIV" default="1:1:1:1" min="" max="" geoInfluencing="TRUE" />
+    
+            </GROUP>
+            
+            <GROUP name="GRP_2Shelf_Zone" label="">
+
+                <EDITBOX name="2S_WU_PA_Qty_1" label="Partition Required in 1st zone :" active="TRUE" nosave="FALSE"	Info="Enter the qty of Partition in the form of Ratio {Example: 1:1 means 1 shelf comes in middle,280mm:1 means shelf comes after 280mm from Left side}"	visible="TRUE" locked="FALSE" valuetype="LINDIV" default="1:1" min="" max="" geoInfluencing="TRUE" />
+                <EDITBOX name="2S_WU_PA_Qty_2" label="Partition Required in 2nd zone :" active="TRUE" nosave="FALSE"	Info="Enter the qty of Partition in the form of Ratio {Example: 1:1 means 1 shelf comes in middle,280mm:1 means shelf comes after 280mm from Left side}"	visible="TRUE" locked="FALSE" valuetype="LINDIV" default="1:1:1" min="" max="" geoInfluencing="TRUE" />
+                <EDITBOX name="2S_WU_PA_Qty_3" label="Partition Required in 3rd zone :" active="TRUE" nosave="FALSE"	Info="Enter the qty of Partition in the form of Ratio {Example: 1:1 means 1 shelf comes in middle,280mm:1 means shelf comes after 280mm from Left side}"	visible="TRUE" locked="FALSE" valuetype="LINDIV" default="1:1:1:1" min="" max="" geoInfluencing="TRUE" />
+    
+            </GROUP>
+			
+            <EDITBOX name="WU_PA_Qty_1" label="QTY1" active="TRUE" visible="FALSE" locked="FALSE" valuetype="LINDIV" default="" geoInfluencing="TRUE" />
+            <EDITBOX name="WU_PA_Qty_2" label="QTY2" active="TRUE" visible="FALSE" locked="FALSE" valuetype="LINDIV" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="WU_PA_Qty_3" label="QTY3" active="TRUE" visible="FALSE" locked="FALSE" valuetype="LINDIV" default="" geoInfluencing="TRUE" />
+			
+          
+
+			<GROUP name="OpenBox Finsh" label="Dado OpenBox Finish">		
+			
+
+				<COMBOBOX name="OB_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="OB_Shade" label="Openbox Shade" valuetype="IMAGE" default="" Search="TRUE"	visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+	
+				<!-- Variable Values -->
+				<EDITBOX name="OB_Carcass_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_Prf" label="OB_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_BP_Mat" label="OB_Carcass_BP_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				
+				
+			</GROUP>
+
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_ADDERPANEL_MARKUP" />
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXD</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYD</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZD</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+		
+			<VAR name="OB_Carcass_Mat" value="OB_Carcass_Mat" />
+			<VAR name="OB_Carcass_Prf" value="OB_Carcass_Prf" />
+			<VAR name="OB_Carcass_BP_Mat" 	value="OB_Carcass_BP_Mat" />
+
+			<VAR name="WU_Shelf_Qty" 			value="WU_Shelf_Qty" />
+			<VAR name="WU_PA_Qty_1" 			value="WU_PA_Qty_1" />
+			<VAR name="WU_PA_Qty_2" 			value="WU_PA_Qty_2" />
+			<VAR name="WU_PA_Qty_3" 			value="WU_PA_Qty_3" />
+
+			<VAR name="Calculation_Factors" value="KAP_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KAP_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KAP_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+        
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OPEN_BOX_FINISHES" />
+        <IF>
+            <LT expr1="FIELD(ART_SIZEZD).VALUE" expr2="301"/>
+            <THEN>
+                <COMMAND>"FIELD(WU_Shelf_Qty).Info1List(1_Shelf)"</COMMAND>
+            </THEN>
+            <ELSE>
+                <COMMAND>"FIELD(WU_Shelf_Qty).Info1List(1_Shelf,2_Shelf)"</COMMAND>                
+            </ELSE>
+        </IF>
+     
+
+        <COMMAND>"FIELD(WU_PA_Qty_1).value=FIELD(2S_WU_PA_Qty_1).value"</COMMAND>                                          
+
+        
+                <IF>
+			        <EQ expr1="FIELD(WU_Shelf_Qty).info1" expr2="2_Shelf"/>
+                    <THEN>
+                        <COMMAND>"FIELD(GRP_1Shelf_Zone).visible=FALSE"</COMMAND>	
+                        <COMMAND>"FIELD(GRP_2Shelf_Zone).visible=TRUE"</COMMAND>                                          
+                        <COMMAND>"FIELD(WU_PA_Qty_2).value=FIELD(2S_WU_PA_Qty_2).value"</COMMAND>                                          
+                        <COMMAND>"FIELD(WU_PA_Qty_3).value=FIELD(2S_WU_PA_Qty_3).value"</COMMAND>                                          
+                    </THEN>
+                    <ELSE>
+                        <IF>
+			              <EQ expr1="FIELD(WU_Shelf_Qty).info1" expr2="1_Shelf"/>
+                            <THEN>
+                                <COMMAND>"FIELD(GRP_1Shelf_Zone).visible=TRUE"</COMMAND>	
+                                <COMMAND>"FIELD(GRP_2Shelf_Zone).visible=FALSE"</COMMAND>     
+                               <COMMAND>"FIELD(WU_PA_Qty_2).value=FIELD(1S_WU_PA_Qty_2).value"</COMMAND>                                          
+                               <COMMAND>"FIELD(WU_PA_Qty_3).value=FIELD(1S_WU_PA_Qty_3).value"</COMMAND>                 
+                            </THEN>
+                        </IF>                        
+                    </ELSE>
+                </IF>
+
+             
+       
+	</LOGIC_DEFINITION>
+</XML>

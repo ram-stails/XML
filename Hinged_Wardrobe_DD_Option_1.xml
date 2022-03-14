@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<ARTICLE>
+		<ART_NAME>Hinged_Wardrobe_DD</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Opeable Wardrobe Double Door</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<!-- <EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" /> -->
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+				
+				<EDITBOX name="ART_SIZEXWD" label="Width (600mm to 1200mm) :" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="900" min="601" max="1200" geoInfluencing="TRUE" />
+
+                <EDITBOX name="ART_SIZEYWD" label="Depth (400mm to 580mm) :" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" min="400" max="580" geoInfluencing="TRUE" />
+			   
+				<EDITBOX name="ART_SIZEZWD" label="Height (2100mm to 2400mm) :" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="2100" min="2100" max="2400" geoInfluencing="TRUE" />
+
+            </GROUP>
+            
+            <GROUP name="Wardrobe_Carcass" label="Carcass Material">
+
+				<COMBOBOX name="Carcass_Core_Material" label="Core Material" valuetype="" default="Brich_Ply" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+
+					<ITEM value="Brich_Ply" label="PlyWood" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+					<ITEM value="PLPB" label="Engineered" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+					
+				</COMBOBOX>
+
+                <COMBOBOX name="Mat_Carcass" label="Carcass Material" valuetype="IMAGE" default="Half_White_PLY" Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE"  image1="img/catalog/.PNG">
+                    
+                    <ITEM value="Half_White_PLY" label="Half White" info1="PlyWood" info2="Brich_Ply" info3="Half_White" image1="img/material/Half_White.jpg" />
+                    <ITEM value="Deep_Grey_PLY" label="Deep Grey" info1="PlyWood" info2="Brich_Ply" info3="Deep_Grey" image1="img/material/Deep_Grey.jpg" />
+                    <ITEM value="Macro_Linen_PLY" label="Macro Linen" info1="PlyWood" info2="Brich_Ply" info3="Macro_Linen" image1="img/material/Macro_Linen.jpg" />
+                    <ITEM value="Micro_Linen_PLY" label="Micro Linen" info1="PlyWood" info2="Brich_Ply" info3="Micro_Linen" image1="img/material/Micro_Linen.jpg" />
+                    <ITEM value="Walnut_Desire_PLY" label="Walnut Desire" info1="PlyWood" info2="Brich_Ply" info3="Walnut_Desire" image1="img/material/Walnut_Desire.jpg" />
+                    <ITEM value="White_Pine_PLY" label="White Pine" info1="PlyWood" info2="Brich_Ply" info3="White_Pine" image1="img/material/White_Pine.jpg" />
+                    <ITEM value="Magma_PLY" label="Magma" info1="PlyWood" info2="Brich_Ply" info3="Magma" image1="img/material/Magma.jpg" />
+					<ITEM value="Grey_Linen_PLY" label="Grey Linen" info1="PlyWood" info2="Brich_Ply" info3="Grey_Linen" image1="img/material/Grey_Linen.jpg" /> 
+					
+					<ITEM value="Frosty_White_PLPB" label="Frosty White" info1="PLPB" info2="PLPB" info3="Frosty_White" image1="img/material/Frosty_White.jpg" />
+					<ITEM value="Gothic_Grey_PLPB" label="Gothic Grey" info1="PLPB" info2="PLPB" info3="Gothic_Grey" image1="img/material/Gothic_Grey.jpg" />
+					<ITEM value="Fab_Chocos_PLPB" label="Fab Chocos" info1="PLPB" info2="PLPB" info3="Fab_Chocos" image1="img/material/Fab_Chocos.jpg" />                    
+                    <ITEM value="Fab_Cream_PLPB" label="Fab Cream" info1="PLPB" info2="PLPB" info3="Fab_Cream" image1="img/material/Fab_Cream.jpg" />
+                  	<ITEM value="CPW_PLPB" label="Classic Planked Walnut" info1="PLPB" info2="PLPB" info3="CPW" image1="img/material/CPW.jpg" />
+                    <ITEM value="Highland_Pine_PLPB" label="Highland Pine" info1="PLPB" info2="PLPB" info3="Highland_Pine" image1="img/material/Highland_Pine.jpg" />
+                    <ITEM value="Slate_Grey_PLPB" label="Slate Grey" info1="PLPB" info2="PLPB" info3="Slate_Grey" image1="img/material/Slate_Grey.jpg" />
+                    <ITEM value="Fab_Grey_PLPB" label="Fab Grey" info1="PLPB" info2="PLPB" info3="Fab_Grey" image1="img/material/Fab_Grey.jpg" /> 
+                 
+				</COMBOBOX>			
+				
+				<COMBOBOX name="Prf_Carcass" label="Edge Band Selection" valuetype="TEXT" default="Half_White_08mm" visible="FALSE" geoInfluencing="TRUE"	active="TRUE" image1="img/catalog/.PNG">
+					                   
+                    <ITEM value="Half_White_08mm" label="Half white" info1="Half_White" image1="img/catalog/Half_White.jpg" />
+                    <ITEM value="Deep_Grey_08mm" label="Deep Grey" info1="Deep_Grey" image1="img/catalog/Deep_Grey.jpg" />
+                    <ITEM value="Macro_Linen_08mm" label="Macro Linen" info1="Macro_Linen" image1="img/catalog/Macro_Linen.jpg" />
+                    <ITEM value="Micro_Linen_08mm" label="Micro Linen" info1="Micro_Linen" image1="img/catalog/Micro_Linen.jpg" />
+                    <ITEM value="Walnut_Desire_08mm" label="Walnut Desire" info1="Walnut_Desire" image1="img/catalog/Walnut_Desire.jpg" />
+                    <ITEM value="White_Pine_08mm" label="White Pine" info1="White_Pine" image1="img/catalog/White_Pine.jpg" />
+                    <ITEM value="Magma_08mm" label="Magma" info1="Magma" image1="img/catalog/Magma.jpg" />
+					<ITEM value="Grey_Linen_08mm" label="Grey Linen" info1="Grey_Linen" image1="img/catalog/Grey_Linen.jpg" />
+					
+					<ITEM value="Frosty_White_08mm" label="Frosty White" info1="Frosty_White" image1="img/catalog/Frosty_White.jpg" />
+                    <ITEM value="Gothic_Grey_08mm" label="Gothic Grey" info1="Gothic_Grey" image1="img/catalog/Gothic_Grey.jpg" />
+                    <ITEM value="Fab_Chocos_08mm" label="Fab Chocos" info1="Fab_Chocos" image1="img/catalog/Fab_Chocos.jpg" />
+                    <ITEM value="Fab_Cream_08mm" label="Fab Cream" info1="Fab_Cream" image1="img/catalog/Fab_Cream.jpg" />
+                    <ITEM value="CPW_08mm" label="Classic Planked " info1="CPW" image1="img/catalog/CPW.jpg" />
+                    <ITEM value="Highland_Pine_08mm" label="Highland Pine" info1="Highland_Pine" image1="img/catalog/Highland_Pine.jpg" />
+                    <ITEM value="Slate_Grey_08mm" label="Slate Grey" info1="Slate_Grey" image1="img/catalog/Slate_Grey.jpg" />
+                    <ITEM value="Fab_Grey_08mm" label="Fab Grey" info1="Fab_Grey" image1="img/catalog/Fab_Grey.jpg" />
+                   
+                </COMBOBOX>
+
+            </GROUP>
+            
+		</PARAFOLDER>
+
+		
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<CHECKBOX name="WRD_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+			<GROUP name="Left_Shutter_Details" label="Left Shutter Details">
+
+				<COMBOBOX name="WRD_Shutter_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Shutter_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="WRD_Front1" label="Shutter Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<GROUP name="Right_Shutter_Details" label="Right Shutter Details">
+
+				<COMBOBOX name="WRD_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="WRD_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="WRD_Front2" label="Shutter Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<!-- Variable Values -->
+			<EDITBOX name="Mat_Front_1" label="Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Prf_Front_1" label="Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+			<EDITBOX name="Mat_Front_2" label="Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="Prf_Front_2" label="Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>	
+		
+        
+        <PARAFOLDER name="Internal_Selction" label="Internals" active="TRUE" visible="TRUE">
+            <!-- Variable Value -->
+            <EDITBOX name="Internal_Module_1" label="Internal_Module_1" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+            <COMBOBOX name="M1_Wardrobe_Internal_Type" default="Standard" image1="img/catalog/.PNG"    image2="img/article/"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+				
+				<ITEM name="Standard"   	label="Standard"		        image1="img/catalog/Standard.jpg"			visible="TRUE"/>
+				<ITEM name="customisation" 	label="customisation"		    image1="img/catalog/customisation.jpg"		visible="TRUE"/>
+				
+			</COMBOBOX>
+       
+            <COMBOBOX name="M1_Internal_Type" label="Internal" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" search="TRUE" display="" image1="img/catalog/.PNG">
+                
+                				
+                <ITEM value="WD_600_7F_1" 	label="WD_600_7F_1"  info1="2100" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_7F_1.jpg" />
+                <ITEM value="WD_600_7F_2" 	label="WD_600_7F_2"  info1="2100" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_7F_2.jpg" />
+				<ITEM value="WD_600_7F_3" 	label="WD_600_7F_3"  info1="2100" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_7F_3.jpg" />
+				<ITEM value="WD_600_7F_4" 	label="WD_600_7F_4"  info1="2100" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_7F_4.jpg" />				
+				<ITEM value="WD_600_7F_5" 	label="WD_600_7F_5"  info1="2100" info2="600"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_600_7F_5.jpg" />				
+				<ITEM value="WD_600_7F_6" 	label="WD_600_7F_6"  info1="2100" info2="600"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_600_7F_6.jpg" />				
+				<ITEM value="WD_600_7F_7" 	label="WD_600_7F_7"  info1="2100" info2="600"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_600_7F_7.jpg" />				
+				<ITEM value="WD_600_7F_8" 	label="WD_600_7F_8"  info1="2100" info2="600"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_600_7F_8.jpg" />				
+				<ITEM value="WD_700_7F_1" 	label="WD_700_7F_1"  info1="2100" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_7F_1.jpg" />				
+				<ITEM value="WD_700_7F_2" 	label="WD_700_7F_2"  info1="2100" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_7F_2.jpg" />				
+				<ITEM value="WD_700_7F_3" 	label="WD_700_7F_3"  info1="2100" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_7F_3.jpg" />				
+				<ITEM value="WD_700_7F_4" 	label="WD_700_7F_4"  info1="2100" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_7F_4.jpg" />				
+				<ITEM value="WD_700_7F_5" 	label="WD_700_7F_5"  info1="2100" info2="700"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_700_7F_5.jpg" />				
+				<ITEM value="WD_700_7F_6" 	label="WD_700_7F_6"  info1="2100" info2="700"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_700_7F_6.jpg" />				
+				<ITEM value="WD_700_7F_7" 	label="WD_700_7F_7"  info1="2100" info2="700"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_700_7F_7.jpg" />				
+				<ITEM value="WD_700_7F_8" 	label="WD_700_7F_8"  info1="2100" info2="700"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_700_7F_8.jpg" />				
+                <ITEM value="WD_800_7F_1" 	label="WD_800_7F_1"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_1.jpg" />
+                <ITEM value="WD_800_7F_2" 	label="WD_800_7F_2"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_2.jpg" />
+                <ITEM value="WD_800_7F_3" 	label="WD_800_7F_3"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_3.jpg" />
+                <ITEM value="WD_800_7F_4" 	label="WD_800_7F_4"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_4.jpg" />
+                <ITEM value="WD_800_7F_5" 	label="WD_800_7F_5"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_5.jpg" />
+                <ITEM value="WD_800_7F_6" 	label="WD_800_7F_6"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_6.jpg" />
+                <ITEM value="WD_800_7F_7" 	label="WD_800_7F_7"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_800_7F_7.jpg" />
+                <ITEM value="WD_800_7F_8" 	label="WD_800_7F_8"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_8.jpg" />               				
+				<ITEM value="WD_900_7F_1" 	label="WD_900_7F_1"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_900_7F_1.jpg" />
+                <ITEM value="WD_900_7F_2" 	label="WD_900_7F_2"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_7F_2.jpg" />
+                <ITEM value="WD_900_7F_3" 	label="WD_900_7F_3"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_7F_3.jpg" />
+                <ITEM value="WD_900_7F_4" 	label="WD_900_7F_4"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_7F_4.jpg" />
+                <ITEM value="WD_900_7F_5" 	label="WD_900_7F_5"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_7F_5.jpg" />
+                <ITEM value="WD_900_7F_6" 	label="WD_900_7F_6"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_7F_6.jpg" />
+                <ITEM value="WD_900_7F_7" 	label="WD_900_7F_7"  info1="2100" info2="900"  info3="Standard" info4="Drawer" 	image1="img/catalog/WD_900_7F_7.jpg" />
+                <ITEM value="WD_900_7F_8" 	label="WD_900_7F_8"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_7F_8.jpg" />                
+				<ITEM value="WD_1000_7F_1" 	label="WD_1000_7F_1" info1="2100" info2="1000" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1000_7F_1.jpg" />
+                <ITEM value="WD_1000_7F_2" 	label="WD_1000_7F_2" info1="2100" info2="1000" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1000_7F_2.jpg" />
+				<ITEM value="WD_1000_7F_3" 	label="WD_1000_7F_3" info1="2100" info2="1000" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1000_7F_3.jpg" />
+				<ITEM value="WD_1000_7F_4" 	label="WD_1000_7F_4" info1="2100" info2="1000" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1000_7F_4.jpg" />
+				<ITEM value="WD_1000_7F_5" 	label="WD_1000_7F_5" info1="2100" info2="1000" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1000_7F_5.jpg" />
+				<ITEM value="WD_1000_7F_6" 	label="WD_1000_7F_6" info1="2100" info2="1000" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1000_7F_6.jpg" />
+				<ITEM value="WD_1000_7F_7" 	label="WD_1000_7F_7" info1="2100" info2="1000" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1000_7F_7.jpg" />
+				<ITEM value="WD_1000_7F_8" 	label="WD_1000_7F_8" info1="2100" info2="1000" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1000_7F_8.jpg" />
+				<ITEM value="WD_1100_7F_1" 	label="WD_1100_7F_1" info1="2100" info2="1100" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1100_7F_1.jpg" />
+                <ITEM value="WD_1100_7F_2" 	label="WD_1100_7F_2" info1="2100" info2="1100" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1100_7F_2.jpg" />				
+				<ITEM value="WD_1200_7F_1" 	label="WD_1200_7F_1" info1="2100" info2="1200" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1200_7F_1.jpg" />
+                <ITEM value="WD_1200_7F_2" 	label="WD_1200_7F_2" info1="2100" info2="1200" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1200_7F_2.jpg" />                
+
+			   
+				
+                <ITEM value="WD_600_8F_1"	label="WD_600_8F_1"  info1="2400" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_8F_1.jpg" />
+                <ITEM value="WD_600_8F_2"	label="WD_600_8F_2"  info1="2400" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_8F_2.jpg" />
+				<ITEM value="WD_600_8F_3"	label="WD_600_8F_3"  info1="2400" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_8F_3.jpg" />
+				<ITEM value="WD_600_8F_4" 	label="WD_600_8F_4"  info1="2400" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_8F_4.jpg" />				
+				<ITEM value="WD_600_8F_5" 	label="WD_600_8F_5"  info1="2400" info2="600"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_600_8F_5.jpg" />				
+				<ITEM value="WD_600_8F_6" 	label="WD_600_8F_6"  info1="2400" info2="600"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_600_8F_6.jpg" />				
+				<ITEM value="WD_600_8F_7" 	label="WD_600_8F_7"  info1="2400" info2="600"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_600_8F_7.jpg" />				
+				<ITEM value="WD_600_8F_8"   label="WD_600_8F_8"  info1="2400" info2="600"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_600_8F_8.jpg" />	
+				<ITEM value="WD_700_8F_1"	label="WD_700_8F_1"  info1="2400" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_8F_1.jpg" />				
+				<ITEM value="WD_700_8F_2"	label="WD_700_8F_2"  info1="2400" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_8F_2.jpg" />				
+				<ITEM value="WD_700_8F_3"	label="WD_700_8F_3"  info1="2400" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_8F_3.jpg" />				
+				<ITEM value="WD_700_8F_4"	label="WD_700_8F_4"  info1="2400" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_8F_4.jpg" />				
+				<ITEM value="WD_700_8F_5"	label="WD_700_8F_5"  info1="2400" info2="700"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_700_8F_5.jpg" />				
+				<ITEM value="WD_700_8F_6"	label="WD_700_8F_6"  info1="2400" info2="700"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_700_8F_6.jpg" />				
+				<ITEM value="WD_700_8F_7"	label="WD_700_8F_7"  info1="2400" info2="700"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_700_8F_7.jpg" />				
+				<ITEM value="WD_700_8F_8"	label="WD_700_8F_8"  info1="2400" info2="700"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_700_8F_8.jpg" />				
+                <ITEM value="WD_800_8F_1"	label="WD_800_8F_1"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_1.jpg" />
+                <ITEM value="WD_800_8F_2" 	label="WD_800_8F_2"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_2.jpg" />
+                <ITEM value="WD_800_8F_3" 	label="WD_800_8F_3"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_3.jpg" />
+                <ITEM value="WD_800_8F_4" 	label="WD_800_8F_4"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_4.jpg" />
+                <ITEM value="WD_800_8F_5" 	label="WD_800_8F_5"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_5.jpg" />
+                <ITEM value="WD_800_8F_6" 	label="WD_800_8F_6"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_6.jpg" />
+                <ITEM value="WD_800_8F_7" 	label="WD_800_8F_7"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_800_8F_7.jpg" />
+                <ITEM value="WD_800_8F_8" 	label="WD_800_8F_8"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_8.jpg" />                
+				<ITEM value="WD_900_8F_1" 	label="WD_900_8F_1"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_900_8F_1.jpg" />
+                <ITEM value="WD_900_8F_2" 	label="WD_900_8F_2"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_8F_2.jpg" />
+                <ITEM value="WD_900_8F_3" 	label="WD_900_8F_3"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_8F_3.jpg" />
+                <ITEM value="WD_900_8F_4" 	label="WD_900_8F_4"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_8F_4.jpg" />
+                <ITEM value="WD_900_8F_5" 	label="WD_900_8F_5"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_8F_5.jpg" />
+                <ITEM value="WD_900_8F_6" 	label="WD_900_8F_6"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_8F_6.jpg" />
+                <ITEM value="WD_900_8F_7" 	label="WD_900_8F_7"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_8F_7.jpg" />
+                <ITEM value="WD_900_8F_8" 	label="WD_900_8F_8"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_8F_8.jpg" />               
+				<ITEM value="WD_1000_8F_1" 	label="WD_1000_8F_1" info1="2400" info2="1000" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1000_8F_1.jpg" />
+                <ITEM value="WD_1000_8F_2" 	label="WD_1000_8F_2" info1="2400" info2="1000" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1000_8F_2.jpg" />
+				<ITEM value="WD_1000_8F_3" 	label="WD_1000_8F_3" info1="2400" info2="1000" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1000_8F_3.jpg" />
+				<ITEM value="WD_1000_8F_4" 	label="WD_1000_8F_4" info1="2400" info2="1000" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1000_8F_4.jpg" />
+				<ITEM value="WD_1000_8F_5" 	label="WD_1000_8F_5" info1="2400" info2="1000" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1000_8F_5.jpg" />
+				<ITEM value="WD_1000_8F_6" 	label="WD_1000_8F_6" info1="2400" info2="1000" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1000_8F_6.jpg" />
+				<ITEM value="WD_1000_8F_7" 	label="WD_1000_8F_7" info1="2400" info2="1000" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1000_8F_7.jpg" />
+				<ITEM value="WD_1000_8F_8" 	label="WD_1000_8F_8" info1="2400" info2="1000" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1000_8F_8.jpg" />
+				<ITEM value="WD_1100_8F_1" 	label="WD_1100_8F_1" info1="2400" info2="1100" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1100_8F_1.jpg" />
+                <ITEM value="WD_1100_8F_2" 	label="WD_1100_8F_2" info1="2400" info2="1100" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1100_8F_2.jpg" />				
+				<ITEM value="WD_1200_8F_1" 	label="WD_1200_8F_1" info1="2400" info2="1200" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1200_8F_1.jpg" />
+                <ITEM value="WD_1200_8F_2" 	label="WD_1200_8F_2" info1="2400" info2="1200" info3="Standard" info4="Drawer"	image1="img/catalog/WD_1200_8F_2.jpg" />
+               
+				<!-- Customization modules -->           
+
+				 <ITEM value="M1_7ft_Layout_1" label="Lauout 1" info1="2100" info2="ANY" info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_1.jpg" />
+				 <ITEM value="M1_7ft_Layout_2" label="Layout 2" info1="2100" info2="ANY" info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_2.jpg" />
+				 <ITEM value="M1_7ft_Layout_3" label="Layout 3" info1="2100" info2="ANY" info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_3.jpg" />
+				 <ITEM value="M1_7ft_Layout_4" label="Layout 4" info1="2100" info2="ANY" info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_4.jpg" />
+				 <ITEM value="M1_7ft_Layout_5" label="Layout 5" info1="2100" info2="ANY" info3="customisation" info4="No_Drawer"	image1="img/catalog/7ft_Layout_5.jpg" />
+				 <ITEM value="M1_7ft_Layout_6" label="Layout 6" info1="2100" info2="ANY" info3="customisation" info4="No_Drawer"	image1="img/catalog/7ft_Layout_6.jpg" />
+				 <ITEM value="M1_7ft_Layout_7" label="Layout 7" info1="2100" info2="ANY" info3="customisation" info4="No_Drawer"	image1="img/catalog/7ft_Layout_7.jpg" />
+				 <ITEM value="M1_7ft_Layout_8" label="Layout 8" info1="2100" info2="ANY" info3="customisation" info4="No_Drawer"	image1="img/catalog/7ft_Layout_8.jpg" />
+
+				<ITEM value="M1_8ft_Layout_1" label="Layout 1" info1="2400" info2="ANY" info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_1.jpg" />
+				<ITEM value="M1_8ft_Layout_2" label="Layout 2" info1="2400" info2="ANY" info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_2.jpg" />
+				<ITEM value="M1_8ft_Layout_3" label="Layout 3" info1="2400" info2="ANY" info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_3.jpg" />
+				<ITEM value="M1_8ft_Layout_4" label="Layout 4" info1="2400" info2="ANY" info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_4.jpg" />
+				<ITEM value="M1_8ft_Layout_5" label="Layout 5" info1="2400" info2="ANY" info3="customisation" info4="No_Drawer"	image1="img/catalog/8ft_Layout_5.jpg" />
+				<ITEM value="M1_8ft_Layout_6" label="Layout 6" info1="2400" info2="ANY" info3="customisation" info4="No_Drawer"	image1="img/catalog/8ft_Layout_6.jpg" />
+				<ITEM value="M1_8ft_Layout_7" label="Layout 7" info1="2400" info2="ANY" info3="customisation" info4="No_Drawer"	image1="img/catalog/8ft_Layout_7.jpg" />
+				<ITEM value="M1_8ft_Layout_8" label="Layout 8" info1="2400" info2="ANY" info3="customisation" info4="No_Drawer"	image1="img/catalog/8ft_Layout_8.jpg" />
+				
+               <!-- End of Customization modules -->
+			</COMBOBOX>
+		<!-- </PARAFOLDER> -->
+
+			<!-- Custom internal Modules -->
+
+			<!-- Layout 1 internal modules -->
+		<!-- <PARAFOLDER name="Custom_Internal_Modules" label="Internal Modules" active="TRUE" visible="TRUE"> -->
+
+			<GROUP name="Shelf_Custom_Internal" label="Internals"	visible=""	valuetype="MULTIROW">
+
+				<COMBOBOX name="M1_Z1_P0" default="" label="Full Top"	width="100%"	image1="img/catalog/.PNG"   Width="" image2="img/catalog/M1_Z1_P0.jpg"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+
+					
+					
+				</COMBOBOX>	
+
+				<COMBOBOX name="M1_Z1_P1" default="" label="Top Left"	width="50%"	image1="img/catalog/.PNG"   Width="" image2="img/catalog/M1_Z1_P1.jpg"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+
+					
+					
+				</COMBOBOX>	
+
+				<COMBOBOX name="M1_Z1_P2" default="" label="Top Right"	width="50%"	image1="img/catalog/.PNG"   Width="" image2="img/catalog/M1_Z1_P2.jpg"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+
+					
+					
+				</COMBOBOX>		
+				
+				<COMBOBOX name="M1_Z2_P0" default="" label="Full Bottom"	width="100%"	image1="img/catalog/.PNG"   Width="" image2="img/catalog/M1_Z2_P0.jpg"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+
+					
+					
+				</COMBOBOX>	
+
+				<COMBOBOX name="M1_Z2_P1" default="" label="Bottom Left"	width="50%"	image1="img/catalog/.PNG"   Width="" image2="img/catalog/M1_Z2_P1.jpg"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+
+					
+					
+				</COMBOBOX>	
+
+				<COMBOBOX name="M1_Z2_P2" default="" label="Bottom Right"	width="50%"	image1="img/catalog/.PNG"   Width="" image2="img/catalog/M1_Z2_P2.jpg"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+
+					
+					
+				</COMBOBOX>	
+
+			</GROUP>
+
+			<GROUP name="Patition_Custom_Internal" label="Internals"	visible=""	valuetype="MULTIROW">
+
+				<COMBOBOX name="M1_P1_Z0" default="" label="Full Left"	width="100%"	image1="img/catalog/.PNG"   Width="" image2="img/catalog/M1_P1_Z0.jpg"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+
+					
+					
+				</COMBOBOX>	
+
+				<COMBOBOX name="M1_P1_Z1" default="" label="Top Left"	width="50%"	image1="img/catalog/.PNG"   Width="" image2="img/catalog/M1_P1_Z1.jpg"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+
+					
+					
+				</COMBOBOX>	
+
+				<COMBOBOX name="M1_P1_Z2" default="" label="Bottom Left"	width="50%"	image1="img/catalog/.PNG"   Width="" image2="img/catalog/M1_P1_Z2.jpg"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+
+					
+					
+				</COMBOBOX>		
+				
+				<COMBOBOX name="M1_P2_Z0" default="" label="Full Right"	width="100%"	image1="img/catalog/.PNG"   Width="" image2="img/catalog/M1_P2_Z0.jpg"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+
+					
+					
+				</COMBOBOX>	
+
+				<COMBOBOX name="M1_P2_Z1" default="" label="Top Right"	width="50%"	image1="img/catalog/.PNG"   Width="" image2="img/catalog/M1_P2_Z1.jpg"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+
+					
+					
+				</COMBOBOX>	
+
+				<COMBOBOX name="M1_P2_Z2" default="" label="Bottom Right"	width="50%"	image1="img/catalog/.PNG"   Width="" image2="img/catalog/M1_Z2_P2.jpg"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+
+					
+					
+				</COMBOBOX>	
+				
+
+			</GROUP>
+
+       
+	
+		</PARAFOLDER>
+
+
+
+		
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_HINGE_SELECTION" />
+			<!-- Changing default drawer to Quadro Channel -->
+            <COMBOBOX name="Drawer_Selection"   label="Drawer Details"     default="Quadro_SoftClose" image1="img/catalog/.PNG"    image2="img/article/"  locked="FALSE" active="TRUE" visible="TRUE" valuetype="IMAGE"	geoInfluencing="TRUE">
+				
+				<ITEM name="Quadro_SoftClose"       	label="Quadro Soft Close"		             image1="img/hardware/Quadro.jpg"		visible="TRUE"/>
+				<ITEM name="Telescopic_SoftClose"   	label="Telescopic Soft Close"		        image1="img/hardware/Telescopic.jpg"			visible="TRUE"/>
+				
+            </COMBOBOX>
+            
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Handle_Details" label="Handle Details" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+			<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES" />	
+			
+		</PARAFOLDER>
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXWD</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYWD</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZWD</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<!-- <VAR name="___BASE" value="___BASE" /> -->
+			<VAR name="Adjustable_Legs" value="Adjustable_Legs" />
+			<VAR name="KI_Adjuster_Height" value="Leg_Height" />
+			<VAR name="Skirting_Height" value="Skirting_Height" />
+			<VAR name="Mat_Carcass" value="Mat_Carcass" />
+			<VAR name="Prf_Carcass" value="Prf_Carcass" />
+			<VAR name="Hinge_Type" value="Hinge_Type" />
+			<VAR name="Mat_Front_1" value="Mat_Front_1" />
+			<VAR name="Prf_Front_1" value="Prf_Front_1" />
+			<VAR name="Mat_Front_2" value="Mat_Front_2" />
+			<VAR name="Prf_Front_2" value="Prf_Front_2" />
+			<VAR name="Drawer_Selection" value="Drawer_Selection" />
+			<VAR name="BU_Le_Carcass_Mat" value="TU_Le_Carcass_Mat" />
+			<VAR name="BU_Le_Carcass_Prf" value="TU_Le_Carcass_Prf" />
+			<VAR name="BU_Ri_Carcass_Mat" value="TU_Ri_Carcass_Mat" />
+			<VAR name="BU_Ri_Carcass_Prf" value="TU_Ri_Carcass_Prf" />
+			<VAR name="BU_Left_Side_Panel" value="TU_Left_Side_Panel" />
+			<VAR name="BU_Right_Side_Panel" value="TU_Right_Side_Panel" />
+			<VAR name="Handle_Selection" value="Handle_Selection" />
+			<VAR name="Internal_Module_1" value="Internal_Module_1" />
+			<!-- Custom module Variables  -->
+				<!-- Article Insertion variables -->
+			<VAR name="M1_Z1_P0" value="M1_Z1_P0" />
+			<VAR name="M1_Z2_P0" value="M1_Z2_P0" />
+			<VAR name="M1_Z1_P1" value="M1_Z1_P1" />
+			<VAR name="M1_Z1_P2" value="M1_Z1_P2" />
+			<VAR name="M1_Z2_P1" value="M1_Z2_P1" />
+			<VAR name="M1_Z2_P2" value="M1_Z2_P2" />
+			<VAR name="M1_P1_Z0" value="M1_P1_Z0" />
+			<VAR name="M1_P2_Z0" value="M1_P2_Z0" />
+			<VAR name="M1_P1_Z1" value="M1_P1_Z1" />
+			<VAR name="M1_P1_Z2" value="M1_P1_Z2" />
+			<VAR name="M1_P2_Z1" value="M1_P2_Z1" />
+			<VAR name="M1_P2_Z2" value="M1_P2_Z2" />
+
+
+			
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+        <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WRD_SHUTTER_FINISH_LOGIC_DD" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WRD_SHUTTER_FINISH_LOGIC_1" />
+
+        <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WRD_DIFFERENT_SHUTTER_COLOR" />
+
+		<COMMAND>"FIELD(Internal_Module_1).value=FIELD(M1_Internal_Type).value"</COMMAND>		
+		<COMMAND>"FIELD(Mat_Carcass).Info2List(FIELD(Carcass_Core_Material).value)"</COMMAND>	
+        <COMMAND>"FIELD(Prf_Carcass).Info1List(FIELD(Mat_Carcass).info3)"</COMMAND>	       	
+        
+		<!--Standard Custom Filter Logic-->
+
+		<COMMAND>"FIELD(M1_Internal_Type).Info3List(FIELD(M1_Wardrobe_Internal_Type).value)"</COMMAND>
+
+		<IF>
+			<LTEQ expr1="FIELD(ART_SIZEZWD).value" expr2="2250" />
+			<THEN>
+				<COMMAND>"FIELD(M1_Internal_Type).filterInfo1List(2100)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(M1_Internal_Type).filterInfo1List(2400)"</COMMAND> 
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(M1_Wardrobe_Internal_Type).value" expr2="Standard" />
+			<THEN>
+				<IF>
+					<AND>
+						<GTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="400" />
+						<LTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="550" />
+					</AND>
+					<THEN>
+						<COMMAND>"FIELD(M1_Internal_Type).filterInfo2List(450)"</COMMAND> 
+					</THEN>
+					<ELSE>
+						<IF>
+							<AND>
+								<GTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="551" />
+								<LTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="650" />
+							</AND>
+							<THEN>
+								<COMMAND>"FIELD(M1_Internal_Type).filterInfo2List(600)"</COMMAND> 
+							</THEN>
+							<ELSE>
+								<IF>
+									<AND>
+										<GTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="651" />
+										<LTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="799" />
+									</AND>
+									<THEN>
+										<COMMAND>"FIELD(M1_Internal_Type).filterInfo2List(700)"</COMMAND> 
+									</THEN>
+									<ELSE>
+										<IF>
+											<AND>
+												<GTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="800" />
+												<LTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="899" />
+											</AND>
+											<THEN>
+												<COMMAND>"FIELD(M1_Internal_Type).filterInfo2List(800)"</COMMAND> 
+											</THEN>
+											<ELSE>
+												<IF>
+													<AND>
+														<GTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="900" />
+														<LTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="999" />
+													</AND>
+													<THEN>
+														<COMMAND>"FIELD(M1_Internal_Type).filterInfo2List(900)"</COMMAND> 
+													</THEN>	
+													<ELSE>
+														<IF>
+															<AND>
+																<GTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="1000" />
+																<LTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="1099" />
+															</AND>
+															<THEN>
+																<COMMAND>"FIELD(M1_Internal_Type).filterInfo2List(1000)"</COMMAND> 
+															</THEN>
+															<ELSE>
+																<IF>
+																	<AND>
+																		<GTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="1100" />
+																		<LTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="1149" />
+																	</AND>
+																	<THEN>
+																		<COMMAND>"FIELD(M1_Internal_Type).filterInfo2List(1100)"</COMMAND> 
+																	</THEN>
+																	<ELSE>
+																		<IF>
+																			<AND>
+																				<GTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="1150" />
+																				<LTEQ expr1="FIELD(ART_SIZEXWD).value" expr2="1200" />
+																			</AND>
+																			<THEN>
+																				<COMMAND>"FIELD(M1_Internal_Type).filterInfo2List(1200)"</COMMAND> 
+																			</THEN>
+																		</IF>
+																	</ELSE>
+																</IF>
+															</ELSE>
+														</IF>
+													</ELSE>										
+												</IF>
+											</ELSE>
+										</IF>
+									</ELSE>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>			
+				</IF>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(M1_Internal_Type).filterInfo2List(ANY)"</COMMAND> 
+			</ELSE>
+		</IF>
+		<!-- custom internal logic -->	
+		
+		<IF>
+			<EQ expr1="FIELD(M1_Wardrobe_Internal_Type).value" expr2="customisation"/>
+			<THEN>
+				<IF>
+					<OR>
+						<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_1"/>
+						<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_2"/>
+						<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_3"/>
+						<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_4"/>
+						<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_1"/>
+						<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_2"/>
+						<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_3"/>
+						<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_4"/>
+					</OR>			
+					<THEN>
+						<COMMAND>"FIELD(Shelf_Custom_Internal).visible=TRUE"</COMMAND>						
+						<COMMAND>"FIELD(Patition_Custom_Internal).visible=FALSE"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<OR>
+								<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_5"/>
+								<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_6"/>
+								<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_7"/>
+								<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_8"/>
+								<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_5"/>
+								<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_6"/>
+								<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_7"/>
+								<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_8"/>
+							</OR>
+							<THEN>
+								<COMMAND>"FIELD(Shelf_Custom_Internal).visible=FALSE"</COMMAND>
+								<COMMAND>"FIELD(Patition_Custom_Internal).visible=TRUE"</COMMAND>
+							
+							</THEN>							
+						</IF>
+					</ELSE>
+				</IF>
+			</THEN>	
+			<ELSE>
+				<COMMAND>"FIELD(Shelf_Custom_Internal).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Patition_Custom_Internal).visible=FALSE"</COMMAND>			
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(M1_Wardrobe_Internal_Type).value" expr2="customisation"/>
+			<THEN>
+				<IF>
+					<OR>
+						<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_1"/>
+						<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_1"/>	
+					</OR>					
+					<THEN>
+						<COMMAND>"FIELD(M1_Z1_P0).visible=TRUE"</COMMAND>
+						<COMMAND>"FIELD(M1_Z2_P0).visible=TRUE"</COMMAND>
+						<COMMAND>"FIELD(M1_Z1_P1).visible=FALSE"</COMMAND>
+						<COMMAND>"FIELD(M1_Z1_P2).visible=FALSE"</COMMAND>
+						<COMMAND>"FIELD(M1_Z2_P1).visible=FALSE"</COMMAND>
+						<COMMAND>"FIELD(M1_Z2_P2).visible=FALSE"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<OR>
+								<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_2"/>
+								<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_2"/>
+							</OR>							
+							<THEN>
+								<COMMAND>"FIELD(M1_Z1_P0).visible=FALSE"</COMMAND>
+								<COMMAND>"FIELD(M1_Z2_P0).visible=TRUE"</COMMAND>
+								<COMMAND>"FIELD(M1_Z1_P1).visible=TRUE"</COMMAND>
+								<COMMAND>"FIELD(M1_Z1_P2).visible=TRUE"</COMMAND>
+								<COMMAND>"FIELD(M1_Z2_P1).visible=FALSE"</COMMAND>
+								<COMMAND>"FIELD(M1_Z2_P2).visible=FALSE"</COMMAND>
+							</THEN>
+							<ELSE>
+								<IF>
+									<OR>
+										<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_3"/>
+										<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_3"/>
+									</OR>									
+									<THEN>
+										<COMMAND>"FIELD(M1_Z1_P0).visible=TRUE"</COMMAND>
+										<COMMAND>"FIELD(M1_Z2_P0).visible=FALSE"</COMMAND>
+										<COMMAND>"FIELD(M1_Z1_P1).visible=FALSE"</COMMAND>
+										<COMMAND>"FIELD(M1_Z1_P2).visible=FALSE"</COMMAND>
+										<COMMAND>"FIELD(M1_Z2_P1).visible=TRUE"</COMMAND>
+										<COMMAND>"FIELD(M1_Z2_P2).visible=TRUE"</COMMAND>
+									</THEN>
+									<ELSE>
+										<IF>
+											<OR>
+												<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_4"/>
+												<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_4"/>
+											</OR>											
+											<THEN>
+												<COMMAND>"FIELD(M1_Z1_P0).visible=FALSE"</COMMAND>
+												<COMMAND>"FIELD(M1_Z2_P0).visible=FALSE"</COMMAND>
+												<COMMAND>"FIELD(M1_Z1_P1).visible=TRUE"</COMMAND>
+												<COMMAND>"FIELD(M1_Z1_P2).visible=TRUE"</COMMAND>
+												<COMMAND>"FIELD(M1_Z2_P1).visible=TRUE"</COMMAND>
+												<COMMAND>"FIELD(M1_Z2_P2).visible=TRUE"</COMMAND>
+											</THEN>
+											<ELSE>
+												<IF>
+													<OR>
+														<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_5"/>
+														<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_5"/>
+													</OR>													
+													<THEN>
+														<COMMAND>"FIELD(M1_P1_Z0).visible=TRUE"</COMMAND>
+														<COMMAND>"FIELD(M1_P2_Z0).visible=TRUE"</COMMAND>	
+														<COMMAND>"FIELD(M1_P1_Z1).visible=FALSE"</COMMAND>
+														<COMMAND>"FIELD(M1_P1_Z2).visible=FALSE"</COMMAND>
+														<COMMAND>"FIELD(M1_P2_Z1).visible=FALSE"</COMMAND>
+														<COMMAND>"FIELD(M1_P2_Z2).visible=FALSE"</COMMAND>													
+													</THEN>
+													<ELSE>
+														<IF>
+															<OR>
+																<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_6"/>
+																<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_6"/>
+															</OR>															
+															<THEN>
+																<COMMAND>"FIELD(M1_P1_Z0).visible=FALSE"</COMMAND>
+																<COMMAND>"FIELD(M1_P2_Z0).visible=TRUE"</COMMAND>	
+																<COMMAND>"FIELD(M1_P1_Z1).visible=TRUE"</COMMAND>
+																<COMMAND>"FIELD(M1_P1_Z2).visible=TRUE"</COMMAND>
+																<COMMAND>"FIELD(M1_P2_Z1).visible=FALSE"</COMMAND>
+																<COMMAND>"FIELD(M1_P2_Z2).visible=FALSE"</COMMAND>																
+															</THEN>	
+															<ELSE>
+																<IF>
+																	<OR>
+																		<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_7"/>
+																		<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_7"/>
+																	</OR>																	
+																	<THEN>
+																		<COMMAND>"FIELD(M1_P1_Z0).visible=TRUE"</COMMAND>
+																		<COMMAND>"FIELD(M1_P2_Z0).visible=FALSE"</COMMAND>	
+																		<COMMAND>"FIELD(M1_P1_Z1).visible=FALSE"</COMMAND>
+																		<COMMAND>"FIELD(M1_P1_Z2).visible=FALSE"</COMMAND>
+																		<COMMAND>"FIELD(M1_P2_Z1).visible=TRUE"</COMMAND>
+																		<COMMAND>"FIELD(M1_P2_Z2).visible=TRUE"</COMMAND>
+																	</THEN>
+																	<ELSE>
+																		<IF>
+																			<OR>
+																				<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_7ft_Layout_8"/>
+																				<EQ expr1="FIELD(M1_Internal_Type).value" expr2="M1_8ft_Layout_8"/>
+																			</OR>																			
+																			<THEN>
+																				<COMMAND>"FIELD(M1_P1_Z0).visible=FALSE"</COMMAND>
+																				<COMMAND>"FIELD(M1_P2_Z0).visible=FALSE"</COMMAND>	
+																				<COMMAND>"FIELD(M1_P1_Z1).visible=TRUE"</COMMAND>
+																				<COMMAND>"FIELD(M1_P1_Z2).visible=TRUE"</COMMAND>
+																				<COMMAND>"FIELD(M1_P2_Z1).visible=TRUE"</COMMAND>
+																				<COMMAND>"FIELD(M1_P2_Z2).visible=TRUE"</COMMAND>
+																			</THEN>
+																		</IF>
+																	</ELSE>
+																</IF>
+															</ELSE>												
+														</IF>
+													</ELSE>
+												</IF>										
+											</ELSE>
+										</IF>
+									</ELSE>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>
+			</THEN>			
+		</IF>
+			
+		<!-- Drawer visibility logic -->
+		<IF>
+			<EQ expr1="FIELD(M1_Internal_Type).info4" expr2="Drawer" />
+			<THEN>
+				<COMMAND>"FIELD(Drawer_Selection).Visible=TRUE"</COMMAND> 
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Drawer_Selection).Visible=FALSE"</COMMAND> 
+			</ELSE>
+	   </IF>
+
+	   <!-- End of Drawer Visibility logic -->
+
+
+		<!--Handle Filer Logic Start-->
+
+		<IF>
+			<EQ expr1="FIELD(Handle_Type).value" expr2="Surface_Handle"/>
+				<THEN>
+					<COMMAND>"FIELD(Handle_Selection).Info1List(Surface_Handle)"</COMMAND>
+				</THEN>
+		</IF>
+		
+		<IF>
+			<EQ expr1="FIELD(Handle_Type).value" expr2="Edge_Handle"/>
+				<THEN>
+					<COMMAND>"FIELD(Handle_Selection).Info1List(Edge_Handle)"</COMMAND>
+				</THEN>
+		</IF>
+		
+		<IF>
+			<EQ expr1="FIELD(Handle_Type).value" expr2="Surface_Handle_V"/>
+				<THEN>
+					<COMMAND>"FIELD(Handle_Selection).Info1List(Surface_Handle_V)"</COMMAND>
+				</THEN>
+		</IF>
+
+		<!--Handle Filer Logic End-->
+
+
+	</LOGIC_DEFINITION>
+</XML>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>WU_RS</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Roller Shutter</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<EDITBOX name="ART_SIZEZWR" label="Height (1050mm to 1500mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1050" min="1050" max="1500" geoInfluencing="TRUE" />
+                
+                <COMBOBOX name="ART_SIZEXW" label="Width (600mm,900mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" geoInfluencing="TRUE">
+					
+					<ITEM value="600" label="600 mm" info1="" />
+					<ITEM value="900" label="900 mm" info1="" />
+					
+				</COMBOBOX>				
+				
+				<EDITBOX name="ART_SIZEYW" label="Depth (330mm to 580mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="450" min="330" max="580"	geoInfluencing="TRUE" />				
+
+            </GROUP>            
+			
+
+			<!-- <GROUP name="OpenBox Finsh" label="OpenBox Finsh">		
+			
+
+				<COMBOBOX name="OB_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="OB_Shade" label="Openbox Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+	
+				<EDITBOX name="OB_Carcass_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_Prf" label="OB_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+			</GROUP> -->
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_WU_Carcass_CONSTRUCTION" />
+
+        </PARAFOLDER>
+        
+        <PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">			
+
+            <GROUP name="Acessory_type" label="" visible="">
+
+                <COMBOBOX name="RS_selection" label="" valuetype="IMAGE" default="Silver" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<ITEM value="Silver" label="PVC Silver" 		info1="600" 	info2="1350" 	info3="ALL" info4="" tooltipid="Easy_Line"	image1="img/hardware/Roller_Shuter_PVC_Silver.jpg" />
+					<ITEM value="Silver" label="PVC Silver" 		info1="900" 	info2="1350" 	info3="ALL" info4="" tooltipid="Easy_Line"	image1="img/hardware/Roller_Shuter_PVC_Silver.jpg" />
+					<ITEM value="Opal_White" label="Opal White" 	info1="600" 	info2="1500" 		info3="ALL" info4="" tooltipid="Verito_Line"	image1="img/hardware/Roller_Shutter_Opal_White.jpg" />
+					<ITEM value="Opal_White" label="Opal White" 	info1="900" 	info2="1500" 		info3="ALL" info4="" tooltipid="Verito_Line"	image1="img/hardware/Roller_Shutter_Opal_White.jpg" />
+					<ITEM value="Satinato" label="Satinato" 		info1="600" 	info2="1500" 		info3="ALL" info4="" tooltipid="Verito_Line"	image1="img/hardware/Roller_Shutter_Satinato.jpg" />
+					<ITEM value="Satinato" label="Satinato" 		info1="900" 	info2="1500" 		info3="ALL" info4="" tooltipid="Verito_Line"	image1="img/hardware/Roller_Shutter_Satinato.jpg" />
+					<ITEM value="Satinato_Black" label="Satinato Black" info1="600" info2="1500" 		info3="ALL" info4="" tooltipid="Verito_Line"	image1="img/hardware/Roller_Shutter_Satinato_Black.jpg" />
+					<ITEM value="Satinato_Black" label="Satinato Black" info1="900" info2="1500" 		info3="ALL" info4="" tooltipid="Verito_Line"	image1="img/hardware/Roller_Shutter_Satinato_Black.jpg" />
+                </COMBOBOX>
+                
+                <EDITBOX name="Roller_Shutter_Type" label="Shutter type" active="TRUE" visible="FALSE" locked="TRUE" valuetype="TEXT" default="" geoInfluencing="TRUE" />
+
+				<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_WALLUNIT_SHELF_SELECTION" />
+
+				<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_WALL_BRACKETS_SELECTION" />
+
+            </GROUP>
+
+        </PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_WALL_MARKUP" />
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXW</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYW</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZWR</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+
+			<VAR name="WU_Carcass" 			value="WU_Carcass" />
+			<VAR name="WU_Carcass_Prf_Type" value="WU_Carcass_Prf_Type" />
+			<VAR name="Wall_Bracket_Type" 	value="Wall_Bracket_Type" />		
+			<VAR name="OB_Carcass_Mat" 		value="OB_Carcass_Mat" />
+			<VAR name="OB_Carcass_Prf" 		value="OB_Carcass_Prf" />
+			<VAR name="Wu_Shelf_Selection" 	value="Wu_Shelf_Selection" />
+			<VAR name="Roller_Shutter_Type" value="Roller_Shutter_Type" />
+			<VAR name="Calculation_Factors" value="KW_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KW_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KW_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+        <!-- <COMMAND>"FIELD(Wu_Shelf_Selection).value=FIELD(Shelf_Type).value+'_'+'Shelves'"</COMMAND> -->
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_WU_Carcass_CONSTRUCTION_LOGIC" />
+
+       
+		<IF>
+			<GT expr1="FIELD(ART_SIZEZWR).value" expr2="1350" />
+			<THEN>
+				<COMMAND>"FIELD(RS_selection).info2List(1500)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<LTEQ expr1="FIELD(ART_SIZEZWR).value" expr2="1350" />
+					<THEN>
+						<COMMAND>"FIELD(RS_selection).info2List(1500,1350)"</COMMAND>
+					</THEN>
+				</IF>				
+			</ELSE>
+		</IF>
+
+		<COMMAND>"FIELD(RS_selection).filterinfo1List(FIELD(ART_SIZEXW).value)"</COMMAND>
+
+        	
+		<!-- <COMMAND>"FIELD(Roller_Shutter_Type).value='RS_'+FIELD(RS_selection).value+'_'+FIELD(ART_SIZEXW).value+'X'+FIELD(ART_SIZEZWR).value"</COMMAND>	 -->
+		<COMMAND>"FIELD(Roller_Shutter_Type).value='RS_'+FIELD(RS_selection).value+'_'+FIELD(ART_SIZEXW).value+'X'+'1050'"</COMMAND>	
+
+		<!-- <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OPEN_BOX_FINISHES" /> -->
+		
+	</LOGIC_DEFINITION>
+</XML>

@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+	<!---	*************************** Visible Side Finishes *****************************************************************************************	-->
+	<PART name="PART_VISIBLE_SIDES">
+
+		<GROUP name="Left Side Panel" label="Left Side Panel">
+
+			<CHECKBOX name="LeftSide_Visible_Panel" label="Left Side Visible Panel?" default="NO" checked="YES" unchecked="NO"  visible="TRUE" locked="FALSE" geoInfluencing="TRUE"/>
+
+			<EDITBOX name="BU_Left_Side_Panel"	label=""	default="" 		locked="FALSE"	active="TRUE"	visible="FALSE" geoInfluencing="TRUE"/>
+
+			<EDITBOX name="BU_Le_Side_Panel"	label=""	default="" 		locked="FALSE"	active="TRUE"	visible="FALSE" geoInfluencing="TRUE"/>
+				
+			
+			<EDITBOX name="BU_Le_Carcass_Mat" label="BU_Le_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="BU_Le_Carcass_Prf" label="BU_Le_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+			<EDITBOX name="Gola_Left_Pocket" label="Gola_Left_Pocket" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</GROUP>
+
+		<GROUP name="Right Side Panel" label="Right Side Panel">
+
+			<CHECKBOX name="RightSide_Visible_Panel" label="Right Side Visible Panel?" default="NO" checked="YES" unchecked="NO"  visible="TRUE" locked="FALSE" geoInfluencing="TRUE"/>
+
+			<EDITBOX name="BU_Right_Side_Panel"	label=""	default="" 		locked="FALSE"	active="TRUE"	visible="FALSE" geoInfluencing="TRUE"/>
+
+			<EDITBOX name="BU_Ri_Side_Panel"	label=""	default="" 		locked="FALSE"	active="TRUE"	visible="FALSE" geoInfluencing="TRUE"/>
+			
+			<EDITBOX name="BU_Ri_Carcass_Mat" label="BU_Ri_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="BU_Ri_Carcass_Prf" label="BU_Ri_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+			<EDITBOX name="Gola_Right_Pocket" label="Gola_Right_Pocket" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</GROUP>
+	
+	</PART>
+
+	<!---	*************************** Visible Side Finishes For Single Door*******************************************************************************	-->
+	<PART name="PART_VISIBLE_SIDES_LOGIC_1DOOR">
+
+		<IF>
+			<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(BU_Left_Side_Panel).value=PD_KBU_LSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(BU_Le_Side_Panel).value=FIELD(BU_Front1).value"</COMMAND> -->
+				<COMMAND>"FIELD(BU_Le_Carcass_Mat).value=FIELD(BU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Le_Carcass_Prf).value=FIELD(BU_Front1_Prf).value"</COMMAND>
+				<COMMAND>"FIELD(Gola_Right_Pocket).value=No"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(BU_Left_Side_Panel).value=PD_KBU_LSP"</COMMAND>
+						<COMMAND>"FIELD(Gola_Right_Pocket).value=Yes"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(BU_Right_Side_Panel).value=PD_KBU_RSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(BU_Ri_Side_Panel).value=FIELD(BU_Front1).value"</COMMAND> -->
+				<COMMAND>"FIELD(BU_Ri_Carcass_Mat).value=FIELD(BU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Ri_Carcass_Prf).value=FIELD(BU_Front1_Prf).value"</COMMAND>
+				<COMMAND>"FIELD(Gola_Left_Pocket).value=No"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(BU_Right_Side_Panel).value=PD_KBU_RSP"</COMMAND>
+						<COMMAND>"FIELD(Gola_Left_Pocket).value=Yes"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+		<!---	*************************** Visible Side Finishes For 2Door*******************************************************************************	-->
+	<PART name="PART_VISIBLE_SIDES_LOGIC_2DOOR">
+
+		<IF>
+			<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(BU_Left_Side_Panel).value=PD_KBU_LSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(BU_Le_Side_Panel).value=FIELD(BU_Front1).value"</COMMAND> -->
+				<COMMAND>"FIELD(BU_Le_Carcass_Mat).value=FIELD(BU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Le_Carcass_Prf).value=FIELD(BU_Front1_Prf).value"</COMMAND>
+				<COMMAND>"FIELD(Gola_Right_Pocket).value=No"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(BU_Left_Side_Panel).value=PD_KBU_LSP"</COMMAND>
+						<COMMAND>"FIELD(Gola_Right_Pocket).value=Yes"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(BU_Right_Side_Panel).value=PD_KBU_RSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(BU_Ri_Side_Panel).value=FIELD(BU_Front2).value"</COMMAND> -->
+				<COMMAND>"FIELD(BU_Ri_Carcass_Mat).value=FIELD(BU_Front2_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Ri_Carcass_Prf).value=FIELD(BU_Front2_Prf).value"</COMMAND>
+				<COMMAND>"FIELD(Gola_Left_Pocket).value=No"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(BU_Right_Side_Panel).value=PD_KBU_RSP"</COMMAND>
+						<COMMAND>"FIELD(Gola_Left_Pocket).value=Yes"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+	</PART>	
+
+		<!---	*************************** Visible Side Finishes For Drawer*******************************************************************************	-->
+		<PART name="PART_VISIBLE_SIDES_LOGIC_DRAWERCABINET">
+
+			<IF>
+				<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="YES" />
+				<THEN>
+					<COMMAND>"FIELD(BU_Left_Side_Panel).value=PD_KBU_LSP_Ext"</COMMAND>
+					<!-- <COMMAND>"FIELD(BU_Le_Side_Panel).value=FIELD(BU_Front1).value"</COMMAND> -->
+
+					<COMMAND>"FIELD(BU_Le_Carcass_Mat).value=FIELD(BU_Front1_Mat).value"</COMMAND>
+					<COMMAND>"FIELD(BU_Le_Carcass_Prf).value=FIELD(BU_Front1_Prf).value"</COMMAND>
+					<COMMAND>"FIELD(Gola_Right_Pocket).value=No"</COMMAND>
+				</THEN>
+				<ELSE>
+					<IF>
+						<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="NO" />
+						<THEN>
+							<COMMAND>"FIELD(BU_Left_Side_Panel).value=PD_KBU_LSP"</COMMAND>
+							<COMMAND>"FIELD(Gola_Right_Pocket).value=Yes"</COMMAND>
+						</THEN>
+					</IF>
+				</ELSE>
+			</IF>
+	
+			<IF>
+				<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="YES" />
+				<THEN>
+					<COMMAND>"FIELD(BU_Right_Side_Panel).value=PD_KBU_RSP_Ext"</COMMAND>
+					<!-- <COMMAND>"FIELD(BU_Ri_Side_Panel).value=FIELD(BU_Front1).value"</COMMAND> -->
+
+					<COMMAND>"FIELD(BU_Ri_Carcass_Mat).value=FIELD(BU_Front1_Mat).value"</COMMAND>
+					<COMMAND>"FIELD(BU_Ri_Carcass_Prf).value=FIELD(BU_Front1_Mat).value"</COMMAND>
+					<COMMAND>"FIELD(Gola_Left_Pocket).value=No"</COMMAND>
+				</THEN>
+				<ELSE>
+					<IF>
+						<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="NO" />
+						<THEN>
+							<COMMAND>"FIELD(BU_Right_Side_Panel).value=PD_KBU_RSP"</COMMAND>
+							<COMMAND>"FIELD(Gola_Left_Pocket).value=Yes"</COMMAND>
+						</THEN>
+					</IF>
+				</ELSE>
+			</IF>
+	
+	
+		</PART>	
+
+			<!---	*************************** WU Visible Side Finishes *****************************************************************************************	-->
+	<PART name="PART_WU_VISIBLE_SIDES">
+
+		<GROUP name="Left Side Panel" label="Left Side Panel">
+
+			<CHECKBOX name="LeftSide_Visible_Panel" label="Left Side Visible Panel?" default="NO" checked="YES" unchecked="NO"  visible="TRUE" locked="FALSE" geoInfluencing="TRUE"/>
+
+			<EDITBOX name="WU_Left_Side_Panel"	label=""	default="" 		locked="FALSE"	active="TRUE"	visible="FALSE" geoInfluencing="TRUE"/>
+
+			<EDITBOX name="WU_Le_Side_Panel"	label=""	default="" 		locked="FALSE"	active="TRUE"	visible="FALSE" geoInfluencing="TRUE"/>
+			
+			<EDITBOX name="WU_Le_Carcass_Mat" label="WU_Le_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="WU_Le_Carcass_Prf" label="WU_Le_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</GROUP>
+
+		<GROUP name="Right Side Panel" label="Right Side Panel">
+
+			<CHECKBOX name="RightSide_Visible_Panel" label="Right Side Visible Panel?" default="NO" checked="YES" unchecked="NO"  visible="TRUE" locked="FALSE" geoInfluencing="TRUE"/>
+
+			<EDITBOX name="WU_Right_Side_Panel"	label=""	default="" 		locked="FALSE"	active="TRUE"	visible="FALSE" geoInfluencing="TRUE"/>
+
+			<EDITBOX name="WU_Ri_Side_Panel"	label=""	default="" 		locked="FALSE"	active="TRUE"	visible="FALSE" geoInfluencing="TRUE"/>
+						
+			<EDITBOX name="WU_Ri_Carcass_Mat" label="WU_Ri_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="WU_Ri_Carcass_Prf" label="WU_Ri_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</GROUP>
+	
+	</PART>
+
+	<!---	*************************** Visible Side Finishes For Single Door*******************************************************************************	-->
+	<PART name="PART_WU_VISIBLE_SIDES_LOGIC_1DOOR">
+
+		<IF>
+			<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(WU_Left_Side_Panel).value=PD_KWU_LSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(WU_Le_Side_Panel).value=FIELD(WU_Front1).value"</COMMAND> -->
+				<COMMAND>"FIELD(WU_Le_Carcass_Mat).value=FIELD(WU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(WU_Le_Carcass_Prf).value=FIELD(WU_Front1_Prf).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(WU_Left_Side_Panel).value=PD_KWU_LSP"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(WU_Right_Side_Panel).value=PD_KWU_RSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(WU_Ri_Side_Panel).value=FIELD(WU_Front1).value"</COMMAND> -->
+				<COMMAND>"FIELD(WU_Ri_Carcass_Mat).value=FIELD(WU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(WU_Ri_Carcass_Prf).value=FIELD(WU_Front1_Prf).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(WU_Right_Side_Panel).value=PD_KWU_RSP"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+	<!---	*************************** Visible Side Finishes For 2Door*******************************************************************************	-->
+	<PART name="PART_WU_VISIBLE_SIDES_LOGIC_2DOOR">
+
+		<IF>
+			<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(WU_Left_Side_Panel).value=PD_KWU_LSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(WU_Le_Side_Panel).value=FIELD(WU_Front1).value"</COMMAND> -->
+				<COMMAND>"FIELD(WU_Le_Carcass_Mat).value=FIELD(WU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(WU_Le_Carcass_Prf).value=FIELD(WU_Front1_Prf).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(WU_Left_Side_Panel).value=PD_KWU_LSP"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(WU_Right_Side_Panel).value=PD_KWU_RSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(WU_Ri_Side_Panel).value=FIELD(WU_Front2).value"</COMMAND> -->
+				<COMMAND>"FIELD(WU_Ri_Carcass_Mat).value=FIELD(WU_Front2_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(WU_Ri_Carcass_Prf).value=FIELD(WU_Front2_Prf).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(WU_Right_Side_Panel).value=PD_KWU_RSP"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+	<!---	*************************** Visible Side Finishes For BIFold*******************************************************************************	-->
+	<PART name="PART_WU_VISIBLE_SIDES_LOGIC_BiFold">
+
+		<IF>
+			<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(WU_Left_Side_Panel).value=PD_KWU_LSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(WU_Le_Side_Panel).value=FIELD(WU_Front1).value"</COMMAND> -->
+				<COMMAND>"FIELD(WU_Le_Carcass_Mat).value=FIELD(WU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(WU_Le_Carcass_Prf).value=FIELD(WU_Front1_Prf).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(WU_Left_Side_Panel).value=PD_KWU_LSP"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(WU_Right_Side_Panel).value=PD_KWU_RSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(WU_Ri_Side_Panel).value=FIELD(WU_Front1).value"</COMMAND> -->
+				<COMMAND>"FIELD(WU_Ri_Carcass_Mat).value=FIELD(WU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(WU_Ri_Carcass_Prf).value=FIELD(WU_Front1_Prf).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(WU_Right_Side_Panel).value=PD_KWU_RSP"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+	<!---	*************************** TU Visible Side Finishes *****************************************************************************************	-->
+	<PART name="PART_TU_VISIBLE_SIDES">
+
+		<GROUP name="Left Side Panel" label="Left Side Panel">
+
+			<CHECKBOX name="LeftSide_Visible_Panel" label="Left Side Visible Panel?" default="NO" checked="YES" unchecked="NO"  visible="TRUE" locked="FALSE" geoInfluencing="TRUE"/>
+
+			<EDITBOX name="TU_Left_Side_Panel"	label=""	default="" 		locked="FALSE"	active="TRUE"	visible="FALSE" geoInfluencing="TRUE"/>
+
+			<EDITBOX name="TU_Le_Side_Panel"	label=""	default="" 		locked="FALSE"	active="TRUE"	visible="FALSE" geoInfluencing="TRUE"/>
+						
+			<EDITBOX name="TU_Le_Carcass_Mat" label="TU_Le_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="TU_Le_Carcass_Prf" label="TU_Le_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</GROUP>
+
+		<GROUP name="Right Side Panel" label="Right Side Panel">
+
+			<CHECKBOX name="RightSide_Visible_Panel" label="Right Side Visible Panel?" default="NO" checked="YES" unchecked="NO"  visible="TRUE" locked="FALSE" geoInfluencing="TRUE"/>
+
+			<EDITBOX name="TU_Right_Side_Panel"	label=""	default="" 		locked="FALSE"	active="TRUE"	visible="FALSE" geoInfluencing="TRUE"/>
+
+			<EDITBOX name="TU_Ri_Side_Panel"	label=""	default="" 		locked="FALSE"	active="TRUE"	visible="FALSE" geoInfluencing="TRUE"/>
+		
+			<EDITBOX name="TU_Ri_Carcass_Mat" label="TU_Ri_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="TU_Ri_Carcass_Prf" label="TU_Ri_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</GROUP>
+	
+	</PART>
+
+	<!---	*************************** TU Visible Side Finishes For Single Door*******************************************************************************	-->
+	<PART name="PART_TU_VISIBLE_SIDES_LOGIC_1DOOR">
+
+		<IF>
+			<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(TU_Left_Side_Panel).value=PD_KBU_LSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(TU_Le_Side_Panel).value=FIELD(TU_Front1).value"</COMMAND> -->
+				<COMMAND>"FIELD(TU_Le_Carcass_Mat).value=FIELD(TU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(TU_Le_Carcass_Prf).value=FIELD(TU_Front1_Prf).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(TU_Left_Side_Panel).value=PD_KBU_LSP"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(TU_Right_Side_Panel).value=PD_KBU_RSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(TU_Ri_Side_Panel).value=FIELD(TU_Front1).value"</COMMAND> -->
+				<COMMAND>"FIELD(TU_Ri_Carcass_Mat).value=FIELD(TU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(TU_Ri_Carcass_Prf).value=FIELD(TU_Front1_Prf).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(TU_Right_Side_Panel).value=PD_KBU_RSP"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+	<!---	*************************** Visible Side Finishes For 2Door*******************************************************************************	-->
+	<PART name="PART_TU_VISIBLE_SIDES_LOGIC_2DOOR">
+
+		<IF>
+			<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(TU_Left_Side_Panel).value=PD_KBU_LSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(TU_Le_Side_Panel).value=FIELD(TU_Front1).value"</COMMAND> -->
+				<COMMAND>"FIELD(TU_Le_Carcass_Mat).value=FIELD(TU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(TU_Le_Carcass_Prf).value=FIELD(TU_Front1_Prf).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(LeftSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(TU_Left_Side_Panel).value=PD_KBU_LSP"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="YES" />
+			<THEN>
+				<COMMAND>"FIELD(TU_Right_Side_Panel).value=PD_KBU_RSP_Ext"</COMMAND>
+				<!-- <COMMAND>"FIELD(TU_Ri_Side_Panel).value=FIELD(TU_Front2).value"</COMMAND> -->
+				<COMMAND>"FIELD(TU_Ri_Carcass_Mat).value=FIELD(TU_Front2_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(TU_Ri_Carcass_Prf).value=FIELD(TU_Front2_Prf).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(RightSide_Visible_Panel).value" expr2="NO" />
+					<THEN>
+						<COMMAND>"FIELD(TU_Right_Side_Panel).value=PD_KBU_RSP"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+	
+
+
+</XML>

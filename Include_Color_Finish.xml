@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+
+
+	<!---	*************************** Shutter Finishes *****************************************************************************************	-->
+	<PART name="PART_Color_Finish">
+
+		<ITEM value="EUCHG001" label="EUCHG001" image1="img/material/EUCHG001.jpg" />
+		<ITEM value="EUCHG002" label="EUCHG002"	image1="img/material/EUCHG002.jpg" />
+		<ITEM value="EUCHG003" label="EUCHG003" image1="img/material/EUCHG003.jpg" />
+		<ITEM value="EUCHG004" label="EUCHG004" image1="img/material/EUCHG004.jpg" />
+		<ITEM value="EUCHG005" label="EUCHG005" image1="img/material/EUCHG005.jpg" />
+		<ITEM value="EUCHG006" label="EUCHG006" image1="img/material/EUCHG006.jpg" />
+		<ITEM value="EUCHG007" label="EUCHG007" image1="img/material/EUCHG007.jpg" />
+		<ITEM value="EUCHG008" label="EUCHG008" image1="img/material/EUCHG008.jpg" />
+		<ITEM value="EUCHG009" label="EUCHG009" image1="img/material/EUCHG009.jpg" />
+		<ITEM value="EUCHG010" label="EUCHG010" image1="img/material/EUCHG010.jpg" />
+		<ITEM value="EUCHG011" label="EUCHG011" image1="img/material/EUCHG011.jpg" />
+		<ITEM value="EUCHG012" label="EUCHG012" image1="img/material/EUCHG012.jpg" />
+		<!-- Rehau High Gloss Brilliant MDF-->
+		<ITEM value="EUAHG001" label="EUAHG001" image1="img/material/EUAHG001.jpg" />
+		<ITEM value="EUAHG002" label="EUAHG002" image1="img/material/EUAHG002.jpg" />
+		<ITEM value="EUAHG003" label="EUAHG003" image1="img/material/EUAHG003.jpg" />
+		<ITEM value="EUAHG004" label="EUAHG004" image1="img/material/EUAHG004.jpg" />
+		<ITEM value="EUAHG005" label="EUAHG005" image1="img/material/EUAHG005.jpg" />
+		<ITEM value="EUAHG006" label="EUAHG006" image1="img/material/EUAHG006.jpg" />
+		<ITEM value="EUAHG007" label="EUAHG007" image1="img/material/EUAHG007.jpg" />
+		<ITEM value="EUAHG008" label="EUAHG008" image1="img/material/EUAHG008.jpg" />
+		<ITEM value="EUAHG009" label="EUAHG009" image1="img/material/EUAHG009.jpg" />
+		<ITEM value="EUAHG010" label="EUAHG010" image1="img/material/EUAHG010.jpg" />
+		<ITEM value="EUAHG011" label="EUAHG011" image1="img/material/EUAHG011.jpg" />
+		<ITEM value="EUAHG012" label="EUAHG012" image1="img/material/EUAHG012.jpg" />
+		<ITEM value="EUAHG013" label="EUAHG013" image1="img/material/EUAHG013.jpg" />
+		<ITEM value="EUAHG014" label="EUAHG014" image1="img/material/EUAHG014.jpg" />
+		<ITEM value="EUAHG015" label="EUAHG015" image1="img/material/EUAHG015.jpg" />
+		<!-- Rehau_Matt Crystal PLY-->
+		<ITEM value="EUCMT001" label="EUCMT001" image1="img/material/EUCMT001.jpg" />
+		<ITEM value="EUCMT002" label="EUCMT002" image1="img/material/EUCMT002.jpg" />
+		<ITEM value="EUCMT003" label="EUCMT003" image1="img/material/EUCMT003.jpg" />
+		<ITEM value="EUCMT004" label="EUCMT004" image1="img/material/EUCMT004.jpg" />
+		<ITEM value="EUCMT005" label="EUCMT005" image1="img/material/EUCMT005.jpg" />
+		<ITEM value="EUCMT006" label="EUCMT006" image1="img/material/EUCMT006.jpg" />
+		<ITEM value="EUCMT007" label="EUCMT007" image1="img/material/EUCMT007.jpg" />
+		<ITEM value="EUCMT008" label="EUCMT008" image1="img/material/EUCMT008.jpg" />
+		<ITEM value="EUCMT009" label="EUCMT009" image1="img/material/EUCMT009.jpg" />
+		<ITEM value="EUCMT010" label="EUCMT019" image1="img/material/EUCMT010.jpg" />
+		<!-- Rehau_Matt Brilliant PLY-->
+		<ITEM value="EUAMT001" label="EUAMT001" image1="img/material/EUAMT001.jpg" />
+		<ITEM value="EUAMT002" label="EUAMT002" image1="img/material/EUAMT002.jpg" />
+		<ITEM value="EUAMT003" label="EUAMT003" image1="img/material/EUAMT003.jpg" />
+		<ITEM value="EUAMT004" label="EUAMT004" image1="img/material/EUAMT004.jpg" />
+		<ITEM value="EUAMT005" label="EUAMT005" image1="img/material/EUAMT005.jpg" />
+		<ITEM value="EUAMT006" label="EUAMT006" image1="img/material/EUAMT006.jpg" />
+		<ITEM value="EUAMT007" label="EUAMT007" image1="img/material/EUAMT007.jpg" />
+		<ITEM value="EUAMT008" label="EUAMT008" image1="img/material/EUAMT008.jpg" />
+		<ITEM value="EUAMT009" label="EUAMT009" image1="img/material/EUAMT009.jpg" />
+		<ITEM value="EUAMT010" label="EUAMT010" image1="img/material/EUAMT010.jpg" />
+		<ITEM value="EUAMT011" label="EUAMT011" image1="img/material/EUAMT011.jpg" />
+		<ITEM value="EUAMT012" label="EUAMT012" image1="img/material/EUAMT012.jpg" />
+		<ITEM value="EUAMT013" label="EUAMT013" image1="img/material/EUAMT013.jpg" />
+		<ITEM value="EUAMT014" label="EUAMT014" image1="img/material/EUAMT014.jpg" />
+		<ITEM value="EUAMT015" label="EUAMT015" image1="img/material/EUAMT015.jpg" />
+		<!-- Fenix One Skin SuperMatt MDF-->
+		<ITEM value="EUUSM001" label="EUUSM001" image1="img/material/EUUSM001.jpg" />
+		<ITEM value="EUUSM002" label="EUUSM002" image1="img/material/EUUSM002.jpg" />
+		<ITEM value="EUUSM003" label="EUUSM003" image1="img/material/EUUSM003.jpg" />
+		<ITEM value="EUUSM004" label="EUUSM004" image1="img/material/EUUSM004.jpg" />
+		<ITEM value="EUUSM005" label="EUUSM005" image1="img/material/EUUSM005.jpg" />
+		<ITEM value="EUUSM006" label="EUUSM006" image1="img/material/EUUSM006.jpg" />
+		<ITEM value="EUUSM007" label="EUUSM007" image1="img/material/EUUSM007.jpg" />
+		<ITEM value="EUUSM008" label="EUUSM008" image1="img/material/EUUSM008.jpg" />
+		<ITEM value="EUUSM009" label="EUUSM009" image1="img/material/EUUSM009.jpg" />
+		<ITEM value="EUUSM010" label="EUUSM010" image1="img/material/EUUSM010.jpg" />
+		<ITEM value="EUUSM011" label="EUUSM011" image1="img/material/EUUSM011.jpg" />
+		<ITEM value="EUUSM012" label="EUUSM012" image1="img/material/EUUSM012.jpg" />
+		<ITEM value="EUUSM013" label="EUUSM013" image1="img/material/EUUSM013.jpg" />
+		<ITEM value="EUUSM014" label="EUUSM014" image1="img/material/EUUSM014.jpg" />
+		<ITEM value="EUUSM015" label="EUUSM015" image1="img/material/EUUSM015.jpg" />
+		<ITEM value="EUUSM016" label="EUUSM016" image1="img/material/EUUSM016.jpg" />
+		<ITEM value="EUUSM017" label="EUUSM017" image1="img/material/EUUSM017.jpg" />
+		<ITEM value="EUUSM018" label="EUUSM018" image1="img/material/EUUSM018.jpg" />
+		<ITEM value="EUUSM019" label="EUUSM019" image1="img/material/EUUSM019.jpg" />
+		<ITEM value="EUUSM020" label="EUUSM020" image1="img/material/EUUSM020.jpg" />
+		<ITEM value="EUUSM021" label="EUUSM021" image1="img/material/EUUSM021.jpg" />
+		<!-- Fenix One Skin High Gloss MDF-->
+		<ITEM value="EUUHG001" label="EUUHG001" image1="img/material/EUUHG001.jpg" />
+		<ITEM value="EUUHG002" label="EUUHG002" image1="img/material/EUUHG002.jpg" />
+		<ITEM value="EUUHG003" label="EUUHG003" image1="img/material/EUUHG003.jpg" />
+		<ITEM value="EUUHG004" label="EUUHG004" image1="img/material/EUUHG004.jpg" />
+		<ITEM value="EUUHG005" label="EUUHG005" image1="img/material/EUUHG005.jpg" />
+		<ITEM value="EUUHG006" label="EUUHG006" image1="img/material/EUUHG006.jpg" />
+		<ITEM value="EUUHG007" label="EUUHG007" image1="img/material/EUUHG007.jpg" />
+		<ITEM value="EUUHG008" label="EUUHG008" image1="img/material/EUUHG008.jpg" />
+		<ITEM value="EUUHG009" label="EUUHG009" image1="img/material/EUUHG009.jpg" />
+		<ITEM value="EUUHG010" label="EUUHG010" image1="img/material/EUUHG010.jpg" />
+		<ITEM value="EUUHG011" label="EUUHG011" image1="img/material/EUUHG011.jpg" />
+		<ITEM value="EUUHG012" label="EUUHG012" image1="img/material/EUUHG012.jpg" />
+		<ITEM value="EUUHG013" label="EUUHG013" image1="img/material/EUUHG013.jpg" />
+		<ITEM value="EUUHG014" label="EUUHG014" image1="img/material/EUUHG014.jpg" />
+		<ITEM value="EUUHG015" label="EUUHG015" image1="img/material/EUUHG015.jpg" />
+		<ITEM value="EUUHG016" label="EUUHG016" image1="img/material/EUUHG016.jpg" />
+		<ITEM value="EUUHG017" label="EUUHG017" image1="img/material/EUUHG017.jpg" />
+		<ITEM value="EUUHG018" label="EUUHG018" image1="img/material/EUUHG018.jpg" />
+		<ITEM value="EUUHG019" label="EUUHG019"	image1="img/material/EUUHG019.jpg" />
+		<ITEM value="EUUHG020" label="EUUHG020" image1="img/material/EUUHG020.jpg" />
+		<ITEM value="EUUHG021" label="EUUHG021" image1="img/material/EUUHG021.jpg" />
+		
+		
+	</PART>
+
+
+	
+
+</XML>

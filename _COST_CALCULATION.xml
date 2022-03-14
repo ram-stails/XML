@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Cost Centers Calculation">
+
+<!-- 
+	<decorative_objects file="9999_DO_ENG.nav.xml" /> 
+	<global file="GLOBAL"/>
+	<global_change file="GLOBAL_CHANGE"/>
+-->	
+  
+	<category name="Cost Centers" image="img/catalog/BC_1B_1SD.jpg">
+		<object model="CALC_CC_EDGEBANDING" 						name="Edge Banding" 						image=""	/>
+	</category>
+  
+ </catalog>

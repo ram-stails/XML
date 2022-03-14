@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>WU_OU_LC</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Wall unit Open unit</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<COMBOBOX name="ART_SIZEZL" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" geoInfluencing="TRUE">
+					<ITEM value="300" label="300 mm" info1="330mm" />
+					<ITEM value="375" label="375 mm" info1="330mm" />
+					<ITEM value="400" label="400 mm" info1="330mm" />
+					<ITEM value="450" label="450 mm" info1="330mm" />
+					<ITEM value="500" label="500 mm" info1="330mm" />					
+					<ITEM value="600" label="600 mm" info1="350mm" />
+					<ITEM value="650" label="650 mm" info1="350mm" />
+					<ITEM value="700" label="700 mm" info1="350mm" />
+					<ITEM value="750" label="750 mm" info1="350mm" />
+					<ITEM value="800" label="800 mm" info1="350mm" />
+					<ITEM value="900" label="900 mm" info1="350mm" />
+					<ITEM value="1000" label="1000 mm" info1="350mm" />
+					<ITEM value="1200" label="1200 mm" info1="350mm" />
+				</COMBOBOX>
+				
+				<EDITBOX name="ART_SIZEXL" label="Width" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="650" geoInfluencing="TRUE" />
+				<EDITBOX name="ART_SIZEYL" label="Depth" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="650" geoInfluencing="FALSE" setAsGlobal="FALSE"/>
+
+			</GROUP>
+
+			<GROUP name="OpenBox Finsh" label="OpenBox Finsh">		
+			
+
+				<COMBOBOX name="OB_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="OB_Shade" label="Openbox Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+	
+				<!-- Variable Values -->
+				<EDITBOX name="OB_Carcass_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_Prf" label="OB_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_BP_Mat" label="OB_Carcass_BP_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				
+			</GROUP>
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Lighting_Details" label="Lights Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="Include_Lights.xml" part="PART_KITCHEN_LIGHTS" />
+
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_ADDERPANEL_MARKUP" />
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXL</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYL</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZL</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+		
+			<VAR name="OB_Carcass_Mat" value="OB_Carcass_Mat" />
+			<VAR name="OB_Carcass_Prf" value="OB_Carcass_Prf" />	
+			<VAR name="OB_Carcass_BP_Mat" 	value="OB_Carcass_BP_Mat" />
+
+			<VAR name="Lighting_Type" 		value="Lighting_Type" />
+
+			<VAR name="Calculation_Factors" value="KAP_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KAP_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KAP_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OPEN_BOX_FINISHES" />
+		
+	</LOGIC_DEFINITION>
+</XML>

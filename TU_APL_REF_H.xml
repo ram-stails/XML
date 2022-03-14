@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>TU_APL_REF_H</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Tall Built-In Refrigerator</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" />
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<CHECKBOX name="Customized_Height_Check" label="Customized Height" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+			
+				<COMBOBOX name="Standard_Height" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE">
+					<ITEM value="1936" label="1936 mm" info1="700" info2="600"/>
+					<ITEM value="1956" label="1956 mm" info1="720" info2="600"/>
+					<ITEM value="1996" label="1996 mm" info1="760" info2="600"/>
+					<ITEM value="2086" label="2086 mm" info1="700" info2="750"/>
+					<ITEM value="2106" label="2106 mm" info1="720" info2="750"/>
+					<ITEM value="2146" label="2146 mm" info1="760" info2="750"/>
+					<ITEM value="2236" label="2236 mm" info1="700" info2="900"/>
+					<ITEM value="2256" label="2256 mm" info1="720" info2="900"/>
+					<ITEM value="2296" label="2296 mm" info1="760" info2="900"/>
+				</COMBOBOX>
+
+				<EDITBOX name="Customized_Height" label="Height (1956mm t0 2400mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE" min="1956" max="2400" />
+
+				<EDITBOX name="ART_SIZEZT" label="Height" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="1956" geoInfluencing="TRUE" />
+
+				<EDITBOX name="ART_SIZEXT" label="Width (300mm to 600mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" min="300" max="600" geoInfluencing="TRUE" />
+
+				<COMBOBOX name="ART_SIZEYT" label="Depth" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+				</COMBOBOX>
+
+				<COMBOBOX name="ART_SIZEZB" label="Height" active="TRUE" visible="FALSE" locked="FALSE" valuetype="NUM" default="720">
+					<ITEM value="700" label="700 mm" />
+					<ITEM value="720" label="720 mm" />
+					<ITEM value="760" label="760 mm" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_TU_Carcass_CONSTRUCTION" />
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_HINGE_SELECTION" />
+
+			<COMBOBOX name="Hinge_Open" label="Opening Direction" valuetype="IMAGE" default="Left_Hinge" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="Left_Hinge" value="Left_Hinge" label="LHS" image1="img/catalog/LHS.PNG" image2="img/catalog/.PNG" />
+				<ITEM name="Right_Hinge" value="Right_Hinge" label="RHS" image1="img/catalog/RHS.PNG" image2="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Shutter_Type" label="Shutter Selection">
+
+				<COMBOBOX name="TU_Shutter_Change" label="Shutter Type" valuetype="TEXT" default="PD_KTU_Front1" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					<ITEM name="PD_KTU_Front1" value="PD_KTU_Front1" label="Single Door" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+					<ITEM name="PD_KTU_Split_Shutter" value="PD_KTU_Split_Shutter" label="Split Door" image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+				</COMBOBOX>
+
+				<EDITBOX name="Tall_Shutter_Split_Height" label="Shutter Split Height" active="TRUE" visible="TRUE" locked="FALSE" nosave="TRUE" valuetype="NUM" default="720" geoInfluencing="TRUE" min="" max=""/>
+
+			</GROUP>
+
+			<GROUP name="Shutter_Finish" label="Shutter Finish">
+
+			<COMBOBOX name="TU_Shutter_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="TU_Shutter_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+			</COMBOBOX>
+	
+			<COMBOBOX name="TU_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+			</COMBOBOX>
+
+			<COMBOBOX name="TU_Front1" label="Shutter Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+			</COMBOBOX>
+
+			<!-- Variable Values -->
+			<EDITBOX name="TU_Front1_Mat" label="TU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="TU_Front1_Prf" label="TU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+			</GROUP>
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Handle_Details" label="Handle Details" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+			<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES" />
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Visible_Sides" label="Visible Sides" active="TRUE" visible="FALSE">
+
+			<COMMAND type="INSERT" file="Include_Visible_Sides.xml" part="PART_TU_VISIBLE_SIDES" />
+
+		</PARAFOLDER>
+		<EDITBOX name="Ventilation_Grill"			label="Ventilation Grill" 		active="TRUE" nosave="FALSE"	Info=""	visible="FALSE" locked="TRUE" valuetype="TEXT" default="Ventilation_Grill"  highlight=""	geoInfluencing="TRUE" />
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_TALL_MARKUP" />
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXT</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYT</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZT</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="___BASE" value="___BASE" />
+			<VAR name="Adjustable_Legs" value="Adjustable_Legs" />
+			<VAR name="KI_Adjuster_Height" value="Leg_Height" />
+			<VAR name="Skirting_Height" value="Skirting_Height" />
+			<VAR name="BU_Carcass" value="TU_Carcass" />
+			<VAR name="BU_Carcass_Prf_Type" value="TU_Carcass_Prf_Type" />
+			<VAR name="Hinge_Type" value="Hinge_Type" />
+			<VAR name="Hinge_Open" value="Hinge_Open" />
+			<VAR name="Ventilation_Grill" 	value="Ventilation_Grill" />
+
+			<!-- <VAR name="BU_Front1" value="TU_Front1" /> -->
+
+			<VAR name="BU_Front1_Mat" 		value="TU_Front1_Mat" />
+			<VAR name="BU_Front1_Prf" 		value="TU_Front1_Prf" />
+			<VAR name="BU_Le_Carcass_Mat" 	value="TU_Le_Carcass_Mat" />
+			<VAR name="BU_Le_Carcass_Prf" 	value="TU_Le_Carcass_Prf" />
+			<VAR name="BU_Ri_Carcass_Mat" 	value="TU_Ri_Carcass_Mat" />
+			<VAR name="BU_Ri_Carcass_Prf" 	value="TU_Ri_Carcass_Prf" />
+
+			<VAR name="BU_Left_Side_Panel" value="TU_Left_Side_Panel" />
+			<VAR name="BU_Right_Side_Panel" value="TU_Right_Side_Panel" />
+			<!-- <VAR name="BU_Le_Side_Panel" value="TU_Le_Side_Panel" />
+			<VAR name="BU_Ri_Side_Panel" value="TU_Ri_Side_Panel" /> -->
+			<VAR name="Handle_Selection" value="Handle_Selection" />
+			<VAR name="TU_Shutter_Change" value="TU_Shutter_Change" />
+			<VAR name="Tall_Shutter_Split_Height" value="Tall_Shutter_Split_Height" />
+			<VAR name="Calculation_Factors" value="KT_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KT_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KT_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_TU_Carcass_CONSTRUCTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_TU_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Visible_Sides.xml" part="PART_TU_VISIBLE_SIDES_LOGIC_1DOOR" />	
+
+		<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="TALL_UNIT_HEIGHT_CUSTOMIZED" />
+
+		<COMMAND>"FIELD(Tall_Shutter_Split_Height).max=(FIELD(ART_SIZEZT).value/2)"</COMMAND>
+		<!-- <COMMAND>"FIELD(Tall_Shutter_Split_Height).value=FIELD(ART_SIZEZB).value"</COMMAND> -->
+		<IF>
+			<EQ expr1="FIELD(TU_Shutter_Change).value" expr2="PD_KTU_Split_Shutter" /> 
+			<THEN>
+				<COMMAND>"FIELD(Tall_Shutter_Split_Height).Visible=TRUE"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Tall_Shutter_Split_Height).Visible=FALSE"</COMMAND>
+			</ELSE>
+		</IF>
+
+	</LOGIC_DEFINITION>
+</XML>

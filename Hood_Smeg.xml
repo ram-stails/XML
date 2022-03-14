@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<translate file="2017_1.xlf"/>
+	<ARTICLE>
+		<ART_NAME>Hood_Smeg</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN/>
+		<ART_INFO_LONG/>
+		<ART_INFO_SHORT>{translate:Smeg Hood - Hood made of Stainless steel with satin finish|Smeg Hood - Hood made of Stainless steel with satin finish}</ART_INFO_SHORT>
+	</ARTICLE>
+
+
+
+	<DEFINITION>
+
+		<PARAFOLDER name="General" label="{translate:Dimensions and Carcass option|Dimensions and Carcass option}" >
+			<EDITBOX name="ART_SIZEZ" label="{translate:Height (mm):|Height (mm):}" active="TRUE" visible="TRUE" nosave="FALSE"  locked="TRUE" valuetype="NUM" default="101.5" />
+			<EDITBOX name="ART_SIZEX" label="{translate:Width (mm):|Width (mm):}" active="TRUE" visible="TRUE" image1="" image2="" locked="TRUE" valuetype="NUM" default="562" />
+			<EDITBOX name="ART_SIZEY" label="{translate:Depth (mm):|Depth (mm):}" active="TRUE" visible="TRUE" nosave="FALSE"  locked="TRUE" valuetype="NUM" default="560" />
+
+		</PARAFOLDER>
+
+	</DEFINITION>
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEX</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEY</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZ</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>	
+
+	</LOGIC_DEFINITION>
+</XML>

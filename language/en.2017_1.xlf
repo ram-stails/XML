@@ -1,0 +1,2560 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" target-language="en" datatype="plaintext" product-name="imosNetApp">
+		<header/>
+		<body>
+			<!--catalogue part-->
+
+			<trans-unit id="imos">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Expert Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Shelves setting Base Units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Shelves setting Tall Units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Kitchen plinth height">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Kitchen plinth Type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base front and left">
+				<source/>
+				<target state="approved"></target> 
+			</trans-unit>
+			<trans-unit id="Base front, left and right">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base front and right">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Worksurface Type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Worksurface 3 edgebanding front over size 40mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base Front Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall Front Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Filler Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Decoration">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Kitchen">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Appliances-Sinks">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Hoods for Wall Installation">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Miele Hood 1 - Hood made of Stainless stell semi polished">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>			
+			<trans-unit id="Gaggenau Hood 2 - Hood made of Stainless steel satin finish">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Miele Hood 4 - Hood made of Stainless steel satin finish">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Miele Hood 5 - Hodd in Stainless steel and black">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Miele Hood - Hood in Stainless steel and chrome with Glass">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Smeg Hood - Hood made of Stainless steel with satin finish">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Hoods for Islands">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Hood island - Smeg">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Hood island Gaggenau">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Hood island - Miele">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Hood island">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Stand alone Refrigerators">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>		
+			<trans-unit id="Smeg refrigerator - FAB50P black">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Smeg refrigerator - FAB50P white">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Smeg refrigerator - FAB50P red">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Smeg refrigerator - FAB50P petrol">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Smeg refrigerator - FAB50P turquoise">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Smeg refrigerator - FAB50P UJ">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Base units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="715mm height">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base units for sinks">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit one door for sink (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit two doors for sink (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit one drawer for sink (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit one drawer, one waste bin for sink (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base units for appliances">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Door full integrated for dishwasher (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Door partly integrated for dishwasher (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit two drawers with cookers (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit three drawers with cookers (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit one drawer with oven (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit one drawer with oven and cooker (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base units with drawers">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit two drawers (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit two drawers, one waste bin (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit two drawers, one inner drawer (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit three drawers (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit four drawers (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base units standard">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit one door, one drawer (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit two doors, two drawers (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base units with shelves">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit two open shelves (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit two open shelves left (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit two open shelves right (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base unit four open shelves (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>		
+			<trans-unit id="Base units for corners">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base corner unit one door (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base corner unit two doors (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base blind corner unit one door, left (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base blind corner unit one door, right (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base blind corner unit with pull out shelves, left (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base blind corner unit with pull out shelves, right (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Niche units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Niche unit two open shelves (482mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Niche unit three open shelves (482mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Niche panels and backsplash">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Backsplash">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Niche Panel Glass">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Niche Panel Melamine">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Tall units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="1625mm height">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit one door (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, one door (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit one door, fridge appliance (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, fridge appliance (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, oven appliance, one flap door (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit fridge appliance, microwave or coffee machine appliance (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit two drawers, oven appliance, microwave appliance (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, oven appliance, microwave appliance (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit fridge appliance, one lift flap door (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="1885mm height">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit one door (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, one door (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit one door, fridge appliance, one flap door (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, fridge appliance, one flap door (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit fridge appliance, one oven appliance, one flap door (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit fridge appliance, one microwave or coffee machine, one flap door (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit fridge appliance, one flap door (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit two drawers, oven appliance, microwave appliance, one flap door (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, oven appliance, microwave appliance, one flap door (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="2015mm height">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit one door (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, one door (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit one door, fridge appliance, one flap door (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, fridge appliance, one flap door (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit fridge appliance, one oven appliance, one flap door (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit fridge appliance, microwave or coffee machine appliance, one flap door (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit fridge appliance, one flap door (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit two drawers, oven appliance, microwave appliance, one flap door (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, oven appliance, microwave appliance, one flap door (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="2145mm height">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit one door, one lift flap door (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, one door, one lift flap door (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit one door, fridge appliance, one lift flap door (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, fridge appliance, one lift flap door (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit fridge appliance, oven appliance, one lift flap door (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit fridge appliance, microwave or coffee machine appliance, one lift flap door (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit fridge appliance, one lift flap door (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit two drawers, oven appliance, microwave appliance, one lift flap door (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall unit three drawers, oven appliance, microwave appliance, one lift flap door (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="650mm height">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall units standard">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit one door (650mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit two doors (650mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit open shelf left (650mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit open shelf right (650mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall corner unit two doors (650mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall units with flap door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit one flap door (650mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit one lift flap door (650mm)">
+				<source/>
+			</trans-unit>
+			<trans-unit id="780mm height">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall units standard">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Wall unit one door (780mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit two doors (780mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit two open shelves left (780mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit two open shelves right (780mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall corner unit two doors (780mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall units with flap door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit one flap door (780mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit one lift flap door (780mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="910mm height">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall units standard">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit one door (910mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit two doors (910mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit three open shelves left (910mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit three open shelves right (910mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall corner unit two doors (910mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Panels">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Horizontal">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Horizontal panel for Tall cabinets">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Horizontal panel for Wall cabinets">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Vertical">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Vertical panel for Base cabinets (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Vertical panel, room devider for Base cabinets (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Vertical panel for Tall cabinets (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Vertical panel for Tall cabinets (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Vertical panel for Tall cabinets (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Vertical panel for Tall cabinets (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Vertical panel for Wall cabinets (650mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Vertical panel for Wall cabinets (780mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Vertical panel for Wall cabinets (910mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Fillers">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="100mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base left filler (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base right filler (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall left filler (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall right filler (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall left filler (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall right filler (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall left filler (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall right filler (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall left filler (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall right filler (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>		
+			<trans-unit id="Wall left filler (650mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall right filler (650mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall left filler (780mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall right filler (780mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall left filler (910mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall right filler (910mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="90 degrees corner">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base corner left filler (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base corner right filler (715mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall corner left filler (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall corner right filler (1625mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall corner left filler (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall corner right filler (1885mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall corner left filler (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall corner right filler (2015mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall corner left filler (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall corner right filler (2145mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall corner left filler (650mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall corner right filler (650mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall corner left filler (780mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall corner right filler (780mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall corner left filler (910mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall corner right filler (910mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall shelves">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall shelf ( 426mm - 675mm )">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall shelf ( 676mm - 825mm )">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall shelf ( 826mm - 975mm )">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall shelf (976mm - 1125mm )">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall shelf ( 1126mm - 1278mm )">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall shelf ( 1276mm - 2500mm )">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Bedroom">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Ready to use Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe unit, two Sliding doors (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe unit, three Sliding doors (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe unit, four Sliding doors (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Extension Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Corner Extension Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Corner 90 degrees wardrobe unit, Hinge door (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Corner 135 degrees wardrobe unit, Hinge door (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Drawers Extension Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe unit, three drawers hinge door (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe unit, five drawers hinge door (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Standard Extension Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe unit, Hinge door (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Folding Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Corner Folding Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Corner 90 degrees wardrobe unit, for folding door (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Corner 135 degrees wardrobe unit, for folding door (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Drawers Folding Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe unit, three drawers for folding door (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe unit, five drawers for folding door (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Standard Folding Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe unit, one folding door (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe unit, two folding doors (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe unit, three folding doors (2340mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Panels">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Horizontal panel for Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Vertical panel for Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Side">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Side panel for Wardrobes">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Beds and nightstand">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Nightstand">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Bed (2000mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Bed (1600mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Bed (1100mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Contiguous Parts">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base front">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base front, right">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base front, left, right and back">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base front, left, right">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base front, left">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Worksurface">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Worksurface edgebanded right and left; front over size 40mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Worksurface edgebanded fornt, right and left; front over size 40mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Worksurface edgebanded fornt, right and left; front over size 40mm, left over size 20mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Worksurface edgebanded fornt, right and left; front over size 40mm, right over size 20mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Worksurface edgebanded front, right, back and left; front and back over size 40mm, left and right over size 20mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+
+			<!--Appliances_INSERT xml-->
+
+			<trans-unit id="Oven/Microwave/Coffee machine model">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Duravit black">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Duravit grey">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Duravit steel">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Duravit white">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Blanko steel">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Oven Smeg">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Oven Miele">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Oven Gaggenau 2">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Oven Gaggenau">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Oven Backo Miele">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Microwave Miele">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Coffee machine Gaggenau">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Coffee machine Miele">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Miele Cooktop dark grey">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Miele Cooktop semi polished">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Gaggenau Cooktop stainless steel">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Gaggenau Cooktop stainless steel with glass">
+				<source/>
+			</trans-unit>
+			<trans-unit id="Jenn Air Gas Cooktop">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Smeg Cooktop black">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+
+			<!--Connection_INSERT xml-->
+
+			<trans-unit id="Connection situation left side">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Dowel and CAM">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="CAM">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Confirmat">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Dowel">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Connection situation right side">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Connection situation bottom left side">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Connection situation bottom right side">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+
+			<!--Material_INSERT xml-->
+			<trans-unit id="All fronts have same material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Change material Base units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Change material Tall units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Change material Wall units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Change material top drawer/filler units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Change material filler units">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Material group">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Drawer Front Material type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall Front Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Front Material type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Drawer Materials">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Drawer Material type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Uni colors">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Wood grain">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Material group">
+				<source/>
+			</trans-unit>
+			<trans-unit id="iX material group">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Egger material group">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Kitchen plinth material 19mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Drawer Front Material thickness">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Front Material thickness">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Drawer Material thickness">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="16mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="18mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="19mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grain direction">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Drawer Material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Drawer Front Material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Material type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="25mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="38mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Material thickness">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Frame Inside Material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Frame Outside Material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Table Lower Zone Material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Table Upper Zone Material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Matress/Blanket material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Finished sides">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Finished left side">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Material left side">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Matching the front material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Custom">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Finished right side">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Unfinished">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Finished">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>		
+			<trans-unit id="Material right side">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Surface">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Work surface">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Work surface material 38mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe Front Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Middle Piece Front Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe Front With Mirror Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe Front Drawer Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe Front English Drawers Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="English DrawersMaterial type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="English Drawer Front Material thickness">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe Front Upper Two Drawers Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Front Drawer Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base Front Drawer Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base Front Top Drawer/Filler Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall Front Drawer Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="English Drawer Material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="English Drawers Material thickness">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="English Drawers Material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+
+
+
+
+			<trans-unit id="Black">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Brilliant yellow">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Cotton">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Dark gray">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Graphite black">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Black Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Black HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Black Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey dark Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey dark HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey dark Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey light Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey light HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey light Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Lava Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Lava HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Lava Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Magnolia Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Magnolia HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Magnolia Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit> 
+			<trans-unit id="White Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="White HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="White Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+
+			<trans-unit id="Apricot Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Apricot HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Apricot Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Freesia Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Freesia HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Freesia Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Red Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Red HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Red Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Petrol Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Petrol HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Petrol Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Sand Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Sand HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Sand Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Scarlet Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Granite Red HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Scarlet HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Scarlet Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Turquoise Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Turquoise HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Turquoise Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Arlington natural oak">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Authentic Oak gray">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Bardolino natural oak">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Oak natural light">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Rustic oak">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Beech Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Beech HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Beech Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Cherry Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Cherry HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Cherry Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Oak Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Oak Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Oak HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Walnut Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Walnut HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Walnut Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wenge Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wenge HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wenge Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Zebrano Gloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Zebrano HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Zebrano Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey Granite">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Brown Granite">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="White Pelago Marble">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Black Terrazzo">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Beige Tivoli Travertine">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey Beige">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Cement">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Light Sorano Oak">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Mainau Birch">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Platinum White">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Cement Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Granite Grey Dark HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Granite Grey Light HighGloss">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Rusty Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Walnut Matt">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey Oak 16mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey Oak 19mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Arlington Natural Oak 16mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>			
+			<trans-unit id="Arlington Natural Oak 19mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>			
+
+			<!--Handles_INSERT xml-->
+
+			<trans-unit id="Handles">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Handle 96">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>		
+			<trans-unit id="Handle 128">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Handle 160">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Handle 352">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Handle Knob">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Handle Profile Behind Edge 20">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Handle Recessed 96">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Handle Recessed Circle">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Handle 345 Edge">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Handles rotation">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Griffe rotation">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+
+			<!--Front_INSERT xml-->
+
+			<trans-unit id="Top drawer type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Top drawer front type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Drawer type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Two side frame system">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Under floor guide">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Drawer front type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Top Drawer/Filler Front Material type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Top Drawer_Type/Filler Front Material type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Top Drawer/Filler Front Material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Top Drawer/Filler Front Material thickness">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Front type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Standard front">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Standard front with UKW04 handle">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Standard front with UKW05 handle">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Standard front with UKW10 handle">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>		
+			<trans-unit id="Two piece door with UKW04 handle">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Two piece door UKW05 handle">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Two piece door with UKW10 handle">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Two piece door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Front type lower door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Front type upper door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Five piece door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Aluminium frame 19x19 with glass">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Aluminium frame 50x20 with glass">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Adjustable shelf - glass thickness">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Glass 4mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Glass 6mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Glass 8mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Hinge position">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Left hinges">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Right hinges">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+
+			<!--Lights_INSERT-->
+
+			<trans-unit id="Select light option">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="No lights">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="LED strips">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Spotlights">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="LED Strip models">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="HF 83372844">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+
+
+			<trans-unit id="HF 83374845">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Spotlights models">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="HF 83088321 LED 1029">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="HF 83088921 LED 1029">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="HF 83372092 LED 2039">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="HF 83375051 LED 3027">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="HF 83375091 LED 3024">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="HF 83375101 LED 3022">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="LED strips and Uplights">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Spotlights and Uplights">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Only Uplights">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Uplight models">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="HF 83374070 LED 2032">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="HF 83374160 LED 2033">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="IK LED 30260384 Chrome">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+
+			<!--Articles-->
+
+			<trans-unit id="Shelves setting">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Shelf inset mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wood 10 mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wood 20 mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Glass 10 mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Glass 20 mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base height adjusters (mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall unit one flap door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Dimensions and Carcass option">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Height (mm):">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Width (mm):">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Depth (mm):">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Connection situation">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Cabinet bracket for loading capacity">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>	
+			<trans-unit id="Bracket 35kg">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Bracket 55kg">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Ordinary type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="UKW type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Front">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Material back">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="White 5mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Lights">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Drawer settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Appliances">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Cooktop model">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Shelves setting">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Shelf quantity">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="None">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Sink model">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="10 mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="20 mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Hood model">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Oven model">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Kitchen plinth">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Select backsplash material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey Dark">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey Light">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Lava">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Magnolia">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="White">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wardrobe height adjusters (mm)">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Select front type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Standard type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Standard type with mirror">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Three piece door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Grey Light 8mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="White 8mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Double hinges">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Accessories">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Upper zone">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Accessory type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Shelves">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Center Partition">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Clothes Lift">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Clothes Rod">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Left zone">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Accessory type - Upper zone">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Accessory type - Lower zone">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Three Drawers">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Five Drawers">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Three Drawers English">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Trouser Holder">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Middle zone">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Right zone">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Carcass option">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="All Front Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Select handle group front type">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base Front Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall Front Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall Front Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base drawer settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall drawer settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Panel Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Filler Front Material Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Base Handle Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Tall Handle Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wall Handle Settings">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Motive">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="8mm">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Select material">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Apricot">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Fressia">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Freesia">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Red">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Petrol">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Sand">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Scarlet">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Turquoise">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Fruits">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Peperoncini">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Metal colors">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Aluminium Brushed">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Rusty">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Beech">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Cherry">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Mahagony">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Oak">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Walnut">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Wenge">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Zebrano">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Select front type - left door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Select front type - middle door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Select front type - right door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Outer left zone">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Inner left zone">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Inner right zone">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Outer right zone">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Select front type - outer left door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Select front type - inner left door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Select front type - inner right door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Select front type - outer right door">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Microwave model">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Microwave/Coffee machine model">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="1 shelf">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="2 shelves">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="3 shelves">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Appliances model">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Width ( 1126mm - 1278mm ):">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Width (976mm - 1125mm ):">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Width ( 826mm - 975mm ):">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Width ( 676mm - 825mm ):">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Width ( 426mm - 675mm ):">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Surface">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+			<trans-unit id="Width ( 1276mm - 2500mm ):">
+				<source/>
+				<target state="approved"></target>
+			</trans-unit>
+
+
+		</body>
+	</file>
+</xliff>

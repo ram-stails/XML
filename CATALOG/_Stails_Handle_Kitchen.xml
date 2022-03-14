@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<catalog name="Handle Kitchens">
+	<tooltip file="ToolTip" />
+	<global file="imos_GLOBAL" />
+	<global_change file="imos_GLOBAL_Changes" />
+	<category name="Handle Kitchen" image="img/catalog/.png">
+
+		<category name="Base Units" image="img/catalog/.png">
+
+
+			<object model="BU_1DR_H" 			name="Base Unit 1 Door" 									image="img/catalog/BU_1DR_H.jpg" />
+			<object model="BU_2DR_H" 			name="Base Unit 2 Door" 									image="img/catalog/BU_2DR_H.jpg" />				
+			<object model="BU_BPO_H" 			name="Bottle Pullout" 											image="img/catalog/BU_BPO_H.jpg" />
+			<object model="BU_BPO_ACC_H" 		name="Base Unit BPO Acc" 										image="img/catalog/BU_BPO_ACC_H.jpg" />
+			<object model="BU_2EDRW_H"	 		name="Base Unit 2 Drawers" 							image="img/catalog/BU_2EDRW_H.jpg" />
+			<object model="BU_3EDRW_H" 			name="Base Unit 3 Drawers"							image="img/catalog/BU_3EDRW_H.jpg" />
+			<object model="BU_2EDRW_1IDRW_H" 	name="Base Unit 2 External Drawers with 1 Internal Drawer" 	image="img/catalog/BU_2EDRW_1IDRW_H.jpg" />
+			<object model="BU_1EDRW_2IDRW_H" 	name="Base Unit 1 External Drawer with 2 Internal Drawers" 				image="img/catalog/BU_1EDRW_2IDRW_H.jpg" />
+			<object model="BU_1EDRW_1IDRW_H" 	name="Base Unit 1 External Drawer with 1 Internal Drawer" 				image="img/catalog/BU_1EDRW_1IDRW_H.jpg" />				
+			<object model="BU_1EDRW_1DR_H" 		name="Base Unit Single Drawer with 1 Door" 						image="img/catalog/BU_1EDRW_1DR_H.jpg" />
+			<object model="BU_1EDRW_2DR_H" 		name="Base Unit Single Drawer with 2 Door" 						image="img/catalog/BU_1EDRW_2DR_H.jpg" />
+			<object model="BU_2EDRW_2DR_H" 		name="Base Unit 2 External Drawer with 2 Door" 					image="img/catalog/BU_2EDRW_2DR_H.jpg" />
+			<object model="BU_HOB_2DR_H" 		name="Base unit Hob Unit with 2 Doors" 				image="img/catalog/BU_HOB_2DR_H.jpg" />
+			<object model="BU_HOB_2EDRW_H" 		name="Base Unit Hob unit with 2 external Drawers" 	image="img/catalog/BU_HOB_2EDRW_H.jpg" />
+			<object model="BU_HOB_3EDRW_H" 		name="Base Unit Hob unit with 3 external Drawers" 	image="img/catalog/BU_HOB_3EDRW_H.jpg" />
+			<object model="BU_HOB_3EDRW_TDUM_H" name="Base Hob unit with 2 Drawers with Top Dummy" 	image="img/catalog/BU_HOB_3EDRW_TDUM_H.jpg" />
+			<object model="BU_CU_LCU_H" 		name="Base Unit L Corner" 										image="img/catalog/BU_CU_LCU_H.jpg" />				
+			<object model="BU_CU_LH_STCU_H" 	name="Base Unit Left straight Corner" 							image="img/catalog/BU_CU_LH_STCU_H.jpg" />
+			<object model="BU_CU_RH_STCU_H" 	name="Base Unit Right straight Corner" 							image="img/catalog/BU_CU_RH_STCU_H.jpg" />
+			<object model="BU_CYU_LH_STCU_H" 	name="Base Unit Left straight Corner with Cylinder Provision" 	image="img/catalog/BU_CU_LH_STCU_H.jpg" />
+			<object model="BU_CYU_RH_STCU_H" 	name="Base Unit Right straight Corner with Cylinder Provision" 	image="img/catalog/BU_CU_RH_STCU_H.jpg" />
+			<object model="BU_SU_LHCOR_H" 		name="Base Unit Left straight Corner with Sink" 				image="img/catalog/BU_SU_LHCOR_H.jpg" />
+			<object model="BU_SU_RHCOR_H" 		name="Base Unit Right straight Corner with Sink" 				image="img/catalog/BU_SU_RHCOR_H.jpg" />
+			<object model="BU_SU_1DR_H" 		name="Base unit Sink 1 Door" 						image="img/catalog/BU_SU_1DR_H.jpg" />
+			<object model="BU_SU_2DR_H" 		name="Base unit Sink 2 Door" 						image="img/catalog/BU_SU_2DR_H.jpg" />
+			<object model="BU_APL_INBLDISHW_H" 	name="Base Unit Built-in Dishwasher" 				image="img/catalog/BU_APL_INBLDISHW_H.jpg" />
+			<object model="BU_APP_SINTDISHW_H" 	name="Base Unit Semi-Integrated Dishwasher" 		image="img/catalog/BU_APP_SINTDISHW_H.jpg" />
+			<!-- <object model="BU_BIAPP_REF_H" 		name="Base Unit Built-in under Counter REF" 		image="img/catalog/BU_BIAPP_REF_H.jpg" /> -->
+						
+		</category>
+
+		<category name="Base Cantiliver Units" image="img/catalog/.png">
+
+			<object model="BU_1DR_CL_H" 		name="Base unit Cantilever 1 Door " 					image="img/catalog/BU_1DR_CL_H.jpg" />
+			<object model="BU_2DR_CL_H" 		name="Base unit Cantilever 2 Door" 						image="img/catalog/BU_2DR_CL_H.jpg" />
+			<object model="BU_1EDRW_CL_H" 		name="Base unit Cantilever 1 External Drawer" 			image="img/catalog/BU_1EDRW_CL_H.jpg" />
+			<object model="BU_2EDRW_CL_H" 		name="Base unit Cantilever 2 External Drawer" 			image="img/catalog/BU_2EDRW_CL_H.jpg" />
+		
+		</category>
+
+
+		<category name="Wall Units" image="img/catalog/.png">
+
+				<object model="WU_1DR_H" 				name="Wall Unit 1 Door" 							image="img/catalog/WU_1DR_H.jpg" />
+				<object model="WU_2DR_H" 				name="Wall Unit 2 Door" 							image="img/catalog/WU_2DR_H.jpg" />
+				<object model="WU_1DR_DishDrain_H" 		name="Wall Unit 1 Door Dish Drain" 				image="img/catalog/WU_1DR_DishDrain_H.jpg" />
+				<object model="WU_2DR_DishDrain_H" 		name="Wall Unit 2 Door Dish Drain" 				image="img/catalog/WU_2DR_DishDrain_H.jpg" />
+				<object model="WU_BFLU_H" 				name="Wall Unit Bi Fold" 						image="img/catalog/WU_BFLU_H.jpg" />
+				<object model="WU_LU_H" 				name="Wall Unit Lift Up" 						image="img/catalog/WU_LU_H.jpg" />
+				<!-- <object model="WU_HL_H" 				name="Wall Unit High Lift Up" 						image="img/catalog/WU_HL_H.jpg" /> -->
+				<object model="WU_CU_LCU_H" 			name="Wall unit L-Corner unit" 					image="img/catalog/WU_CU_LCU_H.jpg" />
+				<object model="WU_CU_LH_STCU_H" 		name="Wall Unit Left straight Corner" 			image="img/catalog/WU_CU_LH_STCU_H.jpg" />
+				<object model="WU_CU_RH_STCU_H" 		name="Wall Unit Right straight Corner" 			image="img/catalog/WU_CU_RH_STCU_H.jpg" />
+				<object model="WU_RS" 					name="Roller Shutter unit" 						image="img/catalog/WU_RS.jpg" />
+				<object model="WU_2DR_BH_H" 			name="Wall Unit 2 Door Built-In Hood" 			image="img/catalog/WU_2DR_BH_G.jpg" />
+
+		</category>
+		
+		<category name="Tall Units" image="img/catalog/.jpg">
+
+				<object model="TU_1DR_H" 					name="Tall Unit 1Door" 				image="img/catalog/TU_1DR_H.jpg" />
+				<object model="TU_2DR_H" 					name="Tall Unit 2Door" 				image="img/catalog/TU_2DR_H.jpg" />
+				<!-- <object model="TU_1DR_Janitor_Closet_H" 	name="Tall Unit Janitor Closet" 	image="img/catalog/TU_1DR_Janitor_Closet_H.jpg" /> -->
+				<object model="TU_CU_RH_STCU_H" 	name="Tall Unit Straight Right Corner" 		image="img/catalog/TU_CU_RH_STCU_H.jpg" />
+				<object model="TU_CU_LH_STCU_H" 	name="Tall Unit Straight Left Corner" 		image="img/catalog/TU_CU_LH_STCU_H.jpg" />			
+				<object model="TU_CU_LCU_H" 		name="Tall Unit L-Corner" 					image="img/catalog/TU_CU_LCU_H.jpg" />			
+				<object model="TU_CU_RH_ST_H" 		name="Tall Unit Straight Right Corner Without Filler" 					image="img/catalog/TU_CU_RH_ST_H.jpg" />			
+				<object model="TU_CU_LH_ST_H" 		name="Tall Unit Straight Left Corner Without Filler" 					image="img/catalog/TU_CU_LH_ST_H.jpg" />
+				<object model="TU_1DR_ST_H"			name="Tall Unit 1 Door Space Tower" 	image="img/catalog/TU_1DR_ST_H.jpg" />			
+				<object model="TU_2DR_ST_H" 		name="Tall Unit 2 Door Space Tower" 	image="img/catalog/TU_2DR_ST_H.jpg" />			
+				<object model="TU_Pullout_H" 		name="Tall Unit Pullout Pantry" 					image="img/catalog/TU_Pullout_H.jpg" />
+				<object model="TU_Pantry_H" 		name="Tall Unit Openable Pantry" 					image="img/catalog/TU_Pantry_H.jpg" />		
+				<object model="TU_APL_REF_H" 		name="Tall Built-In Refrigerator" 			image="img/catalog/TU_APL_REF_H.jpg" />
+				<object model="TU_1DR_MW_1DR_H" 	name="Tall 1Door Microwave 1Door" 			image="img/catalog/TU_1DR_MW_1DR_H.jpg" />
+				<object model="TU_1DW_MWO_1DR_H" 	name="Tall 1Drawer Microwave Oven 1Door" 	image="img/catalog/TU_1DW_MWO_1DR_H.jpg" />
+				<object model="TU_1HU_Oven_1DR_H" 	name="Tall Housing Unit Oven 1Door" 		image="img/catalog/TU_1HU_Oven_1DR_H.jpg" />
+				<object model="TU_AHU_H" 			name="Tall Unit Appliance Housing" 			image="img/catalog/TU_AHU_H.jpg" />	
+				<object model="TU_SPLD_2D_GW" 		name="Tall Unit Split Door in Glass and Wood" 							image="img/catalog/TU_SPLD_2D_GW.jpg" />			
+		
+		</category>
+
+	</category>
+
+</catalog>

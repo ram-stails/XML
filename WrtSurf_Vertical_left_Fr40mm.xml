@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<translate file="2017_1.xlf"/>
+
+	<ARTICLE>
+		<ART_NAME>WrtSurf_Vertical_left_Fr40mm</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN/>
+		<ART_INFO_LONG/>
+		<ART_INFO_SHORT>Worksurface front over size 40mm</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+		<PARAFOLDER name="Work surface" label="Work surface" visible="TRUE">
+			<EDITBOX name="___CP_TYPE" default="2" visible="FALSE"/>
+
+			<EDITBOX name="Worktop_Ext_Front"   label="Worktop Ext Front"    active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="40" min="20" max="" geoInfluencing="TRUE" />
+			<EDITBOX name="Worktop_Ext_Left"    label="Worktop Ext Left"     active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="36" min="0" max="2400" geoInfluencing="TRUE" />
+			<EDITBOX name="Worktop_Ext_Right"   label="Worktop Ext Right"    active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="0" min="0" max="2400" geoInfluencing="TRUE" />
+			<EDITBOX name="Worktop_Ext_Back"    label="Worktop Ext Back"     active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="0" min="0" max="" geoInfluencing="TRUE" />
+			<EDITBOX name="Worktop_Voffset"    label="Worktop Height"        active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="720" min="0" max="" geoInfluencing="TRUE" />
+
+			
+			<COMBOBOX name="Mat_WorkSurface" label="Work surface material 36mm" active="TRUE" visible="TRUE" nosave="TRUE" search="TRUE" locked="FALSE" default="iX_PB38_Cement" valuetype="IMAGE"  geoInfluencing="TRUE">		
+				<ITEM name="iX_PB38_Cement"			value="iX_PB38_Cement"	label="PB38 Cement"		image1="img/material/iX_Cement_M.jpg"/>
+				<ITEM name="EG_F147_Granite"		value="EG_F147_Granite"	label="F147 Granite"		image1="img/material/EG_F147.jpg"/>
+				<ITEM name="EG_F148_Granite"		value="EG_F148_Granite"	label="F148 Granite"		image1="img/material/EG_F148.jpg"/>
+				<ITEM name="EG_F166_Granite"		value="EG_F166_Granite"	label="F166 Granite"		image1="img/material/EG_F166.jpg"/>
+				<ITEM name="EG_F238_Granite"		value="EG_F238_Granite"	label="F238 Granite"		image1="img/material/EG_F238.jpg"/>
+				<ITEM name="EG_F371_Granite"		value="EG_F371_Granite"	label="F371 Granite"		image1="img/material/EG_F371.jpg"/>
+				<ITEM name="EG_F385_Cement"			value="EG_F385_Cement"	label="F385 Cement"		image1="img/material/EG_F385.jpg"/>
+				<ITEM name="iX_PB25_Granite"		value="iX_PB25_Granite"	label="PB25 Granite"		image1="img/material/iX_Granite_GreyL_H.jpg"/>
+				<ITEM name="iX_PB38_Granite"		value="iX_PB38_Granite"	label="PB38 Granite"		image1="img/material/iX_Granite_GreyD_H.jpg"/>
+				<ITEM name="4046_Excava_full_Slab"	value="4046_Excava_full_Slab"	label="4046_Excava_full_Slab"		image1="img/material/4046_Excava_full_Slab.jpg"/>					
+				<ITEM name="5101_Empira_Black"		value="5101_Empira_Black"	label="5101_Empira_Black"		image1="img/material/5101_Empira_Black.jpg"/>					
+				<ITEM name="iX_PB38_Granite_GreyL"	value="iX_PB38_Granite_GreyL"	label="PB38 Granite Grey"	image1="img/material/iX_Granite_GreyL_H.jpg"/>
+			</COMBOBOX>
+
+			<EDITBOX name="Prf_WorkSurface" label="Prf_WorkSurface" active="TRUE" visible="FALSE" locked="FALSE" geoInfluencing="TRUE" />
+
+			
+		</PARAFOLDER>
+		
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEX</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEY</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZ</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="Mat_WorkSurface"         value="Mat_WorkSurface"   />
+			<VAR name="Worktop_Ext_Front"       value="Worktop_Ext_Front"   />
+			<VAR name="Worktop_Ext_Left"        value="Worktop_Ext_Left"   />
+			<VAR name="Worktop_Ext_Right"       value="Worktop_Ext_Right"   />
+			<VAR name="Worktop_Ext_Back"        value="Worktop_Ext_Back"   />
+			<VAR name="Worktop_Voffset"        value="Worktop_Voffset"   />
+			<VAR name="Prf_WorkSurface"        value="Prf_WorkSurface"   />
+
+
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND>"FIELD(Prf_WorkSurface).value=FIELD(Mat_WorkSurface).value"</COMMAND>
+		
+	</LOGIC_DEFINITION>
+</XML>

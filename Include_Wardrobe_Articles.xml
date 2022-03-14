@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+	<PART name="Wardrobe_Standard_Layouts">
+
+                 <ITEM value="WD_300_7F_1"  label="WD 300 7F 1"  info1="2100" info2="300"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_300_7F_1.jpg" />
+                <ITEM value="WD_300_7F_2"   label="WD 300 7F 2"  info1="2100" info2="300"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_300_7F_2.jpg" />
+                <ITEM value="WD_300_7F_3"   label="WD 300 7F 3"  info1="2100" info2="300"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_300_7F_3.jpg" />
+                <ITEM value="WD_450_7F_1"   label="WD 450 7F 1"  info1="2100" info2="450"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_450_7F_1.jpg" />
+                <ITEM value="WD_450_7F_2"   label="WD_450_7F 2"  info1="2100" info2="450"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_450_7F_2.jpg" />
+                <ITEM value="WD_450_7F_3"   label="WD_450_7F 3"  info1="2100" info2="450"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_450_7F_3.jpg" />
+				<ITEM value="WD_450_7F_4"   label="WD_450_7F 4"  info1="2100" info2="450"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_450_7F_4.jpg" />	  
+                <ITEM value="WD_600_7F_1" 	label="WD_600_7F 1"  info1="2100" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_7F_1.jpg" />
+                <ITEM value="WD_600_7F_2" 	label="WD_600_7F 2"  info1="2100" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_7F_2.jpg" />
+				<ITEM value="WD_600_7F_3" 	label="WD_600_7F 3"  info1="2100" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_7F_3.jpg" />
+				<ITEM value="WD_600_7F_4" 	label="WD_600_7F 4"  info1="2100" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_7F_4.jpg" />				
+				<ITEM value="WD_600_7F_5" 	label="WD_600_7F 5"  info1="2100" info2="600"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_600_7F_5.jpg" />				
+				<ITEM value="WD_600_7F_6" 	label="WD_600_7F 6"  info1="2100" info2="600"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_600_7F_6.jpg" />				
+				<ITEM value="WD_600_7F_7" 	label="WD_600_7F 7"  info1="2100" info2="600"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_600_7F_7.jpg" />				
+				<ITEM value="WD_600_7F_8" 	label="WD_600_7F 8"  info1="2100" info2="600"  info3="Standard" info4="Drawer"  	image1="img/catalog/WD_600_7F_8.jpg" />				
+				<ITEM value="WD_700_7F_1" 	label="WD_700_7F 1"  info1="2100" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_7F_1.jpg" />				
+				<ITEM value="WD_700_7F_2" 	label="WD_700_7F 2"  info1="2100" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_7F_2.jpg" />				
+				<ITEM value="WD_700_7F_3" 	label="WD_700_7F 3"  info1="2100" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_7F_3.jpg" />				
+				<ITEM value="WD_700_7F_4" 	label="WD_700_7F 4"  info1="2100" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_7F_4.jpg" />				
+				<ITEM value="WD_700_7F_5" 	label="WD_700_7F 5"  info1="2100" info2="700"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_700_7F_5.jpg" />				
+				<ITEM value="WD_700_7F_6" 	label="WD_700_7F 6"  info1="2100" info2="700"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_700_7F_6.jpg" />				
+				<ITEM value="WD_700_7F_7" 	label="WD_700_7F 7"  info1="2100" info2="700"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_700_7F_7.jpg" />				
+				<ITEM value="WD_700_7F_8" 	label="WD_700_7F 8"  info1="2100" info2="700"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_700_7F_8.jpg" />				
+                <ITEM value="WD_800_7F_1" 	label="WD_800_7F 1"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_1.jpg" />
+                <ITEM value="WD_800_7F_2" 	label="WD_800_7F 2"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_2.jpg" />
+                <ITEM value="WD_800_7F_3" 	label="WD_800_7F 3"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_3.jpg" />
+                <ITEM value="WD_800_7F_4" 	label="WD_800_7F 4"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_4.jpg" />
+                <ITEM value="WD_800_7F_5" 	label="WD_800_7F 5"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_5.jpg" />
+                <ITEM value="WD_800_7F_6" 	label="WD_800_7F 6"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_6.jpg" />
+                <ITEM value="WD_800_7F_7" 	label="WD_800_7F 7"  info1="2100" info2="800"  info3="Standard" info4="Drawer"  	image1="img/catalog/WD_800_7F_7.jpg" />
+                <ITEM value="WD_800_7F_8" 	label="WD_800_7F 8"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_7F_8.jpg" />     
+                <ITEM value="WD_800_7F_9" 	label="WD_800_7F 9"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_9.jpg" />                
+                <ITEM value="WD_800_7F_10" 	label="WD_800_7F 10"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_10.jpg" />                
+                <ITEM value="WD_800_7F_11" 	label="WD_800_7F 11"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_11.jpg" />                
+                <ITEM value="WD_800_7F_12" 	label="WD_800_7F 12"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_12.jpg" />                
+                <ITEM value="WD_800_7F_13" 	label="WD_800_7F 13"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_13.jpg" />                
+                <ITEM value="WD_800_7F_14" 	label="WD_800_7F 14"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_14.jpg" />                
+				<ITEM value="WD_800_7F_15" label="WD_800_7F 15"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_15.jpg" />                
+                <ITEM value="WD_800_7F_16" label="WD_800_7F 16"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_16.jpg" />                
+                <ITEM value="WD_800_7F_17" label="WD_800_7F 17"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_17.jpg" />                
+                <ITEM value="WD_800_7F_18" label="WD_800_7F 18"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_18.jpg" />                
+                <ITEM value="WD_800_7F_19" label="WD_800_7F 19"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_19.jpg" />                
+                <ITEM value="WD_800_7F_20" label="WD_800_7F 20"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_20.jpg" />                
+                <!-- <ITEM value="WD_800_7F_21" label="WD_800_7F 21"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_21.jpg" />                 -->
+                <!-- <ITEM value="WD_800_7F_22" label="WD_800_7F 22"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_22.jpg" />                 -->
+                <ITEM value="WD_800_7F_23" label="WD_800_7F 23"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_23.jpg" />                
+                <ITEM value="WD_800_7F_24" label="WD_800_7F 24"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_24.jpg" />                
+                <!-- <ITEM value="WD_800_7F_25" label="WD_800_7F 25"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_25.jpg" />                 -->
+                <ITEM value="WD_800_7F_26" label="WD_800_7F 26"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_26.jpg" />                
+                <ITEM value="WD_800_7F_27" label="WD_800_7F 27"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_27.jpg" />                
+                <ITEM value="WD_800_7F_28" label="WD_800_7F 28"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_28.jpg" />                
+                <ITEM value="WD_800_7F_29" label="WD_800_7F 29"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_29.jpg" />                
+                <ITEM value="WD_800_7F_30"	label="WD_800_7F 30"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_30.jpg" />                
+                <ITEM value="WD_800_7F_31" label="WD_800_7F 31"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_31.jpg" />                
+                <ITEM value="WD_800_7F_32" label="WD_800_7F 32"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_32.jpg" />                
+                <ITEM value="WD_800_7F_33" label="WD_800_7F 33"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_33.jpg" />                
+                <ITEM value="WD_800_7F_34" label="WD_800_7F 34"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_34.jpg" />                
+                <ITEM value="WD_800_7F_35" label="WD_800_7F 35"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_35.jpg" />                
+                <ITEM value="WD_800_7F_36" label="WD_800_7F 36"  info1="2100" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_7F_36.jpg" />                
+                <!-- <ITEM value="WD_800_7F_37" label="WD_800_7F 37"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_37.jpg" />                 -->
+                <!-- <ITEM value="WD_800_7F_38" label="WD_800_7F 38"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_38.jpg" />                 -->
+                <!-- <ITEM value="WD_800_7F_39" label="WD_800_7F 39"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_39.jpg" />                 -->
+                <ITEM value="WD_800_7F_40" label="WD_800_7F 40"  info1="2100" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_7F_40.jpg" />           				
+				<ITEM value="WD_900_7F_1" 	label="WD_900_7F 1"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_900_7F_1.jpg" />
+                <ITEM value="WD_900_7F_2" 	label="WD_900_7F 2"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_900_7F_2.jpg" />
+                <ITEM value="WD_900_7F_3" 	label="WD_900_7F 3"  info1="2100" info2="900"  info3="Standard" info4="Drawer"  	image1="img/catalog/WD_900_7F_3.jpg" />
+                <ITEM value="WD_900_7F_4" 	label="WD_900_7F 4"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_900_7F_4.jpg" />
+                <ITEM value="WD_900_7F_5" 	label="WD_900_7F 5"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_900_7F_5.jpg" />
+                <ITEM value="WD_900_7F_6" 	label="WD_900_7F 6"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_900_7F_6.jpg" />
+                <ITEM value="WD_900_7F_7" 	label="WD_900_7F 7"  info1="2100" info2="900"  info3="Standard" info4="Drawer"  	image1="img/catalog/WD_900_7F_7.jpg" />
+                <ITEM value="WD_900_7F_8" 	label="WD_900_7F 8"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_900_7F_8.jpg" />                
+                <ITEM value="WD_900_7F_9" 	label="WD_900_7F 9"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_9.jpg" />                
+                <ITEM value="WD_900_7F_10" 	label="WD_900_7F 10"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_10.jpg" />                
+                <ITEM value="WD_900_7F_11" 	label="WD_900_7F 11"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_11.jpg" />                
+                <ITEM value="WD_900_7F_12" 	label="WD_900_7F 12"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_12.jpg" />                
+                <ITEM value="WD_900_7F_13" 	label="WD_900_7F 13"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_13.jpg" />                
+                <ITEM value="WD_900_7F_14" 	label="WD_900_7F 14"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_14.jpg" />                
+				<ITEM value="WD_900_7F_15" label="WD_900_7F 15"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_15.jpg" />                
+                <ITEM value="WD_900_7F_16" label="WD_900_7F 16"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_16.jpg" />                
+                <ITEM value="WD_900_7F_17" label="WD_900_7F 17"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_17.jpg" />                
+                <ITEM value="WD_900_7F_18" label="WD_900_7F 18"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_18.jpg" />                
+                <ITEM value="WD_900_7F_19" label="WD_900_7F 19"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_19.jpg" />                
+                <ITEM value="WD_900_7F_20" label="WD_900_7F 20"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_20.jpg" />                
+                <ITEM value="WD_900_7F_21" label="WD_900_7F 21"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_21.jpg" />                
+                <ITEM value="WD_900_7F_22" label="WD_900_7F 22"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_22.jpg" />                
+                <ITEM value="WD_900_7F_23" label="WD_900_7F 23"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_23.jpg" />                
+                <ITEM value="WD_900_7F_24" label="WD_900_7F 24"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_24.jpg" />                
+                <ITEM value="WD_900_7F_25" label="WD_900_7F 25"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_25.jpg" />                
+                <ITEM value="WD_900_7F_26" label="WD_900_7F 26"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_26.jpg" />                
+                <ITEM value="WD_900_7F_27" label="WD_900_7F 27"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_27.jpg" />                
+                <ITEM value="WD_900_7F_28" label="WD_900_7F 28"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_28.jpg" />                
+                <ITEM value="WD_900_7F_29" label="WD_900_7F 29"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_29.jpg" />                
+                <ITEM value="WD_900_7F_30"	label="WD_900_7F 30"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_30.jpg" />                
+                <ITEM value="WD_900_7F_31" label="WD_900_7F 31"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_31.jpg" />                
+                <ITEM value="WD_900_7F_32" label="WD_900_7F 32"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_32.jpg" />                
+                <ITEM value="WD_900_7F_33" label="WD_900_7F 33"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_33.jpg" />                
+                <ITEM value="WD_900_7F_34" label="WD_900_7F 34"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_34.jpg" />                
+                <ITEM value="WD_900_7F_35" label="WD_900_7F 35"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_35.jpg" />                
+                <ITEM value="WD_900_7F_36" label="WD_900_7F 36"  info1="2100" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_7F_36.jpg" />                
+                <ITEM value="WD_900_7F_37" label="WD_900_7F 37"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_37.jpg" />                
+                <ITEM value="WD_900_7F_38" label="WD_900_7F 38"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_38.jpg" />                
+                <ITEM value="WD_900_7F_39" label="WD_900_7F 39"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_39.jpg" />                
+                <ITEM value="WD_900_7F_40" label="WD_900_7F 40"  info1="2100" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_7F_40.jpg" /> 
+                <ITEM value="WD_1000_7F_1" 	label="WD_1000_7F 1" info1="2100" info2="1000" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1000_7F_1.jpg" />
+                <ITEM value="WD_1000_7F_2" 	label="WD_1000_7F 2" info1="2100" info2="1000" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1000_7F_2.jpg" />
+				<!-- <ITEM value="WD_1000_7F_3" 	label="WD_1000_7F 3" info1="2100" info2="1000" info3="Standard" info4="Drawer"  	image1="img/catalog/WD_1000_7F_3.jpg" />
+				<ITEM value="WD_1000_7F_4" 	label="WD_1000_7F 4" info1="2100" info2="1000" info3="Standard" info4="Drawer"	    image1="img/catalog/WD_1000_7F_4.jpg" />
+				<ITEM value="WD_1000_7F_5" 	label="WD_1000_7F 5" info1="2100" info2="1000" info3="Standard" info4="Drawer"  	image1="img/catalog/WD_1000_7F_5.jpg" /> -->
+				<ITEM value="WD_1000_7F_6" 	label="WD_1000_7F 6" info1="2100" info2="1000" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1000_7F_6.jpg" />
+				<!-- <ITEM value="WD_1000_7F_7" 	label="WD_1000_7F 7" info1="2100" info2="1000" info3="Standard" info4="Drawer"  	image1="img/catalog/WD_1000_7F_7.jpg" />
+				<ITEM value="WD_1000_7F_8" 	label="WD_1000_7F 8" info1="2100" info2="1000" info3="Standard" info4="Drawer"	    image1="img/catalog/WD_1000_7F_8.jpg" /> -->
+				<ITEM value="WD_1000_7F_9" 	label="WD_1000_7F 9" info1="2100" info2="1000" info3="Standard" info4="No_Drawer"	    image1="img/catalog/WD_1000_7F_9.jpg" />
+				<ITEM value="WD_1000_7F_10" label="WD_1000_7F 10" info1="2100" info2="1000" info3="Standard" info4="Drawer"	    image1="img/catalog/WD_1000_7F_10.jpg" />
+				<ITEM value="WD_1000_7F_11" label="WD_1000_7F 11" info1="2100" info2="1000" info3="Standard" info4="No_Drawer"	    image1="img/catalog/WD_1000_7F_11.jpg" />
+				<ITEM value="WD_1000_7F_12" label="WD_1000_7F 12" info1="2100" info2="1000" info3="Standard" info4="No_Drawer"	    image1="img/catalog/WD_1000_7F_12.jpg" />
+				<ITEM value="WD_1000_7F_13" label="WD_1000_7F 13" info1="2100" info2="1000" info3="Standard" info4="Drawer"	    image1="img/catalog/WD_1000_7F_13.jpg" />
+				<ITEM value="WD_1000_7F_14" label="WD_1000_7F 14" info1="2100" info2="1000" info3="Standard" info4="Drawer"	    image1="img/catalog/WD_1000_7F_14.jpg" />
+				<ITEM value="WD_1000_7F_15" label="WD_1000_7F 15"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_15.jpg" />                
+                <ITEM value="WD_1000_7F_16" label="WD_1000_7F 16"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_16.jpg" />                
+                <ITEM value="WD_1000_7F_17" label="WD_1000_7F 17"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_17.jpg" />                
+                <ITEM value="WD_1000_7F_18" label="WD_1000_7F 18"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_18.jpg" />                
+                <ITEM value="WD_1000_7F_19" label="WD_1000_7F 19"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_19.jpg" />                
+                <ITEM value="WD_1000_7F_20" label="WD_1000_7F 20"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_20.jpg" />                
+                <ITEM value="WD_1000_7F_21" label="WD_1000_7F 21"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_21.jpg" />                
+                <ITEM value="WD_1000_7F_22" label="WD_1000_7F 22"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_22.jpg" />                
+                <ITEM value="WD_1000_7F_23" label="WD_1000_7F 23"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_23.jpg" />                
+                <ITEM value="WD_1000_7F_24" label="WD_1000_7F 24"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_24.jpg" />                
+                <ITEM value="WD_1000_7F_25" label="WD_1000_7F 25"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_25.jpg" />                
+                <ITEM value="WD_1000_7F_26" label="WD_1000_7F 26"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_26.jpg" />                
+                <ITEM value="WD_1000_7F_27" label="WD_1000_7F 27"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_27.jpg" />                
+                <ITEM value="WD_1000_7F_28" label="WD_1000_7F 28"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_28.jpg" />                
+                <ITEM value="WD_1000_7F_29" label="WD_1000_7F 29"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_29.jpg" />                
+                <ITEM value="WD_1000_7F_30"	label="WD_1000_7F 30"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_30.jpg" />                
+                <ITEM value="WD_1000_7F_31" label="WD_1000_7F 31"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_31.jpg" />                
+                <ITEM value="WD_1000_7F_32" label="WD_1000_7F 32"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_32.jpg" />                
+                <ITEM value="WD_1000_7F_33" label="WD_1000_7F 33"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_33.jpg" />                
+                <ITEM value="WD_1000_7F_34" label="WD_1000_7F 34"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_34.jpg" />                
+                <ITEM value="WD_1000_7F_35" label="WD_1000_7F 35"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_35.jpg" />                
+                <ITEM value="WD_1000_7F_36" label="WD_1000_7F 36"  info1="2100" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_7F_36.jpg" />                
+                <ITEM value="WD_1000_7F_37" label="WD_1000_7F 37"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_37.jpg" />                
+                <ITEM value="WD_1000_7F_38" label="WD_1000_7F 38"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_38.jpg" />                
+                <ITEM value="WD_1000_7F_39" label="WD_1000_7F 39"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_39.jpg" />                
+                <ITEM value="WD_1000_7F_40" label="WD_1000_7F 40"  info1="2100" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_7F_40.jpg" /> 
+				
+				<ITEM value="WD_1100_7F_1" 	label="WD_1100_7F 1" info1="2100" info2="1100" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1100_7F_1.jpg" />
+                <ITEM value="WD_1100_7F_2" 	label="WD_1100_7F 2" info1="2100" info2="1100" info3="Standard" info4="Drawer"	    image1="img/catalog/WD_1100_7F_2.jpg" />				
+				<ITEM value="WD_1200_7F_1" 	label="WD_1200_7F 1" info1="2100" info2="1200" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1200_7F_1.jpg" />
+                <!-- <ITEM value="WD_1200_7F_2" 	label="WD_1200_7F 2" info1="2100" info2="1200" info3="Standard" info4="Drawer"	    image1="img/catalog/WD_1200_7F_2.jpg" />                 -->
+
+			   
+				<ITEM value="WD_300_8F_1"   label="WD 300 8F 1"  info1="2400" info2="300"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_300_8F_1.jpg" />
+                <ITEM value="WD_300_8F_2"   label="WD 300 8F 2"  info1="2400" info2="300"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_300_8F_2.jpg" />
+                <ITEM value="WD_300_8F_3"   label="WD 300 8F 3"  info1="2400" info2="300"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_300_8F_3.jpg" />
+				<ITEM value="WD_450_8F_1"   label="WD_450_8F 1"  info1="2400" info2="450"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_450_8F_1.jpg" />
+				<ITEM value="WD_450_8F_2"   label="WD_450_8F 2"  info1="2400" info2="450"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_450_8F_2.jpg" />
+                <ITEM value="WD_450_8F_3"   label="WD_450_8F 3"  info1="2400" info2="450"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_450_8F_3.jpg" />
+				<ITEM value="WD_450_8F_4"   label="WD_450_8F 4"  info1="2400" info2="450"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_450_8F_4.jpg" />                
+                <ITEM value="WD_600_8F_1"	label="WD_600_8F 1"  info1="2400" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_8F_1.jpg" />
+                <ITEM value="WD_600_8F_2"	label="WD_600_8F 2"  info1="2400" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_8F_2.jpg" />
+				<ITEM value="WD_600_8F_3"	label="WD_600_8F 3"  info1="2400" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_8F_3.jpg" />
+				<ITEM value="WD_600_8F_4" 	label="WD_600_8F 4"  info1="2400" info2="600"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_600_8F_4.jpg" />				
+				<ITEM value="WD_600_8F_5" 	label="WD_600_8F 5"  info1="2400" info2="600"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_600_8F_5.jpg" />				
+				<ITEM value="WD_600_8F_6" 	label="WD_600_8F 6"  info1="2400" info2="600"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_600_8F_6.jpg" />				
+				<ITEM value="WD_600_8F_7" 	label="WD_600_8F 7"  info1="2400" info2="600"  info3="Standard" info4="Drawer"  	image1="img/catalog/WD_600_8F_7.jpg" />				
+				<ITEM value="WD_600_8F_8"   label="WD_600_8F 8"  info1="2400" info2="600"  info3="Standard" info4="Drawer"  	image1="img/catalog/WD_600_8F_8.jpg" />	
+				<ITEM value="WD_700_8F_1"	label="WD_700_8F 1"  info1="2400" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_8F_1.jpg" />				
+				<ITEM value="WD_700_8F_2"	label="WD_700_8F 2"  info1="2400" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_8F_2.jpg" />				
+				<ITEM value="WD_700_8F_3"	label="WD_700_8F 3"  info1="2400" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_8F_3.jpg" />				
+				<ITEM value="WD_700_8F_4"	label="WD_700_8F 4"  info1="2400" info2="700"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_700_8F_4.jpg" />				
+				<ITEM value="WD_700_8F_5"	label="WD_700_8F 5"  info1="2400" info2="700"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_700_8F_5.jpg" />				
+				<ITEM value="WD_700_8F_6"	label="WD_700_8F 6"  info1="2400" info2="700"  info3="Standard" info4="Drawer"  	image1="img/catalog/WD_700_8F_6.jpg" />				
+				<ITEM value="WD_700_8F_7"	label="WD_700_8F 7"  info1="2400" info2="700"  info3="Standard" info4="Drawer"  	image1="img/catalog/WD_700_8F_7.jpg" />				
+				<ITEM value="WD_700_8F_8"	label="WD_700_8F 8"  info1="2400" info2="700"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_700_8F_8.jpg" />				
+                <ITEM value="WD_800_8F_1"	label="WD_800_8F 1"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_1.jpg" />
+                <ITEM value="WD_800_8F_2" 	label="WD_800_8F 2"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_2.jpg" />
+                <ITEM value="WD_800_8F_3" 	label="WD_800_8F 3"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_3.jpg" />
+                <ITEM value="WD_800_8F_4" 	label="WD_800_8F 4"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_4.jpg" />
+                <ITEM value="WD_800_8F_5" 	label="WD_800_8F 5"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_5.jpg" />
+                <ITEM value="WD_800_8F_6" 	label="WD_800_8F 6"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_6.jpg" />
+                <ITEM value="WD_800_8F_7" 	label="WD_800_8F 7"  info1="2400" info2="800"  info3="Standard" info4="Drawer"  	image1="img/catalog/WD_800_8F_7.jpg" />
+                <ITEM value="WD_800_8F_8" 	label="WD_800_8F 8"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_8.jpg" /> 
+                <ITEM value="WD_800_8F_9" 	label="WD_800_8F 9"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_9.jpg" />               
+                <ITEM value="WD_800_8F_10" 	label="WD_800_8F 10" info1="2400" info2="800"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_800_8F_10.jpg" />               
+                <ITEM value="WD_800_8F_11" 	label="WD_800_8F 11" info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_11.jpg" />               
+                <ITEM value="WD_800_8F_12" 	label="WD_800_8F 12" info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_800_8F_12.jpg" />               
+                <ITEM value="WD_800_8F_13" 	label="WD_800_8F 13" info1="2400" info2="800"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_800_8F_13.jpg" />               
+                <ITEM value="WD_800_8F_14" 	label="WD_800_8F 14" info1="2400" info2="800"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_800_8F_14.jpg" />    							
+				<ITEM value="WD_800_8F_15" label="WD_800_8F 15"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_15.jpg" />                
+                <ITEM value="WD_800_8F_16" label="WD_800_8F 16"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_16.jpg" />                
+                <ITEM value="WD_800_8F_17" label="WD_800_8F 17"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_17.jpg" />                
+                <ITEM value="WD_800_8F_18" label="WD_800_8F 18"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_18.jpg" />                
+                <ITEM value="WD_800_8F_19" label="WD_800_8F 19"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_19.jpg" />                
+                <ITEM value="WD_800_8F_20" label="WD_800_8F 20"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_20.jpg" />                
+                <!-- <ITEM value="WD_800_8F_21" label="WD_800_8F 21"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_21.jpg" />                 -->
+                <!-- <ITEM value="WD_800_8F_22" label="WD_800_8F 22"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_22.jpg" />                 -->
+                <ITEM value="WD_800_8F_23" label="WD_800_8F 23"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_23.jpg" />                
+                <ITEM value="WD_800_8F_24" label="WD_800_8F 24"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_24.jpg" />                
+                <!-- <ITEM value="WD_800_8F_25" label="WD_800_8F 25"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_25.jpg" />                 -->
+                <ITEM value="WD_800_8F_26" label="WD_800_8F 26"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_26.jpg" />                
+                <ITEM value="WD_800_8F_27" label="WD_800_8F 27"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_27.jpg" />                
+                <ITEM value="WD_800_8F_28" label="WD_800_8F 28"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_28.jpg" />                
+                <ITEM value="WD_800_8F_29" label="WD_800_8F 29"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_29.jpg" />                
+                <ITEM value="WD_800_8F_30"	label="WD_800_8F 30"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_30.jpg" />                
+                <ITEM value="WD_800_8F_31" label="WD_800_8F 31"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_31.jpg" />                
+                <ITEM value="WD_800_8F_32" label="WD_800_8F 32"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_32.jpg" />                
+                <ITEM value="WD_800_8F_33" label="WD_800_8F 33"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_33.jpg" />                
+                <ITEM value="WD_800_8F_34" label="WD_800_8F 34"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_34.jpg" />                
+                <ITEM value="WD_800_8F_35" label="WD_800_8F 35"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_35.jpg" />                
+                <ITEM value="WD_800_8F_36" label="WD_800_8F 36"  info1="2400" info2="800"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_800_8F_36.jpg" />                
+                <!-- <ITEM value="WD_800_8F_37" label="WD_800_8F 37"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_37.jpg" />                 -->
+                <!-- <ITEM value="WD_800_8F_38" label="WD_800_8F 38"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_38.jpg" />                 -->
+                <!-- <ITEM value="WD_800_8F_39" label="WD_800_8F 39"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_39.jpg" />                 -->
+                <ITEM value="WD_800_8F_40" label="WD_800_8F 40"  info1="2400" info2="800"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_800_8F_40.jpg" />                
+				<ITEM value="WD_900_8F_1" 	label="WD_900_8F 1"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_900_8F_1.jpg" />
+                <ITEM value="WD_900_8F_2" 	label="WD_900_8F 2"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_900_8F_2.jpg" />
+                <ITEM value="WD_900_8F_3" 	label="WD_900_8F 3"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_900_8F_3.jpg" />
+                <ITEM value="WD_900_8F_4" 	label="WD_900_8F 4"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_900_8F_4.jpg" />
+                <ITEM value="WD_900_8F_5" 	label="WD_900_8F 5"  info1="2400" info2="900"  info3="Standard" info4="Drawer"      image1="img/catalog/WD_900_8F_5.jpg" />
+                <ITEM value="WD_900_8F_6" 	label="WD_900_8F 6"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_900_8F_6.jpg" />
+                <ITEM value="WD_900_8F_7" 	label="WD_900_8F 7"  info1="2400" info2="900"  info3="Standard" info4="Drawer"  	image1="img/catalog/WD_900_8F_7.jpg" />
+                <ITEM value="WD_900_8F_8" 	label="WD_900_8F 8"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_900_8F_8.jpg" />               
+                <ITEM value="WD_900_8F_9" 	label="WD_900_8F 9"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_900_8F_9.jpg" />               
+                <ITEM value="WD_900_8F_10" 	label="WD_900_8F 10" info1="2400" info2="900"  info3="Standard" info4="Drawer"	    image1="img/catalog/WD_900_8F_10.jpg" />               
+                <ITEM value="WD_900_8F_11" 	label="WD_900_8F 11" info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_900_8F_11.jpg" />               
+                <ITEM value="WD_900_8F_12" 	label="WD_900_8F 12" info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_900_8F_12.jpg" />               
+                <ITEM value="WD_900_8F_13" 	label="WD_900_8F 13" info1="2400" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_8F_13.jpg" />               
+                <ITEM value="WD_900_8F_14" 	label="WD_900_8F 14" info1="2400" info2="900"  info3="Standard" info4="Drawer"	image1="img/catalog/WD_900_8F_14.jpg" />    							
+				<ITEM value="WD_900_8F_15" label="WD_900_8F 15"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_15.jpg" />                
+                <ITEM value="WD_900_8F_16" label="WD_900_8F 16"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_16.jpg" />                
+                <ITEM value="WD_900_8F_17" label="WD_900_8F 17"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_17.jpg" />                
+                <ITEM value="WD_900_8F_18" label="WD_900_8F 18"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_18.jpg" />                
+                <ITEM value="WD_900_8F_19" label="WD_900_8F 19"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_19.jpg" />                
+                <ITEM value="WD_900_8F_20" label="WD_900_8F 20"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_20.jpg" />                
+                <ITEM value="WD_900_8F_21" label="WD_900_8F 21"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_21.jpg" />                
+                <ITEM value="WD_900_8F_22" label="WD_900_8F 22"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_22.jpg" />                
+                <ITEM value="WD_900_8F_23" label="WD_900_8F 23"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_23.jpg" />                
+                <ITEM value="WD_900_8F_24" label="WD_900_8F 24"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_24.jpg" />                
+                <ITEM value="WD_900_8F_25" label="WD_900_8F 25"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_25.jpg" />                
+                <ITEM value="WD_900_8F_26" label="WD_900_8F 26"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_26.jpg" />                
+                <ITEM value="WD_900_8F_27" label="WD_900_8F 27"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_27.jpg" />                
+                <ITEM value="WD_900_8F_28" label="WD_900_8F 28"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_28.jpg" />                
+                <ITEM value="WD_900_8F_29" label="WD_900_8F 29"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_29.jpg" />                
+                <ITEM value="WD_900_8F_30"	label="WD_900_8F 30"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_30.jpg" />                
+                <ITEM value="WD_900_8F_31" label="WD_900_8F 31"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_31.jpg" />                
+                <ITEM value="WD_900_8F_32" label="WD_900_8F 32"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_32.jpg" />                
+                <ITEM value="WD_900_8F_33" label="WD_900_8F 33"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_33.jpg" />                
+                <ITEM value="WD_900_8F_34" label="WD_900_8F 34"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_34.jpg" />                
+                <ITEM value="WD_900_8F_35" label="WD_900_8F 35"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_35.jpg" />                
+                <ITEM value="WD_900_8F_36" label="WD_900_8F 36"  info1="2400" info2="900"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_900_8F_36.jpg" />                
+                <ITEM value="WD_900_8F_37" label="WD_900_8F 37"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_37.jpg" />                
+                <ITEM value="WD_900_8F_38" label="WD_900_8F 38"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_38.jpg" />                
+                <ITEM value="WD_900_8F_39" label="WD_900_8F 39"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_39.jpg" />                
+                <ITEM value="WD_900_8F_40" label="WD_900_8F 40"  info1="2400" info2="900"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_900_8F_40.jpg" /> 			
+				<ITEM value="WD_1000_8F_1" 	label="WD_1000_8F 1" info1="2400" info2="1000" info3="Standard" info4="No_Drawer"	image1="im/gcatalog/WD_1000_8F_1.jpg" />
+                <ITEM value="WD_1000_8F_2" 	label="WD_1000_8F 2" info1="2400" info2="1000" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1000_8F_2.jpg" />
+				<!-- <ITEM value="WD_1000_8F_3" 	label="WD_1000_8F 3" info1="2400" info2="1000" info3="Standard" info4="Drawer"  	image1="img/catalog/WD_1000_8F_3.jpg" />
+				<ITEM value="WD_1000_8F_4" 	label="WD_1000_8F 4" info1="2400" info2="1000" info3="Standard" info4="Drawer"  	image1="img/catalog/WD_1000_8F_4.jpg" />
+				<ITEM value="WD_1000_8F_5" 	label="WD_1000_8F 5" info1="2400" info2="1000" info3="Standard" info4="Drawer"  	image1="img/catalog/WD_1000_8F_5.jpg" /> -->
+				<ITEM value="WD_1000_8F_6" 	label="WD_1000_8F 6" info1="2400" info2="1000" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1000_8F_6.jpg" />
+				<!-- <ITEM value="WD_1000_8F_7" 	label="WD_1000_8F 7" info1="2400" info2="1000" info3="Standard" info4="Drawer"	    image1="img/catalog/WD_1000_8F_7.jpg" />
+				<ITEM value="WD_1000_8F_8" 	label="WD_1000_8F 8" info1="2400" info2="1000" info3="Standard" info4="Drawer"  	image1="img/catalog/WD_1000_8F_8.jpg" /> -->
+				<ITEM value="WD_1000_8F_9" 	label="WD_1000_8F 9" info1="2400" info2="1000" info3="Standard" info4="No_Drawer"  	image1="img/catalog/WD_1000_8F_9.jpg" />
+				<ITEM value="WD_1000_8F_10" label="WD_1000_8F 10" info1="2400" info2="1000" info3="Standard" info4="Drawer"  	image1="img/catalog/WD_1000_8F_10.jpg" />
+				<ITEM value="WD_1000_8F_11" label="WD_1000_8F 11" info1="2400" info2="1000" info3="Standard" info4="No_Drawer"  image1="img/catalog/WD_1000_8F_11.jpg" />
+				<ITEM value="WD_1000_8F_12" label="WD_1000_8F 12" info1="2400" info2="1000" info3="Standard" info4="No_Drawer"  image1="img/catalog/WD_1000_8F_12.jpg" />
+				<ITEM value="WD_1000_8F_13" label="WD_1000_8F 13" info1="2400" info2="1000" info3="Standard" info4="Drawer"  image1="img/catalog/WD_1000_8F_13.jpg" />
+				<ITEM value="WD_1000_8F_14" label="WD_1000_8F 14" info1="2400" info2="1000" info3="Standard" info4="Drawer"  image1="img/catalog/WD_1000_8F_14.jpg" />								
+				<ITEM value="WD_1000_8F_15" label="WD_1000_8F 15"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_15.jpg" />                
+                <ITEM value="WD_1000_8F_16" label="WD_1000_8F 16"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_16.jpg" />                
+                <ITEM value="WD_1000_8F_17" label="WD_1000_8F 17"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_17.jpg" />                
+                <ITEM value="WD_1000_8F_18" label="WD_1000_8F 18"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_18.jpg" />                
+                <ITEM value="WD_1000_8F_19" label="WD_1000_8F 19"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_19.jpg" />                
+                <ITEM value="WD_1000_8F_20" label="WD_1000_8F 20"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_20.jpg" />                
+                <ITEM value="WD_1000_8F_21" label="WD_1000_8F 21"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_21.jpg" />                
+                <ITEM value="WD_1000_8F_22" label="WD_1000_8F 22"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_22.jpg" />                
+                <ITEM value="WD_1000_8F_23" label="WD_1000_8F 23"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_23.jpg" />                
+                <ITEM value="WD_1000_8F_24" label="WD_1000_8F 24"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_24.jpg" />                
+                <ITEM value="WD_1000_8F_25" label="WD_1000_8F 25"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_25.jpg" />                
+                <ITEM value="WD_1000_8F_26" label="WD_1000_8F 26"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_26.jpg" />                
+                <ITEM value="WD_1000_8F_27" label="WD_1000_8F 27"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_27.jpg" />                
+                <ITEM value="WD_1000_8F_28" label="WD_1000_8F 28"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_28.jpg" />                
+                <ITEM value="WD_1000_8F_29" label="WD_1000_8F 29"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_29.jpg" />                
+                <ITEM value="WD_1000_8F_30"	label="WD_1000_8F 30"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_30.jpg" />                
+                <ITEM value="WD_1000_8F_31" label="WD_1000_8F 31"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_31.jpg" />                
+                <ITEM value="WD_1000_8F_32" label="WD_1000_8F 32"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_32.jpg" />                
+                <ITEM value="WD_1000_8F_33" label="WD_1000_8F 33"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_33.jpg" />                
+                <ITEM value="WD_1000_8F_34" label="WD_1000_8F 34"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_34.jpg" />                
+                <ITEM value="WD_1000_8F_35" label="WD_1000_8F 35"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_35.jpg" />                
+                <ITEM value="WD_1000_8F_36" label="WD_1000_8F 36"  info1="2400" info2="1000"  info3="Standard" info4="No_Drawer"	   image1="img/catalog/WD_1000_8F_36.jpg" />                
+                <ITEM value="WD_1000_8F_37" label="WD_1000_8F 37"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_37.jpg" />                
+                <ITEM value="WD_1000_8F_38" label="WD_1000_8F 38"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_38.jpg" />                
+                <ITEM value="WD_1000_8F_39" label="WD_1000_8F 39"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_39.jpg" />                
+                <ITEM value="WD_1000_8F_40" label="WD_1000_8F 40"  info1="2400" info2="1000"  info3="Standard" info4="Drawer"	   image1="img/catalog/WD_1000_8F_40.jpg" /> 				
+				<ITEM value="WD_1100_8F_1" 	label="WD_1100_8F 1" 	info1="2400" info2="1100" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1100_8F_1.jpg" />
+                <ITEM value="WD_1100_8F_2" 	label="WD_1100_8F 2" 	info1="2400" info2="1100" info3="Standard" info4="Drawer"  	image1="img/catalog/WD_1100_8F_2.jpg" />				
+				<ITEM value="WD_1200_8F_1" 	label="WD_1200_8F 1" 	info1="2400" info2="1200" info3="Standard" info4="No_Drawer"	image1="img/catalog/WD_1200_8F_1.jpg" />
+                <!-- <ITEM value="WD_1200_8F_2" 	label="WD_1200_8F 2" 	info1="2400" info2="1200" info3="Standard" info4="Drawer"	    image1="img/catalog/WD_1200_8F_2.jpg" /> -->
+
+    </PART>
+
+    <PART name="M1_Wardrobe_Custom_Layouts">
+
+                <ITEM value="M1_7ft_Layout_1" label="Lauout 1" info1="2100" info2="UNLIMITED"  info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_1.jpg" />
+				<ITEM value="M1_7ft_Layout_2" label="Layout 2" info1="2100" info2="LIMITED"    info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_2.jpg" />
+				<ITEM value="M1_7ft_Layout_3" label="Layout 3" info1="2100" info2="LIMITED"    info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_3.jpg" />
+				<ITEM value="M1_7ft_Layout_4" label="Layout 4" info1="2100" info2="LIMITED"    info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_4.jpg" />
+				<ITEM value="M1_7ft_Layout_5" label="Layout 5" info1="2100" info2="ANY"        info3="customisation" info4="No_Drawer"	    image1="img/catalog/7ft_Layout_5.jpg" />
+				<ITEM value="M1_7ft_Layout_6" label="Layout 6" info1="2100" info2="ANY"        info3="customisation" info4="No_Drawer"	    image1="img/catalog/7ft_Layout_6.jpg" />
+				<ITEM value="M1_7ft_Layout_7" label="Layout 7" info1="2100" info2="ANY"        info3="customisation" info4="No_Drawer"	    image1="img/catalog/7ft_Layout_7.jpg" />
+				<ITEM value="M1_7ft_Layout_8" label="Layout 8" info1="2100" info2="ANY"        info3="customisation" info4="No_Drawer"	    image1="img/catalog/7ft_Layout_8.jpg" />
+
+			   <ITEM value="M1_8ft_Layout_1" label="Layout 1" info1="2400" info2="UNLIMITED" info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_1.jpg" />
+			   <ITEM value="M1_8ft_Layout_2" label="Layout 2" info1="2400" info2="LIMITED"   info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_2.jpg" />
+			   <ITEM value="M1_8ft_Layout_3" label="Layout 3" info1="2400" info2="LIMITED"   info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_3.jpg" />
+			   <ITEM value="M1_8ft_Layout_4" label="Layout 4" info1="2400" info2="LIMITED"   info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_4.jpg" />
+			   <ITEM value="M1_8ft_Layout_5" label="Layout 5" info1="2400" info2="ANY"       info3="customisation" info4="No_Drawer"	    image1="img/catalog/8ft_Layout_5.jpg" />
+			   <ITEM value="M1_8ft_Layout_6" label="Layout 6" info1="2400" info2="ANY"       info3="customisation" info4="No_Drawer"	    image1="img/catalog/8ft_Layout_6.jpg" />
+			   <ITEM value="M1_8ft_Layout_7" label="Layout 7" info1="2400" info2="ANY"       info3="customisation" info4="No_Drawer"	    image1="img/catalog/8ft_Layout_7.jpg" />
+			   <ITEM value="M1_8ft_Layout_8" label="Layout 8" info1="2400" info2="ANY"       info3="customisation" info4="No_Drawer"	    image1="img/catalog/8ft_Layout_8.jpg" />
+
+    </PART>
+
+    <PART name="M2_Wardrobe_Custom_Layouts">
+
+		<ITEM value="M2_7ft_Layout_1" label="Lauout 1" info1="2100" info2="UNLIMITED" info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_1.jpg" />
+		<ITEM value="M2_7ft_Layout_2" label="Layout 2" info1="2100" info2="LIMITED"    info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_2.jpg" />
+		<ITEM value="M2_7ft_Layout_3" label="Layout 3" info1="2100" info2="LIMITED"    info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_3.jpg" />
+		<ITEM value="M2_7ft_Layout_4" label="Layout 4" info1="2100" info2="LIMITED"    info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_4.jpg" />
+		<ITEM value="M2_7ft_Layout_5" label="Layout 5" info1="2100" info2="ANY"        info3="customisation" info4="No_Drawer"	    image1="img/catalog/7ft_Layout_5.jpg" />
+		<ITEM value="M2_7ft_Layout_6" label="Layout 6" info1="2100" info2="ANY"        info3="customisation" info4="No_Drawer"	    image1="img/catalog/7ft_Layout_6.jpg" />
+		<ITEM value="M2_7ft_Layout_7" label="Layout 7" info1="2100" info2="ANY"        info3="customisation" info4="No_Drawer"	    image1="img/catalog/7ft_Layout_7.jpg" />
+		<ITEM value="M2_7ft_Layout_8" label="Layout 8" info1="2100" info2="ANY"        info3="customisation" info4="No_Drawer"	    image1="img/catalog/7ft_Layout_8.jpg" />
+
+	   <ITEM value="M2_8ft_Layout_1" label="Layout 1" info1="2400" info2="UNLIMITED" info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_1.jpg" />
+	   <ITEM value="M2_8ft_Layout_2" label="Layout 2" info1="2400" info2="LIMITED"   info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_2.jpg" />
+	   <ITEM value="M2_8ft_Layout_3" label="Layout 3" info1="2400" info2="LIMITED"   info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_3.jpg" />
+	   <ITEM value="M2_8ft_Layout_4" label="Layout 4" info1="2400" info2="LIMITED"   info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_4.jpg" />
+	   <ITEM value="M2_8ft_Layout_5" label="Layout 5" info1="2400" info2="ANY"       info3="customisation" info4="No_Drawer"	    image1="img/catalog/8ft_Layout_5.jpg" />
+	   <ITEM value="M2_8ft_Layout_6" label="Layout 6" info1="2400" info2="ANY"       info3="customisation" info4="No_Drawer"	    image1="img/catalog/8ft_Layout_6.jpg" />
+	   <ITEM value="M2_8ft_Layout_7" label="Layout 7" info1="2400" info2="ANY"       info3="customisation" info4="No_Drawer"	    image1="img/catalog/8ft_Layout_7.jpg" />
+	   <ITEM value="M2_8ft_Layout_8" label="Layout 8" info1="2400" info2="ANY"       info3="customisation" info4="No_Drawer"	    image1="img/catalog/8ft_Layout_8.jpg" />
+
+	</PART>
+
+
+	<PART name="M3_Wardrobe_Custom_Layouts">
+
+		<ITEM value="M3_7ft_Layout_1" label="Lauout 1" info1="2100" info2="UNLIMITED" info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_1.jpg" />
+		<ITEM value="M3_7ft_Layout_2" label="Layout 2" info1="2100" info2="LIMITED"    info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_2.jpg" />
+		<ITEM value="M3_7ft_Layout_3" label="Layout 3" info1="2100" info2="LIMITED"    info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_3.jpg" />
+		<ITEM value="M3_7ft_Layout_4" label="Layout 4" info1="2100" info2="LIMITED"    info3="customisation" info4="No_Drawer"		image1="img/catalog/7ft_Layout_4.jpg" />
+		<ITEM value="M3_7ft_Layout_5" label="Layout 5" info1="2100" info2="ANY"        info3="customisation" info4="No_Drawer"	    image1="img/catalog/7ft_Layout_5.jpg" />
+		<ITEM value="M3_7ft_Layout_6" label="Layout 6" info1="2100" info2="ANY"        info3="customisation" info4="No_Drawer"	    image1="img/catalog/7ft_Layout_6.jpg" />
+		<ITEM value="M3_7ft_Layout_7" label="Layout 7" info1="2100" info2="ANY"        info3="customisation" info4="No_Drawer"	    image1="img/catalog/7ft_Layout_7.jpg" />
+		<ITEM value="M3_7ft_Layout_8" label="Layout 8" info1="2100" info2="ANY"        info3="customisation" info4="No_Drawer"	    image1="img/catalog/7ft_Layout_8.jpg" />
+
+	   <ITEM value="M3_8ft_Layout_1" label="Layout 1" info1="2400" info2="UNLIMITED" info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_1.jpg" />
+	   <ITEM value="M3_8ft_Layout_2" label="Layout 2" info1="2400" info2="LIMITED"   info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_2.jpg" />
+	   <ITEM value="M3_8ft_Layout_3" label="Layout 3" info1="2400" info2="LIMITED"   info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_3.jpg" />
+	   <ITEM value="M3_8ft_Layout_4" label="Layout 4" info1="2400" info2="LIMITED"   info3="customisation" info4="No_Drawer"		image1="img/catalog/8ft_Layout_4.jpg" />
+	   <ITEM value="M3_8ft_Layout_5" label="Layout 5" info1="2400" info2="ANY"       info3="customisation" info4="No_Drawer"	    image1="img/catalog/8ft_Layout_5.jpg" />
+	   <ITEM value="M3_8ft_Layout_6" label="Layout 6" info1="2400" info2="ANY"       info3="customisation" info4="No_Drawer"	    image1="img/catalog/8ft_Layout_6.jpg" />
+	   <ITEM value="M3_8ft_Layout_7" label="Layout 7" info1="2400" info2="ANY"       info3="customisation" info4="No_Drawer"	    image1="img/catalog/8ft_Layout_7.jpg" />
+	   <ITEM value="M3_8ft_Layout_8" label="Layout 8" info1="2400" info2="ANY"       info3="customisation" info4="No_Drawer"	    image1="img/catalog/8ft_Layout_8.jpg" />
+
+</PART>
+
+</XML>

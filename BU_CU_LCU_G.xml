@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<ARTICLE>
+		<ART_NAME>BU_CU_LCU_G</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Base Unit L Corner</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="___WORKSURFACE" default="Work_Surface_Fr40mm" visible="FALSE" setAsGlobal="TRUE" />
+		<EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" />
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<COMBOBOX name="ART_SIZEZB" label="Height :" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="720">
+					<ITEM value="700" label="700 mm" />
+					<ITEM value="720" label="720 mm" />
+					<ITEM value="760" label="760 mm" />
+                </COMBOBOX>
+                
+              
+                <EDITBOX name="ART_SIZEXB" label="Width :" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="950" />
+                <EDITBOX name="ART_SIZEYB" label="Width :" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="950" />
+           
+		
+                <COMBOBOX name="Base_Unit_Depth" label="Depth : " active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+                </COMBOBOX>
+
+			</GROUP>
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION_1" />
+
+			<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMBOBOX name="Selection" label="Selection"	default="Shelve"		valuetype="image"	visible=""	active="TRUE">
+
+				<ITEM value="Shelve" 		label="Shelve" 		info1="" info2=""	image1=""/>
+				<ITEM value="Accessiores" 	label="Accessiores" info1="" info2=""	image1="img/hardware/Corner_Acc.jpg"/>
+			
+			</COMBOBOX>
+
+			<EDITBOX name="Corner_Shelf_LIND"	label="shelves"		default="1:1"	active="TRUE"	valuetype="LINDIV"	visible="FALSE"	/>
+
+			<GROUP name="Accessory" valuetype="FRAME" label="Accessory" visible="">
+
+				<COMBOBOX name="Accessory_Selection" label="Accessory Selection" default="CORNERSTONE" valuetype="FRAME" visible="FALSE" active="TRUE">
+					<ITEM value="Nill" 		label="" info1="" info2="" visible="FALSE"	image1="" />
+					<ITEM value="VS_COR_Wheel_Pro" label="VS COR Wheel Pro" info1="" info2="" image1="" />
+
+				</COMBOBOX>
+
+				<COMBOBOX name="LC_Accessory" label="Accessiores Finish" default="" valuetype="image" visible="FALSE" active="">
+					<ITEM value="VSCor_WheelPro_PremeaChrome" 		label="Premea Chrome" 		info1="VS_COR_Wheel_Pro" 	info2="" image1=""  />
+					<ITEM value="VSCor_WheelPro_PremeaGrey" 		label="Premea Grey" 		info1="VS_COR_Wheel_Pro" 	info2="" image1=""  />
+					<ITEM value="VSCor_WheelPro_SmartChrome" 		label="Smart Chrome" 		info1="VS_COR_Wheel_Pro" 	info2="" image1="" />
+				</COMBOBOX>
+
+			</GROUP>
+
+            <COMBOBOX name="Hinge_Type_1" label="Hinge Selection" valuetype="IMAGE" default="Hettich_SoftClose_165D" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="Hettich_SoftClose_165D" 		value="Hettich_SoftClose_165D"  label="Hettich 165D"  	image1="img/hardware/165_Degree.jpg" />
+		  		<ITEM name="BLUM_SoftClose_155D" 			value="BLUM_SoftClose_155D" 	label="Blum 155D" 		 image1="img/hardware/165_Degree.jpg" />
+            </COMBOBOX>
+			
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_BASE_BRACKETS_SELECTION" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<CHECKBOX name="BU_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+			<GROUP name="Left_Shutter_Details" label="Left Shutter Details">
+
+				<COMBOBOX name="BU_Shutter_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="BU_Shutter_Finish" label="Finish" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="BU_Texture" label="Texture" valuetype="TEXT" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="BU_Front1" label="Shutter Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<GROUP name="Right_Shutter_Details" label="Right Shutter Details">
+
+				<COMBOBOX name="BU_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="BU_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="BU_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="BU_Front2" label="Shutter Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<!-- Variable Values -->
+			<EDITBOX name="BU_Front1_Mat" label="BU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="BU_Front1_Prf" label="BU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+			<EDITBOX name="BU_Front2_Mat" label="BU_Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="BU_Front2_Prf" label="BU_Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+        <PARAFOLDER name="Handle_Details" label="Gola Profile" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+			<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_GOLA_PROFILES" />
+
+		</PARAFOLDER>
+		
+		<PARAFOLDER name="Visible_Sides" label="Visible Sides" active="TRUE" visible="FALSE">
+
+			<COMMAND type="INSERT" file="Include_Visible_Sides.xml" part="PART_VISIBLE_SIDES" />
+
+		</PARAFOLDER>
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_BASE_MARKUP" />	
+
+		
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXB</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYB</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZB</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="___WORKSURFACE" value="___WORKSURFACE" />
+			<VAR name="___BASE" value="___BASE" />
+			<VAR name="Adjustable_Legs" value="Adjustable_Legs" />
+			<VAR name="KI_Adjuster_Height" value="Leg_Height" />
+			<VAR name="Skirting_Height" value="Skirting_Height" />			
+			<VAR name="BU_Carcass" value="BU_Carcass" />
+			<VAR name="BU_Carcass_Prf_Type" value="BU_Carcass_Prf_Type" />
+			<VAR name="Hinge_Type" value="Hinge_Type_1" />
+			<VAR name="Handle_Option" 		value="Handle_Option" />
+			<VAR name="Wall_Bracket_Type" 	value="Base_Bracket_Type" />
+
+			<!-- <VAR name="BU_Front1" value="BU_Front1" />
+			<VAR name="BU_Front2" value="BU_Front2" /> -->
+
+			<VAR name="BU_Front1_Mat" 		value="BU_Front1_Mat" />
+			<VAR name="BU_Front1_Prf" 		value="BU_Front1_Prf" />
+			<VAR name="BU_Front2_Mat" 		value="BU_Front2_Mat" />
+			<VAR name="BU_Front2_Prf" 		value="BU_Front2_Prf" />
+			<VAR name="BU_Le_Carcass_Mat" 	value="BU_Le_Carcass_Mat" />
+			<VAR name="BU_Le_Carcass_Prf" 	value="BU_Le_Carcass_Prf" />
+			<VAR name="BU_Ri_Carcass_Mat" 	value="BU_Ri_Carcass_Mat" />
+			<VAR name="BU_Ri_Carcass_Prf" 	value="BU_Ri_Carcass_Prf" />
+
+			<VAR name="BU_Left_Side_Panel" 	value="BU_Left_Side_Panel" />
+			<VAR name="BU_Right_Side_Panel" value="BU_Right_Side_Panel" />
+			<!-- <VAR name="BU_Le_Side_Panel" value="BU_Le_Side_Panel" />
+			<VAR name="BU_Ri_Side_Panel" value="BU_Ri_Side_Panel" /> -->
+            <VAR name="Gola_Profile_Selection" value="Gola_Profile_Selection" />
+            <VAR name="Base_Unit_Depth" 		value="Base_Unit_Depth" />
+            <VAR name="Handle_Option" 			value="Handle_Option" />
+			<VAR name="Corner_Shelf_LIND" 		value="Corner_Shelf_LIND" />
+            <VAR name="LC_Accessory" 			value="LC_Accessory" />
+			<VAR name="Calculation_Factors" 	value="KB_Calculation_Factors" />
+			<VAR name="Prf_Prices" 				value="KB_Prf_Prices" />
+			<VAR name="Mat_Prices" 				value="KB_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+        <COMMAND>"FIELD(ART_SIZEYB).value=FIELD(ART_SIZEXB).value"</COMMAND>
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION_LOGIC" />
+
+		<IF>
+			<EQ expr1="FIELD(Selection).value" expr2="Shelve" />
+			<THEN>
+				<COMMAND>"FIELD(Corner_Shelf_LIND).value = LIN_DIV(1:1)" </COMMAND>				
+				<COMMAND>"FIELD(Accessory).visible =FALSE" </COMMAND>				
+				<COMMAND>"FIELD(LC_Accessory).active =FALSE" </COMMAND>		
+				<COMMAND>"FIELD(Accessory_Selection).Itemlist(Nill)" </COMMAND>			
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Corner_Shelf_LIND).value = LIN_DIV(0)" </COMMAND>	
+				<COMMAND>"FIELD(Accessory).visible =TRUE" </COMMAND>
+				<COMMAND>"FIELD(LC_Accessory).active =TRUE" </COMMAND>	
+				<COMMAND>"FIELD(Accessory_Selection).Itemlist(VS_COR_Wheel_Pro)" </COMMAND>							
+			</ELSE>
+		</IF>
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISH_LOGIC_1" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_DIFFERENT_SHUTTER_COLOR" />
+
+		<COMMAND type="INSERT" file="Include_Visible_Sides.xml" part="PART_VISIBLE_SIDES_LOGIC_2DOOR" />
+
+
+
+	</LOGIC_DEFINITION>
+</XML>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+
+	<PART name="PART_GLOBAL_KITCHEN_MARKUP">
+
+		<PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+
+			<EDITBOX name="KB_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_BU" geoInfluencing="TRUE" />
+			<EDITBOX name="KB_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_BU" geoInfluencing="TRUE" />
+			<EDITBOX name="KB_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_BU" geoInfluencing="TRUE" />
+			<EDITBOX name="KW_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_WU" geoInfluencing="TRUE" />
+			<EDITBOX name="KW_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_WU" geoInfluencing="TRUE" />
+			<EDITBOX name="KW_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_WU" geoInfluencing="TRUE" />
+			<EDITBOX name="KT_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_TU" geoInfluencing="TRUE" />
+			<EDITBOX name="KT_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_TU" geoInfluencing="TRUE" />
+			<EDITBOX name="KT_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_TU" geoInfluencing="TRUE" />
+			<EDITBOX name="KAP_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_KAP" geoInfluencing="TRUE" />
+			<EDITBOX name="KAP_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_KAP" geoInfluencing="TRUE" />
+			<EDITBOX name="KAP_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_KAP" geoInfluencing="TRUE" />
+		
+		</PARAFOLDER>
+
+	</PART>
+
+
+
+    <PART name="PART_KITCHEN_BASE_MARKUP">
+
+        <PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+
+			<EDITBOX name="KB_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_BU" geoInfluencing="TRUE" />
+			<EDITBOX name="KB_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_BU" geoInfluencing="TRUE" />
+			<EDITBOX name="KB_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_BU" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+	</PART>
+
+    <PART name="PART_KITCHEN_WALL_MARKUP">
+
+        <PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+
+			<EDITBOX name="KW_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_WU" geoInfluencing="TRUE" />
+			<EDITBOX name="KW_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_WU" geoInfluencing="TRUE" />
+			<EDITBOX name="KW_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_WU" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+	</PART>
+
+    <PART name="PART_KITCHEN_TALL_MARKUP">
+
+        <PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+
+			<EDITBOX name="KT_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_TU" geoInfluencing="TRUE" />
+			<EDITBOX name="KT_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_TU" geoInfluencing="TRUE" />
+			<EDITBOX name="KT_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_TU" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+	</PART>
+
+    <PART name="PART_KITCHEN_ADDERPANEL_MARKUP">
+
+        <PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+
+			<EDITBOX name="KAP_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_Adderpanel" geoInfluencing="TRUE" />
+			<EDITBOX name="KAP_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_Adderpanel" geoInfluencing="TRUE" />
+			<EDITBOX name="KAP_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Kitchen_Adderpanel" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+	</PART>
+
+	<PART name="PART_FREE_CUBES_MARKUP">
+
+        <PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+
+			<EDITBOX name="FC_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Free_Cubes" geoInfluencing="TRUE" />
+			<EDITBOX name="FC_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Free_Cubes" geoInfluencing="TRUE" />
+			<EDITBOX name="FC_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Free_Cubes" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+	</PART>
+
+	<PART name="PART_GLOBAL_SWING_WARDROBE_MARKUP">
+
+		<PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+			
+			<EDITBOX name="SW_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="SW_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="SW_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="WAP_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="WAP_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="WAP_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+		
+		</PARAFOLDER>
+
+	</PART>
+
+	<PART name="PART_GLOBAL_SLIDING_WARDROBE_MARKUP">
+
+		<PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+			
+			<EDITBOX name="SL_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+		    <EDITBOX name="SL_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+		    <EDITBOX name="SL_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="WAP_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="WAP_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="WAP_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+		
+		</PARAFOLDER>
+
+	</PART>
+
+
+	<PART name="PART_SWING_WARDROBE_MARKUP">
+
+        <PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+
+			<EDITBOX name="SW_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="SW_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="SW_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+	</PART>
+
+
+
+    <PART name="PART_SLIDING_WARDROBE_MARKUP">
+
+        <PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+
+		    <EDITBOX name="SL_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+		    <EDITBOX name="SL_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+		    <EDITBOX name="SL_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+		
+    	</PARAFOLDER>
+
+	</PART>
+
+    
+    <PART name="PART_WARDROBE_ADDERPANEL_MARKUP">
+
+        <PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="FALSE">
+
+			<EDITBOX name="WAP_Calculation_Factors" label="Calculation Factors" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="WAP_Mat_Prices" label="Mat_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+			<EDITBOX name="WAP_Prf_Prices" label="Prf_Prices" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="Wardrobe" geoInfluencing="TRUE" />
+						
+		</PARAFOLDER>
+
+	</PART>
+
+
+	
+
+</XML>

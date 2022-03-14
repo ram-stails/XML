@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+<ARTICLE>
+	<ART_NAME></ART_NAME>
+	<ART_TYPE></ART_TYPE>
+	<ART_DESIGN></ART_DESIGN>
+	<ART_INFO_LONG></ART_INFO_LONG>
+	<ART_INFO_SHORT></ART_INFO_SHORT>
+</ARTICLE>
+<DEFINITION>
+
+ 	
+	
+</DEFINITION>
+
+<CONSTRUCTION>
+
+    <ARTICLE_CON>
+
+               <ART_SIZEX>
+
+                           <PARAM>ART_SIZEX</PARAM>
+
+               </ART_SIZEX>
+
+               <ART_SIZEY>
+
+                           <PARAM>ART_SIZEY</PARAM>
+
+               </ART_SIZEY>
+
+               <ART_SIZEZ>
+
+                           <PARAM>ART_SIZEZ</PARAM>
+
+               </ART_SIZEZ>
+
+    </ARTICLE_CON>
+
+		<VARIABLES>
+
+		</VARIABLES>
+
+</CONSTRUCTION>
+	<LOGIC_DEFINITION>
+							
+
+	</LOGIC_DEFINITION>
+</XML>

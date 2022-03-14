@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+<!-- <preview interactive="true" /> -->
+
+	<ARTICLE>
+		<ART_NAME>WU_BFLU_GL</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Wall unit Bi-Fold Shutter</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<COMBOBOX name="ART_SIZEZW" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600">
+					<ITEM value="600" label="600 mm" />
+					<ITEM value="650" label="650 mm" />
+					<ITEM value="700" label="700 mm" />
+					<ITEM value="750" label="750 mm" />
+					<ITEM value="800" label="800 mm" />
+					<ITEM value="900" label="900 mm" />
+				</COMBOBOX>
+				
+				<COMBOBOX name="ART_SIZEXW" label="Width" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600" geoInfluencing="TRUE">
+					<ITEM value="600" 	label="600 mm" />
+					<ITEM value="700" 	label="700 mm" />
+					<ITEM value="750" 	label="750 mm" />
+					<ITEM value="900" 	label="900 mm" />
+					<ITEM value="1000" 	label="1000 mm" />
+					<ITEM value="1200" 	label="1200 mm" />
+				</COMBOBOX>
+				
+				<EDITBOX name="ART_SIZEYW" label="Depth" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="330" geoInfluencing="TRUE" />
+
+			</GROUP>
+
+				<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_WALLUNIT_SHELF_SELECTION" />        
+          
+
+		</PARAFOLDER>
+
+	
+
+		<PARAFOLDER name="Material_Details" label="Material Details" active="TRUE" visible="TRUE">
+		
+            <GROUP name="Carcass_Finsh" label="Carcass Finsh">			
+
+				<COMBOBOX name="OB_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Finish" label="Finish" valuetype="TEXT" default="Elementary_Series" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="OB_Texture" label="Texture" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+								
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="OB_Shade" label="Carcass Shade" valuetype="IMAGE" default=""	Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+	
+				<!-- Variable Values -->
+				<EDITBOX name="OB_Carcass_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_Prf" label="OB_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="OB_Carcass_BP_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+				
+			</GROUP>		
+			
+		</PARAFOLDER>
+
+        <PARAFOLDER name="HF_Front_TYPE_Details" label="Front Details" active="TRUE" visible="TRUE">
+
+			<CHECKBOX name="HF_TYPE_CUSTOM" label="Custom?" default="STANDARD" checked="CUSTOM" unchecked="STANDARD" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+			
+            <COMBOBOX name="PD_HF_Shutter_Type" label="Profile Type" valuetype="IMAGE" default="PD_KWU_HF_Rail_Door" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+                <ITEM name="PD_KWU_HF_Rail_Door"         value="PD_KWU_HF_Rail_Door"        label="Profin Profile" info1="STANDARD"	info2="Profin"	info3="GLASS"	image1="img/catalog/Rail_Door.PNG"  />
+                <ITEM name="PD_KWU_HF_WideProfile_Door"  value="PD_KWU_HF_WideProfile_Door" label="Wide Profile" info1="STANDARD"	info2="Wide"	info3="GLASS"	image1="img/catalog/Alu_Door.PNG"  />
+                <ITEM name="PD_KWU_HF_Custom_Door"  	 value="PD_KWU_HF_Custom_Door" 		label="Custom"  	info1="CUSTOM"		info2="CUSTOM"	info3="CUSTOM"	image1="img/catalog/.PNG"  />
+            </COMBOBOX>
+
+			<COMBOBOX name="HF_Top_Shutter" label="Top Shutter Type" valuetype="IMAGE" default="PD_KWU_Front1_HF_T" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+                <ITEM name="PD_KWU_Front1_HF_T"         value="PD_KWU_Front1_HF_T"        label="Wooden"          	info1="Wooden"   info2="Wooden"		info3="Wooden"		    image1="img/catalog/Wooden.PNG"  />
+                <ITEM name="PD_Alu_Door_Profile_HF_T"   value="PD_Alu_Door_Profile_HF_T"  label="Wide Profile"      info1="Wide"	 info2="Wide"		info3="GLASS"	image1="img/catalog/Alu_Door.PNG"  />
+                <ITEM name="PD_Rail_Door_Profile_T"  	value="PD_Rail_Door_Profile_T"    label="Profin Profile"    info1="Profin"   info2="Profin"		info3="GLASS"	image1="img/catalog/Rail_Door.PNG"  />
+            </COMBOBOX>
+
+			<COMBOBOX name="HF_Bottom_Shutter" label="Bottom Shutter Type" valuetype="IMAGE" default="PD_KWU_Front2_HF_B" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+                <ITEM name="PD_KWU_Front2_HF_B"         value="PD_KWU_Front2_HF_B"        label="Wooden"			 info1="Wooden"	 info2="Wooden"	info3="Wooden"	image1="img/catalog/Wooden.PNG"  />
+                <ITEM name="PD_Alu_Door_Profile_HF_B"   value="PD_Alu_Door_Profile_HF_B"  label="Wide Profile" 		 info1="Wide"	 info2="Wide"	info3="GLASS"	image1="img/catalog/Alu_Door.PNG"  />
+                <ITEM name="PD_Rail_Door_Profile_B"  	value="PD_Rail_Door_Profile_B" 	  label="Profin Profile"     info1="Profin"	 info2="Profin"  info3="GLASS"	image1="img/catalog/Rail_Door.PNG"  />
+            </COMBOBOX>
+
+			<PARAFOLDER name="Profile_Finish_Details" label="Profile Finish Details" active="TRUE" visible="">
+
+				<COMBOBOX name="Wrd_Profile_Finish" label="Profile Finish" valuetype="IMAGE" default="HDHMR" visible="TRUE" Width="100%"	active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				
+					<ITEM name="Dark_Bronze"   				label="Drak Bronze"		   info1=""  		 info2=""		image1="img/hardware/G_Dark_Bronze.jpg" 	visible="TRUE"/>
+					<ITEM name="Gold"   					label="Gold"		  	   info1=""    		 info2=""	 	image1="img/hardware/G_Gold.jpg" 	visible="TRUE"/>
+					<ITEM name="Rose_Gold"   				label="Rose Gold"		   info1=""   		 info2=""		image1="img/hardware/G_Rose_Gold.jpg" 	visible="TRUE"/>
+					<ITEM name="Black"   					label="Black Matt"		   info1=""  		 info2=""		image1="img/hardware/G_Black.jpg" 	visible="TRUE"/>
+					<ITEM name="Silver"   					label="Silver"			   info1=""   		 info2=""		image1="img/hardware/G_Silver.jpg" 	visible="TRUE"/>				
+					<ITEM name="Irish_Cream"   				label="Irish Cream"		   info1=""  		 info2=""	  	image1="img/hardware/.jpg"	visible="TRUE"/>
+					<ITEM name="Grey"   					label="Grey"			   info1=""  		 info2=""	    image1="img/hardware/G_Graphite.jpg"	visible="TRUE"/>
+	
+				</COMBOBOX> 
+
+			</PARAFOLDER>	
+			<PARAFOLDER name="Profin_Profile_Finish_Details" label="Profin Profile Finish Details" active="TRUE" visible="">
+
+				<COMBOBOX name="Profin_Profile_Finish" label="Profile Finish" valuetype="IMAGE" default="HDHMR" visible="TRUE" Width="100%"	active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				
+					<ITEM name="Silver"   					label="Silver"			   info1=""   		 info2=""		image1="img/hardware/G_Silver.jpg" 	visible="TRUE"/>			
+					<ITEM name="Dark_Bronze"   				label="Drak Bronze"		   info1=""  		 info2=""		image1="img/hardware/G_Dark_Bronze.jpg" 	visible="TRUE"/>
+					<ITEM name="Graphite"   				label="Graphite"		   info1=""  		 info2=""		image1="img/hardware/G_Graphite.jpg" 	visible="TRUE"/>
+					<ITEM name="Gold"   					label="Gold"		  	   info1=""    		 info2=""	 	image1="img/hardware/G_Gold.jpg" 	visible="TRUE"/>
+					<ITEM name="Rose_Gold"   				label="Rose Gold"		   info1=""   		 info2=""		image1="img/hardware/G_Rose_Gold.jpg" 	visible="TRUE"/>
+					<ITEM name="Black"   					label="Black Matt"		   info1=""  		 info2=""		image1="img/hardware/G_Black.jpg" 	visible="TRUE"/>
+					
+	
+				</COMBOBOX> 
+
+			</PARAFOLDER>
+
+			<PARAFOLDER name="Glass_Selection" label="Glass Selection">
+
+				<COMBOBOX name="GLASS_THK" label="Glass Thickness" valuetype="" default="6mm" visible="FALSE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_GLASS_TYPE" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="GLASS_Finish" label="Finish Type" valuetype="" default="Tinted_Glass" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_GLASS_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="GLASS_Texture" label="Glass Texture" valuetype="" default="GLASS" visible="FALSE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+	
+				<COMBOBOX name="Glass_Front_1" label="" valuetype="IMAGE" default="" Search="TRUE"	visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+	
+			</PARAFOLDER>
+
+			<!-- <PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE"> -->
+
+
+				<PARAFOLDER name="Top_Shutter_Details" label="Top Shutter Details">
+
+					<!-- <CHECKBOX name="WU_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" /> -->
+
+
+					<COMBOBOX name="WU_Shutter_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+					</COMBOBOX>
+			
+					<COMBOBOX name="WU_Shutter_Finish" label="Finish" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+					</COMBOBOX>
+			
+					<COMBOBOX name="WU_Texture" label="Texture" valuetype="TEXT" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+					</COMBOBOX>
+	
+					<COMBOBOX name="WU_Front1" label="Top Fascia Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+					</COMBOBOX>
+	
+				</PARAFOLDER>
+
+				<PARAFOLDER name="Bottom_Shutter_Details" label="Bottom Shutter Details">
+
+					<COMBOBOX name="WU_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+					</COMBOBOX>
+			
+					<COMBOBOX name="WU_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+					</COMBOBOX>
+			
+					<COMBOBOX name="WU_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+					</COMBOBOX>
+	
+					<COMBOBOX name="WU_Front2" label="Bottom Fascia Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+					</COMBOBOX>
+	
+				</PARAFOLDER>
+
+          	   
+
+				<!-- Variable Values -->
+				<EDITBOX name="WU_Front1_Mat" label="WU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="WU_Front1_Prf" label="WU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="WU_Front2_Mat" label="WU_Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="WU_Front2_Prf" label="WU_Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+			<!-- </PARAFOLDER>				 -->
+	
+
+        </PARAFOLDER>		
+
+		<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_KITCHEN_ADDERPANEL_MARKUP" />
+
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXW</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYW</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZW</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+		
+			<!-- <VAR name="WU_Profile_Shutter_Selection" value="WU_Profile_Shutter_Selection" /> -->
+			<VAR name="Glass_Front_1" value="Glass_Front_1" />
+			<VAR name="Profin_Profile_Finish" 			value="Profin_Profile_Finish" />
+
+			<VAR name="Wu_Shelf_Selection" 	value="Wu_Shelf_Selection" />
+			<VAR name="wU_Front1_Mat" 		value="WU_Front1_Mat" />
+			<VAR name="WU_Front1_Prf" 		value="WU_Front1_Prf" />
+			<VAR name="WU_Front2_Mat" 		value="WU_Front2_Mat" />
+			<VAR name="WU_Front2_Prf" 		value="WU_Front2_Prf" />
+			<VAR name="Wrd_Profile_Finish" value="Wrd_Profile_Finish" />
+			<VAR name="OB_Carcass_Mat"	 	value="OB_Carcass_Mat" />
+			<VAR name="OB_Carcass_BP_Mat" 	value="OB_Carcass_BP_Mat" />
+			<VAR name="OB_Carcass_Prf" 		value="OB_Carcass_Prf" />
+
+			<VAR name="PD_HF_Shutter_Type" 	value="PD_HF_Shutter_Type" />
+			<VAR name="HF_Top_Shutter" 	value="HF_Top_Shutter" />
+			<VAR name="HF_Bottom_Shutter" 	value="HF_Bottom_Shutter" />
+			<VAR name="Calculation_Factors" value="KAP_Calculation_Factors" />
+			<VAR name="Prf_Prices" 			value="KAP_Prf_Prices" />
+			<VAR name="Mat_Prices" 			value="KAP_Mat_Prices" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>		
+	
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OPEN_BOX_FINISHES" />
+
+		<COMMAND>"FIELD(PD_HF_Shutter_Type).info1List(FIELD(HF_TYPE_CUSTOM).value)"</COMMAND>
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WU_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_WU_SHUTTER_FINISH_LOGIC_1" />
+
+		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_GLASS_FINISH_SELECTION_LOGIC" />
+
+
+		<IF>
+			<OR>
+				<EQ expr1="FIELD(PD_HF_Shutter_Type).info2"    expr2="Wide" />
+				<EQ expr1="FIELD(HF_Top_Shutter).info2"        expr2="Wide" />
+				<EQ expr1="FIELD(HF_Bottom_Shutter).info2"     expr2="Wide" />
+			</OR>						
+			<THEN>			
+				<COMMAND>"FIELD(Profile_Finish_Details).visible=TRUE"</COMMAND>	
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Profile_Finish_Details).visible=FALSE"</COMMAND>
+			</ELSE>	
+		</IF>
+
+		<IF>
+			<OR>
+				<EQ expr1="FIELD(PD_HF_Shutter_Type).info2"    expr2="Profin" />
+				<EQ expr1="FIELD(HF_Top_Shutter).info2"        expr2="Profin" />
+				<EQ expr1="FIELD(HF_Bottom_Shutter).info2"     expr2="Profin" />
+			</OR>						
+			<THEN>			
+				<COMMAND>"FIELD(Profin_Profile_Finish_Details).visible=TRUE"</COMMAND>	
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Profin_Profile_Finish_Details).visible=FALSE"</COMMAND>
+			</ELSE>	
+		</IF>
+
+		<IF>
+			<OR>
+				<EQ expr1="FIELD(PD_HF_Shutter_Type).info3"    expr2="GLASS" />
+				<EQ expr1="FIELD(HF_Top_Shutter).info3"        expr2="GLASS" />
+				<EQ expr1="FIELD(HF_Bottom_Shutter).info3"     expr2="GLASS" />
+			</OR>						
+			<THEN>			
+				<COMMAND>"FIELD(Glass_Finish_Details).visible=TRUE"</COMMAND>	
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Glass_Finish_Details).visible=FALSE"</COMMAND>
+			</ELSE>	
+		</IF>
+
+		
+
+		<IF>
+			<EQ expr1="FIELD(HF_TYPE_CUSTOM).value" expr2="CUSTOM" />
+			<THEN>
+				<COMMAND>"FIELD(PD_HF_Shutter_Type).visible=FALSE"</COMMAND>				
+				<COMMAND>"FIELD(HF_Top_Shutter).visible=TRUE"</COMMAND>				
+				<COMMAND>"FIELD(HF_Top_Shutter).active=TRUE"</COMMAND>				
+				<COMMAND>"FIELD(HF_Bottom_Shutter).visible=TRUE"</COMMAND>				
+				<COMMAND>"FIELD(HF_Bottom_Shutter).active=TRUE"</COMMAND>				
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(PD_HF_Shutter_Type).visible=TRUE"</COMMAND>				
+				<COMMAND>"FIELD(HF_Top_Shutter).visible=FALSE"</COMMAND>				
+				<COMMAND>"FIELD(HF_Top_Shutter).active=FALSE"</COMMAND>				
+				<COMMAND>"FIELD(HF_Bottom_Shutter).visible=FALSE"</COMMAND>				
+				<COMMAND>"FIELD(HF_Bottom_Shutter).active=FALSE"</COMMAND>				
+			</ELSE>
+		</IF>		
+
+		<IF>
+			<EQ expr1="FIELD(PD_HF_Shutter_Type).info1" expr2="CUSTOM" />
+			<EQ expr1="FIELD(HF_Top_Shutter).info1" expr2="Wooden" />
+			<THEN>
+				<COMMAND>"FIELD(Top_Shutter_Details).visible=TRUE"</COMMAND>			
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Top_Shutter_Details).visible=FALSE"</COMMAND>	
+			</ELSE>			
+		</IF>
+	
+		<IF>
+			<EQ expr1="FIELD(PD_HF_Shutter_Type).info1" expr2="CUSTOM" />
+			<EQ expr1="FIELD(HF_Bottom_Shutter).info1" expr2="Wooden" />
+			<THEN>
+				<COMMAND>"FIELD(Bottom_Shutter_Details).visible=TRUE"</COMMAND>			
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Bottom_Shutter_Details).visible=FALSE"</COMMAND>	
+			</ELSE>
+		</IF>
+		
+	</LOGIC_DEFINITION>
+</XML>

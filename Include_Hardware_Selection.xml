@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+	<!---	*************************** Hinge Selection *****************************************************************************************	-->
+
+	<PART name="PART_HINGE_SELECTION">
+
+		<COMBOBOX name="Hinge_Type" label="Hinge Selection" valuetype="IMAGE" default="BLUM_SoftClose" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+			<ITEM name="No_Hinge" 		value="No_Hinge" label="No Hinge" 	visible="FALSE" image1="img/hardware/Blum_SoftClose_Hinge.jpg" />
+			<ITEM name="BLUM_SoftClose" value="BLUM_SoftClose" label="BLUM SoftClose" image1="img/hardware/Blum_SoftClose_Hinge.jpg" />
+			<ITEM name="Hettich_SoftClose" value="Hettich_SoftClose" label="Hettich SoftClose" image1="img/hardware/Hettich_SoftClose_Hinge.jpg" />
+			<ITEM name="Hettich_Regular" value="Hettich_Regular" label="Hettich Regular" image1="img/hardware/Hettich_Regular_Hinge.jpg" />
+			<ITEM name="Hettich_Regular_Damper" value="Hettich_Regular_Damper" label="Hettich Regular With Dampener" image1="img/hardware/Hettich_Regular_Damper.jpg" />
+		</COMBOBOX>
+
+	</PART>
+
+	<PART name="PART_WARDROBE_HINGE_SELECTION">
+
+		<COMBOBOX name="Hinge_Type" label="Hinge Selection" valuetype="IMAGE" default="BLUM_SoftClose" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+			<ITEM name="No_Hinge" 					value="No_Hinge" 				label="No Hinge" 		info1="ALL"		visible="FALSE" image1="img/hardware/Blum_SoftClose_Hinge.jpg" />
+			<ITEM name="BLUM_SoftClose"			    value="BLUM_SoftClose"			label="BLUM SoftClose" 	info1="Regular"	image1="img/hardware/Blum_SoftClose_Hinge.jpg" />
+			<ITEM name="Hettich_SoftClose"			value="Hettich_SoftClose" 		label="Hettich SoftClose" info1="Regular"	image1="img/hardware/Hettich_SoftClose_Hinge.jpg" />
+			<ITEM name="Hettich_Regular" 			value="Hettich_Regular" 		label="Hettich Regular" info1="Regular"	image1="img/hardware/Hettich_Regular_Hinge.jpg" />
+			<ITEM name="Hettich_Regular_Damper" 	value="Hettich_Regular_Damper"  label="Hettich Regular With Dampener" 	info1="Regular"	image1="img/hardware/Hettich_Regular_Damper.jpg" />
+			<ITEM name="Hettich_SoftClose_165D" 	value="Hettich_SoftClose_165D"  label="Hettich 165D" info1="Accessory"	 image1="img/hardware/165_Degree.jpg" />
+			<ITEM name="BLUM_SoftClose_155D" 		value="BLUM_SoftClose_155D" 	label="Blum 155D"  info1="Accessory"	image1="img/hardware/165_Degree.jpg" />
+			
+		</COMBOBOX>
+
+	</PART>
+
+	<PART name="PART_HINGE_SELECTION_PROFILE">
+
+		<COMBOBOX name="Hinge_Type" label="Hinge Selection" valuetype="IMAGE" default="BLUM_SoftClose" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+			<ITEM name="No_Hinge" 		value="No_Hinge" label="No Hinge" 	visible="FALSE" image1="img/hardware/Blum_SoftClose_Hinge.jpg" />
+			<ITEM name="BLUM_SoftClose" value="BLUM_SoftClose" label="BLUM SoftClose" image1="img/hardware/Blum_SoftClose_Hinge.jpg" />
+			<ITEM name="Hettich_SoftClose" value="Hettich_SoftClose" label="Hettich SoftClose" image1="img/hardware/Hettich_SoftClose_Hinge.jpg" />
+		</COMBOBOX>
+
+	</PART>
+
+	<PART name="PART_HINGE_SELECTION_LOFT">
+
+		<COMBOBOX name="Hinge_Type" label="Hinge Selection" valuetype="IMAGE" default="BLUM_SoftClose" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+			<ITEM name="No_Hinge" 		value="No_Hinge" label="No Hinge" info1="No_Hinge"	visible="FALSE" image1="img/hardware/Blum_SoftClose_Hinge.jpg" />
+			<ITEM name="BLUM_SoftClose" value="BLUM_SoftClose" label="BLUM SoftClose" info1="Softclose"	image1="img/hardware/Blum_SoftClose_Hinge.jpg" />
+			<ITEM name="Hettich_SoftClose" value="Hettich_SoftClose" label="Hettich SoftClose" info1="Softclose"	image1="img/hardware/Hettich_SoftClose_Hinge.jpg" />
+			<ITEM name="Hettich_Regular" value="Hettich_Regular" label="Hettich Regular" info1="Regular"	image1="img/hardware/Hettich_Regular_Hinge.jpg" />
+			<ITEM name="Hettich_P2O_Wall" value="Hettich_P2O_Wall" label="Hettich Push to Open"	info1="P20" image1="img/hardware/Hettich_Regular_Hinge.jpg" />
+		</COMBOBOX>
+
+	</PART>
+
+	<PART name="PART_HINGE_SELECTION_BC">
+
+		<COMBOBOX name="Hinge_Type" label="Hinge Selection" valuetype="IMAGE" default="BLUM_SoftClose" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+			<ITEM name="BLUM_SoftClose" value="BLUM_SoftClose" label="BLUM SoftClose" image1="img/hardware/Blum_SoftClose_Hinge.jpg" />
+			<ITEM name="Hettich_Regular" value="Hettich_Regular" label="Hettich Regular" image1="img/hardware/Hettich_Regular_Hinge.jpg" />
+		</COMBOBOX>
+
+	</PART>
+
+	<PART name="PART_HINGE_SELECTION_WIDEANGLE">
+
+		<COMBOBOX name="Hinge_Type_WideAngle" label="Hinge Selection" valuetype="IMAGE" default="Hettich_SoftClose_165D" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+			<ITEM name="Hettich_SoftClose_165D" 	value="Hettich_SoftClose_165D" label="Hettich 165D"  image1="img/hardware/165_Degree.jpg" />
+			<ITEM name="BLUM_SoftClose_155D" 		value="BLUM_SoftClose_155D" 	label="Blum 155D"  image1="img/hardware/165_Degree.jpg" />
+		</COMBOBOX>
+
+	</PART>
+
+	<PART name="PART_BASE_BRACKETS_SELECTION">
+
+		<COMBOBOX name="Base_Bracket_Type"	label="Base Bracket Type" 	valuetype="IMAGE"	default="No_Bracket"		visible="FALSE"	active="TRUE">
+			<ITEM name="No_Bracket"					value="No_Bracket"					label="No_Bracket"				info1="Skirting" 		image1="img/hardware/.jpg"/>			
+			<!-- <ITEM name="Hafele_Hanging_Bracket"		value="Hafele_Hanging_Bracket"		label="Grass Hanging Bracket"			image1="img/hardware/Hafele_Hanging Bracket.jpg"/>			
+			<ITEM name="SAH_130"					value="SAH_130"						label="Hettich SAH 130"					image1="img/hardware/SAH_130.jpg"/>
+			<ITEM name="SAH_216"					value="SAH_216"						label="Hettich SAH 216"					image1="img/hardware/SAH_216.jpg"/>
+			<ITEM name="Libra_H1"					value="Libra_H1"					label="Libra H1"			    		image1="img/hardware/Libra_H1.jpg"/> -->
+			<ITEM name="Libra_H7"					value="Libra_H7"					label="Libra H7"			  info1="NO_BOM"			image1="img/hardware/Libra_H7.jpg"/>
+		</COMBOBOX>
+
+	</PART>
+
+
+	<PART name="PART_WALL_BRACKETS_SELECTION">
+
+		<COMBOBOX name="Wall_Bracket_Type"	label="Wall Bracket Type" 	valuetype="IMAGE"	default="Hafele_Hanging_Bracket"		visible="TRUE"	active="TRUE">
+			<ITEM name="Hafele_Hanging_Bracket"		value="Hafele_Hanging_Bracket"		label="Grass Hanging Bracket"			image1="img/hardware/Hafele_Hanging Bracket.jpg"/>			
+			<ITEM name="SAH_130"					value="SAH_130"						label="Hettich SAH 130"					image1="img/hardware/SAH_130.jpg"/>
+			<ITEM name="SAH_216"					value="SAH_216"						label="Hettich SAH 216"					image1="img/hardware/SAH_216.jpg"/>
+			<ITEM name="Libra_H1"					value="Libra_H1"					label="Libra H1"			    		image1="img/hardware/Libra_H1.jpg"/>
+			<ITEM name="Libra_H7"					value="Libra_H7"					label="Libra H7"			  			image1="img/hardware/Libra_H7.jpg"/>
+		</COMBOBOX>
+
+	</PART>
+
+	<PART name="PART_TALL_BRACKETS_SELECTION">
+
+		<COMBOBOX name="Tall_Bracket_Type"	label="TALL Bracket Type" 	valuetype="IMAGE"	default="No_Bracket"		visible="FALSE"	active="TRUE">
+			<ITEM name="No_Bracket"					value="No_Bracket"					label="No_Bracket"				info1="Skirting" 		image1="img/hardware/.jpg"/>			
+			<!-- <ITEM name="Hafele_Hanging_Bracket"		value="Hafele_Hanging_Bracket"		label="Grass Hanging Bracket"			image1="img/hardware/Hafele_Hanging Bracket.jpg"/>			
+			<ITEM name="SAH_130"					value="SAH_130"						label="Hettich SAH 130"					image1="img/hardware/SAH_130.jpg"/>
+			<ITEM name="SAH_216"					value="SAH_216"						label="Hettich SAH 216"					image1="img/hardware/SAH_216.jpg"/>
+			<ITEM name="Libra_H1"					value="Libra_H1"					label="Libra H1"			    		image1="img/hardware/Libra_H1.jpg"/> -->
+			<ITEM name="Libra_H7"					value="Libra_H7"					label="Libra H7"			  info1="NO_BOM"			image1="img/hardware/Libra_H7.jpg"/>
+		</COMBOBOX>
+
+	</PART>
+
+	<PART name="PART_HIGHBOARD_BRACKETS_SELECTION">
+
+		<COMBOBOX name="Highboard_Bracket_Type"	label="HIGHBOARD Bracket Type" 	valuetype="IMAGE"	default="No_Bracket"		visible="FALSE"	active="TRUE">
+			<ITEM name="No_Bracket"					value="No_Bracket"					label="No_Bracket"				info1="Skirting" 		image1="img/hardware/.jpg"/>			
+			<!-- <ITEM name="Hafele_Hanging_Bracket"		value="Hafele_Hanging_Bracket"		label="Grass Hanging Bracket"			image1="img/hardware/Hafele_Hanging Bracket.jpg"/>			
+			<ITEM name="SAH_130"					value="SAH_130"						label="Hettich SAH 130"					image1="img/hardware/SAH_130.jpg"/>
+			<ITEM name="SAH_216"					value="SAH_216"						label="Hettich SAH 216"					image1="img/hardware/SAH_216.jpg"/>
+			<ITEM name="Libra_H1"					value="Libra_H1"					label="Libra H1"			    		image1="img/hardware/Libra_H1.jpg"/> -->
+			<ITEM name="Libra_H7"					value="Libra_H7"					label="Libra H7"			  info1="NO_BOM"			image1="img/hardware/Libra_H7.jpg"/>
+		</COMBOBOX>
+
+	</PART>
+
+	<PART name="PART_WALLUNIT_SHELF_SELECTION">
+
+		<COMBOBOX name="Wu_Shelf_Selection" label="Wall Shelf Type" valuetype="IMAGE"	active="TRUE" width="50%"	visible="TRUE" locked="FALSE"  default="Glass_Shelf">
+
+			<ITEM value="Glass_Shelf" label="Glass Shelfs" image1="img/hardware/Glass_Shelf.jpg"/>
+			<ITEM value="Wooden_Shelf" label="Wooden Shelfs" image1="img/hardware/Wooden_Shelf.jpg"/>
+
+		</COMBOBOX>
+
+	</PART>	
+
+	<PART name="PART_BIG_DRAWERS_SELECTION">
+
+
+		<COMBOBOX name="Drawer_Type" label="Drawer Type" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="TandemBox_Antaro">
+			<ITEM value="TandemBox_Antaro" label="TandemBox Antaro" image1="img/hardware/TandemBox_Antaro.jpg" />
+			<ITEM value="TandemBox_Intivo" label="TandemBox Intivo" image1="img/hardware/TandemBox_Intivo.jpg" />
+			<ITEM value="LegraBox_Pure" label="LegraBox Pure" image1="img/hardware/LegraBox_Pure.jpg" />
+			<ITEM value="LegraBox_Free" label="LegraBox Free" image1="img/hardware/LegraBox_Free.jpg" />
+			<ITEM value="Atira" label="Innotech Atira" image1="img/hardware/Atira.jpg" />
+		</COMBOBOX>
+
+		<COMBOBOX name="Drawer_Colour" label="Drawer Colour" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="OrionGrey">
+			<ITEM value="Antracite" label="Antracite" info1="Atira" image1="img/hardware/Antracite.jpg" />
+			<ITEM value="Silver" label="Silver" info1="Atira" image1="img/hardware/Silver.jpg" />
+			<ITEM value="OrionGrey" label="Orion Grey" info1="LegraBox_Free" image1="img/hardware/OrionGrey.jpg" />
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="LegraBox_Free" image1="img/hardware/Stainless_Steel.jpg" />
+			<!-- <ITEM value="Silk_White" label="Silk White Matt" info1="LegraBox_Free" image1="img/hardware/Silk_White.jpg" /> -->
+			<ITEM value="Terra_Black" label="Terra Black Matt" info1="LegraBox_Free" image1="img/hardware/Terra_Black.jpg" />
+			<ITEM value="OrionGrey" label="Orion Grey" info1="LegraBox_Pure" image1="img/hardware/OrionGrey.jpg" />
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="LegraBox_Pure" image1="img/hardware/Stainless_Steel.jpg" />
+			<!-- <ITEM value="Silk_White" label="Silk White Matt" info1="LegraBox_Pure" image1="img/hardware/Silk_White.jpg" /> -->
+			<ITEM value="Terra_Black" label="Terra Black Matt" info1="LegraBox_Pure" image1="img/hardware/Terra_Black.jpg" />
+			<ITEM value="Grey" label="Grey" info1="TandemBox_Antaro" image1="img/hardware/Grey.jpg" />
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="TandemBox_Antaro" image1="img/hardware/Stainless_Steel.jpg" />
+			<!-- <ITEM value="Silk_White" label="Silk White" info1="TandemBox_Antaro" image1="img/hardware/Silk_White.jpg" /> -->
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="TandemBox_Intivo" image1="img/hardware/Stainless_Steel.jpg" />
+			<!-- <ITEM value="Silk_White" label="Silk White" info1="TandemBox_Intivo" image1="img/hardware/Silk_White.jpg" /> -->
+
+		</COMBOBOX>
+
+		<COMBOBOX name="Drawer_Model_ExtDr" label="Drawer Model" active="TRUE" visible="FALSE" locked="FALSE" valuetype="IMAGE" default="">
+			<ITEM value="Gallery" label="Gallery" info1="Atira" image1="img/hardware/.jpg" />
+			<ITEM value="Design_Side" label="Design_Side" info1="LegraBox_Free" image1="img/hardware/.jpg" />
+			<ITEM value="Pot_Pan" label="Pot Pan" info1="LegraBox_Pure" image1="img/hardware/.jpg" />
+			<ITEM value="Design_Side" label="Design_Side" info1="TandemBox_Intivo" image1="img/hardware/.jpg" />
+			<ITEM value="Gallery" label="Gallery" info1="TandemBox_Antaro" image1="img/hardware/.jpg" />
+		</COMBOBOX>
+	</PART>
+
+	<PART name="PART_BIG_SMALL_DRAWERS_SELECTION">
+
+
+		<COMBOBOX name="Drawer_Type" label="Drawer Type" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="TandemBox_Antaro">
+			
+			<ITEM value="TandemBox_Antaro" label="TandemBox Antaro" image1="img/hardware/TandemBox_Antaro.jpg" />
+			<ITEM value="TandemBox_Intivo" label="TandemBox Intivo" image1="img/hardware/TandemBox_Intivo.jpg" />
+			<ITEM value="LegraBox_Pure" label="LegraBox Pure" image1="img/hardware/LegraBox_Pure.jpg" />
+			<ITEM value="LegraBox_Free" label="LegraBox Free" image1="img/hardware/LegraBox_Free.jpg" />
+			<ITEM value="Atira" label="Innotech Atira" image1="img/hardware/Atira.jpg" />
+
+			
+		</COMBOBOX>
+
+		<EDITBOX name="Regular_Drawer_Type" label="Regular_Drawer_Type" default="" locked="FALSE" active="TRUE" visible="FALSE" />
+
+		<COMBOBOX name="Drawer_Colour" label="Drawer Colour" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="OrionGrey">
+			<ITEM value="Antracite" label="Antracite" info1="Atira" image1="img/hardware/Antracite.jpg" />
+			<ITEM value="Silver" label="Silver" info1="Atira" image1="img/hardware/Silver.jpg" />
+			<ITEM value="OrionGrey" label="Orion Grey" info1="LegraBox_Free" image1="img/hardware/OrionGrey.jpg" />
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="LegraBox_Free" image1="img/hardware/Stainless_Steel.jpg" />
+			<ITEM value="Terra_Black" label="Terra Black Matt" info1="LegraBox_Free" image1="img/hardware/Terra_Black.jpg" />
+			<ITEM value="OrionGrey" label="Orion Grey" info1="LegraBox_Pure" image1="img/hardware/OrionGrey.jpg" />
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="LegraBox_Pure" image1="img/hardware/Stainless_Steel.jpg" />
+			<ITEM value="Terra_Black" label="Terra Black Matt" info1="LegraBox_Pure" image1="img/hardware/Terra_Black.jpg" />
+			<ITEM value="Grey" label="Grey" info1="TandemBox_Antaro" image1="img/hardware/Grey.jpg" />
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="TandemBox_Antaro" image1="img/hardware/Stainless_Steel.jpg" />
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="TandemBox_Intivo" image1="img/hardware/Stainless_Steel.jpg" />
+
+		</COMBOBOX>
+
+		<COMBOBOX name="Drawer_Model_ExtDr" label="Drawer Model" active="TRUE" visible="FALSE" locked="FALSE" valuetype="IMAGE" default="">
+			<ITEM value="Gallery" label="Gallery" info1="Atira" image1="img/hardware/.jpg" />
+			<ITEM value="Design_Side" label="Design_Side" info1="LegraBox_Free" image1="img/hardware/.jpg" />
+			<ITEM value="Pot_Pan" label="Pot Pan" info1="LegraBox_Pure" image1="img/hardware/.jpg" />
+			<ITEM value="Design_Side" label="Design_Side" info1="TandemBox_Intivo" image1="img/hardware/.jpg" />
+			<ITEM value="Gallery" label="Gallery" info1="TandemBox_Antaro" image1="img/hardware/.jpg" />
+		</COMBOBOX>
+	</PART>
+
+	<PART name="PART_BPO_DRAWERS_SELECTION">
+
+
+		<COMBOBOX name="Drawer_Type" label="BPO Type" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="LegraBox_Pure">
+			<ITEM value="TandemBox_Antaro" label="TandemBox Antaro" image1="img/hardware/TandemBox_Antaro.jpg" />
+			<ITEM value="TandemBox_Intivo" label="TandemBox Intivo" image1="img/hardware/TandemBox_Intivo.jpg" />
+			<ITEM value="LegraBox_Pure" label="LegraBox Pure" image1="img/hardware/LegraBox_Pure.jpg" />
+			<ITEM value="Atira" label="Innotech Atira" image1="img/hardware/Atira.jpg" />
+
+		</COMBOBOX>
+
+		<EDITBOX name="Regular_Drawer_Type" label="Regular_Drawer_Type" default="" locked="FALSE" active="TRUE" visible="FALSE" />
+
+		<COMBOBOX name="Drawer_Colour" label="Drawer Colour" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="OrionGrey">
+			<ITEM value="Antracite" label="Antracite" info1="Atira" image1="img/hardware/Antracite.jpg" />
+			<ITEM value="Silver" label="Silver" info1="Atira" image1="img/hardware/Silver.jpg" />
+			<ITEM value="OrionGrey" label="Grey" info1="LegraBox_Pure" image1="img/hardware/OrionGrey.jpg" />
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="LegraBox_Pure" image1="img/hardware/Stainless_Steel.jpg" />
+			<!-- <ITEM value="Silk_White" label="White" info1="LegraBox_Pure" image1="img/hardware/Silk_White.jpg" /> -->
+			<ITEM value="Terra_Black" label="Terra Black" info1="LegraBox_Pure" image1="img/hardware/Terra_Black.jpg" />
+			<ITEM value="Grey" label="Grey" info1="TandemBox_Antaro" image1="img/hardware/Grey.jpg" />
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="TandemBox_Antaro" image1="img/hardware/Stainless_Steel.jpg" />
+			<!-- <ITEM value="Silk_White" label="White" info1="TandemBox_Antaro" image1="img/hardware/Silk_White.jpg" /> -->
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="TandemBox_Intivo" image1="img/hardware/Stainless_Steel.jpg" />
+			<!-- <ITEM value="Silk_White" label="White" info1="TandemBox_Intivo" image1="img/hardware/Silk_White.jpg" /> -->
+
+		</COMBOBOX>
+
+		<COMBOBOX name="Drawer_Model_ExtDr" label="Drawer Model" active="TRUE" visible="FALSE" locked="FALSE" valuetype="IMAGE" default="">
+			<ITEM value="Gallery" label="Gallery" info1="Atira" image1="img/hardware/.jpg" />
+			<ITEM value="Design_Side" label="Design_Side" info1="LegraBox_Free" image1="img/hardware/.jpg" />
+			<ITEM value="Pot_Pan" label="Pot Pan" info1="LegraBox_Pure" image1="img/hardware/.jpg" />
+			<ITEM value="Design_Side" label="Design_Side" info1="TandemBox_Intivo" image1="img/hardware/.jpg" />
+			<ITEM value="Gallery" label="Gallery" info1="TandemBox_Antaro" image1="img/hardware/.jpg" />
+		</COMBOBOX>
+		
+	</PART>
+
+	<PART name="PART_BIG_INNER_DRAWERS_SELECTION">
+		
+		<COMBOBOX name="Drawer_Type" label="Drawer Type" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="TandemBox_Antaro" >
+			<ITEM value="TandemBox_Antaro" label="TandemBox Antaro" image1="img/hardware/TandemBox_Antaro.jpg" />
+			<ITEM value="TandemBox_Intivo" label="TandemBox Intivo" image1="img/hardware/TandemBox_Intivo.jpg" />
+			<ITEM value="LegraBox_Pure" label="LegraBox Pure" image1="img/hardware/LegraBox_Pure.jpg" />
+			<ITEM value="LegraBox_Free" label="LegraBox Free" image1="img/hardware/LegraBox_Free.jpg" />
+			<ITEM value="Atira" label="Innotech Atira" image1="img/hardware/Atira.jpg" />
+
+		</COMBOBOX>
+
+		<COMBOBOX name="Drawer_Model" label="Inner Drawer Model" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="" >
+			<ITEM value="Gallery" label="Gallery" info1="Atira" image1="img/hardware/Atira_InnerDrawer_G.jpg" />
+			<ITEM value="Gallery" label="Gallery" info1="LegraBox_Free" image1="img/hardware/LegraBox_Free_Inner_G.jpg" />
+			<ITEM value="Design_Side" label="Design Side" info1="LegraBox_Free" image1="img/hardware/LegraBox_Free_Inner_D.jpg" />
+			<ITEM value="Gallery" label="Gallery" info1="LegraBox_Pure" image1="img/hardware/LegraBox_Pure_Inner_G.jpg" />
+			<ITEM value="Design_Side" label="Design Side" info1="LegraBox_Pure" image1="img/hardware/LegraBox_Pure_Inner_D.jpg" />
+			<ITEM value="Gallery" label="Gallery" info1="TandemBox_Antaro" image1="img/hardware/TandemBox_Antaro_Inner.jpg" />
+			<ITEM value="Design_Side" label="Design Side" info1="TandemBox_Intivo" image1="img/hardware/TandemBox_Intivo_Inner.jpg" />
+		</COMBOBOX>
+
+		
+
+		<COMBOBOX name="Inner_Dr_High_Front" label="Inner_Dr_High_Front" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" >
+			<ITEM value="NULL" label="NULL"   info1="TandemBox_Antaro"	 info2="450"	/>
+			<ITEM value="NULL_1" label="NULL" info1="TandemBox_Antaro" info2="600"	/>
+			<ITEM value="NULL_2" label="NULL" info1="TandemBox_Antaro" info2="900"	/>
+			<ITEM value="NULL_3" label="NULL" info1="TandemBox_Antaro" info2="1200" />
+			<ITEM value="IA_FP_144_450_a_9194790" label="IA_FP_144_450_a_9194790" info1="Atira" info2="450"	info3="Antracite"/>
+			<ITEM value="IA_FP_144_600_a_9194792" label="IA_FP_144_600_a_9194792" info1="Atira" info2="600"	info3="Antracite"/>
+			<ITEM value="IA_FP_144_900_a_9194794" label="IA_FP_144_900_a_9194794" info1="Atira" info2="900"	info3="Antracite"/>
+			<ITEM value="IA_FP_144_1200_a_9194796" label="IA_FP_144_1200_a_9194796" info1="Atira" info2="1200" info3="Antracite"/>
+			<ITEM value="IA_FP_144_450_grey_s_9194772" label="IA_FP_144_450_grey_s_9194772" info1="Atira" info2="450"	info3="Silver"/>
+			<ITEM value="IA_FP_144_600_grey_s_9194774" label="IA_FP_144_600_grey_s_9194774" info1="Atira" info2="600"	info3="Silver"/>
+			<ITEM value="IA_FP_144_900_grey_s_9194776" label="IA_FP_144_900_grey_s_9194776" info1="Atira" info2="900"	info3="Silver"/>
+			<ITEM value="IA_FP_144_1200_grey_s_9194778" label="IA_FP_144_1200_grey_s_9194778" info1="Atira" info2="1200" info3="Silver"/>
+			<ITEM value="BL_LBX_DSE_138_450" label="BL_LBX_DSE_138_450" info1="LegraBox_Free" info2="450"/>
+			<ITEM value="BL_LBX_DSE_138_600" label="BL_LBX_DSE_138_600" info1="LegraBox_Free" info2="600"/>
+			<ITEM value="BL_LBX_DSE_138_900" label="BL_LBX_DSE_138_900" info1="LegraBox_Free" info2="900"	/>
+			<ITEM value="BL_LBX_DSE_138_1200" label="BL_LBX_DSE_138_1200" info1="LegraBox_Free" info2="1200" />
+			<ITEM value="BL_LBX_DSE_138_450" label="BL_LBX_DSE_138_450" info1="LegraBox_Pure" info2="450"/>
+			<ITEM value="BL_LBX_DSE_138_600" label="BL_LBX_DSE_138_600" info1="LegraBox_Pure" info2="600"/>
+			<ITEM value="BL_LBX_DSE_138_900" label="BL_LBX_DSE_138_900" info1="LegraBox_Pure" info2="900"	/>
+			<ITEM value="BL_LBX_DSE_138_1200" label="BL_LBX_DSE_138_1200" info1="LegraBox_Pure" info2="1200" />
+			<ITEM value="BL_SlideI_F_GL_CW450" label="BL_SlideI_F_GL_CW450" info1="TandemBox_Intivo" info2="450"/>
+			<ITEM value="BL_SlideI_F_GL_CW600" label="BL_SlideI_F_GL_CW600" info1="TandemBox_Intivo" info2="600"/>
+			<ITEM value="BL_SlideI_F_GL_CW900" label="BL_SlideI_F_GL_CW900" info1="TandemBox_Intivo" info2="900"	/>
+			<ITEM value="BL_SlideI_F_GL_CW1200" label="BL_SlideI_F_GL_CW1200" info1="TandemBox_Intivo" info2="1200" />
+		</COMBOBOX>
+
+		<COMBOBOX name="Drawer_Colour" label="Drawer Colour" active="TRUE" visible="TRUE" locked="FALSE" valuetype="IMAGE" default="OrionGrey">
+			<ITEM value="Antracite" label="Antracite" info1="Atira" image1="img/hardware/Antracite.jpg" />
+			<ITEM value="Silver" label="Silver" info1="Atira" image1="img/hardware/Silver.jpg" />
+			<ITEM value="OrionGrey" label="Orion Grey" info1="LegraBox_Free" image1="img/hardware/OrionGrey.jpg" />
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="LegraBox_Free" image1="img/hardware/Stainless_Steel.jpg" />
+			<!-- <ITEM value="Silk_White" label="Silk White Matt" info1="LegraBox_Free" image1="img/hardware/Silk_White.jpg" /> -->
+			<ITEM value="Terra_Black" label="Terra Black Matt" info1="LegraBox_Free" image1="img/hardware/Terra_Black.jpg" />
+			<ITEM value="OrionGrey" label="Orion Grey" info1="LegraBox_Pure" image1="img/hardware/OrionGrey.jpg" />
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="LegraBox_Pure" image1="img/hardware/Stainless_Steel.jpg" />
+			<!-- <ITEM value="Silk_White" label="Silk White Matt" info1="LegraBox_Pure" image1="img/hardware/Silk_White.jpg" /> -->
+			<ITEM value="Terra_Black" label="Terra Black Matt" info1="LegraBox_Pure" image1="img/hardware/Terra_Black.jpg" />
+			<ITEM value="Grey" label="Grey" info1="TandemBox_Antaro" image1="img/hardware/Grey.jpg" />
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="TandemBox_Antaro" image1="img/hardware/Stainless_Steel.jpg" />
+			<!-- <ITEM value="Silk_White" label="Silk White" info1="TandemBox_Antaro" image1="img/hardware/Silk_White.jpg" /> -->
+			<ITEM value="Stainless_Steel" label="Stainless Steel" info1="TandemBox_Intivo" image1="img/hardware/Stainless_Steel.jpg" />
+			<!-- <ITEM value="Silk_White" label="Silk White" info1="TandemBox_Intivo" image1="img/hardware/Silk_White.jpg" /> -->
+
+		</COMBOBOX>
+
+		<COMBOBOX name="Drawer_Model_ExtDr" label="Drawer Model" active="TRUE" visible="FALSE" locked="FALSE" valuetype="IMAGE" default="">
+			<ITEM value="Gallery" label="Gallery" info1="Atira" image1="img/hardware/.jpg" />
+			<ITEM value="Design_Side" label="Design_Side" info1="LegraBox_Free" image1="img/hardware/.jpg" />
+			<ITEM value="Pot_Pan" label="Pot Pan" info1="LegraBox_Pure" image1="img/hardware/.jpg" />
+			<ITEM value="Design_Side" label="Design_Side" info1="TandemBox_Intivo" image1="img/hardware/.jpg" />
+			<ITEM value="Gallery" label="Gallery" info1="TandemBox_Antaro" image1="img/hardware/.jpg" />
+		</COMBOBOX>
+
+	</PART>
+	
+	<PART name="PART_BIG_DRAWERS_SELECTION_LOGIC">
+
+		<COMMAND>"FIELD(Drawer_Colour).Info1List(FIELD(Drawer_Type).value)"</COMMAND>
+		<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(FIELD(Drawer_Type).value)"</COMMAND>
+
+
+		<!-- <IF>
+			<EQ expr1="FIELD(Drawer_Type).value" expr2="Atira" />
+			<THEN>
+				<COMMAND>"FIELD(Drawer_Colour).Info1List(Atira)"</COMMAND>
+				<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(Atira)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Free" />
+					<THEN>
+						<COMMAND>"FIELD(Drawer_Colour).Info1List(LegraBox_Free)"</COMMAND>
+						<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(LegraBox_Free)"</COMMAND>
+
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Pure" />
+							<THEN>
+								<COMMAND>"FIELD(Drawer_Colour).Info1List(LegraBox_Pure)"</COMMAND>
+								<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(LegraBox_Pure)"</COMMAND>
+
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Antaro" />
+									<THEN>
+										<COMMAND>"FIELD(Drawer_Colour).Info1List(TandemBox_Antaro)"</COMMAND>
+										<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(TandemBox_Antaro)"</COMMAND>
+
+									</THEN>
+									<ELSE>
+										<IF>
+											<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Intivo" />
+											<THEN>
+												<COMMAND>"FIELD(Drawer_Colour).Info1List(TandemBox_Intivo)"</COMMAND>
+												<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(TandemBox_Intivo)"</COMMAND>
+											</THEN>
+										</IF>
+									</ELSE>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>
+			</ELSE>
+		</IF> -->
+
+	</PART>
+
+	<PART name="PART_BIG_SMALL_DRAWERS_SELECTION_LOGIC">
+
+		<COMMAND>"FIELD(Drawer_Colour).Info1List(FIELD(Drawer_Type).value)"</COMMAND>
+		<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(FIELD(Drawer_Type).value)"</COMMAND>
+
+		<!-- <IF>
+			<EQ expr1="FIELD(Drawer_Type).value" expr2="Atira" />
+			<THEN>
+				<COMMAND>"FIELD(Drawer_Colour).Info1List(Atira)"</COMMAND>
+				<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(Atira)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Free" />
+					<THEN>
+						<COMMAND>"FIELD(Drawer_Colour).Info1List(LegraBox_Free)"</COMMAND>
+						<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(LegraBox_Free)"</COMMAND>
+
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Pure" />
+							<THEN>
+								<COMMAND>"FIELD(Drawer_Colour).Info1List(LegraBox_Pure)"</COMMAND>
+								<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(LegraBox_Pure)"</COMMAND>
+
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Antaro" />
+									<THEN>
+										<COMMAND>"FIELD(Drawer_Colour).Info1List(TandemBox_Antaro)"</COMMAND>
+										<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(TandemBox_Antaro)"</COMMAND>
+
+									</THEN>
+									<ELSE>
+										<IF>
+											<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Intivo" />
+											<THEN>
+												<COMMAND>"FIELD(Drawer_Colour).Info1List(TandemBox_Intivo)"</COMMAND>
+												<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(TandemBox_Intivo)"</COMMAND>
+											</THEN>
+										</IF>
+									</ELSE>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>
+			</ELSE>
+		</IF> -->
+
+		<IF>
+			<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Free" />
+			<THEN>
+				<COMMAND>"FIELD(Regular_Drawer_Type).value=LegraBox"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Drawer_Type).value" expr2="Atira" />
+					<THEN>
+						<COMMAND>"FIELD(Regular_Drawer_Type).value=Atira"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Pure" />
+							<THEN>
+								<COMMAND>"FIELD(Regular_Drawer_Type).value=LegraBox"</COMMAND>
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Antaro" />
+									<THEN>
+										<COMMAND>"FIELD(Regular_Drawer_Type).value=TandemBox_Antaro"</COMMAND>
+									</THEN>
+									<ELSE>
+										<IF>
+											<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Intivo" />
+											<THEN>
+												<COMMAND>"FIELD(Regular_Drawer_Type).value=TandemBox_Intivo"</COMMAND>
+											</THEN>
+										</IF>
+									</ELSE>
+								</IF>
+							</ELSE>
+						</IF>	
+					</ELSE>
+				</IF>
+			</ELSE>
+		</IF>
+		
+	</PART>
+
+	<PART name="PART_BIG_INNER_DRAWERS_SELECTION_Logic">
+
+		<COMMAND>"FIELD(Drawer_Colour).Info1List(FIELD(Drawer_Type).value)"</COMMAND>
+		<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(FIELD(Drawer_Type).value)"</COMMAND>
+		<COMMAND>"FIELD(Drawer_Model).Info1List(FIELD(Drawer_Type).value)"</COMMAND>
+		<COMMAND>"FIELD(Inner_Dr_High_Front).Info1List(FIELD(Drawer_Type).value)"</COMMAND>
+		<COMMAND>"FIELD(Inner_Dr_High_Front).filterInfo2List(FIELD(ART_SIZEXB).value)"</COMMAND>
+
+<!-- 
+		<IF>
+			<EQ expr1="FIELD(Drawer_Type).value" expr2="Atira" />
+			<THEN>
+				<COMMAND>"FIELD(Drawer_Colour).Info1List(Atira)"</COMMAND>
+				<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(Atira)"</COMMAND>
+				<COMMAND>"FIELD(Drawer_Model).Info1List(Atira)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Free" />
+					<THEN>
+						<COMMAND>"FIELD(Drawer_Colour).Info1List(LegraBox_Free)"</COMMAND>
+						<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(LegraBox_Free)"</COMMAND>
+						<COMMAND>"FIELD(Drawer_Model).Info1List(LegraBox_Free)"</COMMAND>
+
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Pure" />
+							<THEN>
+								<COMMAND>"FIELD(Drawer_Colour).Info1List(LegraBox_Pure)"</COMMAND>
+								<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(LegraBox_Pure)"</COMMAND>
+								<COMMAND>"FIELD(Drawer_Model).Info1List(LegraBox_Pure)"</COMMAND>
+
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Antaro" />
+									<THEN>
+										<COMMAND>"FIELD(Drawer_Colour).Info1List(TandemBox_Antaro)"</COMMAND>
+										<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(TandemBox_Antaro)"</COMMAND>
+										<COMMAND>"FIELD(Drawer_Model).Info1List(TandemBox_Antaro)"</COMMAND>
+
+									</THEN>
+									<ELSE>
+										<IF>
+											<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Intivo" />
+											<THEN>
+												<COMMAND>"FIELD(Drawer_Colour).Info1List(TandemBox_Intivo)"</COMMAND>
+												<COMMAND>"FIELD(Drawer_Model_ExtDr).Info1List(TandemBox_Intivo)"</COMMAND>
+												<COMMAND>"FIELD(Drawer_Model).Info1List(TandemBox_Intivo)"</COMMAND>
+											</THEN>
+										</IF>
+									</ELSE>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>
+			</ELSE>
+		</IF> -->
+
+		<!-- <IF>
+			<EQ expr1="FIELD(Drawer_Type).value" expr2="Atira" />
+			<THEN>
+				<COMMAND>"FIELD(Inner_Dr_High_Front).Info1List(Atira)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Free" />
+					<THEN>
+						<COMMAND>"FIELD(Inner_Dr_High_Front).Info1List(LegraBox_Free)"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Drawer_Type).value" expr2="LegraBox_Pure" />
+							<THEN>
+								<COMMAND>"FIELD(Inner_Dr_High_Front).Info1List(LegraBox_Pure)"</COMMAND>
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(Drawer_Type).value" expr2="TandemBox_Intivo" />
+									<THEN>
+										<COMMAND>"FIELD(Inner_Dr_High_Front).Info1List(TandemBox_Intivo)"</COMMAND>
+									</THEN>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>
+			</ELSE>
+		</IF> -->
+
+		<!-- <IF>
+			<EQ expr1="FIELD(ART_SIZEXB).value" expr2="600" />
+			<THEN>
+				<COMMAND>"FIELD(Inner_Dr_High_Front).filterInfo2List(600)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(ART_SIZEXB).value" expr2="900" />
+					<THEN>
+						<COMMAND>"FIELD(Inner_Dr_High_Front).filterInfo2List(900)"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(ART_SIZEXB).value" expr2="1200" />
+							<THEN>
+								<COMMAND>"FIELD(Inner_Dr_High_Front).filterInfo2List(1200)"</COMMAND>
+							</THEN>
+						</IF>
+					</ELSE>
+				</IF>
+			</ELSE>
+		</IF> -->
+
+		<IF>
+			<EQ expr1="FIELD(Drawer_Colour).value" expr2="Antracite" />
+			<THEN>
+				<COMMAND>"FIELD(Inner_Dr_High_Front).filterInfo3List(Antracite)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Drawer_Colour).value" expr2="Silver" />
+					<THEN>
+						<COMMAND>"FIELD(Inner_Dr_High_Front).filterInfo3List(Silver)"</COMMAND>
+					</THEN>
+				</IF>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+
+
+</XML>

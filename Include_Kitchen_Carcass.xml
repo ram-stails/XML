@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+	<PART name="PART_KITCHEN_Carcass_SKIRTING">
+
+		<GROUP name="Skirting_Details" valuetype="FRAME" label="Skirting" visible="FALSE">
+			
+			<COMBOBOX name="Skirting_Color" label="Skirting Color" valuetype="IMAGE" default="Silver" visible="TRUE" active="TRUE" image1="img/hardware/PVC_Leg.jpg">
+				<ITEM name="Silver_Grey" 	value="Silver_Grey" 	label="Silver Grey" 	info1="RE"	info2="100"	image1="img/catalog/Silver_Skirting.jpg" 			image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Silver_Grey" 	value="Silver_Grey" 	label="Silver Grey" 	info1="RE"	info2="150"	image1="img/catalog/Silver_Skirting.jpg" 			image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Black" 			value="Black" 			label="Black" 			info1="RE"	info2="100"	image1="img/catalog/Grey_Skirting.jpg" 				image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Black" 			value="Black" 			label="Black" 			info1="RE"	info2="150"	image1="img/catalog/Grey_Skirting.jpg" 				image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Dark_Bronze" 	value="Dark_Bronze" 	label="Dark Bronze" 	info1="HA"	info2="100"	image1="img/hardware/G_Dark_Bronze.jpg" 			image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Dark_Bronze" 	value="Dark_Bronze" 	label="Dark Bronze" 	info1="HA"	info2="150"	image1="img/hardware/G_Dark_Bronze.jpg" 			image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Gold" 			value="Gold" 			label="Gold" 			info1="HA"	info2="100"	image1="img/hardware/G_Gold.jpg" 					image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Graphite" 		value="Graphite" 		label="Graphite" 		info1="HA"	info2="100"	image1="img/hardware/G_Graphite.jpg" 				image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Rose_Gold" 		value="Rose_Gold" 		label="Rose Gold" 		info1="HA"	info2="100"	image1="img/hardware/G_Rose_Gold.jpg" 				image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Silver" 		value="Silver" 			label="Silver" 			info1="HA"	info2="100"	image1="img/hardware/G_Silver.jpg" 					image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Type" 			value="Type" 			label="No Skirting" 	info1="Floating"	info2="100"	image1="img/catalog/Skirting_Floating.PNG" 	image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Type" 			value="Type" 			label="No Skirting" 	info1="Floating"	info2="150"	image1="img/catalog/Skirting_Floating.PNG" 	image2="img/catalog/Skirting_100mm.PNG" />
+			</COMBOBOX>
+
+			<COMBOBOX name="Brand" label="Brand" valuetype="" default="HA" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="HA" 		value="HA" 			label="Hafele"	 info1="Skirting" />
+				<ITEM name="RE" 		value="RE" 			label="Rehau" 	 info1="Skirting"/>
+				<ITEM name="Floating" 	value="Floating" 	label="Floating" info1="NO_BOM"/>
+			</COMBOBOX>
+
+			<COMBOBOX name="Adjustable_Legs" label="Skirting Height" valuetype="" default="Adjustable_leg_H100_" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/Skirting_100mm.PNG">
+				   	<ITEM name="Adjustable_leg_H100_" value="Adjustable_leg_H100_" label="100mm" info1="Skirting" />
+					<ITEM name="Adjustable_leg_H150" value="Adjustable_leg_H150" label="150mm" info1="Skirting" />
+					<ITEM name="NO_BOM_100" value="NO_BOM_100" label="Floating 100mm" info1="NO_BOM" />
+					<ITEM name="NO_BOM_150" value="NO_BOM_150" label="Floating 150mm" info1="NO_BOM" />
+			</COMBOBOX>
+
+			<COMBOBOX name="Leg_Height" label="Leg_Height" valuetype="" default="100" visible="FALSE" active="TRUE" image1="img/catalog/Skirting_100mm.PNG">
+				<ITEM name="100" value="100" label="100 mm" />
+				<ITEM name="150" value="150" label="150 mm" />
+			</COMBOBOX>
+
+			<EDITBOX name="Skirting_Height" label="Skirting Height" default="Silver_100mm" active="TRUE" visible="TRUE" />
+
+			<EDITBOX name="KI_Base_Unit_Height" label="Base Unit Height" default="720" active="TRUE" visible="TRUE" />
+
+
+		</GROUP>
+
+	</PART>
+
+	<PART name="PART_KITCHEN_Base Height_LOGIC">
+		
+		<COMMAND>"FIELD(KI_Base_Unit_Height).value=FIELD(ART_SIZEZB).value"</COMMAND>
+
+	</PART>
+
+	
+
+	<PART name="PART_KITCHEN_TU_Carcass_CONSTRUCTION_LOGIC">
+	
+		<IF>
+			<EQ expr1="FIELD(Adjustable_Legs).value" expr2="Adjustable_leg_H100_" />
+			<THEN>
+				<COMMAND>"FIELD(Leg_Height).value=100"</COMMAND>
+				<COMMAND>"FIELD(Brand).Info1List(Skirting)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Adjustable_Legs).value" expr2="Adjustable_leg_H150" />
+					<THEN>
+						<COMMAND>"FIELD(Leg_Height).value=150"</COMMAND>
+						<COMMAND>"FIELD(Brand).Info1List(Skirting)"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Adjustable_Legs).value" expr2="NO_BOM_100" />
+							<THEN>
+								<COMMAND>"FIELD(Leg_Height).value=100"</COMMAND>
+								<COMMAND>"FIELD(Brand).Info1List(NO_BOM)"</COMMAND>
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(Adjustable_Legs).value" expr2="NO_BOM_150" />
+									<THEN>
+										<COMMAND>"FIELD(Leg_Height).value=150"</COMMAND>
+										<COMMAND>"FIELD(Brand).Info1List(NO_BOM)"</COMMAND>
+									</THEN>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<COMMAND>"FIELD(Skirting_Color).Info1List(FIELD(Brand).value)"</COMMAND>
+		<COMMAND>"FIELD(Skirting_Color).filterInfo2List(FIELD(Leg_Height).value)"</COMMAND>
+		<COMMAND>"FIELD(Skirting_Height).value=FIELD(Brand).value+'_'+FIELD(Skirting_Color).value+'_'+FIELD(Leg_Height).value+'mm'"</COMMAND>
+	
+	</PART>
+	<PART name="PART_KITCHEN_HBU_Carcass_CONSTRUCTION_LOGIC">
+	
+		<IF>
+			<EQ expr1="FIELD(Adjustable_Legs).value" expr2="Adjustable_leg_H100_" />
+			<THEN>
+				<COMMAND>"FIELD(Leg_Height).value=100"</COMMAND>
+				<COMMAND>"FIELD(Brand).Info1List(Skirting)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Adjustable_Legs).value" expr2="Adjustable_leg_H150" />
+					<THEN>
+						<COMMAND>"FIELD(Leg_Height).value=150"</COMMAND>
+						<COMMAND>"FIELD(Brand).Info1List(Skirting)"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Adjustable_Legs).value" expr2="NO_BOM_100" />
+							<THEN>
+								<COMMAND>"FIELD(Leg_Height).value=100"</COMMAND>
+								<COMMAND>"FIELD(Brand).Info1List(NO_BOM)"</COMMAND>
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(Adjustable_Legs).value" expr2="NO_BOM_150" />
+									<THEN>
+										<COMMAND>"FIELD(Leg_Height).value=150"</COMMAND>
+										<COMMAND>"FIELD(Brand).Info1List(NO_BOM)"</COMMAND>
+									</THEN>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<COMMAND>"FIELD(Skirting_Color).Info1List(FIELD(Brand).value)"</COMMAND>
+		<COMMAND>"FIELD(Skirting_Color).filterInfo2List(FIELD(Leg_Height).value)"</COMMAND>
+		<COMMAND>"FIELD(Skirting_Height).value=FIELD(Brand).value+'_'+FIELD(Skirting_Color).value+'_'+FIELD(Leg_Height).value+'mm'"</COMMAND>
+	
+	</PART>
+
+
+	<PART name="PART_KITCHEN_Carcass_CONSTRUCTION">
+
+		<GROUP name="BU_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="BU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+		<GROUP name="B_Material_Grade" label="Material Grade" valuetype="ROW">
+
+
+			<COMBOBOX name="BU_Material_Grade" label="Material Grade" valuetype="" Width="100%"	default="BWP" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="BWR" 			label="BWR" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP" 			label="BWP" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP_Green" 	label="BWP GreenPly" 		info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="Marine_Green" 	label="Marine GreenPly"		info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="BirchPly" 		label="Birch PlyWood" 		info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="PLPB" 			label="PLPB" 				info1="Engineered_wood"	image1="img/catalog/.PNG" />
+			</COMBOBOX>		
+	
+		</GROUP>
+
+			<COMBOBOX name="BU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">			
+				
+				<ITEM value="FW_BWR" 	 		label="Frosty White + BWR Ply" 				info1="PlyWood" 	info2="BWR"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP" 	 		label="Frosty White + BWP Ply" 				info1="PlyWood" 	info2="BWP"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP_Green" 		label="Frosty White + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Marine_Green" 	label="Frosty White + Marine GreenPly" 		info1="PlyWood" 	info2="Marine_Green"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Birch_PLY" 	 	label="Frosty White + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_PLPB" 	 		label="Frosty White + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				
+				<ITEM value="Anthracite_BWR" 	 		label="Anthracite + BWR Ply" 			info1="PlyWood" 	info2="BWR"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP" 	 		label="Anthracite + BWP Ply" 			info1="PlyWood" 	info2="BWP"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP_Green" 		label="Anthracite + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Marine_Green" 	label="Anthracite + Marine GreenPly" 	info1="PlyWood" 	info2="Marine_Green"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Birch_PLY" 	 	label="Anthracite + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_PLPB" 	 		label="Anthracite + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				
+			</COMBOBOX>
+
+		</GROUP>
+
+		<GROUP name="Carcass_Construction" label="Carcass Construction">
+
+			<COMBOBOX name="BU_Top_Panel" label="Top Panel" valuetype="IMAGE" default="Top_Rails" visible="TRUE" active="TRUE" image1="img/catalog/Top_Rails.PNG">			
+				<ITEM name="Top_Rails" value="Top_Rails" label="Rails" image1="img/catalog/Top_Rails.jpg" image2="img/catalog/.PNG" />	
+				<ITEM name="Full_Top" value="Full_Top" label="Full Top" image1="img/catalog/Full_Top.jpg" image2="img/catalog/.PNG" />			
+			</COMBOBOX>
+		</GROUP>
+
+	</PART>
+
+
+	<PART name="PART_KITCHEN_Carcass_CONSTRUCTION_1">
+
+		<GROUP name="BU1_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="BU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+		<GROUP name="B_Material_Grade" label="Material Grade" valuetype="ROW">
+			
+			<COMBOBOX name="BU_Material_Grade" label="Material Grade" valuetype="" Width="100%"	default="BWP" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="BWR" 			label="BWR" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP" 			label="BWP" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP_Green" 	label="BWP GreenPly" 		info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="Marine_Green" 	label="Marine GreenPly"			info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="BirchPly" 		label="Birch PlyWood" 		info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="PLPB" 			label="PLPB" 				info1="Engineered_wood"	image1="img/catalog/.PNG" />
+			</COMBOBOX>		
+
+		</GROUP>
+
+		<COMBOBOX name="BU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				
+				<ITEM value="FW_BWR" 	 		label="Frosty White + BWR Ply" 				info1="PlyWood" 	info2="BWR"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP" 	 		label="Frosty White + BWP Ply" 				info1="PlyWood" 	info2="BWP"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP_Green" 		label="Frosty White + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Marine_Green" 	label="Frosty White + Marine GreenPly" 		info1="PlyWood" 	info2="Marine_Green"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Birch_PLY" 	 	label="Frosty White + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_PLPB" 	 		label="Frosty White + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				
+				<ITEM value="Anthracite_BWR" 	 		label="Anthracite + BWR Ply" 			info1="PlyWood" 	info2="BWR"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP" 	 		label="Anthracite + BWP Ply" 			info1="PlyWood" 	info2="BWP"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP_Green" 		label="Anthracite + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Marine_Green" 	label="Anthracite + Marine GreenPly" 	info1="PlyWood" 	info2="Marine_Green"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Birch_PLY" 	 	label="Anthracite + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_PLPB" 	 		label="Anthracite + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+			
+		</COMBOBOX>
+
+		</GROUP>
+
+	</PART>
+
+	<PART name="PART_KITCHEN_SINK_CARCASS_CONSTRUCTION">
+
+		<GROUP name="BU1_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="BU_Core_Material_1" label="Core Material" valuetype="" default="PVC" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">				
+				<ITEM name="PVC" 		 value="PVC"		 label="PVC" 	     image1="img/catalog/.PNG" />				
+			</COMBOBOX>
+
+		<GROUP name="B_Material_Grade" label="Material Grade" valuetype="ROW">
+			
+			<COMBOBOX name="BU_Material_Grade_1" label="Material Grade" valuetype="" Width="100%"	default="PVC" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				
+				<ITEM name="PVC" 	value="PVC" 	label="PVC" 	info1="PVC"	info2="SINGLE_B" image1="img/catalog/.PNG" />
+			
+			</COMBOBOX>		
+			
+		</GROUP>
+
+		<COMBOBOX name="BU_Carcass_1" label="Carcass Material" valuetype="IMAGE" default="WPVC" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="WPVC" 		 label="Frosty White" 			info1="PVC" 		info2="PVC"	 	info3="HalfWhite" 	info4="Branded"	image1="img/material/EUSM001.jpg" />
+				
+		</COMBOBOX>
+
+		</GROUP>
+
+
+	</PART>
+
+
+	<PART name="PART_KITCHEN_Carcass_CONSTRUCTION_2">
+
+		<GROUP name="BU2_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="BU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+			
+			<GROUP name="B_Material_Grade" label="Material Grade" valuetype="ROW">
+
+				<COMBOBOX name="BU_Material_Grade" label="Material Grade" valuetype="" Width="100%"	default="BWP" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					<ITEM value="BWR" 			label="BWR" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+					<ITEM value="BWP" 			label="BWP" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+					<ITEM value="BWP_Green" 	label="BWP GreenPly" 		info1="PlyWood"			image1="img/catalog/.PNG" />
+					<ITEM value="Marine_Green" 	label="Marine GreenPly"			info1="PlyWood" 		image1="img/catalog/.PNG" />
+					<ITEM value="BirchPly" 		label="Birch PlyWood" 		info1="PlyWood" 		image1="img/catalog/.PNG" />
+					<ITEM value="PLPB" 			label="PLPB" 				info1="Engineered_wood"	image1="img/catalog/.PNG" />
+				</COMBOBOX>		
+	
+		</GROUP>
+		<COMBOBOX name="BU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="FW_BWR" 	 		label="Frosty White + BWR Ply" 				info1="PlyWood" 	info2="BWR"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP" 	 		label="Frosty White + BWP Ply" 				info1="PlyWood" 	info2="BWP"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP_Green" 		label="Frosty White + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Marine_Green" 	label="Frosty White + Marine GreenPly" 		info1="PlyWood" 	info2="Marine_Green"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Birch_PLY" 	 	label="Frosty White + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_PLPB" 	 		label="Frosty White + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				
+				<ITEM value="Anthracite_BWR" 	 		label="Anthracite + BWR Ply" 			info1="PlyWood" 	info2="BWR"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP" 	 		label="Anthracite + BWP Ply" 			info1="PlyWood" 	info2="BWP"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP_Green" 		label="Anthracite + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Marine_Green" 	label="Anthracite + Marine GreenPly" 	info1="PlyWood" 	info2="Marine_Green"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Birch_PLY" 	 	label="Anthracite + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_PLPB" 	 		label="Anthracite + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />			
+		</COMBOBOX>
+
+		</GROUP>
+
+	</PART>
+
+
+	<PART name="PART_KITCHEN_Carcass_CONSTRUCTION_LOGIC">
+
+		
+		<COMMAND>"FIELD(BU_Material_Grade).Info1List(FIELD(BU_Core_Material).value)"</COMMAND>
+		<!-- <COMMAND>"FIELD(BU_MatB_Type).Info1List(FIELD(BU_Material_Grade).info2)"</COMMAND> -->
+		<COMMAND>"FIELD(BU_Carcass).info1List(FIELD(BU_Core_Material).value)"</COMMAND>
+		<!-- <COMMAND>"FIELD(BU_Carcass).filterinfo4List(FIELD(BU_MatB_Type).info2)"</COMMAND> -->
+		<COMMAND>"FIELD(BU_Carcass).filterinfo2List(FIELD(BU_Material_Grade).value)"</COMMAND>
+				
+	</PART>
+
+	<PART name="PART_KITCHEN_SINK_CARCASS_CONSTRUCTION_LOGIC">
+		
+		<COMMAND>"FIELD(BU_Material_Grade_1).Info1List(FIELD(BU_Core_Material_1).value)"</COMMAND>
+		<!-- <COMMAND>"FIELD(BU_MatB_Type_1).Info1List(FIELD(BU_Material_Grade_1).info2)"</COMMAND> -->
+		<COMMAND>"FIELD(BU_Carcass_1).info1List(FIELD(BU_Core_Material_1).value)"</COMMAND>
+		<!-- <COMMAND>"FIELD(BU_Carcass_1).filterinfo4List(FIELD(BU_MatB_Type_1).info2)"</COMMAND> -->
+		<COMMAND>"FIELD(BU_Carcass_1).filterinfo2List(FIELD(BU_Material_Grade_1).value)"</COMMAND>
+		
+	</PART>
+
+	<PART name="PART_KITCHEN_WU_Carcass_CONSTRUCTION">
+
+		<GROUP name="WU_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="WU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+		<GROUP name="W_Material_Grade" label="Material Grade" valuetype="ROW">
+
+			<COMBOBOX name="WU_Material_Grade" label="Material Grade" valuetype="" Width="100%"	default="BWP" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="BWR" 			label="BWR" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP" 			label="BWP" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP_Green" 	label="BWP GreenPly" 		info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="Marine_Green" 	label="Marine GreenPly"			info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="BirchPly" 		label="Birch PlyWood" 		info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="PLPB" 			label="PLPB" 				info1="Engineered_wood"	image1="img/catalog/.PNG" />
+			</COMBOBOX>	
+
+		</GROUP>
+			<COMBOBOX name="WU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					
+				<ITEM value="FW_BWR" 	 		label="Frosty White + BWR Ply" 				info1="PlyWood" 	info2="BWR"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP" 	 		label="Frosty White + BWP Ply" 				info1="PlyWood" 	info2="BWP"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP_Green" 		label="Frosty White + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Marine_Green" 	label="Frosty White + Marine GreenPly" 		info1="PlyWood" 	info2="Marine_Green"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Birch_PLY" 	 	label="Frosty White + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_PLPB" 	 		label="Frosty White + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				
+				<ITEM value="Anthracite_BWR" 	 		label="Anthracite + BWR Ply" 			info1="PlyWood" 	info2="BWR"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP" 	 		label="Anthracite + BWP Ply" 			info1="PlyWood" 	info2="BWP"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP_Green" 		label="Anthracite + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Marine_Green" 	label="Anthracite + Marine GreenPly" 	info1="PlyWood" 	info2="Marine_Green"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Birch_PLY" 	 	label="Anthracite + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_PLPB" 	 		label="Anthracite + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				
+			</COMBOBOX>
+
+		</GROUP>
+
+	</PART>
+
+	<PART name="PART_KITCHEN_WU_Carcass_CONSTRUCTION_LOGIC">
+
+		<COMMAND>"FIELD(WU_Material_Grade).Info1List(FIELD(WU_Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(WU_Carcass).info1List(FIELD(WU_Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(WU_Carcass).filterinfo2List(FIELD(WU_Material_Grade).value)"</COMMAND>
+
+	</PART>
+
+	<PART name="PART_KITCHEN_TU_Carcass_CONSTRUCTION">
+
+		<GROUP name="TU_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="TU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+			<GROUP name="T_Material_Grade" label="Material Grade" valuetype="ROW">
+
+			<COMBOBOX name="TU_Material_Grade" label="Material Grade" valuetype=""	Width="100%" default="BWP" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="BWR" 			label="BWR" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP" 			label="BWP" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP_Green" 	label="BWP GreenPly" 		info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="Marine_Green" 	label="Marine GreenPly"			info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="BirchPly" 		label="Birch PlyWood" 		info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="PLPB" 			label="PLPB" 				info1="Engineered_wood"	image1="img/catalog/.PNG" />
+			</COMBOBOX>	
+
+		</GROUP>
+			<COMBOBOX name="TU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="FW_BWR" 	 		label="Frosty White + BWR Ply" 				info1="PlyWood" 	info2="BWR"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP" 	 		label="Frosty White + BWP Ply" 				info1="PlyWood" 	info2="BWP"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP_Green" 		label="Frosty White + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Marine_Green" 	label="Frosty White + Marine GreenPly" 		info1="PlyWood" 	info2="Marine_Green"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Birch_PLY" 	 	label="Frosty White + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_PLPB" 	 		label="Frosty White + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				
+				<ITEM value="Anthracite_BWR" 	 		label="Anthracite + BWR Ply" 			info1="PlyWood" 	info2="BWR"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP" 	 		label="Anthracite + BWP Ply" 			info1="PlyWood" 	info2="BWP"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP_Green" 		label="Anthracite + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Marine_Green" 	label="Anthracite + Marine GreenPly" 	info1="PlyWood" 	info2="Marine_Green"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Birch_PLY" 	 	label="Anthracite + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_PLPB" 	 		label="Anthracite + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+			</COMBOBOX>
+
+		</GROUP>
+
+	</PART>
+
+	<PART name="PART_KITCHEN_HBU_Carcass_CONSTRUCTION">
+
+		<GROUP name="HBU_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="HBU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+		<GROUP name="HB_Material_Grade" label="Material Grade" valuetype="ROW">
+
+			<COMBOBOX name="HBU_Material_Grade" label="Material Grade" valuetype=""	Width="100%" default="BWP" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="BWR" 			label="BWR" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP" 			label="BWP" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP_Green" 	label="BWP GreenPly" 		info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="Marine_Green" 	label="Marine GreenPly"			info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="BirchPly" 		label="Birch PlyWood" 		info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="PLPB" 			label="PLPB" 				info1="Engineered_wood"	image1="img/catalog/.PNG" />
+			</COMBOBOX>	
+
+		</GROUP>
+			<COMBOBOX name="HBU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="FW_BWR" 	 		label="Frosty White + BWR Ply" 				info1="PlyWood" 	info2="BWR"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP" 	 		label="Frosty White + BWP Ply" 				info1="PlyWood" 	info2="BWP"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP_Green" 		label="Frosty White + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Marine_Green" 	label="Frosty White + Marine GreenPly" 		info1="PlyWood" 	info2="Marine_Green"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Birch_PLY" 	 	label="Frosty White + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_PLPB" 	 		label="Frosty White + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				
+				<ITEM value="Anthracite_BWR" 	 		label="Anthracite + BWR Ply" 			info1="PlyWood" 	info2="BWR"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP" 	 		label="Anthracite + BWP Ply" 			info1="PlyWood" 	info2="BWP"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP_Green" 		label="Anthracite + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Marine_Green" 	label="Anthracite + Marine GreenPly" 	info1="PlyWood" 	info2="Marine_Green"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Birch_PLY" 	 	label="Anthracite + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_PLPB" 	 		label="Anthracite + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+			
+			</COMBOBOX>
+
+		</GROUP>
+
+	</PART>
+
+	<PART name="PART_KITCHEN_TU_Carcass_CONSTRUCTION_1">
+
+		<GROUP name="TU1_Carcass_Material" label="Carcass Material">
+
+			<COMBOBOX name="TU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
+				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			<GROUP name="T_Material_Grade" label="Material Grade" valuetype="ROW">
+
+			<COMBOBOX name="TU_Material_Grade" label="Material Grade" valuetype=""	Width="100%" default="BWP_Ply" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="BWR" 			label="BWR" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP" 			label="BWP" 				info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="BWP_Green" 	label="BWP GreenPly" 		info1="PlyWood"			image1="img/catalog/.PNG" />
+				<ITEM value="Marine_Green" 	label="Marine GreenPly"			info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="BirchPly" 		label="Birch PlyWood" 		info1="PlyWood" 		image1="img/catalog/.PNG" />
+				<ITEM value="PLPB" 			label="PLPB" 				info1="Engineered_wood"	image1="img/catalog/.PNG" />
+			</COMBOBOX>
+
+			</GROUP>
+
+			<COMBOBOX name="TU_Carcass" label="Carcass Material" valuetype="IMAGE" default="HW_BWP_GR" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="FW_BWR" 	 		label="Frosty White + BWR Ply" 				info1="PlyWood" 	info2="BWR"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP" 	 		label="Frosty White + BWP Ply" 				info1="PlyWood" 	info2="BWP"				info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_BWP_Green" 		label="Frosty White + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Marine_Green" 	label="Frosty White + Marine GreenPly" 		info1="PlyWood" 	info2="Marine_Green"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_Birch_PLY" 	 	label="Frosty White + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				<ITEM value="FW_PLPB" 	 		label="Frosty White + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Frosty_White" 		image1="img/material/FrostyWhite.jpg" />
+				
+				<ITEM value="Anthracite_BWR" 	 		label="Anthracite + BWR Ply" 			info1="PlyWood" 	info2="BWR"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP" 	 		label="Anthracite + BWP Ply" 			info1="PlyWood" 	info2="BWP"				info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_BWP_Green" 		label="Anthracite + BWP GreenPly" 		info1="PlyWood" 	info2="BWP_Green"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Marine_Green" 	label="Anthracite + Marine GreenPly" 	info1="PlyWood" 	info2="Marine_Green"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_Birch_PLY" 	 	label="Anthracite + Birch Ply" 			info1="PlyWood" 	info2="BirchPly"		info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+				<ITEM value="Anthracite_PLPB" 	 		label="Anthracite + PLPB" 				info1="Engineered_wood" 	info2="PLPB"	info3="Anthracite" 		image1="img/material/Anthracite.jpg" />
+			</COMBOBOX>
+
+		</GROUP>
+
+	</PART>
+
+
+	<PART name="PART_KITCHEN_TU_Carcass_CONSTRUCTION_LOGIC">
+		<COMMAND>"FIELD(TU_Material_Grade).Info1List(FIELD(TU_Core_Material).value)"</COMMAND>
+		<!-- <COMMAND>"FIELD(TU_MatB_Type).Info1List(FIELD(TU_Material_Grade).info2)"</COMMAND> -->
+		<COMMAND>"FIELD(TU_Carcass).Info1List(FIELD(TU_Core_Material).value)"</COMMAND>
+		<!-- <COMMAND>"FIELD(TU_Carcass).filterInfo4List(FIELD(TU_MatB_Type).info2)"</COMMAND> -->
+		<COMMAND>"FIELD(TU_Carcass).filterInfo2List(FIELD(TU_Material_Grade).value)"</COMMAND>
+
+	</PART>
+
+	<PART name="TALL_UNIT_HEIGHT_CUSTOMIZED_GLOBAL">
+
+		<COMMAND>"FIELD(Standard_Height).Info1List(FIELD(ART_SIZEZB).value)"</COMMAND>
+
+		<COMMAND>"FIELD(Standard_Height).filterInfo2List(FIELD(ART_SIZEZW).value)"</COMMAND>
+
+		<IF>
+			<EQ expr1="FIELD(Customized_Height_Check).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(Standard_Height).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(Customized_Height).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZT).value=FIELD(Standard_Height).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Standard_Height).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Customized_Height).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZT).value=FIELD(Customized_Height).value"</COMMAND>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+	<PART name="TALL_UNIT_HEIGHT_CUSTOMIZED">
+
+		<IF>
+			<EQ expr1="FIELD(Customized_Height_Check).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(Standard_Height).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(Customized_Height).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZT).value=FIELD(Standard_Height).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Standard_Height).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Customized_Height).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZT).value=FIELD(Customized_Height).value"</COMMAND>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+	<PART name="HIGHBOARD_UNIT_HEIGHT_CUSTOMIZED">
+
+		<IF>
+			<EQ expr1="FIELD(Customized_Height_Check).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(Standard_Height).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(Customized_Height).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZT).value=FIELD(Standard_Height).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(Standard_Height).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Customized_Height).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZT).value=FIELD(Customized_Height).value"</COMMAND>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+	<PART name="WALL_UNIT_HEIGHT_CUSTOMIZED">
+
+		<IF>
+			<EQ expr1="FIELD(WU_Customized_Height_Check).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(WU_Standard_Height).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(WU_Customized_Height).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZW).value=FIELD(WU_Standard_Height).value"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(WU_Standard_Height).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(WU_Customized_Height).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(ART_SIZEZW).value=FIELD(WU_Customized_Height).value"</COMMAND>
+			</ELSE>
+		</IF>
+
+	</PART>
+
+</XML>

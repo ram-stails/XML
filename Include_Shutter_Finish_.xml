@@ -1,0 +1,1070 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+
+	<!---	*************************** Shutter Core Mat *****************************************************************************************	-->
+	<PART name="PART_SHUTTER_CORE_MAT">
+
+		<ITEM value="PLY" 	label="PlyWood" 		info1="PLY"/>
+		<ITEM value="HDHMR" label="HDHMR"			info1="HDHMR"/>
+		<ITEM value="MDF" 	label="Engineered"		info1="MDF"/>
+		
+	</PART>
+
+	<PART name="PART_SHUTTER_CORE_MAT_ALL">
+
+		<ITEM value="PLY" 	label="PlyWood" 		info1="PLY"/>
+		<ITEM value="HDHMR" label="HDHMR"			info1="HDHMR"/>
+		<ITEM value="MDF" 	label="Engineered"		info1="MDF"	/>
+		<ITEM value="6mm" 	label="Glass"			info1="GLASS"/>
+		
+	</PART>
+	<!---	*************************** Shutter Finishes *****************************************************************************************	-->
+	<PART name="PART_SHUTTER_FINISHES">
+
+		<ITEM value="Super_Silk" 			label="Super Silk" 				info1="HDHMR"	info2="Super_Silk"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM value="UV_HG" 				label="UV High Gloss" 			info1="MDF"		info2="UV_HG"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM value="Glossy_Acrylic" 		label="Glossy Acrylic" 			info1="PLY"	info2="Glossy_Acrylic"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM value="Acrylic" 				label="Acrylic" 				info1="PLY"	info2="Acrylic"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM value="Acrylic" 				label="Acrylic" 				info1="MDF"	info2="Acrylic"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM value="Matt_SF" 				label="Matt SF" 				info1="PLY"	info2="Matt_SF"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM value="Synchro" 				label="Synchro" 				info1="HDHMR"	info2="Synchro"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM value="Soft_Touch" 			label="Soft Touch" 				info1="MDF"		info2="Soft_Touch"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM value="Alvic_PG" 				label="Alvic Poly Gloss" 		info1="HDHMR"	info2="Alvic_PG"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM value="Alvic_SM" 				label="Alvic Super Matt" 		info1="HDHMR"	info2="Alvic_SM"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM value="Dead_Matt" 			label="Dead Matt" 				info1="HDHMR"	info2="Dead_Matt"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	    <ITEM value="Brilliant_HG" 			label="Brilliant High Gloss" 	info1="PLY"	info2="Brilliant_HG"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	    <ITEM value="Brilliant_HG" 			label="Brilliant High Gloss" 	info1="HDHMR"	info2="Brilliant_HG"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	    <ITEM value="Brilliant_SM" 			label="Brilliant Super Matt" 	info1="PLY"	info2="Brilliant_SM"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	    <ITEM value="Brilliant_SM" 			label="Brilliant Super Matt" 	info1="HDHMR"	info2="Brilliant_SM"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM value="OneSkin_HG" 			label="OneSkin High Gloss" 		info1="MDF"		info2="OneSkin_HG"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	  	<ITEM value="OneSkin_SM" 			label="OneSkin Super Matt" 		info1="MDF"		info2="OneSkin_SM"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	   
+	</PART>
+
+	<PART name="PART_SHUTTER_FINISHES_ALL">
+
+		<ITEM name="Super_Silk"			value="Super_Silk" 			label="Super Silk" 				info1="HDHMR"	info2="Super_Silk"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="UV_HG"				value="UV_HG" 				label="UV High Gloss" 			info1="MDF"		info2="UV_HG"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Glossy_Acrylic"		value="Glossy_Acrylic" 		label="Glossy Acrylic" 			info1="PLY"		info2="Glossy_Acrylic"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Acrylic"			value="Acrylic" 			label="Acrylic" 				info1="PLY"						info2="Acrylic"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Acrylic"			value="Acrylic" 			label="Acrylic" 				info1="MDF"						info2="Acrylic"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Matt_SF"			value="Matt_SF" 			label="Matt SF" 				info1="PLY"	info2="Matt_SF"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Synchro"			value="Synchro" 			label="Synchro" 				info1="HDHMR"	info2="Synchro"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Soft_Touch"			value="Soft_Touch" 			label="Soft Touch" 				info1="MDF"		info2="Soft_Touch"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Alvic_PG"			value="Alvic_PG" 			label="Alvic Poly Gloss" 		info1="HDHMR"	info2="Alvic_PG"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Alvic_SM"			value="Alvic_SM" 			label="Alvic Super Matt" 		info1="HDHMR"	info2="Alvic_SM"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Dead_Matt"			value="Dead_Matt" 			label="Dead Matt" 				info1="HDHMR"	info2="Dead_Matt"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	    <ITEM name="Brilliant_HG"		value="Brilliant_HG" 		label="Brilliant High Gloss" 	info1="PLY"	info2="Brilliant_HG"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	    <ITEM name="Brilliant_HG"		value="Brilliant_HG" 		label="Brilliant High Gloss" 	info1="HDHMR"	info2="Brilliant_HG"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	    <ITEM name="Brilliant_SM"		value="Brilliant_SM" 		label="Brilliant Super Matt" 	info1="PLY"	info2="Brilliant_SM"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	    <ITEM name="Brilliant_SM"		value="Brilliant_SM" 		label="Brilliant Super Matt" 	info1="HDHMR"	info2="Brilliant_SM"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="OneSkin_HG"			value="OneSkin_HG" 			label="OneSkin High Gloss" 		info1="MDF"		info2="OneSkin_HG"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	  	<ITEM name="OneSkin_SM"			value="OneSkin_SM" 			label="OneSkin Super Matt" 		info1="MDF"		info2="OneSkin_SM"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	   
+		<ITEM name="Clear_Glass"		value="Clear_Glass" 			label="Clear Glass" 		info1="GLASS"		info2="GLASS"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	    <ITEM name="Tinted_Glass"		value="Tinted_Glass" 			label="Tinted Glass" 		info1="GLASS"		info2="GLASS"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	    <ITEM name="Lacquer_Glass"		value="Lacquer_Glass" 			label="Lacquer Glass" 		info1="GLASS"		info2="GLASS"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+	    <ITEM name="Mirror"				value="Mirror" 			  		label="Mirror" 			    info1="GLASS"		info2="GLASS"		image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+
+	</PART>
+
+	<!---	*************************** Shutter Textures *****************************************************************************************	-->
+	<PART name="PART_SHUTTER_TEXTURES">
+
+		<ITEM name="Super_Silk"			value="Solid" 			label="Solid" 			info1="Super_Silk"		info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Super_Silk_1"		value="Wood" 			label="Wood" 			info1="Super_Silk"		info2="Wood"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="UV_HG"				value="Solid" 			label="Solid" 			info1="UV_HG"			info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="UV_HG_1"			value="Wood" 			label="Wood" 			info1="UV_HG"			info2="Wood"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Glossy_Acrylic"		value="Solid" 			label="Solid" 			info1="Glossy_Acrylic"	info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Acrylic"			value="Solid" 			label="Solid" 			info1="Acrylic"			info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Matt_SF"			value="Solid" 			label="Solid" 			info1="Matt_SF"			info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Matt_SF_1"			value="Wood" 			label="Wood" 			info1="Matt_SF"			info2="Wood"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Soft_Touch"			value="Solid" 			label="Solid" 			info1="Soft_Touch"		info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Soft_Touch_1"		value="Wood" 			label="Wood" 			info1="Soft_Touch"		info2="Wood"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Dead_Matt"			value="Solid" 			label="Solid" 			info1="Dead_Matt"		info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Dead_Matt_1"		value="Wood" 			label="Wood" 			info1="Dead_Matt"		info2="Wood"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Synchro"			value="Wood" 			label="Wood" 			info1="Synchro"			info2="Wood"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Alvic_PG"			value="Solid" 			label="Solid" 			info1="Alvic_PG"		info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Alvic_SM"			value="Solid" 			label="Solid" 			info1="Alvic_SM"		info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Alvic_PG_2"			value="Wood" 			label="Wood" 			info1="Alvic_PG"		info2="Wood"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Alvic_SM_2"			value="Wood" 			label="Wood" 			info1="Alvic_SM"		info2="Wood"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Alvic_PG_1"			value="Special_Effect" 	label="Special Effect" 	info1="Alvic_PG"		info2="Special_Effect"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Alvic_SM_1"			value="Special_Effect" 	label="Special Effect" 	info1="Alvic_SM"		info2="Special_Effect"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Brilliant_HG"		value="Solid" 			label="Solid" 			info1="Brilliant_HG"	info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Brilliant_HG_1"		value="Wood" 			label="Wood" 			info1="Brilliant_HG"	info2="Wood"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Brilliant_SM"		value="Solid" 			label="Solid" 			info1="Brilliant_SM"	info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="Brilliant_SM_1"		value="Wood" 			label="Wood" 			info1="Brilliant_SM"	info2="Wood"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="OneSkin_HG"			value="Solid" 			label="Solid" 			info1="OneSkin_HG"		info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="OneSkin_SM"			value="Solid" 			label="Solid" 			info1="OneSkin_SM"		info2="Solid"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="OneSkin_HG_2"		value="Wood" 			label="Wood" 			info1="OneSkin_HG"		info2="Wood"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="OneSkin_SM_2"		value="Wood" 			label="Wood" 			info1="OneSkin_SM"		info2="Wood"			image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="OneSkin_HG_1"		value="Special_Effect" 	label="Special Effect" 	info1="OneSkin_HG"		info2="Special_Effect"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		<ITEM name="OneSkin_SM_1"		value="Special_Effect" 	label="Special Effect" 	info1="OneSkin_SM"		info2="Special_Effect"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		
+		<ITEM name="GLASS"					value="GLASS" 	label="Glass" info1="GLASS"		info2="GLASS"	image1="img/catalog/.PNG" image2="img/catalog/.PNG" />
+		
+		</PART>
+
+	<!---	*************************** Shutter Finishes *****************************************************************************************	-->
+	<PART name="PART_SHUTTER_SHADES">
+		
+		<!-- Super Silk MDF-->
+		<ITEM value="SS01" label="SS01" info1="Super_Silk" info2="MDF" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS01.jpg" />
+		<ITEM value="SS02" label="SS02" info1="Super_Silk" info2="MDF" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SS02.jpg" />
+
+		<!-- Super Silk HDHMR-->
+		<ITEM value="SS01" label="SS01 Super White" info1="Super_Silk" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS01.jpg" />
+		<ITEM value="SS02" label="SS02 Frosty White" info1="Super_Silk" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS02.jpg" />
+		<ITEM value="SS03" label="SS03 Slate Grey" info1="Super_Silk" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS03.jpg" />
+		<ITEM value="SS04" label="SS04 Night Grey" info1="Super_Silk" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS04.jpg" />
+		<ITEM value="SS05" label="SS05 Pastel Orange" info1="Super_Silk" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS05.jpg" />
+		<ITEM value="SS06" label="SS06 Irish Cream" info1="Super_Silk" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS06.jpg" />
+		<ITEM value="SS07" label="SS07 Olive" info1="Super_Silk" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS07.jpg" />
+		<ITEM value="SS08" label="SS08 Persian Blue" info1="Super_Silk" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS08.jpg" />
+		<ITEM value="SS09" label="SS09 Gothic Gery" info1="Super_Silk" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS09.jpg" />
+		<ITEM value="SS10" label="SS10 Mocha Brown" info1="Super_Silk" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS10.jpg" />
+		<ITEM value="SS11" label="SS11 Pebble Beach" info1="Super_Silk" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS11.jpg" />
+		<ITEM value="SS12" label="SS12 Coral Pink" info1="Super_Silk" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SS12.jpg" />
+		<ITEM value="SS13" label="SS13 Chocolate" info1="Super_Silk" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SS13.jpg" />
+		<ITEM value="SS14" label="SS14 Flower Wenge" info1="Super_Silk" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SS14.jpg" />
+		<ITEM value="SS15" label="SS15 Highland Pine" info1="Super_Silk" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SS15.jpg" />
+		<ITEM value="SS16" label="SS16 Lorriane Walnut" info1="Super_Silk" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SS16.jpg" />
+		<ITEM value="SS17" label="SS17 Clasic Planked Walnut" info1="Super_Silk" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SS17.jpg" />
+		<ITEM value="SS18" label="SS18 New Country Light" info1="Super_Silk" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SS18.jpg" />
+		<ITEM value="SS19" label="SS19 Moldau Acacia Light" info1="Super_Silk" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SS19.jpg" />
+		<ITEM value="SS20" label="SS20 Moldau Acacia Dark" info1="Super_Silk" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SS20.jpg" />
+		<ITEM value="SS21" label="SS21 Sapeli" info1="Super_Silk" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SS21.jpg" />
+		<ITEM value="SS22" label="SS22 Elegant Teak" info1="Super_Silk" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SS22.jpg" />
+
+
+		<!-- Super UV_HG MDF-->
+		<ITEM value="HG01" label="HG01 Super White" info1="UV_HG" info2="MDF" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG01.jpg" />
+		<ITEM value="HG02" label="HG02 Frosty White" info1="UV_HG" info2="MDF" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG02.jpg" />
+		<ITEM value="HG03" label="HG03 Slate Grey" info1="UV_HG" info2="MDF" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG03.jpg" />
+		<ITEM value="HG04" label="HG04 Night Grey" info1="UV_HG" info2="MDF" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG04.jpg" />
+		<ITEM value="HG05" label="HG05 Pastel Orange" info1="UV_HG" info2="MDF" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG05.jpg" />
+		<ITEM value="HG06" label="HG06 Irish Cream" info1="UV_HG" info2="MDF" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG06.jpg" />
+		<ITEM value="HG07" label="HG07 Olive" info1="UV_HG" info2="MDF" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG07.jpg" />
+		<ITEM value="HG08" label="HG08 Persian Blue" info1="UV_HG" info2="MDF" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG08.jpg" />
+		<ITEM value="HG10" label="HG10 Mocha Brown" info1="UV_HG" info2="MDF" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG10.jpg" />
+		<ITEM value="HG11" label="HG11 Pebble Beach" info1="UV_HG" info2="MDF" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG11.jpg" />
+		<ITEM value="HG13" label="HG13 Coral Pink" info1="UV_HG" info2="MDF" info3="Wood" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG13.jpg" />
+		<ITEM value="HG14" label="HG14 Flower Wenge" info1="UV_HG" info2="MDF" info3="Wood" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG14.jpg" />
+		<ITEM value="HG15" label="HG15 Highland Pine" info1="UV_HG" info2="MDF" info3="Wood" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG15.jpg" />
+		<ITEM value="HG16" label="HG16 Lorriane Walnut" info1="UV_HG" info2="MDF" info3="Wood" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG16.jpg" />
+		<ITEM value="HG17" label="HG17 Clasic Planked Walnut" info1="UV_HG" info2="MDF" info3="Wood" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG17.jpg" />
+		<ITEM value="HG18" label="HG18 New Country Light" info1="UV_HG" info2="MDF" info3="Wood" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG18.jpg" />
+		<ITEM value="HG19" label="HG19 Moldau Acacia Light" info1="UV_HG" info2="MDF" info3="Wood" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG19.jpg" />
+		<ITEM value="HG20" label="HG20 Moldau Acacia Dark" info1="UV_HG" info2="MDF" info3="Wood" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG20.jpg" />
+		<ITEM value="HG21" label="HG21 Sapeli" info1="UV_HG" info2="MDF" info3="Wood" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG21.jpg" />
+		<ITEM value="HG22" label="HG22 Elegant Teak" info1="UV_HG" info2="MDF" info3="Wood" info4="1_3mm" 	info5="1_3mm"	image1="img/material/HG22.jpg" />
+
+		<!-- Glossy_Acrylic HDHMR GA01-->
+		<ITEM value="GA01" label="GA01" info1="Glossy_Acrylic" info2="HDHMR" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA01.jpg" />
+		<ITEM value="GA02" label="GA02" info1="Glossy_Acrylic" info2="HDHMR" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA02.jpg" />
+
+		<!-- Glossy_Acrylic PLY GA01-->
+		<ITEM value="GA01" label="GA01 Slate" info1="Glossy_Acrylic" info2="PLY" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA01.jpg" />
+		<ITEM value="GA02" label="GA02 Iris Cream" info1="Glossy_Acrylic" info2="PLY" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA02.jpg" />
+		<ITEM value="GA03" label="GA03 Cappaccino" info1="Glossy_Acrylic" info2="PLY" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA03.jpg" />
+		<ITEM value="GA04" label="GA04 Golden Campico" info1="Glossy_Acrylic" info2="PLY" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA04.jpg" />
+		<ITEM value="GA05" label="GA05 Piano Black" info1="Glossy_Acrylic" info2="PLY" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA05.jpg" />
+		<ITEM value="GA06" label="GA06 Brown" info1="Glossy_Acrylic" info2="PLY" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA06.jpg" />
+		<ITEM value="GA07" label="GA07 Champagne" info1="Glossy_Acrylic" info2="PLY" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA07.jpg" />
+		<ITEM value="GA08" label="GA08 Parakeet" info1="Glossy_Acrylic" info2="PLY" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA08.jpg" />
+		<ITEM value="GA09" label="GA09 Misty Grey" info1="Glossy_Acrylic" info2="PLY" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA09.jpg" />
+		<ITEM value="GA10" label="GA10 Autuman Leaf" info1="Glossy_Acrylic" info2="PLY" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA10.jpg" />
+		<ITEM value="GA11" label="GA11 Solor White" info1="Glossy_Acrylic" info2="PLY" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA11.jpg" />
+
+		<!-- Glossy_Acrylic MDF GA01-->
+		<ITEM value="GA01" label="GA01" info1="Glossy_Acrylic" info2="MDF" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA01.jpg" />
+		<ITEM value="GA02" label="GA02" info1="Glossy_Acrylic" info2="MDF" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/GA02.jpg" />
+
+				<!-- Acrylic PLY AC01-->
+		<ITEM value="AC01" label="AC01 Bianco" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC01.jpg" />
+		<ITEM value="AC02" label="AC02 Avorio" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC02.jpg" />
+		<ITEM value="AC03" label="AC03 Caffe" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC03.jpg" />
+		<ITEM value="AC04" label="AC04 Cappuccino" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC04.jpg" />
+		<ITEM value="AC05" label="AC05 Pavone" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC05.jpg" />
+		<ITEM value="AC06" label="AC06 Tortora" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC06.jpg" />
+		<ITEM value="AC07" label="AC07 Melanzana" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC07.jpg" />
+		<ITEM value="AC08" label="AC08 Verde Olive" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC08.jpg" />
+		<ITEM value="AC09" label="AC09 Grigio" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC09.jpg" />
+		<ITEM value="AC10" label="AC10 Ivory" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC10.jpg" />
+		<ITEM value="AC11" label="AC11 Marde Perla" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC11.jpg" />
+		<ITEM value="AC12" label="AC12" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC12.jpg" />
+		<ITEM value="AC13" label="AC13" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC13.jpg" />
+		<ITEM value="AC14" label="AC14" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC14.jpg" />
+		<ITEM value="AC15" label="AC15" info1="Acrylic" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC15.jpg" />
+
+		<!-- Acrylic PLY AC01-->
+		<ITEM value="AC01" label="AC01 Bianco" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC01.jpg" />
+		<ITEM value="AC02" label="AC02 Avorio" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC02.jpg" />
+		<ITEM value="AC03" label="AC03 Caffe" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC03.jpg" />
+		<ITEM value="AC04" label="AC04 Cappuccino" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC04.jpg" />
+		<ITEM value="AC05" label="AC05 Pavone" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC05.jpg" />
+		<ITEM value="AC06" label="AC06 Tortora" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC06.jpg" />
+		<ITEM value="AC07" label="AC07 Melanzana" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC07.jpg" />
+		<ITEM value="AC08" label="AC08 Verde Olive" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC08.jpg" />
+		<ITEM value="AC09" label="AC09 Grigio" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC09.jpg" />
+		<ITEM value="AC10" label="AC10 Ivory" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC10.jpg" />
+		<ITEM value="AC11" label="AC11 Marde Perla" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC11.jpg" />
+		<ITEM value="AC12" label="AC12" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC12.jpg" />
+		<ITEM value="AC13" label="AC13" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC13.jpg" />
+		<ITEM value="AC14" label="AC14" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC14.jpg" />
+		<ITEM value="AC15" label="AC15" info1="Acrylic" info2="PLY" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/AC15.jpg" />
+
+		<!-- Matt_SF HDHMR SF01-->
+		<ITEM value="SF01" label="SF01" info1="Matt_SF" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SF01.jpg" />
+		<ITEM value="SF02" label="SF02" info1="Matt_SF" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SF02.jpg" />
+		<ITEM value="SF03" label="SF03" info1="Matt_SF" info2="HDHMR" info3="Solid" info4="2mm" 	info5="0_8mm"	image1="img/material/SF03.jpg" />
+
+		<!-- Matt_SF PLY SF01-->
+		<ITEM value="SF01" label="SF01 Pumic Grey" info1="Matt_SF" info2="PLY" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF01.jpg" />
+		<ITEM value="SF02" label="SF02 Pebble Grey" info1="Matt_SF" info2="PLY" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF02.jpg" />
+		<ITEM value="SF03" label="SF03 Misty Grey" info1="Matt_SF" info2="PLY" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF03.jpg" />
+		<ITEM value="SF04" label="SF04 Autumn Leaf" info1="Matt_SF" info2="PLY" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF04.jpg" />
+		<ITEM value="SF05" label="SF05 Peanut" info1="Matt_SF" info2="PLY" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF05.jpg" />
+		<ITEM value="SF06" label="SF06 Cappuccino" info1="Matt_SF" info2="PLY" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF06.jpg" />
+		<ITEM value="SF07" label="SF07 Brown" info1="Matt_SF" info2="PLY" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF07.jpg" />
+		<ITEM value="SF08" label="SF08 Chocolate" info1="Matt_SF" info2="PLY" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF08.jpg" />
+		<ITEM value="SF09" label="SF09 Blush" info1="Matt_SF" info2="PLY" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF09.jpg" />
+		<ITEM value="SF10" label="SF10 Dark Citrus" info1="Matt_SF" info2="PLY" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF10.jpg" />
+		<ITEM value="SF11" label="SF11 Shore" info1="Matt_SF" info2="PLY" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF11.jpg" />
+		<ITEM value="SF12" label="SF12 Midnight Blue" info1="Matt_SF" info2="PLY" info3="Solid" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF12.jpg" />
+		<ITEM value="SF13" label="SF13 Smooth Leaved Elm" info1="Matt_SF" info2="PLY" info3="Wood" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF13.jpg" />
+		<ITEM value="SF14" label="SF14 Natural Ashwood" info1="Matt_SF" info2="PLY" info3="Wood" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF14.jpg" />
+		<ITEM value="SF15" label="SF15 Classic Ashwood" info1="Matt_SF" info2="PLY" info3="Wood" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF15.jpg" />
+		<ITEM value="SF16" label="SF16 Urban Ashwood" info1="Matt_SF" info2="PLY" info3="Wood" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF16.jpg" />
+		<ITEM value="SF17" label="SF17 Montana Walnut" info1="Matt_SF" info2="PLY" info3="Wood" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF17.jpg" />
+		<ITEM value="SF18" label="SF18 Mellow Oak" info1="Matt_SF" info2="PLY" info3="Wood" 	info4="2mm" 	info5="0_8mm"	image1="img/material/SF18.jpg" />
+
+		<!-- Synchro HDHMR SY01-->
+		<ITEM value="SY01" label="SY01 Chamoias Tropical" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY01.jpg" />
+		<ITEM value="SY02" label="SY02 Canadian Walnut" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY02.jpg" />
+		<ITEM value="SY03" label="SY03 Peconic Chestnut" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY03.jpg" />
+		<!-- <ITEM value="SY04" label="SY04" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY04.jpg" /> -->
+		<ITEM value="SY05" label="SY05 Ebony Peat" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY05.jpg" />
+		<ITEM value="SY06" label="SY06 Saddle Brown Linosa" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY06.jpg" />
+		<ITEM value="SY07" label="SY07 Cltic Ebony" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY07.jpg" />
+		<ITEM value="SY08" label="SY08 Weser Prado Acacia" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY08.jpg" />
+		<ITEM value="SY09" label="SY09 Fondle Samsara Maple" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY09.jpg" />
+		<ITEM value="SY10" label="SY10 Cltic Ebony" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY10.jpg" />
+		<ITEM value="SY11" label="SY11 Scandinavian Genesis Oak" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY11.jpg" />
+		<ITEM value="SY12" label="SY12 Crescent Holzacacia" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY12.jpg" />
+		<ITEM value="SY13" label="SY13 Russet Tropical" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY13.jpg" />
+		<ITEM value="SY14" label="SY14 Canadian Walnut" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY14.jpg" />
+		<ITEM value="SY15" label="SY15 Canadian Walnut" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY15.jpg" />
+		<ITEM value="SY16" label="SY16 Penalas Cottage Pine" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY16.jpg" />
+		<ITEM value="SY17" label="SY17 Cezarous Oak" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY17.jpg" />
+		<ITEM value="SY18" label="SY18 Cleeve Bal Tic Elm" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY18.jpg" />
+		<ITEM value="SY19" label="SY19 Bran Krakato" info1="Synchro" info2="HDHMR" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY19.jpg" />
+
+		<!-- Synchro PLY SY01-->
+		<ITEM value="SY01" label="SY01" info1="Synchro" info2="PLY" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY01.jpg" />
+		<ITEM value="SY02" label="SY02" info1="Synchro" info2="PLY" info3="Wood" info4="2mm" 	info5="0_8mm"	image1="img/material/SY02.jpg" />
+
+		<!-- Soft_Touch MDF ST01-->
+		<ITEM value="ST01" label="ST01 Bianco" info1="Soft_Touch" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/ST01.jpg" />
+		<ITEM value="ST02" label="ST02 Peach" info1="Soft_Touch" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/ST02.jpg" />
+		<ITEM value="ST03" label="ST03 Olive" info1="Soft_Touch" info2="MDF" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/ST03.jpg" />
+		<ITEM value="ST04" label="ST04 Antique Ruby" info1="Soft_Touch" info2="MDF" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/ST04.jpg" />
+		<ITEM value="ST05" label="ST05 Brown Fever" info1="Soft_Touch" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/ST05.jpg" />
+		<ITEM value="ST06" label="ST06 Moro" info1="Soft_Touch" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/ST06.jpg" />
+		<ITEM value="ST07" label="ST07 Deep Space" info1="Soft_Touch" info2="MDF" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/ST07.jpg" />
+		<ITEM value="ST08" label="ST08 Jungle Green" info1="Soft_Touch" info2="MDF" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/ST08.jpg" />
+		<ITEM value="ST09" label="ST09" info1="Soft_Touch" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/ST09.jpg" />
+		<ITEM value="ST10" label="ST10" info1="Soft_Touch" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/ST10.jpg" />		
+		<ITEM value="ST11" label="ST11" info1="Soft_Touch" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/ST11.jpg" />		
+		<ITEM value="ST12" label="ST12" info1="Soft_Touch" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/ST12.jpg" />		
+		<ITEM value="ST13" label="ST13" info1="Soft_Touch" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/ST13.jpg" />		
+		<ITEM value="ST14" label="ST14" info1="Soft_Touch" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/ST14.jpg" />		
+		<ITEM value="ST15" label="ST15" info1="Soft_Touch" info2="MDF" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/ST15.jpg" />
+
+		<!-- Alvic_PG HDHMR PG01-->
+		<ITEM value="PG01" label="PG01" info1="Alvic_PG" info2="HDHMR" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/PG01.jpg" />
+		<ITEM value="PG02" label="PG02" info1="Alvic_PG" info2="HDHMR" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/PG02.jpg" />
+		<ITEM value="PG03" label="PG03" info1="Alvic_PG" info2="HDHMR" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/PG03.jpg" />
+		<ITEM value="PG04" label="PG04" info1="Alvic_PG" info2="HDHMR" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/PG04.jpg" />
+		<ITEM value="PG05" label="PG05" info1="Alvic_PG" info2="HDHMR" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/PG05.jpg" />
+		<ITEM value="PG06" label="PG06" info1="Alvic_PG" info2="HDHMR" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/PG06.jpg" />
+		<ITEM value="PG07" label="PG07" info1="Alvic_PG" info2="HDHMR" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/PG07.jpg" />
+		<ITEM value="PG08" label="PG08" info1="Alvic_PG" info2="HDHMR" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/PG08.jpg" />
+		<ITEM value="PG09" label="PG09" info1="Alvic_PG" info2="HDHMR" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/PG09.jpg" />
+		<ITEM value="PG10" label="PG10" info1="Alvic_PG" info2="HDHMR" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/PG010.jpg" />
+		<ITEM value="PG11" label="PG11" info1="Alvic_PG" info2="HDHMR" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/PG11.jpg" />
+		<ITEM value="PG12" label="PG12" info1="Alvic_PG" info2="HDHMR" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/PG12.jpg" />
+		<ITEM value="PG13" label="PG13" info1="Alvic_PG" info2="HDHMR" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/PG13.jpg" />
+
+		<!-- Alvic_SM HDHMR SM01-->
+		<ITEM value="SM01" label="SM01" info1="Alvic_SM" info2="HDHMR" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/SM01.jpg" />
+		<ITEM value="SM02" label="SM02" info1="Alvic_SM" info2="HDHMR" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/SM02.jpg" />
+		<ITEM value="SM03" label="SM03" info1="Alvic_SM" info2="HDHMR" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/SM03.jpg" />
+		<ITEM value="SM04" label="SM04" info1="Alvic_SM" info2="HDHMR" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/SM04.jpg" />
+		<ITEM value="SM05" label="SM05" info1="Alvic_SM" info2="HDHMR" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/SM05.jpg" />
+		<ITEM value="SM06" label="SM06" info1="Alvic_SM" info2="HDHMR" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/SM06.jpg" />
+
+		<!-- Dead_Matt HDHMR DM01-->
+		<ITEM value="DM01" label="DM01" info1="Dead_Matt" info2="HDHMR" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/DM01.jpg" />
+		<ITEM value="DM02" label="DM02" info1="Dead_Matt" info2="HDHMR" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/DM02.jpg" />
+
+		<!-- Brilliant_HG HDHMR BHG01-->
+		<ITEM value="BHG01" label="BHG01" info1="Brilliant_HG" info2="HDHMR" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/BHG01.jpg" />
+		<ITEM value="BHG02" label="BHG02" info1="Brilliant_HG" info2="HDHMR" info3="Wood" info4="1_3mm" 	info5="1_3mm"	image1="img/material/BHG02.jpg" />
+
+		<!-- Brilliant_HG PLY BHG01-->
+		<ITEM value="BHG01" label="BHG01" info1="Brilliant_HG" info2="PLY" info3="Solid" info4="1_3mm" 	info5="1_3mm"	image1="img/material/BHG01.jpg" />
+		<ITEM value="BHG02" label="BHG02" info1="Brilliant_HG" info2="PLY" info3="Wood" info4="1_3mm" 	info5="1_3mm"	image1="img/material/BHG02.jpg" />
+
+		<!-- Brilliant_SM HDHMR BSM01-->
+		<ITEM value="BSM01" label="BSM01" info1="Brilliant_SM" info2="HDHMR" info3="Solid" 	info4="1mm" 	info5="1mm"	image1="img/material/BSM01.jpg" />
+		<ITEM value="BSM02" label="BSM02" info1="Brilliant_SM" info2="HDHMR" info3="Wood" 	info4="1mm" 	info5="1mm"	image1="img/material/BSM02.jpg" />
+
+		<!-- Brilliant_SM PLY BSM01-->
+		<ITEM value="BSM01" label="BSM01" info1="Brilliant_SM" info2="PLY" info3="Solid" 	info4="1mm" 	info5="1mm"	image1="img/material/BSM01.jpg" />
+		<ITEM value="BSM02" label="BSM02" info1="Brilliant_SM" info2="PLY" info3="Wood" 	info4="1mm" 	info5="1mm"	image1="img/material/BSM02.jpg" />
+
+		<!-- OneSkin_HG MDF OSHG01-->
+		<ITEM value="OSHG01" label="OSHG01" info1="OneSkin_HG" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/OSHG01.jpg" />
+		<ITEM value="OSHG02" label="OSHG02" info1="OneSkin_HG" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/OSHG02.jpg" />
+		<ITEM value="OSHG03" label="OSHG03" info1="OneSkin_HG" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/OSHG03.jpg" />
+		<ITEM value="OSHG04" label="OSHG04" info1="OneSkin_HG" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/OSHG04.jpg" />
+		<ITEM value="OSHG05" label="OSHG05" info1="OneSkin_HG" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/OSHG05.jpg" />
+		<ITEM value="OSHG06" label="OSHG06" info1="OneSkin_HG" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/OSHG06.jpg" />
+		<ITEM value="OSHG07" label="OSHG07" info1="OneSkin_HG" info2="MDF" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/OSHG07.jpg" />
+		<ITEM value="OSHG08" label="OSHG08" info1="OneSkin_HG" info2="MDF" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/OSHG08.jpg" />
+		<ITEM value="OSHG09" label="OSHG09" info1="OneSkin_HG" info2="MDF" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/OSHG09.jpg" />
+		<ITEM value="OSHG10" label="OSHG10" info1="OneSkin_HG" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSHG10.jpg" />
+		<ITEM value="OSHG11" label="OSHG11" info1="OneSkin_HG" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSHG11.jpg" />
+		<ITEM value="OSHG12" label="OSHG12" info1="OneSkin_HG" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSHG12.jpg" />
+		<ITEM value="OSHG13" label="OSHG13" info1="OneSkin_HG" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSHG13.jpg" />
+		<ITEM value="OSHG14" label="OSHG14" info1="OneSkin_HG" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSHG14.jpg" />
+		<ITEM value="OSHG15" label="OSHG15" info1="OneSkin_HG" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSHG15.jpg" />
+		<ITEM value="OSHG16" label="OSHG16" info1="OneSkin_HG" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSHG16.jpg" />
+		<ITEM value="OSHG17" label="OSHG17" info1="OneSkin_HG" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSHG17.jpg" />
+		<ITEM value="OSHG18" label="OSHG18" info1="OneSkin_HG" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSHG18.jpg" />
+
+		<!-- OneSkin_SM MDF OSSM01-->
+		<ITEM value="OSSM01" label="OSSM01" info1="OneSkin_SM" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/OSSM01.jpg" />
+		<ITEM value="OSSM02" label="OSSM02" info1="OneSkin_SM" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/OSSM02.jpg" />		
+		<ITEM value="OSSM03" label="OSSM03" info1="OneSkin_SM" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/OSSM03.jpg" />
+		<ITEM value="OSSM04" label="OSSM04" info1="OneSkin_SM" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/OSSM04.jpg" />
+		<ITEM value="OSSM05" label="OSSM05" info1="OneSkin_SM" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/OSSM05.jpg" />
+		<ITEM value="OSSM06" label="OSSM06" info1="OneSkin_SM" info2="MDF" info3="Solid" info4="1mm" 	info5="1mm"	image1="img/material/OSSM06.jpg" />
+		<ITEM value="OSSM07" label="OSSM07" info1="OneSkin_SM" info2="MDF" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/OSSM07.jpg" />
+		<ITEM value="OSSM08" label="OSSM08" info1="OneSkin_SM" info2="MDF" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/OSSM08.jpg" />
+		<ITEM value="OSSM09" label="OSSM09" info1="OneSkin_SM" info2="MDF" info3="Wood" info4="1mm" 	info5="1mm"	image1="img/material/OSSM09.jpg" />
+		<ITEM value="OSSM10" label="OSSM10" info1="OneSkin_SM" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSSM10.jpg" />
+		<ITEM value="OSSM11" label="OSSM11" info1="OneSkin_SM" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSSM11.jpg" />
+		<ITEM value="OSSM12" label="OSSM12" info1="OneSkin_SM" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSSM12.jpg" />
+		<ITEM value="OSSM13" label="OSSM13" info1="OneSkin_SM" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSSM13.jpg" />
+		<ITEM value="OSSM14" label="OSSM14" info1="OneSkin_SM" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSSM14.jpg" />
+		<ITEM value="OSSM15" label="OSSM15" info1="OneSkin_SM" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSSM15.jpg" />
+		<ITEM value="OSSM16" label="OSSM16" info1="OneSkin_SM" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSSM16.jpg" />
+		<ITEM value="OSSM17" label="OSSM17" info1="OneSkin_SM" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSSM17.jpg" />
+		<ITEM value="OSSM18" label="OSSM18" info1="OneSkin_SM" info2="MDF" info3="Special_Effect" info4="1mm" 	info5="1mm"	image1="img/material/OSSM18.jpg" />
+
+
+	</PART>
+
+	<!---	*************************** Shutter Finishes Logic*****************************************************************************************	-->
+
+	<PART name="PART_SHUTTER_FINISH_LOGIC">
+		<COMMAND>"FIELD(BU_Shutter_Finish).info1List(FIELD(BU_Shutter_Core_Material).info1)"</COMMAND>
+		<COMMAND>"FIELD(BU_Texture).info1List(FIELD(BU_Shutter_Finish).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(BU_Front1).Info1List(FIELD(BU_Shutter_Finish).value)"</COMMAND>
+		<COMMAND>"FIELD(BU_Front1).filterInfo2List(FIELD(BU_Shutter_Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(BU_Front1).filterInfo3List(FIELD(BU_Texture).info2)"</COMMAND>
+<!-- Variable Values Logic -->
+		<COMMAND>"FIELD(BU_Front1_Mat).value=FIELD(BU_Front1).value+'_'+FIELD(BU_Shutter_Core_Material).value"</COMMAND>
+		<COMMAND>"FIELD(BU_Front1_Prf).value=FIELD(BU_Front1).value+'('+FIELD(BU_Front1).info4+')'"</COMMAND>
+	
+	</PART>
+
+
+	<!---	*************************** Shutter Finishes Logic_1*****************************************************************************************	-->
+
+	<PART name="PART_SHUTTER_FINISH_LOGIC_1">
+
+		<!-- FIELD(name).ItemList(ItemName1,ItemName2,ItemName3, .....) -->
+		
+		<!-- <COMMAND>"FIELD(BU_Shutter_Core_Material).Info1List(FIELD(BU_Shutter_Finish_1).value)"</COMMAND> -->
+		<COMMAND>"FIELD(BU_Shutter_Finish_1).info1List(FIELD(BU_Shutter_Core_Material_1).info1)"</COMMAND>
+		<COMMAND>"FIELD(BU_Texture_1).info1List(FIELD(BU_Shutter_Finish_1).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(BU_Front2).info1List(FIELD(BU_Shutter_Finish_1).value)"</COMMAND>
+		<COMMAND>"FIELD(BU_Front2).filterinfo2List(FIELD(BU_Shutter_Core_Material_1).value)"</COMMAND>
+		<COMMAND>"FIELD(BU_Front2).filterinfo3List(FIELD(BU_Texture_1).info2)"</COMMAND>
+
+		<!-- Variable Values Logic -->
+		<COMMAND>"FIELD(BU_Front2_Mat).value=FIELD(BU_Front2).value+'_'+FIELD(BU_Shutter_Core_Material_1).value"</COMMAND>
+		<COMMAND>"FIELD(BU_Front2_Prf).value=FIELD(BU_Front2).value+'('+FIELD(BU_Front2).info4+')'"</COMMAND>
+
+	</PART>
+
+	<PART name="PART_DIFFERENT_SHUTTER_COLOR">
+		<IF>
+			<EQ expr1="FIELD(BU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(BU_Shutter_Finish_1).value=FIELD(BU_Shutter_Finish).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Shutter_Core_Material_1).value=FIELD(BU_Shutter_Core_Material).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Texture_1).value=FIELD(BU_Texture).value"</COMMAND>
+			</THEN>
+
+		</IF>
+
+
+		<IF>
+			<EQ expr1="FIELD(BU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>	
+				<COMMAND>"FIELD(Right_Shutter_Details).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Left_Shutter_Details).label=Shutter Details"</COMMAND>
+			</THEN>
+			<ELSE>	
+				<COMMAND>"FIELD(Right_Shutter_Details).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(Left_Shutter_Details).label=Left Shutter Details"</COMMAND>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(BU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(BU_Front2).value=FIELD(BU_Front1).value"</COMMAND>
+				<!-- Variable Values Logic -->
+				<COMMAND>"FIELD(BU_Front2_Mat).value=FIELD(BU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Front2_Prf).value=FIELD(BU_Front1_Prf).value"</COMMAND>
+			</THEN>
+
+		</IF>
+
+	</PART>
+
+	<PART name="PART_DIFFERENT_DRAWER_SHUTTER_COLOR">
+		<IF>
+			<EQ expr1="FIELD(BU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(BU_Shutter_Finish_1).value=FIELD(BU_Shutter_Finish).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Shutter_Core_Material_1).value=FIELD(BU_Shutter_Core_Material).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Texture_1).value=FIELD(BU_Texture).value"</COMMAND>
+			</THEN>
+
+		</IF>
+
+
+		<IF>
+			<EQ expr1="FIELD(BU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>	
+				<COMMAND>"FIELD(Right_Shutter_Details).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Left_Shutter_Details).label=Fascia Details"</COMMAND>
+			</THEN>
+			<ELSE>	
+				<COMMAND>"FIELD(Right_Shutter_Details).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(Left_Shutter_Details).label=Top Drawer Fascia Details"</COMMAND>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(BU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(BU_Front2).value=FIELD(BU_Front1).value"</COMMAND>
+				<!-- Variable Values Logic -->
+				<COMMAND>"FIELD(BU_Front2_Mat).value=FIELD(BU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Front2_Prf).value=FIELD(BU_Front1_Prf).value"</COMMAND>
+			</THEN>
+
+		</IF>
+
+	</PART>
+
+
+	<PART name="GLOBAL_PART_DIFFERENT_SHUTTER_COLOR">
+		<IF>
+			<EQ expr1="FIELD(BU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(BU_Shutter_Finish_1).value=FIELD(BU_Shutter_Finish).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Shutter_Core_Material_1).value=FIELD(BU_Shutter_Core_Material).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Texture_1).value=FIELD(BU_Texture).value"</COMMAND>
+			</THEN>
+
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(BU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>	
+				<COMMAND>"FIELD(BU_Right_Shutter_Details).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(BU_Left_Shutter_Details).label=Shutter Details"</COMMAND>
+			</THEN>
+			<ELSE>	
+				<COMMAND>"FIELD(BU_Right_Shutter_Details).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(BU_Left_Shutter_Details).label=Left Shutter Details"</COMMAND>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(BU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(BU_Front2).value=FIELD(BU_Front1).value"</COMMAND>
+				<!-- Variable Values Logic -->
+				<COMMAND>"FIELD(BU_Front2_Mat).value=FIELD(BU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(BU_Front2_Prf).value=FIELD(BU_Front1_Prf).value"</COMMAND>
+			</THEN>
+
+		</IF>
+
+	</PART>
+
+	<!---	*************************** WU Shutter Finishes Logic*****************************************************************************************	-->
+
+	<PART name="PART_WU_SHUTTER_FINISH_LOGIC">
+		
+		<COMMAND>"FIELD(WU_Shutter_Finish).info1List(FIELD(WU_Shutter_Core_Material).info1)"</COMMAND>
+		<COMMAND>"FIELD(WU_Texture).info1List(FIELD(WU_Shutter_Finish).info2)"</COMMAND> 
+
+		<COMMAND>"FIELD(WU_Front1).Info1List(FIELD(WU_Shutter_Finish).value)"</COMMAND>
+		<COMMAND>"FIELD(WU_Front1).filterInfo2List(FIELD(WU_Shutter_Core_Material).value)"</COMMAND>
+		<COMMAND>"FIELD(WU_Front1).filterInfo3List(FIELD(WU_Texture).info2)"</COMMAND>
+	<!-- Variable Values Logic -->
+		<COMMAND>"FIELD(WU_Front1_Mat).value=FIELD(WU_Front1).value+'_'+FIELD(WU_Shutter_Core_Material).value"</COMMAND>
+		<COMMAND>"FIELD(WU_Front1_Prf).value=FIELD(WU_Front1).value+'('+FIELD(WU_Front1).info4+')'"</COMMAND>
+	</PART>
+
+	<!---	***************************Wall Shutter Finishes Logic_1*****************************************************************************************	-->
+
+	<PART name="PART_WU_SHUTTER_FINISH_LOGIC_1">
+
+		<COMMAND>"FIELD(WU_Shutter_Finish_1).info1List(FIELD(WU_Shutter_Core_Material_1).info1)"</COMMAND>
+		<COMMAND>"FIELD(WU_Texture_1).info1List(FIELD(WU_Shutter_Finish_1).info2)"</COMMAND> 
+		
+		<COMMAND>"FIELD(WU_Front2).Info1List(FIELD(WU_Shutter_Finish_1).value)"</COMMAND>
+		<COMMAND>"FIELD(WU_Front2).filterInfo2List(FIELD(WU_Shutter_Core_Material_1).value)"</COMMAND>
+		<COMMAND>"FIELD(WU_Front2).filterInfo3List(FIELD(WU_Texture_1).info2)"</COMMAND>
+		<!-- Variable Values Logic -->
+		<COMMAND>"FIELD(WU_Front2_Mat).value=FIELD(WU_Front2).value+'_'+FIELD(WU_Shutter_Core_Material_1).value"</COMMAND>
+		<COMMAND>"FIELD(WU_Front2_Prf).value=FIELD(WU_Front2).value+'('+FIELD(WU_Front2).info4+')'"</COMMAND>
+
+	</PART>
+
+	<PART name="PART_WU_DIFFERENT_SHUTTER_COLOR">
+		<IF>
+			<EQ expr1="FIELD(WU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(WU_Shutter_Finish_1).value=FIELD(WU_Shutter_Finish).value"</COMMAND>
+				<COMMAND>"FIELD(WU_Shutter_Core_Material_1).value=FIELD(WU_Shutter_Core_Material).value"</COMMAND>
+				<COMMAND>"FIELD(WU_Texture_1).value=FIELD(WU_Texture).value"</COMMAND>
+			</THEN>
+
+		</IF>
+
+
+		<IF>
+			<EQ expr1="FIELD(WU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>	
+				<COMMAND>"FIELD(Right_Shutter_Details).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(Left_Shutter_Details).label=Shutter Details"</COMMAND>
+			</THEN>
+			<ELSE>	
+				<COMMAND>"FIELD(Right_Shutter_Details).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(Left_Shutter_Details).label=Left Shutter Details"</COMMAND>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(WU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(WU_Front2).value=FIELD(WU_Front1).value"</COMMAND>
+				<!-- Variable Values Logic -->
+				<COMMAND>"FIELD(WU_Front2_Mat).value=FIELD(WU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(WU_Front2_Prf).value=FIELD(WU_Front1_Prf).value"</COMMAND>
+			</THEN>
+
+		</IF>
+
+	</PART>
+
+	<PART name="GLOBAL_PART_WU_DIFFERENT_SHUTTER_COLOR">
+		<IF>
+			<EQ expr1="FIELD(WU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(WU_Shutter_Finish_1).value=FIELD(WU_Shutter_Finish).value"</COMMAND>
+				<COMMAND>"FIELD(WU_Shutter_Core_Material_1).value=FIELD(WU_Shutter_Core_Material).value"</COMMAND>
+				<COMMAND>"FIELD(WU_Texture_1).value=FIELD(WU_Texture).value"</COMMAND>
+			</THEN>
+
+		</IF>	
+		
+		<IF>
+			<EQ expr1="FIELD(WU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>	
+				<COMMAND>"FIELD(WU_Right_Shutter_Details).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(WU_Left_Shutter_Details).label=Shutter Details"</COMMAND>
+			</THEN>
+			<ELSE>	
+				<COMMAND>"FIELD(WU_Right_Shutter_Details).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(WU_Left_Shutter_Details).label=Left Shutter Details"</COMMAND>
+			</ELSE>
+		</IF>
+
+		<IF>
+			<EQ expr1="FIELD(WU_Different_Fascia_Colour).value" expr2="NO" />
+			<THEN>
+				<COMMAND>"FIELD(WU_Front2).value=FIELD(WU_Front1).value"</COMMAND>
+				<!-- Variable Values Logic -->
+				<COMMAND>"FIELD(WU_Front2_Mat).value=FIELD(WU_Front1_Mat).value"</COMMAND>
+				<COMMAND>"FIELD(WU_Front2_Prf).value=FIELD(WU_Front1_Prf).value"</COMMAND>
+			</THEN>
+
+		</IF>
+
+	</PART>
+
+<!---	***************************TU Shutter Finishes Logic*****************************************************************************************	-->
+
+<PART name="PART_TU_SHUTTER_FINISH_LOGIC">
+	<COMMAND>"FIELD(TU_Shutter_Finish).info1List(FIELD(TU_Shutter_Core_Material).info1)"</COMMAND>
+	<COMMAND>"FIELD(TU_Texture).info1List(FIELD(TU_Shutter_Finish).info2)"</COMMAND> 
+	<COMMAND>"FIELD(TU_Front1).Info1List(FIELD(TU_Shutter_Finish).value)"</COMMAND>
+	<COMMAND>"FIELD(TU_Front1).filterInfo2List(FIELD(TU_Shutter_Core_Material).value)"</COMMAND>
+	<COMMAND>"FIELD(TU_Front1).filterInfo3List(FIELD(TU_Texture).info2)"</COMMAND>
+	<!-- Variable Values Logic -->
+	<COMMAND>"FIELD(TU_Front1_Mat).value=FIELD(TU_Front1).value+'_'+FIELD(TU_Shutter_Core_Material).value"</COMMAND>
+	<COMMAND>"FIELD(TU_Front1_Prf).value=FIELD(TU_Front1).value+'('+FIELD(TU_Front1).info4+')'"</COMMAND>
+
+
+</PART>
+
+<!---	*************************** TU Shutter Finishes Logic_1*****************************************************************************************	-->
+
+<PART name="PART_TU_SHUTTER_FINISH_LOGIC_1">
+	<COMMAND>"FIELD(TU_Shutter_Finish_1).info1List(FIELD(TU_Shutter_Core_Material_1).info1)"</COMMAND>
+	<COMMAND>"FIELD(TU_Texture_1).info1List(FIELD(TU_Shutter_Finish_1).info2)"</COMMAND> 
+	<COMMAND>"FIELD(TU_Front2).Info1List(FIELD(TU_Shutter_Finish_1).value)"</COMMAND>
+	<COMMAND>"FIELD(TU_Front2).filterInfo2List(FIELD(TU_Shutter_Core_Material_1).value)"</COMMAND>
+	<COMMAND>"FIELD(TU_Front2).filterInfo3List(FIELD(TU_Texture_1).info2)"</COMMAND>
+	<!-- Variable Values Logic -->
+	<COMMAND>"FIELD(TU_Front2_Mat).value=FIELD(TU_Front2).value+'_'+FIELD(TU_Shutter_Core_Material_1).value"</COMMAND>
+	<COMMAND>"FIELD(TU_Front2_Prf).value=FIELD(TU_Front2).value+'('+FIELD(TU_Front2).info4+')'"</COMMAND>
+
+
+</PART>
+
+<PART name="PART_TU_DIFFERENT_SHUTTER_COLOR">
+	<IF>
+		<EQ expr1="FIELD(TU_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>
+			<COMMAND>"FIELD(TU_Shutter_Finish_1).value=FIELD(TU_Shutter_Finish).value"</COMMAND>
+			<COMMAND>"FIELD(TU_Shutter_Core_Material_1).value=FIELD(TU_Shutter_Core_Material).value"</COMMAND>
+			<COMMAND>"FIELD(TU_Texture_1).value=FIELD(TU_Texture).value"</COMMAND>
+		</THEN>
+
+	</IF>
+
+	<IF>
+		<EQ expr1="FIELD(TU_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>	
+			<COMMAND>"FIELD(Right_Shutter_Details).visible=FALSE"</COMMAND>
+			<COMMAND>"FIELD(Left_Shutter_Details).label=Shutter Details"</COMMAND>
+		</THEN>
+		<ELSE>	
+			<COMMAND>"FIELD(Right_Shutter_Details).visible=TRUE"</COMMAND>
+			<COMMAND>"FIELD(Left_Shutter_Details).label=Left Shutter Details"</COMMAND>
+		</ELSE>
+	</IF>
+
+	<IF>
+		<EQ expr1="FIELD(TU_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>
+			<COMMAND>"FIELD(TU_Front2).value=FIELD(TU_Front1).value"</COMMAND>
+			<!-- Variable Values Logic -->
+			<COMMAND>"FIELD(TU_Front2_Mat).value=FIELD(TU_Front1_Mat).value"</COMMAND>
+			<COMMAND>"FIELD(TU_Front2_Prf).value=FIELD(TU_Front1_Prf).value"</COMMAND>
+		</THEN>
+
+	</IF>
+
+</PART>
+
+<PART name="PART_TU_TB_DIFFERENT_SHUTTER_COLOR">
+	<IF>
+		<EQ expr1="FIELD(TU_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>
+			<COMMAND>"FIELD(TU_Shutter_Finish_1).value=FIELD(TU_Shutter_Finish).value"</COMMAND>
+			<COMMAND>"FIELD(TU_Shutter_Core_Material_1).value=FIELD(TU_Shutter_Core_Material).value"</COMMAND>
+			<COMMAND>"FIELD(TU_Texture_1).value=FIELD(TU_Texture).value"</COMMAND>
+		</THEN>
+
+	</IF>
+
+	<IF>
+		<EQ expr1="FIELD(TU_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>	
+			<COMMAND>"FIELD(Top_Shutter_Details).visible=FALSE"</COMMAND>
+			<COMMAND>"FIELD(Bottom_Shutter_Details).label=Shutter Details"</COMMAND>
+		</THEN>
+		<ELSE>	
+			<COMMAND>"FIELD(Top_Shutter_Details).visible=TRUE"</COMMAND>
+			<COMMAND>"FIELD(Bottom_Shutter_Details).label=Bottom Shutter Details"</COMMAND>
+		</ELSE>
+	</IF>
+
+	<IF>
+		<EQ expr1="FIELD(TU_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>
+			<COMMAND>"FIELD(TU_Front2).value=FIELD(TU_Front1).value"</COMMAND>
+			<!-- Variable Values Logic -->
+			<COMMAND>"FIELD(TU_Front2_Mat).value=FIELD(TU_Front1_Mat).value"</COMMAND>
+			<COMMAND>"FIELD(TU_Front2_Prf).value=FIELD(TU_Front1_Prf).value"</COMMAND>
+		</THEN>
+
+	</IF>
+
+</PART>
+
+<PART name="GLOBAL_PART_TU_DIFFERENT_SHUTTER_COLOR">
+	<IF>
+		<EQ expr1="FIELD(TU_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>
+			<COMMAND>"FIELD(TU_Shutter_Finish_1).value=FIELD(TU_Shutter_Finish).value"</COMMAND>
+			<COMMAND>"FIELD(TU_Shutter_Core_Material_1).value=FIELD(TU_Shutter_Core_Material).value"</COMMAND>
+			<COMMAND>"FIELD(TU_Texture_1).value=FIELD(TU_Texture).value"</COMMAND>
+		</THEN>
+
+	</IF>
+
+	<IF>
+		<EQ expr1="FIELD(TU_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>	
+			<COMMAND>"FIELD(TU_Right_Shutter_Details).visible=FALSE"</COMMAND>
+			<COMMAND>"FIELD(TU_Left_Shutter_Details).label=Shutter Details"</COMMAND>
+		</THEN>
+		<ELSE>	
+			<COMMAND>"FIELD(TU_Right_Shutter_Details).visible=TRUE"</COMMAND>
+			<COMMAND>"FIELD(TU_Left_Shutter_Details).label=Left Shutter Details"</COMMAND>
+		</ELSE>
+	</IF>
+
+	<IF>
+		<EQ expr1="FIELD(TU_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>
+			<COMMAND>"FIELD(TU_Front2).value=FIELD(TU_Front1).value"</COMMAND>
+			<!-- Variable Values Logic -->
+			<COMMAND>"FIELD(TU_Front2_Mat).value=FIELD(TU_Front1_Mat).value"</COMMAND>
+			<COMMAND>"FIELD(TU_Front2_Prf).value=FIELD(TU_Front1_Prf).value"</COMMAND>
+		</THEN>
+
+	</IF>
+
+</PART>
+
+
+<!---	*************************** NEW Wardrobe Shutter 1 Finishes Logic*****************************************************************************************	-->
+<PART name="PART_WRD_SHUTTER_1_FINISH_Logic">
+		<COMMAND>"FIELD(WRD_Shutter_Finish_1).info1List(FIELD(WRD_Shutter_Core_Material_1).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_1).info1List(FIELD(WRD_Shutter_Finish_1).info2)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1).Info1List(FIELD(WRD_Shutter_Finish_1).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1).filterInfo2List(FIELD(WRD_Shutter_Core_Material_1).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front1).filterInfo3List(FIELD(WRD_Texture_1).info2)"</COMMAND>
+		<COMMAND>"FIELD(Mat_Front_1).value=FIELD(WRD_Front1).value+'_'+FIELD(WRD_Shutter_Core_Material_1).value"</COMMAND>
+		<COMMAND>"FIELD(Prf_Front_1).value=FIELD(WRD_Front1).value+'('+FIELD(WRD_Front1).info4+')'"</COMMAND>
+</PART>
+
+<!---	*************************** NEW Wardrobe Shutter 2 Finishes Logic*****************************************************************************************	-->
+<PART name="PART_WRD_SHUTTER_2_FINISH_Logic">
+
+		<COMMAND>"FIELD(WRD_Shutter_Finish_2).info1List(FIELD(WRD_Shutter_Core_Material_2).info1)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Texture_2).info1List(FIELD(WRD_Shutter_Finish_2).info2)"</COMMAND> 
+		<COMMAND>"FIELD(WRD_Front2).Info1List(FIELD(WRD_Shutter_Finish_2).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front2).filterInfo2List(FIELD(WRD_Shutter_Core_Material_2).value)"</COMMAND>
+		<COMMAND>"FIELD(WRD_Front2).filterInfo3List(FIELD(WRD_Texture_2).info2)"</COMMAND>
+		<COMMAND>"FIELD(Mat_Front_2).value=FIELD(WRD_Front2).value+'_'+FIELD(WRD_Shutter_Core_Material_2).value"</COMMAND>
+		<COMMAND>"FIELD(Prf_Front_2).value=FIELD(WRD_Front2).value+'('+FIELD(WRD_Front2).info4+')'"</COMMAND>
+</PART>
+
+<!---	*************************** NEW Wardrobe Shutter 3 Finishes Logic*****************************************************************************************	-->
+<PART name="PART_WRD_SHUTTER_3_FINISH_Logic">
+	<COMMAND>"FIELD(WRD_Shutter_Finish_3).info1List(FIELD(WRD_Shutter_Core_Material_3).info1)"</COMMAND>
+	<COMMAND>"FIELD(WRD_Texture_3).info1List(FIELD(WRD_Shutter_Finish_3).info2)"</COMMAND> 
+	<COMMAND>"FIELD(WRD_Front3).Info1List(FIELD(WRD_Shutter_Finish_3).value)"</COMMAND>
+	<COMMAND>"FIELD(WRD_Front3).filterInfo2List(FIELD(WRD_Shutter_Core_Material_3).value)"</COMMAND>
+	<COMMAND>"FIELD(WRD_Front3).filterInfo3List(FIELD(WRD_Texture_3).info2)"</COMMAND>
+	<COMMAND>"FIELD(Mat_Front_3).value=FIELD(WRD_Front3).value+'_'+FIELD(WRD_Shutter_Core_Material_3).value"</COMMAND>
+	<COMMAND>"FIELD(Prf_Front_3).value=FIELD(WRD_Front3).value+'('+FIELD(WRD_Front3).info4+')'"</COMMAND>
+</PART>
+
+
+<!---	*************************** New Openable Shutter Double door Finishes Logic*****************************************************************************************	-->
+
+<PART name="PART_WRD_DIFFERENT_SHUTTER_COLOR_DD">
+	<IF>
+		<EQ expr1="FIELD(WRD_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>
+			<COMMAND>"FIELD(WRD_Shutter_Finish_3).value=FIELD(WRD_Shutter_Finish_1).value"</COMMAND>
+			<COMMAND>"FIELD(WRD_Shutter_Core_Material_3).value=FIELD(WRD_Shutter_Core_Material_1).value"</COMMAND>
+			<COMMAND>"FIELD(WRD_Texture_3).value=FIELD(WRD_Texture_1).value"</COMMAND>
+		</THEN>
+	</IF>
+
+	<IF>
+		<EQ expr1="FIELD(WRD_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>	
+			<COMMAND>"FIELD(Right_Shutter_Details).visible=FALSE"</COMMAND>
+			<COMMAND>"FIELD(Left_Shutter_Details).label=Shutter Details"</COMMAND>
+		</THEN>
+		<ELSE>	
+			<COMMAND>"FIELD(Right_Shutter_Details).visible=TRUE"</COMMAND>
+			<COMMAND>"FIELD(Left_Shutter_Details).label=Left Shutter Details"</COMMAND>
+		</ELSE>
+	</IF>
+
+	<IF>
+		<EQ expr1="FIELD(WRD_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>
+			<COMMAND>"FIELD(WRD_Front3).value=FIELD(WRD_Front1).value"</COMMAND>
+			<!-- Variable Values Logic -->
+			<COMMAND>"FIELD(Mat_Front_3).value=FIELD(Mat_Front_1).value"</COMMAND>
+			<COMMAND>"FIELD(Prf_Front_3).value=FIELD(Prf_Front_1).value"</COMMAND>
+		</THEN>
+
+	</IF>
+
+</PART>
+<!---	*************************** New Openable Shutter Double door Finishes Global Logic *****************************************************************************************	-->
+
+<PART name="PART_GLOBAL_WRD_DIFFERENT_SHUTTER_FINISH_LOGIC">
+	<IF>
+		<EQ expr1="FIELD(WRD_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>
+			<COMMAND>"FIELD(WRD_Shutter_Finish_3).value=FIELD(WRD_Shutter_Finish_1).value"</COMMAND>
+			<COMMAND>"FIELD(WRD_Shutter_Core_Material_3).value=FIELD(WRD_Shutter_Core_Material_1).value"</COMMAND>
+			<COMMAND>"FIELD(WRD_Texture_3).value=FIELD(WRD_Texture_1).value"</COMMAND>
+		</THEN>
+
+	</IF>
+
+	<IF>
+		<EQ expr1="FIELD(WRD_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>	
+			<COMMAND>"FIELD(Right_Shutter_Details).visible=FALSE"</COMMAND>
+			<!-- <COMMAND>"FIELD(Left_Shutter_Details).label=Shutter Details"</COMMAND> -->
+		</THEN>
+		<ELSE>	
+			<COMMAND>"FIELD(Right_Shutter_Details).visible=TRUE"</COMMAND>
+			<!-- <COMMAND>"FIELD(Left_Shutter_Details).label=Left Shutter Details"</COMMAND> -->
+		</ELSE>
+	</IF>
+
+	<IF>
+		<EQ expr1="FIELD(WRD_Different_Fascia_Colour).value" expr2="NO" />
+		<THEN>
+			<COMMAND>"FIELD(WRD_Front3).value=FIELD(WRD_Front1).value"</COMMAND>
+			<!-- Variable Values Logic -->
+			<COMMAND>"FIELD(Mat_Front_3).value=FIELD(Mat_Front_1).value"</COMMAND>
+			<COMMAND>"FIELD(Prf_Front_3).value=FIELD(Prf_Front_1).value"</COMMAND>
+		</THEN>
+
+	</IF>
+
+</PART>
+
+<!---	*************************** OPEN BOX Finishes Logic*****************************************************************************************	-->
+
+<PART name="PART_OPEN_BOX_FINISHES">
+
+	<COMMAND>"FIELD(OB_Finish).info1List(FIELD(OB_Core_Material).info1)"</COMMAND>
+	<COMMAND>"FIELD(OB_Texture).info1List(FIELD(OB_Finish).info2)"</COMMAND> 
+	<COMMAND>"FIELD(OB_Shade).info1List(FIELD(OB_Finish).value)"</COMMAND>
+	<COMMAND>"FIELD(OB_Shade).filterinfo2List(FIELD(OB_Core_Material).value)"</COMMAND>
+	<COMMAND>"FIELD(OB_Shade).filterinfo3List(FIELD(OB_Texture).info2)"</COMMAND>
+<!-- Variable Values Logic -->
+		<COMMAND>"FIELD(OB_Carcass_Mat).value=FIELD(OB_Shade).value+'_'+FIELD(OB_Core_Material).value"</COMMAND>
+		<COMMAND>"FIELD(OB_Carcass_Prf).value=FIELD(OB_Shade).value+'('+FIELD(OB_Shade).info4+')'"</COMMAND>		
+		
+
+
+</PART>
+
+<!---	***************************LEFT SHUTTER PARTITION Finish *****************************************************************************************	-->
+
+<PART name="PART_LEFT_SHUTTER_PARTITION_FINISH_LOGIC">
+
+<!-- partition 1 -->
+
+<COMMAND>"FIELD(WRD_Shutter_Finish_1_1).info1List(FIELD(WRD_Shutter_Core_Material_1_1).info1)"</COMMAND>
+<COMMAND>"FIELD(WRD_Texture_1_1).info1List(FIELD(WRD_Shutter_Finish_1_1).info2)"</COMMAND> 
+
+<COMMAND>"FIELD(WRD_Front1_1).Info1List(FIELD(WRD_Shutter_Finish_1_1).value)"</COMMAND>
+<COMMAND>"FIELD(WRD_Front1_1).filterInfo2List(FIELD(WRD_Shutter_Core_Material_1_1).value)"</COMMAND>
+<COMMAND>"FIELD(WRD_Front1_1).filterInfo3List(FIELD(WRD_Texture_1_1).info2)"</COMMAND>
+
+<COMMAND>"FIELD(Mat_Front_1_1).value=FIELD(WRD_Front1_1).value+'_'+FIELD(WRD_Shutter_Core_Material_1_1).value"</COMMAND>
+
+<!-- partition 2 -->
+
+<COMMAND>"FIELD(WRD_Shutter_Finish_1_2).info1List(FIELD(WRD_Shutter_Core_Material_1_2).info1)"</COMMAND>
+<COMMAND>"FIELD(WRD_Texture_1_2).info1List(FIELD(WRD_Shutter_Finish_1_2).info2)"</COMMAND> 
+
+<COMMAND>"FIELD(WRD_Front1_2).Info1List(FIELD(WRD_Shutter_Finish_1_2).value)"</COMMAND>
+<COMMAND>"FIELD(WRD_Front1_2).filterInfo2List(FIELD(WRD_Shutter_Core_Material_1_2).value)"</COMMAND>
+<COMMAND>"FIELD(WRD_Front1_2).filterInfo3List(FIELD(WRD_Texture_1_2).info2)"</COMMAND>
+
+<COMMAND>"FIELD(Mat_Front_1_2).value=FIELD(WRD_Front1_2).value+'_'+FIELD(WRD_Shutter_Core_Material_1_2).value"</COMMAND>
+
+<!-- partition 3 -->
+
+<COMMAND>"FIELD(WRD_Shutter_Finish_1_3).info1List(FIELD(WRD_Shutter_Core_Material_1_3).info1)"</COMMAND>
+<COMMAND>"FIELD(WRD_Texture_1_3).info1List(FIELD(WRD_Shutter_Finish_1_3).info2)"</COMMAND> 
+
+<COMMAND>"FIELD(WRD_Front1_3).Info1List(FIELD(WRD_Shutter_Finish_1_3).value)"</COMMAND>
+<COMMAND>"FIELD(WRD_Front1_3).filterInfo2List(FIELD(WRD_Shutter_Core_Material_1_3).value)"</COMMAND>
+<COMMAND>"FIELD(WRD_Front1_3).filterInfo3List(FIELD(WRD_Texture_1_3).info2)"</COMMAND>
+
+<COMMAND>"FIELD(Mat_Front_1_3).value=FIELD(WRD_Front1_3).value+'_'+FIELD(WRD_Shutter_Core_Material_1_3).value"</COMMAND>
+
+<!-- partition 4 -->
+<COMMAND>"FIELD(WRD_Shutter_Finish_1_4).info1List(FIELD(WRD_Shutter_Core_Material_1_4).info1)"</COMMAND>
+<COMMAND>"FIELD(WRD_Texture_1_4).info1List(FIELD(WRD_Shutter_Finish_1_4).info2)"</COMMAND> 
+
+<COMMAND>"FIELD(WRD_Front1_4).Info1List(FIELD(WRD_Shutter_Finish_1_4).value)"</COMMAND>
+<COMMAND>"FIELD(WRD_Front1_4).filterInfo2List(FIELD(WRD_Shutter_Core_Material_1_4).value)"</COMMAND>
+<COMMAND>"FIELD(WRD_Front1_4).filterInfo3List(FIELD(WRD_Texture_1_4).info2)"</COMMAND>
+
+<COMMAND>"FIELD(Mat_Front_1_4).value=FIELD(WRD_Front1_4).value+'_'+FIELD(WRD_Shutter_Core_Material_1_4).value"</COMMAND>
+
+<!-- partition 5 -->
+
+<COMMAND>"FIELD(WRD_Shutter_Finish_1_5).info1List(FIELD(WRD_Shutter_Core_Material_1_5).info1)"</COMMAND>
+<COMMAND>"FIELD(WRD_Texture_1_5).info1List(FIELD(WRD_Shutter_Finish_1_5).info2)"</COMMAND> 
+
+<COMMAND>"FIELD(WRD_Front1_5).Info1List(FIELD(WRD_Shutter_Finish_1_5).value)"</COMMAND>
+<COMMAND>"FIELD(WRD_Front1_5).filterInfo2List(FIELD(WRD_Shutter_Core_Material_1_5).value)"</COMMAND>
+<COMMAND>"FIELD(WRD_Front1_5).filterInfo3List(FIELD(WRD_Texture_1_5).info2)"</COMMAND>
+
+<COMMAND>"FIELD(Mat_Front_1_5).value=FIELD(WRD_Front1_5).value+'_'+FIELD(WRD_Shutter_Core_Material_1_5).value"</COMMAND>
+<!-- End of Wardrobe left shutter Filter -->
+</PART>
+
+<!---	***************************MIDDLE SHUTTER PARTITION Finish *****************************************************************************************	-->
+
+<PART name="PART_MIDDLE_SHUTTER_PARTITION_FINISH_LOGIC">
+
+	  <!-- partition 1 -->
+
+	  <COMMAND>"FIELD(WRD_Shutter_Finish_2_1).info1List(FIELD(WRD_Shutter_Core_Material_2_1).info1)"</COMMAND>
+	  <COMMAND>"FIELD(WRD_Texture_2_1).info1List(FIELD(WRD_Shutter_Finish_2_1).info2)"</COMMAND> 
+
+	  <COMMAND>"FIELD(WRD_Front2_1).Info1List(FIELD(WRD_Shutter_Finish_2_1).value)"</COMMAND>
+	  <COMMAND>"FIELD(WRD_Front2_1).filterInfo2List(FIELD(WRD_Shutter_Core_Material_2_1).value)"</COMMAND>
+	  <COMMAND>"FIELD(WRD_Front2_1).filterInfo3List(FIELD(WRD_Texture_2_1).info2)"</COMMAND>
+
+	  <COMMAND>"FIELD(Mat_Front_2_1).value=FIELD(WRD_Front2_1).value+'_'+FIELD(WRD_Shutter_Core_Material_2_1).value"</COMMAND>
+
+	   <!-- partition 2 -->
+
+	 <COMMAND>"FIELD(WRD_Shutter_Finish_2_2).info1List(FIELD(WRD_Shutter_Core_Material_2_2).info1)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Texture_2_2).info1List(FIELD(WRD_Shutter_Finish_2_2).info2)"</COMMAND> 
+
+	 <COMMAND>"FIELD(WRD_Front2_2).Info1List(FIELD(WRD_Shutter_Finish_2_2).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front2_2).filterInfo2List(FIELD(WRD_Shutter_Core_Material_2_2).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front2_2).filterInfo3List(FIELD(WRD_Texture_2_2).info2)"</COMMAND>
+
+	 <COMMAND>"FIELD(Mat_Front_2_2).value=FIELD(WRD_Front2_2).value+'_'+FIELD(WRD_Shutter_Core_Material_2_2).value"</COMMAND>
+
+	 <!-- partition 3 -->
+
+	 <COMMAND>"FIELD(WRD_Shutter_Finish_2_3).info1List(FIELD(WRD_Shutter_Core_Material_2_3).info1)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Texture_2_3).info1List(FIELD(WRD_Shutter_Finish_2_3).info2)"</COMMAND> 
+
+	 <COMMAND>"FIELD(WRD_Front2_3).Info1List(FIELD(WRD_Shutter_Finish_2_3).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front2_3).filterInfo2List(FIELD(WRD_Shutter_Core_Material_2_3).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front2_3).filterInfo3List(FIELD(WRD_Texture_2_3).info2)"</COMMAND>
+
+	 <COMMAND>"FIELD(Mat_Front_2_3).value=FIELD(WRD_Front2_3).value+'_'+FIELD(WRD_Shutter_Core_Material_2_3).value"</COMMAND>
+
+	  <!-- partition 4 -->
+
+	  <COMMAND>"FIELD(WRD_Shutter_Finish_2_4).info1List(FIELD(WRD_Shutter_Core_Material_2_4).info1)"</COMMAND>
+	  <COMMAND>"FIELD(WRD_Texture_2_4).info1List(FIELD(WRD_Shutter_Finish_2_4).info2)"</COMMAND> 
+
+	  <COMMAND>"FIELD(WRD_Front2_4).Info1List(FIELD(WRD_Shutter_Finish_2_4).value)"</COMMAND>
+	  <COMMAND>"FIELD(WRD_Front2_4).filterInfo2List(FIELD(WRD_Shutter_Core_Material_2_4).value)"</COMMAND>
+	  <COMMAND>"FIELD(WRD_Front2_4).filterInfo3List(FIELD(WRD_Texture_2_4).info2)"</COMMAND>
+
+	  <COMMAND>"FIELD(Mat_Front_2_4).value=FIELD(WRD_Front2_4).value+'_'+FIELD(WRD_Shutter_Core_Material_2_4).value"</COMMAND>
+
+	   <!-- partition 5 -->
+
+	 <COMMAND>"FIELD(WRD_Shutter_Finish_2_5).info1List(FIELD(WRD_Shutter_Core_Material_2_5).info1)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Texture_2_5).info1List(FIELD(WRD_Shutter_Finish_2_5).info2)"</COMMAND> 
+
+	 <COMMAND>"FIELD(WRD_Front2_5).Info1List(FIELD(WRD_Shutter_Finish_2_5).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front2_5).filterInfo2List(FIELD(WRD_Shutter_Core_Material_2_5).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front2_5).filterInfo3List(FIELD(WRD_Texture_2_5).info2)"</COMMAND>
+
+	 <COMMAND>"FIELD(Mat_Front_2_5).value=FIELD(WRD_Front2_5).value+'_'+FIELD(WRD_Shutter_Core_Material_2_5).value"</COMMAND>
+
+</PART>
+<!---	***************************RIGHT SHUTTER PARTITION Finish *****************************************************************************************	-->
+
+<PART name="PART_RIGHT_SHUTTER_PARTITION_FINISH_LOGIC">
+     <!-- Wardrobe Right shutter Filter -->
+	
+	 <!-- partition 1 -->
+
+	 <COMMAND>"FIELD(WRD_Shutter_Finish_3_1).info1List(FIELD(WRD_Shutter_Core_Material_3_1).info1)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Texture_3_1).info1List(FIELD(WRD_Shutter_Finish_3_1).info2)"</COMMAND> 
+
+	 <COMMAND>"FIELD(WRD_Front3_1).Info1List(FIELD(WRD_Shutter_Finish_3_1).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front3_1).filterInfo2List(FIELD(WRD_Shutter_Core_Material_3_1).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front3_1).filterInfo3List(FIELD(WRD_Texture_3_1).info2)"</COMMAND>
+
+	 <COMMAND>"FIELD(Mat_Front_3_1).value=FIELD(WRD_Front3_1).value+'_'+FIELD(WRD_Shutter_Core_Material_3_1).value"</COMMAND>
+
+	 <!-- partition 2 -->
+
+	 <COMMAND>"FIELD(WRD_Shutter_Finish_3_2).info1List(FIELD(WRD_Shutter_Core_Material_3_2).info1)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Texture_3_2).info1List(FIELD(WRD_Shutter_Finish_3_2).info2)"</COMMAND> 
+
+	 <COMMAND>"FIELD(WRD_Front3_2).Info1List(FIELD(WRD_Shutter_Finish_3_2).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front3_2).filterInfo2List(FIELD(WRD_Shutter_Core_Material_3_2).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front3_2).filterInfo3List(FIELD(WRD_Texture_3_2).info2)"</COMMAND>
+
+	 <COMMAND>"FIELD(Mat_Front_3_2).value=FIELD(WRD_Front3_2).value+'_'+FIELD(WRD_Shutter_Core_Material_3_2).value"</COMMAND>
+
+	 <!-- partition 3 -->
+
+	 <COMMAND>"FIELD(WRD_Shutter_Finish_3_3).info1List(FIELD(WRD_Shutter_Core_Material_3_3).info1)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Texture_3_3).info1List(FIELD(WRD_Shutter_Finish_3_3).info2)"</COMMAND> 
+
+	 <COMMAND>"FIELD(WRD_Front3_3).Info1List(FIELD(WRD_Shutter_Finish_3_3).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front3_3).filterInfo2List(FIELD(WRD_Shutter_Core_Material_3_3).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front3_3).filterInfo3List(FIELD(WRD_Texture_3_3).info2)"</COMMAND>
+
+	 <COMMAND>"FIELD(Mat_Front_3_3).value=FIELD(WRD_Front3_3).value+'_'+FIELD(WRD_Shutter_Core_Material_3_3).value"</COMMAND>
+
+	 <!-- partition 4 -->
+
+	 <COMMAND>"FIELD(WRD_Shutter_Finish_3_4).info1List(FIELD(WRD_Shutter_Core_Material_3_4).info1)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Texture_3_4).info1List(FIELD(WRD_Shutter_Finish_3_4).info2)"</COMMAND> 
+
+	 <COMMAND>"FIELD(WRD_Front3_4).Info1List(FIELD(WRD_Shutter_Finish_3_4).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front3_4).filterInfo2List(FIELD(WRD_Shutter_Core_Material_3_4).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front3_4).filterInfo3List(FIELD(WRD_Texture_3_4).info2)"</COMMAND>
+
+	 <COMMAND>"FIELD(Mat_Front_3_4).value=FIELD(WRD_Front3_4).value+'_'+FIELD(WRD_Shutter_Core_Material_3_4).value"</COMMAND>
+
+	 <!-- partition 5 -->
+
+	 <COMMAND>"FIELD(WRD_Shutter_Finish_3_5).info1List(FIELD(WRD_Shutter_Core_Material_3_5).info1)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Texture_3_5).info1List(FIELD(WRD_Shutter_Finish_3_5).info2)"</COMMAND> 
+
+	 <COMMAND>"FIELD(WRD_Front3_5).Info1List(FIELD(WRD_Shutter_Finish_3_5).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front3_5).filterInfo2List(FIELD(WRD_Shutter_Core_Material_3_5).value)"</COMMAND>
+	 <COMMAND>"FIELD(WRD_Front3_5).filterInfo3List(FIELD(WRD_Texture_3_5).info2)"</COMMAND>
+
+	 <COMMAND>"FIELD(Mat_Front_3_5).value=FIELD(WRD_Front3_5).value+'_'+FIELD(WRD_Shutter_Core_Material_3_5).value"</COMMAND>
+	 <!-- End of Wardrobe Right shutter Filter -->
+	
+
+</PART>
+</XML>

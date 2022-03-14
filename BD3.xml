@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<ARTICLE>
+		<ART_NAME>BD3</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Base Unit 2 External Drawer</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+
+		<EDITBOX name="___WORKSURFACE" default="Work_Surface_Fr40mm" visible="FALSE" setAsGlobal="TRUE" />
+		<EDITBOX name="___BASE" default="Base_Skirting" visible="FALSE" setAsGlobal="TRUE" />
+
+		<PARAFOLDER name="Carcass_Details" label="Carcass Details" active="TRUE" visible="TRUE">
+
+			<GROUP name="Carcass Dimensions" label="Carcass Dimensions">
+
+				<COMBOBOX name="ART_SIZEZB" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="720" geoInfluencing="TRUE">
+					<ITEM value="700" label="700 mm" />
+					<ITEM value="720" label="720 mm" />
+				</COMBOBOX>
+
+				<COMBOBOX name="ART_SIZEXB" label="Width" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600">
+					<ITEM value="450" label="450  mm" />
+					<ITEM value="500" label="500 mm" />
+					<ITEM value="600" label="600  mm" />
+					<ITEM value="750" label="750  mm" />
+					<ITEM value="900" label="900  mm" />
+					<ITEM value="800" label="800  mm" />
+					<ITEM value="1000" label="1000  mm" />
+					<ITEM value="1200" label="1200  mm" />
+				</COMBOBOX>
+
+				<COMBOBOX name="ART_SIZEYB" label="Depth" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+					<ITEM value="560" label="560 mm" />
+					<ITEM value="580" label="580 mm" />
+				</COMBOBOX>
+			</GROUP>
+
+			<COMMAND type="INSERT" file="MirraPanchajanya_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION" />
+
+
+			<COMMAND type="INSERT" file="MirraPanchajanya_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING" />
+
+		</PARAFOLDER>
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="MirraPanchajanya_Hardware_Selection.xml" part="PART_BIG_DRAWERS_SELECTION" />
+
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+
+			<CHECKBOX name="BU_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+			<GROUP name="Left_Shutter_Details" label="Top Drawer Fascia Details">
+
+				<COMBOBOX name="BU_Shutter_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="BU_Shutter_Finish" label="Finish" valuetype="" default="Suede_Finish" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="BU_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="BU_Front1" label="Shutter Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<GROUP name="Right_Shutter_Details" label="Bottom Drawer Fascia Details">
+
+				<COMBOBOX name="BU_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="BU_Shutter_Finish_1" label="Finish" valuetype="" default="Suede_Finish" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+				</COMBOBOX>
+		
+				<COMBOBOX name="BU_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+				</COMBOBOX>
+
+				<COMBOBOX name="BU_Front2" label="Shutter Shade" valuetype="IMAGE" default="" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+					<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<!-- Variable Values -->
+			<EDITBOX name="BU_Front1_Mat" label="BU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="BU_Front1_Prf" label="BU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+			<EDITBOX name="BU_Front2_Mat" label="BU_Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="BU_Front2_Prf" label="BU_Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Handle_Details" label="Handle Details" image1="img/article/FRONT02.jpg" image2="img/article/ho_br_ti.gif">
+		
+			<COMMAND type="INSERT" file="MirraPanchajanya_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES" />
+			
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Visible_Sides" label="Visible Sides" active="TRUE" visible="TRUE">
+
+			<COMMAND type="INSERT" file="MirraPanchajanya_Visible_Sides.xml" part="PART_VISIBLE_SIDES" />
+
+		</PARAFOLDER>
+
+		<PARAFOLDER name="Price_Calculation" label="Pricing" active="TRUE" visible="TRUE">
+
+			<EDITBOX name="COST_Carcass" label="Carcass Price" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="COST_SHUTTER" label="Shutter Price" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="COST_HINGES" label="Hardware Price" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="COST_HANDLE" label="Handle Price" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			<EDITBOX name="COST_DRAWERS" label="Drawers Price" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+
+			<EDITBOX name="TOTAL_CABINET_PRICE" label="Total Price" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="" geoInfluencing="TRUE" />
+			
+		</PARAFOLDER>
+
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEXB</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEYB</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZB</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+			<VAR name="___WORKSURFACE" 		value="___WORKSURFACE" />
+			<VAR name="___BASE" 			value="___BASE" />
+			<VAR name="Adjustable_Legs" 	value="Adjustable_Legs" />
+			<VAR name="KI_Adjuster_Height"	value="Leg_Height" />
+			<VAR name="Skirting_Height" 	value="Skirting_Height" />
+			<VAR name="BU_Top_Panel" 		value="BU_Top_Panel" />
+			<VAR name="BU_Carcass"			value="BU_Carcass" />
+			<VAR name="BU_Carcass_Prf_Type" value="BU_Carcass_Prf_Type" />
+			<!-- <VAR name="BU_Front1" value="BU_Front1" />
+			<VAR name="BU_Front2" value="BU_Front2" /> -->
+			<VAR name="BU_Front1_Mat" 		value="BU_Front1_Mat" />
+			<VAR name="BU_Front1_Prf" 		value="BU_Front1_Prf" />
+			<VAR name="BU_Front2_Mat" 		value="BU_Front2_Mat" />
+			<VAR name="BU_Front2_Prf" 		value="BU_Front2_Prf" />
+			<VAR name="BU_Le_Carcass_Mat" 	value="BU_Le_Carcass_Mat" />
+			<VAR name="BU_Le_Carcass_Prf" 	value="BU_Le_Carcass_Prf" />
+			<VAR name="BU_Ri_Carcass_Mat" 	value="BU_Ri_Carcass_Mat" />
+			<VAR name="BU_Ri_Carcass_Prf" 	value="BU_Ri_Carcass_Prf" />
+			<VAR name="BU_Left_Side_Panel" 	value="BU_Left_Side_Panel" />
+			<VAR name="BU_Right_Side_Panel" value="BU_Right_Side_Panel" />
+			<!-- <VAR name="BU_Le_Side_Panel" value="BU_Le_Side_Panel" />
+			<VAR name="BU_Ri_Side_Panel" value="BU_Ri_Side_Panel" /> -->
+			<VAR name="Drawer_Type" 		value="Drawer_Type" />
+			<VAR name="Drawer_Colour" 		value="Drawer_Colour" />
+			<VAR name="Drawer_Model_ExtDr" 	value="Drawer_Model_ExtDr" />
+			<VAR name="Handle_Selection" 	value="Handle_Selection" />
+			<VAR name="COST_Carcass" 	value="COST_Carcass" />
+			<VAR name="COST_SHUTTER" 	value="COST_SHUTTER" />
+			<VAR name="COST_HINGES" 	value="COST_HINGES" />
+			<VAR name="COST_HANDLE" 	value="COST_HANDLE" />
+			<VAR name="COST_DRAWERS" 	value="COST_DRAWERS" />
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<COMMAND type="INSERT" file="MirraPanchajanya_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_SKIRTING_LOGIC" />
+
+		<COMMAND type="INSERT" file="MirraPanchajanya_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_FINISH_LOGIC" />
+
+		<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_SHUTTER_FINISH_LOGIC_1" />
+
+		<COMMAND type="INSERT" file="MirraPanchajanya_Shutter_Finish.xml" part="PART_DIFFERENT_SHUTTER_COLOR" />
+
+		<COMMAND type="INSERT" file="MirraPanchajanya_Hardware_Selection.xml" part="PART_BIG_DRAWERS_SELECTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="MirraPanchajanya_Visible_Sides.xml" part="PART_VISIBLE_SIDES_LOGIC_DRAWERCABINET" />
+
+		<COMMAND type="INSERT" file="MirraPanchajanya_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES_LOGIC" />
+
+		<COMMAND> FIELD(COST_Carcass).value = (CALC((FIELD(ART_SIZEZB).value*FIELD(ART_SIZEXB).value)/92903)*FIELD(BU_Carcass).info3) </COMMAND>
+
+		<COMMAND> FIELD(COST_SHUTTER).value = (CALC((FIELD(ART_SIZEZB).value*FIELD(ART_SIZEXB).value)/92903)*FIELD(BU_Shutter_Finish).info1) </COMMAND>
+
+		<COMMAND> FIELD(COST_DRAWERS).value = CALC(4500*2) </COMMAND>
+
+		<COMMAND> FIELD(COST_HANDLE).value = CALC(FIELD(Handle_Selection).info3*2) </COMMAND>
+
+		<COMMAND>"FIELD(TOTAL_CABINET_PRICE).value=CALC(FIELD(COST_Carcass).value+FIELD(COST_SHUTTER).value+FIELD(COST_DRAWERS).value+FIELD(COST_HANDLE).value)"</COMMAND>		
+		
+
+
+
+	</LOGIC_DEFINITION>
+</XML>

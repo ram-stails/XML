@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<XML version="2.0" type="IMOS_ARTICLE">
+
+	<translate file="2017_1.xlf" />
+
+	<ARTICLE>
+		<ART_NAME>Base_Skirting_Front</ART_NAME>
+		<ART_TYPE>ANGOLO</ART_TYPE>
+		<ART_DESIGN />
+		<ART_INFO_LONG />
+		<ART_INFO_SHORT>Base Skirting Front</ART_INFO_SHORT>
+	</ARTICLE>
+	<DEFINITION>
+		<EDITBOX name="___CP_TYPE" default="1" visible="FALSE" />
+		<PARAFOLDER name="Base_Settings" label="Kitchen plinth">
+
+			<GROUP name="Base_Skirting_Height" valuetype="FRAME" label="Skirting Height" visible="TRUE">
+				<COMBOBOX name="Adjustable_Legs" label="Leg Height" valuetype="" default="Adjustable_leg_H100_" visible="TRUE" active="TRUE" image1="img/catalog/Skirting_100mm.PNG">
+					<ITEM name="Adjustable_leg_H100_" value="Adjustable_leg_H100_" label="100mm" info1="Skirting" />
+					<ITEM name="Adjustable_leg_H150" value="Adjustable_leg_H150" label="150mm" info1="Skirting" />
+					<ITEM name="NO_BOM_100" value="NO_BOM_100" label="Floating 100mm" info1="NO_BOM" />
+					<ITEM name="NO_BOM_150" value="NO_BOM_150" label="Floating 150mm" info1="NO_BOM" />
+				</COMBOBOX>
+
+			</GROUP>
+
+			<COMBOBOX name="Leg_Height" label="Leg_Height" valuetype="" default="100" visible="FALSE" active="TRUE" image1="img/catalog/Skirting_100mm.PNG">
+				<ITEM name="100" value="100" label="100 mm" />
+				<ITEM name="150" value="150" label="150 mm" />
+			</COMBOBOX>
+
+			<GROUP name="Skirting_Lights" valuetype="FRAME" label="Skirting StripLight" visible="TRUE">
+				<COMBOBOX name="Skirting_Strip_Light" label="Skirting Strip Light"	default="No_Connection"		valuetype="text"	visible="TRUE"	active="TRUE">
+					<ITEM value="No_Connection" 		label="No Strip Light" 		image1=""/>
+					<ITEM value="Strip_Light_Skirting" 	label="Strip Light" 	image1=""/>			
+				</COMBOBOX>
+			</GROUP>
+
+			<COMBOBOX name="Brand" label="Brand" valuetype="" default="HA" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="HA" 		value="HA" 			label="Hafele"	 info1="Skirting" />
+				<ITEM name="RE" 		value="RE" 			label="Rehau" 	 info1="Skirting"/>
+				<ITEM name="Floating" 	value="Floating" 	label="Floating" info1="NO_BOM"/>
+			</COMBOBOX>
+
+			<COMBOBOX name="Skirting_Color" label="Skirting Color" valuetype="IMAGE" default="Silver" visible="TRUE" active="TRUE" image1="img/hardware/PVC_Leg.jpg">
+				<ITEM name="Silver_Grey" 	value="Silver_Grey" 	label="Silver Grey" 	info1="RE"	info2="100"	image1="img/catalog/Silver_Skirting.jpg" 			image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Silver_Grey" 	value="Silver_Grey" 	label="Silver Grey" 	info1="RE"	info2="150"	image1="img/catalog/Silver_Skirting.jpg" 			image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Black" 			value="Black" 			label="Black" 			info1="RE"	info2="100"	image1="img/catalog/Grey_Skirting.jpg" 				image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Black" 			value="Black" 			label="Black" 			info1="RE"	info2="150"	image1="img/catalog/Grey_Skirting.jpg" 				image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Dark_Bronze" 	value="Dark_Bronze" 	label="Dark Bronze" 	info1="HA"	info2="100"	image1="img/hardware/G_Dark_Bronze.jpg" 			image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Dark_Bronze" 	value="Dark_Bronze" 	label="Dark Bronze" 	info1="HA"	info2="150"	image1="img/hardware/G_Dark_Bronze.jpg" 			image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Gold" 			value="Gold" 			label="Gold" 			info1="HA"	info2="100"	image1="img/hardware/G_Gold.jpg" 					image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Graphite" 		value="Graphite" 		label="Graphite" 		info1="HA"	info2="100"	image1="img/hardware/G_Graphite.jpg" 				image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Rose_Gold" 		value="Rose_Gold" 		label="Rose Gold" 		info1="HA"	info2="100"	image1="img/hardware/G_Rose_Gold.jpg" 				image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Silver" 		value="Silver" 			label="Silver" 			info1="HA"	info2="100"	image1="img/hardware/G_Silver.jpg" 					image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Type" 			value="Type" 			label="No Skirting" 	info1="Floating"	info2="100"	image1="img/catalog/Skirting_Floating.PNG" 	image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Type" 			value="Type" 			label="No Skirting" 	info1="Floating"	info2="150"	image1="img/catalog/Skirting_Floating.PNG" 	image2="img/catalog/Skirting_100mm.PNG" />
+			</COMBOBOX>
+
+			<EDITBOX name="Skirting_Height" default="Silver_100mm" visible="FALSE" />
+
+		</PARAFOLDER>
+
+	</DEFINITION>
+
+
+	<CONSTRUCTION>
+
+		<ARTICLE_CON>
+
+			<ART_SIZEX>
+
+				<PARAM>ART_SIZEX</PARAM>
+
+			</ART_SIZEX>
+
+			<ART_SIZEY>
+
+				<PARAM>ART_SIZEY</PARAM>
+
+			</ART_SIZEY>
+
+			<ART_SIZEZ>
+
+				<PARAM>ART_SIZEZ</PARAM>
+
+			</ART_SIZEZ>
+
+		</ARTICLE_CON>
+
+		<VARIABLES>
+
+			<VAR name="Skirting_Strip_Light" value="Skirting_Strip_Light" />
+			<VAR name="Skirting_Height" value="Skirting_Height" />
+
+		</VARIABLES>
+	</CONSTRUCTION>
+
+	<LOGIC_DEFINITION>
+
+		<IF>
+			<EQ expr1="FIELD(Adjustable_Legs).value" expr2="Adjustable_leg_H100_" />
+			<THEN>
+				<COMMAND>"FIELD(Leg_Height).value=100"</COMMAND>
+				<COMMAND>"FIELD(Brand).Info1List(Skirting)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<IF>
+					<EQ expr1="FIELD(Adjustable_Legs).value" expr2="Adjustable_leg_H150" />
+					<THEN>
+						<COMMAND>"FIELD(Leg_Height).value=150"</COMMAND>
+						<COMMAND>"FIELD(Brand).Info1List(Skirting)"</COMMAND>
+					</THEN>
+					<ELSE>
+						<IF>
+							<EQ expr1="FIELD(Adjustable_Legs).value" expr2="NO_BOM_100" />
+							<THEN>
+								<COMMAND>"FIELD(Leg_Height).value=100"</COMMAND>
+								<COMMAND>"FIELD(Brand).Info1List(NO_BOM)"</COMMAND>
+							</THEN>
+							<ELSE>
+								<IF>
+									<EQ expr1="FIELD(Adjustable_Legs).value" expr2="NO_BOM_150" />
+									<THEN>
+										<COMMAND>"FIELD(Leg_Height).value=150"</COMMAND>
+										<COMMAND>"FIELD(Brand).Info1List(NO_BOM)"</COMMAND>
+									</THEN>
+								</IF>
+							</ELSE>
+						</IF>
+					</ELSE>
+				</IF>
+			</ELSE>
+		</IF>
+
+		<COMMAND>"FIELD(Skirting_Color).Info1List(FIELD(Brand).value)"</COMMAND>
+		<COMMAND>"FIELD(Skirting_Color).filterInfo2List(FIELD(Leg_Height).value)"</COMMAND>
+		<COMMAND>"FIELD(Skirting_Height).value=FIELD(Brand).value+'_'+FIELD(Skirting_Color).value+'_'+FIELD(Leg_Height).value+'mm'"</COMMAND>
+
+	</LOGIC_DEFINITION>
+</XML>
