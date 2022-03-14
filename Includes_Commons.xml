@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+
+	<PART name="PART_BRANDS">
+		<!-- CORE MATERIAL PROVIDERS -->
+		<ITEM value="Stails" label="Stails" info1="coreMaterialProvider" image1="img/annotations/Stails.jpg" />
+		<ITEM value="GreenPly" label="GreenPly" info1="coreMaterialProvider" image1="img/annotations/GreenPly.jpg" />
+		<ITEM value="Century" label="Century" info1="coreMaterialProvider" image1="img/annotations/CenturyPly.jpg" />
+		<ITEM value="ActionTesa" label="Action Tesa" info1="coreMaterialProvider" image1="img/annotations/action_tesa.jpg" />
+		<ITEM value="GreenPanel" label="Green Panel" info1="coreMaterialProvider" image1="img/annotations/Green_Panel.jpg" />
+		<!--  -->
+	</PART>
+
+	<PART name="PART_CORE_MATERIAL_CARCASS">
+		<!-- CORE MATERIALS TYPE -->
+		<ITEM value="BWR" label="BWR" info1="Stails" info2="postLam" image1="img/material/BWR.jpg" />
+		<ITEM value="BWP" label="BWP" info1="Stails" info2="postLam" image1="img/material/BWP.jpg" />
+		<ITEM value="GreenClub" label="Club" info1="GreenPly" info2="postLam" image1="img/material/BWP.jpg" />
+		<ITEM value="GreenAbsolute" label="Absolute" info1="GreenPly" info2="postLam" image1="img/material/BWP.jpg" />
+		<ITEM value="GreenOptimaG" label="Optima G" info1="GreenPly" info2="postLam" image1="img/material/BWP.jpg" />
+		<ITEM value="GreenEcotech" label="Ecotech" info1="GreenPly" info2="postLam" image1="img/material/BWP.jpg" />
+		<ITEM value="ClubPrime" label="Club Prime" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
+		<ITEM value="Bond710" label="Bond710" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
+		<ITEM value="Sainik710" label="Sainik710" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
+		<ITEM value="SainikMR" label="Sainik MR" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
+		<ITEM value="RamMDF" label="Raw MDF" info1="ActionTesa" info2="postLam" image1="img/material/BWP.jpg" />
+		<ITEM value="RawHDHMR" label="Raw HDHMR" info1="ActionTesa" info2="postLam" image1="img/material/BWP.jpg" />
+		<ITEM value="ParticalBoard" label="PreLam Partical Board" info1="ActionTesa" info2="preLam" image1="img/material/BWP.jpg" />
+		<ITEM value="FrostyWhite101" label="FrostyWhite101" info1="ActionTesa" info2="preLam" image1="img/material/FrostyWhite101.jpg" />
+		<ITEM value="SlateGrey105" label="SlateGrey105" info1="ActionTesa" info2="preLam" image1="img/material/SlateGrey105.jpg" />
+	</PART>
+
+	<PART name="PART_CARCASS_LAM">
+		<!-- CARCASS FINISHES -->
+		<ITEM value="FrostyWhite" label="Merino - Frosty White" info1="carcassLam" image1="img/material/BWR.jpg" />
+		<ITEM value="Grey" label="Merino - Grey" info1="carcassLam" image1="img/material/BWR.jpg" />
+		<ITEM value="FrostyWhite1" label="Saburi - Frosty White" info1="carcassLam" image1="img/material/BWR.jpg" />
+		<ITEM value="Grey1" label="Saburi - Grey" info1="carcassLam	" image1="img/material/BWR.jpg" />
+		<!-- CARCASS FINISHES -->
+		<ITEM value="Colour1" label="Colour 1" info1="shutterLam" image1="img/material/BWR.jpg" />
+		<ITEM value="Colou2" label="Colou2" info1="shutterLam" image1="img/material/BWR.jpg" />
+		
+	</PART>
+</XML>

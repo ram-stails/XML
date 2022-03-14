@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+	<PART name="PART_SHUTTER_FINISHES">
+		<GROUP name="BU_Shutter_Material" label="Shutter Material">
+			<COMBOBOX name="shutterMaterialBrand" label="Sutter Core Material Brand" default="Stails" valuetype="image" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<COMMAND type="INSERT" file="Includes_Commons.xml" part="PART_BRANDS" />
+			</COMBOBOX>
+			<COMBOBOX name="shutterCoreMaterial" label="Shutter Core Material" valuetype="image" visible="TRUE" active="TRUE" image1="img/catalog/.PNG" search="true">
+				<COMMAND type="INSERT" file="Includes_Commons.xml" part="PART_CORE_MATERIAL_CARCASS" />
+			</COMBOBOX>
+
+			<COMBOBOX name="shutterLamFinish" label="Shutter Lam" valuetype="image" visible="TRUE" active="TRUE" image1="img/catalog/.PNG" search="true">
+				<COMMAND type="INSERT" file="Includes_Commons.xml" part="PART_CARCASS_LAM" />
+			</COMBOBOX>
+		</GROUP>
+	</PART>
+
+	<PART name="PART_SHUTTER_FINISHES_LOGIC">
+		<COMMAND>"FIELD(shutterMaterialBrand).Info1List(coreMaterialProvider)"</COMMAND>
+		<COMMAND>"FIELD(shutterCoreMaterial).Info1List(FIELD(shutterMaterialBrand).value)"</COMMAND>
+		<IF>
+			<EQ expr1="FIELD(shutterCoreMaterial).info2" expr2="postLam" />
+			<THEN>
+				<COMMAND>"FIELD(shutterLamFinish).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(shutterLamFinish).Info1List(shutterLam)"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(shutterLamFinish).visible=FALSE"</COMMAND>
+			</ELSE>
+		</IF>
+	</PART>
+</XML>

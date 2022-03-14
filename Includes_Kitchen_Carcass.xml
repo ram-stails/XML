@@ -6,38 +6,14 @@
 
 		<GROUP name="BU_Carcass_Material" label="Carcass Material">
 			<COMBOBOX name="CoreMaterialBrand" label="Carcass Core Material Brand" default="Stails" valuetype="image" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
-				<ITEM value="Stails" label="Stails" image1="img/annotations/Stails.jpg" />
-				<ITEM value="GreenPly" label="GreenPly" image1="img/annotations/GreenPly.jpg" />
-				<ITEM value="Century" label="Century" image1="img/annotations/CenturyPly.jpg" />
-				<ITEM value="ActionTesa" label="Action Tesa" image1="img/annotations/action_tesa.jpg" />
-				<ITEM value="GreenPanel" label="Green Panel" image1="img/annotations/Green_Panel.jpg" />
+				<COMMAND type="INSERT" file="Includes_Commons.xml" part="PART_BRANDS" />
 			</COMBOBOX>
 			<COMBOBOX name="CoreMaterial" label="Carcass Core Material" valuetype="image" visible="TRUE" active="TRUE" image1="img/catalog/.PNG" search="true">
-				<ITEM value="BWR" label="BWR" info1="Stails" info2="postLam" image1="img/material/BWR.jpg" />
-				<ITEM value="BWP" label="BWP" info1="Stails" info2="postLam" image1="img/material/BWP.jpg" />
-				<ITEM value="GreenClub" label="Club" info1="GreenPly" info2="postLam" image1="img/material/BWP.jpg" />
-				<ITEM value="GreenAbsolute" label="Absolute" info1="GreenPly" info2="postLam" image1="img/material/BWP.jpg" />
-				<ITEM value="GreenOptimaG" label="Optima G" info1="GreenPly" info2="postLam" image1="img/material/BWP.jpg" />
-				<ITEM value="GreenEcotech" label="Ecotech" info1="GreenPly" info2="postLam" image1="img/material/BWP.jpg" />
-				<ITEM value="ClubPrime" label="Club Prime" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
-				<ITEM value="Bond710" label="Bond710" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
-				<ITEM value="Sainik710" label="Sainik710" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
-				<ITEM value="SainikMR" label="Sainik MR" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
-				<ITEM value="SainikMR" label="Sainik MR" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
-				<ITEM value="RamMDF" label="Raw MDF" info1="ActionTesa" info2="postLam" image1="img/material/BWP.jpg" />
-				<ITEM value="RawHDHMR" label="Raw HDHMR" info1="ActionTesa" info2="postLam" image1="img/material/BWP.jpg" />
-				<ITEM value="ParticalBoard" label="PreLam Partical Board" info1="ActionTesa" info2="preLam" image1="img/material/BWP.jpg" />
-				<ITEM value="FrostyWhite101" label="FrostyWhite101" info1="ActionTesa" info2="preLam" image1="img/material/FrostyWhite101.jpg" />
-				<ITEM value="SlateGrey105" label="SlateGrey105" info1="ActionTesa" info2="preLam" image1="img/material/SlateGrey105.jpg" />
-
+				<COMMAND type="INSERT" file="Includes_Commons.xml" part="PART_CORE_MATERIAL_CARCASS" />
 			</COMBOBOX>
 
-			<COMBOBOX name="CarcassLam" label="Carcass Lam" valuetype="image" visible="TRUE" active="TRUE" image1="img/catalog/.PNG" search="true">
-				<ITEM value="FrostyWhite" label="Merino - Frosty White" info1="postLam" image1="img/material/BWR.jpg" />
-				<ITEM value="Grey" label="Merino - Grey" info1="postLam" image1="img/material/BWR.jpg" />
-				<ITEM value="FrostyWhite1" label="Saburi - Frosty White" info1="preLam" image1="img/material/BWR.jpg" />
-				<ITEM value="Grey1" label="Saburi - Grey" info1="preLam" image1="img/material/BWR.jpg" />
-
+			<COMBOBOX name="CarcassLamFinish" label="Carcass Lam" valuetype="image" visible="TRUE" active="TRUE" image1="img/catalog/.PNG" search="true">
+				<COMMAND type="INSERT" file="Includes_Commons.xml" part="PART_CARCASS_LAM" />
 			</COMBOBOX>
 		</GROUP>
 
@@ -49,14 +25,16 @@
 		</GROUP>
 	</PART>
 	<PART name="PART_KITCHEN_Carcass_CONSTRUCTION_LOGIC">
+		<COMMAND>"FIELD(CoreMaterialBrand).Info1List(coreMaterialProvider)"</COMMAND>
 		<COMMAND>"FIELD(CoreMaterial).Info1List(FIELD(CoreMaterialBrand).value)"</COMMAND>
 		<IF>
 			<EQ expr1="FIELD(CoreMaterial).info2" expr2="postLam" />
 			<THEN>
-				<COMMAND>"FIELD(CarcassLam).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(CarcassLamFinish).visible=TRUE"</COMMAND>
+				<COMMAND>"FIELD(CarcassLamFinish).Info1List(carcassLam)"</COMMAND>
 			</THEN>
 			<ELSE>
-				<COMMAND>"FIELD(CarcassLam).visible=FALSE"</COMMAND>
+				<COMMAND>"FIELD(CarcassLamFinish).visible=FALSE"</COMMAND>
 			</ELSE>
 		</IF>
 	</PART>
