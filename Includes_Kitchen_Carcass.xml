@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+
+	<PART name="PART_KITCHEN_Carcass_CONSTRUCTION">
+
+		<GROUP name="BU_Carcass_Material" label="Carcass Material">
+			<COMBOBOX name="CoreMaterialBrand" label="Carcass Core Material Brand" default="Stails" valuetype="image" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="Stails" label="Stails" image1="img/annotations/Stails.jpg" />
+				<ITEM value="GreenPly" label="GreenPly" image1="img/annotations/GreenPly.jpg" />
+				<ITEM value="Century" label="Century" image1="img/annotations/CenturyPly.jpg" />
+				<ITEM value="ActionTesa" label="Action Tesa" image1="img/annotations/action_tesa.jpg" />
+				<ITEM value="GreenPanel" label="Green Panel" image1="img/annotations/Green_Panel.jpg" />
+			</COMBOBOX>
+			<COMBOBOX name="CoreMaterial" label="Carcass Core Material" valuetype="image" visible="TRUE" active="TRUE" image1="img/catalog/.PNG" search="true">
+				<ITEM value="BWR" label="BWR" info1="Stails" info2="postLam" image1="img/material/BWR.jpg" />
+				<ITEM value="BWP" label="BWP" info1="Stails" info2="postLam" image1="img/material/BWP.jpg" />
+				<ITEM value="GreenClub" label="Club" info1="GreenPly" info2="postLam" image1="img/material/BWP.jpg" />
+				<ITEM value="GreenAbsolute" label="Absolute" info1="GreenPly" info2="postLam" image1="img/material/BWP.jpg" />
+				<ITEM value="GreenOptimaG" label="Optima G" info1="GreenPly" info2="postLam" image1="img/material/BWP.jpg" />
+				<ITEM value="GreenEcotech" label="Ecotech" info1="GreenPly" info2="postLam" image1="img/material/BWP.jpg" />
+				<ITEM value="ClubPrime" label="Club Prime" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
+				<ITEM value="Bond710" label="Bond710" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
+				<ITEM value="Sainik710" label="Sainik710" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
+				<ITEM value="SainikMR" label="Sainik MR" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
+				<ITEM value="SainikMR" label="Sainik MR" info1="Century" info2="postLam" image1="img/material/BWP.jpg" />
+				<ITEM value="RamMDF" label="Raw MDF" info1="ActionTesa" info2="postLam" image1="img/material/BWP.jpg" />
+				<ITEM value="RawHDHMR" label="Raw HDHMR" info1="ActionTesa" info2="postLam" image1="img/material/BWP.jpg" />
+				<ITEM value="ParticalBoard" label="PreLam Partical Board" info1="ActionTesa" info2="preLam" image1="img/material/BWP.jpg" />
+				<ITEM value="FrostyWhite101" label="FrostyWhite101" info1="ActionTesa" info2="preLam" image1="img/material/FrostyWhite101.jpg" />
+				<ITEM value="SlateGrey105" label="SlateGrey105" info1="ActionTesa" info2="preLam" image1="img/material/SlateGrey105.jpg" />
+
+			</COMBOBOX>
+
+			<COMBOBOX name="CarcassLam" label="Carcass Lam" valuetype="image" visible="TRUE" active="TRUE" image1="img/catalog/.PNG" search="true">
+				<ITEM value="FrostyWhite" label="Merino - Frosty White" info1="postLam" image1="img/material/BWR.jpg" />
+				<ITEM value="Grey" label="Merino - Grey" info1="postLam" image1="img/material/BWR.jpg" />
+				<ITEM value="FrostyWhite1" label="Saburi - Frosty White" info1="preLam" image1="img/material/BWR.jpg" />
+				<ITEM value="Grey1" label="Saburi - Grey" info1="preLam" image1="img/material/BWR.jpg" />
+
+			</COMBOBOX>
+		</GROUP>
+
+		<GROUP name="Carcass_Construction" label="Carcass Construction">
+			<COMBOBOX name="BU_Top_Panel" label="Top Panel" valuetype="IMAGE" default="Top_Rails" visible="TRUE" active="TRUE" image1="img/catalog/Top_Rails.PNG">
+				<ITEM name="Top_Rails" value="Top_Rails" label="Rails" image1="img/catalog/Top_Rails.jpg" image2="img/catalog/.PNG" />
+				<ITEM name="Full_Top" value="Full_Top" label="Full Top" image1="img/catalog/Full_Top.jpg" image2="img/catalog/.PNG" />
+			</COMBOBOX>
+		</GROUP>
+	</PART>
+	<PART name="PART_KITCHEN_Carcass_CONSTRUCTION_LOGIC">
+		<COMMAND>"FIELD(CoreMaterial).Info1List(FIELD(CoreMaterialBrand).value)"</COMMAND>
+		<IF>
+			<EQ expr1="FIELD(CoreMaterial).info2" expr2="postLam" />
+			<THEN>
+				<COMMAND>"FIELD(CarcassLam).visible=TRUE"</COMMAND>
+			</THEN>
+			<ELSE>
+				<COMMAND>"FIELD(CarcassLam).visible=FALSE"</COMMAND>
+			</ELSE>
+		</IF>
+	</PART>
+
+
+	<PART name="PART_KITCHEN_Carcass_SKIRTING">
+
+		<GROUP name="Skirting_Details" valuetype="FRAME" label="Skirting" visible="FALSE">
+			<COMBOBOX name="Skirting_Color" label="Skirting Color" valuetype="IMAGE" default="Silver" visible="TRUE" active="TRUE" image1="img/hardware/PVC_Leg.jpg">
+				<ITEM name="Silver_Grey" value="Silver_Grey" label="Silver Grey" info1="RE" info2="100" image1="img/catalog/Silver_Skirting.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Silver_Grey" value="Silver_Grey" label="Silver Grey" info1="RE" info2="150" image1="img/catalog/Silver_Skirting.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Black" value="Black" label="Black" info1="RE" info2="100" image1="img/catalog/Grey_Skirting.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Black" value="Black" label="Black" info1="RE" info2="150" image1="img/catalog/Grey_Skirting.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Dark_Bronze" value="Dark_Bronze" label="Dark Bronze" info1="HA" info2="100" image1="img/hardware/G_Dark_Bronze.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Dark_Bronze" value="Dark_Bronze" label="Dark Bronze" info1="HA" info2="150" image1="img/hardware/G_Dark_Bronze.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Gold" value="Gold" label="Gold" info1="HA" info2="100" image1="img/hardware/G_Gold.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Graphite" value="Graphite" label="Graphite" info1="HA" info2="100" image1="img/hardware/G_Graphite.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Rose_Gold" value="Rose_Gold" label="Rose Gold" info1="HA" info2="100" image1="img/hardware/G_Rose_Gold.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Silver" value="Silver" label="Silver" info1="HA" info2="100" image1="img/hardware/G_Silver.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Type" value="Type" label="No Skirting" info1="Floating" info2="100" image1="img/catalog/Skirting_Floating.PNG" image2="img/catalog/Skirting_100mm.PNG" />
+				<ITEM name="Type" value="Type" label="No Skirting" info1="Floating" info2="150" image1="img/catalog/Skirting_Floating.PNG" image2="img/catalog/Skirting_100mm.PNG" />
+			</COMBOBOX>
+			<COMBOBOX name="Brand" label="Brand" valuetype="" default="HA" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM name="HA" value="HA" label="Hafele" info1="Skirting" />
+				<ITEM name="RE" value="RE" label="Rehau" info1="Skirting" />
+				<ITEM name="Floating" value="Floating" label="Floating" info1="NO_BOM" />
+			</COMBOBOX>
+			<COMBOBOX name="Adjustable_Legs" label="Skirting Height" valuetype="" default="Adjustable_leg_H100_" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/Skirting_100mm.PNG">
+				<ITEM name="Adjustable_leg_H100_" value="Adjustable_leg_H100_" label="100mm" info1="Skirting" />
+				<ITEM name="Adjustable_leg_H150" value="Adjustable_leg_H150" label="150mm" info1="Skirting" />
+				<ITEM name="NO_BOM_100" value="NO_BOM_100" label="Floating 100mm" info1="NO_BOM" />
+				<ITEM name="NO_BOM_150" value="NO_BOM_150" label="Floating 150mm" info1="NO_BOM" />
+			</COMBOBOX>
+			<COMBOBOX name="Leg_Height" label="Leg_Height" valuetype="" default="100" visible="FALSE" active="TRUE" image1="img/catalog/Skirting_100mm.PNG">
+				<ITEM name="100" value="100" label="100 mm" />
+				<ITEM name="150" value="150" label="150 mm" />
+			</COMBOBOX>
+			<EDITBOX name="Skirting_Height" label="Skirting Height" default="Silver_100mm" active="TRUE" visible="TRUE" />
+			<EDITBOX name="KI_Base_Unit_Height" label="Base Unit Height" default="720" active="TRUE" visible="TRUE" />
+		</GROUP>
+
+	</PART>
+
+</XML>

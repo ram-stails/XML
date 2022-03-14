@@ -145,9 +145,19 @@
 
 		<GROUP name="BU_Carcass_Material" label="Carcass Material">
 
-			<COMBOBOX name="BU_Core_Material" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
-				<ITEM name="PlyWood" value="PlyWood" label="PlyWood" image1="img/catalog/.PNG" />
-				<ITEM name="Engineered_wood" value="Engineered_wood" label="Engineered Wood" image1="img/catalog/.PNG" />
+			<COMBOBOX name="Core_Mat_1" label="Core Material Brand" valuetype="image" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="Stails" label="Stails" image1="img/annotations/Stails.jpg" />
+				<ITEM value="GreenPly" label="GreenPly" image1="img/annotations/GreenPly.jpg" />
+				<ITEM value="Century" label="Century" image1="img/annotations/CenturyPly.jpg" />
+				<ITEM value="ActionTesa" label="Action Tesa" image1="img/annotations/action_tesa.jpg" />
+				<ITEM value="GreenPanel" label="Green Panel" image1="img/annotations/Green_Panel.jpg" />
+			</COMBOBOX>
+
+			<COMBOBOX name="BU_Carcass_Mat" label="Core Material" valuetype="" default="PlyWood" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<ITEM value="BWP" label="BWP PlyWood" image1="img/catalog/.PNG" />
+				<ITEM value="BWR" label="BWR PlyWood" image1="img/catalog/.PNG" />
+				<ITEM value="GreenPly" label="Green PlyWood" image1="img/catalog/.PNG" />
+				<ITEM value="CenturyPly" label="Century PlyWood" image1="img/catalog/.PNG" />
 			</COMBOBOX>
 
 		<GROUP name="B_Material_Grade" label="Material Grade" valuetype="ROW">

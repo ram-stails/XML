@@ -1,16 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <XML version="2.0" type="IMOS_INCLUDEPARTS">
 
-
-	<!---	*************************** Shutter Core Mat *****************************************************************************************	-->
-	<PART name="PART_SHUTTER_CORE_MAT">
-
-		<!-- <ITEM value="PLY" 	label="PlyWood" 		info1="PLY"/> -->
-		<ITEM value="HDHMR" label="HDHMR"			info1="HDHMR"/>
-		<ITEM value="MDF" 	label="Engineered"		info1="MDF"/>
-		
-	</PART>
-
 	<PART name="PART_SHUTTER_CORE_MAT_ALL">
 
 		<!-- <ITEM value="PLY" 	label="PlyWood" 		info1="PLY"/> -->

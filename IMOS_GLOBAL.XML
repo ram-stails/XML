@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <XML version="2.0" type="IMOS_ARTICLE">
 
 	<translate file="2017_1.xlf" />
@@ -12,197 +12,192 @@
 
 	<DEFINITION>
 
-	<PARAFOLDER name="Kitchen_Carcass" label="Carcass" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
+		<PARAFOLDER name="Kitchen_Carcass" label="Carcass" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
 
-<!-- 	
-		<EDITBOX name="Customer_Name" label="User Id :" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="CFS001_SO" geoInfluencing="TRUE" />
-		<EDITBOX name="Password" label="Password :" active="TRUE" visible="TRUE" locked="FALSE" valuetype="TEXT" default="CFS001_SO" geoInfluencing="TRUE" /> -->
+			<PARAFOLDER name="Base_Unit" label="Base Unit" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
 
+				<GROUP name="Base Carcass" label="Base Unit Carcass Details">
 
-		<PARAFOLDER name="Base_Unit" label="Base Unit" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
+					<COMBOBOX name="ART_SIZEZB" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="720" geoInfluencing="TRUE">
+						<ITEM value="700" label="700 mm" info="" />
+						<ITEM value="720" label="720 mm" Info="" />
+						<ITEM value="760" label="760 mm" info="" />
+					</COMBOBOX>
 
-			<GROUP name="Base Carcass" label="Base Unit Carcass Details">
+					<COMBOBOX name="ART_SIZEYB" label="Depth" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+						<ITEM value="560" label="560 mm" />
+						<ITEM value="580" label="580 mm" />
+					</COMBOBOX>
 
-				<COMBOBOX name="ART_SIZEZB" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="720" geoInfluencing="TRUE">
-					<ITEM value="700" label="700 mm" info=""/>
-					<ITEM value="720" label="720 mm" Info=""/>
-					<ITEM value="760" label="760 mm" info=""/>
-				</COMBOBOX>
+					<COMBOBOX name="Std_Art_Depth" label="Depth" active="TRUE" visible="FALSE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+						<ITEM value="560" label="560 mm" />
+						<ITEM value="580" label="580 mm" />
+					</COMBOBOX>
 
-				<COMBOBOX name="ART_SIZEYB" label="Depth" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
-					<ITEM value="560" label="560 mm" />
-					<ITEM value="580" label="580 mm" />
-				</COMBOBOX>
-
-				<COMBOBOX name="Std_Art_Depth" label="Depth" active="TRUE" visible="FALSE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
-					<ITEM value="560" label="560 mm" />
-					<ITEM value="580" label="580 mm" />
-				</COMBOBOX>
-
-				<EDITBOX name="KI_Base_Unit_Height" label="Base Unit Height" default="720" active="TRUE" visible="FALSE" />
+					<EDITBOX name="KI_Base_Unit_Height" label="Base Unit Height" default="720" active="TRUE" visible="FALSE" />
 
 
-				<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION" />
-				
-			</GROUP>
+					<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_Carcass_CONSTRUCTION" />
 
-			<GROUP name="Base_Skirting_Height" valuetype="FRAME" label="Skirting Details" visible="TRUE">				
+				</GROUP>
 
-				<COMBOBOX name="Adjustable_Legs" label="Skirting Height" valuetype="" default="Adjustable_leg_H100_" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/Skirting_100mm.PNG">
-					<ITEM name="Adjustable_leg_H100_" value="Adjustable_leg_H100_" label="100mm" info1="Skirting" />
-					<ITEM name="Adjustable_leg_H150" value="Adjustable_leg_H150" label="150mm" info1="Skirting" />
-					<ITEM name="NO_BOM_100" value="NO_BOM_100" label="Floating 100mm" info1="NO_BOM" />
-					<ITEM name="NO_BOM_150" value="NO_BOM_150" label="Floating 150mm" info1="NO_BOM" />
-				</COMBOBOX>
+				<GROUP name="Base_Skirting_Height" valuetype="FRAME" label="Skirting Details" visible="TRUE">
 
-				<COMBOBOX name="Leg_Height" label="Leg_Height" valuetype="" default="100" visible="FALSE" active="TRUE" image1="img/catalog/Skirting_100mm.PNG">
-					<ITEM name="100" value="100" label="100 mm" />
-					<ITEM name="150" value="150" label="150 mm" />
-				</COMBOBOX>
+					<COMBOBOX name="Adjustable_Legs" label="Skirting Height" valuetype="" default="Adjustable_leg_H100_" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/Skirting_100mm.PNG">
+						<ITEM name="Adjustable_leg_H100_" value="Adjustable_leg_H100_" label="100mm" info1="Skirting" />
+						<ITEM name="Adjustable_leg_H150" value="Adjustable_leg_H150" label="150mm" info1="Skirting" />
+						<ITEM name="NO_BOM_100" value="NO_BOM_100" label="Floating 100mm" info1="NO_BOM" />
+						<ITEM name="NO_BOM_150" value="NO_BOM_150" label="Floating 150mm" info1="NO_BOM" />
+					</COMBOBOX>
 
-				<COMBOBOX name="Brand" label="Brand" valuetype="" default="HA" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
-					<ITEM name="HA" 		value="HA" 			label="Hafele" info1="Skirting" />
-					<ITEM name="RE" 		value="RE" 			label="Rehau"  info1="Skirting"	/>
-					<ITEM name="Floating" 	value="Floating" 	label="Floating" info1="NO_BOM"/>
-				</COMBOBOX>
+					<COMBOBOX name="Leg_Height" label="Leg_Height" valuetype="" default="100" visible="FALSE" active="TRUE" image1="img/catalog/Skirting_100mm.PNG">
+						<ITEM name="100" value="100" label="100 mm" />
+						<ITEM name="150" value="150" label="150 mm" />
+					</COMBOBOX>
 
-				<COMBOBOX name="Skirting_Color" label="Skirting Color" valuetype="IMAGE" default="Silver" visible="TRUE" active="TRUE" image1="img/hardware/PVC_Leg.jpg">
-					<ITEM name="Silver_Grey" 	value="Silver_Grey" 	label="Silver Grey" 	info1="RE"	info2="100"	image1="img/catalog/Silver_Skirting.jpg" 			image2="img/catalog/Skirting_100mm.PNG" />
-					<ITEM name="Silver_Grey" 	value="Silver_Grey" 	label="Silver Grey" 	info1="RE"	info2="150"	image1="img/catalog/Silver_Skirting.jpg" 			image2="img/catalog/Skirting_100mm.PNG" />
-					<ITEM name="Black" 			value="Black" 			label="Black" 			info1="RE"	info2="100"	image1="img/catalog/Grey_Skirting.jpg" 				image2="img/catalog/Skirting_100mm.PNG" />
-					<ITEM name="Black" 			value="Black" 			label="Black" 			info1="RE"	info2="150"	image1="img/catalog/Grey_Skirting.jpg" 				image2="img/catalog/Skirting_100mm.PNG" />
-					<ITEM name="Dark_Bronze" 	value="Dark_Bronze" 	label="Dark Bronze" 	info1="HA"	info2="100"	image1="img/hardware/G_Dark_Bronze.jpg" 			image2="img/catalog/Skirting_100mm.PNG" />
-					<ITEM name="Dark_Bronze" 	value="Dark_Bronze" 	label="Dark Bronze" 	info1="HA"	info2="150"	image1="img/hardware/G_Dark_Bronze.jpg" 			image2="img/catalog/Skirting_100mm.PNG" />
-					<ITEM name="Gold" 			value="Gold" 			label="Gold" 			info1="HA"	info2="100"	image1="img/hardware/G_Gold.jpg" 					image2="img/catalog/Skirting_100mm.PNG" />
-					<ITEM name="Graphite" 		value="Graphite" 		label="Graphite" 		info1="HA"	info2="100"	image1="img/hardware/G_Graphite.jpg" 				image2="img/catalog/Skirting_100mm.PNG" />
-					<ITEM name="Rose_Gold" 		value="Rose_Gold" 		label="Rose Gold" 		info1="HA"	info2="100"	image1="img/hardware/G_Rose_Gold.jpg" 				image2="img/catalog/Skirting_100mm.PNG" />
-					<ITEM name="Silver" 		value="Silver" 			label="Silver" 			info1="HA"	info2="100"	image1="img/hardware/G_Silver.jpg" 					image2="img/catalog/Skirting_100mm.PNG" />
-					<ITEM name="Type" 			value="Type" 			label="No Skirting" 	info1="Floating"	info2="100"	image1="img/catalog/Skirting_Floating.PNG" 	image2="img/catalog/Skirting_100mm.PNG" />
-					<ITEM name="Type" 			value="Type" 			label="No Skirting" 	info1="Floating"	info2="150"	image1="img/catalog/Skirting_Floating.PNG" 	image2="img/catalog/Skirting_100mm.PNG" />
-				</COMBOBOX>				
+					<COMBOBOX name="Brand" label="Brand" valuetype="" default="HA" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+						<ITEM name="HA" value="HA" label="Hafele" info1="Skirting" />
+						<ITEM name="RE" value="RE" label="Rehau" info1="Skirting" />
+						<ITEM name="Floating" value="Floating" label="Floating" info1="NO_BOM" />
+					</COMBOBOX>
 
-			</GROUP>
+					<COMBOBOX name="Skirting_Color" label="Skirting Color" valuetype="IMAGE" default="Silver" visible="TRUE" active="TRUE" image1="img/hardware/PVC_Leg.jpg">
+						<ITEM name="Silver_Grey" value="Silver_Grey" label="Silver Grey" info1="RE" info2="100" image1="img/catalog/Silver_Skirting.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+						<ITEM name="Silver_Grey" value="Silver_Grey" label="Silver Grey" info1="RE" info2="150" image1="img/catalog/Silver_Skirting.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+						<ITEM name="Black" value="Black" label="Black" info1="RE" info2="100" image1="img/catalog/Grey_Skirting.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+						<ITEM name="Black" value="Black" label="Black" info1="RE" info2="150" image1="img/catalog/Grey_Skirting.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+						<ITEM name="Dark_Bronze" value="Dark_Bronze" label="Dark Bronze" info1="HA" info2="100" image1="img/hardware/G_Dark_Bronze.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+						<ITEM name="Dark_Bronze" value="Dark_Bronze" label="Dark Bronze" info1="HA" info2="150" image1="img/hardware/G_Dark_Bronze.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+						<ITEM name="Gold" value="Gold" label="Gold" info1="HA" info2="100" image1="img/hardware/G_Gold.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+						<ITEM name="Graphite" value="Graphite" label="Graphite" info1="HA" info2="100" image1="img/hardware/G_Graphite.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+						<ITEM name="Rose_Gold" value="Rose_Gold" label="Rose Gold" info1="HA" info2="100" image1="img/hardware/G_Rose_Gold.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+						<ITEM name="Silver" value="Silver" label="Silver" info1="HA" info2="100" image1="img/hardware/G_Silver.jpg" image2="img/catalog/Skirting_100mm.PNG" />
+						<ITEM name="Type" value="Type" label="No Skirting" info1="Floating" info2="100" image1="img/catalog/Skirting_Floating.PNG" image2="img/catalog/Skirting_100mm.PNG" />
+						<ITEM name="Type" value="Type" label="No Skirting" info1="Floating" info2="150" image1="img/catalog/Skirting_Floating.PNG" image2="img/catalog/Skirting_100mm.PNG" />
+					</COMBOBOX>
 
-			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_BASE_BRACKETS_SELECTION" />
+				</GROUP>
 
-
-		</PARAFOLDER>
-
-		<PARAFOLDER name="Wall_Unit" label="Wall Unit" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
-
-			<GROUP name="Wall Carcass" label="Wall Unit Carcass Details">
-
-				<COMBOBOX name="ART_SIZEZW" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600">
-					<ITEM value="600" label="600 mm" />
-					<ITEM value="700" label="700 mm" />
-					<ITEM value="750" label="750 mm" />
-					<ITEM value="900" label="900 mm" />
-				</COMBOBOX>
-
-				<EDITBOX name="ART_SIZEYW" label="Depth" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="330" geoInfluencing="TRUE" />
-
-				<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_WU_Carcass_CONSTRUCTION" />
-
-			</GROUP>
-
-			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_WALLUNIT_SHELF_SELECTION" />
-
-		
-		</PARAFOLDER>
-
-		<PARAFOLDER name="Tall_Unit" label="Tall Unit" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
-
-			<GROUP name="Tall Carcass" label="Tall Unit Carcass Details">
-
-				<CHECKBOX name="Customized_Height_Check" label="Customized Height" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
-
-				<COMBOBOX name="Standard_Height" label="Height" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="1956" geoInfluencing="TRUE">
-					<ITEM value="1936" label="1936 mm" info1="700" info2="600"/>
-					<ITEM value="1956" label="1956 mm" info1="720" info2="600"/>
-					<ITEM value="1996" label="1996 mm" info1="760" info2="600"/>
-					<ITEM value="2086" label="2086 mm" info1="700" info2="750"/>
-					<ITEM value="2106" label="2106 mm" info1="720" info2="750"/>
-					<ITEM value="2146" label="2146 mm" info1="760" info2="750"/>
-					<ITEM value="2236" label="2236 mm" info1="700" info2="900"/>
-					<ITEM value="2256" label="2256 mm" info1="720" info2="900"/>
-					<ITEM value="2296" label="2296 mm" info1="760" info2="900"/>
-				</COMBOBOX>
-
-				<EDITBOX name="Customized_Height" label="Height (1956mm t0 2400mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE" min="1956" max="2400" />
-
-				<EDITBOX name="ART_SIZEZT" label="Height" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="1956" geoInfluencing="TRUE" />
-
-				<COMBOBOX name="ART_SIZEYT" label="Depth" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="580" geoInfluencing="TRUE">
-					<ITEM value="560" label="560 mm" />
-					<ITEM value="580" label="580 mm" />
-				</COMBOBOX>
-
-				<COMBOBOX name="ART_Depth1" label="Depth (560mm , 580mm)" active="TRUE" visible="FALSE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
-					<ITEM value="560" label="560 mm" />
-					<ITEM value="580" label="580 mm" />
-				</COMBOBOX>
-
-				<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_TU_Carcass_CONSTRUCTION" />
-
-				<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_TALL_BRACKETS_SELECTION" />
+				<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_BASE_BRACKETS_SELECTION" />
 
 
-			</GROUP>
-		
-		</PARAFOLDER>	
-		
-		<PARAFOLDER name="Open_Box_Carcass" label="Open Box" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
+			</PARAFOLDER>
 
-			<GROUP name="Carcass_Finsh" label="Carcass Finsh">			
+			<PARAFOLDER name="Wall_Unit" label="Wall Unit" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
 
-				<COMBOBOX name="OB_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+				<GROUP name="Wall Carcass" label="Wall Unit Carcass Details">
+
+					<COMBOBOX name="ART_SIZEZW" label="Height" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="600">
+						<ITEM value="600" label="600 mm" />
+						<ITEM value="700" label="700 mm" />
+						<ITEM value="750" label="750 mm" />
+						<ITEM value="900" label="900 mm" />
+					</COMBOBOX>
+
+					<EDITBOX name="ART_SIZEYW" label="Depth" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="330" geoInfluencing="TRUE" />
+
+					<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_WU_Carcass_CONSTRUCTION" />
+
+				</GROUP>
+
+				<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_WALLUNIT_SHELF_SELECTION" />
+
+
+			</PARAFOLDER>
+
+			<PARAFOLDER name="Tall_Unit" label="Tall Unit" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
+
+				<GROUP name="Tall Carcass" label="Tall Unit Carcass Details">
+
+					<CHECKBOX name="Customized_Height_Check" label="Customized Height" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+					<COMBOBOX name="Standard_Height" label="Height" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="1956" geoInfluencing="TRUE">
+						<ITEM value="1936" label="1936 mm" info1="700" info2="600" />
+						<ITEM value="1956" label="1956 mm" info1="720" info2="600" />
+						<ITEM value="1996" label="1996 mm" info1="760" info2="600" />
+						<ITEM value="2086" label="2086 mm" info1="700" info2="750" />
+						<ITEM value="2106" label="2106 mm" info1="720" info2="750" />
+						<ITEM value="2146" label="2146 mm" info1="760" info2="750" />
+						<ITEM value="2236" label="2236 mm" info1="700" info2="900" />
+						<ITEM value="2256" label="2256 mm" info1="720" info2="900" />
+						<ITEM value="2296" label="2296 mm" info1="760" info2="900" />
+					</COMBOBOX>
+
+					<EDITBOX name="Customized_Height" label="Height (1956mm t0 2400mm)" active="TRUE" visible="TRUE" locked="FALSE" valuetype="NUM" default="1956" geoInfluencing="TRUE" min="1956" max="2400" />
+
+					<EDITBOX name="ART_SIZEZT" label="Height" active="TRUE" visible="FALSE" locked="TRUE" valuetype="NUM" default="1956" geoInfluencing="TRUE" />
+
+					<COMBOBOX name="ART_SIZEYT" label="Depth" active="TRUE" visible="TRUE" locked="TRUE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+						<ITEM value="560" label="560 mm" />
+						<ITEM value="580" label="580 mm" />
+					</COMBOBOX>
+
+					<COMBOBOX name="ART_Depth1" label="Depth (560mm , 580mm)" active="TRUE" visible="FALSE" locked="FALSE" valuetype="NUM" default="580" geoInfluencing="TRUE">
+						<ITEM value="560" label="560 mm" />
+						<ITEM value="580" label="580 mm" />
+					</COMBOBOX>
+
+					<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_TU_Carcass_CONSTRUCTION" />
+
+					<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_TALL_BRACKETS_SELECTION" />
+
+
+				</GROUP>
+
+			</PARAFOLDER>
+
+			<PARAFOLDER name="Open_Box_Carcass" label="Open Box" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
+
+				<GROUP name="Carcass_Finsh" label="Carcass Finsh">
+
+					<COMBOBOX name="OB_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
 						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_CORE_MAT" />
-				</COMBOBOX>
-		
-				<COMBOBOX name="OB_Finish" label="Finish" valuetype="TEXT" default="Elementary_Series" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-				
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_FINISHES" />
-				</COMBOBOX>
-		
-				<COMBOBOX name="OB_Texture" label="Texture" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-								
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
-				</COMBOBOX>
-	
-				<COMBOBOX name="OB_Shade" label="Openbox Shade" valuetype="IMAGE" default="" visible="TRUE" search="TRUE"	active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
-				</COMBOBOX>
-	
-				<!-- Variable Values -->
-				<EDITBOX name="OB_Carcass_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
-				<EDITBOX name="OB_Carcass_Prf" label="OB_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
-				<EDITBOX name="OB_Carcass_BP_Mat" label="OB_Carcass_BP_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
-				
-			</GROUP>
+					</COMBOBOX>
+
+					<COMBOBOX name="OB_Finish" label="Finish" valuetype="TEXT" default="Elementary_Series" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OB_FINISHES" />
+					</COMBOBOX>
+
+					<COMBOBOX name="OB_Texture" label="Texture" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+					</COMBOBOX>
+
+					<COMBOBOX name="OB_Shade" label="Openbox Shade" valuetype="IMAGE" default="" visible="TRUE" search="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+					</COMBOBOX>
+
+					<!-- Variable Values -->
+					<EDITBOX name="OB_Carcass_Mat" label="OB_Carcass_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+					<EDITBOX name="OB_Carcass_Prf" label="OB_Carcass_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+					<EDITBOX name="OB_Carcass_BP_Mat" label="OB_Carcass_BP_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+				</GROUP>
+
+			</PARAFOLDER>
+
 
 		</PARAFOLDER>
 
-
-	</PARAFOLDER>
-
-	<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
+		<PARAFOLDER name="Hardware_Details" label="Hardware Details" active="TRUE" visible="TRUE">
 
 			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_HINGE_SELECTION" />
-			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_WALL_BRACKETS_SELECTION" />				
+			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_WALL_BRACKETS_SELECTION" />
 
-	</PARAFOLDER>
+		</PARAFOLDER>
 
-	<PARAFOLDER name="Drawers_Details1" label="Drawers Details" active="TRUE" visible="TRUE">
+		<PARAFOLDER name="Drawers_Details1" label="Drawers Details" active="TRUE" visible="TRUE">
 
 			<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_BIG_SMALL_DRAWERS_SELECTION" />
 
 			<!-- <COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_BIG_DRAWERS_SELECTION" /> -->
 
-	</PARAFOLDER>
+		</PARAFOLDER>
 
-	<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
+		<PARAFOLDER name="Front_Details" label="Shutter Details" active="TRUE" visible="TRUE">
 
-			<TEXT name="Base_Unit_Front" label="Base Unit Front" 	format="bold"	image1="img/catalog/.jpg" image2="img/catalog/.jpg"/>
+			<TEXT name="Base_Unit_Front" label="Base Unit Front" format="bold" image1="img/catalog/.jpg" image2="img/catalog/.jpg" />
 
 			<CHECKBOX name="BU_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
 
@@ -211,16 +206,16 @@
 				<COMBOBOX name="BU_Shutter_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
 					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
 				</COMBOBOX>
-		
+
 				<COMBOBOX name="BU_Shutter_Finish" label="Finish" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
 					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
 				</COMBOBOX>
-		
+
 				<COMBOBOX name="BU_Texture" label="Texture" valuetype="TEXT" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
 					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
 				</COMBOBOX>
-	
-				<COMBOBOX name="BU_Front1" label="Shutter Shade" valuetype="IMAGE" default="" Search="TRUE"	visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+
+				<COMBOBOX name="BU_Front1" label="Shutter Shade" valuetype="IMAGE" default="" Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
 					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
 				</COMBOBOX>
 
@@ -231,16 +226,16 @@
 				<COMBOBOX name="BU_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
 					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
 				</COMBOBOX>
-		
+
 				<COMBOBOX name="BU_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
 					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
 				</COMBOBOX>
-		
+
 				<COMBOBOX name="BU_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
 					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
 				</COMBOBOX>
 
-				<COMBOBOX name="BU_Front2" label="Shutter Shade" valuetype="IMAGE" default="" Search="TRUE"	visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+				<COMBOBOX name="BU_Front2" label="Shutter Shade" valuetype="IMAGE" default="" Search="TRUE" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
 					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
 				</COMBOBOX>
 
@@ -249,145 +244,143 @@
 			<!-- Variable Values -->
 			<EDITBOX name="BU_Front1_Mat" label="BU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
 			<EDITBOX name="BU_Front1_Prf" label="BU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
-			
+
 			<EDITBOX name="BU_Front2_Mat" label="BU_Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
 			<EDITBOX name="BU_Front2_Prf" label="BU_Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
-			
 
-		
 
-		<PARAFOLDER name="Wall_Unit_Front" label="Wall Unit Front" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
-			
-			<CHECKBOX name="WU_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+			<PARAFOLDER name="Wall_Unit_Front" label="Wall Unit Front" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
 
-			<GROUP name="WU_Left_Shutter_Details" label="Left Shutter Details">
+				<CHECKBOX name="WU_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
 
-				<COMBOBOX name="WU_Shutter_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
-				</COMBOBOX>
-		
-				<COMBOBOX name="WU_Shutter_Finish" label="Finish" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
-				</COMBOBOX>
-		
-				<COMBOBOX name="WU_Texture" label="Texture" valuetype="TEXT" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
-				</COMBOBOX>
+				<GROUP name="WU_Left_Shutter_Details" label="Left Shutter Details">
 
-				<COMBOBOX name="WU_Front1" label="Shutter Shade" valuetype="IMAGE" default=""	Search="TRUE"	 visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
-                    <COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
-                </COMBOBOX>
+					<COMBOBOX name="WU_Shutter_Core_Material" label="Core Material" valuetype="TEXT" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+					</COMBOBOX>
 
-			</GROUP>
+					<COMBOBOX name="WU_Shutter_Finish" label="Finish" valuetype="TEXT" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+					</COMBOBOX>
 
-			<GROUP name="WU_Right_Shutter_Details" label="Right Shutter Details">
+					<COMBOBOX name="WU_Texture" label="Texture" valuetype="TEXT" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+					</COMBOBOX>
 
-				<COMBOBOX name="WU_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
-				</COMBOBOX>
-		
-				<COMBOBOX name="WU_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
-				</COMBOBOX>
-		
-				<COMBOBOX name="WU_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
-				</COMBOBOX>
+					<COMBOBOX name="WU_Front1" label="Shutter Shade" valuetype="IMAGE" default="" Search="TRUE" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+					</COMBOBOX>
 
-				<COMBOBOX name="WU_Front2" label="Shutter Shade" valuetype="IMAGE" default="" Search="TRUE"	visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
-				</COMBOBOX>
+				</GROUP>
 
-			</GROUP>
+				<GROUP name="WU_Right_Shutter_Details" label="Right Shutter Details">
 
-			<!-- Variable Values -->
-			<EDITBOX name="WU_Front1_Mat" label="WU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
-			<EDITBOX name="WU_Front1_Prf" label="WU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
-			<EDITBOX name="WU_Front2_Mat" label="WU_Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
-			<EDITBOX name="WU_Front2_Prf" label="WU_Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+					<COMBOBOX name="WU_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+					</COMBOBOX>
+
+					<COMBOBOX name="WU_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+					</COMBOBOX>
+
+					<COMBOBOX name="WU_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+					</COMBOBOX>
+
+					<COMBOBOX name="WU_Front2" label="Shutter Shade" valuetype="IMAGE" default="" Search="TRUE" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+					</COMBOBOX>
+
+				</GROUP>
+
+				<!-- Variable Values -->
+				<EDITBOX name="WU_Front1_Mat" label="WU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="WU_Front1_Prf" label="WU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="WU_Front2_Mat" label="WU_Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="WU_Front2_Prf" label="WU_Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+			</PARAFOLDER>
+
+			<PARAFOLDER name="Tall_Unit_Front" label="Tall Unit Front" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
+
+				<CHECKBOX name="TU_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+
+				<GROUP name="TU_Left_Shutter_Details" label="Left Shutter Details">
+
+					<COMBOBOX name="TU_Shutter_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+					</COMBOBOX>
+
+					<COMBOBOX name="TU_Shutter_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+					</COMBOBOX>
+
+					<COMBOBOX name="TU_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+					</COMBOBOX>
+
+					<COMBOBOX name="TU_Front1" label="Shutter Shade" valuetype="IMAGE" default="" Search="TRUE" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+					</COMBOBOX>
+
+				</GROUP>
+
+				<GROUP name="TU_Right_Shutter_Details" label="Right Shutter Details">
+
+					<COMBOBOX name="TU_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
+					</COMBOBOX>
+
+					<COMBOBOX name="TU_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
+					</COMBOBOX>
+
+					<COMBOBOX name="TU_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+					</COMBOBOX>
+
+					<COMBOBOX name="TU_Front2" label="Shutter Shade" valuetype="IMAGE" default="" Search="TRUE" visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
+						<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
+					</COMBOBOX>
+
+				</GROUP>
+
+				<!-- Variable Values -->
+				<EDITBOX name="TU_Front1_Mat" label="TU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="TU_Front1_Prf" label="TU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+				<EDITBOX name="TU_Front2_Mat" label="TU_Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+				<EDITBOX name="TU_Front2_Prf" label="TU_Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
+
+			</PARAFOLDER>
+
 
 		</PARAFOLDER>
 
-		 <PARAFOLDER name="Tall_Unit_Front" label="Tall Unit Front" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
+		<PARAFOLDER name="Lighting_Details" label="Lights Details" active="TRUE" visible="TRUE">
 
-			<CHECKBOX name="TU_Different_Fascia_Colour" label="Both Fascias with different color?" default="NO" checked="YES" unchecked="NO" setAsGlobal="FALSE" visible="TRUE" locked="FALSE" />
+			<COMMAND type="INSERT" file="Include_Lights.xml" part="PART_KITCHEN_LIGHTS" />
 
-			<GROUP name="TU_Left_Shutter_Details" label="Left Shutter Details">
+		</PARAFOLDER>
 
-				<COMBOBOX name="TU_Shutter_Core_Material" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
-				</COMBOBOX>
-		
-				<COMBOBOX name="TU_Shutter_Finish" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
-				</COMBOBOX>
-		
-				<COMBOBOX name="TU_Texture" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
+		<PARAFOLDER name="Handles" label="Handles" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
+
+			<GROUP name="Group_Kitchen_Handle" valuetype="FRAME" label="Handles" visible="TRUE">
+
+				<COMBOBOX name="Handle_Type" label="Handle Type" valuetype="TEXT" default="Surface_Handle" visible="TRUE" active="TRUE">
+					<ITEM name="Surface_Handle" value="Surface_Handle" label="Surface Handle Horizontal" />
+					<ITEM name="Surface_Handle_V" value="Surface_Handle_V" label="Surface Handle Vertical" />
+					<ITEM name="Edge_Handle" value="Edge_Handle" label="Edge Handle" />
 				</COMBOBOX>
 
-				<COMBOBOX name="TU_Front1" label="Shutter Shade" valuetype="IMAGE" default=""	Search="TRUE"	 visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
-				</COMBOBOX>
-
-			</GROUP>
-
-			<GROUP name="TU_Right_Shutter_Details" label="Right Shutter Details">
-
-				<COMBOBOX name="TU_Shutter_Core_Material_1" label="Core Material" valuetype="" default="HDHMR" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_CORE_MAT" />
-				</COMBOBOX>
-		
-				<COMBOBOX name="TU_Shutter_Finish_1" label="Finish" valuetype="" default="Fenix" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISHES" />
-				</COMBOBOX>
-		
-				<COMBOBOX name="TU_Texture_1" label="Texture" valuetype="" default="Solid" visible="TRUE" active="TRUE" geoInfluencing="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_TEXTURES" />
-				</COMBOBOX>
-
-				<COMBOBOX name="TU_Front2" label="Shutter Shade" valuetype="IMAGE" default="" 	Search="TRUE"	visible="TRUE" active="TRUE" image1="img/catalog/.PNG">
-					<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_SHADES" />
-				</COMBOBOX>
-
-			</GROUP>
-
-			<!-- Variable Values -->
-			<EDITBOX name="TU_Front1_Mat" label="TU_Front1_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
-			<EDITBOX name="TU_Front1_Prf" label="TU_Front1_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
-			
-			<EDITBOX name="TU_Front2_Mat" label="TU_Front2_Mat" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
-			<EDITBOX name="TU_Front2_Prf" label="TU_Front2_Prf" active="TRUE" visible="FALSE" locked="FALSE" valuetype="" default="" geoInfluencing="TRUE" />
-			
-		</PARAFOLDER> 
-
-
-	 </PARAFOLDER> 
-
-	 <PARAFOLDER name="Lighting_Details" label="Lights Details" active="TRUE" visible="TRUE">
-
-		<COMMAND type="INSERT" file="Include_Lights.xml" part="PART_KITCHEN_LIGHTS" />
-
-	</PARAFOLDER>
-
-	 <PARAFOLDER name="Handles" label="Handles" image1="img/catalog/.jpg" image2="img/catalog/.jpg">
-
-		<GROUP name="Group_Kitchen_Handle" valuetype="FRAME" label="Handles" visible="TRUE">	
-		
-			<COMBOBOX name="Handle_Type"	label="Handle Type" 	valuetype="TEXT"	default="Surface_Handle"	visible="TRUE"	active="TRUE">
-				<ITEM name="Surface_Handle"		value="Surface_Handle"		label="Surface Handle Horizontal"/>
-				<ITEM name="Surface_Handle_V"	value="Surface_Handle_V"	label="Surface Handle Vertical"	/>
-				<ITEM name="Edge_Handle"		value="Edge_Handle"			label="Edge Handle"	/>
-			</COMBOBOX>
-			
-			<COMBOBOX name="Handle_Selection"	label="Handle Selection" 	valuetype="IMAGE"  Search="TRUE" 	default="DI_156_BLM"	visible="TRUE"	active="TRUE"	geoInfluencing="TRUE">
-				<!-- <ITEM name="BR_140_ATB"			value="BR_140_ATB"			label="BR 140 ATB"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/BRIKK_0334.jpg"/>
+				<COMBOBOX name="Handle_Selection" label="Handle Selection" valuetype="IMAGE" Search="TRUE" default="DI_156_BLM" visible="TRUE" active="TRUE" geoInfluencing="TRUE">
+					<!-- <ITEM name="BR_140_ATB"			value="BR_140_ATB"			label="BR 140 ATB"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/BRIKK_0334.jpg"/>
 				<ITEM name="BR_290_ATB"			value="BR_290_ATB"			label="BR 290 ATB"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/BRIKK_0334.jpg"/>
 				<ITEM name="BR_490_ATB"			value="BR_490_ATB"			label="BR 490 ATB"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/BRIKK_0334.jpg"/> -->
-				<ITEM name="DI_156_BLM"			value="DI_156_BLM"			label="DI 156 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/DINO_0053.jpg"/>
-				<ITEM name="DI_221_BLM"			value="DI_221_BLM"			label="DI 221 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/DINO_0053.jpg"/>
-				<ITEM name="DI_349_BLM"			value="DI_349_BLM"			label="DI 349 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/DINO_0053.jpg"/>
-				<!-- <ITEM name="CU_200_BLM"			value="CU_200_BLM"			label="CU 200 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_MattBlack.jpg"/>
+					<ITEM name="DI_156_BLM" value="DI_156_BLM" label="DI 156 BLM" info1="Surface_Handle" info2="Horizontal" image1="img/hardware/DINO_0053.jpg" />
+					<ITEM name="DI_221_BLM" value="DI_221_BLM" label="DI 221 BLM" info1="Surface_Handle" info2="Horizontal" image1="img/hardware/DINO_0053.jpg" />
+					<ITEM name="DI_349_BLM" value="DI_349_BLM" label="DI 349 BLM" info1="Surface_Handle" info2="Horizontal" image1="img/hardware/DINO_0053.jpg" />
+					<!-- <ITEM name="CU_200_BLM"			value="CU_200_BLM"			label="CU 200 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_MattBlack.jpg"/>
 				<ITEM name="CU_400_BLM"			value="CU_400_BLM"			label="CU 400 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_MattBlack.jpg"/>
 				<ITEM name="CU_600_BLM"			value="CU_600_BLM"			label="CU 600 BLM"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_MattBlack.jpg"/>
 				<ITEM name="CU_200_SST"			value="CU_200_SST"			label="CU 200 SST"		info1="Surface_Handle" 	info2="Horizontal"	image1="img/hardware/CUTT_0322_Stain_Steel.jpg"/>
@@ -402,33 +395,31 @@
 				<ITEM name="DI_156_BLM_V"		value="DI_156_BLM_V"		label="DI 156 BLM"		info1="Surface_Handle_V"		info2="Vertical"	image1="img/hardware/DINO_0053.jpg"/>
 				<ITEM name="DI_221_BLM_V"		value="DI_221_BLM_V"		label="DI 221 BLM"		info1="Surface_Handle_V"		info2="Vertical"	image1="img/hardware/DINO_0053.jpg"/>
 				<ITEM name="DI_349_BLM_V"		value="DI_349_BLM_V"		label="DI 349 BLM"		info1="Surface_Handle_V"		info2="Vertical"	image1="img/hardware/DINO_0053.jpg"/> -->
-			</COMBOBOX>
-				
-		</GROUP>
+				</COMBOBOX>
 
-		<GROUP name="Gola Profile" valuetype="FRAME" label="Handles" visible="TRUE">
+			</GROUP>
 
-		<COMBOBOX name="Gola_Profile_Selection"	label="Gola Profile Color" 	valuetype="IMAGE"	default="Silver"	visible="TRUE"	active="TRUE">
-			<ITEM value="Silver"			label="Silver"		image1="img/hardware/G_Silver.jpg"/>
-			<ITEM value="Graphite"			label="Graphite"	image1="img/hardware/G_Graphite.jpg"/>
-			<ITEM value="Rose_Gold"			label="Rose Gold"	image1="img/hardware/G_Rose_Gold.jpg"/>
-			<ITEM value="Gold"				label="Gold"		image1="img/hardware/G_Gold.jpg"/>
-			<ITEM value="Dark_Bronze"		label="Dark Bronze"	image1="img/hardware/G_Dark_Bronze.jpg"/>
-			<ITEM value="Black"				label="Black"		image1="img/hardware/G_Black.jpg"/>	
-		</COMBOBOX>
+			<GROUP name="Gola Profile" valuetype="FRAME" label="Handles" visible="TRUE">
 
-	</GROUP>
+				<COMBOBOX name="Gola_Profile_Selection" label="Gola Profile Color" valuetype="IMAGE" default="Silver" visible="TRUE" active="TRUE">
+					<ITEM value="Silver" label="Silver" image1="img/hardware/G_Silver.jpg" />
+					<ITEM value="Graphite" label="Graphite" image1="img/hardware/G_Graphite.jpg" />
+					<ITEM value="Rose_Gold" label="Rose Gold" image1="img/hardware/G_Rose_Gold.jpg" />
+					<ITEM value="Gold" label="Gold" image1="img/hardware/G_Gold.jpg" />
+					<ITEM value="Dark_Bronze" label="Dark Bronze" image1="img/hardware/G_Dark_Bronze.jpg" />
+					<ITEM value="Black" label="Black" image1="img/hardware/G_Black.jpg" />
+				</COMBOBOX>
 
-	<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_GLOBAL_KITCHEN_MARKUP" />	
+			</GROUP>
 
-	 </PARAFOLDER> 
+			<COMMAND type="INSERT" file="Include_Markup_Calculations.xml" part="PART_GLOBAL_KITCHEN_MARKUP" />
+
+		</PARAFOLDER>
 
 	</DEFINITION>
 
 	<CONSTRUCTION>
-		<VARIABLES>
-			
-		</VARIABLES>
+		<VARIABLES></VARIABLES>
 	</CONSTRUCTION>
 
 	<LOGIC_DEFINITION>
@@ -439,33 +430,9 @@
 
 		<COMMAND>"FIELD(KI_Base_Unit_Height).value=FIELD(ART_SIZEZB).value"</COMMAND>
 
-
-		<!-- <IF>
-			<EQ expr1="FIELD(Skirting_Color).value" expr2="Silver" />
-			<THEN>
-				<COMMAND>"FIELD(Adjustable_Legs).Info1List(Skirting)"</COMMAND>
-			</THEN>
-			<ELSE>
-				<IF>
-					<EQ expr1="FIELD(Skirting_Color).value" expr2="Grey" />
-					<THEN>
-						<COMMAND>"FIELD(Adjustable_Legs).Info1List(Skirting)"</COMMAND>
-					</THEN>
-					<ELSE>
-						<IF>
-							<EQ expr1="FIELD(Skirting_Color).value" expr2="No_Skirting" />
-							<THEN>
-								<COMMAND>"FIELD(Adjustable_Legs).Info1List(NO_BOM)"</COMMAND>
-							</THEN>
-						</IF>
-					</ELSE>
-				</IF>
-			</ELSE>
-		</IF> -->
-
 		<COMMAND>"FIELD(Base_Bracket_Type).Info1List(FIELD(Adjustable_Legs).info1)"</COMMAND>
 		<COMMAND>"FIELD(Tall_Bracket_Type).Info1List(FIELD(Adjustable_Legs).info1)"</COMMAND>
-		
+
 
 		<IF>
 			<EQ expr1="FIELD(Adjustable_Legs).value" expr2="Adjustable_leg_H100_" />
@@ -506,7 +473,7 @@
 			</ELSE>
 		</IF>
 
-		
+
 		<COMMAND>"FIELD(Skirting_Color).Info1List(FIELD(Brand).value)"</COMMAND>
 		<COMMAND>"FIELD(Skirting_Color).filterInfo2List(FIELD(Leg_Height).value)"</COMMAND>
 
@@ -517,13 +484,13 @@
 
 		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_WU_Carcass_CONSTRUCTION_LOGIC" />
 
-		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_TU_Carcass_CONSTRUCTION_LOGIC" /> 
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="PART_KITCHEN_TU_Carcass_CONSTRUCTION_LOGIC" />
 
 		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_OPEN_BOX_FINISHES" />
 
-		<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_BIG_SMALL_DRAWERS_SELECTION_LOGIC" /> 
-		
-		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="TALL_UNIT_HEIGHT_CUSTOMIZED_GLOBAL" /> 
+		<COMMAND type="INSERT" file="Include_Hardware_Selection.xml" part="PART_BIG_SMALL_DRAWERS_SELECTION_LOGIC" />
+
+		<COMMAND type="INSERT" file="Include_Kitchen_Carcass.xml" part="TALL_UNIT_HEIGHT_CUSTOMIZED_GLOBAL" />
 
 		<COMMAND type="INSERT" file="Include_Shutter_Finish.xml" part="PART_SHUTTER_FINISH_LOGIC" />
 
@@ -545,85 +512,6 @@
 
 		<COMMAND type="INSERT" file="Include_Handle_Selection.xml" part="PART_KITCHEN_BASE_UNIT_HANDLES_LOGIC" />
 
-		<!-- <IF>
-			<OR>
-				<AND>
-					<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_SO" />
-					<EQ expr1="FIELD(Password).value" expr2="CFS001_SO" />
-				</AND>
-				<AND>
-					<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_SM" />
-					<EQ expr1="FIELD(Password).value" expr2="CFS001_SM" />
-				</AND>			
-				<AND>
-					<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_SR" />
-					<EQ expr1="FIELD(Password).value" expr2="CFS001_SR" />
-				</AND>
-				<AND>
-					<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_CC" />
-					<EQ expr1="FIELD(Password).value" expr2="CFS001_CC" />
-				</AND>				
-			</OR>	
-			<THEN>
-				<COMMAND>"FIELD(Password).highlight=success"</COMMAND>				
-			</THEN>	
-			<ELSE>
-				<COMMAND>"FIELD(Password).highlight=error"</COMMAND>
-			</ELSE>
-		</IF>
-
-
-	<IF>
-		<AND>
-			<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_SO" />
-			<EQ expr1="FIELD(Password).value" expr2="CFS001_SO" />
-		</AND>	
-		<AND>
-			<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_SM" />
-			<EQ expr1="FIELD(Password).value" expr2="CFS001_SM" />
-		</AND>
-		<AND>
-			<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_SR" />
-			<EQ expr1="FIELD(Password).value" expr2="CFS001_SR" />
-		</AND>	
-		<THEN>
-			<COMMAND>"FIELD(KB_Calculation_Factors).value=CFS001KB_SP"</COMMAND>				
-			<COMMAND>"FIELD(KW_Calculation_Factors).value=CFS001KW_SP"</COMMAND>				
-			<COMMAND>"FIELD(KT_Calculation_Factors).value=CFS001KT_SP"</COMMAND>				
-			<COMMAND>"FIELD(KAP_Calculation_Factors).value=CFS001KAP_SP"</COMMAND>				
-			<COMMAND>"FIELD(KB_Mat_Prices).value=CFS001KB_SP"</COMMAND>				
-			<COMMAND>"FIELD(KW_Mat_Prices).value=CFS001KW_SP"</COMMAND>				
-			<COMMAND>"FIELD(KT_Mat_Prices).value=CFS001KT_SP"</COMMAND>				
-			<COMMAND>"FIELD(KAP_Mat_Prices).value=CFS001KAP_SP"</COMMAND>
-			<COMMAND>"FIELD(KB_Prf_Prices).value=CFS001KB_SP"</COMMAND>
-			<COMMAND>"FIELD(KW_Prf_Prices).value=CFS001KW_SP"</COMMAND>
-			<COMMAND>"FIELD(KT_Prf_Prices).value=CFS001KT_SP"</COMMAND>
-			<COMMAND>"FIELD(KAP_Prf_Prices).value=CFS001KAP_SP"</COMMAND>
-		</THEN>
-		<ELSE>
-			<IF>
-				<AND>
-					<EQ expr1="FIELD(Customer_Name).value" expr2="CFS001_CC" />
-					<EQ expr1="FIELD(Password).value" expr2="CFS001_CC" />
-				</AND>
-				<THEN>
-					<COMMAND>"FIELD(KB_Calculation_Factors).value=CFS001KB_CP"</COMMAND>				
-					<COMMAND>"FIELD(KW_Calculation_Factors).value=CFS001KW_CP"</COMMAND>				
-					<COMMAND>"FIELD(KT_Calculation_Factors).value=CFS001KT_CP"</COMMAND>				
-					<COMMAND>"FIELD(KAP_Calculation_Factors).value=CFS001KAP_CP"</COMMAND>				
-					<COMMAND>"FIELD(KB_Mat_Prices).value=CFS001KB_CP"</COMMAND>				
-					<COMMAND>"FIELD(KW_Mat_Prices).value=CFS001KW_CP"</COMMAND>				
-					<COMMAND>"FIELD(KT_Mat_Prices).value=CFS001KT_CP"</COMMAND>				
-					<COMMAND>"FIELD(KAP_Mat_Prices).value=CFS001KAP_CP"</COMMAND>
-					<COMMAND>"FIELD(KB_Prf_Prices).value=CFS001KB_CP"</COMMAND>
-					<COMMAND>"FIELD(KW_Prf_Prices).value=CFS001KW_CP"</COMMAND>
-					<COMMAND>"FIELD(KT_Prf_Prices).value=CFS001KT_CP"</COMMAND>
-					<COMMAND>"FIELD(KAP_Prf_Prices).value=CFS001KAP_CP"</COMMAND>
-				</THEN>
-			</IF>
-		</ELSE>
-	</IF>
-	 -->
 
 	</LOGIC_DEFINITION>
 </XML>

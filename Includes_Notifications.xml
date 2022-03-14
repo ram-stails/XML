@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XML version="2.0" type="IMOS_INCLUDEPARTS">
+
+	<PART name="PART_NOTIFICATION">
+		<PARAFOLDER name="Notification" label="Notification" active="TRUE" visible="TRUE">
+			<TEXT name="Warning" label="Note:Display notifications can be managed here.. :-)" 	width="25%"	visible="" format="bold" highlight="error" />
+		</PARAFOLDER>
+	</PART>
+
+</XML>
